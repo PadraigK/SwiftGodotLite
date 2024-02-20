@@ -11,7 +11,6 @@ let package = Package(
     products: [
         .library(
             name: "SwiftGodotLite",
-            type: .dynamic,
             targets: ["SwiftGodotLite"]
         ),
     ],
