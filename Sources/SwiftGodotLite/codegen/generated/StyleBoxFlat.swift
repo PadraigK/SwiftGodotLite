@@ -336,7 +336,7 @@ open class StyleBoxFlat: StyleBox {
     
     @inline(__always)
     fileprivate final func set_bg_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -386,7 +386,7 @@ open class StyleBoxFlat: StyleBox {
     
     @inline(__always)
     fileprivate final func set_border_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -436,7 +436,7 @@ open class StyleBoxFlat: StyleBox {
     
     /// Sets the border width to `width` pixels for all sides.
     public final func setBorderWidthAll (width: Int32) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         
@@ -487,7 +487,7 @@ open class StyleBoxFlat: StyleBox {
     @inline(__always)
     /// Sets the specified ``Side``'s border width to `width` pixels.
     fileprivate final func set_border_width (_ margin: Side, _ width: Int32) {
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         var copy_width: Int = Int (width)
@@ -526,7 +526,7 @@ open class StyleBoxFlat: StyleBox {
     /// Returns the specified ``Side``'s border width.
     fileprivate final func get_border_width (_ margin: Side)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         
@@ -559,7 +559,7 @@ open class StyleBoxFlat: StyleBox {
     
     @inline(__always)
     fileprivate final func set_border_blend (_ blend: Bool) {
-        #if true
+        #if false
         
         var copy_blend = blend
         
@@ -609,7 +609,7 @@ open class StyleBoxFlat: StyleBox {
     
     /// Sets the corner radius to `radius` pixels for all corners.
     public final func setCornerRadiusAll (radius: Int32) {
-        #if true
+        #if false
         
         var copy_radius: Int = Int (radius)
         
@@ -642,7 +642,7 @@ open class StyleBoxFlat: StyleBox {
     @inline(__always)
     /// Sets the corner radius to `radius` pixels for the given `corner`. See ``Corner`` for possible values.
     fileprivate final func set_corner_radius (_ corner: Corner, _ radius: Int32) {
-        #if true
+        #if false
         
         var copy_corner = Int64 (corner.rawValue)
         var copy_radius: Int = Int (radius)
@@ -681,7 +681,7 @@ open class StyleBoxFlat: StyleBox {
     /// Returns the given `corner`'s radius. See ``Corner`` for possible values.
     fileprivate final func get_corner_radius (_ corner: Corner)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_corner = Int64 (corner.rawValue)
         
@@ -715,7 +715,7 @@ open class StyleBoxFlat: StyleBox {
     @inline(__always)
     /// Sets the expand margin to `size` pixels for the specified ``Side``.
     fileprivate final func set_expand_margin (_ margin: Side, _ size: Double) {
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         var copy_size = size
@@ -752,7 +752,7 @@ open class StyleBoxFlat: StyleBox {
     
     /// Sets the expand margin to `size` pixels for all sides.
     public final func setExpandMarginAll (size: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -786,7 +786,7 @@ open class StyleBoxFlat: StyleBox {
     /// Returns the size of the specified ``Side``'s expand margin.
     fileprivate final func get_expand_margin (_ margin: Side)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         
@@ -819,7 +819,7 @@ open class StyleBoxFlat: StyleBox {
     
     @inline(__always)
     fileprivate final func set_draw_center (_ drawCenter: Bool) {
-        #if true
+        #if false
         
         var copy_draw_center = drawCenter
         
@@ -869,7 +869,7 @@ open class StyleBoxFlat: StyleBox {
     
     @inline(__always)
     fileprivate final func set_skew (_ skew: Vector2) {
-        #if true
+        #if false
         
         var copy_skew = skew
         
@@ -919,7 +919,7 @@ open class StyleBoxFlat: StyleBox {
     
     @inline(__always)
     fileprivate final func set_shadow_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -969,7 +969,7 @@ open class StyleBoxFlat: StyleBox {
     
     @inline(__always)
     fileprivate final func set_shadow_size (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -1019,7 +1019,7 @@ open class StyleBoxFlat: StyleBox {
     
     @inline(__always)
     fileprivate final func set_shadow_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -1069,7 +1069,7 @@ open class StyleBoxFlat: StyleBox {
     
     @inline(__always)
     fileprivate final func set_anti_aliased (_ antiAliased: Bool) {
-        #if true
+        #if false
         
         var copy_anti_aliased = antiAliased
         
@@ -1119,7 +1119,7 @@ open class StyleBoxFlat: StyleBox {
     
     @inline(__always)
     fileprivate final func set_aa_size (_ size: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -1169,7 +1169,7 @@ open class StyleBoxFlat: StyleBox {
     
     @inline(__always)
     fileprivate final func set_corner_detail (_ detail: Int32) {
-        #if true
+        #if false
         
         var copy_detail: Int = Int (detail)
         

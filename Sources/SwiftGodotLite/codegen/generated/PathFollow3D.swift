@@ -156,7 +156,7 @@ open class PathFollow3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_progress (_ progress: Double) {
-        #if true
+        #if false
         
         var copy_progress = progress
         
@@ -206,7 +206,7 @@ open class PathFollow3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_h_offset (_ hOffset: Double) {
-        #if true
+        #if false
         
         var copy_h_offset = hOffset
         
@@ -256,7 +256,7 @@ open class PathFollow3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_v_offset (_ vOffset: Double) {
-        #if true
+        #if false
         
         var copy_v_offset = vOffset
         
@@ -306,7 +306,7 @@ open class PathFollow3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_progress_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -356,7 +356,7 @@ open class PathFollow3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_rotation_mode (_ rotationMode: PathFollow3D.RotationMode) {
-        #if true
+        #if false
         
         var copy_rotation_mode = Int64 (rotationMode.rawValue)
         
@@ -406,7 +406,7 @@ open class PathFollow3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_cubic_interpolation (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -456,7 +456,7 @@ open class PathFollow3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_use_model_front (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -506,7 +506,7 @@ open class PathFollow3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_loop (_ loop: Bool) {
-        #if true
+        #if false
         
         var copy_loop = loop
         
@@ -556,7 +556,7 @@ open class PathFollow3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_tilt_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -607,7 +607,7 @@ open class PathFollow3D: Node3D {
     /// Correct the `transform`. `rotationMode` implicitly specifies how posture (forward, up and sideway direction) is calculated.
     public static func correctPosture (transform: Transform3D, rotationMode: PathFollow3D.RotationMode)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_transform = transform
         var copy_rotation_mode = Int64 (rotationMode.rawValue)

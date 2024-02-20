@@ -35,7 +35,7 @@ open class PhysicsServer2DManager: Object {
     
     /// Register a ``PhysicsServer2D`` implementation by passing a `name` and a ``Callable`` that returns a ``PhysicsServer2D`` object.
     public static func registerServer (name: String, createCallback: Callable) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -70,7 +70,7 @@ open class PhysicsServer2DManager: Object {
     
     /// Set the default ``PhysicsServer2D`` implementation to the one identified by `name`, if `priority` is greater than the priority of the current default implementation.
     public static func setDefaultServer (name: String, priority: Int32) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_priority: Int = Int (priority)

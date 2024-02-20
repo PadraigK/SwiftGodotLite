@@ -582,7 +582,7 @@ open class Node: Object {
     /// > Note: If this node is internal, the new sibling will be internal too (see `internal` parameter in ``addChild(node:forceReadableName:`internal`:)``).
     /// 
     public final func addSibling (_ sibling: Node?, forceReadableName: Bool = false) {
-        #if true
+        #if false
         
         var copy_force_readable_name = forceReadableName
         var copy_sibling_handle = sibling?.handle
@@ -618,7 +618,7 @@ open class Node: Object {
     
     @inline(__always)
     fileprivate final func set_name (_ name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -679,7 +679,7 @@ open class Node: Object {
     /// > Note: If you want a child to be persisted to a ``PackedScene``, you must set ``owner`` in addition to calling ``addChild(node:forceReadableName:`internal`:)``. This is typically relevant for [url=$DOCS_URL/tutorials/plugins/running_code_in_the_editor.html]tool scripts[/url] and [url=$DOCS_URL/tutorials/plugins/editor/index.html]editor plugins[/url]. If ``addChild(node:forceReadableName:`internal`:)`` is called without setting ``owner``, the newly added ``Node`` will not be visible in the scene tree, though it will be visible in the 2D/3D view.
     /// 
     public final func addChild (node: Node?, forceReadableName: Bool = false, `internal`: Node.InternalMode = .disabled) {
-        #if true
+        #if false
         
         var copy_force_readable_name = forceReadableName
         var copy_internal = Int64 (`internal`.rawValue)
@@ -723,7 +723,7 @@ open class Node: Object {
     /// > Note: This function may set the ``owner`` of the removed Node (or its descendants) to be `null`, if that ``owner`` is no longer a parent or ancestor.
     /// 
     public final func removeChild (node: Node?) {
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -757,7 +757,7 @@ open class Node: Object {
     /// If `keepGlobalTransform` is `true`, the node's global transform will be preserved if supported. ``Node2D``, ``Node3D`` and ``Control`` support this argument (but ``Control`` keeps only position).
     /// 
     public final func reparent (newParent: Node?, keepGlobalTransform: Bool = true) {
-        #if true
+        #if false
         
         var copy_keep_global_transform = keepGlobalTransform
         var copy_new_parent_handle = newParent?.handle
@@ -797,7 +797,7 @@ open class Node: Object {
     /// 
     public final func getChildCount (includeInternal: Bool = false)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_include_internal = includeInternal
         
@@ -834,7 +834,7 @@ open class Node: Object {
     /// 
     public final func getChildren (includeInternal: Bool = false)-> ObjectCollection<Node> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_include_internal = includeInternal
         
@@ -875,7 +875,7 @@ open class Node: Object {
     /// 
     public final func getChild (idx: Int32, includeInternal: Bool = false)-> Node? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_include_internal = includeInternal
@@ -914,7 +914,7 @@ open class Node: Object {
     /// Returns `true` if the node that the ``NodePath`` points to exists.
     public final func hasNode (path: NodePath)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Node.method_has_node, UnsafeMutableRawPointer (mutating: handle), &_result, &path.content)
@@ -953,7 +953,7 @@ open class Node: Object {
     /// 
     public final func getNode (path: NodePath)-> Node? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Node.method_get_node, UnsafeMutableRawPointer (mutating: handle), &_result, &path.content)
@@ -985,7 +985,7 @@ open class Node: Object {
     /// Similar to ``getNode(path:)``, but does not log an error if `path` does not point to a valid ``Node``.
     public final func getNodeOrNull (path: NodePath)-> Node? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Node.method_get_node_or_null, UnsafeMutableRawPointer (mutating: handle), &_result, &path.content)
@@ -1048,7 +1048,7 @@ open class Node: Object {
     /// 
     public final func findChild (pattern: String, recursive: Bool = true, owned: Bool = true)-> Node? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_pattern = GString (pattern)
         var copy_recursive = recursive
@@ -1107,7 +1107,7 @@ open class Node: Object {
     /// 
     public final func findChildren (pattern: String, type: String = "", recursive: Bool = true, owned: Bool = true)-> ObjectCollection<Node> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         let gstr_pattern = GString (pattern)
         let gstr_type = GString (type)
@@ -1161,7 +1161,7 @@ open class Node: Object {
     /// 
     public final func findParent (pattern: String)-> Node? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_pattern = GString (pattern)
         
@@ -1195,7 +1195,7 @@ open class Node: Object {
     /// Returns `true` if the ``NodePath`` points to a valid node and its subname points to a valid resource, e.g. `Area2D/CollisionShape2D:shape`. Properties with a non-``Resource`` type (e.g. nodes or primitive math types) are not considered resources.
     public final func hasNodeAndResource (path: NodePath)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Node.method_has_node_and_resource, UnsafeMutableRawPointer (mutating: handle), &_result, &path.content)
@@ -1232,7 +1232,7 @@ open class Node: Object {
     /// 
     public final func getNodeAndResource (path: NodePath)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Node.method_get_node_and_resource, UnsafeMutableRawPointer (mutating: handle), &_result.content, &path.content)
@@ -1282,7 +1282,7 @@ open class Node: Object {
     /// Returns `true` if the given node is a direct or indirect child of the current node.
     public final func isAncestorOf (node: Node?)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -1315,7 +1315,7 @@ open class Node: Object {
     /// Returns `true` if the given node occurs later in the scene hierarchy than the current node.
     public final func isGreaterThan (node: Node?)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -1371,7 +1371,7 @@ open class Node: Object {
     /// 
     public final func getPathTo (node: Node?, useUniquePath: Bool = false)-> NodePath {
         let _result: NodePath = NodePath ()
-        #if true
+        #if false
         
         var copy_use_unique_path = useUniquePath
         var copy_node_handle = node?.handle
@@ -1413,7 +1413,7 @@ open class Node: Object {
     /// > Note: For performance reasons, the order of node groups is _not_ guaranteed. The order of node groups should not be relied upon as it can vary across project runs.
     /// 
     public final func addToGroup (_ group: StringName, persistent: Bool = false) {
-        #if true
+        #if false
         
         var copy_persistent = persistent
         
@@ -1448,7 +1448,7 @@ open class Node: Object {
     
     /// Removes a node from the `group`. Does nothing if the node is not in the `group`. See notes in the description, and the group methods in ``SceneTree``.
     public final func removeFromGroup (_ group: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Node.method_remove_from_group, UnsafeMutableRawPointer (mutating: handle), nil, &group.content)
@@ -1479,7 +1479,7 @@ open class Node: Object {
     /// Returns `true` if this node is in the specified group. See notes in the description, and the group methods in ``SceneTree``.
     public final func isInGroup (_ group: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Node.method_is_in_group, UnsafeMutableRawPointer (mutating: handle), &_result, &group.content)
@@ -1513,7 +1513,7 @@ open class Node: Object {
     /// > Note: Internal children can only be moved within their expected "internal range" (see `internal` parameter in ``addChild(node:forceReadableName:`internal`:)``).
     /// 
     public final func moveChild (childNode: Node?, toIndex: Int32) {
-        #if true
+        #if false
         
         var copy_to_index: Int = Int (toIndex)
         var copy_child_node_handle = childNode?.handle
@@ -1572,7 +1572,7 @@ open class Node: Object {
     
     @inline(__always)
     fileprivate final func set_owner (_ owner: Node?) {
-        #if true
+        #if false
         
         var copy_owner_handle = owner?.handle
         
@@ -1625,7 +1625,7 @@ open class Node: Object {
     /// 
     public final func getIndex (includeInternal: Bool = false)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_include_internal = includeInternal
         
@@ -1738,7 +1738,7 @@ open class Node: Object {
     
     @inline(__always)
     fileprivate final func set_scene_file_path (_ sceneFilePath: String) {
-        #if true
+        #if false
         
         let gstr_scene_file_path = GString (sceneFilePath)
         
@@ -1788,7 +1788,7 @@ open class Node: Object {
     
     /// Notifies the current node and all its children recursively by calling ``Object/notification(what:reversed:)`` on all of them.
     public final func propagateNotification (what: Int32) {
-        #if true
+        #if false
         
         var copy_what: Int = Int (what)
         
@@ -1820,7 +1820,7 @@ open class Node: Object {
     
     /// Calls the given method (if present) with the arguments given in `args` on this node and recursively on all its children. If the `parentFirst` argument is `true`, the method will be called on the current node first, then on all its children. If `parentFirst` is `false`, the children will be called first.
     public final func propagateCall (method: StringName, args: GArray = GArray (), parentFirst: Bool = false) {
-        #if true
+        #if false
         
         var copy_parent_first = parentFirst
         
@@ -1858,7 +1858,7 @@ open class Node: Object {
     
     /// Enables or disables physics (i.e. fixed framerate) processing. When a node is being processed, it will receive a ``notificationPhysicsProcess`` at a fixed (usually 60 FPS, see ``Engine/physicsTicksPerSecond`` to change) interval (and the ``_physicsProcess(delta:)`` callback will be called if exists). Enabled automatically if ``_physicsProcess(delta:)`` is overridden. Any calls to this before ``_ready()`` will be ignored.
     public final func setPhysicsProcess (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1944,7 +1944,7 @@ open class Node: Object {
     
     /// Enables or disables processing. When a node is being processed, it will receive a ``notificationProcess`` on every drawn frame (and the ``_process(delta:)`` callback will be called if exists). Enabled automatically if ``_process(delta:)`` is overridden. Any calls to this before ``_ready()`` will be ignored.
     public final func setProcess (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1976,7 +1976,7 @@ open class Node: Object {
     
     @inline(__always)
     fileprivate final func set_process_priority (_ priority: Int32) {
-        #if true
+        #if false
         
         var copy_priority: Int = Int (priority)
         
@@ -2026,7 +2026,7 @@ open class Node: Object {
     
     @inline(__always)
     fileprivate final func set_physics_process_priority (_ priority: Int32) {
-        #if true
+        #if false
         
         var copy_priority: Int = Int (priority)
         
@@ -2094,7 +2094,7 @@ open class Node: Object {
     
     /// Enables or disables input processing. This is not required for GUI controls! Enabled automatically if ``_input(event:)`` is overridden. Any calls to this before ``_ready()`` will be ignored.
     public final func setProcessInput (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2144,7 +2144,7 @@ open class Node: Object {
     
     /// Enables shortcut processing. Enabled automatically if ``_shortcutInput(event:)`` is overridden. Any calls to this before ``_ready()`` will be ignored.
     public final func setProcessShortcutInput (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2194,7 +2194,7 @@ open class Node: Object {
     
     /// Enables unhandled input processing. This is not required for GUI controls! It enables the node to receive all input that was not previously handled (usually by a ``Control``). Enabled automatically if ``_unhandledInput(event:)`` is overridden. Any calls to this before ``_ready()`` will be ignored.
     public final func setProcessUnhandledInput (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2244,7 +2244,7 @@ open class Node: Object {
     
     /// Enables unhandled key input processing. Enabled automatically if ``_unhandledKeyInput(event:)`` is overridden. Any calls to this before ``_ready()`` will be ignored.
     public final func setProcessUnhandledKeyInput (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2294,7 +2294,7 @@ open class Node: Object {
     
     @inline(__always)
     fileprivate final func set_process_mode (_ mode: Node.ProcessMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -2362,7 +2362,7 @@ open class Node: Object {
     
     @inline(__always)
     fileprivate final func set_process_thread_group (_ mode: Node.ProcessThreadGroup) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -2412,7 +2412,7 @@ open class Node: Object {
     
     @inline(__always)
     fileprivate final func set_process_thread_messages (_ flags: Node.ProcessThreadMessages) {
-        #if true
+        #if false
         
         var copy_flags = flags
         
@@ -2462,7 +2462,7 @@ open class Node: Object {
     
     @inline(__always)
     fileprivate final func set_process_thread_group_order (_ order: Int32) {
-        #if true
+        #if false
         
         var copy_order: Int = Int (order)
         
@@ -2512,7 +2512,7 @@ open class Node: Object {
     
     /// Sets the folded state of the node in the Scene dock. This method is only intended for use with editor tooling.
     public final func setDisplayFolded (fold: Bool) {
-        #if true
+        #if false
         
         var copy_fold = fold
         
@@ -2565,7 +2565,7 @@ open class Node: Object {
     /// > Warning: Built-in Nodes rely on the internal processing for their own logic, so changing this value from your code may lead to unexpected behavior. Script access to this internal logic is provided for specific advanced uses, but is unsafe and not supported.
     /// 
     public final func setProcessInternal (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2618,7 +2618,7 @@ open class Node: Object {
     /// > Warning: Built-in Nodes rely on the internal processing for their own logic, so changing this value from your code may lead to unexpected behavior. Script access to this internal logic is provided for specific advanced uses, but is unsafe and not supported.
     /// 
     public final func setPhysicsProcessInternal (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2749,7 +2749,7 @@ open class Node: Object {
     /// 
     public final func duplicate (flags: Int32 = 15)-> Node? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_flags: Int = Int (flags)
         
@@ -2789,7 +2789,7 @@ open class Node: Object {
     /// > Note: The replaced node is not automatically freed, so you either need to keep it in a variable for later use or free it using ``Object/free()``.
     /// 
     public final func replaceBy (node: Node?, keepGroups: Bool = false) {
-        #if true
+        #if false
         
         var copy_keep_groups = keepGroups
         var copy_node_handle = node?.handle
@@ -2825,7 +2825,7 @@ open class Node: Object {
     
     /// Sets whether this is an instance load placeholder. See ``InstancePlaceholder``.
     public final func setSceneInstanceLoadPlaceholder (_ loadPlaceholder: Bool) {
-        #if true
+        #if false
         
         var copy_load_placeholder = loadPlaceholder
         
@@ -2875,7 +2875,7 @@ open class Node: Object {
     
     /// Sets the editable children state of `node` relative to this node. This method is only intended for use with editor tooling.
     public final func setEditableInstance (node: Node?, isEditable: Bool) {
-        #if true
+        #if false
         
         var copy_is_editable = isEditable
         var copy_node_handle = node?.handle
@@ -2912,7 +2912,7 @@ open class Node: Object {
     /// Returns `true` if `node` has editable children enabled relative to this node. This method is only intended for use with editor tooling.
     public final func isEditableInstance (node: Node?)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -3023,7 +3023,7 @@ open class Node: Object {
     /// > Warning: This does **not** automatically replicate the new authority to other peers. It is developer's responsibility to do so. You can propagate the information about the new authority using ``MultiplayerSpawner/spawnFunction``, an RPC, or using a ``MultiplayerSynchronizer``. Also, the parent's authority does **not** propagate to newly added children.
     /// 
     public final func setMultiplayerAuthority (id: Int32, recursive: Bool = true) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_recursive = recursive
@@ -3117,7 +3117,7 @@ open class Node: Object {
     /// See ``MultiplayerAPI.RPCMode`` and ``MultiplayerPeer.TransferMode``. An alternative is annotating methods and properties with the corresponding [annotation @GDScript.@rpc] annotation (`@rpc("any_peer")`, `@rpc("authority")`). By default, methods are not exposed to networking (and RPCs).
     /// 
     public final func rpcConfig (method: StringName, config: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Node.method_rpc_config, UnsafeMutableRawPointer (mutating: handle), nil, &method.content, &config.content)
@@ -3150,7 +3150,7 @@ open class Node: Object {
     
     @inline(__always)
     fileprivate final func set_editor_description (_ editorDescription: String) {
-        #if true
+        #if false
         
         let gstr_editor_description = GString (editorDescription)
         
@@ -3200,7 +3200,7 @@ open class Node: Object {
     
     @inline(__always)
     fileprivate final func set_unique_name_in_owner (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3400,7 +3400,7 @@ open class Node: Object {
     
     /// Similar to ``callDeferredThreadGroup(method:)``, but for setting properties.
     public final func setDeferredThreadGroup (property: StringName, value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Node.method_set_deferred_thread_group, UnsafeMutableRawPointer (mutating: handle), nil, &property.content, &value.content)
@@ -3433,7 +3433,7 @@ open class Node: Object {
     
     /// Similar to ``callDeferredThreadGroup(method:)``, but for notifications.
     public final func notifyDeferredThreadGroup (what: Int32) {
-        #if true
+        #if false
         
         var copy_what: Int = Int (what)
         
@@ -3506,7 +3506,7 @@ open class Node: Object {
     
     /// Similar to ``callThreadSafe(method:)``, but for setting properties.
     public final func setThreadSafe (property: StringName, value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Node.method_set_thread_safe, UnsafeMutableRawPointer (mutating: handle), nil, &property.content, &value.content)
@@ -3539,7 +3539,7 @@ open class Node: Object {
     
     /// Similar to ``callThreadSafe(method:)``, but for notifications.
     public final func notifyThreadSafe (what: Int32) {
-        #if true
+        #if false
         
         var copy_what: Int = Int (what)
         

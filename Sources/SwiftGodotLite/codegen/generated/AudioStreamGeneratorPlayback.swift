@@ -25,7 +25,7 @@ open class AudioStreamGeneratorPlayback: AudioStreamPlaybackResampled {
     /// Pushes a single audio data frame to the buffer. This is usually less efficient than ``pushBuffer(frames:)`` in C# and compiled languages via GDExtension, but ``pushFrame(_:)`` may be _more_ efficient in GDScript.
     public final func pushFrame (_ frame: Vector2)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_frame = frame
         
@@ -59,7 +59,7 @@ open class AudioStreamGeneratorPlayback: AudioStreamPlaybackResampled {
     /// Returns `true` if a buffer of the size `amount` can be pushed to the audio sample data buffer without overflowing it, `false` otherwise.
     public final func canPushBuffer (amount: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -93,7 +93,7 @@ open class AudioStreamGeneratorPlayback: AudioStreamPlaybackResampled {
     /// Pushes several audio data frames to the buffer. This is usually more efficient than ``pushFrame(_:)`` in C# and compiled languages via GDExtension, but ``pushBuffer(frames:)`` may be _less_ efficient in GDScript.
     public final func pushBuffer (frames: PackedVector2Array)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AudioStreamGeneratorPlayback.method_push_buffer, UnsafeMutableRawPointer (mutating: handle), &_result, &frames.content)

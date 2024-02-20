@@ -149,7 +149,7 @@ open class World3D: Resource {
     
     @inline(__always)
     fileprivate final func set_environment (_ env: Environment?) {
-        #if true
+        #if false
         
         var copy_env_handle = env?.handle
         
@@ -198,7 +198,7 @@ open class World3D: Resource {
     
     @inline(__always)
     fileprivate final func set_fallback_environment (_ env: Environment?) {
-        #if true
+        #if false
         
         var copy_env_handle = env?.handle
         
@@ -247,7 +247,7 @@ open class World3D: Resource {
     
     @inline(__always)
     fileprivate final func set_camera_attributes (_ attributes: CameraAttributes?) {
-        #if true
+        #if false
         
         var copy_attributes_handle = attributes?.handle
         

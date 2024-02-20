@@ -169,7 +169,7 @@ open class TextureButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_texture_normal (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -200,7 +200,7 @@ open class TextureButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_texture_pressed (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -231,7 +231,7 @@ open class TextureButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_texture_hover (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -262,7 +262,7 @@ open class TextureButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_texture_disabled (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -293,7 +293,7 @@ open class TextureButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_texture_focused (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -324,7 +324,7 @@ open class TextureButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_click_mask (_ mask: BitMap?) {
-        #if true
+        #if false
         
         var copy_mask_handle = mask?.handle
         
@@ -355,7 +355,7 @@ open class TextureButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_ignore_texture_size (_ ignore: Bool) {
-        #if true
+        #if false
         
         var copy_ignore = ignore
         
@@ -387,7 +387,7 @@ open class TextureButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_stretch_mode (_ mode: TextureButton.StretchMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -419,7 +419,7 @@ open class TextureButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_flip_h (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -469,7 +469,7 @@ open class TextureButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_flip_v (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

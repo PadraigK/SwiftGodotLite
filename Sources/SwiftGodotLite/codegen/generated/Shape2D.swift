@@ -45,7 +45,7 @@ open class Shape2D: Resource {
     
     @inline(__always)
     fileprivate final func set_custom_solver_bias (_ bias: Double) {
-        #if true
+        #if false
         
         var copy_bias = bias
         
@@ -99,7 +99,7 @@ open class Shape2D: Resource {
     /// 
     public final func collide (localXform: Transform2D, withShape: Shape2D?, shapeXform: Transform2D)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_local_xform = localXform
         var copy_shape_xform = shapeXform
@@ -145,7 +145,7 @@ open class Shape2D: Resource {
     /// 
     public final func collideWithMotion (localXform: Transform2D, localMotion: Vector2, withShape: Shape2D?, shapeXform: Transform2D, shapeMotion: Vector2)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_local_xform = localXform
         var copy_local_motion = localMotion
@@ -205,7 +205,7 @@ open class Shape2D: Resource {
     /// 
     public final func collideAndGetContacts (localXform: Transform2D, withShape: Shape2D?, shapeXform: Transform2D)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_local_xform = localXform
         var copy_shape_xform = shapeXform
@@ -255,7 +255,7 @@ open class Shape2D: Resource {
     /// 
     public final func collideWithMotionAndGetContacts (localXform: Transform2D, localMotion: Vector2, withShape: Shape2D?, shapeXform: Transform2D, shapeMotion: Vector2)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_local_xform = localXform
         var copy_local_motion = localMotion
@@ -307,7 +307,7 @@ open class Shape2D: Resource {
     
     /// Draws a solid shape onto a ``CanvasItem`` with the ``RenderingServer`` API filled with the specified `color`. The exact drawing method is specific for each shape and cannot be configured.
     public final func draw (canvasItem: RID, color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         

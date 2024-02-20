@@ -150,7 +150,7 @@ open class NavigationPathQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_pathfinding_algorithm (_ pathfindingAlgorithm: NavigationPathQueryParameters2D.PathfindingAlgorithm) {
-        #if true
+        #if false
         
         var copy_pathfinding_algorithm = Int64 (pathfindingAlgorithm.rawValue)
         
@@ -200,7 +200,7 @@ open class NavigationPathQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_path_postprocessing (_ pathPostprocessing: NavigationPathQueryParameters2D.PathPostProcessing) {
-        #if true
+        #if false
         
         var copy_path_postprocessing = Int64 (pathPostprocessing.rawValue)
         
@@ -250,7 +250,7 @@ open class NavigationPathQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_map (_ map: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationPathQueryParameters2D.method_set_map, UnsafeMutableRawPointer (mutating: handle), nil, &map.content)
@@ -298,7 +298,7 @@ open class NavigationPathQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_start_position (_ startPosition: Vector2) {
-        #if true
+        #if false
         
         var copy_start_position = startPosition
         
@@ -348,7 +348,7 @@ open class NavigationPathQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_target_position (_ targetPosition: Vector2) {
-        #if true
+        #if false
         
         var copy_target_position = targetPosition
         
@@ -398,7 +398,7 @@ open class NavigationPathQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_navigation_layers (_ navigationLayers: UInt32) {
-        #if true
+        #if false
         
         var copy_navigation_layers: Int = Int (navigationLayers)
         
@@ -448,7 +448,7 @@ open class NavigationPathQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_metadata_flags (_ flags: NavigationPathQueryParameters2D.PathMetadataFlags) {
-        #if true
+        #if false
         
         var copy_flags = flags
         

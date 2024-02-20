@@ -810,7 +810,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_world_2d (_ world2d: World2D?) {
-        #if true
+        #if false
         
         var copy_world_2d_handle = world2d?.handle
         
@@ -877,7 +877,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_canvas_transform (_ xform: Transform2D) {
-        #if true
+        #if false
         
         var copy_xform = xform
         
@@ -927,7 +927,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_global_canvas_transform (_ xform: Transform2D) {
-        #if true
+        #if false
         
         var copy_xform = xform
         
@@ -1031,7 +1031,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_transparent_background (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1081,7 +1081,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_use_hdr_2d (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1131,7 +1131,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_msaa_2d (_ msaa: Viewport.MSAA) {
-        #if true
+        #if false
         
         var copy_msaa = Int64 (msaa.rawValue)
         
@@ -1181,7 +1181,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_msaa_3d (_ msaa: Viewport.MSAA) {
-        #if true
+        #if false
         
         var copy_msaa = Int64 (msaa.rawValue)
         
@@ -1231,7 +1231,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_screen_space_aa (_ screenSpaceAa: Viewport.ScreenSpaceAA) {
-        #if true
+        #if false
         
         var copy_screen_space_aa = Int64 (screenSpaceAa.rawValue)
         
@@ -1281,7 +1281,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_use_taa (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1331,7 +1331,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_use_debanding (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1381,7 +1381,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_use_occlusion_culling (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1431,7 +1431,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_debug_draw (_ debugDraw: Viewport.DebugDraw) {
-        #if true
+        #if false
         
         var copy_debug_draw = Int64 (debugDraw.rawValue)
         
@@ -1482,7 +1482,7 @@ open class Viewport: Node {
     /// Returns rendering statistics of the given type. See ``Viewport/RenderInfoType`` and ``Viewport/RenderInfo`` for options.
     public final func getRenderInfo (type: Viewport.RenderInfoType, info: Viewport.RenderInfo)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_info = Int64 (info.rawValue)
@@ -1541,7 +1541,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_physics_object_picking (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1591,7 +1591,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_physics_object_picking_sort (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1659,7 +1659,7 @@ open class Viewport: Node {
     
     /// Helper method which calls the `set_text()` method on the currently focused ``Control``, provided that it is defined (e.g. if the focused Control is ``Button`` or ``LineEdit``).
     public final func pushTextInput (text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -1712,7 +1712,7 @@ open class Viewport: Node {
     /// If none of the methods handle the event and ``physicsObjectPicking`` is `true`, the event is used for physics object picking.
     /// 
     public final func pushInput (event: InputEvent?, inLocalCoords: Bool = false) {
-        #if true
+        #if false
         
         var copy_in_local_coords = inLocalCoords
         var copy_event_handle = event?.handle
@@ -1769,7 +1769,7 @@ open class Viewport: Node {
     /// _Deprecated._ Use ``pushInput(event:inLocalCoords:)`` instead.
     /// 
     public final func pushUnhandledInput (event: InputEvent?, inLocalCoords: Bool = false) {
-        #if true
+        #if false
         
         var copy_in_local_coords = inLocalCoords
         var copy_event_handle = event?.handle
@@ -1823,7 +1823,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_as_audio_listener_2d (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1894,7 +1894,7 @@ open class Viewport: Node {
     /// > Note: ``warpMouse(position:)`` is only supported on Windows, macOS and Linux. It has no effect on Android, iOS and Web.
     /// 
     public final func warpMouse (position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -2033,7 +2033,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_disable_input (_ disable: Bool) {
-        #if true
+        #if false
         
         var copy_disable = disable
         
@@ -2083,7 +2083,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_positional_shadow_atlas_size (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -2133,7 +2133,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_positional_shadow_atlas_16_bits (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2183,7 +2183,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_snap_controls_to_pixels (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2233,7 +2233,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_snap_2d_transforms_to_pixel (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2283,7 +2283,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_snap_2d_vertices_to_pixel (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2334,7 +2334,7 @@ open class Viewport: Node {
     @inline(__always)
     /// Sets the number of subdivisions to use in the specified quadrant. A higher number of subdivisions allows you to have more shadows in the scene at once, but reduces the quality of the shadows. A good practice is to have quadrants with a varying number of subdivisions and to have as few subdivisions as possible.
     fileprivate final func set_positional_shadow_atlas_quadrant_subdiv (_ quadrant: Int32, _ subdiv: Viewport.PositionalShadowAtlasQuadrantSubdiv) {
-        #if true
+        #if false
         
         var copy_quadrant: Int = Int (quadrant)
         var copy_subdiv = Int64 (subdiv.rawValue)
@@ -2373,7 +2373,7 @@ open class Viewport: Node {
     /// Returns the ``Viewport/PositionalShadowAtlasQuadrantSubdiv`` of the specified quadrant.
     fileprivate final func get_positional_shadow_atlas_quadrant_subdiv (_ quadrant: Int32)-> Viewport.PositionalShadowAtlasQuadrantSubdiv {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_quadrant: Int = Int (quadrant)
         
@@ -2448,7 +2448,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_handle_input_locally (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2498,7 +2498,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_default_canvas_item_texture_filter (_ mode: Viewport.DefaultCanvasItemTextureFilter) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -2548,7 +2548,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_embedding_subwindows (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2619,7 +2619,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_canvas_cull_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -2669,7 +2669,7 @@ open class Viewport: Node {
     
     /// Set/clear individual bits on the rendering layer mask. This simplifies editing this ``Viewport``'s layers.
     public final func setCanvasCullMaskBit (layer: UInt32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_enable = enable
@@ -2707,7 +2707,7 @@ open class Viewport: Node {
     /// Returns an individual bit on the rendering layer mask.
     public final func getCanvasCullMaskBit (layer: UInt32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -2740,7 +2740,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_default_canvas_item_texture_repeat (_ mode: Viewport.DefaultCanvasItemTextureRepeat) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -2790,7 +2790,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_sdf_oversize (_ oversize: Viewport.SDFOversize) {
-        #if true
+        #if false
         
         var copy_oversize = Int64 (oversize.rawValue)
         
@@ -2840,7 +2840,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_sdf_scale (_ scale: Viewport.SDFScale) {
-        #if true
+        #if false
         
         var copy_scale = Int64 (scale.rawValue)
         
@@ -2890,7 +2890,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_mesh_lod_threshold (_ pixels: Double) {
-        #if true
+        #if false
         
         var copy_pixels = pixels
         
@@ -2940,7 +2940,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_world_3d (_ world3d: World3D?) {
-        #if true
+        #if false
         
         var copy_world_3d_handle = world3d?.handle
         
@@ -3007,7 +3007,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_use_own_world_3d (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3075,7 +3075,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_as_audio_listener_3d (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3125,7 +3125,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_disable_3d (_ disable: Bool) {
-        #if true
+        #if false
         
         var copy_disable = disable
         
@@ -3175,7 +3175,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_use_xr (_ use: Bool) {
-        #if true
+        #if false
         
         var copy_use = use
         
@@ -3225,7 +3225,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_scaling_3d_mode (_ scaling3dMode: Viewport.Scaling3DMode) {
-        #if true
+        #if false
         
         var copy_scaling_3d_mode = Int64 (scaling3dMode.rawValue)
         
@@ -3275,7 +3275,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_scaling_3d_scale (_ scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -3325,7 +3325,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_fsr_sharpness (_ fsrSharpness: Double) {
-        #if true
+        #if false
         
         var copy_fsr_sharpness = fsrSharpness
         
@@ -3375,7 +3375,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_texture_mipmap_bias (_ textureMipmapBias: Double) {
-        #if true
+        #if false
         
         var copy_texture_mipmap_bias = textureMipmapBias
         
@@ -3425,7 +3425,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_vrs_mode (_ mode: Viewport.VRSMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -3475,7 +3475,7 @@ open class Viewport: Node {
     
     @inline(__always)
     fileprivate final func set_vrs_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         

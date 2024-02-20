@@ -147,7 +147,7 @@ open class AnimationNodeOneShot: AnimationNodeSync {
     
     @inline(__always)
     fileprivate final func set_fadein_time (_ time: Double) {
-        #if true
+        #if false
         
         var copy_time = time
         
@@ -197,7 +197,7 @@ open class AnimationNodeOneShot: AnimationNodeSync {
     
     @inline(__always)
     fileprivate final func set_fadein_curve (_ curve: Curve?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         
@@ -246,7 +246,7 @@ open class AnimationNodeOneShot: AnimationNodeSync {
     
     @inline(__always)
     fileprivate final func set_fadeout_time (_ time: Double) {
-        #if true
+        #if false
         
         var copy_time = time
         
@@ -296,7 +296,7 @@ open class AnimationNodeOneShot: AnimationNodeSync {
     
     @inline(__always)
     fileprivate final func set_fadeout_curve (_ curve: Curve?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         
@@ -345,7 +345,7 @@ open class AnimationNodeOneShot: AnimationNodeSync {
     
     @inline(__always)
     fileprivate final func set_autorestart (_ active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         
@@ -395,7 +395,7 @@ open class AnimationNodeOneShot: AnimationNodeSync {
     
     @inline(__always)
     fileprivate final func set_autorestart_delay (_ time: Double) {
-        #if true
+        #if false
         
         var copy_time = time
         
@@ -445,7 +445,7 @@ open class AnimationNodeOneShot: AnimationNodeSync {
     
     @inline(__always)
     fileprivate final func set_autorestart_random_delay (_ time: Double) {
-        #if true
+        #if false
         
         var copy_time = time
         
@@ -495,7 +495,7 @@ open class AnimationNodeOneShot: AnimationNodeSync {
     
     @inline(__always)
     fileprivate final func set_mix_mode (_ mode: AnimationNodeOneShot.MixMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

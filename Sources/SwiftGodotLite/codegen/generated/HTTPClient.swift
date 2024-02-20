@@ -257,7 +257,7 @@ open class HTTPClient: RefCounted {
     /// 
     public final func connectToHost (_ host: String, port: Int32 = -1, tlsOptions: TLSOptions? = nil)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_host = GString (host)
         var copy_port: Int = Int (port)
@@ -299,7 +299,7 @@ open class HTTPClient: RefCounted {
     
     @inline(__always)
     fileprivate final func set_connection (_ connection: StreamPeer?) {
-        #if true
+        #if false
         
         var copy_connection_handle = connection?.handle
         
@@ -356,7 +356,7 @@ open class HTTPClient: RefCounted {
     /// 
     public final func requestRaw (method: HTTPClient.Method, url: String, headers: PackedStringArray, body: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_method = Int64 (method.rawValue)
         let gstr_url = GString (url)
@@ -410,7 +410,7 @@ open class HTTPClient: RefCounted {
     /// 
     public final func request (method: HTTPClient.Method, url: String, headers: PackedStringArray, body: String = "")-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_method = Int64 (method.rawValue)
         let gstr_url = GString (url)
@@ -606,7 +606,7 @@ open class HTTPClient: RefCounted {
     
     @inline(__always)
     fileprivate final func set_read_chunk_size (_ bytes: Int32) {
-        #if true
+        #if false
         
         var copy_bytes: Int = Int (bytes)
         
@@ -656,7 +656,7 @@ open class HTTPClient: RefCounted {
     
     @inline(__always)
     fileprivate final func set_blocking_mode (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -745,7 +745,7 @@ open class HTTPClient: RefCounted {
     /// The proxy server is unset if `host` is empty or `port` is -1.
     /// 
     public final func setHttpProxy (host: String, port: Int32) {
-        #if true
+        #if false
         
         let gstr_host = GString (host)
         var copy_port: Int = Int (port)
@@ -785,7 +785,7 @@ open class HTTPClient: RefCounted {
     /// The proxy server is unset if `host` is empty or `port` is -1.
     /// 
     public final func setHttpsProxy (host: String, port: Int32) {
-        #if true
+        #if false
         
         let gstr_host = GString (host)
         var copy_port: Int = Int (port)
@@ -826,7 +826,7 @@ open class HTTPClient: RefCounted {
     /// 
     public final func queryStringFromDict (fields: GDictionary)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (HTTPClient.method_query_string_from_dict, UnsafeMutableRawPointer (mutating: handle), &_result.content, &fields.content)

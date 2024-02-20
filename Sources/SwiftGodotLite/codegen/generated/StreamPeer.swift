@@ -43,7 +43,7 @@ open class StreamPeer: RefCounted {
     /// Sends a chunk of data through the connection, blocking if necessary until the data is done sending. This function returns an ``GodotError`` code.
     public final func putData (_ data: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (StreamPeer.method_put_data, UnsafeMutableRawPointer (mutating: handle), &_result, &data.content)
@@ -75,7 +75,7 @@ open class StreamPeer: RefCounted {
     /// Sends a chunk of data through the connection. If all the data could not be sent at once, only part of it will. This function returns two values, an ``GodotError`` code and an integer, describing how much data was actually sent.
     public final func putPartialData (_ data: PackedByteArray)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (StreamPeer.method_put_partial_data, UnsafeMutableRawPointer (mutating: handle), &_result.content, &data.content)
@@ -107,7 +107,7 @@ open class StreamPeer: RefCounted {
     /// Returns a chunk data with the received bytes. The number of bytes to be received can be requested in the `bytes` argument. If not enough bytes are available, the function will block until the desired amount is received. This function returns two values, an ``GodotError`` code and a data array.
     public final func getData (bytes: Int32)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_bytes: Int = Int (bytes)
         
@@ -141,7 +141,7 @@ open class StreamPeer: RefCounted {
     /// Returns a chunk data with the received bytes. The number of bytes to be received can be requested in the "bytes" argument. If not enough bytes are available, the function will return how many were actually received. This function returns two values, an ``GodotError`` code, and a data array.
     public final func getPartialData (bytes: Int32)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_bytes: Int = Int (bytes)
         
@@ -192,7 +192,7 @@ open class StreamPeer: RefCounted {
     
     @inline(__always)
     fileprivate final func set_big_endian (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -242,7 +242,7 @@ open class StreamPeer: RefCounted {
     
     /// Puts a signed byte into the stream.
     public final func put8 (value: Int8) {
-        #if true
+        #if false
         
         var copy_value: Int = Int (value)
         
@@ -274,7 +274,7 @@ open class StreamPeer: RefCounted {
     
     /// Puts an unsigned byte into the stream.
     public final func putU8 (value: UInt8) {
-        #if true
+        #if false
         
         var copy_value: Int = Int (value)
         
@@ -306,7 +306,7 @@ open class StreamPeer: RefCounted {
     
     /// Puts a signed 16-bit value into the stream.
     public final func put16 (value: Int16) {
-        #if true
+        #if false
         
         var copy_value: Int = Int (value)
         
@@ -338,7 +338,7 @@ open class StreamPeer: RefCounted {
     
     /// Puts an unsigned 16-bit value into the stream.
     public final func putU16 (value: UInt16) {
-        #if true
+        #if false
         
         var copy_value: Int = Int (value)
         
@@ -370,7 +370,7 @@ open class StreamPeer: RefCounted {
     
     /// Puts a signed 32-bit value into the stream.
     public final func put32 (value: Int32) {
-        #if true
+        #if false
         
         var copy_value: Int = Int (value)
         
@@ -402,7 +402,7 @@ open class StreamPeer: RefCounted {
     
     /// Puts an unsigned 32-bit value into the stream.
     public final func putU32 (value: UInt32) {
-        #if true
+        #if false
         
         var copy_value: Int = Int (value)
         
@@ -434,7 +434,7 @@ open class StreamPeer: RefCounted {
     
     /// Puts a signed 64-bit value into the stream.
     public final func put64 (value: Int) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -466,7 +466,7 @@ open class StreamPeer: RefCounted {
     
     /// Puts an unsigned 64-bit value into the stream.
     public final func putU64 (value: UInt) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -498,7 +498,7 @@ open class StreamPeer: RefCounted {
     
     /// Puts a single-precision float into the stream.
     public final func putFloat (value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -530,7 +530,7 @@ open class StreamPeer: RefCounted {
     
     /// Puts a double-precision float into the stream.
     public final func putDouble (value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -565,7 +565,7 @@ open class StreamPeer: RefCounted {
     /// > Note: To put an ASCII string without prepending its size, you can use ``putData(_:)``:
     /// 
     public final func putString (value: String) {
-        #if true
+        #if false
         
         let gstr_value = GString (value)
         
@@ -600,7 +600,7 @@ open class StreamPeer: RefCounted {
     /// > Note: To put a UTF-8 string without prepending its size, you can use ``putData(_:)``:
     /// 
     public final func putUtf8String (value: String) {
-        #if true
+        #if false
         
         let gstr_value = GString (value)
         
@@ -635,7 +635,7 @@ open class StreamPeer: RefCounted {
     /// Internally, this uses the same encoding mechanism as the ``@GlobalScope.var_to_bytes`` method.
     /// 
     public final func putVar (value: Variant, fullObjects: Bool = false) {
-        #if true
+        #if false
         
         var copy_full_objects = fullObjects
         
@@ -851,7 +851,7 @@ open class StreamPeer: RefCounted {
     /// Gets an ASCII string with byte-length `bytes` from the stream. If `bytes` is negative (default) the length will be read from the stream using the reverse process of ``putString(value:)``.
     public final func getString (bytes: Int32 = -1)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_bytes: Int = Int (bytes)
         
@@ -885,7 +885,7 @@ open class StreamPeer: RefCounted {
     /// Gets a UTF-8 string with byte-length `bytes` from the stream (this decodes the string sent as UTF-8). If `bytes` is negative (default) the length will be read from the stream using the reverse process of ``putUtf8String(value:)``.
     public final func getUtf8String (bytes: Int32 = -1)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_bytes: Int = Int (bytes)
         
@@ -924,7 +924,7 @@ open class StreamPeer: RefCounted {
     /// 
     public final func getVar (allowObjects: Bool = false)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_allow_objects = allowObjects
         

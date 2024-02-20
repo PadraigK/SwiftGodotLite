@@ -75,7 +75,7 @@ open class DampedSpringJoint2D: Joint2D {
     
     @inline(__always)
     fileprivate final func set_length (_ length: Double) {
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -125,7 +125,7 @@ open class DampedSpringJoint2D: Joint2D {
     
     @inline(__always)
     fileprivate final func set_rest_length (_ restLength: Double) {
-        #if true
+        #if false
         
         var copy_rest_length = restLength
         
@@ -175,7 +175,7 @@ open class DampedSpringJoint2D: Joint2D {
     
     @inline(__always)
     fileprivate final func set_stiffness (_ stiffness: Double) {
-        #if true
+        #if false
         
         var copy_stiffness = stiffness
         
@@ -225,7 +225,7 @@ open class DampedSpringJoint2D: Joint2D {
     
     @inline(__always)
     fileprivate final func set_damping (_ damping: Double) {
-        #if true
+        #if false
         
         var copy_damping = damping
         

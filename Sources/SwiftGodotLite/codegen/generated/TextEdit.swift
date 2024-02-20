@@ -671,7 +671,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_editable (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -721,7 +721,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_text_direction (_ direction: Control.TextDirection) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -771,7 +771,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_language (_ language: String) {
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -821,7 +821,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_structured_text_bidi_override (_ parser: TextServer.StructuredTextParser) {
-        #if true
+        #if false
         
         var copy_parser = Int64 (parser.rawValue)
         
@@ -871,7 +871,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_structured_text_bidi_override_options (_ args: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextEdit.method_set_structured_text_bidi_override_options, UnsafeMutableRawPointer (mutating: handle), nil, &args.content)
@@ -919,7 +919,7 @@ open class TextEdit: Control {
     
     /// Sets the tab size for the ``TextEdit`` to use.
     public final func setTabSize (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -969,7 +969,7 @@ open class TextEdit: Control {
     
     /// If `true`, sets the user into overtype mode. When the user types in this mode, it will override existing text.
     public final func setOvertypeModeEnabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1019,7 +1019,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_context_menu_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1069,7 +1069,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_shortcut_keys_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1119,7 +1119,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_virtual_keyboard_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1169,7 +1169,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_middle_mouse_paste_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1235,7 +1235,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_text (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -1303,7 +1303,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_placeholder (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -1353,7 +1353,7 @@ open class TextEdit: Control {
     
     /// Sets the text for a specific line.
     public final func setLine (_ line: Int32, newText: String) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         let gstr_new_text = GString (newText)
@@ -1391,7 +1391,7 @@ open class TextEdit: Control {
     /// Returns the text of a specific line.
     public final func getLine (_ line: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1425,7 +1425,7 @@ open class TextEdit: Control {
     /// Returns the width in pixels of the `wrapIndex` on `line`.
     public final func getLineWidth (line: Int32, wrapIndex: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_wrap_index: Int = Int (wrapIndex)
@@ -1485,7 +1485,7 @@ open class TextEdit: Control {
     /// Returns the number of spaces and `tab * tab_size` before the first char.
     public final func getIndentLevel (line: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1519,7 +1519,7 @@ open class TextEdit: Control {
     /// Returns the first column containing a non-whitespace character.
     public final func getFirstNonWhitespaceColumn (line: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1552,7 +1552,7 @@ open class TextEdit: Control {
     
     /// Swaps the two lines.
     public final func swapLines (fromLine: Int32, toLine: Int32) {
-        #if true
+        #if false
         
         var copy_from_line: Int = Int (fromLine)
         var copy_to_line: Int = Int (toLine)
@@ -1589,7 +1589,7 @@ open class TextEdit: Control {
     
     /// Inserts a new line with `text` at `line`.
     public final func insertLineAt (line: Int32, text: String) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         let gstr_text = GString (text)
@@ -1626,7 +1626,7 @@ open class TextEdit: Control {
     
     /// Insert the specified text at the caret position.
     public final func insertTextAtCaret (text: String, caretIndex: Int32 = -1) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         var copy_caret_index: Int = Int (caretIndex)
@@ -1666,7 +1666,7 @@ open class TextEdit: Control {
     /// > Note: This does not adjust the caret or selection, which as a result it can end up in an invalid position.
     /// 
     public final func removeText (fromLine: Int32, fromColumn: Int32, toLine: Int32, toColumn: Int32) {
-        #if true
+        #if false
         
         var copy_from_line: Int = Int (fromLine)
         var copy_from_column: Int = Int (fromColumn)
@@ -1732,7 +1732,7 @@ open class TextEdit: Control {
     /// Returns the count to the next visible line from `line` to `line + visible_amount`. Can also count backwards. For example if a ``TextEdit`` has 5 lines with lines 2 and 3 hidden, calling this with `line = 1, visible_amount = 1` would return 3.
     public final func getNextVisibleLineOffsetFrom (line: Int32, visibleAmount: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_visible_amount: Int = Int (visibleAmount)
@@ -1771,7 +1771,7 @@ open class TextEdit: Control {
     /// Similar to ``getNextVisibleLineOffsetFrom(line:visibleAmount:)``, but takes into account the line wrap indexes. In the returned vector, `x` is the line, `y` is the wrap index.
     public final func getNextVisibleLineIndexOffsetFrom (line: Int32, wrapIndex: Int32, visibleAmount: Int32)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_wrap_index: Int = Int (wrapIndex)
@@ -1814,7 +1814,7 @@ open class TextEdit: Control {
     
     /// Called when the user presses the backspace key. Can be overridden with ``_backspace(caretIndex:)``.
     public final func backspace (caretIndex: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -1846,7 +1846,7 @@ open class TextEdit: Control {
     
     /// Cut's the current selection. Can be overridden with ``_cut(caretIndex:)``.
     public final func cut (caretIndex: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -1878,7 +1878,7 @@ open class TextEdit: Control {
     
     /// Copies the current text selection. Can be overridden with ``_copy(caretIndex:)``.
     public final func copy (caretIndex: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -1910,7 +1910,7 @@ open class TextEdit: Control {
     
     /// Paste at the current location. Can be overridden with ``_paste(caretIndex:)``.
     public final func paste (caretIndex: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -1942,7 +1942,7 @@ open class TextEdit: Control {
     
     /// Pastes the primary clipboard.
     public final func pastePrimaryClipboard (caretIndex: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -1977,7 +1977,7 @@ open class TextEdit: Control {
     /// An action will also end after a call to ``endAction()``, after ``ProjectSettings/gui/timers/textEditIdleDetectSec`` is triggered or a new undoable step outside the ``startAction(_:)`` and ``endAction()`` calls.
     /// 
     public final func startAction (_ action: TextEdit.EditAction) {
-        #if true
+        #if false
         
         var copy_action = Int64 (action.rawValue)
         
@@ -2193,7 +2193,7 @@ open class TextEdit: Control {
     
     /// Sets the search text. See ``setSearchFlags(_:)``.
     public final func setSearchText (_ searchText: String) {
-        #if true
+        #if false
         
         let gstr_search_text = GString (searchText)
         
@@ -2225,7 +2225,7 @@ open class TextEdit: Control {
     
     /// Sets the search `flags`. This is used with ``setSearchText(_:)`` to highlight occurrences of the searched text. Search flags can be specified from the ``TextEdit/SearchFlags`` enum.
     public final func setSearchFlags (_ flags: UInt32) {
-        #if true
+        #if false
         
         var copy_flags: Int = Int (flags)
         
@@ -2261,7 +2261,7 @@ open class TextEdit: Control {
     /// 
     public final func search (text: String, flags: UInt32, fromLine: Int32, fromColum: Int32)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         var copy_flags: Int = Int (flags)
@@ -2309,7 +2309,7 @@ open class TextEdit: Control {
     
     /// Provide custom tooltip text. The callback method must take the following args: `hovered_word: String`.
     public final func setTooltipRequestFunc (callback: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextEdit.method_set_tooltip_request_func, UnsafeMutableRawPointer (mutating: handle), nil, &callback.content)
@@ -2358,7 +2358,7 @@ open class TextEdit: Control {
     /// Returns the word at `position`.
     public final func getWordAtPos (position: Vector2)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -2392,7 +2392,7 @@ open class TextEdit: Control {
     /// Returns the line and column at the given position. In the returned vector, `x` is the column, `y` is the line. If `allowOutOfBounds` is `false` and the position is not over the text, both vector values will be set to `-1`.
     public final func getLineColumnAtPos (position: Vector2i, allowOutOfBounds: Bool = true)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_position = position
         var copy_allow_out_of_bounds = allowOutOfBounds
@@ -2434,7 +2434,7 @@ open class TextEdit: Control {
     /// 
     public final func getPosAtLineColumn (line: Int32, column: Int32)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_column: Int = Int (column)
@@ -2476,7 +2476,7 @@ open class TextEdit: Control {
     /// 
     public final func getRectAtLineColumn (line: Int32, column: Int32)-> Rect2i {
         var _result: Rect2i = Rect2i ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_column: Int = Int (column)
@@ -2515,7 +2515,7 @@ open class TextEdit: Control {
     /// Returns the equivalent minimap line at `position`.
     public final func getMinimapLineAtPos (position: Vector2i)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -2567,7 +2567,7 @@ open class TextEdit: Control {
     /// Returns whether the mouse is over selection. If `edges` is `true`, the edges are considered part of the selection.
     public final func isMouseOverSelection (edges: Bool, caretIndex: Int32 = -1)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_edges = edges
         var copy_caret_index: Int = Int (caretIndex)
@@ -2605,7 +2605,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_caret_type (_ type: TextEdit.CaretType) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -2655,7 +2655,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_caret_blink_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2705,7 +2705,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_caret_blink_interval (_ interval: Double) {
-        #if true
+        #if false
         
         var copy_interval = interval
         
@@ -2755,7 +2755,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_draw_caret_when_editable_disabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2805,7 +2805,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_move_caret_on_right_click_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2855,7 +2855,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_caret_mid_grapheme_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2905,7 +2905,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_multiple_carets_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2956,7 +2956,7 @@ open class TextEdit: Control {
     /// Adds a new caret at the given location. Returns the index of the new caret, or `-1` if the location is invalid.
     public final func addCaret (line: Int32, col: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_col: Int = Int (col)
@@ -2997,7 +2997,7 @@ open class TextEdit: Control {
     /// > Note: This can result in adjustment of all other caret indices.
     /// 
     public final func removeCaret (_ caret: Int32) {
-        #if true
+        #if false
         
         var copy_caret: Int = Int (caret)
         
@@ -3082,7 +3082,7 @@ open class TextEdit: Control {
     
     /// Adds an additional caret above or below every caret. If `below` is true the new caret will be added below and above otherwise.
     public final func addCaretAtCarets (below: Bool) {
-        #if true
+        #if false
         
         var copy_below = below
         
@@ -3132,7 +3132,7 @@ open class TextEdit: Control {
     
     /// Reposition the carets affected by the edit. This assumes edits are applied in edit order, see ``getCaretIndexEditOrder()``.
     public final func adjustCaretsAfterEdit (caret: Int32, fromLine: Int32, fromCol: Int32, toLine: Int32, toCol: Int32) {
-        #if true
+        #if false
         
         var copy_caret: Int = Int (caret)
         var copy_from_line: Int = Int (fromLine)
@@ -3185,7 +3185,7 @@ open class TextEdit: Control {
     /// Returns `true` if the caret is visible on the screen.
     public final func isCaretVisible (caretIndex: Int32 = 0)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -3219,7 +3219,7 @@ open class TextEdit: Control {
     /// Returns the caret pixel draw position.
     public final func getCaretDrawPos (caretIndex: Int32 = 0)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -3259,7 +3259,7 @@ open class TextEdit: Control {
     /// > Note: If supporting multiple carets this will not check for any overlap. See ``mergeOverlappingCarets()``.
     /// 
     public final func setCaretLine (_ line: Int32, adjustViewport: Bool = true, canBeHidden: Bool = true, wrapIndex: Int32 = 0, caretIndex: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_adjust_viewport = adjustViewport
@@ -3312,7 +3312,7 @@ open class TextEdit: Control {
     /// Returns the line the editing caret is on.
     public final func getCaretLine (caretIndex: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -3350,7 +3350,7 @@ open class TextEdit: Control {
     /// > Note: If supporting multiple carets this will not check for any overlap. See ``mergeOverlappingCarets()``.
     /// 
     public final func setCaretColumn (_ column: Int32, adjustViewport: Bool = true, caretIndex: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_adjust_viewport = adjustViewport
@@ -3393,7 +3393,7 @@ open class TextEdit: Control {
     /// Returns the column the editing caret is at.
     public final func getCaretColumn (caretIndex: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -3427,7 +3427,7 @@ open class TextEdit: Control {
     /// Returns the wrap index the editing caret is on.
     public final func getCaretWrapIndex (caretIndex: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -3461,7 +3461,7 @@ open class TextEdit: Control {
     /// Returns a ``String`` text with the word under the caret's location.
     public final func getWordUnderCaret (caretIndex: Int32 = -1)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -3494,7 +3494,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_selecting_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3544,7 +3544,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_deselect_on_focus_loss_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3594,7 +3594,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_drag_and_drop_selection_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3644,7 +3644,7 @@ open class TextEdit: Control {
     
     /// Sets the current selection mode.
     public final func setSelectionMode (_ mode: TextEdit.SelectionMode, line: Int32 = -1, column: Int32 = -1, caretIndex: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         var copy_line: Int = Int (line)
@@ -3728,7 +3728,7 @@ open class TextEdit: Control {
     
     /// Selects the word under the caret.
     public final func selectWordUnderCaret (caretIndex: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -3779,7 +3779,7 @@ open class TextEdit: Control {
     /// If ``selectingEnabled`` is `false`, no selection will occur.
     /// 
     public final func select (fromLine: Int32, fromColumn: Int32, toLine: Int32, toColumn: Int32, caretIndex: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_from_line: Int = Int (fromLine)
         var copy_from_column: Int = Int (fromColumn)
@@ -3832,7 +3832,7 @@ open class TextEdit: Control {
     /// Returns `true` if the user has selected text.
     public final func hasSelection (caretIndex: Int32 = -1)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -3866,7 +3866,7 @@ open class TextEdit: Control {
     /// Returns the text inside the selection of a caret, or all the carets if `caretIndex` is its default value `-1`.
     public final func getSelectedText (caretIndex: Int32 = -1)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -3900,7 +3900,7 @@ open class TextEdit: Control {
     /// Returns the original start line of the selection.
     public final func getSelectionLine (caretIndex: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -3934,7 +3934,7 @@ open class TextEdit: Control {
     /// Returns the original start column of the selection.
     public final func getSelectionColumn (caretIndex: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -3968,7 +3968,7 @@ open class TextEdit: Control {
     /// Returns the selection begin line.
     public final func getSelectionFromLine (caretIndex: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -4002,7 +4002,7 @@ open class TextEdit: Control {
     /// Returns the selection begin column.
     public final func getSelectionFromColumn (caretIndex: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -4036,7 +4036,7 @@ open class TextEdit: Control {
     /// Returns the selection end line.
     public final func getSelectionToLine (caretIndex: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -4070,7 +4070,7 @@ open class TextEdit: Control {
     /// Returns the selection end column.
     public final func getSelectionToColumn (caretIndex: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -4103,7 +4103,7 @@ open class TextEdit: Control {
     
     /// Deselects the current selection.
     public final func deselect (caretIndex: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -4135,7 +4135,7 @@ open class TextEdit: Control {
     
     /// Deletes the selected text.
     public final func deleteSelection (caretIndex: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -4167,7 +4167,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_line_wrapping_mode (_ mode: TextEdit.LineWrappingMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -4217,7 +4217,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_autowrap_mode (_ autowrapMode: TextServer.AutowrapMode) {
-        #if true
+        #if false
         
         var copy_autowrap_mode = Int64 (autowrapMode.rawValue)
         
@@ -4268,7 +4268,7 @@ open class TextEdit: Control {
     /// Returns if the given line is wrapped.
     public final func isLineWrapped (line: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -4302,7 +4302,7 @@ open class TextEdit: Control {
     /// Returns the number of times the given line is wrapped.
     public final func getLineWrapCount (line: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -4336,7 +4336,7 @@ open class TextEdit: Control {
     /// Returns the wrap index of the given line column.
     public final func getLineWrapIndexAtColumn (line: Int32, column: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_column: Int = Int (column)
@@ -4375,7 +4375,7 @@ open class TextEdit: Control {
     /// Returns an array of ``String``s representing each wrapped index.
     public final func getLineWrappedText (line: Int32)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -4408,7 +4408,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_smooth_scroll_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -4494,7 +4494,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_v_scroll (_ value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -4544,7 +4544,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_h_scroll (_ value: Int32) {
-        #if true
+        #if false
         
         var copy_value: Int = Int (value)
         
@@ -4594,7 +4594,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_scroll_past_end_of_file_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -4644,7 +4644,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_v_scroll_speed (_ speed: Double) {
-        #if true
+        #if false
         
         var copy_speed = speed
         
@@ -4694,7 +4694,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_fit_content_height_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -4745,7 +4745,7 @@ open class TextEdit: Control {
     /// Returns the scroll position for `wrapIndex` of `line`.
     public final func getScrollPosForLine (_ line: Int32, wrapIndex: Int32 = 0)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_wrap_index: Int = Int (wrapIndex)
@@ -4783,7 +4783,7 @@ open class TextEdit: Control {
     
     /// Positions the `wrapIndex` of `line` at the top of the viewport.
     public final func setLineAsFirstVisible (line: Int32, wrapIndex: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_wrap_index: Int = Int (wrapIndex)
@@ -4838,7 +4838,7 @@ open class TextEdit: Control {
     
     /// Positions the `wrapIndex` of `line` at the center of the viewport.
     public final func setLineAsCenterVisible (line: Int32, wrapIndex: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_wrap_index: Int = Int (wrapIndex)
@@ -4875,7 +4875,7 @@ open class TextEdit: Control {
     
     /// Positions the `wrapIndex` of `line` at the bottom of the viewport.
     public final func setLineAsLastVisible (line: Int32, wrapIndex: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_wrap_index: Int = Int (wrapIndex)
@@ -4967,7 +4967,7 @@ open class TextEdit: Control {
     /// Returns the total number of visible + wrapped lines between the two lines.
     public final func getVisibleLineCountInRange (fromLine: Int32, toLine: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_from_line: Int = Int (fromLine)
         var copy_to_line: Int = Int (toLine)
@@ -5023,7 +5023,7 @@ open class TextEdit: Control {
     
     /// Adjust the viewport so the caret is visible.
     public final func adjustViewportToCaret (caretIndex: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -5055,7 +5055,7 @@ open class TextEdit: Control {
     
     /// Centers the viewport on the line the editing caret is at. This also resets the ``scrollHorizontal`` value to `0`.
     public final func centerViewportToCaret (caretIndex: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_caret_index: Int = Int (caretIndex)
         
@@ -5087,7 +5087,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_draw_minimap (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -5137,7 +5137,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_minimap_width (_ width: Int32) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         
@@ -5205,7 +5205,7 @@ open class TextEdit: Control {
     
     /// Register a new gutter to this ``TextEdit``. Use `at` to have a specific gutter order. A value of `-1` appends the gutter to the right.
     public final func addGutter (at: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_at: Int = Int (at)
         
@@ -5237,7 +5237,7 @@ open class TextEdit: Control {
     
     /// Removes the gutter from this ``TextEdit``.
     public final func removeGutter (_ gutter: Int32) {
-        #if true
+        #if false
         
         var copy_gutter: Int = Int (gutter)
         
@@ -5287,7 +5287,7 @@ open class TextEdit: Control {
     
     /// Sets the name of the gutter.
     public final func setGutterName (gutter: Int32, name: String) {
-        #if true
+        #if false
         
         var copy_gutter: Int = Int (gutter)
         let gstr_name = GString (name)
@@ -5325,7 +5325,7 @@ open class TextEdit: Control {
     /// Returns the name of the gutter at the given index.
     public final func getGutterName (gutter: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_gutter: Int = Int (gutter)
         
@@ -5358,7 +5358,7 @@ open class TextEdit: Control {
     
     /// Sets the type of gutter.
     public final func setGutterType (gutter: Int32, type: TextEdit.GutterType) {
-        #if true
+        #if false
         
         var copy_gutter: Int = Int (gutter)
         var copy_type = Int64 (type.rawValue)
@@ -5396,7 +5396,7 @@ open class TextEdit: Control {
     /// Returns the type of the gutter at the given index.
     public final func getGutterType (gutter: Int32)-> TextEdit.GutterType {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_gutter: Int = Int (gutter)
         
@@ -5429,7 +5429,7 @@ open class TextEdit: Control {
     
     /// Set the width of the gutter.
     public final func setGutterWidth (gutter: Int32, width: Int32) {
-        #if true
+        #if false
         
         var copy_gutter: Int = Int (gutter)
         var copy_width: Int = Int (width)
@@ -5467,7 +5467,7 @@ open class TextEdit: Control {
     /// Returns the width of the gutter at the given index.
     public final func getGutterWidth (gutter: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_gutter: Int = Int (gutter)
         
@@ -5500,7 +5500,7 @@ open class TextEdit: Control {
     
     /// Sets whether the gutter should be drawn.
     public final func setGutterDraw (gutter: Int32, draw: Bool) {
-        #if true
+        #if false
         
         var copy_gutter: Int = Int (gutter)
         var copy_draw = draw
@@ -5538,7 +5538,7 @@ open class TextEdit: Control {
     /// Returns whether the gutter is currently drawn.
     public final func isGutterDrawn (gutter: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_gutter: Int = Int (gutter)
         
@@ -5571,7 +5571,7 @@ open class TextEdit: Control {
     
     /// Sets the gutter as clickable. This will change the mouse cursor to a pointing hand when hovering over the gutter.
     public final func setGutterClickable (gutter: Int32, clickable: Bool) {
-        #if true
+        #if false
         
         var copy_gutter: Int = Int (gutter)
         var copy_clickable = clickable
@@ -5609,7 +5609,7 @@ open class TextEdit: Control {
     /// Returns whether the gutter is clickable.
     public final func isGutterClickable (gutter: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_gutter: Int = Int (gutter)
         
@@ -5642,7 +5642,7 @@ open class TextEdit: Control {
     
     /// Sets the gutter to overwritable. See ``mergeGutters(fromLine:toLine:)``.
     public final func setGutterOverwritable (gutter: Int32, overwritable: Bool) {
-        #if true
+        #if false
         
         var copy_gutter: Int = Int (gutter)
         var copy_overwritable = overwritable
@@ -5680,7 +5680,7 @@ open class TextEdit: Control {
     /// Returns whether the gutter is overwritable.
     public final func isGutterOverwritable (gutter: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_gutter: Int = Int (gutter)
         
@@ -5713,7 +5713,7 @@ open class TextEdit: Control {
     
     /// Merge the gutters from `fromLine` into `toLine`. Only overwritable gutters will be copied.
     public final func mergeGutters (fromLine: Int32, toLine: Int32) {
-        #if true
+        #if false
         
         var copy_from_line: Int = Int (fromLine)
         var copy_to_line: Int = Int (toLine)
@@ -5750,7 +5750,7 @@ open class TextEdit: Control {
     
     /// Set a custom draw method for the gutter. The callback method must take the following args: `line: int, gutter: int, Area: Rect2`.
     public final func setGutterCustomDraw (column: Int32, drawCallback: Callable) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -5803,7 +5803,7 @@ open class TextEdit: Control {
     
     /// Sets the metadata for `gutter` on `line` to `metadata`.
     public final func setLineGutterMetadata (line: Int32, gutter: Int32, metadata: Variant) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_gutter: Int = Int (gutter)
@@ -5844,7 +5844,7 @@ open class TextEdit: Control {
     /// Returns the metadata currently in `gutter` at `line`.
     public final func getLineGutterMetadata (line: Int32, gutter: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_gutter: Int = Int (gutter)
@@ -5882,7 +5882,7 @@ open class TextEdit: Control {
     
     /// Sets the text for `gutter` on `line` to `text`.
     public final func setLineGutterText (line: Int32, gutter: Int32, text: String) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_gutter: Int = Int (gutter)
@@ -5925,7 +5925,7 @@ open class TextEdit: Control {
     /// Returns the text currently in `gutter` at `line`.
     public final func getLineGutterText (line: Int32, gutter: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_gutter: Int = Int (gutter)
@@ -5963,7 +5963,7 @@ open class TextEdit: Control {
     
     /// Sets the icon for `gutter` on `line` to `icon`.
     public final func setLineGutterIcon (line: Int32, gutter: Int32, icon: Texture2D?) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_gutter: Int = Int (gutter)
@@ -6005,7 +6005,7 @@ open class TextEdit: Control {
     /// Returns the icon currently in `gutter` at `line`.
     public final func getLineGutterIcon (line: Int32, gutter: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_gutter: Int = Int (gutter)
@@ -6043,7 +6043,7 @@ open class TextEdit: Control {
     
     /// Sets the color for `gutter` on `line` to `color`.
     public final func setLineGutterItemColor (line: Int32, gutter: Int32, color: Color) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_gutter: Int = Int (gutter)
@@ -6086,7 +6086,7 @@ open class TextEdit: Control {
     /// Returns the color currently in `gutter` at `line`.
     public final func getLineGutterItemColor (line: Int32, gutter: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_gutter: Int = Int (gutter)
@@ -6124,7 +6124,7 @@ open class TextEdit: Control {
     
     /// If `clickable` is `true`, makes the `gutter` on `line` clickable. See [signal gutter_clicked].
     public final func setLineGutterClickable (line: Int32, gutter: Int32, clickable: Bool) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_gutter: Int = Int (gutter)
@@ -6167,7 +6167,7 @@ open class TextEdit: Control {
     /// Returns whether the gutter on the given line is clickable.
     public final func isLineGutterClickable (line: Int32, gutter: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_gutter: Int = Int (gutter)
@@ -6205,7 +6205,7 @@ open class TextEdit: Control {
     
     /// Sets the current background color of the line. Set to `Color(0, 0, 0, 0)` for no color.
     public final func setLineBackgroundColor (line: Int32, color: Color) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_color = color
@@ -6243,7 +6243,7 @@ open class TextEdit: Control {
     /// Returns the current background color of the line. `Color(0, 0, 0, 0)` is returned if no color is set.
     public final func getLineBackgroundColor (line: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -6276,7 +6276,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_syntax_highlighter (_ syntaxHighlighter: SyntaxHighlighter?) {
-        #if true
+        #if false
         
         var copy_syntax_highlighter_handle = syntaxHighlighter?.handle
         
@@ -6325,7 +6325,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_highlight_current_line (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -6375,7 +6375,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_highlight_all_occurrences (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -6443,7 +6443,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_draw_control_chars (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -6475,7 +6475,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_draw_tabs (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -6525,7 +6525,7 @@ open class TextEdit: Control {
     
     @inline(__always)
     fileprivate final func set_draw_spaces (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -6616,7 +6616,7 @@ open class TextEdit: Control {
     
     /// Executes a given action as defined in the ``TextEdit/MenuItems`` enum.
     public final func menuOption (_ option: Int32) {
-        #if true
+        #if false
         
         var copy_option: Int = Int (option)
         

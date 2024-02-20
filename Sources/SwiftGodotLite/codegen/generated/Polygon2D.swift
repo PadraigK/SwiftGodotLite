@@ -210,7 +210,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_polygon (_ polygon: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Polygon2D.method_set_polygon, UnsafeMutableRawPointer (mutating: handle), nil, &polygon.content)
@@ -258,7 +258,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_uv (_ uv: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Polygon2D.method_set_uv, UnsafeMutableRawPointer (mutating: handle), nil, &uv.content)
@@ -306,7 +306,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -356,7 +356,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_polygons (_ polygons: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Polygon2D.method_set_polygons, UnsafeMutableRawPointer (mutating: handle), nil, &polygons.content)
@@ -404,7 +404,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_vertex_colors (_ vertexColors: PackedColorArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Polygon2D.method_set_vertex_colors, UnsafeMutableRawPointer (mutating: handle), nil, &vertexColors.content)
@@ -452,7 +452,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -501,7 +501,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_texture_offset (_ textureOffset: Vector2) {
-        #if true
+        #if false
         
         var copy_texture_offset = textureOffset
         
@@ -551,7 +551,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_texture_rotation (_ textureRotation: Double) {
-        #if true
+        #if false
         
         var copy_texture_rotation = textureRotation
         
@@ -601,7 +601,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_texture_scale (_ textureScale: Vector2) {
-        #if true
+        #if false
         
         var copy_texture_scale = textureScale
         
@@ -651,7 +651,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_invert_enabled (_ invert: Bool) {
-        #if true
+        #if false
         
         var copy_invert = invert
         
@@ -701,7 +701,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_antialiased (_ antialiased: Bool) {
-        #if true
+        #if false
         
         var copy_antialiased = antialiased
         
@@ -751,7 +751,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_invert_border (_ invertBorder: Double) {
-        #if true
+        #if false
         
         var copy_invert_border = invertBorder
         
@@ -801,7 +801,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -851,7 +851,7 @@ open class Polygon2D: Node2D {
     
     /// Adds a bone with the specified `path` and `weights`.
     public final func addBone (path: NodePath, weights: PackedFloat32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Polygon2D.method_add_bone, UnsafeMutableRawPointer (mutating: handle), nil, &path.content, &weights.content)
@@ -903,7 +903,7 @@ open class Polygon2D: Node2D {
     /// Returns the path to the node associated with the specified bone.
     public final func getBonePath (index: Int32)-> NodePath {
         let _result: NodePath = NodePath ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -937,7 +937,7 @@ open class Polygon2D: Node2D {
     /// Returns the weight values of the specified bone.
     public final func getBoneWeights (index: Int32)-> PackedFloat32Array {
         let _result: PackedFloat32Array = PackedFloat32Array ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -970,7 +970,7 @@ open class Polygon2D: Node2D {
     
     /// Removes the specified bone from this ``Polygon2D``.
     public final func eraseBone (index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1018,7 +1018,7 @@ open class Polygon2D: Node2D {
     
     /// Sets the path to the node associated with the specified bone.
     public final func setBonePath (index: Int32, path: NodePath) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1053,7 +1053,7 @@ open class Polygon2D: Node2D {
     
     /// Sets the weight values for the specified bone.
     public final func setBoneWeights (index: Int32, weights: PackedFloat32Array) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1088,7 +1088,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_skeleton (_ skeleton: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Polygon2D.method_set_skeleton, UnsafeMutableRawPointer (mutating: handle), nil, &skeleton.content)
@@ -1136,7 +1136,7 @@ open class Polygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_internal_vertex_count (_ internalVertexCount: Int32) {
-        #if true
+        #if false
         
         var copy_internal_vertex_count: Int = Int (internalVertexCount)
         

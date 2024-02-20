@@ -136,7 +136,7 @@ open class EditorProperty: Container {
     
     @inline(__always)
     fileprivate final func set_label (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -186,7 +186,7 @@ open class EditorProperty: Container {
     
     @inline(__always)
     fileprivate final func set_read_only (_ readOnly: Bool) {
-        #if true
+        #if false
         
         var copy_read_only = readOnly
         
@@ -236,7 +236,7 @@ open class EditorProperty: Container {
     
     @inline(__always)
     fileprivate final func set_checkable (_ checkable: Bool) {
-        #if true
+        #if false
         
         var copy_checkable = checkable
         
@@ -286,7 +286,7 @@ open class EditorProperty: Container {
     
     @inline(__always)
     fileprivate final func set_checked (_ checked: Bool) {
-        #if true
+        #if false
         
         var copy_checked = checked
         
@@ -336,7 +336,7 @@ open class EditorProperty: Container {
     
     @inline(__always)
     fileprivate final func set_draw_warning (_ drawWarning: Bool) {
-        #if true
+        #if false
         
         var copy_draw_warning = drawWarning
         
@@ -386,7 +386,7 @@ open class EditorProperty: Container {
     
     @inline(__always)
     fileprivate final func set_keying (_ keying: Bool) {
-        #if true
+        #if false
         
         var copy_keying = keying
         
@@ -436,7 +436,7 @@ open class EditorProperty: Container {
     
     @inline(__always)
     fileprivate final func set_deletable (_ deletable: Bool) {
-        #if true
+        #if false
         
         var copy_deletable = deletable
         
@@ -538,7 +538,7 @@ open class EditorProperty: Container {
     
     /// If any of the controls added can gain keyboard focus, add it here. This ensures that focus will be restored if the inspector is refreshed.
     public final func addFocusable (control: Control?) {
-        #if true
+        #if false
         
         var copy_control_handle = control?.handle
         
@@ -569,7 +569,7 @@ open class EditorProperty: Container {
     
     /// Puts the `editor` control below the property label. The control must be previously added using ``Node/addChild(node:forceReadableName:`internal`:)``.
     public final func setBottomEditor (_ editor: Control?) {
-        #if true
+        #if false
         
         var copy_editor_handle = editor?.handle
         
@@ -600,7 +600,7 @@ open class EditorProperty: Container {
     
     /// If one or several properties have changed, this must be called. `field` is used in case your editor can modify fields separately (as an example, Vector3.x). The `changing` argument avoids the editor requesting this property to be refreshed (leave as `false` if unsure).
     public final func emitChanged (property: StringName, value: Variant, field: StringName = StringName (""), changing: Bool = false) {
-        #if true
+        #if false
         
         var copy_changing = changing
         

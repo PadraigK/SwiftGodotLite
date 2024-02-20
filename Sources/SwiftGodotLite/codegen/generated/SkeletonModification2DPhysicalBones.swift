@@ -42,7 +42,7 @@ open class SkeletonModification2DPhysicalBones: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_physical_bone_chain_length (_ length: Int32) {
-        #if true
+        #if false
         
         var copy_length: Int = Int (length)
         
@@ -95,7 +95,7 @@ open class SkeletonModification2DPhysicalBones: SkeletonModification2D {
     /// > Note: This is just the index used for this modification, not the bone index used in the ``Skeleton2D``.
     /// 
     public final func setPhysicalBoneNode (jointIdx: Int32, physicalbone2dNode: NodePath) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -131,7 +131,7 @@ open class SkeletonModification2DPhysicalBones: SkeletonModification2D {
     /// Returns the ``PhysicalBone2D`` node at `jointIdx`.
     public final func getPhysicalBoneNode (jointIdx: Int32)-> NodePath {
         let _result: NodePath = NodePath ()
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -183,7 +183,7 @@ open class SkeletonModification2DPhysicalBones: SkeletonModification2D {
     /// Optionally, an array of bone names can be passed to this function, and that will cause only ``PhysicalBone2D`` nodes with those names to start simulating.
     /// 
     public final func startSimulation (bones: VariantCollection<StringName> = VariantCollection<StringName> ()) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SkeletonModification2DPhysicalBones.method_start_simulation, UnsafeMutableRawPointer (mutating: handle), nil, &bones.array.content)
@@ -216,7 +216,7 @@ open class SkeletonModification2DPhysicalBones: SkeletonModification2D {
     /// Optionally, an array of bone names can be passed to this function, and that will cause only ``PhysicalBone2D`` nodes with those names to stop simulating.
     /// 
     public final func stopSimulation (bones: VariantCollection<StringName> = VariantCollection<StringName> ()) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SkeletonModification2DPhysicalBones.method_stop_simulation, UnsafeMutableRawPointer (mutating: handle), nil, &bones.array.content)

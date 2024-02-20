@@ -71,7 +71,7 @@ open class StaticBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_constant_linear_velocity (_ vel: Vector2) {
-        #if true
+        #if false
         
         var copy_vel = vel
         
@@ -103,7 +103,7 @@ open class StaticBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_constant_angular_velocity (_ vel: Double) {
-        #if true
+        #if false
         
         var copy_vel = vel
         
@@ -171,7 +171,7 @@ open class StaticBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_physics_material_override (_ physicsMaterialOverride: PhysicsMaterial?) {
-        #if true
+        #if false
         
         var copy_physics_material_override_handle = physicsMaterialOverride?.handle
         

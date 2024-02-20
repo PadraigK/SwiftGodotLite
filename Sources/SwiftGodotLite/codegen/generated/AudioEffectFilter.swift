@@ -85,7 +85,7 @@ open class AudioEffectFilter: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_cutoff (_ freq: Double) {
-        #if true
+        #if false
         
         var copy_freq = freq
         
@@ -135,7 +135,7 @@ open class AudioEffectFilter: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_resonance (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -185,7 +185,7 @@ open class AudioEffectFilter: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_gain (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -235,7 +235,7 @@ open class AudioEffectFilter: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_db (_ amount: AudioEffectFilter.FilterDB) {
-        #if true
+        #if false
         
         var copy_amount = Int64 (amount.rawValue)
         

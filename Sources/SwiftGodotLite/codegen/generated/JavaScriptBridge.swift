@@ -44,7 +44,7 @@ open class JavaScriptBridge: Object {
     /// 
     public static func eval (code: String, useGlobalExecutionContext: Bool = false)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         let gstr_code = GString (code)
         var copy_use_global_execution_context = useGlobalExecutionContext
@@ -83,7 +83,7 @@ open class JavaScriptBridge: Object {
     /// Returns an interface to a JavaScript object that can be used by scripts. The `interface` must be a valid property of the JavaScript `window`. The callback must accept a single ``GArray`` argument, which will contain the JavaScript `arguments`. See ``JavaScriptObject`` for usage.
     public static func getInterface (_ interface: String)-> JavaScriptObject? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_interface = GString (interface)
         
@@ -117,7 +117,7 @@ open class JavaScriptBridge: Object {
     /// Creates a reference to a ``Callable`` that can be used as a callback by JavaScript. The reference must be kept until the callback happens, or it won't be called at all. See ``JavaScriptObject`` for usage.
     public static func createCallback (callable: Callable)-> JavaScriptObject? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (JavaScriptBridge.method_create_callback, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &callable.content)
@@ -196,7 +196,7 @@ open class JavaScriptBridge: Object {
     /// > Note: Browsers might ask the user for permission or block the download if multiple download requests are made in a quick succession.
     /// 
     public static func downloadBuffer (_ buffer: PackedByteArray, name: String, mime: String = "application/octet-stream") {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         let gstr_mime = GString (mime)

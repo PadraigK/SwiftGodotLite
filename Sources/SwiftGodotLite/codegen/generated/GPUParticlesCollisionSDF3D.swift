@@ -115,7 +115,7 @@ open class GPUParticlesCollisionSDF3D: GPUParticlesCollision3D {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -165,7 +165,7 @@ open class GPUParticlesCollisionSDF3D: GPUParticlesCollision3D {
     
     @inline(__always)
     fileprivate final func set_resolution (_ resolution: GPUParticlesCollisionSDF3D.Resolution) {
-        #if true
+        #if false
         
         var copy_resolution = Int64 (resolution.rawValue)
         
@@ -215,7 +215,7 @@ open class GPUParticlesCollisionSDF3D: GPUParticlesCollision3D {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: Texture3D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -264,7 +264,7 @@ open class GPUParticlesCollisionSDF3D: GPUParticlesCollision3D {
     
     @inline(__always)
     fileprivate final func set_thickness (_ thickness: Double) {
-        #if true
+        #if false
         
         var copy_thickness = thickness
         
@@ -314,7 +314,7 @@ open class GPUParticlesCollisionSDF3D: GPUParticlesCollision3D {
     
     @inline(__always)
     fileprivate final func set_bake_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -364,7 +364,7 @@ open class GPUParticlesCollisionSDF3D: GPUParticlesCollision3D {
     
     /// Based on `value`, enables or disables the specified layer in the ``bakeMask``, given a `layerNumber` between 1 and 32.
     public final func setBakeMaskValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -402,7 +402,7 @@ open class GPUParticlesCollisionSDF3D: GPUParticlesCollision3D {
     /// Returns whether or not the specified layer of the ``bakeMask`` is enabled, given a `layerNumber` between 1 and 32.
     public final func getBakeMaskValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         

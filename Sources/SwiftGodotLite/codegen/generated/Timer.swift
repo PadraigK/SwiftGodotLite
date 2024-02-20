@@ -121,7 +121,7 @@ open class Timer: Node {
     
     @inline(__always)
     fileprivate final func set_wait_time (_ timeSec: Double) {
-        #if true
+        #if false
         
         var copy_time_sec = timeSec
         
@@ -171,7 +171,7 @@ open class Timer: Node {
     
     @inline(__always)
     fileprivate final func set_one_shot (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -221,7 +221,7 @@ open class Timer: Node {
     
     @inline(__always)
     fileprivate final func set_autostart (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -274,7 +274,7 @@ open class Timer: Node {
     /// > Note: This method will not resume a paused timer. See ``paused``.
     /// 
     public final func start (timeSec: Double = -1) {
-        #if true
+        #if false
         
         var copy_time_sec = timeSec
         
@@ -322,7 +322,7 @@ open class Timer: Node {
     
     @inline(__always)
     fileprivate final func set_paused (_ paused: Bool) {
-        #if true
+        #if false
         
         var copy_paused = paused
         
@@ -408,7 +408,7 @@ open class Timer: Node {
     
     @inline(__always)
     fileprivate final func set_timer_process_callback (_ callback: Timer.TimerProcessCallback) {
-        #if true
+        #if false
         
         var copy_callback = Int64 (callback.rawValue)
         

@@ -99,7 +99,7 @@ open class PinJoint2D: Joint2D {
     
     @inline(__always)
     fileprivate final func set_softness (_ softness: Double) {
-        #if true
+        #if false
         
         var copy_softness = softness
         
@@ -149,7 +149,7 @@ open class PinJoint2D: Joint2D {
     
     @inline(__always)
     fileprivate final func set_angular_limit_lower (_ angularLimitLower: Double) {
-        #if true
+        #if false
         
         var copy_angular_limit_lower = angularLimitLower
         
@@ -199,7 +199,7 @@ open class PinJoint2D: Joint2D {
     
     @inline(__always)
     fileprivate final func set_angular_limit_upper (_ angularLimitUpper: Double) {
-        #if true
+        #if false
         
         var copy_angular_limit_upper = angularLimitUpper
         
@@ -249,7 +249,7 @@ open class PinJoint2D: Joint2D {
     
     @inline(__always)
     fileprivate final func set_motor_target_velocity (_ motorTargetVelocity: Double) {
-        #if true
+        #if false
         
         var copy_motor_target_velocity = motorTargetVelocity
         
@@ -299,7 +299,7 @@ open class PinJoint2D: Joint2D {
     
     @inline(__always)
     fileprivate final func set_motor_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -349,7 +349,7 @@ open class PinJoint2D: Joint2D {
     
     @inline(__always)
     fileprivate final func set_angular_limit_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

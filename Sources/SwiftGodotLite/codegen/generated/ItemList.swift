@@ -250,7 +250,7 @@ open class ItemList: Control {
     /// 
     public final func addItem (text: String, icon: Texture2D? = nil, selectable: Bool = true)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         var copy_selectable = selectable
@@ -293,7 +293,7 @@ open class ItemList: Control {
     /// Adds an item to the item list with no text, only an icon. Returns the index of an added item.
     public final func addIconItem (icon: Texture2D?, selectable: Bool = true)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_selectable = selectable
         var copy_icon_handle = icon?.handle
@@ -330,7 +330,7 @@ open class ItemList: Control {
     
     /// Sets text of the item associated with the specified index.
     public final func setItemText (idx: Int32, text: String) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         let gstr_text = GString (text)
@@ -368,7 +368,7 @@ open class ItemList: Control {
     /// Returns the text associated with the specified index.
     public final func getItemText (idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -401,7 +401,7 @@ open class ItemList: Control {
     
     /// Sets (or replaces) the icon's ``Texture2D`` associated with the specified index.
     public final func setItemIcon (idx: Int32, icon: Texture2D?) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_icon_handle = icon?.handle
@@ -438,7 +438,7 @@ open class ItemList: Control {
     /// Returns the icon associated with the specified index.
     public final func getItemIcon (idx: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -471,7 +471,7 @@ open class ItemList: Control {
     
     /// Sets item's text base writing direction.
     public final func setItemTextDirection (idx: Int32, direction: Control.TextDirection) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_direction = Int64 (direction.rawValue)
@@ -509,7 +509,7 @@ open class ItemList: Control {
     /// Returns item's text base writing direction.
     public final func getItemTextDirection (idx: Int32)-> Control.TextDirection {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -542,7 +542,7 @@ open class ItemList: Control {
     
     /// Sets language code of item's text used for line-breaking and text shaping algorithms, if left empty current locale is used instead.
     public final func setItemLanguage (idx: Int32, language: String) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         let gstr_language = GString (language)
@@ -580,7 +580,7 @@ open class ItemList: Control {
     /// Returns item's text language code.
     public final func getItemLanguage (idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -613,7 +613,7 @@ open class ItemList: Control {
     
     /// Sets whether the item icon will be drawn transposed.
     public final func setItemIconTransposed (idx: Int32, transposed: Bool) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_transposed = transposed
@@ -651,7 +651,7 @@ open class ItemList: Control {
     /// Returns `true` if the item icon will be drawn transposed, i.e. the X and Y axes are swapped.
     public final func isItemIconTransposed (idx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -684,7 +684,7 @@ open class ItemList: Control {
     
     /// Sets the region of item's icon used. The whole icon will be used if the region has no area.
     public final func setItemIconRegion (idx: Int32, rect: Rect2) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_rect = rect
@@ -722,7 +722,7 @@ open class ItemList: Control {
     /// Returns the region of item's icon used. The whole icon will be used if the region has no area.
     public final func getItemIconRegion (idx: Int32)-> Rect2 {
         var _result: Rect2 = Rect2 ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -755,7 +755,7 @@ open class ItemList: Control {
     
     /// Sets a modulating ``Color`` of the item associated with the specified index.
     public final func setItemIconModulate (idx: Int32, modulate: Color) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_modulate = modulate
@@ -793,7 +793,7 @@ open class ItemList: Control {
     /// Returns a ``Color`` modulating item's icon at the specified index.
     public final func getItemIconModulate (idx: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -826,7 +826,7 @@ open class ItemList: Control {
     
     /// Allows or disallows selection of the item associated with the specified index.
     public final func setItemSelectable (idx: Int32, selectable: Bool) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_selectable = selectable
@@ -864,7 +864,7 @@ open class ItemList: Control {
     /// Returns `true` if the item at the specified index is selectable.
     public final func isItemSelectable (idx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -900,7 +900,7 @@ open class ItemList: Control {
     /// Disabled items cannot be selected and do not trigger activation signals (when double-clicking or pressing [kbd]Enter[/kbd]).
     /// 
     public final func setItemDisabled (idx: Int32, disabled: Bool) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_disabled = disabled
@@ -938,7 +938,7 @@ open class ItemList: Control {
     /// Returns `true` if the item at the specified index is disabled.
     public final func isItemDisabled (idx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -971,7 +971,7 @@ open class ItemList: Control {
     
     /// Sets a value (of any type) to be stored with the item associated with the specified index.
     public final func setItemMetadata (idx: Int32, metadata: Variant) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1007,7 +1007,7 @@ open class ItemList: Control {
     /// Returns the metadata value of the specified index.
     public final func getItemMetadata (idx: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1040,7 +1040,7 @@ open class ItemList: Control {
     
     /// Sets the background color of the item specified by `idx` index to the specified ``Color``.
     public final func setItemCustomBgColor (idx: Int32, customBgColor: Color) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_custom_bg_color = customBgColor
@@ -1078,7 +1078,7 @@ open class ItemList: Control {
     /// Returns the custom background color of the item specified by `idx` index.
     public final func getItemCustomBgColor (idx: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1111,7 +1111,7 @@ open class ItemList: Control {
     
     /// Sets the foreground color of the item specified by `idx` index to the specified ``Color``.
     public final func setItemCustomFgColor (idx: Int32, customFgColor: Color) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_custom_fg_color = customFgColor
@@ -1149,7 +1149,7 @@ open class ItemList: Control {
     /// Returns the custom foreground color of the item specified by `idx` index.
     public final func getItemCustomFgColor (idx: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1186,7 +1186,7 @@ open class ItemList: Control {
     /// 
     public final func getItemRect (idx: Int32, expand: Bool = true)-> Rect2 {
         var _result: Rect2 = Rect2 ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_expand = expand
@@ -1224,7 +1224,7 @@ open class ItemList: Control {
     
     /// Sets whether the tooltip hint is enabled for specified item index.
     public final func setItemTooltipEnabled (idx: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_enable = enable
@@ -1262,7 +1262,7 @@ open class ItemList: Control {
     /// Returns `true` if the tooltip is enabled for specified item index.
     public final func isItemTooltipEnabled (idx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1295,7 +1295,7 @@ open class ItemList: Control {
     
     /// Sets the tooltip hint for the item associated with the specified index.
     public final func setItemTooltip (idx: Int32, tooltip: String) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         let gstr_tooltip = GString (tooltip)
@@ -1333,7 +1333,7 @@ open class ItemList: Control {
     /// Returns the tooltip hint associated with the specified index.
     public final func getItemTooltip (idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1369,7 +1369,7 @@ open class ItemList: Control {
     /// > Note: This method does not trigger the item selection signal.
     /// 
     public final func select (idx: Int32, single: Bool = true) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_single = single
@@ -1406,7 +1406,7 @@ open class ItemList: Control {
     
     /// Ensures the item associated with the specified index is not selected.
     public final func deselect (idx: Int32) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1455,7 +1455,7 @@ open class ItemList: Control {
     /// Returns `true` if the item at the specified index is currently selected.
     public final func isSelected (idx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1506,7 +1506,7 @@ open class ItemList: Control {
     
     /// Moves item from index `fromIdx` to `toIdx`.
     public final func moveItem (fromIdx: Int32, toIdx: Int32) {
-        #if true
+        #if false
         
         var copy_from_idx: Int = Int (fromIdx)
         var copy_to_idx: Int = Int (toIdx)
@@ -1543,7 +1543,7 @@ open class ItemList: Control {
     
     @inline(__always)
     fileprivate final func set_item_count (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -1593,7 +1593,7 @@ open class ItemList: Control {
     
     /// Removes the item specified by `idx` index from the list.
     public final func removeItem (idx: Int32) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1657,7 +1657,7 @@ open class ItemList: Control {
     
     @inline(__always)
     fileprivate final func set_fixed_column_width (_ width: Int32) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         
@@ -1707,7 +1707,7 @@ open class ItemList: Control {
     
     @inline(__always)
     fileprivate final func set_same_column_width (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1757,7 +1757,7 @@ open class ItemList: Control {
     
     @inline(__always)
     fileprivate final func set_max_text_lines (_ lines: Int32) {
-        #if true
+        #if false
         
         var copy_lines: Int = Int (lines)
         
@@ -1807,7 +1807,7 @@ open class ItemList: Control {
     
     @inline(__always)
     fileprivate final func set_max_columns (_ amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -1857,7 +1857,7 @@ open class ItemList: Control {
     
     @inline(__always)
     fileprivate final func set_select_mode (_ mode: ItemList.SelectMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1907,7 +1907,7 @@ open class ItemList: Control {
     
     @inline(__always)
     fileprivate final func set_icon_mode (_ mode: ItemList.IconMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1957,7 +1957,7 @@ open class ItemList: Control {
     
     @inline(__always)
     fileprivate final func set_fixed_icon_size (_ size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -2007,7 +2007,7 @@ open class ItemList: Control {
     
     @inline(__always)
     fileprivate final func set_icon_scale (_ scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -2057,7 +2057,7 @@ open class ItemList: Control {
     
     @inline(__always)
     fileprivate final func set_allow_rmb_select (_ allow: Bool) {
-        #if true
+        #if false
         
         var copy_allow = allow
         
@@ -2107,7 +2107,7 @@ open class ItemList: Control {
     
     @inline(__always)
     fileprivate final func set_allow_reselect (_ allow: Bool) {
-        #if true
+        #if false
         
         var copy_allow = allow
         
@@ -2157,7 +2157,7 @@ open class ItemList: Control {
     
     @inline(__always)
     fileprivate final func set_allow_search (_ allow: Bool) {
-        #if true
+        #if false
         
         var copy_allow = allow
         
@@ -2207,7 +2207,7 @@ open class ItemList: Control {
     
     @inline(__always)
     fileprivate final func set_auto_height (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2281,7 +2281,7 @@ open class ItemList: Control {
     /// 
     public final func getItemAtPosition (_ position: Vector2, exact: Bool = false)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_position = position
         var copy_exact = exact
@@ -2356,7 +2356,7 @@ open class ItemList: Control {
     
     @inline(__always)
     fileprivate final func set_text_overrun_behavior (_ overrunBehavior: TextServer.OverrunBehavior) {
-        #if true
+        #if false
         
         var copy_overrun_behavior = Int64 (overrunBehavior.rawValue)
         

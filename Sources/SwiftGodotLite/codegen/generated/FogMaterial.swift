@@ -105,7 +105,7 @@ open class FogMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_density (_ density: Double) {
-        #if true
+        #if false
         
         var copy_density = density
         
@@ -155,7 +155,7 @@ open class FogMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_albedo (_ albedo: Color) {
-        #if true
+        #if false
         
         var copy_albedo = albedo
         
@@ -205,7 +205,7 @@ open class FogMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission (_ emission: Color) {
-        #if true
+        #if false
         
         var copy_emission = emission
         
@@ -255,7 +255,7 @@ open class FogMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_height_falloff (_ heightFalloff: Double) {
-        #if true
+        #if false
         
         var copy_height_falloff = heightFalloff
         
@@ -305,7 +305,7 @@ open class FogMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_edge_fade (_ edgeFade: Double) {
-        #if true
+        #if false
         
         var copy_edge_fade = edgeFade
         
@@ -355,7 +355,7 @@ open class FogMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_density_texture (_ densityTexture: Texture3D?) {
-        #if true
+        #if false
         
         var copy_density_texture_handle = densityTexture?.handle
         

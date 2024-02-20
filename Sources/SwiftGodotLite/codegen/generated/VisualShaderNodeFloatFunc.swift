@@ -108,7 +108,7 @@ open class VisualShaderNodeFloatFunc: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_function (_ `func`: VisualShaderNodeFloatFunc.Function) {
-        #if true
+        #if false
         
         var copy_func = Int64 (`func`.rawValue)
         

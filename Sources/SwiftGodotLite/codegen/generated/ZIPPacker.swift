@@ -38,7 +38,7 @@ open class ZIPPacker: RefCounted {
     /// 
     public final func open (path: String, append: ZIPPacker.ZipAppend = .create)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_append = Int64 (append.rawValue)
@@ -80,7 +80,7 @@ open class ZIPPacker: RefCounted {
     /// 
     public final func startFile (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -117,7 +117,7 @@ open class ZIPPacker: RefCounted {
     /// 
     public final func writeFile (data: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ZIPPacker.method_write_file, UnsafeMutableRawPointer (mutating: handle), &_result, &data.content)

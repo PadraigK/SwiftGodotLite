@@ -110,7 +110,7 @@ open class EditorImportPlugin: ResourceImporter {
     /// This function can only be called during the ``_import(sourceFile:savePath:options:platformVariants:genFiles:)`` callback and it allows manually importing resources from it. This is useful when the imported file generates external resources that require importing (as example, images). Custom parameters for the ".import" file can be passed via the `customOptions`. Additionally, in cases where multiple importers can handle a file, the `customImporter` ca be specified to force a specific one. This function performs a resource import and returns immediately with a success or error code. `generatorParameters` defines optional extra metadata which will be stored as [code skip-lint]generator_parameters` in the `remap` section of the `.import` file, for example to store a md5 hash of the source data.
     public final func appendImportExternalResource (path: String, customOptions: GDictionary = GDictionary (), customImporter: String = "", generatorParameters: Variant)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         let gstr_custom_importer = GString (customImporter)

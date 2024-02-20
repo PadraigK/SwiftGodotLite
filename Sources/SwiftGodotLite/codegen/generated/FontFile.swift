@@ -283,7 +283,7 @@ open class FontFile: Font {
     /// 
     public final func loadBitmapFont (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -320,7 +320,7 @@ open class FontFile: Font {
     /// 
     public final func loadDynamicFont (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -353,7 +353,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_data (_ data: PackedByteArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (FontFile.method_set_data, UnsafeMutableRawPointer (mutating: handle), nil, &data.content)
@@ -401,7 +401,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_font_name (_ name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -433,7 +433,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_font_style_name (_ name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -465,7 +465,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_font_style (_ style: TextServer.FontStyle) {
-        #if true
+        #if false
         
         var copy_style = style
         
@@ -497,7 +497,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_font_weight (_ weight: Int32) {
-        #if true
+        #if false
         
         var copy_weight: Int = Int (weight)
         
@@ -529,7 +529,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_font_stretch (_ stretch: Int32) {
-        #if true
+        #if false
         
         var copy_stretch: Int = Int (stretch)
         
@@ -561,7 +561,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_antialiasing (_ antialiasing: TextServer.FontAntialiasing) {
-        #if true
+        #if false
         
         var copy_antialiasing = Int64 (antialiasing.rawValue)
         
@@ -611,7 +611,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_generate_mipmaps (_ generateMipmaps: Bool) {
-        #if true
+        #if false
         
         var copy_generate_mipmaps = generateMipmaps
         
@@ -661,7 +661,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_multichannel_signed_distance_field (_ msdf: Bool) {
-        #if true
+        #if false
         
         var copy_msdf = msdf
         
@@ -711,7 +711,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_msdf_pixel_range (_ msdfPixelRange: Int32) {
-        #if true
+        #if false
         
         var copy_msdf_pixel_range: Int = Int (msdfPixelRange)
         
@@ -761,7 +761,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_msdf_size (_ msdfSize: Int32) {
-        #if true
+        #if false
         
         var copy_msdf_size: Int = Int (msdfSize)
         
@@ -811,7 +811,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_fixed_size (_ fixedSize: Int32) {
-        #if true
+        #if false
         
         var copy_fixed_size: Int = Int (fixedSize)
         
@@ -861,7 +861,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_fixed_size_scale_mode (_ fixedSizeScaleMode: TextServer.FixedSizeScaleMode) {
-        #if true
+        #if false
         
         var copy_fixed_size_scale_mode = Int64 (fixedSizeScaleMode.rawValue)
         
@@ -911,7 +911,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_allow_system_fallback (_ allowSystemFallback: Bool) {
-        #if true
+        #if false
         
         var copy_allow_system_fallback = allowSystemFallback
         
@@ -961,7 +961,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_force_autohinter (_ forceAutohinter: Bool) {
-        #if true
+        #if false
         
         var copy_force_autohinter = forceAutohinter
         
@@ -1011,7 +1011,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_hinting (_ hinting: TextServer.Hinting) {
-        #if true
+        #if false
         
         var copy_hinting = Int64 (hinting.rawValue)
         
@@ -1061,7 +1061,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_subpixel_positioning (_ subpixelPositioning: TextServer.SubpixelPositioning) {
-        #if true
+        #if false
         
         var copy_subpixel_positioning = Int64 (subpixelPositioning.rawValue)
         
@@ -1111,7 +1111,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_oversampling (_ oversampling: Double) {
-        #if true
+        #if false
         
         var copy_oversampling = oversampling
         
@@ -1195,7 +1195,7 @@ open class FontFile: Font {
     
     /// Removes specified font cache entry.
     public final func removeCache (cacheIndex: Int32) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         
@@ -1228,7 +1228,7 @@ open class FontFile: Font {
     /// Returns list of the font sizes in the cache. Each size is ``Vector2i`` with font size and outline size.
     public final func getSizeCacheList (cacheIndex: Int32)-> VariantCollection<Vector2i> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         
@@ -1261,7 +1261,7 @@ open class FontFile: Font {
     
     /// Removes all font sizes from the cache entry
     public final func clearSizeCache (cacheIndex: Int32) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         
@@ -1293,7 +1293,7 @@ open class FontFile: Font {
     
     /// Removes specified font size from the cache entry.
     public final func removeSizeCache (cacheIndex: Int32, size: Vector2i) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -1330,7 +1330,7 @@ open class FontFile: Font {
     
     /// Sets variation coordinates for the specified font cache entry. See ``Font/getSupportedVariationList()`` for more info.
     public final func setVariationCoordinates (cacheIndex: Int32, variationCoordinates: GDictionary) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         
@@ -1366,7 +1366,7 @@ open class FontFile: Font {
     /// Returns variation coordinates for the specified font cache entry. See ``Font/getSupportedVariationList()`` for more info.
     public final func getVariationCoordinates (cacheIndex: Int32)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         
@@ -1399,7 +1399,7 @@ open class FontFile: Font {
     
     /// Sets embolden strength, if is not equal to zero, emboldens the font outlines. Negative values reduce the outline thickness.
     public final func setEmbolden (cacheIndex: Int32, strength: Double) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_strength = strength
@@ -1437,7 +1437,7 @@ open class FontFile: Font {
     /// Returns embolden strength, if is not equal to zero, emboldens the font outlines. Negative values reduce the outline thickness.
     public final func getEmbolden (cacheIndex: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         
@@ -1470,7 +1470,7 @@ open class FontFile: Font {
     
     /// Sets 2D transform, applied to the font outlines, can be used for slanting, flipping and rotating glyphs.
     public final func setTransform (cacheIndex: Int32, transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_transform = transform
@@ -1508,7 +1508,7 @@ open class FontFile: Font {
     /// Returns 2D transform, applied to the font outlines, can be used for slanting, flipping and rotating glyphs.
     public final func getTransform (cacheIndex: Int32)-> Transform2D {
         var _result: Transform2D = Transform2D ()
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         
@@ -1541,7 +1541,7 @@ open class FontFile: Font {
     
     /// Sets the spacing for `spacing` (see ``TextServer.SpacingType``) to `value` in pixels (not relative to the font size).
     public final func setExtraSpacing (cacheIndex: Int32, spacing: TextServer.SpacingType, value: Int) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_spacing = Int64 (spacing.rawValue)
@@ -1584,7 +1584,7 @@ open class FontFile: Font {
     /// Returns spacing for `spacing` (see ``TextServer.SpacingType``) in pixels (not relative to the font size).
     public final func getExtraSpacing (cacheIndex: Int32, spacing: TextServer.SpacingType)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_spacing = Int64 (spacing.rawValue)
@@ -1622,7 +1622,7 @@ open class FontFile: Font {
     
     /// Sets an active face index in the TrueType / OpenType collection.
     public final func setFaceIndex (cacheIndex: Int32, faceIndex: Int) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_face_index = faceIndex
@@ -1660,7 +1660,7 @@ open class FontFile: Font {
     /// Returns an active face index in the TrueType / OpenType collection.
     public final func getFaceIndex (cacheIndex: Int32)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         
@@ -1693,7 +1693,7 @@ open class FontFile: Font {
     
     /// Sets the font ascent (number of pixels above the baseline).
     public final func setCacheAscent (cacheIndex: Int32, size: Int32, ascent: Double) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -1736,7 +1736,7 @@ open class FontFile: Font {
     /// Returns the font ascent (number of pixels above the baseline).
     public final func getCacheAscent (cacheIndex: Int32, size: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -1774,7 +1774,7 @@ open class FontFile: Font {
     
     /// Sets the font descent (number of pixels below the baseline).
     public final func setCacheDescent (cacheIndex: Int32, size: Int32, descent: Double) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -1817,7 +1817,7 @@ open class FontFile: Font {
     /// Returns the font descent (number of pixels below the baseline).
     public final func getCacheDescent (cacheIndex: Int32, size: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -1855,7 +1855,7 @@ open class FontFile: Font {
     
     /// Sets pixel offset of the underline below the baseline.
     public final func setCacheUnderlinePosition (cacheIndex: Int32, size: Int32, underlinePosition: Double) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -1898,7 +1898,7 @@ open class FontFile: Font {
     /// Returns pixel offset of the underline below the baseline.
     public final func getCacheUnderlinePosition (cacheIndex: Int32, size: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -1936,7 +1936,7 @@ open class FontFile: Font {
     
     /// Sets thickness of the underline in pixels.
     public final func setCacheUnderlineThickness (cacheIndex: Int32, size: Int32, underlineThickness: Double) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -1979,7 +1979,7 @@ open class FontFile: Font {
     /// Returns thickness of the underline in pixels.
     public final func getCacheUnderlineThickness (cacheIndex: Int32, size: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -2017,7 +2017,7 @@ open class FontFile: Font {
     
     /// Sets scaling factor of the color bitmap font.
     public final func setCacheScale (cacheIndex: Int32, size: Int32, scale: Double) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -2060,7 +2060,7 @@ open class FontFile: Font {
     /// Returns scaling factor of the color bitmap font.
     public final func getCacheScale (cacheIndex: Int32, size: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -2099,7 +2099,7 @@ open class FontFile: Font {
     /// Returns number of textures used by font cache entry.
     public final func getTextureCount (cacheIndex: Int32, size: Vector2i)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2140,7 +2140,7 @@ open class FontFile: Font {
     /// > Note: This function will not remove glyphs associated with the texture, use ``removeGlyph(cacheIndex:size:glyph:)`` to remove them manually.
     /// 
     public final func clearTextures (cacheIndex: Int32, size: Vector2i) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2180,7 +2180,7 @@ open class FontFile: Font {
     /// > Note: This function will not remove glyphs associated with the texture. Remove them manually using ``removeGlyph(cacheIndex:size:glyph:)``.
     /// 
     public final func removeTexture (cacheIndex: Int32, size: Vector2i, textureIndex: Int32) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2222,7 +2222,7 @@ open class FontFile: Font {
     
     /// Sets font cache texture image.
     public final func setTextureImage (cacheIndex: Int32, size: Vector2i, textureIndex: Int32, image: Image?) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2269,7 +2269,7 @@ open class FontFile: Font {
     /// Returns a copy of the font cache texture image.
     public final func getTextureImage (cacheIndex: Int32, size: Vector2i, textureIndex: Int32)-> Image? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2312,7 +2312,7 @@ open class FontFile: Font {
     
     /// Sets array containing glyph packing data.
     public final func setTextureOffsets (cacheIndex: Int32, size: Vector2i, textureIndex: Int32, offset: PackedInt32Array) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2358,7 +2358,7 @@ open class FontFile: Font {
     /// Returns a copy of the array containing glyph packing data.
     public final func getTextureOffsets (cacheIndex: Int32, size: Vector2i, textureIndex: Int32)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2402,7 +2402,7 @@ open class FontFile: Font {
     /// Returns list of rendered glyphs in the cache entry.
     public final func getGlyphList (cacheIndex: Int32, size: Vector2i)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2443,7 +2443,7 @@ open class FontFile: Font {
     /// > Note: This function will not remove textures associated with the glyphs, use ``removeTexture(cacheIndex:size:textureIndex:)`` to remove them manually.
     /// 
     public final func clearGlyphs (cacheIndex: Int32, size: Vector2i) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2483,7 +2483,7 @@ open class FontFile: Font {
     /// > Note: This function will not remove textures associated with the glyphs, use ``removeTexture(cacheIndex:size:textureIndex:)`` to remove them manually.
     /// 
     public final func removeGlyph (cacheIndex: Int32, size: Vector2i, glyph: Int32) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2528,7 +2528,7 @@ open class FontFile: Font {
     /// > Note: Advance for glyphs outlines is the same as the base glyph advance and is not saved.
     /// 
     public final func setGlyphAdvance (cacheIndex: Int32, size: Int32, glyph: Int32, advance: Vector2) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -2579,7 +2579,7 @@ open class FontFile: Font {
     /// 
     public final func getGlyphAdvance (cacheIndex: Int32, size: Int32, glyph: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -2622,7 +2622,7 @@ open class FontFile: Font {
     
     /// Sets glyph offset from the baseline.
     public final func setGlyphOffset (cacheIndex: Int32, size: Vector2i, glyph: Int32, offset: Vector2) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2670,7 +2670,7 @@ open class FontFile: Font {
     /// Returns glyph offset from the baseline.
     public final func getGlyphOffset (cacheIndex: Int32, size: Vector2i, glyph: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2713,7 +2713,7 @@ open class FontFile: Font {
     
     /// Sets glyph size.
     public final func setGlyphSize (cacheIndex: Int32, size: Vector2i, glyph: Int32, glSize: Vector2) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2761,7 +2761,7 @@ open class FontFile: Font {
     /// Returns glyph size.
     public final func getGlyphSize (cacheIndex: Int32, size: Vector2i, glyph: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2804,7 +2804,7 @@ open class FontFile: Font {
     
     /// Sets rectangle in the cache texture containing the glyph.
     public final func setGlyphUvRect (cacheIndex: Int32, size: Vector2i, glyph: Int32, uvRect: Rect2) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2852,7 +2852,7 @@ open class FontFile: Font {
     /// Returns rectangle in the cache texture containing the glyph.
     public final func getGlyphUvRect (cacheIndex: Int32, size: Vector2i, glyph: Int32)-> Rect2 {
         var _result: Rect2 = Rect2 ()
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2895,7 +2895,7 @@ open class FontFile: Font {
     
     /// Sets index of the cache texture containing the glyph.
     public final func setGlyphTextureIdx (cacheIndex: Int32, size: Vector2i, glyph: Int32, textureIdx: Int32) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2943,7 +2943,7 @@ open class FontFile: Font {
     /// Returns index of the cache texture containing the glyph.
     public final func getGlyphTextureIdx (cacheIndex: Int32, size: Vector2i, glyph: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -2987,7 +2987,7 @@ open class FontFile: Font {
     /// Returns list of the kerning overrides.
     public final func getKerningList (cacheIndex: Int32, size: Int32)-> VariantCollection<Vector2i> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -3025,7 +3025,7 @@ open class FontFile: Font {
     
     /// Removes all kerning overrides.
     public final func clearKerningMap (cacheIndex: Int32, size: Int32) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -3062,7 +3062,7 @@ open class FontFile: Font {
     
     /// Removes kerning override for the pair of glyphs.
     public final func removeKerning (cacheIndex: Int32, size: Int32, glyphPair: Vector2i) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -3104,7 +3104,7 @@ open class FontFile: Font {
     
     /// Sets kerning for the pair of glyphs.
     public final func setKerning (cacheIndex: Int32, size: Int32, glyphPair: Vector2i, kerning: Vector2) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -3152,7 +3152,7 @@ open class FontFile: Font {
     /// Returns kerning for the pair of glyphs.
     public final func getKerning (cacheIndex: Int32, size: Int32, glyphPair: Vector2i)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size: Int = Int (size)
@@ -3195,7 +3195,7 @@ open class FontFile: Font {
     
     /// Renders the range of characters to the font cache texture.
     public final func renderRange (cacheIndex: Int32, size: Vector2i, start: Int64, end: Int64) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -3242,7 +3242,7 @@ open class FontFile: Font {
     
     /// Renders specified glyph to the font cache texture.
     public final func renderGlyph (cacheIndex: Int32, size: Vector2i, index: Int32) {
-        #if true
+        #if false
         
         var copy_cache_index: Int = Int (cacheIndex)
         var copy_size = size
@@ -3284,7 +3284,7 @@ open class FontFile: Font {
     
     /// Adds override for ``Font/isLanguageSupported(language:)``.
     public final func setLanguageSupportOverride (language: String, supported: Bool) {
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         var copy_supported = supported
@@ -3322,7 +3322,7 @@ open class FontFile: Font {
     /// Returns `true` if support override is enabled for the `language`.
     public final func getLanguageSupportOverride (language: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -3355,7 +3355,7 @@ open class FontFile: Font {
     
     /// Remove language support override.
     public final func removeLanguageSupportOverride (language: String) {
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -3405,7 +3405,7 @@ open class FontFile: Font {
     
     /// Adds override for ``Font/isScriptSupported(script:)``.
     public final func setScriptSupportOverride (script: String, supported: Bool) {
-        #if true
+        #if false
         
         let gstr_script = GString (script)
         var copy_supported = supported
@@ -3443,7 +3443,7 @@ open class FontFile: Font {
     /// Returns `true` if support override is enabled for the `script`.
     public final func getScriptSupportOverride (script: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_script = GString (script)
         
@@ -3476,7 +3476,7 @@ open class FontFile: Font {
     
     /// Removes script support override.
     public final func removeScriptSupportOverride (script: String) {
-        #if true
+        #if false
         
         let gstr_script = GString (script)
         
@@ -3526,7 +3526,7 @@ open class FontFile: Font {
     
     @inline(__always)
     fileprivate final func set_opentype_feature_overrides (_ overrides: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (FontFile.method_set_opentype_feature_overrides, UnsafeMutableRawPointer (mutating: handle), nil, &overrides.content)
@@ -3575,7 +3575,7 @@ open class FontFile: Font {
     /// Returns the glyph index of a `char`, optionally modified by the `variationSelector`.
     public final func getGlyphIndex (size: Int32, char: Int64, variationSelector: Int64)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         var copy_char = char
@@ -3619,7 +3619,7 @@ open class FontFile: Font {
     /// Returns character code associated with `glyphIndex`, or `0` if `glyphIndex` is invalid. See ``getGlyphIndex(size:char:variationSelector:)``.
     public final func getCharFromGlyphIndex (size: Int32, glyphIndex: Int32)-> Int64 {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         var copy_glyph_index: Int = Int (glyphIndex)

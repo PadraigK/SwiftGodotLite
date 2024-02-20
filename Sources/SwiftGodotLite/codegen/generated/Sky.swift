@@ -101,7 +101,7 @@ open class Sky: Resource {
     
     @inline(__always)
     fileprivate final func set_radiance_size (_ size: Sky.RadianceSize) {
-        #if true
+        #if false
         
         var copy_size = Int64 (size.rawValue)
         
@@ -151,7 +151,7 @@ open class Sky: Resource {
     
     @inline(__always)
     fileprivate final func set_process_mode (_ mode: Sky.ProcessMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -201,7 +201,7 @@ open class Sky: Resource {
     
     @inline(__always)
     fileprivate final func set_material (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         

@@ -66,7 +66,7 @@ open class InputEventAction: InputEvent {
     
     @inline(__always)
     fileprivate final func set_action (_ action: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (InputEventAction.method_set_action, UnsafeMutableRawPointer (mutating: handle), nil, &action.content)
@@ -114,7 +114,7 @@ open class InputEventAction: InputEvent {
     
     @inline(__always)
     fileprivate final func set_pressed (_ pressed: Bool) {
-        #if true
+        #if false
         
         var copy_pressed = pressed
         
@@ -146,7 +146,7 @@ open class InputEventAction: InputEvent {
     
     @inline(__always)
     fileprivate final func set_strength (_ strength: Double) {
-        #if true
+        #if false
         
         var copy_strength = strength
         

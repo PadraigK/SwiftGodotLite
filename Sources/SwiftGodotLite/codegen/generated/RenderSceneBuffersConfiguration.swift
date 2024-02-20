@@ -153,7 +153,7 @@ open class RenderSceneBuffersConfiguration: RefCounted {
     
     @inline(__always)
     fileprivate final func set_render_target (_ renderTarget: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderSceneBuffersConfiguration.method_set_render_target, UnsafeMutableRawPointer (mutating: handle), nil, &renderTarget.content)
@@ -201,7 +201,7 @@ open class RenderSceneBuffersConfiguration: RefCounted {
     
     @inline(__always)
     fileprivate final func set_internal_size (_ internalSize: Vector2i) {
-        #if true
+        #if false
         
         var copy_internal_size = internalSize
         
@@ -251,7 +251,7 @@ open class RenderSceneBuffersConfiguration: RefCounted {
     
     @inline(__always)
     fileprivate final func set_target_size (_ targetSize: Vector2i) {
-        #if true
+        #if false
         
         var copy_target_size = targetSize
         
@@ -301,7 +301,7 @@ open class RenderSceneBuffersConfiguration: RefCounted {
     
     @inline(__always)
     fileprivate final func set_view_count (_ viewCount: UInt32) {
-        #if true
+        #if false
         
         var copy_view_count: Int = Int (viewCount)
         
@@ -351,7 +351,7 @@ open class RenderSceneBuffersConfiguration: RefCounted {
     
     @inline(__always)
     fileprivate final func set_scaling_3d_mode (_ scaling3dMode: RenderingServer.ViewportScaling3DMode) {
-        #if true
+        #if false
         
         var copy_scaling_3d_mode = Int64 (scaling3dMode.rawValue)
         
@@ -401,7 +401,7 @@ open class RenderSceneBuffersConfiguration: RefCounted {
     
     @inline(__always)
     fileprivate final func set_msaa_3d (_ msaa3d: RenderingServer.ViewportMSAA) {
-        #if true
+        #if false
         
         var copy_msaa_3d = Int64 (msaa3d.rawValue)
         
@@ -451,7 +451,7 @@ open class RenderSceneBuffersConfiguration: RefCounted {
     
     @inline(__always)
     fileprivate final func set_screen_space_aa (_ screenSpaceAa: RenderingServer.ViewportScreenSpaceAA) {
-        #if true
+        #if false
         
         var copy_screen_space_aa = Int64 (screenSpaceAa.rawValue)
         
@@ -501,7 +501,7 @@ open class RenderSceneBuffersConfiguration: RefCounted {
     
     @inline(__always)
     fileprivate final func set_fsr_sharpness (_ fsrSharpness: Double) {
-        #if true
+        #if false
         
         var copy_fsr_sharpness = fsrSharpness
         
@@ -551,7 +551,7 @@ open class RenderSceneBuffersConfiguration: RefCounted {
     
     @inline(__always)
     fileprivate final func set_texture_mipmap_bias (_ textureMipmapBias: Double) {
-        #if true
+        #if false
         
         var copy_texture_mipmap_bias = textureMipmapBias
         

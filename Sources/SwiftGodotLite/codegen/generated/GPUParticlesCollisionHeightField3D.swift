@@ -111,7 +111,7 @@ open class GPUParticlesCollisionHeightField3D: GPUParticlesCollision3D {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -161,7 +161,7 @@ open class GPUParticlesCollisionHeightField3D: GPUParticlesCollision3D {
     
     @inline(__always)
     fileprivate final func set_resolution (_ resolution: GPUParticlesCollisionHeightField3D.Resolution) {
-        #if true
+        #if false
         
         var copy_resolution = Int64 (resolution.rawValue)
         
@@ -211,7 +211,7 @@ open class GPUParticlesCollisionHeightField3D: GPUParticlesCollision3D {
     
     @inline(__always)
     fileprivate final func set_update_mode (_ updateMode: GPUParticlesCollisionHeightField3D.UpdateMode) {
-        #if true
+        #if false
         
         var copy_update_mode = Int64 (updateMode.rawValue)
         
@@ -261,7 +261,7 @@ open class GPUParticlesCollisionHeightField3D: GPUParticlesCollision3D {
     
     @inline(__always)
     fileprivate final func set_follow_camera_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

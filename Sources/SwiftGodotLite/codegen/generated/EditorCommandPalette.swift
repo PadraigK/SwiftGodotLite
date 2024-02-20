@@ -38,7 +38,7 @@ open class EditorCommandPalette: ConfirmationDialog {
     /// - `shortcutText`: ``String`` (Shortcut text of the **Command** if available.)
     /// 
     public final func addCommand (commandName: String, keyName: String, bindedCallable: Callable, shortcutText: String = "None") {
-        #if true
+        #if false
         
         let gstr_command_name = GString (commandName)
         let gstr_key_name = GString (keyName)
@@ -86,7 +86,7 @@ open class EditorCommandPalette: ConfirmationDialog {
     /// - `keyName`: ``String`` (Name of the key for a particular **Command**.)
     /// 
     public final func removeCommand (keyName: String) {
-        #if true
+        #if false
         
         let gstr_key_name = GString (keyName)
         

@@ -55,7 +55,7 @@ open class CameraServer: Object {
     /// Returns the ``CameraFeed`` corresponding to the camera with the given `index`.
     public static func getFeed (index: Int32)-> CameraFeed? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -124,7 +124,7 @@ open class CameraServer: Object {
     
     /// Adds the camera `feed` to the camera server.
     public static func addFeed (_ feed: CameraFeed?) {
-        #if true
+        #if false
         
         var copy_feed_handle = feed?.handle
         
@@ -155,7 +155,7 @@ open class CameraServer: Object {
     
     /// Removes the specified camera `feed`.
     public static func removeFeed (_ feed: CameraFeed?) {
-        #if true
+        #if false
         
         var copy_feed_handle = feed?.handle
         

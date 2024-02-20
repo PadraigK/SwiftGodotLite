@@ -150,7 +150,7 @@ open class SkeletonIK3D: Node {
     
     @inline(__always)
     fileprivate final func set_root_bone (_ rootBone: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SkeletonIK3D.method_set_root_bone, UnsafeMutableRawPointer (mutating: handle), nil, &rootBone.content)
@@ -198,7 +198,7 @@ open class SkeletonIK3D: Node {
     
     @inline(__always)
     fileprivate final func set_tip_bone (_ tipBone: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SkeletonIK3D.method_set_tip_bone, UnsafeMutableRawPointer (mutating: handle), nil, &tipBone.content)
@@ -246,7 +246,7 @@ open class SkeletonIK3D: Node {
     
     @inline(__always)
     fileprivate final func set_interpolation (_ interpolation: Double) {
-        #if true
+        #if false
         
         var copy_interpolation = interpolation
         
@@ -296,7 +296,7 @@ open class SkeletonIK3D: Node {
     
     @inline(__always)
     fileprivate final func set_target_transform (_ target: Transform3D) {
-        #if true
+        #if false
         
         var copy_target = target
         
@@ -346,7 +346,7 @@ open class SkeletonIK3D: Node {
     
     @inline(__always)
     fileprivate final func set_target_node (_ node: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SkeletonIK3D.method_set_target_node, UnsafeMutableRawPointer (mutating: handle), nil, &node.content)
@@ -394,7 +394,7 @@ open class SkeletonIK3D: Node {
     
     @inline(__always)
     fileprivate final func set_override_tip_basis (_ override: Bool) {
-        #if true
+        #if false
         
         var copy_override = override
         
@@ -444,7 +444,7 @@ open class SkeletonIK3D: Node {
     
     @inline(__always)
     fileprivate final func set_use_magnet (_ use: Bool) {
-        #if true
+        #if false
         
         var copy_use = use
         
@@ -494,7 +494,7 @@ open class SkeletonIK3D: Node {
     
     @inline(__always)
     fileprivate final func set_magnet_position (_ localPosition: Vector3) {
-        #if true
+        #if false
         
         var copy_local_position = localPosition
         
@@ -580,7 +580,7 @@ open class SkeletonIK3D: Node {
     
     @inline(__always)
     fileprivate final func set_min_distance (_ minDistance: Double) {
-        #if true
+        #if false
         
         var copy_min_distance = minDistance
         
@@ -630,7 +630,7 @@ open class SkeletonIK3D: Node {
     
     @inline(__always)
     fileprivate final func set_max_iterations (_ iterations: Int32) {
-        #if true
+        #if false
         
         var copy_iterations: Int = Int (iterations)
         
@@ -680,7 +680,7 @@ open class SkeletonIK3D: Node {
     
     /// Starts applying IK effects on each frame to the ``Skeleton3D`` bones but will only take effect starting on the next frame. If `oneTime` is `true`, this will take effect immediately but also reset on the next frame.
     public final func start (oneTime: Bool = false) {
-        #if true
+        #if false
         
         var copy_one_time = oneTime
         

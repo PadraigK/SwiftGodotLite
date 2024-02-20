@@ -65,7 +65,7 @@ open class LightmapGIData: Resource {
     
     @inline(__always)
     fileprivate final func set_lightmap_textures (_ lightTextures: ObjectCollection<TextureLayered>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (LightmapGIData.method_set_lightmap_textures, UnsafeMutableRawPointer (mutating: handle), nil, &lightTextures.array.content)
@@ -117,7 +117,7 @@ open class LightmapGIData: Resource {
     /// > Note: Changing this value on already baked lightmaps will not cause them to be baked again. This means the material appearance will look incorrect until lightmaps are baked again, in which case the value set here is discarded as the entire ``LightmapGIData`` resource is replaced by the lightmapper.
     /// 
     fileprivate final func set_uses_spherical_harmonics (_ usesSphericalHarmonics: Bool) {
-        #if true
+        #if false
         
         var copy_uses_spherical_harmonics = usesSphericalHarmonics
         
@@ -168,7 +168,7 @@ open class LightmapGIData: Resource {
     
     /// Adds an object that is considered baked within this ``LightmapGIData``.
     public final func addUser (path: NodePath, uvScale: Rect2, sliceIndex: Int32, subInstance: Int32) {
-        #if true
+        #if false
         
         var copy_uv_scale = uvScale
         var copy_slice_index: Int = Int (sliceIndex)
@@ -232,7 +232,7 @@ open class LightmapGIData: Resource {
     /// Returns the ``NodePath`` of the baked object at index `userIdx`.
     public final func getUserPath (userIdx: Int32)-> NodePath {
         let _result: NodePath = NodePath ()
-        #if true
+        #if false
         
         var copy_user_idx: Int = Int (userIdx)
         
@@ -281,7 +281,7 @@ open class LightmapGIData: Resource {
     
     @inline(__always)
     fileprivate final func set_light_texture (_ lightTexture: TextureLayered?) {
-        #if true
+        #if false
         
         var copy_light_texture_handle = lightTexture?.handle
         

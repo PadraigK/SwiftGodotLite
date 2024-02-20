@@ -100,7 +100,7 @@ open class VoxelGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_probe_data (_ data: VoxelGIData?) {
-        #if true
+        #if false
         
         var copy_data_handle = data?.handle
         
@@ -149,7 +149,7 @@ open class VoxelGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_subdiv (_ subdiv: VoxelGI.Subdiv) {
-        #if true
+        #if false
         
         var copy_subdiv = Int64 (subdiv.rawValue)
         
@@ -199,7 +199,7 @@ open class VoxelGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -249,7 +249,7 @@ open class VoxelGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_camera_attributes (_ cameraAttributes: CameraAttributes?) {
-        #if true
+        #if false
         
         var copy_camera_attributes_handle = cameraAttributes?.handle
         
@@ -303,7 +303,7 @@ open class VoxelGI: VisualInstance3D {
     /// > Note: ``GeometryInstance3D``s and ``Light3D``s must be fully ready before ``bake(fromNode:createVisualDebug:)`` is called. If you are procedurally creating those and some meshes or lights are missing from your baked ``VoxelGI``, use `call_deferred("bake")` instead of calling ``bake(fromNode:createVisualDebug:)`` directly.
     /// 
     public final func bake (fromNode: Node? = nil, createVisualDebug: Bool = false) {
-        #if true
+        #if false
         
         var copy_create_visual_debug = createVisualDebug
         var copy_from_node_handle = fromNode?.handle

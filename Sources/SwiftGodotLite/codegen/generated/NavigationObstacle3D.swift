@@ -139,7 +139,7 @@ open class NavigationObstacle3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_avoidance_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -189,7 +189,7 @@ open class NavigationObstacle3D: Node3D {
     
     /// Sets the ``RID`` of the navigation map this NavigationObstacle node should use and also updates the `obstacle` on the NavigationServer.
     public final func setNavigationMap (_ navigationMap: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationObstacle3D.method_set_navigation_map, UnsafeMutableRawPointer (mutating: handle), nil, &navigationMap.content)
@@ -237,7 +237,7 @@ open class NavigationObstacle3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -287,7 +287,7 @@ open class NavigationObstacle3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_height (_ height: Double) {
-        #if true
+        #if false
         
         var copy_height = height
         
@@ -337,7 +337,7 @@ open class NavigationObstacle3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_velocity (_ velocity: Vector3) {
-        #if true
+        #if false
         
         var copy_velocity = velocity
         
@@ -387,7 +387,7 @@ open class NavigationObstacle3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_vertices (_ vertices: PackedVector3Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationObstacle3D.method_set_vertices, UnsafeMutableRawPointer (mutating: handle), nil, &vertices.content)
@@ -435,7 +435,7 @@ open class NavigationObstacle3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_avoidance_layers (_ layers: UInt32) {
-        #if true
+        #if false
         
         var copy_layers: Int = Int (layers)
         
@@ -485,7 +485,7 @@ open class NavigationObstacle3D: Node3D {
     
     /// Based on `value`, enables or disables the specified layer in the ``avoidanceLayers`` bitmask, given a `layerNumber` between 1 and 32.
     public final func setAvoidanceLayerValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -523,7 +523,7 @@ open class NavigationObstacle3D: Node3D {
     /// Returns whether or not the specified layer of the ``avoidanceLayers`` bitmask is enabled, given a `layerNumber` between 1 and 32.
     public final func getAvoidanceLayerValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -556,7 +556,7 @@ open class NavigationObstacle3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_use_3d_avoidance (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

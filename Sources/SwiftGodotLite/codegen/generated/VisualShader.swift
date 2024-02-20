@@ -99,7 +99,7 @@ open class VisualShader: Shader {
     
     /// Sets the mode of this shader.
     public final func setMode (_ mode: Shader.Mode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -131,7 +131,7 @@ open class VisualShader: Shader {
     
     /// Adds the specified `node` to the shader.
     public final func addNode (type: VisualShader.GType, node: VisualShaderNode?, position: Vector2, id: Int32) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_position = position
@@ -178,7 +178,7 @@ open class VisualShader: Shader {
     /// Returns the shader node instance with specified `type` and `id`.
     public final func getNode (type: VisualShader.GType, id: Int32)-> VisualShaderNode? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_id: Int = Int (id)
@@ -216,7 +216,7 @@ open class VisualShader: Shader {
     
     /// Sets the position of the specified node.
     public final func setNodePosition (type: VisualShader.GType, id: Int32, position: Vector2) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_id: Int = Int (id)
@@ -259,7 +259,7 @@ open class VisualShader: Shader {
     /// Returns the position of the specified node within the shader graph.
     public final func getNodePosition (type: VisualShader.GType, id: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_id: Int = Int (id)
@@ -298,7 +298,7 @@ open class VisualShader: Shader {
     /// Returns the list of all nodes in the shader with the specified type.
     public final func getNodeList (type: VisualShader.GType)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -332,7 +332,7 @@ open class VisualShader: Shader {
     /// Returns next valid node ID that can be added to the shader graph.
     public final func getValidNodeId (type: VisualShader.GType)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -365,7 +365,7 @@ open class VisualShader: Shader {
     
     /// Removes the specified node from the shader.
     public final func removeNode (type: VisualShader.GType, id: Int32) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_id: Int = Int (id)
@@ -402,7 +402,7 @@ open class VisualShader: Shader {
     
     /// Replaces the specified node with a node of new class type.
     public final func replaceNode (type: VisualShader.GType, id: Int32, newClass: StringName) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_id: Int = Int (id)
@@ -443,7 +443,7 @@ open class VisualShader: Shader {
     /// Returns `true` if the specified node and port connection exist.
     public final func isNodeConnection (type: VisualShader.GType, fromNode: Int32, fromPort: Int32, toNode: Int32, toPort: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_from_node: Int = Int (fromNode)
@@ -497,7 +497,7 @@ open class VisualShader: Shader {
     /// Returns `true` if the specified nodes and ports can be connected together.
     public final func canConnectNodes (type: VisualShader.GType, fromNode: Int32, fromPort: Int32, toNode: Int32, toPort: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_from_node: Int = Int (fromNode)
@@ -551,7 +551,7 @@ open class VisualShader: Shader {
     /// Connects the specified nodes and ports.
     public final func connectNodes (type: VisualShader.GType, fromNode: Int32, fromPort: Int32, toNode: Int32, toPort: Int32)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_from_node: Int = Int (fromNode)
@@ -604,7 +604,7 @@ open class VisualShader: Shader {
     
     /// Connects the specified nodes and ports.
     public final func disconnectNodes (type: VisualShader.GType, fromNode: Int32, fromPort: Int32, toNode: Int32, toPort: Int32) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_from_node: Int = Int (fromNode)
@@ -656,7 +656,7 @@ open class VisualShader: Shader {
     
     /// Connects the specified nodes and ports, even if they can't be connected. Such connection is invalid and will not function properly.
     public final func connectNodesForced (type: VisualShader.GType, fromNode: Int32, fromPort: Int32, toNode: Int32, toPort: Int32) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_from_node: Int = Int (fromNode)
@@ -709,7 +709,7 @@ open class VisualShader: Shader {
     /// Returns the list of connected nodes with the specified type.
     public final func getNodeConnections (type: VisualShader.GType)-> VariantCollection<GDictionary> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -742,7 +742,7 @@ open class VisualShader: Shader {
     
     @inline(__always)
     fileprivate final func set_graph_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -792,7 +792,7 @@ open class VisualShader: Shader {
     
     /// Adds a new varying value node to the shader.
     public final func addVarying (name: String, mode: VisualShader.VaryingMode, type: VisualShader.VaryingType) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_mode = Int64 (mode.rawValue)
@@ -834,7 +834,7 @@ open class VisualShader: Shader {
     
     /// Removes a varying value node with the given `name`. Prints an error if a node with this name is not found.
     public final func removeVarying (name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -867,7 +867,7 @@ open class VisualShader: Shader {
     /// Returns `true` if the shader has a varying with the given `name`.
     public final func hasVarying (name: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         

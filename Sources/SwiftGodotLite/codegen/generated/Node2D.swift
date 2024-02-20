@@ -180,7 +180,7 @@ open class Node2D: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_position (_ position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -212,7 +212,7 @@ open class Node2D: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_rotation (_ radians: Double) {
-        #if true
+        #if false
         
         var copy_radians = radians
         
@@ -244,7 +244,7 @@ open class Node2D: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_rotation_degrees (_ degrees: Double) {
-        #if true
+        #if false
         
         var copy_degrees = degrees
         
@@ -276,7 +276,7 @@ open class Node2D: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_skew (_ radians: Double) {
-        #if true
+        #if false
         
         var copy_radians = radians
         
@@ -308,7 +308,7 @@ open class Node2D: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_scale (_ scale: Vector2) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -430,7 +430,7 @@ open class Node2D: CanvasItem {
     
     /// Applies a rotation to the node, in radians, starting from its current rotation.
     public final func rotate (radians: Double) {
-        #if true
+        #if false
         
         var copy_radians = radians
         
@@ -462,7 +462,7 @@ open class Node2D: CanvasItem {
     
     /// Applies a local translation on the node's X axis based on the ``Node/_process(delta:)``'s `delta`. If `scaled` is `false`, normalizes the movement.
     public final func moveLocalX (delta: Double, scaled: Bool = false) {
-        #if true
+        #if false
         
         var copy_delta = delta
         var copy_scaled = scaled
@@ -499,7 +499,7 @@ open class Node2D: CanvasItem {
     
     /// Applies a local translation on the node's Y axis based on the ``Node/_process(delta:)``'s `delta`. If `scaled` is `false`, normalizes the movement.
     public final func moveLocalY (delta: Double, scaled: Bool = false) {
-        #if true
+        #if false
         
         var copy_delta = delta
         var copy_scaled = scaled
@@ -536,7 +536,7 @@ open class Node2D: CanvasItem {
     
     /// Translates the node by the given `offset` in local coordinates.
     public final func translate (offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -568,7 +568,7 @@ open class Node2D: CanvasItem {
     
     /// Adds the `offset` vector to the node's global position.
     public final func globalTranslate (offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -600,7 +600,7 @@ open class Node2D: CanvasItem {
     
     /// Multiplies the current scale by the `ratio` vector.
     public final func applyScale (ratio: Vector2) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -632,7 +632,7 @@ open class Node2D: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_global_position (_ position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -682,7 +682,7 @@ open class Node2D: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_global_rotation (_ radians: Double) {
-        #if true
+        #if false
         
         var copy_radians = radians
         
@@ -714,7 +714,7 @@ open class Node2D: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_global_rotation_degrees (_ degrees: Double) {
-        #if true
+        #if false
         
         var copy_degrees = degrees
         
@@ -782,7 +782,7 @@ open class Node2D: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_global_skew (_ radians: Double) {
-        #if true
+        #if false
         
         var copy_radians = radians
         
@@ -832,7 +832,7 @@ open class Node2D: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_global_scale (_ scale: Vector2) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -882,7 +882,7 @@ open class Node2D: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_transform (_ xform: Transform2D) {
-        #if true
+        #if false
         
         var copy_xform = xform
         
@@ -914,7 +914,7 @@ open class Node2D: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_global_transform (_ xform: Transform2D) {
-        #if true
+        #if false
         
         var copy_xform = xform
         
@@ -946,7 +946,7 @@ open class Node2D: CanvasItem {
     
     /// Rotates the node so it points towards the `point`, which is expected to use global coordinates.
     public final func lookAt (point: Vector2) {
-        #if true
+        #if false
         
         var copy_point = point
         
@@ -982,7 +982,7 @@ open class Node2D: CanvasItem {
     /// 
     public final func getAngleTo (point: Vector2)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_point = point
         
@@ -1016,7 +1016,7 @@ open class Node2D: CanvasItem {
     /// Transforms the provided global position into a position in local coordinate space. The output will be local relative to the ``Node2D`` it is called on. e.g. It is appropriate for determining the positions of child nodes, but it is not appropriate for determining its own position relative to its parent.
     public final func toLocal (globalPoint: Vector2)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_global_point = globalPoint
         
@@ -1050,7 +1050,7 @@ open class Node2D: CanvasItem {
     /// Transforms the provided local position into a position in global coordinate space. The input is expected to be local relative to the ``Node2D`` it is called on. e.g. Applying this method to the positions of child nodes will correctly transform their positions into the global coordinate space, but applying it to a node's own position will give an incorrect result, as it will incorporate the node's own transformation into its global position.
     public final func toGlobal (localPoint: Vector2)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_local_point = localPoint
         
@@ -1084,7 +1084,7 @@ open class Node2D: CanvasItem {
     /// Returns the ``Transform2D`` relative to this node's parent.
     public final func getRelativeTransformToParent (_ parent: Node?)-> Transform2D {
         var _result: Transform2D = Transform2D ()
-        #if true
+        #if false
         
         var copy_parent_handle = parent?.handle
         

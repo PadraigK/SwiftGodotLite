@@ -66,7 +66,7 @@ open class BoneMap: Resource {
     
     @inline(__always)
     fileprivate final func set_profile (_ profile: SkeletonProfile?) {
-        #if true
+        #if false
         
         var copy_profile_handle = profile?.handle
         
@@ -101,7 +101,7 @@ open class BoneMap: Resource {
     /// 
     public final func getSkeletonBoneName (profileBoneName: StringName)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (BoneMap.method_get_skeleton_bone_name, UnsafeMutableRawPointer (mutating: handle), &_result.content, &profileBoneName.content)
@@ -135,7 +135,7 @@ open class BoneMap: Resource {
     /// In the retargeting process, the setting bone name is the bone name of the source skeleton.
     /// 
     public final func setSkeletonBoneName (profileBoneName: StringName, skeletonBoneName: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (BoneMap.method_set_skeleton_bone_name, UnsafeMutableRawPointer (mutating: handle), nil, &profileBoneName.content, &skeletonBoneName.content)
@@ -172,7 +172,7 @@ open class BoneMap: Resource {
     /// 
     public final func findProfileBoneName (skeletonBoneName: StringName)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (BoneMap.method_find_profile_bone_name, UnsafeMutableRawPointer (mutating: handle), &_result.content, &skeletonBoneName.content)

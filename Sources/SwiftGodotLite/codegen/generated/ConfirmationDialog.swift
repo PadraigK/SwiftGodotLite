@@ -63,7 +63,7 @@ open class ConfirmationDialog: AcceptDialog {
     
     @inline(__always)
     fileprivate final func set_cancel_button_text (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         

@@ -39,7 +39,7 @@ open class CanvasModulate: Node2D {
     
     @inline(__always)
     fileprivate final func set_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         

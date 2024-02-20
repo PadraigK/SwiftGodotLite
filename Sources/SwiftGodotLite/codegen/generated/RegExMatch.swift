@@ -127,7 +127,7 @@ open class RegExMatch: RefCounted {
     /// 
     public final func getString (name: Variant)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RegExMatch.method_get_string, UnsafeMutableRawPointer (mutating: handle), &_result.content, &name.content)
@@ -162,7 +162,7 @@ open class RegExMatch: RefCounted {
     /// 
     public final func getStart (name: Variant)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RegExMatch.method_get_start, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -197,7 +197,7 @@ open class RegExMatch: RefCounted {
     /// 
     public final func getEnd (name: Variant)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RegExMatch.method_get_end, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)

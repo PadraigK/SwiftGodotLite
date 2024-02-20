@@ -290,7 +290,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_stream (_ stream: AudioStream?) {
-        #if true
+        #if false
         
         var copy_stream_handle = stream?.handle
         
@@ -339,7 +339,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_volume_db (_ volumeDb: Double) {
-        #if true
+        #if false
         
         var copy_volume_db = volumeDb
         
@@ -389,7 +389,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_unit_size (_ unitSize: Double) {
-        #if true
+        #if false
         
         var copy_unit_size = unitSize
         
@@ -439,7 +439,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_max_db (_ maxDb: Double) {
-        #if true
+        #if false
         
         var copy_max_db = maxDb
         
@@ -489,7 +489,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_pitch_scale (_ pitchScale: Double) {
-        #if true
+        #if false
         
         var copy_pitch_scale = pitchScale
         
@@ -539,7 +539,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     /// Queues the audio to play on the next physics frame, from the given position `fromPosition`, in seconds.
     public final func play (fromPosition: Double = 0.0) {
-        #if true
+        #if false
         
         var copy_from_position = fromPosition
         
@@ -571,7 +571,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     /// Sets the position from which audio will be played, in seconds.
     public final func seek (toPosition: Double) {
-        #if true
+        #if false
         
         var copy_to_position = toPosition
         
@@ -654,7 +654,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_bus (_ bus: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AudioStreamPlayer3D.method_set_bus, UnsafeMutableRawPointer (mutating: handle), nil, &bus.content)
@@ -702,7 +702,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_autoplay (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -752,7 +752,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_max_distance (_ meters: Double) {
-        #if true
+        #if false
         
         var copy_meters = meters
         
@@ -802,7 +802,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_area_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -852,7 +852,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_emission_angle (_ degrees: Double) {
-        #if true
+        #if false
         
         var copy_degrees = degrees
         
@@ -902,7 +902,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_emission_angle_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -952,7 +952,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_emission_angle_filter_attenuation_db (_ db: Double) {
-        #if true
+        #if false
         
         var copy_db = db
         
@@ -1002,7 +1002,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_attenuation_filter_cutoff_hz (_ degrees: Double) {
-        #if true
+        #if false
         
         var copy_degrees = degrees
         
@@ -1052,7 +1052,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_attenuation_filter_db (_ db: Double) {
-        #if true
+        #if false
         
         var copy_db = db
         
@@ -1102,7 +1102,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_attenuation_model (_ model: AudioStreamPlayer3D.AttenuationModel) {
-        #if true
+        #if false
         
         var copy_model = Int64 (model.rawValue)
         
@@ -1152,7 +1152,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_doppler_tracking (_ mode: AudioStreamPlayer3D.DopplerTracking) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1202,7 +1202,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_stream_paused (_ pause: Bool) {
-        #if true
+        #if false
         
         var copy_pause = pause
         
@@ -1252,7 +1252,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_max_polyphony (_ maxPolyphony: Int32) {
-        #if true
+        #if false
         
         var copy_max_polyphony: Int = Int (maxPolyphony)
         
@@ -1302,7 +1302,7 @@ open class AudioStreamPlayer3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_panning_strength (_ panningStrength: Double) {
-        #if true
+        #if false
         
         var copy_panning_strength = panningStrength
         

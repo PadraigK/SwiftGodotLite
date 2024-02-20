@@ -75,7 +75,7 @@ open class PointLight2D: Light2D {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -124,7 +124,7 @@ open class PointLight2D: Light2D {
     
     @inline(__always)
     fileprivate final func set_texture_offset (_ textureOffset: Vector2) {
-        #if true
+        #if false
         
         var copy_texture_offset = textureOffset
         
@@ -174,7 +174,7 @@ open class PointLight2D: Light2D {
     
     @inline(__always)
     fileprivate final func set_texture_scale (_ textureScale: Double) {
-        #if true
+        #if false
         
         var copy_texture_scale = textureScale
         

@@ -56,7 +56,7 @@ open class UndoRedo: Object {
     /// The way undo operation are ordered in actions is dictated by `backwardUndoOps`. When `backwardUndoOps` is `false` undo option are ordered in the same order they were added. Which means the first operation to be added will be the first to be undone.
     /// 
     public final func createAction (name: String, mergeMode: UndoRedo.MergeMode = .disable, backwardUndoOps: Bool = false) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_merge_mode = Int64 (mergeMode.rawValue)
@@ -98,7 +98,7 @@ open class UndoRedo: Object {
     
     /// Commit the action. If `execute` is `true` (which it is by default), all "do" methods/properties are called/set when this function is called.
     public final func commitAction (execute: Bool = true) {
-        #if true
+        #if false
         
         var copy_execute = execute
         
@@ -148,7 +148,7 @@ open class UndoRedo: Object {
     
     /// Register a ``Callable`` that will be called when the action is committed.
     public final func addDoMethod (callable: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (UndoRedo.method_add_do_method, UnsafeMutableRawPointer (mutating: handle), nil, &callable.content)
@@ -178,7 +178,7 @@ open class UndoRedo: Object {
     
     /// Register a ``Callable`` that will be called when the action is undone.
     public final func addUndoMethod (callable: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (UndoRedo.method_add_undo_method, UnsafeMutableRawPointer (mutating: handle), nil, &callable.content)
@@ -208,7 +208,7 @@ open class UndoRedo: Object {
     
     /// Register a `property` that would change its value to `value` when the action is committed.
     public final func addDoProperty (object: Object?, property: StringName, value: Variant) {
-        #if true
+        #if false
         
         var copy_object_handle = object?.handle
         
@@ -245,7 +245,7 @@ open class UndoRedo: Object {
     
     /// Register a `property` that would change its value to `value` when the action is undone.
     public final func addUndoProperty (object: Object?, property: StringName, value: Variant) {
-        #if true
+        #if false
         
         var copy_object_handle = object?.handle
         
@@ -283,7 +283,7 @@ open class UndoRedo: Object {
     /// Register a reference for "do" that will be erased if the "do" history is lost. This is useful mostly for new nodes created for the "do" call. Do not use for resources.
     /// 
     public final func addDoReference (object: Object?) {
-        #if true
+        #if false
         
         var copy_object_handle = object?.handle
         
@@ -315,7 +315,7 @@ open class UndoRedo: Object {
     /// Register a reference for "undo" that will be erased if the "undo" history is lost. This is useful mostly for nodes removed with the "do" call (not the "undo" call!).
     /// 
     public final func addUndoReference (object: Object?) {
-        #if true
+        #if false
         
         var copy_object_handle = object?.handle
         
@@ -415,7 +415,7 @@ open class UndoRedo: Object {
     /// Gets the action name from its index.
     public final func getActionName (id: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -451,7 +451,7 @@ open class UndoRedo: Object {
     /// Passing `false` to `increaseVersion` will prevent the version number from increasing when the history is cleared.
     /// 
     public final func clearHistory (increaseVersion: Bool = true) {
-        #if true
+        #if false
         
         var copy_increase_version = increaseVersion
         

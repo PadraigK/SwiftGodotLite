@@ -61,7 +61,7 @@ open class GPUParticlesAttractorVectorField3D: GPUParticlesAttractor3D {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -111,7 +111,7 @@ open class GPUParticlesAttractorVectorField3D: GPUParticlesAttractor3D {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: Texture3D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         

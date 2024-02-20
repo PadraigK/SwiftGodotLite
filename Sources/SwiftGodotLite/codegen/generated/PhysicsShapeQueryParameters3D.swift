@@ -136,7 +136,7 @@ open class PhysicsShapeQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_shape (_ shape: Resource?) {
-        #if true
+        #if false
         
         var copy_shape_handle = shape?.handle
         
@@ -185,7 +185,7 @@ open class PhysicsShapeQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_shape_rid (_ shape: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsShapeQueryParameters3D.method_set_shape_rid, UnsafeMutableRawPointer (mutating: handle), nil, &shape.content)
@@ -233,7 +233,7 @@ open class PhysicsShapeQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_transform (_ transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -283,7 +283,7 @@ open class PhysicsShapeQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_motion (_ motion: Vector3) {
-        #if true
+        #if false
         
         var copy_motion = motion
         
@@ -333,7 +333,7 @@ open class PhysicsShapeQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_margin (_ margin: Double) {
-        #if true
+        #if false
         
         var copy_margin = margin
         
@@ -383,7 +383,7 @@ open class PhysicsShapeQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_collision_mask (_ collisionMask: UInt32) {
-        #if true
+        #if false
         
         var copy_collision_mask: Int = Int (collisionMask)
         
@@ -433,7 +433,7 @@ open class PhysicsShapeQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_exclude (_ exclude: VariantCollection<RID>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsShapeQueryParameters3D.method_set_exclude, UnsafeMutableRawPointer (mutating: handle), nil, &exclude.array.content)
@@ -481,7 +481,7 @@ open class PhysicsShapeQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_collide_with_bodies (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -531,7 +531,7 @@ open class PhysicsShapeQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_collide_with_areas (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

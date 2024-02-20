@@ -90,7 +90,7 @@ open class RemoteTransform3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_remote_node (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RemoteTransform3D.method_set_remote_node, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -154,7 +154,7 @@ open class RemoteTransform3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_use_global_coordinates (_ useGlobalCoordinates: Bool) {
-        #if true
+        #if false
         
         var copy_use_global_coordinates = useGlobalCoordinates
         
@@ -204,7 +204,7 @@ open class RemoteTransform3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_update_position (_ updateRemotePosition: Bool) {
-        #if true
+        #if false
         
         var copy_update_remote_position = updateRemotePosition
         
@@ -254,7 +254,7 @@ open class RemoteTransform3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_update_rotation (_ updateRemoteRotation: Bool) {
-        #if true
+        #if false
         
         var copy_update_remote_rotation = updateRemoteRotation
         
@@ -304,7 +304,7 @@ open class RemoteTransform3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_update_scale (_ updateRemoteScale: Bool) {
-        #if true
+        #if false
         
         var copy_update_remote_scale = updateRemoteScale
         

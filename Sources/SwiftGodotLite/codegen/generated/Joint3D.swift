@@ -75,7 +75,7 @@ open class Joint3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_node_a (_ node: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Joint3D.method_set_node_a, UnsafeMutableRawPointer (mutating: handle), nil, &node.content)
@@ -123,7 +123,7 @@ open class Joint3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_node_b (_ node: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Joint3D.method_set_node_b, UnsafeMutableRawPointer (mutating: handle), nil, &node.content)
@@ -171,7 +171,7 @@ open class Joint3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_solver_priority (_ priority: Int32) {
-        #if true
+        #if false
         
         var copy_priority: Int = Int (priority)
         
@@ -221,7 +221,7 @@ open class Joint3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_exclude_nodes_from_collision (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

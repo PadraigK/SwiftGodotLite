@@ -63,7 +63,7 @@ open class LightOccluder2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_occluder_polygon (_ polygon: OccluderPolygon2D?) {
-        #if true
+        #if false
         
         var copy_polygon_handle = polygon?.handle
         
@@ -112,7 +112,7 @@ open class LightOccluder2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_occluder_light_mask (_ mask: Int32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -162,7 +162,7 @@ open class LightOccluder2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_as_sdf_collision (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

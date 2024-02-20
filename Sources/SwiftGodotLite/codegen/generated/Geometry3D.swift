@@ -33,7 +33,7 @@ open class Geometry3D: Object {
     /// Calculates and returns all the vertex points of a convex shape defined by an array of `planes`.
     public static func computeConvexMeshPoints (planes: VariantCollection<Plane>)-> PackedVector3Array {
         let _result: PackedVector3Array = PackedVector3Array ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Geometry3D.method_compute_convex_mesh_points, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &planes.array.content)
@@ -65,7 +65,7 @@ open class Geometry3D: Object {
     /// Returns an array with 6 ``Plane``s that describe the sides of a box centered at the origin. The box size is defined by `extents`, which represents one (positive) corner of the box (i.e. half its actual size).
     public static func buildBoxPlanes (extents: Vector3)-> VariantCollection<Plane> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_extents = extents
         
@@ -99,7 +99,7 @@ open class Geometry3D: Object {
     /// Returns an array of ``Plane``s closely bounding a faceted cylinder centered at the origin with radius `radius` and height `height`. The parameter `sides` defines how many planes will be generated for the round part of the cylinder. The parameter `axis` describes the axis along which the cylinder is oriented (0 for X, 1 for Y, 2 for Z).
     public static func buildCylinderPlanes (radius: Double, height: Double, sides: Int32, axis: Vector3.Axis = .z)-> VariantCollection<Plane> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_radius = radius
         var copy_height = height
@@ -148,7 +148,7 @@ open class Geometry3D: Object {
     /// Returns an array of ``Plane``s closely bounding a faceted capsule centered at the origin with radius `radius` and height `height`. The parameter `sides` defines how many planes will be generated for the side part of the capsule, whereas `lats` gives the number of latitudinal steps at the bottom and top of the capsule. The parameter `axis` describes the axis along which the capsule is oriented (0 for X, 1 for Y, 2 for Z).
     public static func buildCapsulePlanes (radius: Double, height: Double, sides: Int32, lats: Int32, axis: Vector3.Axis = .z)-> VariantCollection<Plane> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_radius = radius
         var copy_height = height
@@ -202,7 +202,7 @@ open class Geometry3D: Object {
     /// Given the two 3D segments (`p1`, `p2`) and (`q1`, `q2`), finds those two points on the two segments that are closest to each other. Returns a ``PackedVector3Array`` that contains this point on (`p1`, `p2`) as well the accompanying point on (`q1`, `q2`).
     public static func getClosestPointsBetweenSegments (p1: Vector3, p2: Vector3, q1: Vector3, q2: Vector3)-> PackedVector3Array {
         let _result: PackedVector3Array = PackedVector3Array ()
-        #if true
+        #if false
         
         var copy_p1 = p1
         var copy_p2 = p2
@@ -251,7 +251,7 @@ open class Geometry3D: Object {
     /// Returns the 3D point on the 3D segment (`s1`, `s2`) that is closest to `point`. The returned point will always be inside the specified segment.
     public static func getClosestPointToSegment (point: Vector3, s1: Vector3, s2: Vector3)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_point = point
         var copy_s1 = s1
@@ -295,7 +295,7 @@ open class Geometry3D: Object {
     /// Returns the 3D point on the 3D line defined by (`s1`, `s2`) that is closest to `point`. The returned point can be inside the segment (`s1`, `s2`) or outside of it, i.e. somewhere on the line extending from the segment.
     public static func getClosestPointToSegmentUncapped (point: Vector3, s1: Vector3, s2: Vector3)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_point = point
         var copy_s1 = s1
@@ -342,7 +342,7 @@ open class Geometry3D: Object {
     /// 
     public static func getTriangleBarycentricCoords (point: Vector3, a: Vector3, b: Vector3, c: Vector3)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_point = point
         var copy_a = a
@@ -391,7 +391,7 @@ open class Geometry3D: Object {
     /// Tests if the 3D ray starting at `from` with the direction of `dir` intersects the triangle specified by `a`, `b` and `c`. If yes, returns the point of intersection as ``Vector3``. If no intersection takes place, returns `null`.
     public static func rayIntersectsTriangle (from: Vector3, dir: Vector3, a: Vector3, b: Vector3, c: Vector3)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_from = from
         var copy_dir = dir
@@ -445,7 +445,7 @@ open class Geometry3D: Object {
     /// Tests if the segment (`from`, `to`) intersects the triangle `a`, `b`, `c`. If yes, returns the point of intersection as ``Vector3``. If no intersection takes place, returns `null`.
     public static func segmentIntersectsTriangle (from: Vector3, to: Vector3, a: Vector3, b: Vector3, c: Vector3)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -499,7 +499,7 @@ open class Geometry3D: Object {
     /// Checks if the segment (`from`, `to`) intersects the sphere that is located at `spherePosition` and has radius `sphereRadius`. If no, returns an empty ``PackedVector3Array``. If yes, returns a ``PackedVector3Array`` containing the point of intersection and the sphere's normal at the point of intersection.
     public static func segmentIntersectsSphere (from: Vector3, to: Vector3, spherePosition: Vector3, sphereRadius: Double)-> PackedVector3Array {
         let _result: PackedVector3Array = PackedVector3Array ()
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -548,7 +548,7 @@ open class Geometry3D: Object {
     /// Checks if the segment (`from`, `to`) intersects the cylinder with height `height` that is centered at the origin and has radius `radius`. If no, returns an empty ``PackedVector3Array``. If an intersection takes place, the returned array contains the point of intersection and the cylinder's normal at the point of intersection.
     public static func segmentIntersectsCylinder (from: Vector3, to: Vector3, height: Double, radius: Double)-> PackedVector3Array {
         let _result: PackedVector3Array = PackedVector3Array ()
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -597,7 +597,7 @@ open class Geometry3D: Object {
     /// Given a convex hull defined though the ``Plane``s in the array `planes`, tests if the segment (`from`, `to`) intersects with that hull. If an intersection is found, returns a ``PackedVector3Array`` containing the point the intersection and the hull's normal. Otherwise, returns an empty array.
     public static func segmentIntersectsConvex (from: Vector3, to: Vector3, planes: VariantCollection<Plane>)-> PackedVector3Array {
         let _result: PackedVector3Array = PackedVector3Array ()
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -639,7 +639,7 @@ open class Geometry3D: Object {
     /// Clips the polygon defined by the points in `points` against the `plane` and returns the points of the clipped polygon.
     public static func clipPolygon (points: PackedVector3Array, plane: Plane)-> PackedVector3Array {
         let _result: PackedVector3Array = PackedVector3Array ()
-        #if true
+        #if false
         
         var copy_plane = plane
         

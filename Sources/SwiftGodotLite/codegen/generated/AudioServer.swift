@@ -103,7 +103,7 @@ open class AudioServer: Object {
     
     @inline(__always)
     fileprivate static func set_bus_count (_ amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -153,7 +153,7 @@ open class AudioServer: Object {
     
     /// Removes the bus at index `index`.
     public static func removeBus (index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -185,7 +185,7 @@ open class AudioServer: Object {
     
     /// Adds a bus at `atPosition`.
     public static func addBus (atPosition: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_at_position: Int = Int (atPosition)
         
@@ -217,7 +217,7 @@ open class AudioServer: Object {
     
     /// Moves the bus from index `index` to index `toIndex`.
     public static func moveBus (index: Int32, toIndex: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_to_index: Int = Int (toIndex)
@@ -254,7 +254,7 @@ open class AudioServer: Object {
     
     /// Sets the name of the bus at index `busIdx` to `name`.
     public static func setBusName (busIdx: Int32, name: String) {
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         let gstr_name = GString (name)
@@ -292,7 +292,7 @@ open class AudioServer: Object {
     /// Returns the name of the bus with the index `busIdx`.
     public static func getBusName (busIdx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         
@@ -326,7 +326,7 @@ open class AudioServer: Object {
     /// Returns the index of the bus with the name `busName`. Returns `-1` if no bus with the specified name exist.
     public static func getBusIndex (busName: StringName)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AudioServer.method_get_bus_index, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &busName.content)
@@ -358,7 +358,7 @@ open class AudioServer: Object {
     /// Returns the number of channels of the bus at index `busIdx`.
     public static func getBusChannels (busIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         
@@ -391,7 +391,7 @@ open class AudioServer: Object {
     
     /// Sets the volume of the bus at index `busIdx` to `volumeDb`.
     public static func setBusVolumeDb (busIdx: Int32, volumeDb: Double) {
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         var copy_volume_db = volumeDb
@@ -429,7 +429,7 @@ open class AudioServer: Object {
     /// Returns the volume of the bus at index `busIdx` in dB.
     public static func getBusVolumeDb (busIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         
@@ -462,7 +462,7 @@ open class AudioServer: Object {
     
     /// Connects the output of the bus at `busIdx` to the bus named `send`.
     public static func setBusSend (busIdx: Int32, send: StringName) {
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         
@@ -498,7 +498,7 @@ open class AudioServer: Object {
     /// Returns the name of the bus that the bus at index `busIdx` sends to.
     public static func getBusSend (busIdx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         
@@ -531,7 +531,7 @@ open class AudioServer: Object {
     
     /// If `true`, the bus at index `busIdx` is in solo mode.
     public static func setBusSolo (busIdx: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         var copy_enable = enable
@@ -569,7 +569,7 @@ open class AudioServer: Object {
     /// If `true`, the bus at index `busIdx` is in solo mode.
     public static func isBusSolo (busIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         
@@ -602,7 +602,7 @@ open class AudioServer: Object {
     
     /// If `true`, the bus at index `busIdx` is muted.
     public static func setBusMute (busIdx: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         var copy_enable = enable
@@ -640,7 +640,7 @@ open class AudioServer: Object {
     /// If `true`, the bus at index `busIdx` is muted.
     public static func isBusMute (busIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         
@@ -673,7 +673,7 @@ open class AudioServer: Object {
     
     /// If `true`, the bus at index `busIdx` is bypassing effects.
     public static func setBusBypassEffects (busIdx: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         var copy_enable = enable
@@ -711,7 +711,7 @@ open class AudioServer: Object {
     /// If `true`, the bus at index `busIdx` is bypassing effects.
     public static func isBusBypassingEffects (busIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         
@@ -744,7 +744,7 @@ open class AudioServer: Object {
     
     /// Adds an ``AudioEffect`` effect to the bus `busIdx` at `atPosition`.
     public static func addBusEffect (busIdx: Int32, effect: AudioEffect?, atPosition: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         var copy_at_position: Int = Int (atPosition)
@@ -785,7 +785,7 @@ open class AudioServer: Object {
     
     /// Removes the effect at index `effectIdx` from the bus at index `busIdx`.
     public static func removeBusEffect (busIdx: Int32, effectIdx: Int32) {
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         var copy_effect_idx: Int = Int (effectIdx)
@@ -823,7 +823,7 @@ open class AudioServer: Object {
     /// Returns the number of effects on the bus at `busIdx`.
     public static func getBusEffectCount (busIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         
@@ -857,7 +857,7 @@ open class AudioServer: Object {
     /// Returns the ``AudioEffect`` at position `effectIdx` in bus `busIdx`.
     public static func getBusEffect (busIdx: Int32, effectIdx: Int32)-> AudioEffect? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         var copy_effect_idx: Int = Int (effectIdx)
@@ -896,7 +896,7 @@ open class AudioServer: Object {
     /// Returns the ``AudioEffectInstance`` assigned to the given bus and effect indices (and optionally channel).
     public static func getBusEffectInstance (busIdx: Int32, effectIdx: Int32, channel: Int32 = 0)-> AudioEffectInstance? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         var copy_effect_idx: Int = Int (effectIdx)
@@ -939,7 +939,7 @@ open class AudioServer: Object {
     
     /// Swaps the position of two effects in bus `busIdx`.
     public static func swapBusEffects (busIdx: Int32, effectIdx: Int32, byEffectIdx: Int32) {
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         var copy_effect_idx: Int = Int (effectIdx)
@@ -981,7 +981,7 @@ open class AudioServer: Object {
     
     /// If `true`, the effect at index `effectIdx` on the bus at index `busIdx` is enabled.
     public static func setBusEffectEnabled (busIdx: Int32, effectIdx: Int32, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         var copy_effect_idx: Int = Int (effectIdx)
@@ -1024,7 +1024,7 @@ open class AudioServer: Object {
     /// If `true`, the effect at index `effectIdx` on the bus at index `busIdx` is enabled.
     public static func isBusEffectEnabled (busIdx: Int32, effectIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         var copy_effect_idx: Int = Int (effectIdx)
@@ -1063,7 +1063,7 @@ open class AudioServer: Object {
     /// Returns the peak volume of the left speaker at bus index `busIdx` and channel index `channel`.
     public static func getBusPeakVolumeLeftDb (busIdx: Int32, channel: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         var copy_channel: Int = Int (channel)
@@ -1102,7 +1102,7 @@ open class AudioServer: Object {
     /// Returns the peak volume of the right speaker at bus index `busIdx` and channel index `channel`.
     public static func getBusPeakVolumeRightDb (busIdx: Int32, channel: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_bus_idx: Int = Int (busIdx)
         var copy_channel: Int = Int (channel)
@@ -1140,7 +1140,7 @@ open class AudioServer: Object {
     
     @inline(__always)
     fileprivate static func set_playback_speed_scale (_ scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -1297,7 +1297,7 @@ open class AudioServer: Object {
     
     @inline(__always)
     fileprivate static func set_output_device (_ name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -1425,7 +1425,7 @@ open class AudioServer: Object {
     
     @inline(__always)
     fileprivate static func set_input_device (_ name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -1457,7 +1457,7 @@ open class AudioServer: Object {
     
     /// Overwrites the currently used ``AudioBusLayout``.
     public static func setBusLayout (_ busLayout: AudioBusLayout?) {
-        #if true
+        #if false
         
         var copy_bus_layout_handle = busLayout?.handle
         
@@ -1506,7 +1506,7 @@ open class AudioServer: Object {
     
     /// 
     public static func setEnableTaggingUsedAudioStreams (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

@@ -159,7 +159,7 @@ open class UPNPDevice: RefCounted {
     /// Adds a port mapping to forward the given external port on this ``UPNPDevice`` for the given protocol to the local machine. See ``UPNP/addPortMapping(port:portInternal:desc:proto:duration:)``.
     public final func addPortMapping (port: Int32, portInternal: Int32 = 0, desc: String = "", proto: String = "UDP", duration: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_port: Int = Int (port)
         var copy_port_internal: Int = Int (portInternal)
@@ -213,7 +213,7 @@ open class UPNPDevice: RefCounted {
     /// Deletes the port mapping identified by the given port and protocol combination on this device. See ``UPNP/deletePortMapping(port:proto:)``.
     public final func deletePortMapping (port: Int32, proto: String = "UDP")-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_port: Int = Int (port)
         let gstr_proto = GString (proto)
@@ -251,7 +251,7 @@ open class UPNPDevice: RefCounted {
     
     @inline(__always)
     fileprivate final func set_description_url (_ url: String) {
-        #if true
+        #if false
         
         let gstr_url = GString (url)
         
@@ -301,7 +301,7 @@ open class UPNPDevice: RefCounted {
     
     @inline(__always)
     fileprivate final func set_service_type (_ type: String) {
-        #if true
+        #if false
         
         let gstr_type = GString (type)
         
@@ -351,7 +351,7 @@ open class UPNPDevice: RefCounted {
     
     @inline(__always)
     fileprivate final func set_igd_control_url (_ url: String) {
-        #if true
+        #if false
         
         let gstr_url = GString (url)
         
@@ -401,7 +401,7 @@ open class UPNPDevice: RefCounted {
     
     @inline(__always)
     fileprivate final func set_igd_service_type (_ type: String) {
-        #if true
+        #if false
         
         let gstr_type = GString (type)
         
@@ -451,7 +451,7 @@ open class UPNPDevice: RefCounted {
     
     @inline(__always)
     fileprivate final func set_igd_our_addr (_ addr: String) {
-        #if true
+        #if false
         
         let gstr_addr = GString (addr)
         
@@ -501,7 +501,7 @@ open class UPNPDevice: RefCounted {
     
     @inline(__always)
     fileprivate final func set_igd_status (_ status: UPNPDevice.IGDStatus) {
-        #if true
+        #if false
         
         var copy_status = Int64 (status.rawValue)
         

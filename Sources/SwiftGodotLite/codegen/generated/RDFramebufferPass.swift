@@ -95,7 +95,7 @@ open class RDFramebufferPass: RefCounted {
     
     @inline(__always)
     fileprivate final func set_color_attachments (_ pMember: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RDFramebufferPass.method_set_color_attachments, UnsafeMutableRawPointer (mutating: handle), nil, &pMember.content)
@@ -143,7 +143,7 @@ open class RDFramebufferPass: RefCounted {
     
     @inline(__always)
     fileprivate final func set_input_attachments (_ pMember: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RDFramebufferPass.method_set_input_attachments, UnsafeMutableRawPointer (mutating: handle), nil, &pMember.content)
@@ -191,7 +191,7 @@ open class RDFramebufferPass: RefCounted {
     
     @inline(__always)
     fileprivate final func set_resolve_attachments (_ pMember: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RDFramebufferPass.method_set_resolve_attachments, UnsafeMutableRawPointer (mutating: handle), nil, &pMember.content)
@@ -239,7 +239,7 @@ open class RDFramebufferPass: RefCounted {
     
     @inline(__always)
     fileprivate final func set_preserve_attachments (_ pMember: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RDFramebufferPass.method_set_preserve_attachments, UnsafeMutableRawPointer (mutating: handle), nil, &pMember.content)
@@ -287,7 +287,7 @@ open class RDFramebufferPass: RefCounted {
     
     @inline(__always)
     fileprivate final func set_depth_attachment (_ pMember: Int32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         

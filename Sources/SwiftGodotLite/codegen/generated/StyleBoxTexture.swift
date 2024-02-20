@@ -229,7 +229,7 @@ open class StyleBoxTexture: StyleBox {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -279,7 +279,7 @@ open class StyleBoxTexture: StyleBox {
     @inline(__always)
     /// Sets the margin to `size` pixels for the specified ``Side``.
     fileprivate final func set_texture_margin (_ margin: Side, _ size: Double) {
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         var copy_size = size
@@ -316,7 +316,7 @@ open class StyleBoxTexture: StyleBox {
     
     /// Sets the margin to `size` pixels for all sides.
     public final func setTextureMarginAll (size: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -350,7 +350,7 @@ open class StyleBoxTexture: StyleBox {
     /// Returns the margin size of the specified ``Side``.
     fileprivate final func get_texture_margin (_ margin: Side)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         
@@ -384,7 +384,7 @@ open class StyleBoxTexture: StyleBox {
     @inline(__always)
     /// Sets the expand margin to `size` pixels for the specified ``Side``.
     fileprivate final func set_expand_margin (_ margin: Side, _ size: Double) {
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         var copy_size = size
@@ -421,7 +421,7 @@ open class StyleBoxTexture: StyleBox {
     
     /// Sets the expand margin to `size` pixels for all sides.
     public final func setExpandMarginAll (size: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -455,7 +455,7 @@ open class StyleBoxTexture: StyleBox {
     /// Returns the expand margin size of the specified ``Side``.
     fileprivate final func get_expand_margin (_ margin: Side)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         
@@ -488,7 +488,7 @@ open class StyleBoxTexture: StyleBox {
     
     @inline(__always)
     fileprivate final func set_region_rect (_ region: Rect2) {
-        #if true
+        #if false
         
         var copy_region = region
         
@@ -538,7 +538,7 @@ open class StyleBoxTexture: StyleBox {
     
     @inline(__always)
     fileprivate final func set_draw_center (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -588,7 +588,7 @@ open class StyleBoxTexture: StyleBox {
     
     @inline(__always)
     fileprivate final func set_modulate (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -638,7 +638,7 @@ open class StyleBoxTexture: StyleBox {
     
     @inline(__always)
     fileprivate final func set_h_axis_stretch_mode (_ mode: StyleBoxTexture.AxisStretchMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -688,7 +688,7 @@ open class StyleBoxTexture: StyleBox {
     
     @inline(__always)
     fileprivate final func set_v_axis_stretch_mode (_ mode: StyleBoxTexture.AxisStretchMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

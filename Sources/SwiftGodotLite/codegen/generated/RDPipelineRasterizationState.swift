@@ -154,7 +154,7 @@ open class RDPipelineRasterizationState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_enable_depth_clamp (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -204,7 +204,7 @@ open class RDPipelineRasterizationState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_discard_primitives (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -254,7 +254,7 @@ open class RDPipelineRasterizationState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_wireframe (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -304,7 +304,7 @@ open class RDPipelineRasterizationState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_cull_mode (_ pMember: RenderingDevice.PolygonCullMode) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -354,7 +354,7 @@ open class RDPipelineRasterizationState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_front_face (_ pMember: RenderingDevice.PolygonFrontFace) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -404,7 +404,7 @@ open class RDPipelineRasterizationState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_depth_bias_enabled (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -454,7 +454,7 @@ open class RDPipelineRasterizationState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_depth_bias_constant_factor (_ pMember: Double) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -504,7 +504,7 @@ open class RDPipelineRasterizationState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_depth_bias_clamp (_ pMember: Double) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -554,7 +554,7 @@ open class RDPipelineRasterizationState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_depth_bias_slope_factor (_ pMember: Double) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -604,7 +604,7 @@ open class RDPipelineRasterizationState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_line_width (_ pMember: Double) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -654,7 +654,7 @@ open class RDPipelineRasterizationState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_patch_control_points (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         

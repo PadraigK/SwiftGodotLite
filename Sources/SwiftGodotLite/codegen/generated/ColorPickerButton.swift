@@ -63,7 +63,7 @@ open class ColorPickerButton: Button {
     
     @inline(__always)
     fileprivate final func set_pick_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -155,7 +155,7 @@ open class ColorPickerButton: Button {
     
     @inline(__always)
     fileprivate final func set_edit_alpha (_ show: Bool) {
-        #if true
+        #if false
         
         var copy_show = show
         

@@ -70,7 +70,7 @@ open class SubViewportContainer: Container {
     
     @inline(__always)
     fileprivate final func set_stretch (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -120,7 +120,7 @@ open class SubViewportContainer: Container {
     
     @inline(__always)
     fileprivate final func set_stretch_shrink (_ amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         

@@ -135,7 +135,7 @@ open class XRPositionalTracker: RefCounted {
     
     @inline(__always)
     fileprivate final func set_tracker_type (_ type: XRServer.TrackerType) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -185,7 +185,7 @@ open class XRPositionalTracker: RefCounted {
     
     @inline(__always)
     fileprivate final func set_tracker_name (_ name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRPositionalTracker.method_set_tracker_name, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -233,7 +233,7 @@ open class XRPositionalTracker: RefCounted {
     
     @inline(__always)
     fileprivate final func set_tracker_desc (_ description: String) {
-        #if true
+        #if false
         
         let gstr_description = GString (description)
         
@@ -283,7 +283,7 @@ open class XRPositionalTracker: RefCounted {
     
     @inline(__always)
     fileprivate final func set_tracker_profile (_ profile: String) {
-        #if true
+        #if false
         
         let gstr_profile = GString (profile)
         
@@ -333,7 +333,7 @@ open class XRPositionalTracker: RefCounted {
     
     @inline(__always)
     fileprivate final func set_tracker_hand (_ hand: XRPositionalTracker.TrackerHand) {
-        #if true
+        #if false
         
         var copy_hand = Int64 (hand.rawValue)
         
@@ -366,7 +366,7 @@ open class XRPositionalTracker: RefCounted {
     /// Returns `true` if the tracker is available and is currently tracking the bound `name` pose.
     public final func hasPose (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRPositionalTracker.method_has_pose, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -398,7 +398,7 @@ open class XRPositionalTracker: RefCounted {
     /// Returns the current ``XRPose`` state object for the bound `name` pose.
     public final func getPose (name: StringName)-> XRPose? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRPositionalTracker.method_get_pose, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -429,7 +429,7 @@ open class XRPositionalTracker: RefCounted {
     
     /// Marks this pose as invalid, we don't clear the last reported state but it allows users to decide if trackers need to be hidden if we lose tracking or just remain at their last known position.
     public final func invalidatePose (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRPositionalTracker.method_invalidate_pose, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -459,7 +459,7 @@ open class XRPositionalTracker: RefCounted {
     
     /// Sets the transform, linear velocity, angular velocity and tracking confidence for the given pose. This method is called by a ``XRInterface`` implementation and should not be used directly.
     public final func setPose (name: StringName, transform: Transform3D, linearVelocity: Vector3, angularVelocity: Vector3, trackingConfidence: XRPose.TrackingConfidence) {
-        #if true
+        #if false
         
         var copy_transform = transform
         var copy_linear_velocity = linearVelocity
@@ -510,7 +510,7 @@ open class XRPositionalTracker: RefCounted {
     /// Returns an input for this tracker. It can return a boolean, float or ``Vector2`` value depending on whether the input is a button, trigger or thumbstick/thumbpad.
     public final func getInput (name: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRPositionalTracker.method_get_input, UnsafeMutableRawPointer (mutating: handle), &_result.content, &name.content)
@@ -541,7 +541,7 @@ open class XRPositionalTracker: RefCounted {
     
     /// Changes the value for the given input. This method is called by a ``XRInterface`` implementation and should not be used directly.
     public final func setInput (name: StringName, value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRPositionalTracker.method_set_input, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &value.content)

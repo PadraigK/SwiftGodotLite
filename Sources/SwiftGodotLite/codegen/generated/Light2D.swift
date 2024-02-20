@@ -228,7 +228,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -278,7 +278,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_editor_only (_ editorOnly: Bool) {
-        #if true
+        #if false
         
         var copy_editor_only = editorOnly
         
@@ -328,7 +328,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -378,7 +378,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_energy (_ energy: Double) {
-        #if true
+        #if false
         
         var copy_energy = energy
         
@@ -428,7 +428,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_z_range_min (_ z: Int32) {
-        #if true
+        #if false
         
         var copy_z: Int = Int (z)
         
@@ -478,7 +478,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_z_range_max (_ z: Int32) {
-        #if true
+        #if false
         
         var copy_z: Int = Int (z)
         
@@ -528,7 +528,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_layer_range_min (_ layer: Int32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -578,7 +578,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_layer_range_max (_ layer: Int32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -628,7 +628,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_item_cull_mask (_ itemCullMask: Int32) {
-        #if true
+        #if false
         
         var copy_item_cull_mask: Int = Int (itemCullMask)
         
@@ -678,7 +678,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_item_shadow_cull_mask (_ itemShadowCullMask: Int32) {
-        #if true
+        #if false
         
         var copy_item_shadow_cull_mask: Int = Int (itemShadowCullMask)
         
@@ -728,7 +728,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_shadow_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -778,7 +778,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_shadow_smooth (_ smooth: Double) {
-        #if true
+        #if false
         
         var copy_smooth = smooth
         
@@ -828,7 +828,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_shadow_filter (_ filter: Light2D.ShadowFilter) {
-        #if true
+        #if false
         
         var copy_filter = Int64 (filter.rawValue)
         
@@ -878,7 +878,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_shadow_color (_ shadowColor: Color) {
-        #if true
+        #if false
         
         var copy_shadow_color = shadowColor
         
@@ -928,7 +928,7 @@ open class Light2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_blend_mode (_ mode: Light2D.BlendMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -978,7 +978,7 @@ open class Light2D: Node2D {
     
     /// Sets the light's height, which is used in 2D normal mapping. See ``PointLight2D/height`` and ``DirectionalLight2D/height``.
     public final func setHeight (_ height: Double) {
-        #if true
+        #if false
         
         var copy_height = height
         

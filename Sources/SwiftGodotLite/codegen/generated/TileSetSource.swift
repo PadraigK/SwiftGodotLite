@@ -52,7 +52,7 @@ open class TileSetSource: Resource {
     /// Returns the tile coordinates ID of the tile with index `index`.
     public final func getTileId (index: Int32)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -86,7 +86,7 @@ open class TileSetSource: Resource {
     /// Returns if this atlas has a tile with coordinates ID `atlasCoords`.
     public final func hasTile (atlasCoords: Vector2i)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         
@@ -125,7 +125,7 @@ open class TileSetSource: Resource {
     /// 
     public final func getAlternativeTilesCount (atlasCoords: Vector2i)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         
@@ -159,7 +159,7 @@ open class TileSetSource: Resource {
     /// Returns the alternative ID for the tile with coordinates ID `atlasCoords` at index `index`.
     public final func getAlternativeTileId (atlasCoords: Vector2i, index: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_index: Int = Int (index)
@@ -198,7 +198,7 @@ open class TileSetSource: Resource {
     /// Returns if the base tile at coordinates `atlasCoords` has an alternative with ID `alternativeTile`.
     public final func hasAlternativeTile (atlasCoords: Vector2i, alternativeTile: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_alternative_tile: Int = Int (alternativeTile)

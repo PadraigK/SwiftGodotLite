@@ -257,7 +257,7 @@ open class XRInterfaceExtension: XRInterface {
     
     /// Blits our render results to screen optionally applying lens distortion. This can only be called while processing `_commit_views`.
     public final func addBlit (renderTarget: RID, srcRect: Rect2, dstRect: Rect2i, useLayer: Bool, layer: UInt32, applyLensDistortion: Bool, eyeCenter: Vector2, k1: Double, k2: Double, upscale: Double, aspectRatio: Double) {
-        #if true
+        #if false
         
         var copy_src_rect = srcRect
         var copy_dst_rect = dstRect
@@ -338,7 +338,7 @@ open class XRInterfaceExtension: XRInterface {
     /// Returns a valid ``RID`` for a texture to which we should render the current frame if supported by the interface.
     public final func getRenderTargetTexture (renderTarget: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRInterfaceExtension.method_get_render_target_texture, UnsafeMutableRawPointer (mutating: handle), &_result.content, &renderTarget.content)

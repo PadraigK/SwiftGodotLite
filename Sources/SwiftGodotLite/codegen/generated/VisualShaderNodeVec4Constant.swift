@@ -39,7 +39,7 @@ open class VisualShaderNodeVec4Constant: VisualShaderNodeConstant {
     
     @inline(__always)
     fileprivate final func set_constant (_ constant: Quaternion) {
-        #if true
+        #if false
         
         var copy_constant = constant
         

@@ -87,7 +87,7 @@ open class RDTextureView: RefCounted {
     
     @inline(__always)
     fileprivate final func set_format_override (_ pMember: RenderingDevice.DataFormat) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -137,7 +137,7 @@ open class RDTextureView: RefCounted {
     
     @inline(__always)
     fileprivate final func set_swizzle_r (_ pMember: RenderingDevice.TextureSwizzle) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -187,7 +187,7 @@ open class RDTextureView: RefCounted {
     
     @inline(__always)
     fileprivate final func set_swizzle_g (_ pMember: RenderingDevice.TextureSwizzle) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -237,7 +237,7 @@ open class RDTextureView: RefCounted {
     
     @inline(__always)
     fileprivate final func set_swizzle_b (_ pMember: RenderingDevice.TextureSwizzle) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -287,7 +287,7 @@ open class RDTextureView: RefCounted {
     
     @inline(__always)
     fileprivate final func set_swizzle_a (_ pMember: RenderingDevice.TextureSwizzle) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         

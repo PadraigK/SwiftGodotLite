@@ -76,7 +76,7 @@ open class VehicleBody3D: RigidBody3D {
     
     @inline(__always)
     fileprivate final func set_engine_force (_ engineForce: Double) {
-        #if true
+        #if false
         
         var copy_engine_force = engineForce
         
@@ -126,7 +126,7 @@ open class VehicleBody3D: RigidBody3D {
     
     @inline(__always)
     fileprivate final func set_brake (_ brake: Double) {
-        #if true
+        #if false
         
         var copy_brake = brake
         
@@ -176,7 +176,7 @@ open class VehicleBody3D: RigidBody3D {
     
     @inline(__always)
     fileprivate final func set_steering (_ steering: Double) {
-        #if true
+        #if false
         
         var copy_steering = steering
         

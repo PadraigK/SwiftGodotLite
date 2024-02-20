@@ -125,7 +125,7 @@ open class AudioEffectCompressor: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_threshold (_ threshold: Double) {
-        #if true
+        #if false
         
         var copy_threshold = threshold
         
@@ -175,7 +175,7 @@ open class AudioEffectCompressor: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -225,7 +225,7 @@ open class AudioEffectCompressor: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_gain (_ gain: Double) {
-        #if true
+        #if false
         
         var copy_gain = gain
         
@@ -275,7 +275,7 @@ open class AudioEffectCompressor: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_attack_us (_ attackUs: Double) {
-        #if true
+        #if false
         
         var copy_attack_us = attackUs
         
@@ -325,7 +325,7 @@ open class AudioEffectCompressor: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_release_ms (_ releaseMs: Double) {
-        #if true
+        #if false
         
         var copy_release_ms = releaseMs
         
@@ -375,7 +375,7 @@ open class AudioEffectCompressor: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_mix (_ mix: Double) {
-        #if true
+        #if false
         
         var copy_mix = mix
         
@@ -425,7 +425,7 @@ open class AudioEffectCompressor: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_sidechain (_ sidechain: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AudioEffectCompressor.method_set_sidechain, UnsafeMutableRawPointer (mutating: handle), nil, &sidechain.content)

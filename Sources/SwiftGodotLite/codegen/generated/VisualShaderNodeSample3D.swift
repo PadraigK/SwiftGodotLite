@@ -48,7 +48,7 @@ open class VisualShaderNodeSample3D: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_source (_ value: VisualShaderNodeSample3D.Source) {
-        #if true
+        #if false
         
         var copy_value = Int64 (value.rawValue)
         

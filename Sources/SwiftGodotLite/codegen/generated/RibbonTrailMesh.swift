@@ -109,7 +109,7 @@ open class RibbonTrailMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -159,7 +159,7 @@ open class RibbonTrailMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_sections (_ sections: Int32) {
-        #if true
+        #if false
         
         var copy_sections: Int = Int (sections)
         
@@ -209,7 +209,7 @@ open class RibbonTrailMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_section_length (_ sectionLength: Double) {
-        #if true
+        #if false
         
         var copy_section_length = sectionLength
         
@@ -259,7 +259,7 @@ open class RibbonTrailMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_section_segments (_ sectionSegments: Int32) {
-        #if true
+        #if false
         
         var copy_section_segments: Int = Int (sectionSegments)
         
@@ -309,7 +309,7 @@ open class RibbonTrailMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_curve (_ curve: Curve?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         
@@ -358,7 +358,7 @@ open class RibbonTrailMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_shape (_ shape: RibbonTrailMesh.Shape) {
-        #if true
+        #if false
         
         var copy_shape = Int64 (shape.rawValue)
         

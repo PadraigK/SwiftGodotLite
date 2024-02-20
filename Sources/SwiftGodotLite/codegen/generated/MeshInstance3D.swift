@@ -63,7 +63,7 @@ open class MeshInstance3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_mesh (_ mesh: Mesh?) {
-        #if true
+        #if false
         
         var copy_mesh_handle = mesh?.handle
         
@@ -112,7 +112,7 @@ open class MeshInstance3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_skeleton_path (_ skeletonPath: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (MeshInstance3D.method_set_skeleton_path, UnsafeMutableRawPointer (mutating: handle), nil, &skeletonPath.content)
@@ -160,7 +160,7 @@ open class MeshInstance3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_skin (_ skin: Skin?) {
-        #if true
+        #if false
         
         var copy_skin_handle = skin?.handle
         
@@ -230,7 +230,7 @@ open class MeshInstance3D: GeometryInstance3D {
     /// > Note: This assigns the ``Material`` associated to the ``MeshInstance3D``'s Surface Material Override properties, not the material within the ``Mesh`` resource. To set the material within the ``Mesh`` resource, use ``Mesh/surfaceGetMaterial(surfIdx:)`` instead.
     /// 
     public final func setSurfaceOverrideMaterial (surface: Int32, material: Material?) {
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         var copy_material_handle = material?.handle
@@ -270,7 +270,7 @@ open class MeshInstance3D: GeometryInstance3D {
     /// 
     public final func getSurfaceOverrideMaterial (surface: Int32)-> Material? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         
@@ -307,7 +307,7 @@ open class MeshInstance3D: GeometryInstance3D {
     /// 
     public final func getActiveMaterial (surface: Int32)-> Material? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         
@@ -361,7 +361,7 @@ open class MeshInstance3D: GeometryInstance3D {
     /// If `simplify` is `true`, the geometry can be further simplified to reduce the number of vertices. Disabled by default.
     /// 
     public final func createConvexCollision (clean: Bool = true, simplify: Bool = false) {
-        #if true
+        #if false
         
         var copy_clean = clean
         var copy_simplify = simplify
@@ -398,7 +398,7 @@ open class MeshInstance3D: GeometryInstance3D {
     
     /// This helper creates a ``StaticBody3D`` child node with multiple ``ConvexPolygonShape3D`` collision shapes calculated from the mesh geometry via convex decomposition. The convex decomposition operation can be controlled with parameters from the optional `settings`.
     public final func createMultipleConvexCollisions (settings: MeshConvexDecompositionSettings? = nil) {
-        #if true
+        #if false
         
         var copy_settings_handle = settings?.handle
         
@@ -448,7 +448,7 @@ open class MeshInstance3D: GeometryInstance3D {
     /// Returns the index of the blend shape with the given `name`. Returns `-1` if no blend shape with this name exists, including when ``mesh`` is `null`.
     public final func findBlendShapeByName (_ name: StringName)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (MeshInstance3D.method_find_blend_shape_by_name, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -480,7 +480,7 @@ open class MeshInstance3D: GeometryInstance3D {
     /// Returns the value of the blend shape at the given `blendShapeIdx`. Returns `0.0` and produces an error if ``mesh`` is `null` or doesn't have a blend shape at that index.
     public final func getBlendShapeValue (blendShapeIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_blend_shape_idx: Int = Int (blendShapeIdx)
         
@@ -513,7 +513,7 @@ open class MeshInstance3D: GeometryInstance3D {
     
     /// Sets the value of the blend shape at `blendShapeIdx` to `value`. Produces an error if ``mesh`` is `null` or doesn't have a blend shape at that index.
     public final func setBlendShapeValue (blendShapeIdx: Int32, value: Double) {
-        #if true
+        #if false
         
         var copy_blend_shape_idx: Int = Int (blendShapeIdx)
         var copy_value = value

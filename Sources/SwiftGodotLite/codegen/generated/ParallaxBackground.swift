@@ -102,7 +102,7 @@ open class ParallaxBackground: CanvasLayer {
     
     @inline(__always)
     fileprivate final func set_scroll_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -152,7 +152,7 @@ open class ParallaxBackground: CanvasLayer {
     
     @inline(__always)
     fileprivate final func set_scroll_base_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -202,7 +202,7 @@ open class ParallaxBackground: CanvasLayer {
     
     @inline(__always)
     fileprivate final func set_scroll_base_scale (_ scale: Vector2) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -252,7 +252,7 @@ open class ParallaxBackground: CanvasLayer {
     
     @inline(__always)
     fileprivate final func set_limit_begin (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -302,7 +302,7 @@ open class ParallaxBackground: CanvasLayer {
     
     @inline(__always)
     fileprivate final func set_limit_end (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -352,7 +352,7 @@ open class ParallaxBackground: CanvasLayer {
     
     @inline(__always)
     fileprivate final func set_ignore_camera_zoom (_ ignore: Bool) {
-        #if true
+        #if false
         
         var copy_ignore = ignore
         

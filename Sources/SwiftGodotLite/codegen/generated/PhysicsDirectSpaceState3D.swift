@@ -36,7 +36,7 @@ open class PhysicsDirectSpaceState3D: Object {
     /// 
     public final func intersectPoint (parameters: PhysicsPointQueryParameters3D?, maxResults: Int32 = 32)-> VariantCollection<GDictionary> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_max_results: Int = Int (maxResults)
         var copy_parameters_handle = parameters?.handle
@@ -93,7 +93,7 @@ open class PhysicsDirectSpaceState3D: Object {
     /// 
     public final func intersectRay (parameters: PhysicsRayQueryParameters3D?)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_parameters_handle = parameters?.handle
         
@@ -139,7 +139,7 @@ open class PhysicsDirectSpaceState3D: Object {
     /// 
     public final func intersectShape (parameters: PhysicsShapeQueryParameters3D?, maxResults: Int32 = 32)-> VariantCollection<GDictionary> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_max_results: Int = Int (maxResults)
         var copy_parameters_handle = parameters?.handle
@@ -182,7 +182,7 @@ open class PhysicsDirectSpaceState3D: Object {
     /// 
     public final func castMotion (parameters: PhysicsShapeQueryParameters3D?)-> PackedFloat32Array {
         let _result: PackedFloat32Array = PackedFloat32Array ()
-        #if true
+        #if false
         
         var copy_parameters_handle = parameters?.handle
         
@@ -220,7 +220,7 @@ open class PhysicsDirectSpaceState3D: Object {
     /// 
     public final func collideShape (parameters: PhysicsShapeQueryParameters3D?, maxResults: Int32 = 32)-> VariantCollection<Vector3> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_max_results: Int = Int (maxResults)
         var copy_parameters_handle = parameters?.handle
@@ -275,7 +275,7 @@ open class PhysicsDirectSpaceState3D: Object {
     /// 
     public final func getRestInfo (parameters: PhysicsShapeQueryParameters3D?)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_parameters_handle = parameters?.handle
         

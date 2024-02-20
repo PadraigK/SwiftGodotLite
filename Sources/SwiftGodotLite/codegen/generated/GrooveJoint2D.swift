@@ -51,7 +51,7 @@ open class GrooveJoint2D: Joint2D {
     
     @inline(__always)
     fileprivate final func set_length (_ length: Double) {
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -101,7 +101,7 @@ open class GrooveJoint2D: Joint2D {
     
     @inline(__always)
     fileprivate final func set_initial_offset (_ offset: Double) {
-        #if true
+        #if false
         
         var copy_offset = offset
         

@@ -42,7 +42,7 @@ open class EncodedObjectAsID: RefCounted {
     
     @inline(__always)
     fileprivate final func set_object_id (_ id: UInt) {
-        #if true
+        #if false
         
         var copy_id = id
         

@@ -66,7 +66,7 @@ open class GLTFTexture: Resource {
     
     @inline(__always)
     fileprivate final func set_src_image (_ srcImage: Int32) {
-        #if true
+        #if false
         
         var copy_src_image: Int = Int (srcImage)
         
@@ -116,7 +116,7 @@ open class GLTFTexture: Resource {
     
     @inline(__always)
     fileprivate final func set_sampler (_ sampler: Int32) {
-        #if true
+        #if false
         
         var copy_sampler: Int = Int (sampler)
         

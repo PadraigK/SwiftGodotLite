@@ -284,7 +284,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_velocity (_ velocity: Vector3) {
-        #if true
+        #if false
         
         var copy_velocity = velocity
         
@@ -334,7 +334,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_safe_margin (_ margin: Double) {
-        #if true
+        #if false
         
         var copy_margin = margin
         
@@ -402,7 +402,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_floor_stop_on_slope_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -434,7 +434,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_floor_constant_speed_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -484,7 +484,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_floor_block_on_wall_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -534,7 +534,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_slide_on_ceiling_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -584,7 +584,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_platform_floor_layers (_ excludeLayer: UInt32) {
-        #if true
+        #if false
         
         var copy_exclude_layer: Int = Int (excludeLayer)
         
@@ -634,7 +634,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_platform_wall_layers (_ excludeLayer: UInt32) {
-        #if true
+        #if false
         
         var copy_exclude_layer: Int = Int (excludeLayer)
         
@@ -702,7 +702,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_max_slides (_ maxSlides: Int32) {
-        #if true
+        #if false
         
         var copy_max_slides: Int = Int (maxSlides)
         
@@ -752,7 +752,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_floor_max_angle (_ radians: Double) {
-        #if true
+        #if false
         
         var copy_radians = radians
         
@@ -802,7 +802,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_floor_snap_length (_ floorSnapLength: Double) {
-        #if true
+        #if false
         
         var copy_floor_snap_length = floorSnapLength
         
@@ -852,7 +852,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_wall_min_slide_angle (_ radians: Double) {
-        #if true
+        #if false
         
         var copy_radians = radians
         
@@ -902,7 +902,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_up_direction (_ upDirection: Vector3) {
-        #if true
+        #if false
         
         var copy_up_direction = upDirection
         
@@ -934,7 +934,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_motion_mode (_ mode: CharacterBody3D.MotionMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -984,7 +984,7 @@ open class CharacterBody3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_platform_on_leave (_ onLeaveApplyVelocity: CharacterBody3D.PlatformOnLeave) {
-        #if true
+        #if false
         
         var copy_on_leave_apply_velocity = Int64 (onLeaveApplyVelocity.rawValue)
         
@@ -1233,7 +1233,7 @@ open class CharacterBody3D: PhysicsBody3D {
     /// Returns the floor's collision angle at the last collision point according to `upDirection`, which is ``Vector3.UP`` by default. This value is always positive and only valid after calling ``moveAndSlide()`` and when ``isOnFloor()`` returns `true`.
     public final func getFloorAngle (upDirection: Vector3 = Vector3 (x: 0, y: 1, z: 0))-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_up_direction = upDirection
         
@@ -1321,7 +1321,7 @@ open class CharacterBody3D: PhysicsBody3D {
     /// Returns a ``KinematicCollision3D``, which contains information about a collision that occurred during the last call to ``moveAndSlide()``. Since the body can collide several times in a single call to ``moveAndSlide()``, you must specify the index of the collision in the range 0 to (``getSlideCollisionCount()`` - 1).
     public final func getSlideCollision (slideIdx: Int32)-> KinematicCollision3D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_slide_idx: Int = Int (slideIdx)
         

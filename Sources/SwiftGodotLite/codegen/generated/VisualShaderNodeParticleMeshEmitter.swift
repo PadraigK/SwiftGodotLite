@@ -63,7 +63,7 @@ open class VisualShaderNodeParticleMeshEmitter: VisualShaderNodeParticleEmitter 
     
     @inline(__always)
     fileprivate final func set_mesh (_ mesh: Mesh?) {
-        #if true
+        #if false
         
         var copy_mesh_handle = mesh?.handle
         
@@ -112,7 +112,7 @@ open class VisualShaderNodeParticleMeshEmitter: VisualShaderNodeParticleEmitter 
     
     @inline(__always)
     fileprivate final func set_use_all_surfaces (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -162,7 +162,7 @@ open class VisualShaderNodeParticleMeshEmitter: VisualShaderNodeParticleEmitter 
     
     @inline(__always)
     fileprivate final func set_surface_index (_ surfaceIndex: Int32) {
-        #if true
+        #if false
         
         var copy_surface_index: Int = Int (surfaceIndex)
         

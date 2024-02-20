@@ -110,7 +110,7 @@ open class VisualShaderNodeFloatParameter: VisualShaderNodeParameter {
     
     @inline(__always)
     fileprivate final func set_hint (_ hint: VisualShaderNodeFloatParameter.Hint) {
-        #if true
+        #if false
         
         var copy_hint = Int64 (hint.rawValue)
         
@@ -160,7 +160,7 @@ open class VisualShaderNodeFloatParameter: VisualShaderNodeParameter {
     
     @inline(__always)
     fileprivate final func set_min (_ value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -210,7 +210,7 @@ open class VisualShaderNodeFloatParameter: VisualShaderNodeParameter {
     
     @inline(__always)
     fileprivate final func set_max (_ value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -260,7 +260,7 @@ open class VisualShaderNodeFloatParameter: VisualShaderNodeParameter {
     
     @inline(__always)
     fileprivate final func set_step (_ value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -310,7 +310,7 @@ open class VisualShaderNodeFloatParameter: VisualShaderNodeParameter {
     
     @inline(__always)
     fileprivate final func set_default_value_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -360,7 +360,7 @@ open class VisualShaderNodeFloatParameter: VisualShaderNodeParameter {
     
     @inline(__always)
     fileprivate final func set_default_value (_ value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         

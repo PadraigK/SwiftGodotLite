@@ -82,7 +82,7 @@ open class Skeleton3D: Node3D {
     
     /// Adds a bone, with name `name`. ``getBoneCount()`` will become the bone index.
     public final func addBone (name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -115,7 +115,7 @@ open class Skeleton3D: Node3D {
     /// Returns the bone index that matches `name` as its name.
     public final func findBone (name: String)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -149,7 +149,7 @@ open class Skeleton3D: Node3D {
     /// Returns the name of the bone at index `boneIdx`.
     public final func getBoneName (boneIdx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -182,7 +182,7 @@ open class Skeleton3D: Node3D {
     
     /// 
     public final func setBoneName (boneIdx: Int32, name: String) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         let gstr_name = GString (name)
@@ -223,7 +223,7 @@ open class Skeleton3D: Node3D {
     /// 
     public final func getBoneParent (boneIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -259,7 +259,7 @@ open class Skeleton3D: Node3D {
     /// > Note: `parentIdx` must be less than `boneIdx`.
     /// 
     public final func setBoneParent (boneIdx: Int32, parentIdx: Int32) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         var copy_parent_idx: Int = Int (parentIdx)
@@ -337,7 +337,7 @@ open class Skeleton3D: Node3D {
     
     /// Unparents the bone at `boneIdx` and sets its rest position to that of its parent prior to being reset.
     public final func unparentBoneAndRest (boneIdx: Int32) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -370,7 +370,7 @@ open class Skeleton3D: Node3D {
     /// Returns an array containing the bone indexes of all the children node of the passed in bone, `boneIdx`.
     public final func getBoneChildren (boneIdx: Int32)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -422,7 +422,7 @@ open class Skeleton3D: Node3D {
     /// Returns the rest transform for a bone `boneIdx`.
     public final func getBoneRest (boneIdx: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -455,7 +455,7 @@ open class Skeleton3D: Node3D {
     
     /// Sets the rest transform for bone `boneIdx`.
     public final func setBoneRest (boneIdx: Int32, rest: Transform3D) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         var copy_rest = rest
@@ -493,7 +493,7 @@ open class Skeleton3D: Node3D {
     /// Returns the global rest transform for `boneIdx`.
     public final func getBoneGlobalRest (boneIdx: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -545,7 +545,7 @@ open class Skeleton3D: Node3D {
     /// Binds the given Skin to the Skeleton.
     public final func registerSkin (_ skin: Skin?)-> SkinReference? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_skin_handle = skin?.handle
         
@@ -610,7 +610,7 @@ open class Skeleton3D: Node3D {
     /// Returns the pose transform of the specified bone.
     public final func getBonePose (boneIdx: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -643,7 +643,7 @@ open class Skeleton3D: Node3D {
     
     /// Sets the pose position of the bone at `boneIdx` to `position`. `position` is a ``Vector3`` describing a position local to the ``Skeleton3D`` node.
     public final func setBonePosePosition (boneIdx: Int32, position: Vector3) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         var copy_position = position
@@ -680,7 +680,7 @@ open class Skeleton3D: Node3D {
     
     /// Sets the pose rotation of the bone at `boneIdx` to `rotation`. `rotation` is a ``Quaternion`` describing a rotation in the bone's local coordinate space with respect to the rotation of any parent bones.
     public final func setBonePoseRotation (boneIdx: Int32, rotation: Quaternion) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         var copy_rotation = rotation
@@ -717,7 +717,7 @@ open class Skeleton3D: Node3D {
     
     /// Sets the pose scale of the bone at `boneIdx` to `scale`.
     public final func setBonePoseScale (boneIdx: Int32, scale: Vector3) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         var copy_scale = scale
@@ -755,7 +755,7 @@ open class Skeleton3D: Node3D {
     /// Returns the pose position of the bone at `boneIdx`. The returned ``Vector3`` is in the local coordinate space of the ``Skeleton3D`` node.
     public final func getBonePosePosition (boneIdx: Int32)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -789,7 +789,7 @@ open class Skeleton3D: Node3D {
     /// Returns the pose rotation of the bone at `boneIdx`. The returned ``Quaternion`` is local to the bone with respect to the rotation of any parent bones.
     public final func getBonePoseRotation (boneIdx: Int32)-> Quaternion {
         var _result: Quaternion = Quaternion ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -823,7 +823,7 @@ open class Skeleton3D: Node3D {
     /// Returns the pose scale of the bone at `boneIdx`.
     public final func getBonePoseScale (boneIdx: Int32)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -856,7 +856,7 @@ open class Skeleton3D: Node3D {
     
     /// Sets the bone pose to rest for `boneIdx`.
     public final func resetBonePose (boneIdx: Int32) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -905,7 +905,7 @@ open class Skeleton3D: Node3D {
     /// Returns whether the bone pose for the bone at `boneIdx` is enabled.
     public final func isBoneEnabled (boneIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -938,7 +938,7 @@ open class Skeleton3D: Node3D {
     
     /// Disables the pose for the bone at `boneIdx` if `false`, enables the bone pose if `true`.
     public final func setBoneEnabled (boneIdx: Int32, enabled: Bool = true) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         var copy_enabled = enabled
@@ -996,7 +996,7 @@ open class Skeleton3D: Node3D {
     /// > Note: The pose transform needs to be a global pose! To convert a world transform from a ``Node3D`` to a global bone pose, multiply the ``Transform3D/affineInverse()`` of the node's ``Node3D/globalTransform`` by the desired world transform.
     /// 
     public final func setBoneGlobalPoseOverride (boneIdx: Int32, pose: Transform3D, amount: Double, persistent: Bool = false) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         var copy_pose = pose
@@ -1044,7 +1044,7 @@ open class Skeleton3D: Node3D {
     /// Returns the global pose override transform for `boneIdx`.
     public final func getBoneGlobalPoseOverride (boneIdx: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -1078,7 +1078,7 @@ open class Skeleton3D: Node3D {
     /// Returns the overall transform of the specified bone, with respect to the skeleton. Being relative to the skeleton frame, this is not the actual "global" transform of the bone.
     public final func getBoneGlobalPose (boneIdx: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -1112,7 +1112,7 @@ open class Skeleton3D: Node3D {
     /// Returns the overall transform of the specified bone, with respect to the skeleton, but without any global pose overrides. Being relative to the skeleton frame, this is not the actual "global" transform of the bone.
     public final func getBoneGlobalPoseNoOverride (boneIdx: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -1164,7 +1164,7 @@ open class Skeleton3D: Node3D {
     
     /// Force updates the bone transform for the bone at `boneIdx` and all of its children.
     public final func forceUpdateBoneChildTransform (boneIdx: Int32) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -1196,7 +1196,7 @@ open class Skeleton3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_motion_scale (_ motionScale: Double) {
-        #if true
+        #if false
         
         var copy_motion_scale = motionScale
         
@@ -1246,7 +1246,7 @@ open class Skeleton3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_show_rest_only (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1296,7 +1296,7 @@ open class Skeleton3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_animate_physical_bones (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1365,7 +1365,7 @@ open class Skeleton3D: Node3D {
     /// Optionally, a list of bone names can be passed-in, allowing only the passed-in bones to be simulated.
     /// 
     public final func physicalBonesStartSimulation (bones: VariantCollection<StringName> = VariantCollection<StringName> ()) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Skeleton3D.method_physical_bones_start_simulation, UnsafeMutableRawPointer (mutating: handle), nil, &bones.array.content)
@@ -1398,7 +1398,7 @@ open class Skeleton3D: Node3D {
     /// Works just like the ``RigidBody3D`` node.
     /// 
     public final func physicalBonesAddCollisionException (_ exception: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Skeleton3D.method_physical_bones_add_collision_exception, UnsafeMutableRawPointer (mutating: handle), nil, &exception.content)
@@ -1431,7 +1431,7 @@ open class Skeleton3D: Node3D {
     /// Works just like the ``RigidBody3D`` node.
     /// 
     public final func physicalBonesRemoveCollisionException (_ exception: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Skeleton3D.method_physical_bones_remove_collision_exception, UnsafeMutableRawPointer (mutating: handle), nil, &exception.content)

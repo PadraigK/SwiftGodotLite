@@ -259,7 +259,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_enable_depth_test (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -309,7 +309,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_enable_depth_write (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -359,7 +359,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_depth_compare_operator (_ pMember: RenderingDevice.CompareOperator) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -409,7 +409,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_enable_depth_range (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -459,7 +459,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_depth_range_min (_ pMember: Double) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -509,7 +509,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_depth_range_max (_ pMember: Double) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -559,7 +559,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_enable_stencil (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -609,7 +609,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_front_op_fail (_ pMember: RenderingDevice.StencilOperation) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -659,7 +659,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_front_op_pass (_ pMember: RenderingDevice.StencilOperation) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -709,7 +709,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_front_op_depth_fail (_ pMember: RenderingDevice.StencilOperation) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -759,7 +759,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_front_op_compare (_ pMember: RenderingDevice.CompareOperator) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -809,7 +809,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_front_op_compare_mask (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         
@@ -859,7 +859,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_front_op_write_mask (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         
@@ -909,7 +909,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_front_op_reference (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         
@@ -959,7 +959,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_back_op_fail (_ pMember: RenderingDevice.StencilOperation) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -1009,7 +1009,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_back_op_pass (_ pMember: RenderingDevice.StencilOperation) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -1059,7 +1059,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_back_op_depth_fail (_ pMember: RenderingDevice.StencilOperation) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -1109,7 +1109,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_back_op_compare (_ pMember: RenderingDevice.CompareOperator) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -1159,7 +1159,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_back_op_compare_mask (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         
@@ -1209,7 +1209,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_back_op_write_mask (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         
@@ -1259,7 +1259,7 @@ open class RDPipelineDepthStencilState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_back_op_reference (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         

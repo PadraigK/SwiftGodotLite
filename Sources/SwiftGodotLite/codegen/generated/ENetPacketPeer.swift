@@ -94,7 +94,7 @@ open class ENetPacketPeer: PacketPeer {
     
     /// Request a disconnection from a peer. An ``ENetConnection/EventType/eventDisconnect`` will be generated during ``ENetConnection/service(timeout:)`` once the disconnection is complete.
     public final func peerDisconnect (data: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_data: Int = Int (data)
         
@@ -126,7 +126,7 @@ open class ENetPacketPeer: PacketPeer {
     
     /// Request a disconnection from a peer, but only after all queued outgoing packets are sent. An ``ENetConnection/EventType/eventDisconnect`` will be generated during ``ENetConnection/service(timeout:)`` once the disconnection is complete.
     public final func peerDisconnectLater (data: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_data: Int = Int (data)
         
@@ -158,7 +158,7 @@ open class ENetPacketPeer: PacketPeer {
     
     /// Force an immediate disconnection from a peer. No ``ENetConnection/EventType/eventDisconnect`` will be generated. The foreign peer is not guaranteed to receive the disconnect notification, and is reset immediately upon return from this function.
     public final func peerDisconnectNow (data: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_data: Int = Int (data)
         
@@ -206,7 +206,7 @@ open class ENetPacketPeer: PacketPeer {
     
     /// Sets the `pingInterval` in milliseconds at which pings will be sent to a peer. Pings are used both to monitor the liveness of the connection and also to dynamically adjust the throttle during periods of low traffic so that the throttle has reasonable responsiveness during traffic spikes. The default ping interval is `500` milliseconds.
     public final func pingInterval (pingInterval: Int32) {
-        #if true
+        #if false
         
         var copy_ping_interval: Int = Int (pingInterval)
         
@@ -255,7 +255,7 @@ open class ENetPacketPeer: PacketPeer {
     /// Queues a `packet` to be sent over the specified `channel`. See `FLAG_*` constants for available packet flags.
     public final func send (channel: Int32, packet: PackedByteArray, flags: Int32)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_channel: Int = Int (channel)
         var copy_flags: Int = Int (flags)
@@ -305,7 +305,7 @@ open class ENetPacketPeer: PacketPeer {
     /// Intermediate values for the throttle represent intermediate probabilities between 0% and 100% of unreliable packets being sent. The bandwidth limits of the local and foreign hosts are taken into account to determine a sensible limit for the throttle probability above which it should not raise even in the best of conditions.
     /// 
     public final func throttleConfigure (interval: Int32, acceleration: Int32, deceleration: Int32) {
-        #if true
+        #if false
         
         var copy_interval: Int = Int (interval)
         var copy_acceleration: Int = Int (acceleration)
@@ -350,7 +350,7 @@ open class ENetPacketPeer: PacketPeer {
     /// The `timeout` is a factor that, multiplied by a value based on the average round trip time, will determine the timeout limit for a reliable packet. When that limit is reached, the timeout will be doubled, and the peer will be disconnected if that limit has reached `timeoutMin`. The `timeoutMax` parameter, on the other hand, defines a fixed timeout for which any packet must be acknowledged or the peer will be dropped.
     /// 
     public final func setTimeout (_ timeout: Int32, timeoutMin: Int32, timeoutMax: Int32) {
-        #if true
+        #if false
         
         var copy_timeout: Int = Int (timeout)
         var copy_timeout_min: Int = Int (timeoutMin)
@@ -429,7 +429,7 @@ open class ENetPacketPeer: PacketPeer {
     /// Returns the requested `statistic` for this peer. See ``ENetPacketPeer/PeerStatistic``.
     public final func getStatistic (_ statistic: ENetPacketPeer.PeerStatistic)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_statistic = Int64 (statistic.rawValue)
         

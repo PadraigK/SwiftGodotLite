@@ -39,7 +39,7 @@ open class VisualShaderNodeIntConstant: VisualShaderNodeConstant {
     
     @inline(__always)
     fileprivate final func set_constant (_ constant: Int32) {
-        #if true
+        #if false
         
         var copy_constant: Int = Int (constant)
         

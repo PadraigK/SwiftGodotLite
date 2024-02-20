@@ -54,7 +54,7 @@ open class CollisionShape3D: Node3D {
     
     /// _Obsoleted._ Use [signal Resource.changed] instead.
     public final func resourceChanged (resource: Resource?) {
-        #if true
+        #if false
         
         var copy_resource_handle = resource?.handle
         
@@ -85,7 +85,7 @@ open class CollisionShape3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_shape (_ shape: Shape3D?) {
-        #if true
+        #if false
         
         var copy_shape_handle = shape?.handle
         
@@ -134,7 +134,7 @@ open class CollisionShape3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_disabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

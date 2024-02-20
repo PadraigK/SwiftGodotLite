@@ -48,7 +48,7 @@ open class EditorResourceTooltipPlugin: RefCounted {
     
     /// Requests a thumbnail for the given ``TextureRect``. The thumbnail is created asynchronously by ``EditorResourcePreview`` and automatically set when available.
     public final func requestThumbnail (path: String, control: TextureRect?) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_control_handle = control?.handle

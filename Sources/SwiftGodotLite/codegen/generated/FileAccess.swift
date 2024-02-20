@@ -134,7 +134,7 @@ open class FileAccess: RefCounted {
     /// 
     public static func open (path: String, flags: FileAccess.ModeFlags)-> FileAccess? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_flags = Int64 (flags.rawValue)
@@ -178,7 +178,7 @@ open class FileAccess: RefCounted {
     /// 
     public static func openEncrypted (path: String, modeFlags: FileAccess.ModeFlags, key: PackedByteArray)-> FileAccess? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_mode_flags = Int64 (modeFlags.rawValue)
@@ -223,7 +223,7 @@ open class FileAccess: RefCounted {
     /// 
     public static func openEncryptedWithPass (path: String, modeFlags: FileAccess.ModeFlags, pass: String)-> FileAccess? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_mode_flags = Int64 (modeFlags.rawValue)
@@ -272,7 +272,7 @@ open class FileAccess: RefCounted {
     /// 
     public static func openCompressed (path: String, modeFlags: FileAccess.ModeFlags, compressionMode: FileAccess.CompressionMode = .fastlz)-> FileAccess? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_mode_flags = Int64 (modeFlags.rawValue)
@@ -337,7 +337,7 @@ open class FileAccess: RefCounted {
     /// 
     public static func getFileAsBytes (path: String)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -374,7 +374,7 @@ open class FileAccess: RefCounted {
     /// 
     public static func getFileAsString (path: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -480,7 +480,7 @@ open class FileAccess: RefCounted {
     
     /// Changes the file reading/writing cursor to the specified position (in bytes from the beginning of the file).
     public final func seek (position: UInt) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -515,7 +515,7 @@ open class FileAccess: RefCounted {
     /// > Note: This is an offset, so you should use negative numbers or the cursor will be at the end of the file.
     /// 
     public final func seekEnd (position: Int = 0) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -731,7 +731,7 @@ open class FileAccess: RefCounted {
     /// Returns next `length` bytes of the file as a ``PackedByteArray``.
     public final func getBuffer (length: Int)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -793,7 +793,7 @@ open class FileAccess: RefCounted {
     /// 
     public final func getCsvLine (delim: String = ",")-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_delim = GString (delim)
         
@@ -830,7 +830,7 @@ open class FileAccess: RefCounted {
     /// 
     public final func getAsText (skipCr: Bool = false)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_skip_cr = skipCr
         
@@ -864,7 +864,7 @@ open class FileAccess: RefCounted {
     /// Returns an MD5 String representing the file at the given path or an empty ``String`` on failure.
     public static func getMd5 (path: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -898,7 +898,7 @@ open class FileAccess: RefCounted {
     /// Returns a SHA-256 ``String`` representing the file at the given path or an empty ``String`` on failure.
     public static func getSha256 (path: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -949,7 +949,7 @@ open class FileAccess: RefCounted {
     
     @inline(__always)
     fileprivate final func set_big_endian (_ bigEndian: Bool) {
-        #if true
+        #if false
         
         var copy_big_endian = bigEndian
         
@@ -1005,7 +1005,7 @@ open class FileAccess: RefCounted {
     /// 
     public final func getVar (allowObjects: Bool = false)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_allow_objects = allowObjects
         
@@ -1043,7 +1043,7 @@ open class FileAccess: RefCounted {
     /// To store a signed integer, use ``store64(value:)``, or convert it manually (see ``store16(value:)`` for an example).
     /// 
     public final func store8 (value: UInt8) {
-        #if true
+        #if false
         
         var copy_value: Int = Int (value)
         
@@ -1080,7 +1080,7 @@ open class FileAccess: RefCounted {
     /// To store a signed integer, use ``store64(value:)`` or store a signed integer from the interval `[-2^15, 2^15 - 1]` (i.e. keeping one bit for the signedness) and compute its sign manually when reading. For example:
     /// 
     public final func store16 (value: UInt16) {
-        #if true
+        #if false
         
         var copy_value: Int = Int (value)
         
@@ -1117,7 +1117,7 @@ open class FileAccess: RefCounted {
     /// To store a signed integer, use ``store64(value:)``, or convert it manually (see ``store16(value:)`` for an example).
     /// 
     public final func store32 (value: UInt32) {
-        #if true
+        #if false
         
         var copy_value: Int = Int (value)
         
@@ -1152,7 +1152,7 @@ open class FileAccess: RefCounted {
     /// > Note: The `value` must lie in the interval `[-2^63, 2^63 - 1]` (i.e. be a valid integer value).
     /// 
     public final func store64 (value: UInt) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -1184,7 +1184,7 @@ open class FileAccess: RefCounted {
     
     /// Stores a floating-point number as 32 bits in the file.
     public final func storeFloat (value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -1216,7 +1216,7 @@ open class FileAccess: RefCounted {
     
     /// Stores a floating-point number as 64 bits in the file.
     public final func storeDouble (value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -1248,7 +1248,7 @@ open class FileAccess: RefCounted {
     
     /// Stores a floating-point number in the file.
     public final func storeReal (value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -1280,7 +1280,7 @@ open class FileAccess: RefCounted {
     
     /// Stores the given array of bytes in the file.
     public final func storeBuffer (_ buffer: PackedByteArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (FileAccess.method_store_buffer, UnsafeMutableRawPointer (mutating: handle), nil, &buffer.content)
@@ -1310,7 +1310,7 @@ open class FileAccess: RefCounted {
     
     /// Appends `line` to the file followed by a line return character (`\n`), encoding the text as UTF-8.
     public final func storeLine (_ line: String) {
-        #if true
+        #if false
         
         let gstr_line = GString (line)
         
@@ -1345,7 +1345,7 @@ open class FileAccess: RefCounted {
     /// Text will be encoded as UTF-8.
     /// 
     public final func storeCsvLine (values: PackedStringArray, delim: String = ",") {
-        #if true
+        #if false
         
         let gstr_delim = GString (delim)
         
@@ -1383,7 +1383,7 @@ open class FileAccess: RefCounted {
     /// > Note: This method is intended to be used to write text files. The string is stored as a UTF-8 encoded buffer without string length or terminating zero, which means that it can't be loaded back easily. If you want to store a retrievable string in a binary file, consider using ``storePascalString(_:)`` instead. For retrieving strings from a text file, you can use `get_buffer(length).get_string_from_utf8()` (if you know the length) or ``getAsText(skipCr:)``.
     /// 
     public final func storeString (_ string: String) {
-        #if true
+        #if false
         
         let gstr_string = GString (string)
         
@@ -1420,7 +1420,7 @@ open class FileAccess: RefCounted {
     /// > Note: Not all properties are included. Only properties that are configured with the ``PropertyUsageFlags/propertyUsageStorage`` flag set will be serialized. You can add a new usage flag to a property by overriding the ``Object/_getPropertyList()`` method in your class. You can also check how property usage is configured by calling ``Object/_getPropertyList()``. See ``PropertyUsageFlags`` for the possible usage flags.
     /// 
     public final func storeVar (value: Variant, fullObjects: Bool = false) {
-        #if true
+        #if false
         
         var copy_full_objects = fullObjects
         
@@ -1458,7 +1458,7 @@ open class FileAccess: RefCounted {
     /// Text will be encoded as UTF-8.
     /// 
     public final func storePascalString (_ string: String) {
-        #if true
+        #if false
         
         let gstr_string = GString (string)
         
@@ -1536,7 +1536,7 @@ open class FileAccess: RefCounted {
     /// 
     public static func fileExists (path: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -1570,7 +1570,7 @@ open class FileAccess: RefCounted {
     /// Returns the last time the `file` was modified in Unix timestamp format, or `0` on error. This Unix timestamp can be converted to another format using the ``Time`` singleton.
     public static func getModifiedTime (file: String)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         let gstr_file = GString (file)
         
@@ -1607,7 +1607,7 @@ open class FileAccess: RefCounted {
     /// 
     public static func getUnixPermissions (file: String)-> FileAccess.UnixPermissionFlags {
         var _result: FileAccess.UnixPermissionFlags = FileAccess.UnixPermissionFlags ()
-        #if true
+        #if false
         
         let gstr_file = GString (file)
         
@@ -1644,7 +1644,7 @@ open class FileAccess: RefCounted {
     /// 
     public static func setUnixPermissions (file: String, permissions: FileAccess.UnixPermissionFlags)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_file = GString (file)
         var copy_permissions = permissions
@@ -1686,7 +1686,7 @@ open class FileAccess: RefCounted {
     /// 
     public static func getHiddenAttribute (file: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_file = GString (file)
         
@@ -1723,7 +1723,7 @@ open class FileAccess: RefCounted {
     /// 
     public static func setHiddenAttribute (file: String, hidden: Bool)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_file = GString (file)
         var copy_hidden = hidden
@@ -1765,7 +1765,7 @@ open class FileAccess: RefCounted {
     /// 
     public static func setReadOnlyAttribute (file: String, ro: Bool)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_file = GString (file)
         var copy_ro = ro
@@ -1807,7 +1807,7 @@ open class FileAccess: RefCounted {
     /// 
     public static func getReadOnlyAttribute (file: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_file = GString (file)
         

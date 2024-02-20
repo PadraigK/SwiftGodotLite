@@ -196,7 +196,7 @@ open class GLTFAccessor: Resource {
     
     @inline(__always)
     fileprivate final func set_buffer_view (_ bufferView: Int32) {
-        #if true
+        #if false
         
         var copy_buffer_view: Int = Int (bufferView)
         
@@ -246,7 +246,7 @@ open class GLTFAccessor: Resource {
     
     @inline(__always)
     fileprivate final func set_byte_offset (_ byteOffset: Int32) {
-        #if true
+        #if false
         
         var copy_byte_offset: Int = Int (byteOffset)
         
@@ -296,7 +296,7 @@ open class GLTFAccessor: Resource {
     
     @inline(__always)
     fileprivate final func set_component_type (_ componentType: Int32) {
-        #if true
+        #if false
         
         var copy_component_type: Int = Int (componentType)
         
@@ -346,7 +346,7 @@ open class GLTFAccessor: Resource {
     
     @inline(__always)
     fileprivate final func set_normalized (_ normalized: Bool) {
-        #if true
+        #if false
         
         var copy_normalized = normalized
         
@@ -396,7 +396,7 @@ open class GLTFAccessor: Resource {
     
     @inline(__always)
     fileprivate final func set_count (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -446,7 +446,7 @@ open class GLTFAccessor: Resource {
     
     @inline(__always)
     fileprivate final func set_type (_ type: Int32) {
-        #if true
+        #if false
         
         var copy_type: Int = Int (type)
         
@@ -496,7 +496,7 @@ open class GLTFAccessor: Resource {
     
     @inline(__always)
     fileprivate final func set_min (_ min: PackedFloat64Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFAccessor.method_set_min, UnsafeMutableRawPointer (mutating: handle), nil, &min.content)
@@ -544,7 +544,7 @@ open class GLTFAccessor: Resource {
     
     @inline(__always)
     fileprivate final func set_max (_ max: PackedFloat64Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFAccessor.method_set_max, UnsafeMutableRawPointer (mutating: handle), nil, &max.content)
@@ -592,7 +592,7 @@ open class GLTFAccessor: Resource {
     
     @inline(__always)
     fileprivate final func set_sparse_count (_ sparseCount: Int32) {
-        #if true
+        #if false
         
         var copy_sparse_count: Int = Int (sparseCount)
         
@@ -642,7 +642,7 @@ open class GLTFAccessor: Resource {
     
     @inline(__always)
     fileprivate final func set_sparse_indices_buffer_view (_ sparseIndicesBufferView: Int32) {
-        #if true
+        #if false
         
         var copy_sparse_indices_buffer_view: Int = Int (sparseIndicesBufferView)
         
@@ -692,7 +692,7 @@ open class GLTFAccessor: Resource {
     
     @inline(__always)
     fileprivate final func set_sparse_indices_byte_offset (_ sparseIndicesByteOffset: Int32) {
-        #if true
+        #if false
         
         var copy_sparse_indices_byte_offset: Int = Int (sparseIndicesByteOffset)
         
@@ -742,7 +742,7 @@ open class GLTFAccessor: Resource {
     
     @inline(__always)
     fileprivate final func set_sparse_indices_component_type (_ sparseIndicesComponentType: Int32) {
-        #if true
+        #if false
         
         var copy_sparse_indices_component_type: Int = Int (sparseIndicesComponentType)
         
@@ -792,7 +792,7 @@ open class GLTFAccessor: Resource {
     
     @inline(__always)
     fileprivate final func set_sparse_values_buffer_view (_ sparseValuesBufferView: Int32) {
-        #if true
+        #if false
         
         var copy_sparse_values_buffer_view: Int = Int (sparseValuesBufferView)
         
@@ -842,7 +842,7 @@ open class GLTFAccessor: Resource {
     
     @inline(__always)
     fileprivate final func set_sparse_values_byte_offset (_ sparseValuesByteOffset: Int32) {
-        #if true
+        #if false
         
         var copy_sparse_values_byte_offset: Int = Int (sparseValuesByteOffset)
         

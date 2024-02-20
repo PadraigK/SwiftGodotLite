@@ -46,7 +46,7 @@ open class TileSetScenesCollectionSource: TileSetSource {
     /// Returns the scene tile ID of the scene tile at `index`.
     public final func getSceneTileId (index: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -80,7 +80,7 @@ open class TileSetScenesCollectionSource: TileSetSource {
     /// Returns whether this TileSet source has a scene tile with `id`.
     public final func hasSceneTileId (_ id: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -117,7 +117,7 @@ open class TileSetScenesCollectionSource: TileSetSource {
     /// 
     public final func createSceneTile (packedScene: PackedScene?, idOverride: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_id_override: Int = Int (idOverride)
         var copy_packed_scene_handle = packedScene?.handle
@@ -154,7 +154,7 @@ open class TileSetScenesCollectionSource: TileSetSource {
     
     /// Changes a scene tile's ID from `id` to `newId`. This will fail if there is already a tile with an ID equal to `newId`.
     public final func setSceneTileId (_ id: Int32, newId: Int32) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_new_id: Int = Int (newId)
@@ -191,7 +191,7 @@ open class TileSetScenesCollectionSource: TileSetSource {
     
     /// Assigns a ``PackedScene`` resource to the scene tile with `id`. This will fail if the scene does not extend CanvasItem, as positioning properties are needed to place the scene on the TileMap.
     public final func setSceneTileScene (id: Int32, packedScene: PackedScene?) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_packed_scene_handle = packedScene?.handle
@@ -228,7 +228,7 @@ open class TileSetScenesCollectionSource: TileSetSource {
     /// Returns the ``PackedScene`` resource of scene tile with `id`.
     public final func getSceneTileScene (id: Int32)-> PackedScene? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -261,7 +261,7 @@ open class TileSetScenesCollectionSource: TileSetSource {
     
     /// Sets whether or not the scene tile with `id` should display a placeholder in the editor. This might be useful for scenes that are not visible.
     public final func setSceneTileDisplayPlaceholder (id: Int32, displayPlaceholder: Bool) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_display_placeholder = displayPlaceholder
@@ -299,7 +299,7 @@ open class TileSetScenesCollectionSource: TileSetSource {
     /// Returns whether the scene tile with `id` displays a placeholder in the editor.
     public final func getSceneTileDisplayPlaceholder (id: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -332,7 +332,7 @@ open class TileSetScenesCollectionSource: TileSetSource {
     
     /// Remove the scene tile with `id`.
     public final func removeSceneTile (id: Int32) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         

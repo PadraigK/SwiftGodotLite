@@ -78,7 +78,7 @@ open class SkeletonModification2DTwoBoneIK: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_target_node (_ targetNodepath: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SkeletonModification2DTwoBoneIK.method_set_target_node, UnsafeMutableRawPointer (mutating: handle), nil, &targetNodepath.content)
@@ -126,7 +126,7 @@ open class SkeletonModification2DTwoBoneIK: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_target_minimum_distance (_ minimumDistance: Double) {
-        #if true
+        #if false
         
         var copy_minimum_distance = minimumDistance
         
@@ -176,7 +176,7 @@ open class SkeletonModification2DTwoBoneIK: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_target_maximum_distance (_ maximumDistance: Double) {
-        #if true
+        #if false
         
         var copy_maximum_distance = maximumDistance
         
@@ -226,7 +226,7 @@ open class SkeletonModification2DTwoBoneIK: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_flip_bend_direction (_ flipDirection: Bool) {
-        #if true
+        #if false
         
         var copy_flip_direction = flipDirection
         
@@ -276,7 +276,7 @@ open class SkeletonModification2DTwoBoneIK: SkeletonModification2D {
     
     /// Sets the ``Bone2D`` node that is being used as the first bone in the TwoBoneIK modification.
     public final func setJointOneBone2dNode (_ bone2dNode: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SkeletonModification2DTwoBoneIK.method_set_joint_one_bone2d_node, UnsafeMutableRawPointer (mutating: handle), nil, &bone2dNode.content)
@@ -324,7 +324,7 @@ open class SkeletonModification2DTwoBoneIK: SkeletonModification2D {
     
     /// Sets the index of the ``Bone2D`` node that is being used as the first bone in the TwoBoneIK modification.
     public final func setJointOneBoneIdx (_ boneIdx: Int32) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -374,7 +374,7 @@ open class SkeletonModification2DTwoBoneIK: SkeletonModification2D {
     
     /// Sets the ``Bone2D`` node that is being used as the second bone in the TwoBoneIK modification.
     public final func setJointTwoBone2dNode (_ bone2dNode: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SkeletonModification2DTwoBoneIK.method_set_joint_two_bone2d_node, UnsafeMutableRawPointer (mutating: handle), nil, &bone2dNode.content)
@@ -422,7 +422,7 @@ open class SkeletonModification2DTwoBoneIK: SkeletonModification2D {
     
     /// Sets the index of the ``Bone2D`` node that is being used as the second bone in the TwoBoneIK modification.
     public final func setJointTwoBoneIdx (_ boneIdx: Int32) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         

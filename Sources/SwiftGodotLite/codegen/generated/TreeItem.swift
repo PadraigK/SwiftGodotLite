@@ -96,7 +96,7 @@ open class TreeItem: Object {
     
     /// Sets the given column's cell mode to `mode`. See ``TreeItem/TreeCellMode`` constants.
     public final func setCellMode (column: Int32, mode: TreeItem.TreeCellMode) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_mode = Int64 (mode.rawValue)
@@ -134,7 +134,7 @@ open class TreeItem: Object {
     /// Returns the column's cell mode.
     public final func getCellMode (column: Int32)-> TreeItem.TreeCellMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -170,7 +170,7 @@ open class TreeItem: Object {
     /// > Note: This option only affects the type of control (``LineEdit`` or ``TextEdit``) that appears when editing the column. You can set multiline values with ``setText(column:text:)`` even if the column is not multiline editable.
     /// 
     public final func setEditMultiline (column: Int32, multiline: Bool) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_multiline = multiline
@@ -208,7 +208,7 @@ open class TreeItem: Object {
     /// Returns `true` if the given `column` is multiline editable.
     public final func isEditMultiline (column: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -241,7 +241,7 @@ open class TreeItem: Object {
     
     /// If `checked` is `true`, the given `column` is checked. Clears column's indeterminate status.
     public final func setChecked (column: Int32, checked: Bool) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_checked = checked
@@ -281,7 +281,7 @@ open class TreeItem: Object {
     /// > Note: If set `true` from `false`, then column is cleared of checked status.
     /// 
     public final func setIndeterminate (column: Int32, indeterminate: Bool) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_indeterminate = indeterminate
@@ -319,7 +319,7 @@ open class TreeItem: Object {
     /// Returns `true` if the given `column` is checked.
     public final func isChecked (column: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -353,7 +353,7 @@ open class TreeItem: Object {
     /// Returns `true` if the given `column` is indeterminate.
     public final func isIndeterminate (column: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -386,7 +386,7 @@ open class TreeItem: Object {
     
     /// Propagates this item's checked status to its children and parents for the given `column`. It is possible to process the items affected by this method call by connecting to [signal Tree.check_propagated_to_item]. The order that the items affected will be processed is as follows: the item invoking this method, children of that item, and finally parents of that item. If `emitSignal` is `false`, then [signal Tree.check_propagated_to_item] will not be emitted.
     public final func propagateCheck (column: Int32, emitSignal: Bool = true) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_emit_signal = emitSignal
@@ -423,7 +423,7 @@ open class TreeItem: Object {
     
     /// Sets the given column's text value.
     public final func setText (column: Int32, text: String) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         let gstr_text = GString (text)
@@ -461,7 +461,7 @@ open class TreeItem: Object {
     /// Returns the given column's text.
     public final func getText (column: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -494,7 +494,7 @@ open class TreeItem: Object {
     
     /// Sets item's text base writing direction.
     public final func setTextDirection (column: Int32, direction: Control.TextDirection) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_direction = Int64 (direction.rawValue)
@@ -532,7 +532,7 @@ open class TreeItem: Object {
     /// Returns item's text base writing direction.
     public final func getTextDirection (column: Int32)-> Control.TextDirection {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -565,7 +565,7 @@ open class TreeItem: Object {
     
     /// Sets the autowrap mode in the given `column`. If set to something other than ``TextServer/AutowrapMode/autowrapOff``, the text gets wrapped inside the cell's bounding rectangle.
     public final func setAutowrapMode (column: Int32, autowrapMode: TextServer.AutowrapMode) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_autowrap_mode = Int64 (autowrapMode.rawValue)
@@ -603,7 +603,7 @@ open class TreeItem: Object {
     /// Returns the text autowrap mode in the given `column`. By default it is ``TextServer/AutowrapMode/autowrapOff``.
     public final func getAutowrapMode (column: Int32)-> TextServer.AutowrapMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -636,7 +636,7 @@ open class TreeItem: Object {
     
     /// Sets the clipping behavior when the text exceeds the item's bounding rectangle in the given `column`.
     public final func setTextOverrunBehavior (column: Int32, overrunBehavior: TextServer.OverrunBehavior) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_overrun_behavior = Int64 (overrunBehavior.rawValue)
@@ -674,7 +674,7 @@ open class TreeItem: Object {
     /// Returns the clipping behavior when the text exceeds the item's bounding rectangle in the given `column`. By default it is ``TextServer/OverrunBehavior/overrunTrimEllipsis``.
     public final func getTextOverrunBehavior (column: Int32)-> TextServer.OverrunBehavior {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -707,7 +707,7 @@ open class TreeItem: Object {
     
     /// 
     public final func setStructuredTextBidiOverride (column: Int32, parser: TextServer.StructuredTextParser) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_parser = Int64 (parser.rawValue)
@@ -745,7 +745,7 @@ open class TreeItem: Object {
     /// 
     public final func getStructuredTextBidiOverride (column: Int32)-> TextServer.StructuredTextParser {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -778,7 +778,7 @@ open class TreeItem: Object {
     
     /// 
     public final func setStructuredTextBidiOverrideOptions (column: Int32, args: GArray) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -814,7 +814,7 @@ open class TreeItem: Object {
     /// 
     public final func getStructuredTextBidiOverrideOptions (column: Int32)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -847,7 +847,7 @@ open class TreeItem: Object {
     
     /// Sets language code of item's text used for line-breaking and text shaping algorithms, if left empty current locale is used instead.
     public final func setLanguage (column: Int32, language: String) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         let gstr_language = GString (language)
@@ -885,7 +885,7 @@ open class TreeItem: Object {
     /// Returns item's text language code.
     public final func getLanguage (column: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -918,7 +918,7 @@ open class TreeItem: Object {
     
     /// Sets a string to be shown after a column's value (for example, a unit abbreviation).
     public final func setSuffix (column: Int32, text: String) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         let gstr_text = GString (text)
@@ -956,7 +956,7 @@ open class TreeItem: Object {
     /// Gets the suffix string shown after the column value.
     public final func getSuffix (column: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -989,7 +989,7 @@ open class TreeItem: Object {
     
     /// Sets the given column's icon ``Texture2D``.
     public final func setIcon (column: Int32, texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_texture_handle = texture?.handle
@@ -1026,7 +1026,7 @@ open class TreeItem: Object {
     /// Returns the given column's icon ``Texture2D``. Error if no icon is set.
     public final func getIcon (column: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -1059,7 +1059,7 @@ open class TreeItem: Object {
     
     /// Sets the given column's icon's texture region.
     public final func setIconRegion (column: Int32, region: Rect2) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_region = region
@@ -1097,7 +1097,7 @@ open class TreeItem: Object {
     /// Returns the icon ``Texture2D`` region as ``Rect2``.
     public final func getIconRegion (column: Int32)-> Rect2 {
         var _result: Rect2 = Rect2 ()
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -1130,7 +1130,7 @@ open class TreeItem: Object {
     
     /// Sets the maximum allowed width of the icon in the given `column`. This limit is applied on top of the default size of the icon and on top of [theme_item Tree.icon_max_width]. The height is adjusted according to the icon's ratio.
     public final func setIconMaxWidth (column: Int32, width: Int32) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_width: Int = Int (width)
@@ -1168,7 +1168,7 @@ open class TreeItem: Object {
     /// Returns the maximum allowed width of the icon in the given `column`.
     public final func getIconMaxWidth (column: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -1201,7 +1201,7 @@ open class TreeItem: Object {
     
     /// Modulates the given column's icon with `modulate`.
     public final func setIconModulate (column: Int32, modulate: Color) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_modulate = modulate
@@ -1239,7 +1239,7 @@ open class TreeItem: Object {
     /// Returns the ``Color`` modulating the column's icon.
     public final func getIconModulate (column: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -1272,7 +1272,7 @@ open class TreeItem: Object {
     
     /// Sets the value of a .cellModeRange column.
     public final func setRange (column: Int32, value: Double) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_value = value
@@ -1310,7 +1310,7 @@ open class TreeItem: Object {
     /// Returns the value of a .cellModeRange column.
     public final func getRange (column: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -1346,7 +1346,7 @@ open class TreeItem: Object {
     /// If `expr` is `true`, the edit mode slider will use an exponential scale as with ``Range/expEdit``.
     /// 
     public final func setRangeConfig (column: Int32, min: Double, max: Double, step: Double, expr: Bool = false) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_min = min
@@ -1399,7 +1399,7 @@ open class TreeItem: Object {
     /// Returns a dictionary containing the range parameters for a given column. The keys are "min", "max", "step", and "expr".
     public final func getRangeConfig (column: Int32)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -1432,7 +1432,7 @@ open class TreeItem: Object {
     
     /// Sets the metadata value for the given column, which can be retrieved later using ``getMetadata(column:)``. This can be used, for example, to store a reference to the original data.
     public final func setMetadata (column: Int32, meta: Variant) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -1468,7 +1468,7 @@ open class TreeItem: Object {
     /// Returns the metadata value that was set for the given column using ``setMetadata(column:meta:)``.
     public final func getMetadata (column: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -1504,7 +1504,7 @@ open class TreeItem: Object {
     /// The `callback` should accept two arguments: the ``TreeItem`` that is drawn and its position and size as a ``Rect2``.
     /// 
     public final func setCustomDraw (column: Int32, object: Object?, callback: StringName) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_object_handle = object?.handle
@@ -1543,7 +1543,7 @@ open class TreeItem: Object {
     
     @inline(__always)
     fileprivate final func set_collapsed (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1593,7 +1593,7 @@ open class TreeItem: Object {
     
     /// Collapses or uncollapses this ``TreeItem`` and all the descendants of this item.
     public final func setCollapsedRecursive (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1629,7 +1629,7 @@ open class TreeItem: Object {
     /// 
     public final func isAnyCollapsed (onlyVisible: Bool = false)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_only_visible = onlyVisible
         
@@ -1662,7 +1662,7 @@ open class TreeItem: Object {
     
     @inline(__always)
     fileprivate final func set_visible (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1728,7 +1728,7 @@ open class TreeItem: Object {
     
     @inline(__always)
     fileprivate final func set_custom_minimum_height (_ height: Int32) {
-        #if true
+        #if false
         
         var copy_height: Int = Int (height)
         
@@ -1778,7 +1778,7 @@ open class TreeItem: Object {
     
     /// If `selectable` is `true`, the given `column` is selectable.
     public final func setSelectable (column: Int32, selectable: Bool) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_selectable = selectable
@@ -1816,7 +1816,7 @@ open class TreeItem: Object {
     /// Returns `true` if the given `column` is selectable.
     public final func isSelectable (column: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -1850,7 +1850,7 @@ open class TreeItem: Object {
     /// Returns `true` if the given `column` is selected.
     public final func isSelected (column: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -1883,7 +1883,7 @@ open class TreeItem: Object {
     
     /// Selects the given `column`.
     public final func select (column: Int32) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -1915,7 +1915,7 @@ open class TreeItem: Object {
     
     /// Deselects the given column.
     public final func deselect (column: Int32) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -1947,7 +1947,7 @@ open class TreeItem: Object {
     
     /// If `enabled` is `true`, the given `column` is editable.
     public final func setEditable (column: Int32, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_enabled = enabled
@@ -1985,7 +1985,7 @@ open class TreeItem: Object {
     /// Returns `true` if the given `column` is editable.
     public final func isEditable (column: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -2018,7 +2018,7 @@ open class TreeItem: Object {
     
     /// Sets the given column's custom color.
     public final func setCustomColor (column: Int32, color: Color) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_color = color
@@ -2056,7 +2056,7 @@ open class TreeItem: Object {
     /// Returns the custom color of column `column`.
     public final func getCustomColor (column: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -2089,7 +2089,7 @@ open class TreeItem: Object {
     
     /// Resets the color for the given column to default.
     public final func clearCustomColor (column: Int32) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -2121,7 +2121,7 @@ open class TreeItem: Object {
     
     /// Sets custom font used to draw text in the given `column`.
     public final func setCustomFont (column: Int32, font: Font?) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_font_handle = font?.handle
@@ -2158,7 +2158,7 @@ open class TreeItem: Object {
     /// Returns custom font used to draw text in the column `column`.
     public final func getCustomFont (column: Int32)-> Font? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -2191,7 +2191,7 @@ open class TreeItem: Object {
     
     /// Sets custom font size used to draw text in the given `column`.
     public final func setCustomFontSize (column: Int32, fontSize: Int32) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_font_size: Int = Int (fontSize)
@@ -2229,7 +2229,7 @@ open class TreeItem: Object {
     /// Returns custom font size used to draw text in the column `column`.
     public final func getCustomFontSize (column: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -2262,7 +2262,7 @@ open class TreeItem: Object {
     
     /// Sets the given column's custom background color and whether to just use it as an outline.
     public final func setCustomBgColor (column: Int32, color: Color, justOutline: Bool = false) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_color = color
@@ -2304,7 +2304,7 @@ open class TreeItem: Object {
     
     /// Resets the background color for the given column to default.
     public final func clearCustomBgColor (column: Int32) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -2337,7 +2337,7 @@ open class TreeItem: Object {
     /// Returns the custom background color of column `column`.
     public final func getCustomBgColor (column: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -2370,7 +2370,7 @@ open class TreeItem: Object {
     
     /// 
     public final func setCustomAsButton (column: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_enable = enable
@@ -2408,7 +2408,7 @@ open class TreeItem: Object {
     /// 
     public final func isCustomSetAsButton (column: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -2441,7 +2441,7 @@ open class TreeItem: Object {
     
     /// Adds a button with ``Texture2D`` `button` at column `column`. The `id` is used to identify the button in the according [signal Tree.button_clicked] signal and can be different from the buttons index. If not specified, the next available index is used, which may be retrieved by calling ``getButtonCount(column:)`` immediately before this method. Optionally, the button can be `disabled` and have a `tooltipText`.
     public final func addButton (column: Int32, button: Texture2D?, id: Int32 = -1, disabled: Bool = false, tooltipText: String = "") {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_id: Int = Int (id)
@@ -2493,7 +2493,7 @@ open class TreeItem: Object {
     /// Returns the number of buttons in column `column`.
     public final func getButtonCount (column: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -2527,7 +2527,7 @@ open class TreeItem: Object {
     /// Returns the tooltip text for the button at index `buttonIndex` in column `column`.
     public final func getButtonTooltipText (column: Int32, buttonIndex: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_button_index: Int = Int (buttonIndex)
@@ -2566,7 +2566,7 @@ open class TreeItem: Object {
     /// Returns the ID for the button at index `buttonIndex` in column `column`.
     public final func getButtonId (column: Int32, buttonIndex: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_button_index: Int = Int (buttonIndex)
@@ -2605,7 +2605,7 @@ open class TreeItem: Object {
     /// Returns the button index if there is a button with ID `id` in column `column`, otherwise returns -1.
     public final func getButtonById (column: Int32, id: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_id: Int = Int (id)
@@ -2644,7 +2644,7 @@ open class TreeItem: Object {
     /// Returns the ``Texture2D`` of the button at index `buttonIndex` in column `column`.
     public final func getButton (column: Int32, buttonIndex: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_button_index: Int = Int (buttonIndex)
@@ -2682,7 +2682,7 @@ open class TreeItem: Object {
     
     /// Sets the tooltip text for the button at index `buttonIndex` in the given `column`.
     public final func setButtonTooltipText (column: Int32, buttonIndex: Int32, tooltip: String) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_button_index: Int = Int (buttonIndex)
@@ -2724,7 +2724,7 @@ open class TreeItem: Object {
     
     /// Sets the given column's button ``Texture2D`` at index `buttonIndex` to `button`.
     public final func setButton (column: Int32, buttonIndex: Int32, button: Texture2D?) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_button_index: Int = Int (buttonIndex)
@@ -2765,7 +2765,7 @@ open class TreeItem: Object {
     
     /// Removes the button at index `buttonIndex` in column `column`.
     public final func eraseButton (column: Int32, buttonIndex: Int32) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_button_index: Int = Int (buttonIndex)
@@ -2802,7 +2802,7 @@ open class TreeItem: Object {
     
     /// If `true`, disables the button at index `buttonIndex` in the given `column`.
     public final func setButtonDisabled (column: Int32, buttonIndex: Int32, disabled: Bool) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_button_index: Int = Int (buttonIndex)
@@ -2844,7 +2844,7 @@ open class TreeItem: Object {
     
     /// Sets the given column's button color at index `buttonIndex` to `color`.
     public final func setButtonColor (column: Int32, buttonIndex: Int32, color: Color) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_button_index: Int = Int (buttonIndex)
@@ -2887,7 +2887,7 @@ open class TreeItem: Object {
     /// Returns `true` if the button at index `buttonIndex` for the given `column` is disabled.
     public final func isButtonDisabled (column: Int32, buttonIndex: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_button_index: Int = Int (buttonIndex)
@@ -2925,7 +2925,7 @@ open class TreeItem: Object {
     
     /// Sets the given column's tooltip text.
     public final func setTooltipText (column: Int32, tooltip: String) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         let gstr_tooltip = GString (tooltip)
@@ -2963,7 +2963,7 @@ open class TreeItem: Object {
     /// Returns the given column's tooltip text.
     public final func getTooltipText (column: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -2996,7 +2996,7 @@ open class TreeItem: Object {
     
     /// Sets the given column's text alignment. See ``HorizontalAlignment`` for possible values.
     public final func setTextAlignment (column: Int32, textAlignment: HorizontalAlignment) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_text_alignment = Int64 (textAlignment.rawValue)
@@ -3034,7 +3034,7 @@ open class TreeItem: Object {
     /// Returns the given column's text alignment.
     public final func getTextAlignment (column: Int32)-> HorizontalAlignment {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -3067,7 +3067,7 @@ open class TreeItem: Object {
     
     /// If `enable` is `true`, the given `column` is expanded to the right.
     public final func setExpandRight (column: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_enable = enable
@@ -3105,7 +3105,7 @@ open class TreeItem: Object {
     /// Returns `true` if `expand_right` is set.
     public final func getExpandRight (column: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         
@@ -3138,7 +3138,7 @@ open class TreeItem: Object {
     
     @inline(__always)
     fileprivate final func set_disable_folding (_ disable: Bool) {
-        #if true
+        #if false
         
         var copy_disable = disable
         
@@ -3192,7 +3192,7 @@ open class TreeItem: Object {
     /// 
     public final func createChild (index: Int32 = -1)-> TreeItem? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -3225,7 +3225,7 @@ open class TreeItem: Object {
     
     /// Adds a previously unparented ``TreeItem`` as a direct child of this one. The `child` item must not be a part of any ``Tree`` or parented to any ``TreeItem``. See also ``removeChild(_:)``.
     public final func addChild (_ child: TreeItem?) {
-        #if true
+        #if false
         
         var copy_child_handle = child?.handle
         
@@ -3259,7 +3259,7 @@ open class TreeItem: Object {
     /// > Note: If you want to move a child from one ``Tree`` to another, then instead of removing and adding it manually you can use ``moveBefore(item:)`` or ``moveAfter(item:)``.
     /// 
     public final func removeChild (_ child: TreeItem?) {
-        #if true
+        #if false
         
         var copy_child_handle = child?.handle
         
@@ -3384,7 +3384,7 @@ open class TreeItem: Object {
     /// 
     public final func getNextInTree (wrap: Bool = false)-> TreeItem? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_wrap = wrap
         
@@ -3421,7 +3421,7 @@ open class TreeItem: Object {
     /// 
     public final func getPrevInTree (wrap: Bool = false)-> TreeItem? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_wrap = wrap
         
@@ -3458,7 +3458,7 @@ open class TreeItem: Object {
     /// 
     public final func getNextVisible (wrap: Bool = false)-> TreeItem? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_wrap = wrap
         
@@ -3495,7 +3495,7 @@ open class TreeItem: Object {
     /// 
     public final func getPrevVisible (wrap: Bool = false)-> TreeItem? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_wrap = wrap
         
@@ -3532,7 +3532,7 @@ open class TreeItem: Object {
     /// 
     public final func getChild (index: Int32)-> TreeItem? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -3622,7 +3622,7 @@ open class TreeItem: Object {
     /// > Note: You can't move to the root or move the root.
     /// 
     public final func moveBefore (item: TreeItem?) {
-        #if true
+        #if false
         
         var copy_item_handle = item?.handle
         
@@ -3656,7 +3656,7 @@ open class TreeItem: Object {
     /// > Note: You can't move to the root or move the root.
     /// 
     public final func moveAfter (item: TreeItem?) {
-        #if true
+        #if false
         
         var copy_item_handle = item?.handle
         

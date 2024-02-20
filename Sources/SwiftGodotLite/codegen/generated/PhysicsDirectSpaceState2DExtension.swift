@@ -28,7 +28,7 @@ open class PhysicsDirectSpaceState2DExtension: PhysicsDirectSpaceState2D {
     /// 
     public final func isBodyExcludedFromQuery (body: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsDirectSpaceState2DExtension.method_is_body_excluded_from_query, UnsafeMutableRawPointer (mutating: handle), &_result, &body.content)

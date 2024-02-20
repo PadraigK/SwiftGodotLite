@@ -52,7 +52,7 @@ open class Thread: RefCounted {
     /// 
     public final func start (callable: Callable, priority: Thread.Priority = .normal)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_priority = Int64 (priority.rawValue)
         
@@ -181,7 +181,7 @@ open class Thread: RefCounted {
     /// > Note: Even in the case of having disabled the checks in a ``WorkerThreadPool`` task, there's no need to re-enable them at the end. The engine will do so.
     /// 
     public static func setThreadSafetyChecksEnabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

@@ -100,7 +100,7 @@ open class KinematicCollision2D: RefCounted {
     /// Returns the collision angle according to `upDirection`, which is ``Vector2.UP`` by default. This value is always positive.
     public final func getAngle (upDirection: Vector2 = Vector2 (x: 0, y: -1))-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_up_direction = upDirection
         

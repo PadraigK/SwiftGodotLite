@@ -45,7 +45,7 @@ open class AudioEffectCapture: AudioEffect {
     /// Returns `true` if at least `frames` audio frames are available to read in the internal ring buffer.
     public final func canGetBuffer (frames: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_frames: Int = Int (frames)
         
@@ -82,7 +82,7 @@ open class AudioEffectCapture: AudioEffect {
     /// 
     public final func getBuffer (frames: Int32)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_frames: Int = Int (frames)
         
@@ -131,7 +131,7 @@ open class AudioEffectCapture: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_buffer_length (_ bufferLengthSeconds: Double) {
-        #if true
+        #if false
         
         var copy_buffer_length_seconds = bufferLengthSeconds
         

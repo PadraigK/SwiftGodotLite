@@ -202,7 +202,7 @@ open class TileSet: Resource {
     /// 
     public final func addSource (_ source: TileSetSource?, atlasSourceIdOverride: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_atlas_source_id_override: Int = Int (atlasSourceIdOverride)
         var copy_source_handle = source?.handle
@@ -239,7 +239,7 @@ open class TileSet: Resource {
     
     /// Removes the source with the given source ID.
     public final func removeSource (sourceId: Int32) {
-        #if true
+        #if false
         
         var copy_source_id: Int = Int (sourceId)
         
@@ -271,7 +271,7 @@ open class TileSet: Resource {
     
     /// Changes a source's ID.
     public final func setSourceId (_ sourceId: Int32, newSourceId: Int32) {
-        #if true
+        #if false
         
         var copy_source_id: Int = Int (sourceId)
         var copy_new_source_id: Int = Int (newSourceId)
@@ -327,7 +327,7 @@ open class TileSet: Resource {
     /// Returns the source ID for source with index `index`.
     public final func getSourceId (index: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -361,7 +361,7 @@ open class TileSet: Resource {
     /// Returns if this TileSet has a source for the given source ID.
     public final func hasSource (sourceId: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_source_id: Int = Int (sourceId)
         
@@ -395,7 +395,7 @@ open class TileSet: Resource {
     /// Returns the ``TileSetSource`` with ID `sourceId`.
     public final func getSource (sourceId: Int32)-> TileSetSource? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_source_id: Int = Int (sourceId)
         
@@ -428,7 +428,7 @@ open class TileSet: Resource {
     
     @inline(__always)
     fileprivate final func set_tile_shape (_ shape: TileSet.TileShape) {
-        #if true
+        #if false
         
         var copy_shape = Int64 (shape.rawValue)
         
@@ -478,7 +478,7 @@ open class TileSet: Resource {
     
     @inline(__always)
     fileprivate final func set_tile_layout (_ layout: TileSet.TileLayout) {
-        #if true
+        #if false
         
         var copy_layout = Int64 (layout.rawValue)
         
@@ -528,7 +528,7 @@ open class TileSet: Resource {
     
     @inline(__always)
     fileprivate final func set_tile_offset_axis (_ alignment: TileSet.TileOffsetAxis) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -578,7 +578,7 @@ open class TileSet: Resource {
     
     @inline(__always)
     fileprivate final func set_tile_size (_ size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -628,7 +628,7 @@ open class TileSet: Resource {
     
     @inline(__always)
     fileprivate final func set_uv_clipping (_ uvClipping: Bool) {
-        #if true
+        #if false
         
         var copy_uv_clipping = uvClipping
         
@@ -699,7 +699,7 @@ open class TileSet: Resource {
     /// Occlusion layers allow assigning occlusion polygons to atlas tiles.
     /// 
     public final func addOcclusionLayer (toPosition: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_to_position: Int = Int (toPosition)
         
@@ -731,7 +731,7 @@ open class TileSet: Resource {
     
     /// Moves the occlusion layer at index `layerIndex` to the given position `toPosition` in the array. Also updates the atlas tiles accordingly.
     public final func moveOcclusionLayer (layerIndex: Int32, toPosition: Int32) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         var copy_to_position: Int = Int (toPosition)
@@ -768,7 +768,7 @@ open class TileSet: Resource {
     
     /// Removes the occlusion layer at index `layerIndex`. Also updates the atlas tiles accordingly.
     public final func removeOcclusionLayer (layerIndex: Int32) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         
@@ -800,7 +800,7 @@ open class TileSet: Resource {
     
     /// Sets the occlusion layer (as in the rendering server) for occluders in the given TileSet occlusion layer.
     public final func setOcclusionLayerLightMask (layerIndex: Int32, lightMask: Int32) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         var copy_light_mask: Int = Int (lightMask)
@@ -838,7 +838,7 @@ open class TileSet: Resource {
     /// Returns the light mask of the occlusion layer.
     public final func getOcclusionLayerLightMask (layerIndex: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         
@@ -871,7 +871,7 @@ open class TileSet: Resource {
     
     /// Enables or disables SDF collision for occluders in the given TileSet occlusion layer.
     public final func setOcclusionLayerSdfCollision (layerIndex: Int32, sdfCollision: Bool) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         var copy_sdf_collision = sdfCollision
@@ -909,7 +909,7 @@ open class TileSet: Resource {
     /// Returns if the occluders from this layer use `sdf_collision`.
     public final func getOcclusionLayerSdfCollision (layerIndex: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         
@@ -963,7 +963,7 @@ open class TileSet: Resource {
     /// Physics layers allow assigning collision polygons to atlas tiles.
     /// 
     public final func addPhysicsLayer (toPosition: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_to_position: Int = Int (toPosition)
         
@@ -995,7 +995,7 @@ open class TileSet: Resource {
     
     /// Moves the physics layer at index `layerIndex` to the given position `toPosition` in the array. Also updates the atlas tiles accordingly.
     public final func movePhysicsLayer (layerIndex: Int32, toPosition: Int32) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         var copy_to_position: Int = Int (toPosition)
@@ -1032,7 +1032,7 @@ open class TileSet: Resource {
     
     /// Removes the physics layer at index `layerIndex`. Also updates the atlas tiles accordingly.
     public final func removePhysicsLayer (layerIndex: Int32) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         
@@ -1064,7 +1064,7 @@ open class TileSet: Resource {
     
     /// Sets the physics layer (as in the physics server) for bodies in the given TileSet physics layer.
     public final func setPhysicsLayerCollisionLayer (layerIndex: Int32, layer: UInt32) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         var copy_layer: Int = Int (layer)
@@ -1102,7 +1102,7 @@ open class TileSet: Resource {
     /// Returns the collision layer (as in the physics server) bodies on the given TileSet's physics layer are in.
     public final func getPhysicsLayerCollisionLayer (layerIndex: Int32)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         
@@ -1135,7 +1135,7 @@ open class TileSet: Resource {
     
     /// Sets the physics layer (as in the physics server) for bodies in the given TileSet physics layer.
     public final func setPhysicsLayerCollisionMask (layerIndex: Int32, mask: UInt32) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         var copy_mask: Int = Int (mask)
@@ -1173,7 +1173,7 @@ open class TileSet: Resource {
     /// Returns the collision mask of bodies on the given TileSet's physics layer.
     public final func getPhysicsLayerCollisionMask (layerIndex: Int32)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         
@@ -1206,7 +1206,7 @@ open class TileSet: Resource {
     
     /// Sets the physics material for bodies in the given TileSet physics layer.
     public final func setPhysicsLayerPhysicsMaterial (layerIndex: Int32, physicsMaterial: PhysicsMaterial?) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         var copy_physics_material_handle = physicsMaterial?.handle
@@ -1243,7 +1243,7 @@ open class TileSet: Resource {
     /// Returns the physics material of bodies on the given TileSet's physics layer.
     public final func getPhysicsLayerPhysicsMaterial (layerIndex: Int32)-> PhysicsMaterial? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         
@@ -1294,7 +1294,7 @@ open class TileSet: Resource {
     
     /// Adds a new terrain set at the given position `toPosition` in the array. If `toPosition` is -1, adds it at the end of the array.
     public final func addTerrainSet (toPosition: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_to_position: Int = Int (toPosition)
         
@@ -1326,7 +1326,7 @@ open class TileSet: Resource {
     
     /// Moves the terrain set at index `terrainSet` to the given position `toPosition` in the array. Also updates the atlas tiles accordingly.
     public final func moveTerrainSet (_ terrainSet: Int32, toPosition: Int32) {
-        #if true
+        #if false
         
         var copy_terrain_set: Int = Int (terrainSet)
         var copy_to_position: Int = Int (toPosition)
@@ -1363,7 +1363,7 @@ open class TileSet: Resource {
     
     /// Removes the terrain set at index `terrainSet`. Also updates the atlas tiles accordingly.
     public final func removeTerrainSet (_ terrainSet: Int32) {
-        #if true
+        #if false
         
         var copy_terrain_set: Int = Int (terrainSet)
         
@@ -1395,7 +1395,7 @@ open class TileSet: Resource {
     
     /// Sets a terrain mode. Each mode determines which bits of a tile shape is used to match the neighboring tiles' terrains.
     public final func setTerrainSetMode (terrainSet: Int32, mode: TileSet.TerrainMode) {
-        #if true
+        #if false
         
         var copy_terrain_set: Int = Int (terrainSet)
         var copy_mode = Int64 (mode.rawValue)
@@ -1433,7 +1433,7 @@ open class TileSet: Resource {
     /// Returns a terrain set mode.
     public final func getTerrainSetMode (terrainSet: Int32)-> TileSet.TerrainMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_terrain_set: Int = Int (terrainSet)
         
@@ -1467,7 +1467,7 @@ open class TileSet: Resource {
     /// Returns the number of terrains in the given terrain set.
     public final func getTerrainsCount (terrainSet: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_terrain_set: Int = Int (terrainSet)
         
@@ -1500,7 +1500,7 @@ open class TileSet: Resource {
     
     /// Adds a new terrain to the given terrain set `terrainSet` at the given position `toPosition` in the array. If `toPosition` is -1, adds it at the end of the array.
     public final func addTerrain (terrainSet: Int32, toPosition: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_terrain_set: Int = Int (terrainSet)
         var copy_to_position: Int = Int (toPosition)
@@ -1537,7 +1537,7 @@ open class TileSet: Resource {
     
     /// Moves the terrain at index `terrainIndex` for terrain set `terrainSet` to the given position `toPosition` in the array. Also updates the atlas tiles accordingly.
     public final func moveTerrain (terrainSet: Int32, terrainIndex: Int32, toPosition: Int32) {
-        #if true
+        #if false
         
         var copy_terrain_set: Int = Int (terrainSet)
         var copy_terrain_index: Int = Int (terrainIndex)
@@ -1579,7 +1579,7 @@ open class TileSet: Resource {
     
     /// Removes the terrain at index `terrainIndex` in the given terrain set `terrainSet`. Also updates the atlas tiles accordingly.
     public final func removeTerrain (terrainSet: Int32, terrainIndex: Int32) {
-        #if true
+        #if false
         
         var copy_terrain_set: Int = Int (terrainSet)
         var copy_terrain_index: Int = Int (terrainIndex)
@@ -1616,7 +1616,7 @@ open class TileSet: Resource {
     
     /// Sets a terrain's name.
     public final func setTerrainName (terrainSet: Int32, terrainIndex: Int32, name: String) {
-        #if true
+        #if false
         
         var copy_terrain_set: Int = Int (terrainSet)
         var copy_terrain_index: Int = Int (terrainIndex)
@@ -1659,7 +1659,7 @@ open class TileSet: Resource {
     /// Returns a terrain's name.
     public final func getTerrainName (terrainSet: Int32, terrainIndex: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_terrain_set: Int = Int (terrainSet)
         var copy_terrain_index: Int = Int (terrainIndex)
@@ -1697,7 +1697,7 @@ open class TileSet: Resource {
     
     /// Sets a terrain's color. This color is used for identifying the different terrains in the TileSet editor.
     public final func setTerrainColor (terrainSet: Int32, terrainIndex: Int32, color: Color) {
-        #if true
+        #if false
         
         var copy_terrain_set: Int = Int (terrainSet)
         var copy_terrain_index: Int = Int (terrainIndex)
@@ -1740,7 +1740,7 @@ open class TileSet: Resource {
     /// Returns a terrain's color.
     public final func getTerrainColor (terrainSet: Int32, terrainIndex: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_terrain_set: Int = Int (terrainSet)
         var copy_terrain_index: Int = Int (terrainIndex)
@@ -1799,7 +1799,7 @@ open class TileSet: Resource {
     /// Navigation layers allow assigning a navigable area to atlas tiles.
     /// 
     public final func addNavigationLayer (toPosition: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_to_position: Int = Int (toPosition)
         
@@ -1831,7 +1831,7 @@ open class TileSet: Resource {
     
     /// Moves the navigation layer at index `layerIndex` to the given position `toPosition` in the array. Also updates the atlas tiles accordingly.
     public final func moveNavigationLayer (layerIndex: Int32, toPosition: Int32) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         var copy_to_position: Int = Int (toPosition)
@@ -1868,7 +1868,7 @@ open class TileSet: Resource {
     
     /// Removes the navigation layer at index `layerIndex`. Also updates the atlas tiles accordingly.
     public final func removeNavigationLayer (layerIndex: Int32) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         
@@ -1900,7 +1900,7 @@ open class TileSet: Resource {
     
     /// Sets the navigation layers (as in the navigation server) for navigation regions in the given TileSet navigation layer.
     public final func setNavigationLayerLayers (layerIndex: Int32, layers: UInt32) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         var copy_layers: Int = Int (layers)
@@ -1938,7 +1938,7 @@ open class TileSet: Resource {
     /// Returns the navigation layers (as in the Navigation server) of the given TileSet navigation layer.
     public final func getNavigationLayerLayers (layerIndex: Int32)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         
@@ -1971,7 +1971,7 @@ open class TileSet: Resource {
     
     /// Based on `value`, enables or disables the specified navigation layer of the TileSet navigation data layer identified by the given `layerIndex`, given a navigation_layers `layerNumber` between 1 and 32.
     public final func setNavigationLayerLayerValue (layerIndex: Int32, layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         var copy_layer_number: Int = Int (layerNumber)
@@ -2014,7 +2014,7 @@ open class TileSet: Resource {
     /// Returns whether or not the specified navigation layer of the TileSet navigation data layer identified by the given `layerIndex` is enabled, given a navigation_layers `layerNumber` between 1 and 32.
     public final func getNavigationLayerLayerValue (layerIndex: Int32, layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         var copy_layer_number: Int = Int (layerNumber)
@@ -2073,7 +2073,7 @@ open class TileSet: Resource {
     /// Custom data layers allow assigning custom properties to atlas tiles.
     /// 
     public final func addCustomDataLayer (toPosition: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_to_position: Int = Int (toPosition)
         
@@ -2105,7 +2105,7 @@ open class TileSet: Resource {
     
     /// Moves the custom data layer at index `layerIndex` to the given position `toPosition` in the array. Also updates the atlas tiles accordingly.
     public final func moveCustomDataLayer (layerIndex: Int32, toPosition: Int32) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         var copy_to_position: Int = Int (toPosition)
@@ -2142,7 +2142,7 @@ open class TileSet: Resource {
     
     /// Removes the custom data layer at index `layerIndex`. Also updates the atlas tiles accordingly.
     public final func removeCustomDataLayer (layerIndex: Int32) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         
@@ -2175,7 +2175,7 @@ open class TileSet: Resource {
     /// Returns the index of the custom data layer identified by the given name.
     public final func getCustomDataLayerByName (layerName: String)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_layer_name = GString (layerName)
         
@@ -2208,7 +2208,7 @@ open class TileSet: Resource {
     
     /// Sets the name of the custom data layer identified by the given index. Names are identifiers of the layer therefore if the name is already taken it will fail and raise an error.
     public final func setCustomDataLayerName (layerIndex: Int32, layerName: String) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         let gstr_layer_name = GString (layerName)
@@ -2246,7 +2246,7 @@ open class TileSet: Resource {
     /// Returns the name of the custom data layer identified by the given index.
     public final func getCustomDataLayerName (layerIndex: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         
@@ -2279,7 +2279,7 @@ open class TileSet: Resource {
     
     /// Sets the type of the custom data layer identified by the given index.
     public final func setCustomDataLayerType (layerIndex: Int32, layerType: Variant.GType) {
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         var copy_layer_type = Int64 (layerType.rawValue)
@@ -2317,7 +2317,7 @@ open class TileSet: Resource {
     /// Returns the type of the custom data layer identified by the given index.
     public final func getCustomDataLayerType (layerIndex: Int32)-> Variant.GType {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_layer_index: Int = Int (layerIndex)
         
@@ -2355,7 +2355,7 @@ open class TileSet: Resource {
     /// Proxied tiles can be automatically replaced in TileMap nodes using the editor.
     /// 
     public final func setSourceLevelTileProxy (sourceFrom: Int32, sourceTo: Int32) {
-        #if true
+        #if false
         
         var copy_source_from: Int = Int (sourceFrom)
         var copy_source_to: Int = Int (sourceTo)
@@ -2396,7 +2396,7 @@ open class TileSet: Resource {
     /// 
     public final func getSourceLevelTileProxy (sourceFrom: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_source_from: Int = Int (sourceFrom)
         
@@ -2430,7 +2430,7 @@ open class TileSet: Resource {
     /// Returns if there is a source-level proxy for the given source ID.
     public final func hasSourceLevelTileProxy (sourceFrom: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_source_from: Int = Int (sourceFrom)
         
@@ -2463,7 +2463,7 @@ open class TileSet: Resource {
     
     /// Removes a source-level tile proxy.
     public final func removeSourceLevelTileProxy (sourceFrom: Int32) {
-        #if true
+        #if false
         
         var copy_source_from: Int = Int (sourceFrom)
         
@@ -2500,7 +2500,7 @@ open class TileSet: Resource {
     /// Proxied tiles can be automatically replaced in TileMap nodes using the editor.
     /// 
     public final func setCoordsLevelTileProxy (pSourceFrom: Int32, coordsFrom: Vector2i, sourceTo: Int32, coordsTo: Vector2i) {
-        #if true
+        #if false
         
         var copy_p_source_from: Int = Int (pSourceFrom)
         var copy_coords_from = coordsFrom
@@ -2551,7 +2551,7 @@ open class TileSet: Resource {
     /// 
     public final func getCoordsLevelTileProxy (sourceFrom: Int32, coordsFrom: Vector2i)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_source_from: Int = Int (sourceFrom)
         var copy_coords_from = coordsFrom
@@ -2590,7 +2590,7 @@ open class TileSet: Resource {
     /// Returns if there is a coodinates-level proxy for the given identifiers.
     public final func hasCoordsLevelTileProxy (sourceFrom: Int32, coordsFrom: Vector2i)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_source_from: Int = Int (sourceFrom)
         var copy_coords_from = coordsFrom
@@ -2628,7 +2628,7 @@ open class TileSet: Resource {
     
     /// Removes a coordinates-level proxy for the given identifiers.
     public final func removeCoordsLevelTileProxy (sourceFrom: Int32, coordsFrom: Vector2i) {
-        #if true
+        #if false
         
         var copy_source_from: Int = Int (sourceFrom)
         var copy_coords_from = coordsFrom
@@ -2670,7 +2670,7 @@ open class TileSet: Resource {
     /// Proxied tiles can be automatically replaced in TileMap nodes using the editor.
     /// 
     public final func setAlternativeLevelTileProxy (sourceFrom: Int32, coordsFrom: Vector2i, alternativeFrom: Int32, sourceTo: Int32, coordsTo: Vector2i, alternativeTo: Int32) {
-        #if true
+        #if false
         
         var copy_source_from: Int = Int (sourceFrom)
         var copy_coords_from = coordsFrom
@@ -2731,7 +2731,7 @@ open class TileSet: Resource {
     /// 
     public final func getAlternativeLevelTileProxy (sourceFrom: Int32, coordsFrom: Vector2i, alternativeFrom: Int32)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_source_from: Int = Int (sourceFrom)
         var copy_coords_from = coordsFrom
@@ -2775,7 +2775,7 @@ open class TileSet: Resource {
     /// Returns if there is an alternative-level proxy for the given identifiers.
     public final func hasAlternativeLevelTileProxy (sourceFrom: Int32, coordsFrom: Vector2i, alternativeFrom: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_source_from: Int = Int (sourceFrom)
         var copy_coords_from = coordsFrom
@@ -2818,7 +2818,7 @@ open class TileSet: Resource {
     
     /// Removes an alternative-level proxy for the given identifiers.
     public final func removeAlternativeLevelTileProxy (sourceFrom: Int32, coordsFrom: Vector2i, alternativeFrom: Int32) {
-        #if true
+        #if false
         
         var copy_source_from: Int = Int (sourceFrom)
         var copy_coords_from = coordsFrom
@@ -2866,7 +2866,7 @@ open class TileSet: Resource {
     /// 
     public final func mapTileProxy (sourceFrom: Int32, coordsFrom: Vector2i, alternativeFrom: Int32)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_source_from: Int = Int (sourceFrom)
         var copy_coords_from = coordsFrom
@@ -2942,7 +2942,7 @@ open class TileSet: Resource {
     /// Adds a ``TileMapPattern`` to be stored in the TileSet resource. If provided, insert it at the given `index`.
     public final func addPattern (_ pattern: TileMapPattern?, index: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_pattern_handle = pattern?.handle
@@ -2980,7 +2980,7 @@ open class TileSet: Resource {
     /// Returns the ``TileMapPattern`` at the given `index`.
     public final func getPattern (index: Int32 = -1)-> TileMapPattern? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -3013,7 +3013,7 @@ open class TileSet: Resource {
     
     /// Remove the ``TileMapPattern`` at the given index.
     public final func removePattern (index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         

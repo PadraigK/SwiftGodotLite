@@ -390,7 +390,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_avoidance_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -440,7 +440,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_path_desired_distance (_ desiredDistance: Double) {
-        #if true
+        #if false
         
         var copy_desired_distance = desiredDistance
         
@@ -490,7 +490,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_target_desired_distance (_ desiredDistance: Double) {
-        #if true
+        #if false
         
         var copy_desired_distance = desiredDistance
         
@@ -540,7 +540,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -590,7 +590,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_height (_ height: Double) {
-        #if true
+        #if false
         
         var copy_height = height
         
@@ -640,7 +640,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_path_height_offset (_ pathHeightOffset: Double) {
-        #if true
+        #if false
         
         var copy_path_height_offset = pathHeightOffset
         
@@ -690,7 +690,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_use_3d_avoidance (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -740,7 +740,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_keep_y_velocity (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -790,7 +790,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_neighbor_distance (_ neighborDistance: Double) {
-        #if true
+        #if false
         
         var copy_neighbor_distance = neighborDistance
         
@@ -840,7 +840,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_max_neighbors (_ maxNeighbors: Int32) {
-        #if true
+        #if false
         
         var copy_max_neighbors: Int = Int (maxNeighbors)
         
@@ -890,7 +890,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_time_horizon_agents (_ timeHorizon: Double) {
-        #if true
+        #if false
         
         var copy_time_horizon = timeHorizon
         
@@ -940,7 +940,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_time_horizon_obstacles (_ timeHorizon: Double) {
-        #if true
+        #if false
         
         var copy_time_horizon = timeHorizon
         
@@ -990,7 +990,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_max_speed (_ maxSpeed: Double) {
-        #if true
+        #if false
         
         var copy_max_speed = maxSpeed
         
@@ -1040,7 +1040,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_path_max_distance (_ maxSpeed: Double) {
-        #if true
+        #if false
         
         var copy_max_speed = maxSpeed
         
@@ -1090,7 +1090,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_navigation_layers (_ navigationLayers: UInt32) {
-        #if true
+        #if false
         
         var copy_navigation_layers: Int = Int (navigationLayers)
         
@@ -1140,7 +1140,7 @@ open class NavigationAgent3D: Node {
     
     /// Based on `value`, enables or disables the specified layer in the ``navigationLayers`` bitmask, given a `layerNumber` between 1 and 32.
     public final func setNavigationLayerValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -1178,7 +1178,7 @@ open class NavigationAgent3D: Node {
     /// Returns whether or not the specified layer of the ``navigationLayers`` bitmask is enabled, given a `layerNumber` between 1 and 32.
     public final func getNavigationLayerValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -1211,7 +1211,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_pathfinding_algorithm (_ pathfindingAlgorithm: NavigationPathQueryParameters3D.PathfindingAlgorithm) {
-        #if true
+        #if false
         
         var copy_pathfinding_algorithm = Int64 (pathfindingAlgorithm.rawValue)
         
@@ -1261,7 +1261,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_path_postprocessing (_ pathPostprocessing: NavigationPathQueryParameters3D.PathPostProcessing) {
-        #if true
+        #if false
         
         var copy_path_postprocessing = Int64 (pathPostprocessing.rawValue)
         
@@ -1311,7 +1311,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_path_metadata_flags (_ flags: NavigationPathQueryParameters3D.PathMetadataFlags) {
-        #if true
+        #if false
         
         var copy_flags = flags
         
@@ -1361,7 +1361,7 @@ open class NavigationAgent3D: Node {
     
     /// Sets the ``RID`` of the navigation map this NavigationAgent node should use and also updates the `agent` on the NavigationServer.
     public final func setNavigationMap (_ navigationMap: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationAgent3D.method_set_navigation_map, UnsafeMutableRawPointer (mutating: handle), nil, &navigationMap.content)
@@ -1409,7 +1409,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_target_position (_ position: Vector3) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -1477,7 +1477,7 @@ open class NavigationAgent3D: Node {
     
     /// Replaces the internal velocity in the collision avoidance simulation with `velocity`. When an agent is teleported to a new position this function should be used in the same frame. If called frequently this function can get agents stuck.
     public final func setVelocityForced (velocity: Vector3) {
-        #if true
+        #if false
         
         var copy_velocity = velocity
         
@@ -1509,7 +1509,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_velocity (_ velocity: Vector3) {
-        #if true
+        #if false
         
         var copy_velocity = velocity
         
@@ -1706,7 +1706,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_avoidance_layers (_ layers: UInt32) {
-        #if true
+        #if false
         
         var copy_layers: Int = Int (layers)
         
@@ -1756,7 +1756,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_avoidance_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -1806,7 +1806,7 @@ open class NavigationAgent3D: Node {
     
     /// Based on `value`, enables or disables the specified layer in the ``avoidanceLayers`` bitmask, given a `layerNumber` between 1 and 32.
     public final func setAvoidanceLayerValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -1844,7 +1844,7 @@ open class NavigationAgent3D: Node {
     /// Returns whether or not the specified layer of the ``avoidanceLayers`` bitmask is enabled, given a `layerNumber` between 1 and 32.
     public final func getAvoidanceLayerValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -1877,7 +1877,7 @@ open class NavigationAgent3D: Node {
     
     /// Based on `value`, enables or disables the specified mask in the ``avoidanceMask`` bitmask, given a `maskNumber` between 1 and 32.
     public final func setAvoidanceMaskValue (maskNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_mask_number: Int = Int (maskNumber)
         var copy_value = value
@@ -1915,7 +1915,7 @@ open class NavigationAgent3D: Node {
     /// Returns whether or not the specified mask of the ``avoidanceMask`` bitmask is enabled, given a `maskNumber` between 1 and 32.
     public final func getAvoidanceMaskValue (maskNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_mask_number: Int = Int (maskNumber)
         
@@ -1948,7 +1948,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_avoidance_priority (_ priority: Double) {
-        #if true
+        #if false
         
         var copy_priority = priority
         
@@ -1998,7 +1998,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_debug_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2048,7 +2048,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_debug_use_custom (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2098,7 +2098,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_debug_path_custom_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -2148,7 +2148,7 @@ open class NavigationAgent3D: Node {
     
     @inline(__always)
     fileprivate final func set_debug_path_custom_point_size (_ pointSize: Double) {
-        #if true
+        #if false
         
         var copy_point_size = pointSize
         

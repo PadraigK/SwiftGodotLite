@@ -152,7 +152,7 @@ open class GLTFSkin: Resource {
     
     @inline(__always)
     fileprivate final func set_skin_root (_ skinRoot: Int32) {
-        #if true
+        #if false
         
         var copy_skin_root: Int = Int (skinRoot)
         
@@ -202,7 +202,7 @@ open class GLTFSkin: Resource {
     
     @inline(__always)
     fileprivate final func set_joints_original (_ jointsOriginal: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFSkin.method_set_joints_original, UnsafeMutableRawPointer (mutating: handle), nil, &jointsOriginal.content)
@@ -252,7 +252,7 @@ open class GLTFSkin: Resource {
     @inline(__always)
     /// 
     fileprivate final func set_inverse_binds (_ inverseBinds: VariantCollection<Transform3D>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFSkin.method_set_inverse_binds, UnsafeMutableRawPointer (mutating: handle), nil, &inverseBinds.array.content)
@@ -300,7 +300,7 @@ open class GLTFSkin: Resource {
     
     @inline(__always)
     fileprivate final func set_joints (_ joints: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFSkin.method_set_joints, UnsafeMutableRawPointer (mutating: handle), nil, &joints.content)
@@ -348,7 +348,7 @@ open class GLTFSkin: Resource {
     
     @inline(__always)
     fileprivate final func set_non_joints (_ nonJoints: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFSkin.method_set_non_joints, UnsafeMutableRawPointer (mutating: handle), nil, &nonJoints.content)
@@ -396,7 +396,7 @@ open class GLTFSkin: Resource {
     
     @inline(__always)
     fileprivate final func set_roots (_ roots: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFSkin.method_set_roots, UnsafeMutableRawPointer (mutating: handle), nil, &roots.content)
@@ -444,7 +444,7 @@ open class GLTFSkin: Resource {
     
     @inline(__always)
     fileprivate final func set_skeleton (_ skeleton: Int32) {
-        #if true
+        #if false
         
         var copy_skeleton: Int = Int (skeleton)
         
@@ -496,7 +496,7 @@ open class GLTFSkin: Resource {
     @inline(__always)
     /// 
     fileprivate final func set_joint_i_to_bone_i (_ jointIToBoneI: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFSkin.method_set_joint_i_to_bone_i, UnsafeMutableRawPointer (mutating: handle), nil, &jointIToBoneI.content)
@@ -546,7 +546,7 @@ open class GLTFSkin: Resource {
     @inline(__always)
     /// 
     fileprivate final func set_joint_i_to_name (_ jointIToName: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFSkin.method_set_joint_i_to_name, UnsafeMutableRawPointer (mutating: handle), nil, &jointIToName.content)
@@ -594,7 +594,7 @@ open class GLTFSkin: Resource {
     
     @inline(__always)
     fileprivate final func set_godot_skin (_ godotSkin: Skin?) {
-        #if true
+        #if false
         
         var copy_godot_skin_handle = godotSkin?.handle
         

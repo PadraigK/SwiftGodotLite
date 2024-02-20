@@ -27,7 +27,7 @@ open class RenderSceneBuffers: RefCounted {
     
     /// This method is called by the rendering server when the associated viewports configuration is changed. It will discard the old buffers and recreate the internal buffers used.
     public final func configure (config: RenderSceneBuffersConfiguration?) {
-        #if true
+        #if false
         
         var copy_config_handle = config?.handle
         

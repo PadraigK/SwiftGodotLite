@@ -42,7 +42,7 @@ open class AnimatableBody3D: StaticBody3D {
     
     @inline(__always)
     fileprivate final func set_sync_to_physics (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

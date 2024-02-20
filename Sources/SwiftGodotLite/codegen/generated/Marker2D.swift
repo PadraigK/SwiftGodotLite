@@ -39,7 +39,7 @@ open class Marker2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_gizmo_extents (_ extents: Double) {
-        #if true
+        #if false
         
         var copy_extents = extents
         

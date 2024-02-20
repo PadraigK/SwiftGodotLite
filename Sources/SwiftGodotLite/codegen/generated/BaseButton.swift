@@ -197,7 +197,7 @@ open class BaseButton: Control {
     
     @inline(__always)
     fileprivate final func set_pressed (_ pressed: Bool) {
-        #if true
+        #if false
         
         var copy_pressed = pressed
         
@@ -250,7 +250,7 @@ open class BaseButton: Control {
     /// > Note: This method doesn't unpress other buttons in ``buttonGroup``.
     /// 
     public final func setPressedNoSignal (pressed: Bool) {
-        #if true
+        #if false
         
         var copy_pressed = pressed
         
@@ -300,7 +300,7 @@ open class BaseButton: Control {
     
     @inline(__always)
     fileprivate final func set_toggle_mode (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -350,7 +350,7 @@ open class BaseButton: Control {
     
     @inline(__always)
     fileprivate final func set_shortcut_in_tooltip (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -400,7 +400,7 @@ open class BaseButton: Control {
     
     @inline(__always)
     fileprivate final func set_disabled (_ disabled: Bool) {
-        #if true
+        #if false
         
         var copy_disabled = disabled
         
@@ -450,7 +450,7 @@ open class BaseButton: Control {
     
     @inline(__always)
     fileprivate final func set_action_mode (_ mode: BaseButton.ActionMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -500,7 +500,7 @@ open class BaseButton: Control {
     
     @inline(__always)
     fileprivate final func set_button_mask (_ mask: MouseButtonMask) {
-        #if true
+        #if false
         
         var copy_mask = mask
         
@@ -568,7 +568,7 @@ open class BaseButton: Control {
     
     @inline(__always)
     fileprivate final func set_keep_pressed_outside (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -618,7 +618,7 @@ open class BaseButton: Control {
     
     @inline(__always)
     fileprivate final func set_shortcut_feedback (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -668,7 +668,7 @@ open class BaseButton: Control {
     
     @inline(__always)
     fileprivate final func set_shortcut (_ shortcut: Shortcut?) {
-        #if true
+        #if false
         
         var copy_shortcut_handle = shortcut?.handle
         
@@ -717,7 +717,7 @@ open class BaseButton: Control {
     
     @inline(__always)
     fileprivate final func set_button_group (_ buttonGroup: ButtonGroup?) {
-        #if true
+        #if false
         
         var copy_button_group_handle = buttonGroup?.handle
         

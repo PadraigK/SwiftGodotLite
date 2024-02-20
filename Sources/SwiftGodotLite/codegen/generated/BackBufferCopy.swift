@@ -63,7 +63,7 @@ open class BackBufferCopy: Node2D {
     
     @inline(__always)
     fileprivate final func set_rect (_ rect: Rect2) {
-        #if true
+        #if false
         
         var copy_rect = rect
         
@@ -113,7 +113,7 @@ open class BackBufferCopy: Node2D {
     
     @inline(__always)
     fileprivate final func set_copy_mode (_ copyMode: BackBufferCopy.CopyMode) {
-        #if true
+        #if false
         
         var copy_copy_mode = Int64 (copyMode.rawValue)
         

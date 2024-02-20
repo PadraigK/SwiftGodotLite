@@ -248,7 +248,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_horizontal_alignment (_ alignment: HorizontalAlignment) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -298,7 +298,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_vertical_alignment (_ alignment: VerticalAlignment) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -348,7 +348,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_text (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -398,7 +398,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_font (_ font: Font?) {
-        #if true
+        #if false
         
         var copy_font_handle = font?.handle
         
@@ -447,7 +447,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_font_size (_ fontSize: Int32) {
-        #if true
+        #if false
         
         var copy_font_size: Int = Int (fontSize)
         
@@ -497,7 +497,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_line_spacing (_ lineSpacing: Double) {
-        #if true
+        #if false
         
         var copy_line_spacing = lineSpacing
         
@@ -547,7 +547,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_autowrap_mode (_ autowrapMode: TextServer.AutowrapMode) {
-        #if true
+        #if false
         
         var copy_autowrap_mode = Int64 (autowrapMode.rawValue)
         
@@ -597,7 +597,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_justification_flags (_ justificationFlags: TextServer.JustificationFlag) {
-        #if true
+        #if false
         
         var copy_justification_flags = justificationFlags
         
@@ -647,7 +647,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_depth (_ depth: Double) {
-        #if true
+        #if false
         
         var copy_depth = depth
         
@@ -697,7 +697,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_width (_ width: Double) {
-        #if true
+        #if false
         
         var copy_width = width
         
@@ -747,7 +747,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_pixel_size (_ pixelSize: Double) {
-        #if true
+        #if false
         
         var copy_pixel_size = pixelSize
         
@@ -797,7 +797,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -847,7 +847,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_curve_step (_ curveStep: Double) {
-        #if true
+        #if false
         
         var copy_curve_step = curveStep
         
@@ -897,7 +897,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_text_direction (_ direction: TextServer.Direction) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -947,7 +947,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_language (_ language: String) {
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -997,7 +997,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_structured_text_bidi_override (_ parser: TextServer.StructuredTextParser) {
-        #if true
+        #if false
         
         var copy_parser = Int64 (parser.rawValue)
         
@@ -1047,7 +1047,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_structured_text_bidi_override_options (_ args: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextMesh.method_set_structured_text_bidi_override_options, UnsafeMutableRawPointer (mutating: handle), nil, &args.content)
@@ -1095,7 +1095,7 @@ open class TextMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_uppercase (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

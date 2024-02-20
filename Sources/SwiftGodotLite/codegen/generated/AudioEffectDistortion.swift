@@ -106,7 +106,7 @@ open class AudioEffectDistortion: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_mode (_ mode: AudioEffectDistortion.Mode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -156,7 +156,7 @@ open class AudioEffectDistortion: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_pre_gain (_ preGain: Double) {
-        #if true
+        #if false
         
         var copy_pre_gain = preGain
         
@@ -206,7 +206,7 @@ open class AudioEffectDistortion: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_keep_hf_hz (_ keepHfHz: Double) {
-        #if true
+        #if false
         
         var copy_keep_hf_hz = keepHfHz
         
@@ -256,7 +256,7 @@ open class AudioEffectDistortion: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_drive (_ drive: Double) {
-        #if true
+        #if false
         
         var copy_drive = drive
         
@@ -306,7 +306,7 @@ open class AudioEffectDistortion: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_post_gain (_ postGain: Double) {
-        #if true
+        #if false
         
         var copy_post_gain = postGain
         

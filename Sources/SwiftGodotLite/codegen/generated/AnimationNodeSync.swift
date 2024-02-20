@@ -42,7 +42,7 @@ open class AnimationNodeSync: AnimationNode {
     
     @inline(__always)
     fileprivate final func set_use_sync (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

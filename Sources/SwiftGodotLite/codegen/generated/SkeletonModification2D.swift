@@ -72,7 +72,7 @@ open class SkeletonModification2D: Resource {
     
     @inline(__always)
     fileprivate final func set_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -140,7 +140,7 @@ open class SkeletonModification2D: Resource {
     
     /// Manually allows you to set the setup state of the modification. This function should only rarely be used, as the ``SkeletonModificationStack2D`` the modification is bound to should handle setting the modification up.
     public final func setIsSetup (_ isSetup: Bool) {
-        #if true
+        #if false
         
         var copy_is_setup = isSetup
         
@@ -190,7 +190,7 @@ open class SkeletonModification2D: Resource {
     
     @inline(__always)
     fileprivate final func set_execution_mode (_ executionMode: Int32) {
-        #if true
+        #if false
         
         var copy_execution_mode: Int = Int (executionMode)
         
@@ -241,7 +241,7 @@ open class SkeletonModification2D: Resource {
     /// Takes an angle and clamps it so it is within the passed-in `min` and `max` range. `invert` will inversely clamp the angle, clamping it to the range outside of the given bounds.
     public final func clampAngle (_ angle: Double, min: Double, max: Double, invert: Bool)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_angle = angle
         var copy_min = min
@@ -289,7 +289,7 @@ open class SkeletonModification2D: Resource {
     
     /// Sets whether this modification will call ``_drawEditorGizmo()`` in the Godot editor to draw modification-specific gizmos.
     public final func setEditorDrawGizmo (_ drawGizmo: Bool) {
-        #if true
+        #if false
         
         var copy_draw_gizmo = drawGizmo
         

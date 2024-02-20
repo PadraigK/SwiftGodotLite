@@ -44,7 +44,7 @@ open class PlaceholderMesh: Mesh {
     
     @inline(__always)
     fileprivate final func set_aabb (_ aabb: AABB) {
-        #if true
+        #if false
         
         var copy_aabb = aabb
         

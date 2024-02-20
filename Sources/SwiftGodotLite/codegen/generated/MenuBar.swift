@@ -99,7 +99,7 @@ open class MenuBar: Control {
     
     @inline(__always)
     fileprivate final func set_switch_on_hover (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -149,7 +149,7 @@ open class MenuBar: Control {
     
     /// If `true`, shortcuts are disabled and cannot be used to trigger the button.
     public final func setDisableShortcuts (disabled: Bool) {
-        #if true
+        #if false
         
         var copy_disabled = disabled
         
@@ -181,7 +181,7 @@ open class MenuBar: Control {
     
     @inline(__always)
     fileprivate final func set_prefer_global_menu (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -267,7 +267,7 @@ open class MenuBar: Control {
     
     @inline(__always)
     fileprivate final func set_text_direction (_ direction: Control.TextDirection) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -317,7 +317,7 @@ open class MenuBar: Control {
     
     @inline(__always)
     fileprivate final func set_language (_ language: String) {
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -367,7 +367,7 @@ open class MenuBar: Control {
     
     @inline(__always)
     fileprivate final func set_flat (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -417,7 +417,7 @@ open class MenuBar: Control {
     
     @inline(__always)
     fileprivate final func set_start_index (_ enabled: Int32) {
-        #if true
+        #if false
         
         var copy_enabled: Int = Int (enabled)
         
@@ -467,7 +467,7 @@ open class MenuBar: Control {
     
     /// Sets menu item title.
     public final func setMenuTitle (menu: Int32, title: String) {
-        #if true
+        #if false
         
         var copy_menu: Int = Int (menu)
         let gstr_title = GString (title)
@@ -505,7 +505,7 @@ open class MenuBar: Control {
     /// Returns menu item title.
     public final func getMenuTitle (menu: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_menu: Int = Int (menu)
         
@@ -538,7 +538,7 @@ open class MenuBar: Control {
     
     /// Sets menu item tooltip.
     public final func setMenuTooltip (menu: Int32, tooltip: String) {
-        #if true
+        #if false
         
         var copy_menu: Int = Int (menu)
         let gstr_tooltip = GString (tooltip)
@@ -576,7 +576,7 @@ open class MenuBar: Control {
     /// Returns menu item tooltip.
     public final func getMenuTooltip (menu: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_menu: Int = Int (menu)
         
@@ -609,7 +609,7 @@ open class MenuBar: Control {
     
     /// If `true`, menu item is disabled.
     public final func setMenuDisabled (menu: Int32, disabled: Bool) {
-        #if true
+        #if false
         
         var copy_menu: Int = Int (menu)
         var copy_disabled = disabled
@@ -647,7 +647,7 @@ open class MenuBar: Control {
     /// Returns `true`, if menu item is disabled.
     public final func isMenuDisabled (menu: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_menu: Int = Int (menu)
         
@@ -680,7 +680,7 @@ open class MenuBar: Control {
     
     /// If `true`, menu item is hidden.
     public final func setMenuHidden (menu: Int32, hidden: Bool) {
-        #if true
+        #if false
         
         var copy_menu: Int = Int (menu)
         var copy_hidden = hidden
@@ -718,7 +718,7 @@ open class MenuBar: Control {
     /// Returns `true`, if menu item is hidden.
     public final func isMenuHidden (menu: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_menu: Int = Int (menu)
         
@@ -752,7 +752,7 @@ open class MenuBar: Control {
     /// Returns ``PopupMenu`` associated with menu item.
     public final func getMenuPopup (menu: Int32)-> PopupMenu? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_menu: Int = Int (menu)
         

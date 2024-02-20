@@ -1804,7 +1804,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_albedo (_ albedo: Color) {
-        #if true
+        #if false
         
         var copy_albedo = albedo
         
@@ -1854,7 +1854,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_transparency (_ transparency: BaseMaterial3D.Transparency) {
-        #if true
+        #if false
         
         var copy_transparency = Int64 (transparency.rawValue)
         
@@ -1904,7 +1904,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_alpha_antialiasing (_ alphaAa: BaseMaterial3D.AlphaAntiAliasing) {
-        #if true
+        #if false
         
         var copy_alpha_aa = Int64 (alphaAa.rawValue)
         
@@ -1954,7 +1954,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_alpha_antialiasing_edge (_ edge: Double) {
-        #if true
+        #if false
         
         var copy_edge = edge
         
@@ -2004,7 +2004,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_shading_mode (_ shadingMode: BaseMaterial3D.ShadingMode) {
-        #if true
+        #if false
         
         var copy_shading_mode = Int64 (shadingMode.rawValue)
         
@@ -2054,7 +2054,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_specular (_ specular: Double) {
-        #if true
+        #if false
         
         var copy_specular = specular
         
@@ -2104,7 +2104,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_metallic (_ metallic: Double) {
-        #if true
+        #if false
         
         var copy_metallic = metallic
         
@@ -2154,7 +2154,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_roughness (_ roughness: Double) {
-        #if true
+        #if false
         
         var copy_roughness = roughness
         
@@ -2204,7 +2204,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_emission (_ emission: Color) {
-        #if true
+        #if false
         
         var copy_emission = emission
         
@@ -2254,7 +2254,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_emission_energy_multiplier (_ emissionEnergyMultiplier: Double) {
-        #if true
+        #if false
         
         var copy_emission_energy_multiplier = emissionEnergyMultiplier
         
@@ -2304,7 +2304,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_emission_intensity (_ emissionEnergyMultiplier: Double) {
-        #if true
+        #if false
         
         var copy_emission_energy_multiplier = emissionEnergyMultiplier
         
@@ -2354,7 +2354,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_normal_scale (_ normalScale: Double) {
-        #if true
+        #if false
         
         var copy_normal_scale = normalScale
         
@@ -2404,7 +2404,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_rim (_ rim: Double) {
-        #if true
+        #if false
         
         var copy_rim = rim
         
@@ -2454,7 +2454,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_rim_tint (_ rimTint: Double) {
-        #if true
+        #if false
         
         var copy_rim_tint = rimTint
         
@@ -2504,7 +2504,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_clearcoat (_ clearcoat: Double) {
-        #if true
+        #if false
         
         var copy_clearcoat = clearcoat
         
@@ -2554,7 +2554,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_clearcoat_roughness (_ clearcoatRoughness: Double) {
-        #if true
+        #if false
         
         var copy_clearcoat_roughness = clearcoatRoughness
         
@@ -2604,7 +2604,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_anisotropy (_ anisotropy: Double) {
-        #if true
+        #if false
         
         var copy_anisotropy = anisotropy
         
@@ -2654,7 +2654,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_heightmap_scale (_ heightmapScale: Double) {
-        #if true
+        #if false
         
         var copy_heightmap_scale = heightmapScale
         
@@ -2704,7 +2704,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_subsurface_scattering_strength (_ strength: Double) {
-        #if true
+        #if false
         
         var copy_strength = strength
         
@@ -2754,7 +2754,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_transmittance_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -2804,7 +2804,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_transmittance_depth (_ depth: Double) {
-        #if true
+        #if false
         
         var copy_depth = depth
         
@@ -2854,7 +2854,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_transmittance_boost (_ boost: Double) {
-        #if true
+        #if false
         
         var copy_boost = boost
         
@@ -2904,7 +2904,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_backlight (_ backlight: Color) {
-        #if true
+        #if false
         
         var copy_backlight = backlight
         
@@ -2954,7 +2954,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_refraction (_ refraction: Double) {
-        #if true
+        #if false
         
         var copy_refraction = refraction
         
@@ -3004,7 +3004,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_point_size (_ pointSize: Double) {
-        #if true
+        #if false
         
         var copy_point_size = pointSize
         
@@ -3054,7 +3054,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_detail_uv (_ detailUv: BaseMaterial3D.DetailUV) {
-        #if true
+        #if false
         
         var copy_detail_uv = Int64 (detailUv.rawValue)
         
@@ -3104,7 +3104,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_blend_mode (_ blendMode: BaseMaterial3D.BlendMode) {
-        #if true
+        #if false
         
         var copy_blend_mode = Int64 (blendMode.rawValue)
         
@@ -3154,7 +3154,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_depth_draw_mode (_ depthDrawMode: BaseMaterial3D.DepthDrawMode) {
-        #if true
+        #if false
         
         var copy_depth_draw_mode = Int64 (depthDrawMode.rawValue)
         
@@ -3204,7 +3204,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_cull_mode (_ cullMode: BaseMaterial3D.CullMode) {
-        #if true
+        #if false
         
         var copy_cull_mode = Int64 (cullMode.rawValue)
         
@@ -3254,7 +3254,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_diffuse_mode (_ diffuseMode: BaseMaterial3D.DiffuseMode) {
-        #if true
+        #if false
         
         var copy_diffuse_mode = Int64 (diffuseMode.rawValue)
         
@@ -3304,7 +3304,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_specular_mode (_ specularMode: BaseMaterial3D.SpecularMode) {
-        #if true
+        #if false
         
         var copy_specular_mode = Int64 (specularMode.rawValue)
         
@@ -3355,7 +3355,7 @@ open class BaseMaterial3D: Material {
     @inline(__always)
     /// If `true`, enables the specified flag. Flags are optional behavior that can be turned on and off. Only one flag can be enabled at a time with this function, the flag enumerators cannot be bit-masked together to enable or disable multiple flags at once. Flags can also be enabled by setting the corresponding member to `true`. See ``BaseMaterial3D/Flags`` enumerator for options.
     fileprivate final func set_flag (_ flag: BaseMaterial3D.Flags, _ enable: Bool) {
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         var copy_enable = enable
@@ -3394,7 +3394,7 @@ open class BaseMaterial3D: Material {
     /// Returns `true`, if the specified flag is enabled. See ``BaseMaterial3D/Flags`` enumerator for options.
     fileprivate final func get_flag (_ flag: BaseMaterial3D.Flags)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         
@@ -3427,7 +3427,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_texture_filter (_ mode: BaseMaterial3D.TextureFilter) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -3478,7 +3478,7 @@ open class BaseMaterial3D: Material {
     @inline(__always)
     /// If `true`, enables the specified ``BaseMaterial3D/Feature``. Many features that are available in ``BaseMaterial3D``s need to be enabled before use. This way the cost for using the feature is only incurred when specified. Features can also be enabled by setting the corresponding member to `true`.
     fileprivate final func set_feature (_ feature: BaseMaterial3D.Feature, _ enable: Bool) {
-        #if true
+        #if false
         
         var copy_feature = Int64 (feature.rawValue)
         var copy_enable = enable
@@ -3517,7 +3517,7 @@ open class BaseMaterial3D: Material {
     /// Returns `true`, if the specified ``BaseMaterial3D/Feature`` is enabled.
     fileprivate final func get_feature (_ feature: BaseMaterial3D.Feature)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_feature = Int64 (feature.rawValue)
         
@@ -3551,7 +3551,7 @@ open class BaseMaterial3D: Material {
     @inline(__always)
     /// Sets the texture for the slot specified by `param`. See ``BaseMaterial3D/TextureParam`` for available slots.
     fileprivate final func set_texture (_ param: BaseMaterial3D.TextureParam, _ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_texture_handle = texture?.handle
@@ -3589,7 +3589,7 @@ open class BaseMaterial3D: Material {
     /// Returns the ``Texture2D`` associated with the specified ``BaseMaterial3D/TextureParam``.
     fileprivate final func get_texture (_ param: BaseMaterial3D.TextureParam)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -3622,7 +3622,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_detail_blend_mode (_ detailBlendMode: BaseMaterial3D.BlendMode) {
-        #if true
+        #if false
         
         var copy_detail_blend_mode = Int64 (detailBlendMode.rawValue)
         
@@ -3672,7 +3672,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_uv1_scale (_ scale: Vector3) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -3722,7 +3722,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_uv1_offset (_ offset: Vector3) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -3772,7 +3772,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_uv1_triplanar_blend_sharpness (_ sharpness: Double) {
-        #if true
+        #if false
         
         var copy_sharpness = sharpness
         
@@ -3822,7 +3822,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_uv2_scale (_ scale: Vector3) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -3872,7 +3872,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_uv2_offset (_ offset: Vector3) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -3922,7 +3922,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_uv2_triplanar_blend_sharpness (_ sharpness: Double) {
-        #if true
+        #if false
         
         var copy_sharpness = sharpness
         
@@ -3972,7 +3972,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_billboard_mode (_ mode: BaseMaterial3D.BillboardMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -4022,7 +4022,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_particles_anim_h_frames (_ frames: Int32) {
-        #if true
+        #if false
         
         var copy_frames: Int = Int (frames)
         
@@ -4072,7 +4072,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_particles_anim_v_frames (_ frames: Int32) {
-        #if true
+        #if false
         
         var copy_frames: Int = Int (frames)
         
@@ -4122,7 +4122,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_particles_anim_loop (_ loop: Bool) {
-        #if true
+        #if false
         
         var copy_loop = loop
         
@@ -4172,7 +4172,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_heightmap_deep_parallax (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -4222,7 +4222,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_heightmap_deep_parallax_min_layers (_ layer: Int32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -4272,7 +4272,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_heightmap_deep_parallax_max_layers (_ layer: Int32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -4322,7 +4322,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_heightmap_deep_parallax_flip_tangent (_ flip: Bool) {
-        #if true
+        #if false
         
         var copy_flip = flip
         
@@ -4372,7 +4372,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_heightmap_deep_parallax_flip_binormal (_ flip: Bool) {
-        #if true
+        #if false
         
         var copy_flip = flip
         
@@ -4422,7 +4422,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_grow (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -4472,7 +4472,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_emission_operator (_ `operator`: BaseMaterial3D.EmissionOperator) {
-        #if true
+        #if false
         
         var copy_operator = Int64 (`operator`.rawValue)
         
@@ -4522,7 +4522,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_ao_light_affect (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -4572,7 +4572,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_alpha_scissor_threshold (_ threshold: Double) {
-        #if true
+        #if false
         
         var copy_threshold = threshold
         
@@ -4622,7 +4622,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_alpha_hash_scale (_ threshold: Double) {
-        #if true
+        #if false
         
         var copy_threshold = threshold
         
@@ -4672,7 +4672,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_grow_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -4722,7 +4722,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_metallic_texture_channel (_ channel: BaseMaterial3D.TextureChannel) {
-        #if true
+        #if false
         
         var copy_channel = Int64 (channel.rawValue)
         
@@ -4772,7 +4772,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_roughness_texture_channel (_ channel: BaseMaterial3D.TextureChannel) {
-        #if true
+        #if false
         
         var copy_channel = Int64 (channel.rawValue)
         
@@ -4822,7 +4822,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_ao_texture_channel (_ channel: BaseMaterial3D.TextureChannel) {
-        #if true
+        #if false
         
         var copy_channel = Int64 (channel.rawValue)
         
@@ -4872,7 +4872,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_refraction_texture_channel (_ channel: BaseMaterial3D.TextureChannel) {
-        #if true
+        #if false
         
         var copy_channel = Int64 (channel.rawValue)
         
@@ -4922,7 +4922,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_proximity_fade_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -4972,7 +4972,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_proximity_fade_distance (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -5022,7 +5022,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_msdf_pixel_range (_ range: Double) {
-        #if true
+        #if false
         
         var copy_range = range
         
@@ -5072,7 +5072,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_msdf_outline_size (_ size: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -5122,7 +5122,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_distance_fade (_ mode: BaseMaterial3D.DistanceFadeMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -5172,7 +5172,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_distance_fade_max_distance (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -5222,7 +5222,7 @@ open class BaseMaterial3D: Material {
     
     @inline(__always)
     fileprivate final func set_distance_fade_min_distance (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         

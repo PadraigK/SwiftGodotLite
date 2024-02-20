@@ -208,7 +208,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_mag_filter (_ pMember: RenderingDevice.SamplerFilter) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -258,7 +258,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_min_filter (_ pMember: RenderingDevice.SamplerFilter) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -308,7 +308,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_mip_filter (_ pMember: RenderingDevice.SamplerFilter) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -358,7 +358,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_repeat_u (_ pMember: RenderingDevice.SamplerRepeatMode) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -408,7 +408,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_repeat_v (_ pMember: RenderingDevice.SamplerRepeatMode) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -458,7 +458,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_repeat_w (_ pMember: RenderingDevice.SamplerRepeatMode) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -508,7 +508,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_lod_bias (_ pMember: Double) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -558,7 +558,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_use_anisotropy (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -608,7 +608,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_anisotropy_max (_ pMember: Double) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -658,7 +658,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_enable_compare (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -708,7 +708,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_compare_op (_ pMember: RenderingDevice.CompareOperator) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -758,7 +758,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_min_lod (_ pMember: Double) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -808,7 +808,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_max_lod (_ pMember: Double) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -858,7 +858,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_border_color (_ pMember: RenderingDevice.SamplerBorderColor) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -908,7 +908,7 @@ open class RDSamplerState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_unnormalized_uvw (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         

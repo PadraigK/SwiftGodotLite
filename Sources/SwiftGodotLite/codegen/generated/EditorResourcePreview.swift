@@ -35,7 +35,7 @@ open class EditorResourcePreview: Node {
     /// > Note: If it was not possible to create the preview the `receiverFunc` will still be called, but the preview will be null.
     /// 
     public final func queueResourcePreview (path: String, receiver: Object?, receiverFunc: StringName, userdata: Variant) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_receiver_handle = receiver?.handle
@@ -80,7 +80,7 @@ open class EditorResourcePreview: Node {
     /// > Note: If it was not possible to create the preview the `receiverFunc` will still be called, but the preview will be null.
     /// 
     public final func queueEditedResourcePreview (resource: Resource?, receiver: Object?, receiverFunc: StringName, userdata: Variant) {
-        #if true
+        #if false
         
         var copy_resource_handle = resource?.handle
         var copy_receiver_handle = receiver?.handle
@@ -121,7 +121,7 @@ open class EditorResourcePreview: Node {
     
     /// Create an own, custom preview generator.
     public final func addPreviewGenerator (_ generator: EditorResourcePreviewGenerator?) {
-        #if true
+        #if false
         
         var copy_generator_handle = generator?.handle
         
@@ -152,7 +152,7 @@ open class EditorResourcePreview: Node {
     
     /// Removes a custom preview generator.
     public final func removePreviewGenerator (_ generator: EditorResourcePreviewGenerator?) {
-        #if true
+        #if false
         
         var copy_generator_handle = generator?.handle
         
@@ -183,7 +183,7 @@ open class EditorResourcePreview: Node {
     
     /// Check if the resource changed, if so, it will be invalidated and the corresponding signal emitted.
     public final func checkForInvalidation (path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         

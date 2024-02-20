@@ -131,7 +131,7 @@ open class PhysicalBone2D: RigidBody2D {
     
     @inline(__always)
     fileprivate final func set_auto_configure_joint (_ autoConfigureJoint: Bool) {
-        #if true
+        #if false
         
         var copy_auto_configure_joint = autoConfigureJoint
         
@@ -163,7 +163,7 @@ open class PhysicalBone2D: RigidBody2D {
     
     @inline(__always)
     fileprivate final func set_simulate_physics (_ simulatePhysics: Bool) {
-        #if true
+        #if false
         
         var copy_simulate_physics = simulatePhysics
         
@@ -231,7 +231,7 @@ open class PhysicalBone2D: RigidBody2D {
     
     @inline(__always)
     fileprivate final func set_bone2d_nodepath (_ nodepath: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicalBone2D.method_set_bone2d_nodepath, UnsafeMutableRawPointer (mutating: handle), nil, &nodepath.content)
@@ -279,7 +279,7 @@ open class PhysicalBone2D: RigidBody2D {
     
     @inline(__always)
     fileprivate final func set_bone2d_index (_ boneIndex: Int32) {
-        #if true
+        #if false
         
         var copy_bone_index: Int = Int (boneIndex)
         
@@ -329,7 +329,7 @@ open class PhysicalBone2D: RigidBody2D {
     
     @inline(__always)
     fileprivate final func set_follow_bone_when_simulating (_ followBone: Bool) {
-        #if true
+        #if false
         
         var copy_follow_bone = followBone
         

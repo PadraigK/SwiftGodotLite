@@ -65,7 +65,7 @@ open class VisibleOnScreenEnabler2D: VisibleOnScreenNotifier2D {
     
     @inline(__always)
     fileprivate final func set_enable_mode (_ mode: VisibleOnScreenEnabler2D.EnableMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -115,7 +115,7 @@ open class VisibleOnScreenEnabler2D: VisibleOnScreenNotifier2D {
     
     @inline(__always)
     fileprivate final func set_enable_node_path (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (VisibleOnScreenEnabler2D.method_set_enable_node_path, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)

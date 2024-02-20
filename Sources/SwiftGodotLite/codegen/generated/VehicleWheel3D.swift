@@ -206,7 +206,7 @@ open class VehicleWheel3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_radius (_ length: Double) {
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -256,7 +256,7 @@ open class VehicleWheel3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_suspension_rest_length (_ length: Double) {
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -306,7 +306,7 @@ open class VehicleWheel3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_suspension_travel (_ length: Double) {
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -356,7 +356,7 @@ open class VehicleWheel3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_suspension_stiffness (_ length: Double) {
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -406,7 +406,7 @@ open class VehicleWheel3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_suspension_max_force (_ length: Double) {
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -456,7 +456,7 @@ open class VehicleWheel3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_damping_compression (_ length: Double) {
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -506,7 +506,7 @@ open class VehicleWheel3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_damping_relaxation (_ length: Double) {
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -556,7 +556,7 @@ open class VehicleWheel3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_use_as_traction (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -606,7 +606,7 @@ open class VehicleWheel3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_use_as_steering (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -656,7 +656,7 @@ open class VehicleWheel3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_friction_slip (_ length: Double) {
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -745,7 +745,7 @@ open class VehicleWheel3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_roll_influence (_ rollInfluence: Double) {
-        #if true
+        #if false
         
         var copy_roll_influence = rollInfluence
         
@@ -831,7 +831,7 @@ open class VehicleWheel3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_engine_force (_ engineForce: Double) {
-        #if true
+        #if false
         
         var copy_engine_force = engineForce
         
@@ -881,7 +881,7 @@ open class VehicleWheel3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_brake (_ brake: Double) {
-        #if true
+        #if false
         
         var copy_brake = brake
         
@@ -931,7 +931,7 @@ open class VehicleWheel3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_steering (_ steering: Double) {
-        #if true
+        #if false
         
         var copy_steering = steering
         

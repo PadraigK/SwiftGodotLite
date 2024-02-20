@@ -28,7 +28,7 @@ open class X509Certificate: Resource {
     /// Saves a certificate to the given `path` (should be a "*.crt" file).
     public final func save (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -62,7 +62,7 @@ open class X509Certificate: Resource {
     /// Loads a certificate from `path` ("*.crt" file).
     public final func load (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -114,7 +114,7 @@ open class X509Certificate: Resource {
     /// Loads a certificate from the given `string`.
     public final func loadFromString (_ string: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_string = GString (string)
         

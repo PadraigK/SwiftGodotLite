@@ -68,7 +68,7 @@ open class CanvasGroup: Node2D {
     
     @inline(__always)
     fileprivate final func set_fit_margin (_ fitMargin: Double) {
-        #if true
+        #if false
         
         var copy_fit_margin = fitMargin
         
@@ -118,7 +118,7 @@ open class CanvasGroup: Node2D {
     
     @inline(__always)
     fileprivate final func set_clear_margin (_ clearMargin: Double) {
-        #if true
+        #if false
         
         var copy_clear_margin = clearMargin
         
@@ -168,7 +168,7 @@ open class CanvasGroup: Node2D {
     
     @inline(__always)
     fileprivate final func set_use_mipmaps (_ useMipmaps: Bool) {
-        #if true
+        #if false
         
         var copy_use_mipmaps = useMipmaps
         

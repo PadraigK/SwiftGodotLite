@@ -125,7 +125,7 @@ open class EditorFileSystem: Node {
     /// This will not import the file. To reimport, call ``reimportFiles(_:)`` or ``scan()`` methods.
     /// 
     public final func updateFile (path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -158,7 +158,7 @@ open class EditorFileSystem: Node {
     /// Returns a view into the filesystem at `path`.
     public final func getFilesystemPath (_ path: String)-> EditorFileSystemDirectory? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -192,7 +192,7 @@ open class EditorFileSystem: Node {
     /// Returns the resource type of the file, given the full path. This returns a string such as `"Resource"` or `"GDScript"`, _not_ a file extension such as `".gd"`.
     public final func getFileType (path: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -230,7 +230,7 @@ open class EditorFileSystem: Node {
     /// > Note: This function blocks until the import is finished. However, the main loop iteration, including timers and ``Node/_process(delta:)``, will occur during the import process due to progress bar updates. Avoid calls to ``reimportFiles(_:)`` or ``scan()`` while an import is in progress.
     /// 
     public final func reimportFiles (_ files: PackedStringArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorFileSystem.method_reimport_files, UnsafeMutableRawPointer (mutating: handle), nil, &files.content)

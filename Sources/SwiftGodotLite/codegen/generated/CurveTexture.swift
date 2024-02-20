@@ -73,7 +73,7 @@ open class CurveTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_width (_ width: Int32) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         
@@ -105,7 +105,7 @@ open class CurveTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_curve (_ curve: Curve?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         
@@ -154,7 +154,7 @@ open class CurveTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_texture_mode (_ textureMode: CurveTexture.TextureMode) {
-        #if true
+        #if false
         
         var copy_texture_mode = Int64 (textureMode.rawValue)
         

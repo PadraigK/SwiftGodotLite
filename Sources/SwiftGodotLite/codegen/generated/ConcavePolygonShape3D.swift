@@ -60,7 +60,7 @@ open class ConcavePolygonShape3D: Shape3D {
     @inline(__always)
     /// Sets the faces of the trimesh shape from an array of vertices. The `faces` array should be composed of triples such that each triple of vertices defines a triangle.
     fileprivate final func set_faces (_ faces: PackedVector3Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ConcavePolygonShape3D.method_set_faces, UnsafeMutableRawPointer (mutating: handle), nil, &faces.content)
@@ -109,7 +109,7 @@ open class ConcavePolygonShape3D: Shape3D {
     
     @inline(__always)
     fileprivate final func set_backface_collision_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

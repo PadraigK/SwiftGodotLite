@@ -63,7 +63,7 @@ open class AudioEffectChorus: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_voice_count (_ voices: Int32) {
-        #if true
+        #if false
         
         var copy_voices: Int = Int (voices)
         
@@ -113,7 +113,7 @@ open class AudioEffectChorus: AudioEffect {
     
     /// 
     public final func setVoiceDelayMs (voiceIdx: Int32, delayMs: Double) {
-        #if true
+        #if false
         
         var copy_voice_idx: Int = Int (voiceIdx)
         var copy_delay_ms = delayMs
@@ -151,7 +151,7 @@ open class AudioEffectChorus: AudioEffect {
     /// 
     public final func getVoiceDelayMs (voiceIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_voice_idx: Int = Int (voiceIdx)
         
@@ -184,7 +184,7 @@ open class AudioEffectChorus: AudioEffect {
     
     /// 
     public final func setVoiceRateHz (voiceIdx: Int32, rateHz: Double) {
-        #if true
+        #if false
         
         var copy_voice_idx: Int = Int (voiceIdx)
         var copy_rate_hz = rateHz
@@ -222,7 +222,7 @@ open class AudioEffectChorus: AudioEffect {
     /// 
     public final func getVoiceRateHz (voiceIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_voice_idx: Int = Int (voiceIdx)
         
@@ -255,7 +255,7 @@ open class AudioEffectChorus: AudioEffect {
     
     /// 
     public final func setVoiceDepthMs (voiceIdx: Int32, depthMs: Double) {
-        #if true
+        #if false
         
         var copy_voice_idx: Int = Int (voiceIdx)
         var copy_depth_ms = depthMs
@@ -293,7 +293,7 @@ open class AudioEffectChorus: AudioEffect {
     /// 
     public final func getVoiceDepthMs (voiceIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_voice_idx: Int = Int (voiceIdx)
         
@@ -326,7 +326,7 @@ open class AudioEffectChorus: AudioEffect {
     
     /// 
     public final func setVoiceLevelDb (voiceIdx: Int32, levelDb: Double) {
-        #if true
+        #if false
         
         var copy_voice_idx: Int = Int (voiceIdx)
         var copy_level_db = levelDb
@@ -364,7 +364,7 @@ open class AudioEffectChorus: AudioEffect {
     /// 
     public final func getVoiceLevelDb (voiceIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_voice_idx: Int = Int (voiceIdx)
         
@@ -397,7 +397,7 @@ open class AudioEffectChorus: AudioEffect {
     
     /// 
     public final func setVoiceCutoffHz (voiceIdx: Int32, cutoffHz: Double) {
-        #if true
+        #if false
         
         var copy_voice_idx: Int = Int (voiceIdx)
         var copy_cutoff_hz = cutoffHz
@@ -435,7 +435,7 @@ open class AudioEffectChorus: AudioEffect {
     /// 
     public final func getVoiceCutoffHz (voiceIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_voice_idx: Int = Int (voiceIdx)
         
@@ -468,7 +468,7 @@ open class AudioEffectChorus: AudioEffect {
     
     /// 
     public final func setVoicePan (voiceIdx: Int32, pan: Double) {
-        #if true
+        #if false
         
         var copy_voice_idx: Int = Int (voiceIdx)
         var copy_pan = pan
@@ -506,7 +506,7 @@ open class AudioEffectChorus: AudioEffect {
     /// 
     public final func getVoicePan (voiceIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_voice_idx: Int = Int (voiceIdx)
         
@@ -539,7 +539,7 @@ open class AudioEffectChorus: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_wet (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -589,7 +589,7 @@ open class AudioEffectChorus: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_dry (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         

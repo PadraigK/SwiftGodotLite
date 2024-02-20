@@ -145,7 +145,7 @@ open class NavigationRegion2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_navigation_polygon (_ navigationPolygon: NavigationPolygon?) {
-        #if true
+        #if false
         
         var copy_navigation_polygon_handle = navigationPolygon?.handle
         
@@ -194,7 +194,7 @@ open class NavigationRegion2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -244,7 +244,7 @@ open class NavigationRegion2D: Node2D {
     
     /// Sets the ``RID`` of the navigation map this region should use. By default the region will automatically join the ``World2D`` default navigation map so this function is only required to override the default map.
     public final func setNavigationMap (_ navigationMap: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationRegion2D.method_set_navigation_map, UnsafeMutableRawPointer (mutating: handle), nil, &navigationMap.content)
@@ -292,7 +292,7 @@ open class NavigationRegion2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_use_edge_connections (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -342,7 +342,7 @@ open class NavigationRegion2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_navigation_layers (_ navigationLayers: UInt32) {
-        #if true
+        #if false
         
         var copy_navigation_layers: Int = Int (navigationLayers)
         
@@ -392,7 +392,7 @@ open class NavigationRegion2D: Node2D {
     
     /// Based on `value`, enables or disables the specified layer in the ``navigationLayers`` bitmask, given a `layerNumber` between 1 and 32.
     public final func setNavigationLayerValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -430,7 +430,7 @@ open class NavigationRegion2D: Node2D {
     /// Returns whether or not the specified layer of the ``navigationLayers`` bitmask is enabled, given a `layerNumber` between 1 and 32.
     public final func getNavigationLayerValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -463,7 +463,7 @@ open class NavigationRegion2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_constrain_avoidance (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -513,7 +513,7 @@ open class NavigationRegion2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_avoidance_layers (_ layers: UInt32) {
-        #if true
+        #if false
         
         var copy_layers: Int = Int (layers)
         
@@ -563,7 +563,7 @@ open class NavigationRegion2D: Node2D {
     
     /// Based on `value`, enables or disables the specified layer in the ``avoidanceLayers`` bitmask, given a `layerNumber` between 1 and 32.
     public final func setAvoidanceLayerValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -601,7 +601,7 @@ open class NavigationRegion2D: Node2D {
     /// Returns whether or not the specified layer of the ``avoidanceLayers`` bitmask is enabled, given a `layerNumber` between 1 and 32.
     public final func getAvoidanceLayerValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -652,7 +652,7 @@ open class NavigationRegion2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_enter_cost (_ enterCost: Double) {
-        #if true
+        #if false
         
         var copy_enter_cost = enterCost
         
@@ -702,7 +702,7 @@ open class NavigationRegion2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_travel_cost (_ travelCost: Double) {
-        #if true
+        #if false
         
         var copy_travel_cost = travelCost
         
@@ -752,7 +752,7 @@ open class NavigationRegion2D: Node2D {
     
     /// Bakes the ``NavigationPolygon``. If `onThread` is set to `true` (default), the baking is done on a separate thread.
     public final func bakeNavigationPolygon (onThread: Bool = true) {
-        #if true
+        #if false
         
         var copy_on_thread = onThread
         

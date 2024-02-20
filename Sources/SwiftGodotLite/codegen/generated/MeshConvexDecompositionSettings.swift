@@ -190,7 +190,7 @@ open class MeshConvexDecompositionSettings: RefCounted {
     
     @inline(__always)
     fileprivate final func set_max_concavity (_ maxConcavity: Double) {
-        #if true
+        #if false
         
         var copy_max_concavity = maxConcavity
         
@@ -240,7 +240,7 @@ open class MeshConvexDecompositionSettings: RefCounted {
     
     @inline(__always)
     fileprivate final func set_symmetry_planes_clipping_bias (_ symmetryPlanesClippingBias: Double) {
-        #if true
+        #if false
         
         var copy_symmetry_planes_clipping_bias = symmetryPlanesClippingBias
         
@@ -290,7 +290,7 @@ open class MeshConvexDecompositionSettings: RefCounted {
     
     @inline(__always)
     fileprivate final func set_revolution_axes_clipping_bias (_ revolutionAxesClippingBias: Double) {
-        #if true
+        #if false
         
         var copy_revolution_axes_clipping_bias = revolutionAxesClippingBias
         
@@ -340,7 +340,7 @@ open class MeshConvexDecompositionSettings: RefCounted {
     
     @inline(__always)
     fileprivate final func set_min_volume_per_convex_hull (_ minVolumePerConvexHull: Double) {
-        #if true
+        #if false
         
         var copy_min_volume_per_convex_hull = minVolumePerConvexHull
         
@@ -390,7 +390,7 @@ open class MeshConvexDecompositionSettings: RefCounted {
     
     @inline(__always)
     fileprivate final func set_resolution (_ minVolumePerConvexHull: UInt32) {
-        #if true
+        #if false
         
         var copy_min_volume_per_convex_hull: Int = Int (minVolumePerConvexHull)
         
@@ -440,7 +440,7 @@ open class MeshConvexDecompositionSettings: RefCounted {
     
     @inline(__always)
     fileprivate final func set_max_num_vertices_per_convex_hull (_ maxNumVerticesPerConvexHull: UInt32) {
-        #if true
+        #if false
         
         var copy_max_num_vertices_per_convex_hull: Int = Int (maxNumVerticesPerConvexHull)
         
@@ -490,7 +490,7 @@ open class MeshConvexDecompositionSettings: RefCounted {
     
     @inline(__always)
     fileprivate final func set_plane_downsampling (_ planeDownsampling: UInt32) {
-        #if true
+        #if false
         
         var copy_plane_downsampling: Int = Int (planeDownsampling)
         
@@ -540,7 +540,7 @@ open class MeshConvexDecompositionSettings: RefCounted {
     
     @inline(__always)
     fileprivate final func set_convex_hull_downsampling (_ convexHullDownsampling: UInt32) {
-        #if true
+        #if false
         
         var copy_convex_hull_downsampling: Int = Int (convexHullDownsampling)
         
@@ -590,7 +590,7 @@ open class MeshConvexDecompositionSettings: RefCounted {
     
     @inline(__always)
     fileprivate final func set_normalize_mesh (_ normalizeMesh: Bool) {
-        #if true
+        #if false
         
         var copy_normalize_mesh = normalizeMesh
         
@@ -640,7 +640,7 @@ open class MeshConvexDecompositionSettings: RefCounted {
     
     @inline(__always)
     fileprivate final func set_mode (_ mode: MeshConvexDecompositionSettings.Mode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -690,7 +690,7 @@ open class MeshConvexDecompositionSettings: RefCounted {
     
     @inline(__always)
     fileprivate final func set_convex_hull_approximation (_ convexHullApproximation: Bool) {
-        #if true
+        #if false
         
         var copy_convex_hull_approximation = convexHullApproximation
         
@@ -740,7 +740,7 @@ open class MeshConvexDecompositionSettings: RefCounted {
     
     @inline(__always)
     fileprivate final func set_max_convex_hulls (_ maxConvexHulls: UInt32) {
-        #if true
+        #if false
         
         var copy_max_convex_hulls: Int = Int (maxConvexHulls)
         
@@ -790,7 +790,7 @@ open class MeshConvexDecompositionSettings: RefCounted {
     
     @inline(__always)
     fileprivate final func set_project_hull_vertices (_ projectHullVertices: Bool) {
-        #if true
+        #if false
         
         var copy_project_hull_vertices = projectHullVertices
         

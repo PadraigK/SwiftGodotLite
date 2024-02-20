@@ -59,7 +59,7 @@ open class CSGMesh3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_mesh (_ mesh: Mesh?) {
-        #if true
+        #if false
         
         var copy_mesh_handle = mesh?.handle
         
@@ -108,7 +108,7 @@ open class CSGMesh3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_material (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         

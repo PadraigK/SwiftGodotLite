@@ -31,7 +31,7 @@ open class PropertyTweener: Tweener {
     /// 
     public final func from (value: Variant)-> PropertyTweener? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PropertyTweener.method_from, UnsafeMutableRawPointer (mutating: handle), &_result, &value.content)
@@ -103,7 +103,7 @@ open class PropertyTweener: Tweener {
     /// Sets the type of used transition from ``Tween.TransitionType``. If not set, the default transition is used from the ``Tween`` that contains this Tweener.
     public final func setTrans (_ trans: Tween.TransitionType)-> PropertyTweener? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_trans = Int64 (trans.rawValue)
         
@@ -137,7 +137,7 @@ open class PropertyTweener: Tweener {
     /// Sets the type of used easing from ``Tween.EaseType``. If not set, the default easing is used from the ``Tween`` that contains this Tweener.
     public final func setEase (_ ease: Tween.EaseType)-> PropertyTweener? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_ease = Int64 (ease.rawValue)
         
@@ -171,7 +171,7 @@ open class PropertyTweener: Tweener {
     /// Sets the time in seconds after which the ``PropertyTweener`` will start interpolating. By default there's no delay.
     public final func setDelay (_ delay: Double)-> PropertyTweener? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_delay = delay
         

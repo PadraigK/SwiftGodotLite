@@ -149,7 +149,7 @@ open class NinePatchRect: Control {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -199,7 +199,7 @@ open class NinePatchRect: Control {
     @inline(__always)
     /// Sets the size of the margin on the specified ``Side`` to `value` pixels.
     fileprivate final func set_patch_margin (_ margin: Side, _ value: Int32) {
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         var copy_value: Int = Int (value)
@@ -238,7 +238,7 @@ open class NinePatchRect: Control {
     /// Returns the size of the margin on the specified ``Side``.
     fileprivate final func get_patch_margin (_ margin: Side)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         
@@ -271,7 +271,7 @@ open class NinePatchRect: Control {
     
     @inline(__always)
     fileprivate final func set_region_rect (_ rect: Rect2) {
-        #if true
+        #if false
         
         var copy_rect = rect
         
@@ -321,7 +321,7 @@ open class NinePatchRect: Control {
     
     @inline(__always)
     fileprivate final func set_draw_center (_ drawCenter: Bool) {
-        #if true
+        #if false
         
         var copy_draw_center = drawCenter
         
@@ -371,7 +371,7 @@ open class NinePatchRect: Control {
     
     @inline(__always)
     fileprivate final func set_h_axis_stretch_mode (_ mode: NinePatchRect.AxisStretchMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -421,7 +421,7 @@ open class NinePatchRect: Control {
     
     @inline(__always)
     fileprivate final func set_v_axis_stretch_mode (_ mode: NinePatchRect.AxisStretchMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

@@ -136,7 +136,7 @@ open class StyleBox: Resource {
     @inline(__always)
     /// Sets the default value of the specified ``Side`` to `offset` pixels.
     fileprivate final func set_content_margin (_ margin: Side, _ offset: Double) {
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         var copy_offset = offset
@@ -173,7 +173,7 @@ open class StyleBox: Resource {
     
     /// Sets the default margin to `offset` pixels for all sides.
     public final func setContentMarginAll (offset: Double) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -207,7 +207,7 @@ open class StyleBox: Resource {
     /// Returns the default margin of the specified ``Side``.
     fileprivate final func get_content_margin (_ margin: Side)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         
@@ -244,7 +244,7 @@ open class StyleBox: Resource {
     /// 
     public final func getMargin (_ margin: Side)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         
@@ -298,7 +298,7 @@ open class StyleBox: Resource {
     /// The ``RID`` value can either be the result of ``CanvasItem/getCanvasItem()`` called on an existing ``CanvasItem``-derived node, or directly from creating a canvas item in the ``RenderingServer`` with ``RenderingServer/canvasItemCreate()``.
     /// 
     public final func draw (canvasItem: RID, rect: Rect2) {
-        #if true
+        #if false
         
         var copy_rect = rect
         
@@ -352,7 +352,7 @@ open class StyleBox: Resource {
     /// Test a position in a rectangle, return whether it passes the mask test.
     public final func testMask (point: Vector2, rect: Rect2)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_point = point
         var copy_rect = rect

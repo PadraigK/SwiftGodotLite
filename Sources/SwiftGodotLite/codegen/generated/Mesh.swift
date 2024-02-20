@@ -292,7 +292,7 @@ open class Mesh: Resource {
     
     @inline(__always)
     fileprivate final func set_lightmap_size_hint (_ size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -400,7 +400,7 @@ open class Mesh: Resource {
     /// Returns the arrays for the vertices, normals, UVs, etc. that make up the requested surface (see ``ArrayMesh/addSurfaceFromArrays(primitive:arrays:blendShapes:lods:flags:)``).
     public final func surfaceGetArrays (surfIdx: Int32)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_surf_idx: Int = Int (surfIdx)
         
@@ -434,7 +434,7 @@ open class Mesh: Resource {
     /// Returns the blend shape arrays for the requested surface.
     public final func surfaceGetBlendShapeArrays (surfIdx: Int32)-> VariantCollection<GArray> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_surf_idx: Int = Int (surfIdx)
         
@@ -470,7 +470,7 @@ open class Mesh: Resource {
     /// > Note: This assigns the material within the ``Mesh`` resource, not the ``Material`` associated to the ``MeshInstance3D``'s Surface Material Override properties. To set the ``Material`` associated to the ``MeshInstance3D``'s Surface Material Override properties, use ``MeshInstance3D/setSurfaceOverrideMaterial(surface:material:)`` instead.
     /// 
     public final func surfaceSetMaterial (surfIdx: Int32, material: Material?) {
-        #if true
+        #if false
         
         var copy_surf_idx: Int = Int (surfIdx)
         var copy_material_handle = material?.handle
@@ -510,7 +510,7 @@ open class Mesh: Resource {
     /// 
     public final func surfaceGetMaterial (surfIdx: Int32)-> Material? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_surf_idx: Int = Int (surfIdx)
         
@@ -585,7 +585,7 @@ open class Mesh: Resource {
     /// 
     public final func createConvexShape (clean: Bool = true, simplify: Bool = false)-> ConvexPolygonShape3D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_clean = clean
         var copy_simplify = simplify
@@ -627,7 +627,7 @@ open class Mesh: Resource {
     /// 
     public final func createOutline (margin: Double)-> Mesh? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_margin = margin
         

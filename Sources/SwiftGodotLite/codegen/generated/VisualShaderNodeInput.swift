@@ -44,7 +44,7 @@ open class VisualShaderNodeInput: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_input_name (_ name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         

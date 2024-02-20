@@ -126,7 +126,7 @@ open class LinkButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_text (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -176,7 +176,7 @@ open class LinkButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_text_direction (_ direction: Control.TextDirection) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -226,7 +226,7 @@ open class LinkButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_language (_ language: String) {
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -276,7 +276,7 @@ open class LinkButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_uri (_ uri: String) {
-        #if true
+        #if false
         
         let gstr_uri = GString (uri)
         
@@ -326,7 +326,7 @@ open class LinkButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_underline_mode (_ underlineMode: LinkButton.UnderlineMode) {
-        #if true
+        #if false
         
         var copy_underline_mode = Int64 (underlineMode.rawValue)
         
@@ -376,7 +376,7 @@ open class LinkButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_structured_text_bidi_override (_ parser: TextServer.StructuredTextParser) {
-        #if true
+        #if false
         
         var copy_parser = Int64 (parser.rawValue)
         
@@ -426,7 +426,7 @@ open class LinkButton: BaseButton {
     
     @inline(__always)
     fileprivate final func set_structured_text_bidi_override_options (_ args: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (LinkButton.method_set_structured_text_bidi_override_options, UnsafeMutableRawPointer (mutating: handle), nil, &args.content)

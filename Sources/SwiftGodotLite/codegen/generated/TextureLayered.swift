@@ -193,7 +193,7 @@ open class TextureLayered: Texture {
     /// Returns an ``Image`` resource with the data from specified `layer`.
     public final func getLayerData (layer: Int32)-> Image? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         

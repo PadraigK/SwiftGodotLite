@@ -50,7 +50,7 @@ open class VisibleOnScreenNotifier2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_rect (_ rect: Rect2) {
-        #if true
+        #if false
         
         var copy_rect = rect
         

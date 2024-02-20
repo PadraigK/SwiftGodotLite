@@ -51,7 +51,7 @@ open class EditorSelection: Object {
     /// > Note: The newly selected node will not be automatically edited in the inspector. If you want to edit a node, use ``EditorInterface/editNode(_:)``.
     /// 
     public final func addNode (_ node: Node?) {
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -82,7 +82,7 @@ open class EditorSelection: Object {
     
     /// Removes a node from the selection.
     public final func removeNode (_ node: Node?) {
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         

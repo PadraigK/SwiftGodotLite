@@ -115,7 +115,7 @@ open class InputEventKey: InputEventWithModifiers {
     
     @inline(__always)
     fileprivate final func set_pressed (_ pressed: Bool) {
-        #if true
+        #if false
         
         var copy_pressed = pressed
         
@@ -147,7 +147,7 @@ open class InputEventKey: InputEventWithModifiers {
     
     @inline(__always)
     fileprivate final func set_keycode (_ keycode: Key) {
-        #if true
+        #if false
         
         var copy_keycode = Int64 (keycode.rawValue)
         
@@ -197,7 +197,7 @@ open class InputEventKey: InputEventWithModifiers {
     
     @inline(__always)
     fileprivate final func set_physical_keycode (_ physicalKeycode: Key) {
-        #if true
+        #if false
         
         var copy_physical_keycode = Int64 (physicalKeycode.rawValue)
         
@@ -247,7 +247,7 @@ open class InputEventKey: InputEventWithModifiers {
     
     @inline(__always)
     fileprivate final func set_key_label (_ keyLabel: Key) {
-        #if true
+        #if false
         
         var copy_key_label = Int64 (keyLabel.rawValue)
         
@@ -297,7 +297,7 @@ open class InputEventKey: InputEventWithModifiers {
     
     @inline(__always)
     fileprivate final func set_unicode (_ unicode: Int64) {
-        #if true
+        #if false
         
         var copy_unicode = unicode
         
@@ -347,7 +347,7 @@ open class InputEventKey: InputEventWithModifiers {
     
     @inline(__always)
     fileprivate final func set_echo (_ echo: Bool) {
-        #if true
+        #if false
         
         var copy_echo = echo
         

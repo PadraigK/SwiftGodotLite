@@ -78,7 +78,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     
     /// Adds a new animation node to the graph. The `position` is used for display in the editor.
     public final func addNode (name: StringName, node: AnimationNode?, position: Vector2 = Vector2 (x: 0, y: 0)) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_node_handle = node?.handle
@@ -117,7 +117,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     
     /// 
     public final func replaceNode (name: StringName, node: AnimationNode?) {
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -152,7 +152,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     /// Returns the animation node with the given name.
     public final func getNode (name: StringName)-> AnimationNode? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNodeStateMachine.method_get_node, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -183,7 +183,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     
     /// Deletes the given animation node from the graph.
     public final func removeNode (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNodeStateMachine.method_remove_node, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -213,7 +213,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     
     /// Renames the given animation node.
     public final func renameNode (name: StringName, newName: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNodeStateMachine.method_rename_node, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &newName.content)
@@ -247,7 +247,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     /// Returns `true` if the graph contains the given animation node.
     public final func hasNode (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNodeStateMachine.method_has_node, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -279,7 +279,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     /// Returns the given animation node's name.
     public final func getNodeName (node: AnimationNode?)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -311,7 +311,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     
     /// Sets the animation node's coordinates. Used for display in the editor.
     public final func setNodePosition (name: StringName, position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -347,7 +347,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     /// Returns the given animation node's coordinates. Used for display in the editor.
     public final func getNodePosition (name: StringName)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNodeStateMachine.method_get_node_position, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -379,7 +379,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     /// Returns `true` if there is a transition between the given animation nodes.
     public final func hasTransition (from: StringName, to: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNodeStateMachine.method_has_transition, UnsafeMutableRawPointer (mutating: handle), &_result, &from.content, &to.content)
@@ -413,7 +413,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     
     /// Adds a transition between the given animation nodes.
     public final func addTransition (from: StringName, to: StringName, transition: AnimationNodeStateMachineTransition?) {
-        #if true
+        #if false
         
         var copy_transition_handle = transition?.handle
         
@@ -451,7 +451,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     /// Returns the given transition.
     public final func getTransition (idx: Int32)-> AnimationNodeStateMachineTransition? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -485,7 +485,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     /// Returns the given transition's start node.
     public final func getTransitionFrom (idx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -519,7 +519,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     /// Returns the given transition's end node.
     public final func getTransitionTo (idx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -570,7 +570,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     
     /// Deletes the given transition by index.
     public final func removeTransitionByIndex (idx: Int32) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -602,7 +602,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     
     /// Deletes the transition between the two specified animation nodes.
     public final func removeTransition (from: StringName, to: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNodeStateMachine.method_remove_transition, UnsafeMutableRawPointer (mutating: handle), nil, &from.content, &to.content)
@@ -635,7 +635,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     
     /// Sets the draw offset of the graph. Used for display in the editor.
     public final func setGraphOffset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -685,7 +685,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_state_machine_type (_ stateMachineType: AnimationNodeStateMachine.StateMachineType) {
-        #if true
+        #if false
         
         var copy_state_machine_type = Int64 (stateMachineType.rawValue)
         
@@ -735,7 +735,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_allow_transition_to_self (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -785,7 +785,7 @@ open class AnimationNodeStateMachine: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_reset_ends (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

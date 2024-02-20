@@ -32,7 +32,7 @@ open class RenderSceneBuffersRD: RenderSceneBuffers {
     /// Returns `true` if a cached texture exists for this name.
     public final func hasTexture (context: StringName, name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderSceneBuffersRD.method_has_texture, UnsafeMutableRawPointer (mutating: handle), &_result, &context.content, &name.content)
@@ -67,7 +67,7 @@ open class RenderSceneBuffersRD: RenderSceneBuffers {
     /// Create a new texture with the given definition and cache this under the given name. Will return the existing texture if it already exists.
     public final func createTexture (context: StringName, name: StringName, dataFormat: RenderingDevice.DataFormat, usageBits: UInt32, textureSamples: RenderingDevice.TextureSamples, size: Vector2i, layers: UInt32, mipmaps: UInt32, unique: Bool)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_data_format = Int64 (dataFormat.rawValue)
         var copy_usage_bits: Int = Int (usageBits)
@@ -137,7 +137,7 @@ open class RenderSceneBuffersRD: RenderSceneBuffers {
     /// Create a new texture using the given format and view and cache this under the given name. Will return the existing texture if it already exists.
     public final func createTextureFromFormat (context: StringName, name: StringName, format: RDTextureFormat?, view: RDTextureView?, unique: Bool)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_unique = unique
         var copy_format_handle = format?.handle
@@ -185,7 +185,7 @@ open class RenderSceneBuffersRD: RenderSceneBuffers {
     /// Create a new texture view for an existing texture and cache this under the given view_name. Will return the existing teture view if it already exists. Will error if the source texture doesn't exist.
     public final func createTextureView (context: StringName, name: StringName, viewName: StringName, view: RDTextureView?)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_view_handle = view?.handle
         
@@ -227,7 +227,7 @@ open class RenderSceneBuffersRD: RenderSceneBuffers {
     /// Returns a cached texture with this name.
     public final func getTexture (context: StringName, name: StringName)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderSceneBuffersRD.method_get_texture, UnsafeMutableRawPointer (mutating: handle), &_result.content, &context.content, &name.content)
@@ -262,7 +262,7 @@ open class RenderSceneBuffersRD: RenderSceneBuffers {
     /// Returns the texture format information with which a cached texture was created.
     public final func getTextureFormat (context: StringName, name: StringName)-> RDTextureFormat? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderSceneBuffersRD.method_get_texture_format, UnsafeMutableRawPointer (mutating: handle), &_result, &context.content, &name.content)
@@ -297,7 +297,7 @@ open class RenderSceneBuffersRD: RenderSceneBuffers {
     /// Returns a specific slice (layer or mipmap) for a cached texture.
     public final func getTextureSlice (context: StringName, name: StringName, layer: UInt32, mipmap: UInt32, layers: UInt32, mipmaps: UInt32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_mipmap: Int = Int (mipmap)
@@ -352,7 +352,7 @@ open class RenderSceneBuffersRD: RenderSceneBuffers {
     /// Returns a specific view of a slice (layer or mipmap) for a cached texture.
     public final func getTextureSliceView (context: StringName, name: StringName, layer: UInt32, mipmap: UInt32, layers: UInt32, mipmaps: UInt32, view: RDTextureView?)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_mipmap: Int = Int (mipmap)
@@ -411,7 +411,7 @@ open class RenderSceneBuffersRD: RenderSceneBuffers {
     /// Returns the texture size of a given slice of a cached texture.
     public final func getTextureSliceSize (context: StringName, name: StringName, mipmap: UInt32)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_mipmap: Int = Int (mipmap)
         
@@ -450,7 +450,7 @@ open class RenderSceneBuffersRD: RenderSceneBuffers {
     
     /// Frees all buffers related to this context.
     public final func clearContext (_ context: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderSceneBuffersRD.method_clear_context, UnsafeMutableRawPointer (mutating: handle), nil, &context.content)
@@ -499,7 +499,7 @@ open class RenderSceneBuffersRD: RenderSceneBuffers {
     /// Returns the specified layer from the color texture we are rendering 3D content to.
     public final func getColorLayer (_ layer: UInt32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -551,7 +551,7 @@ open class RenderSceneBuffersRD: RenderSceneBuffers {
     /// Returns the specified layer from the depth texture we are rendering 3D content to.
     public final func getDepthLayer (_ layer: UInt32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -603,7 +603,7 @@ open class RenderSceneBuffersRD: RenderSceneBuffers {
     /// Returns the specified layer from the velocity texture we are rendering 3D content to.
     public final func getVelocityLayer (_ layer: UInt32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         

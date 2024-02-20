@@ -41,7 +41,7 @@ open class EditorScript: RefCounted {
     /// > Warning: The implementation of this method is currently disabled.
     /// 
     public final func addRootNode (_ node: Node?) {
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         

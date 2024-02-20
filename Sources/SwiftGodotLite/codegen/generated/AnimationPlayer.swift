@@ -153,7 +153,7 @@ open class AnimationPlayer: AnimationMixer {
     
     /// Triggers the `animationTo` animation when the `animationFrom` animation completes.
     public final func animationSetNext (animationFrom: StringName, animationTo: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationPlayer.method_animation_set_next, UnsafeMutableRawPointer (mutating: handle), nil, &animationFrom.content, &animationTo.content)
@@ -187,7 +187,7 @@ open class AnimationPlayer: AnimationMixer {
     /// Returns the key of the animation which is queued to play after the `animationFrom` animation.
     public final func animationGetNext (animationFrom: StringName)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationPlayer.method_animation_get_next, UnsafeMutableRawPointer (mutating: handle), &_result.content, &animationFrom.content)
@@ -218,7 +218,7 @@ open class AnimationPlayer: AnimationMixer {
     
     /// Specifies a blend time (in seconds) between two animations, referenced by their keys.
     public final func setBlendTime (animationFrom: StringName, animationTo: StringName, sec: Double) {
-        #if true
+        #if false
         
         var copy_sec = sec
         
@@ -257,7 +257,7 @@ open class AnimationPlayer: AnimationMixer {
     /// Returns the blend time (in seconds) between two animations, referenced by their keys.
     public final func getBlendTime (animationFrom: StringName, animationTo: StringName)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationPlayer.method_get_blend_time, UnsafeMutableRawPointer (mutating: handle), &_result, &animationFrom.content, &animationTo.content)
@@ -291,7 +291,7 @@ open class AnimationPlayer: AnimationMixer {
     
     @inline(__always)
     fileprivate final func set_default_blend_time (_ sec: Double) {
-        #if true
+        #if false
         
         var copy_sec = sec
         
@@ -348,7 +348,7 @@ open class AnimationPlayer: AnimationMixer {
     /// > Note: The animation will be updated the next time the ``AnimationPlayer`` is processed. If other variables are updated at the same time this is called, they may be updated too early. To perform the update immediately, call `advance(0)`.
     /// 
     public final func play (name: StringName = StringName (""), customBlend: Double = -1, customSpeed: Double = 1.0, fromEnd: Bool = false) {
-        #if true
+        #if false
         
         var copy_custom_blend = customBlend
         var copy_custom_speed = customSpeed
@@ -396,7 +396,7 @@ open class AnimationPlayer: AnimationMixer {
     /// This method is a shorthand for ``play(name:customBlend:customSpeed:fromEnd:)`` with `custom_speed = -1.0` and `from_end = true`, so see its description for more information.
     /// 
     public final func playBackwards (name: StringName = StringName (""), customBlend: Double = -1) {
-        #if true
+        #if false
         
         var copy_custom_blend = customBlend
         
@@ -455,7 +455,7 @@ open class AnimationPlayer: AnimationMixer {
     /// > Note: The method / audio / animation playback tracks will not be processed by this method.
     /// 
     public final func stop (keepState: Bool = false) {
-        #if true
+        #if false
         
         var copy_keep_state = keepState
         
@@ -505,7 +505,7 @@ open class AnimationPlayer: AnimationMixer {
     
     @inline(__always)
     fileprivate final func set_current_animation (_ animation: String) {
-        #if true
+        #if false
         
         let gstr_animation = GString (animation)
         
@@ -555,7 +555,7 @@ open class AnimationPlayer: AnimationMixer {
     
     @inline(__always)
     fileprivate final func set_assigned_animation (_ animation: String) {
-        #if true
+        #if false
         
         let gstr_animation = GString (animation)
         
@@ -608,7 +608,7 @@ open class AnimationPlayer: AnimationMixer {
     /// > Note: If a looped animation is currently playing, the queued animation will never play unless the looped animation is stopped somehow.
     /// 
     public final func queue (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationPlayer.method_queue, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -672,7 +672,7 @@ open class AnimationPlayer: AnimationMixer {
     
     @inline(__always)
     fileprivate final func set_speed_scale (_ speed: Double) {
-        #if true
+        #if false
         
         var copy_speed = speed
         
@@ -743,7 +743,7 @@ open class AnimationPlayer: AnimationMixer {
     
     @inline(__always)
     fileprivate final func set_autoplay (_ name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -793,7 +793,7 @@ open class AnimationPlayer: AnimationMixer {
     
     @inline(__always)
     fileprivate final func set_movie_quit_on_finish_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -884,7 +884,7 @@ open class AnimationPlayer: AnimationMixer {
     /// > Note: Seeking to the end of the animation doesn't emit [signal AnimationMixer.animation_finished]. If you want to skip animation and emit the signal, use ``AnimationMixer/advance(delta:)``.
     /// 
     public final func seek (seconds: Double, update: Bool = false, updateOnly: Bool = false) {
-        #if true
+        #if false
         
         var copy_seconds = seconds
         var copy_update = update
@@ -926,7 +926,7 @@ open class AnimationPlayer: AnimationMixer {
     
     /// For backward compatibility. See ``AnimationMixer.AnimationCallbackModeProcess``.
     public final func setProcessCallback (mode: AnimationPlayer.AnimationProcessCallback) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -976,7 +976,7 @@ open class AnimationPlayer: AnimationMixer {
     
     /// For backward compatibility. See ``AnimationMixer.AnimationCallbackModeMethod``.
     public final func setMethodCallMode (_ mode: AnimationPlayer.AnimationMethodCallMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1026,7 +1026,7 @@ open class AnimationPlayer: AnimationMixer {
     
     /// For backward compatibility. See ``AnimationMixer/rootNode``.
     public final func setRoot (path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationPlayer.method_set_root, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)

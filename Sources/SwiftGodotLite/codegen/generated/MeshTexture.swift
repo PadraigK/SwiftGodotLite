@@ -63,7 +63,7 @@ open class MeshTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_mesh (_ mesh: Mesh?) {
-        #if true
+        #if false
         
         var copy_mesh_handle = mesh?.handle
         
@@ -112,7 +112,7 @@ open class MeshTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_image_size (_ size: Vector2) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -162,7 +162,7 @@ open class MeshTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_base_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         

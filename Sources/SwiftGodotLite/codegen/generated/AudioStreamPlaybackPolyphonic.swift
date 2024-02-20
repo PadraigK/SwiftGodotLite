@@ -35,7 +35,7 @@ open class AudioStreamPlaybackPolyphonic: AudioStreamPlayback {
     /// 
     public final func playStream (_ stream: AudioStream?, fromOffset: Double = 0, volumeDb: Double = 0, pitchScale: Double = 1.0)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_from_offset = fromOffset
         var copy_volume_db = volumeDb
@@ -82,7 +82,7 @@ open class AudioStreamPlaybackPolyphonic: AudioStreamPlayback {
     
     /// Change the stream volume (in db). The `stream` argument is an integer ID returned by ``playStream(_:fromOffset:volumeDb:pitchScale:)``.
     public final func setStreamVolume (stream: Int, volumeDb: Double) {
-        #if true
+        #if false
         
         var copy_stream = stream
         var copy_volume_db = volumeDb
@@ -119,7 +119,7 @@ open class AudioStreamPlaybackPolyphonic: AudioStreamPlayback {
     
     /// Change the stream pitch scale. The `stream` argument is an integer ID returned by ``playStream(_:fromOffset:volumeDb:pitchScale:)``.
     public final func setStreamPitchScale (stream: Int, pitchScale: Double) {
-        #if true
+        #if false
         
         var copy_stream = stream
         var copy_pitch_scale = pitchScale
@@ -157,7 +157,7 @@ open class AudioStreamPlaybackPolyphonic: AudioStreamPlayback {
     /// Return true whether the stream associated with an integer ID is still playing. Check ``playStream(_:fromOffset:volumeDb:pitchScale:)`` for information on when this ID becomes invalid.
     public final func isStreamPlaying (stream: Int)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_stream = stream
         
@@ -190,7 +190,7 @@ open class AudioStreamPlaybackPolyphonic: AudioStreamPlayback {
     
     /// Stop a stream. The `stream` argument is an integer ID returned by ``playStream(_:fromOffset:volumeDb:pitchScale:)``, which becomes invalid after calling this function.
     public final func stopStream (_ stream: Int) {
-        #if true
+        #if false
         
         var copy_stream = stream
         

@@ -39,7 +39,7 @@ open class VisualShaderNodeVec2Constant: VisualShaderNodeConstant {
     
     @inline(__always)
     fileprivate final func set_constant (_ constant: Vector2) {
-        #if true
+        #if false
         
         var copy_constant = constant
         

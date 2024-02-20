@@ -141,7 +141,7 @@ open class GradientTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_gradient (_ gradient: Gradient?) {
-        #if true
+        #if false
         
         var copy_gradient_handle = gradient?.handle
         
@@ -190,7 +190,7 @@ open class GradientTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_width (_ width: Int32) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         
@@ -222,7 +222,7 @@ open class GradientTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_height (_ height: Int32) {
-        #if true
+        #if false
         
         var copy_height: Int = Int (height)
         
@@ -254,7 +254,7 @@ open class GradientTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_use_hdr (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -304,7 +304,7 @@ open class GradientTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_fill (_ fill: GradientTexture2D.Fill) {
-        #if true
+        #if false
         
         var copy_fill = Int64 (fill.rawValue)
         
@@ -354,7 +354,7 @@ open class GradientTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_fill_from (_ fillFrom: Vector2) {
-        #if true
+        #if false
         
         var copy_fill_from = fillFrom
         
@@ -404,7 +404,7 @@ open class GradientTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_fill_to (_ fillTo: Vector2) {
-        #if true
+        #if false
         
         var copy_fill_to = fillTo
         
@@ -454,7 +454,7 @@ open class GradientTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_repeat (_ `repeat`: GradientTexture2D.Repeat) {
-        #if true
+        #if false
         
         var copy_repeat = Int64 (`repeat`.rawValue)
         

@@ -106,7 +106,7 @@ open class WebSocketMultiplayerPeer: MultiplayerPeer {
     /// 
     public final func createClient (url: String, tlsClientOptions: TLSOptions? = nil)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_url = GString (url)
         var copy_tls_client_options_handle = tlsClientOptions?.handle
@@ -144,7 +144,7 @@ open class WebSocketMultiplayerPeer: MultiplayerPeer {
     /// Starts a new multiplayer server listening on the given `port`. You can optionally specify a `bindAddress`, and provide valid `tlsServerOptions` to use TLS. See ``TLSOptions/server(key:certificate:)``.
     public final func createServer (port: Int32, bindAddress: String = "*", tlsServerOptions: TLSOptions? = nil)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_port: Int = Int (port)
         let gstr_bind_address = GString (bindAddress)
@@ -187,7 +187,7 @@ open class WebSocketMultiplayerPeer: MultiplayerPeer {
     /// Returns the ``WebSocketPeer`` associated to the given `peerId`.
     public final func getPeer (peerId: Int32)-> WebSocketPeer? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_peer_id: Int = Int (peerId)
         
@@ -221,7 +221,7 @@ open class WebSocketMultiplayerPeer: MultiplayerPeer {
     /// Returns the IP address of the given peer.
     public final func getPeerAddress (id: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -255,7 +255,7 @@ open class WebSocketMultiplayerPeer: MultiplayerPeer {
     /// Returns the remote port of the given peer.
     public final func getPeerPort (id: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -306,7 +306,7 @@ open class WebSocketMultiplayerPeer: MultiplayerPeer {
     
     @inline(__always)
     fileprivate final func set_supported_protocols (_ protocols: PackedStringArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (WebSocketMultiplayerPeer.method_set_supported_protocols, UnsafeMutableRawPointer (mutating: handle), nil, &protocols.content)
@@ -354,7 +354,7 @@ open class WebSocketMultiplayerPeer: MultiplayerPeer {
     
     @inline(__always)
     fileprivate final func set_handshake_headers (_ protocols: PackedStringArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (WebSocketMultiplayerPeer.method_set_handshake_headers, UnsafeMutableRawPointer (mutating: handle), nil, &protocols.content)
@@ -402,7 +402,7 @@ open class WebSocketMultiplayerPeer: MultiplayerPeer {
     
     @inline(__always)
     fileprivate final func set_inbound_buffer_size (_ bufferSize: Int32) {
-        #if true
+        #if false
         
         var copy_buffer_size: Int = Int (bufferSize)
         
@@ -452,7 +452,7 @@ open class WebSocketMultiplayerPeer: MultiplayerPeer {
     
     @inline(__always)
     fileprivate final func set_outbound_buffer_size (_ bufferSize: Int32) {
-        #if true
+        #if false
         
         var copy_buffer_size: Int = Int (bufferSize)
         
@@ -502,7 +502,7 @@ open class WebSocketMultiplayerPeer: MultiplayerPeer {
     
     @inline(__always)
     fileprivate final func set_handshake_timeout (_ timeout: Double) {
-        #if true
+        #if false
         
         var copy_timeout = timeout
         
@@ -534,7 +534,7 @@ open class WebSocketMultiplayerPeer: MultiplayerPeer {
     
     @inline(__always)
     fileprivate final func set_max_queued_packets (_ maxQueuedPackets: Int32) {
-        #if true
+        #if false
         
         var copy_max_queued_packets: Int = Int (maxQueuedPackets)
         

@@ -41,7 +41,7 @@ open class NavigationMeshGenerator: Object {
     
     /// The bake function is deprecated due to core threading changes. To upgrade existing code, first create a ``NavigationMeshSourceGeometryData3D`` resource. Use this resource with ``parseSourceGeometryData(navigationMesh:sourceGeometryData:rootNode:callback:)`` to parse the SceneTree for nodes that should contribute to the navigation mesh baking. The SceneTree parsing needs to happen on the main thread. After the parsing is finished use the resource with ``bakeFromSourceGeometryData(navigationMesh:sourceGeometryData:callback:)`` to bake a navigation mesh.
     public static func bake (navigationMesh: NavigationMesh?, rootNode: Node?) {
-        #if true
+        #if false
         
         var copy_navigation_mesh_handle = navigationMesh?.handle
         var copy_root_node_handle = rootNode?.handle
@@ -76,7 +76,7 @@ open class NavigationMeshGenerator: Object {
     
     /// Removes all polygons and vertices from the provided `navigationMesh` resource.
     public static func clear (navigationMesh: NavigationMesh?) {
-        #if true
+        #if false
         
         var copy_navigation_mesh_handle = navigationMesh?.handle
         
@@ -112,7 +112,7 @@ open class NavigationMeshGenerator: Object {
     /// **Performance:** While convenient, reading data arrays from ``Mesh`` resources can affect the frame rate negatively. The data needs to be received from the GPU, stalling the ``RenderingServer`` in the process. For performance prefer the use of e.g. collision shapes or creating the data arrays entirely in code.
     /// 
     public static func parseSourceGeometryData (navigationMesh: NavigationMesh?, sourceGeometryData: NavigationMeshSourceGeometryData3D?, rootNode: Node?, callback: Callable = Callable()) {
-        #if true
+        #if false
         
         var copy_navigation_mesh_handle = navigationMesh?.handle
         var copy_source_geometry_data_handle = sourceGeometryData?.handle
@@ -154,7 +154,7 @@ open class NavigationMeshGenerator: Object {
     
     /// Bakes the provided `navigationMesh` with the data from the provided `sourceGeometryData`. After the process is finished the optional `callback` will be called.
     public static func bakeFromSourceGeometryData (navigationMesh: NavigationMesh?, sourceGeometryData: NavigationMeshSourceGeometryData3D?, callback: Callable = Callable()) {
-        #if true
+        #if false
         
         var copy_navigation_mesh_handle = navigationMesh?.handle
         var copy_source_geometry_data_handle = sourceGeometryData?.handle

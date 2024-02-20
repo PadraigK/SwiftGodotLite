@@ -51,7 +51,7 @@ open class RDUniform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_uniform_type (_ pMember: RenderingDevice.UniformType) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -101,7 +101,7 @@ open class RDUniform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_binding (_ pMember: Int32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         
@@ -151,7 +151,7 @@ open class RDUniform: RefCounted {
     
     /// 
     public final func addId (_ id: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RDUniform.method_add_id, UnsafeMutableRawPointer (mutating: handle), nil, &id.content)

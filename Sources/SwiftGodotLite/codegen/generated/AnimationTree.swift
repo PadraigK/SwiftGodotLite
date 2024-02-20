@@ -80,7 +80,7 @@ open class AnimationTree: AnimationMixer {
     
     @inline(__always)
     fileprivate final func set_tree_root (_ animationNode: AnimationRootNode?) {
-        #if true
+        #if false
         
         var copy_animation_node_handle = animationNode?.handle
         
@@ -129,7 +129,7 @@ open class AnimationTree: AnimationMixer {
     
     @inline(__always)
     fileprivate final func set_advance_expression_base_node (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationTree.method_set_advance_expression_base_node, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -177,7 +177,7 @@ open class AnimationTree: AnimationMixer {
     
     @inline(__always)
     fileprivate final func set_animation_player (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationTree.method_set_animation_player, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -225,7 +225,7 @@ open class AnimationTree: AnimationMixer {
     
     /// For backward compatibility. See ``AnimationMixer.AnimationCallbackModeProcess``.
     public final func setProcessCallback (mode: AnimationTree.AnimationProcessCallback) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

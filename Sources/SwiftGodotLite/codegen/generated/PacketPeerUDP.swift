@@ -35,7 +35,7 @@ open class PacketPeerUDP: PacketPeer {
     /// 
     public final func bind (port: Int32, bindAddress: String = "*", recvBufSize: Int32 = 65536)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_port: Int = Int (port)
         let gstr_bind_address = GString (bindAddress)
@@ -137,7 +137,7 @@ open class PacketPeerUDP: PacketPeer {
     /// 
     public final func connectToHost (_ host: String, port: Int32)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_host = GString (host)
         var copy_port: Int = Int (port)
@@ -251,7 +251,7 @@ open class PacketPeerUDP: PacketPeer {
     /// 
     public final func setDestAddress (host: String, port: Int32)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_host = GString (host)
         var copy_port: Int = Int (port)
@@ -292,7 +292,7 @@ open class PacketPeerUDP: PacketPeer {
     /// > Note: Some Android devices might require the `CHANGE_WIFI_MULTICAST_STATE` permission and this option to be enabled to receive broadcast packets too.
     /// 
     public final func setBroadcastEnabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -330,7 +330,7 @@ open class PacketPeerUDP: PacketPeer {
     /// 
     public final func joinMulticastGroup (multicastAddress: String, interfaceName: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_multicast_address = GString (multicastAddress)
         let gstr_interface_name = GString (interfaceName)
@@ -369,7 +369,7 @@ open class PacketPeerUDP: PacketPeer {
     /// Removes the interface identified by `interfaceName` from the multicast group specified by `multicastAddress`.
     public final func leaveMulticastGroup (multicastAddress: String, interfaceName: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_multicast_address = GString (multicastAddress)
         let gstr_interface_name = GString (interfaceName)

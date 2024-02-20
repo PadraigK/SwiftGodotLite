@@ -114,7 +114,7 @@ open class PhysicsBody3D: CollisionObject3D {
     /// 
     public final func moveAndCollide (motion: Vector3, testOnly: Bool = false, safeMargin: Double = 0.001, recoveryAsCollision: Bool = false, maxCollisions: Int32 = 1)-> KinematicCollision3D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_motion = motion
         var copy_test_only = testOnly
@@ -179,7 +179,7 @@ open class PhysicsBody3D: CollisionObject3D {
     /// 
     public final func testMove (from: Transform3D, motion: Vector3, collision: KinematicCollision3D? = nil, safeMargin: Double = 0.001, recoveryAsCollision: Bool = false, maxCollisions: Int32 = 1)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_from = from
         var copy_motion = motion
@@ -237,7 +237,7 @@ open class PhysicsBody3D: CollisionObject3D {
     @inline(__always)
     /// Locks or unlocks the specified linear or rotational `axis` depending on the value of `lock`.
     fileprivate final func set_axis_lock (_ axis: PhysicsServer3D.BodyAxis, _ lock: Bool) {
-        #if true
+        #if false
         
         var copy_axis = Int64 (axis.rawValue)
         var copy_lock = lock
@@ -276,7 +276,7 @@ open class PhysicsBody3D: CollisionObject3D {
     /// Returns `true` if the specified linear or rotational `axis` is locked.
     fileprivate final func get_axis_lock (_ axis: PhysicsServer3D.BodyAxis)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_axis = Int64 (axis.rawValue)
         
@@ -327,7 +327,7 @@ open class PhysicsBody3D: CollisionObject3D {
     
     /// Adds a body to the list of bodies that this body can't collide with.
     public final func addCollisionExceptionWith (body: Node?) {
-        #if true
+        #if false
         
         var copy_body_handle = body?.handle
         
@@ -358,7 +358,7 @@ open class PhysicsBody3D: CollisionObject3D {
     
     /// Removes a body from the list of bodies that this body can't collide with.
     public final func removeCollisionExceptionWith (body: Node?) {
-        #if true
+        #if false
         
         var copy_body_handle = body?.handle
         

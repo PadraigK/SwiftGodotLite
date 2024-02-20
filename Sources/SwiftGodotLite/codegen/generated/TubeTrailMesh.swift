@@ -126,7 +126,7 @@ open class TubeTrailMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -176,7 +176,7 @@ open class TubeTrailMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_radial_steps (_ radialSteps: Int32) {
-        #if true
+        #if false
         
         var copy_radial_steps: Int = Int (radialSteps)
         
@@ -226,7 +226,7 @@ open class TubeTrailMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_sections (_ sections: Int32) {
-        #if true
+        #if false
         
         var copy_sections: Int = Int (sections)
         
@@ -276,7 +276,7 @@ open class TubeTrailMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_section_length (_ sectionLength: Double) {
-        #if true
+        #if false
         
         var copy_section_length = sectionLength
         
@@ -326,7 +326,7 @@ open class TubeTrailMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_section_rings (_ sectionRings: Int32) {
-        #if true
+        #if false
         
         var copy_section_rings: Int = Int (sectionRings)
         
@@ -376,7 +376,7 @@ open class TubeTrailMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_cap_top (_ capTop: Bool) {
-        #if true
+        #if false
         
         var copy_cap_top = capTop
         
@@ -426,7 +426,7 @@ open class TubeTrailMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_cap_bottom (_ capBottom: Bool) {
-        #if true
+        #if false
         
         var copy_cap_bottom = capBottom
         
@@ -476,7 +476,7 @@ open class TubeTrailMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_curve (_ curve: Curve?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         

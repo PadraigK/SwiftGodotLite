@@ -98,7 +98,7 @@ open class SkeletonProfile: Resource {
     
     @inline(__always)
     fileprivate final func set_root_bone (_ boneName: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SkeletonProfile.method_set_root_bone, UnsafeMutableRawPointer (mutating: handle), nil, &boneName.content)
@@ -146,7 +146,7 @@ open class SkeletonProfile: Resource {
     
     @inline(__always)
     fileprivate final func set_scale_base_bone (_ boneName: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SkeletonProfile.method_set_scale_base_bone, UnsafeMutableRawPointer (mutating: handle), nil, &boneName.content)
@@ -194,7 +194,7 @@ open class SkeletonProfile: Resource {
     
     @inline(__always)
     fileprivate final func set_group_size (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -245,7 +245,7 @@ open class SkeletonProfile: Resource {
     /// Returns the name of the group at `groupIdx` that will be the drawing group in the ``BoneMap`` editor.
     public final func getGroupName (groupIdx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_group_idx: Int = Int (groupIdx)
         
@@ -278,7 +278,7 @@ open class SkeletonProfile: Resource {
     
     /// Sets the name of the group at `groupIdx` that will be the drawing group in the ``BoneMap`` editor.
     public final func setGroupName (groupIdx: Int32, groupName: StringName) {
-        #if true
+        #if false
         
         var copy_group_idx: Int = Int (groupIdx)
         
@@ -314,7 +314,7 @@ open class SkeletonProfile: Resource {
     /// Returns the texture of the group at `groupIdx` that will be the drawing group background image in the ``BoneMap`` editor.
     public final func getTexture (groupIdx: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_group_idx: Int = Int (groupIdx)
         
@@ -347,7 +347,7 @@ open class SkeletonProfile: Resource {
     
     /// Sets the texture of the group at `groupIdx` that will be the drawing group background image in the ``BoneMap`` editor.
     public final func setTexture (groupIdx: Int32, texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_group_idx: Int = Int (groupIdx)
         var copy_texture_handle = texture?.handle
@@ -383,7 +383,7 @@ open class SkeletonProfile: Resource {
     
     @inline(__always)
     fileprivate final func set_bone_size (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -434,7 +434,7 @@ open class SkeletonProfile: Resource {
     /// Returns the bone index that matches `boneName` as its name.
     public final func findBone (boneName: StringName)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SkeletonProfile.method_find_bone, UnsafeMutableRawPointer (mutating: handle), &_result, &boneName.content)
@@ -469,7 +469,7 @@ open class SkeletonProfile: Resource {
     /// 
     public final func getBoneName (boneIdx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -505,7 +505,7 @@ open class SkeletonProfile: Resource {
     /// In the retargeting process, the setting bone name is the bone name of the target skeleton.
     /// 
     public final func setBoneName (boneIdx: Int32, boneName: StringName) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -541,7 +541,7 @@ open class SkeletonProfile: Resource {
     /// Returns the name of the bone which is the parent to the bone at `boneIdx`. The result is empty if the bone has no parent.
     public final func getBoneParent (boneIdx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -574,7 +574,7 @@ open class SkeletonProfile: Resource {
     
     /// Sets the bone with name `boneParent` as the parent of the bone at `boneIdx`. If an empty string is passed, then the bone has no parent.
     public final func setBoneParent (boneIdx: Int32, boneParent: StringName) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -610,7 +610,7 @@ open class SkeletonProfile: Resource {
     /// Returns the tail direction of the bone at `boneIdx`.
     public final func getTailDirection (boneIdx: Int32)-> SkeletonProfile.TailDirection {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -646,7 +646,7 @@ open class SkeletonProfile: Resource {
     /// > Note: This only specifies the method of calculation. The actual coordinates required should be stored in an external skeleton, so the calculation itself needs to be done externally.
     /// 
     public final func setTailDirection (boneIdx: Int32, tailDirection: SkeletonProfile.TailDirection) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         var copy_tail_direction = Int64 (tailDirection.rawValue)
@@ -684,7 +684,7 @@ open class SkeletonProfile: Resource {
     /// Returns the name of the bone which is the tail of the bone at `boneIdx`.
     public final func getBoneTail (boneIdx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -717,7 +717,7 @@ open class SkeletonProfile: Resource {
     
     /// Sets the bone with name `boneTail` as the tail of the bone at `boneIdx`.
     public final func setBoneTail (boneIdx: Int32, boneTail: StringName) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -753,7 +753,7 @@ open class SkeletonProfile: Resource {
     /// Returns the reference pose transform for bone `boneIdx`.
     public final func getReferencePose (boneIdx: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -786,7 +786,7 @@ open class SkeletonProfile: Resource {
     
     /// Sets the reference pose transform for bone `boneIdx`.
     public final func setReferencePose (boneIdx: Int32, boneName: Transform3D) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         var copy_bone_name = boneName
@@ -827,7 +827,7 @@ open class SkeletonProfile: Resource {
     /// 
     public final func getHandleOffset (boneIdx: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -863,7 +863,7 @@ open class SkeletonProfile: Resource {
     /// This is the offset with origin at the top left corner of the square.
     /// 
     public final func setHandleOffset (boneIdx: Int32, handleOffset: Vector2) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         var copy_handle_offset = handleOffset
@@ -901,7 +901,7 @@ open class SkeletonProfile: Resource {
     /// Returns the group of the bone at `boneIdx`.
     public final func getGroup (boneIdx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -934,7 +934,7 @@ open class SkeletonProfile: Resource {
     
     /// Sets the group of the bone at `boneIdx`.
     public final func setGroup (boneIdx: Int32, group: StringName) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         

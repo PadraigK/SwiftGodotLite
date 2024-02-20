@@ -94,7 +94,7 @@ open class Theme: Resource {
     
     /// Creates or changes the value of the icon property defined by `name` and `themeType`. Use ``clearIcon(name:themeType:)`` to remove the property.
     public final func setIcon (name: StringName, themeType: StringName, texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -135,7 +135,7 @@ open class Theme: Resource {
     /// 
     public final func getIcon (name: StringName, themeType: StringName)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_get_icon, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -173,7 +173,7 @@ open class Theme: Resource {
     /// 
     public final func hasIcon (name: StringName, themeType: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_has_icon, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -210,7 +210,7 @@ open class Theme: Resource {
     /// Fails if it doesn't exist, or if a similar property with the new name already exists. Use ``hasIcon(name:themeType:)`` to check for existence, and ``clearIcon(name:themeType:)`` to remove the existing property.
     /// 
     public final func renameIcon (oldName: StringName, name: StringName, themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_rename_icon, UnsafeMutableRawPointer (mutating: handle), nil, &oldName.content, &name.content, &themeType.content)
@@ -249,7 +249,7 @@ open class Theme: Resource {
     /// Fails if it doesn't exist. Use ``hasIcon(name:themeType:)`` to check for existence.
     /// 
     public final func clearIcon (name: StringName, themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_clear_icon, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &themeType.content)
@@ -283,7 +283,7 @@ open class Theme: Resource {
     /// Returns a list of names for icon properties defined with `themeType`. Use ``getIconTypeList()`` to get a list of possible theme type names.
     public final func getIconList (themeType: String)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_theme_type = GString (themeType)
         
@@ -334,7 +334,7 @@ open class Theme: Resource {
     
     /// Creates or changes the value of the ``StyleBox`` property defined by `name` and `themeType`. Use ``clearStylebox(name:themeType:)`` to remove the property.
     public final func setStylebox (name: StringName, themeType: StringName, texture: StyleBox?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -375,7 +375,7 @@ open class Theme: Resource {
     /// 
     public final func getStylebox (name: StringName, themeType: StringName)-> StyleBox? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_get_stylebox, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -413,7 +413,7 @@ open class Theme: Resource {
     /// 
     public final func hasStylebox (name: StringName, themeType: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_has_stylebox, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -450,7 +450,7 @@ open class Theme: Resource {
     /// Fails if it doesn't exist, or if a similar property with the new name already exists. Use ``hasStylebox(name:themeType:)`` to check for existence, and ``clearStylebox(name:themeType:)`` to remove the existing property.
     /// 
     public final func renameStylebox (oldName: StringName, name: StringName, themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_rename_stylebox, UnsafeMutableRawPointer (mutating: handle), nil, &oldName.content, &name.content, &themeType.content)
@@ -489,7 +489,7 @@ open class Theme: Resource {
     /// Fails if it doesn't exist. Use ``hasStylebox(name:themeType:)`` to check for existence.
     /// 
     public final func clearStylebox (name: StringName, themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_clear_stylebox, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &themeType.content)
@@ -523,7 +523,7 @@ open class Theme: Resource {
     /// Returns a list of names for ``StyleBox`` properties defined with `themeType`. Use ``getStyleboxTypeList()`` to get a list of possible theme type names.
     public final func getStyleboxList (themeType: String)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_theme_type = GString (themeType)
         
@@ -574,7 +574,7 @@ open class Theme: Resource {
     
     /// Creates or changes the value of the ``Font`` property defined by `name` and `themeType`. Use ``clearFont(name:themeType:)`` to remove the property.
     public final func setFont (name: StringName, themeType: StringName, font: Font?) {
-        #if true
+        #if false
         
         var copy_font_handle = font?.handle
         
@@ -617,7 +617,7 @@ open class Theme: Resource {
     /// 
     public final func getFont (name: StringName, themeType: StringName)-> Font? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_get_font, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -655,7 +655,7 @@ open class Theme: Resource {
     /// 
     public final func hasFont (name: StringName, themeType: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_has_font, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -692,7 +692,7 @@ open class Theme: Resource {
     /// Fails if it doesn't exist, or if a similar property with the new name already exists. Use ``hasFont(name:themeType:)`` to check for existence, and ``clearFont(name:themeType:)`` to remove the existing property.
     /// 
     public final func renameFont (oldName: StringName, name: StringName, themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_rename_font, UnsafeMutableRawPointer (mutating: handle), nil, &oldName.content, &name.content, &themeType.content)
@@ -731,7 +731,7 @@ open class Theme: Resource {
     /// Fails if it doesn't exist. Use ``hasFont(name:themeType:)`` to check for existence.
     /// 
     public final func clearFont (name: StringName, themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_clear_font, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &themeType.content)
@@ -765,7 +765,7 @@ open class Theme: Resource {
     /// Returns a list of names for ``Font`` properties defined with `themeType`. Use ``getFontTypeList()`` to get a list of possible theme type names.
     public final func getFontList (themeType: String)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_theme_type = GString (themeType)
         
@@ -816,7 +816,7 @@ open class Theme: Resource {
     
     /// Creates or changes the value of the font size property defined by `name` and `themeType`. Use ``clearFontSize(name:themeType:)`` to remove the property.
     public final func setFontSize (name: StringName, themeType: StringName, fontSize: Int32) {
-        #if true
+        #if false
         
         var copy_font_size: Int = Int (fontSize)
         
@@ -860,7 +860,7 @@ open class Theme: Resource {
     /// 
     public final func getFontSize (name: StringName, themeType: StringName)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_get_font_size, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -898,7 +898,7 @@ open class Theme: Resource {
     /// 
     public final func hasFontSize (name: StringName, themeType: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_has_font_size, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -935,7 +935,7 @@ open class Theme: Resource {
     /// Fails if it doesn't exist, or if a similar property with the new name already exists. Use ``hasFontSize(name:themeType:)`` to check for existence, and ``clearFontSize(name:themeType:)`` to remove the existing property.
     /// 
     public final func renameFontSize (oldName: StringName, name: StringName, themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_rename_font_size, UnsafeMutableRawPointer (mutating: handle), nil, &oldName.content, &name.content, &themeType.content)
@@ -974,7 +974,7 @@ open class Theme: Resource {
     /// Fails if it doesn't exist. Use ``hasFontSize(name:themeType:)`` to check for existence.
     /// 
     public final func clearFontSize (name: StringName, themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_clear_font_size, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &themeType.content)
@@ -1008,7 +1008,7 @@ open class Theme: Resource {
     /// Returns a list of names for font size properties defined with `themeType`. Use ``getFontSizeTypeList()`` to get a list of possible theme type names.
     public final func getFontSizeList (themeType: String)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_theme_type = GString (themeType)
         
@@ -1059,7 +1059,7 @@ open class Theme: Resource {
     
     /// Creates or changes the value of the ``Color`` property defined by `name` and `themeType`. Use ``clearColor(name:themeType:)`` to remove the property.
     public final func setColor (name: StringName, themeType: StringName, color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -1101,7 +1101,7 @@ open class Theme: Resource {
     /// 
     public final func getColor (name: StringName, themeType: StringName)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_get_color, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -1139,7 +1139,7 @@ open class Theme: Resource {
     /// 
     public final func hasColor (name: StringName, themeType: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_has_color, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -1176,7 +1176,7 @@ open class Theme: Resource {
     /// Fails if it doesn't exist, or if a similar property with the new name already exists. Use ``hasColor(name:themeType:)`` to check for existence, and ``clearColor(name:themeType:)`` to remove the existing property.
     /// 
     public final func renameColor (oldName: StringName, name: StringName, themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_rename_color, UnsafeMutableRawPointer (mutating: handle), nil, &oldName.content, &name.content, &themeType.content)
@@ -1215,7 +1215,7 @@ open class Theme: Resource {
     /// Fails if it doesn't exist. Use ``hasColor(name:themeType:)`` to check for existence.
     /// 
     public final func clearColor (name: StringName, themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_clear_color, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &themeType.content)
@@ -1249,7 +1249,7 @@ open class Theme: Resource {
     /// Returns a list of names for ``Color`` properties defined with `themeType`. Use ``getColorTypeList()`` to get a list of possible theme type names.
     public final func getColorList (themeType: String)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_theme_type = GString (themeType)
         
@@ -1300,7 +1300,7 @@ open class Theme: Resource {
     
     /// Creates or changes the value of the constant property defined by `name` and `themeType`. Use ``clearConstant(name:themeType:)`` to remove the property.
     public final func setConstant (name: StringName, themeType: StringName, constant: Int32) {
-        #if true
+        #if false
         
         var copy_constant: Int = Int (constant)
         
@@ -1342,7 +1342,7 @@ open class Theme: Resource {
     /// 
     public final func getConstant (name: StringName, themeType: StringName)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_get_constant, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -1380,7 +1380,7 @@ open class Theme: Resource {
     /// 
     public final func hasConstant (name: StringName, themeType: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_has_constant, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -1417,7 +1417,7 @@ open class Theme: Resource {
     /// Fails if it doesn't exist, or if a similar property with the new name already exists. Use ``hasConstant(name:themeType:)`` to check for existence, and ``clearConstant(name:themeType:)`` to remove the existing property.
     /// 
     public final func renameConstant (oldName: StringName, name: StringName, themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_rename_constant, UnsafeMutableRawPointer (mutating: handle), nil, &oldName.content, &name.content, &themeType.content)
@@ -1456,7 +1456,7 @@ open class Theme: Resource {
     /// Fails if it doesn't exist. Use ``hasConstant(name:themeType:)`` to check for existence.
     /// 
     public final func clearConstant (name: StringName, themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_clear_constant, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &themeType.content)
@@ -1490,7 +1490,7 @@ open class Theme: Resource {
     /// Returns a list of names for constant properties defined with `themeType`. Use ``getConstantTypeList()`` to get a list of possible theme type names.
     public final func getConstantList (themeType: String)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_theme_type = GString (themeType)
         
@@ -1541,7 +1541,7 @@ open class Theme: Resource {
     
     @inline(__always)
     fileprivate final func set_default_base_scale (_ baseScale: Double) {
-        #if true
+        #if false
         
         var copy_base_scale = baseScale
         
@@ -1612,7 +1612,7 @@ open class Theme: Resource {
     
     @inline(__always)
     fileprivate final func set_default_font (_ font: Font?) {
-        #if true
+        #if false
         
         var copy_font_handle = font?.handle
         
@@ -1682,7 +1682,7 @@ open class Theme: Resource {
     
     @inline(__always)
     fileprivate final func set_default_font_size (_ fontSize: Int32) {
-        #if true
+        #if false
         
         var copy_font_size: Int = Int (fontSize)
         
@@ -1758,7 +1758,7 @@ open class Theme: Resource {
     /// > Note: This method is analogous to calling the corresponding data type specific method, but can be used for more generalized logic.
     /// 
     public final func setThemeItem (dataType: Theme.DataType, name: StringName, themeType: StringName, value: Variant) {
-        #if true
+        #if false
         
         var copy_data_type = Int64 (dataType.rawValue)
         
@@ -1805,7 +1805,7 @@ open class Theme: Resource {
     /// 
     public final func getThemeItem (dataType: Theme.DataType, name: StringName, themeType: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_data_type = Int64 (dataType.rawValue)
         
@@ -1850,7 +1850,7 @@ open class Theme: Resource {
     /// 
     public final func hasThemeItem (dataType: Theme.DataType, name: StringName, themeType: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_data_type = Int64 (dataType.rawValue)
         
@@ -1894,7 +1894,7 @@ open class Theme: Resource {
     /// > Note: This method is analogous to calling the corresponding data type specific method, but can be used for more generalized logic.
     /// 
     public final func renameThemeItem (dataType: Theme.DataType, oldName: StringName, name: StringName, themeType: StringName) {
-        #if true
+        #if false
         
         var copy_data_type = Int64 (dataType.rawValue)
         
@@ -1940,7 +1940,7 @@ open class Theme: Resource {
     /// > Note: This method is analogous to calling the corresponding data type specific method, but can be used for more generalized logic.
     /// 
     public final func clearThemeItem (dataType: Theme.DataType, name: StringName, themeType: StringName) {
-        #if true
+        #if false
         
         var copy_data_type = Int64 (dataType.rawValue)
         
@@ -1982,7 +1982,7 @@ open class Theme: Resource {
     /// 
     public final func getThemeItemList (dataType: Theme.DataType, themeType: String)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         var copy_data_type = Int64 (dataType.rawValue)
         let gstr_theme_type = GString (themeType)
@@ -2024,7 +2024,7 @@ open class Theme: Resource {
     /// 
     public final func getThemeItemTypeList (dataType: Theme.DataType)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         var copy_data_type = Int64 (dataType.rawValue)
         
@@ -2064,7 +2064,7 @@ open class Theme: Resource {
     /// > Note: Suggestions only show up if this theme resource is set as the project default theme. See ``ProjectSettings/gui/theme/custom``.
     /// 
     public final func setTypeVariation (themeType: StringName, baseType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_set_type_variation, UnsafeMutableRawPointer (mutating: handle), nil, &themeType.content, &baseType.content)
@@ -2098,7 +2098,7 @@ open class Theme: Resource {
     /// Returns `true` if `themeType` is marked as a variation of `baseType`.
     public final func isTypeVariation (themeType: StringName, baseType: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_is_type_variation, UnsafeMutableRawPointer (mutating: handle), &_result, &themeType.content, &baseType.content)
@@ -2132,7 +2132,7 @@ open class Theme: Resource {
     
     /// Unmarks `themeType` as being a variation of another theme type. See ``setTypeVariation(themeType:baseType:)``.
     public final func clearTypeVariation (themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_clear_type_variation, UnsafeMutableRawPointer (mutating: handle), nil, &themeType.content)
@@ -2163,7 +2163,7 @@ open class Theme: Resource {
     /// Returns the name of the base theme type if `themeType` is a valid variation type. Returns an empty string otherwise.
     public final func getTypeVariationBase (themeType: StringName)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_get_type_variation_base, UnsafeMutableRawPointer (mutating: handle), &_result.content, &themeType.content)
@@ -2195,7 +2195,7 @@ open class Theme: Resource {
     /// Returns a list of all type variations for the given `baseType`.
     public final func getTypeVariationList (baseType: StringName)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_get_type_variation_list, UnsafeMutableRawPointer (mutating: handle), &_result.content, &baseType.content)
@@ -2229,7 +2229,7 @@ open class Theme: Resource {
     /// > Note: Empty types are not saved with the theme. This method only exists to perform in-memory changes to the resource. Use available `set_*` methods to add theme items.
     /// 
     public final func addType (themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_add_type, UnsafeMutableRawPointer (mutating: handle), nil, &themeType.content)
@@ -2259,7 +2259,7 @@ open class Theme: Resource {
     
     /// Removes the theme type, gracefully discarding defined theme items. If the type is a variation, this information is also erased. If the type is a base for type variations, those variations lose their base.
     public final func removeType (themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Theme.method_remove_type, UnsafeMutableRawPointer (mutating: handle), nil, &themeType.content)
@@ -2310,7 +2310,7 @@ open class Theme: Resource {
     /// > Note: This modifies the current theme. If you want to merge two themes together without modifying either one, create a new empty theme and merge the other two into it one after another.
     /// 
     public final func mergeWith (other: Theme?) {
-        #if true
+        #if false
         
         var copy_other_handle = other?.handle
         

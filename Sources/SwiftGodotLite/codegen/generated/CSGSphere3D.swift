@@ -90,7 +90,7 @@ open class CSGSphere3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -140,7 +140,7 @@ open class CSGSphere3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_radial_segments (_ radialSegments: Int32) {
-        #if true
+        #if false
         
         var copy_radial_segments: Int = Int (radialSegments)
         
@@ -190,7 +190,7 @@ open class CSGSphere3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_rings (_ rings: Int32) {
-        #if true
+        #if false
         
         var copy_rings: Int = Int (rings)
         
@@ -240,7 +240,7 @@ open class CSGSphere3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_smooth_faces (_ smoothFaces: Bool) {
-        #if true
+        #if false
         
         var copy_smooth_faces = smoothFaces
         
@@ -290,7 +290,7 @@ open class CSGSphere3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_material (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         

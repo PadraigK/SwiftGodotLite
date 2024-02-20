@@ -42,7 +42,7 @@ open class Path2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_curve (_ curve: Curve2D?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         

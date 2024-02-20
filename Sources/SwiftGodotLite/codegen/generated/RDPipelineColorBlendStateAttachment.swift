@@ -188,7 +188,7 @@ open class RDPipelineColorBlendStateAttachment: RefCounted {
     
     @inline(__always)
     fileprivate final func set_enable_blend (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -238,7 +238,7 @@ open class RDPipelineColorBlendStateAttachment: RefCounted {
     
     @inline(__always)
     fileprivate final func set_src_color_blend_factor (_ pMember: RenderingDevice.BlendFactor) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -288,7 +288,7 @@ open class RDPipelineColorBlendStateAttachment: RefCounted {
     
     @inline(__always)
     fileprivate final func set_dst_color_blend_factor (_ pMember: RenderingDevice.BlendFactor) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -338,7 +338,7 @@ open class RDPipelineColorBlendStateAttachment: RefCounted {
     
     @inline(__always)
     fileprivate final func set_color_blend_op (_ pMember: RenderingDevice.BlendOperation) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -388,7 +388,7 @@ open class RDPipelineColorBlendStateAttachment: RefCounted {
     
     @inline(__always)
     fileprivate final func set_src_alpha_blend_factor (_ pMember: RenderingDevice.BlendFactor) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -438,7 +438,7 @@ open class RDPipelineColorBlendStateAttachment: RefCounted {
     
     @inline(__always)
     fileprivate final func set_dst_alpha_blend_factor (_ pMember: RenderingDevice.BlendFactor) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -488,7 +488,7 @@ open class RDPipelineColorBlendStateAttachment: RefCounted {
     
     @inline(__always)
     fileprivate final func set_alpha_blend_op (_ pMember: RenderingDevice.BlendOperation) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -538,7 +538,7 @@ open class RDPipelineColorBlendStateAttachment: RefCounted {
     
     @inline(__always)
     fileprivate final func set_write_r (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -588,7 +588,7 @@ open class RDPipelineColorBlendStateAttachment: RefCounted {
     
     @inline(__always)
     fileprivate final func set_write_g (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -638,7 +638,7 @@ open class RDPipelineColorBlendStateAttachment: RefCounted {
     
     @inline(__always)
     fileprivate final func set_write_b (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -688,7 +688,7 @@ open class RDPipelineColorBlendStateAttachment: RefCounted {
     
     @inline(__always)
     fileprivate final func set_write_a (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         

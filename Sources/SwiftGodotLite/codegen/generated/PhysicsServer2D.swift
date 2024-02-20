@@ -433,7 +433,7 @@ open class PhysicsServer2D: Object {
     /// > Warning: In the case of .shapeConvexPolygon, this method does not check if the points supplied actually form a convex polygon (unlike the ``CollisionPolygon2D/polygon`` property).
     /// 
     public static func shapeSetData (shape: RID, data: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_shape_set_data, UnsafeMutableRawPointer (mutating: shared.handle), nil, &shape.content, &data.content)
@@ -467,7 +467,7 @@ open class PhysicsServer2D: Object {
     /// Returns the shape's type (see ``PhysicsServer2D/ShapeType``).
     public static func shapeGetType (shape: RID)-> PhysicsServer2D.ShapeType {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_shape_get_type, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &shape.content)
@@ -499,7 +499,7 @@ open class PhysicsServer2D: Object {
     /// Returns the shape data that defines the configuration of the shape, such as the half-extents of a rectangle or the segments of a concave shape. See ``shapeSetData(shape:data:)`` for the precise format of this data in each case.
     public static func shapeGetData (shape: RID)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_shape_get_data, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &shape.content)
@@ -548,7 +548,7 @@ open class PhysicsServer2D: Object {
     
     /// Activates or deactivates the space. If `active` is `false`, then the physics server will not do anything with this space in its physics step.
     public static func spaceSetActive (space: RID, active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         
@@ -584,7 +584,7 @@ open class PhysicsServer2D: Object {
     /// Returns `true` if the space is active.
     public static func spaceIsActive (space: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_space_is_active, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &space.content)
@@ -615,7 +615,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the value of the given space parameter. See ``PhysicsServer2D/SpaceParameter`` for the list of available parameters.
     public static func spaceSetParam (space: RID, param: PhysicsServer2D.SpaceParameter, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -656,7 +656,7 @@ open class PhysicsServer2D: Object {
     /// Returns the value of the given space parameter. See ``PhysicsServer2D/SpaceParameter`` for the list of available parameters.
     public static func spaceGetParam (space: RID, param: PhysicsServer2D.SpaceParameter)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -693,7 +693,7 @@ open class PhysicsServer2D: Object {
     /// Returns the state of a space, a ``PhysicsDirectSpaceState2D``. This object can be used for collision/intersection queries.
     public static func spaceGetDirectState (space: RID)-> PhysicsDirectSpaceState2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_space_get_direct_state, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &space.content)
@@ -745,7 +745,7 @@ open class PhysicsServer2D: Object {
     /// > Note: To remove an area from a space without immediately adding it back elsewhere, use `PhysicsServer2D.area_set_space(area, RID())`.
     /// 
     public static func areaSetSpace (area: RID, space: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_area_set_space, UnsafeMutableRawPointer (mutating: shared.handle), nil, &area.content, &space.content)
@@ -779,7 +779,7 @@ open class PhysicsServer2D: Object {
     /// Returns the ``RID`` of the space assigned to the area. Returns an empty ``RID`` if no space is assigned.
     public static func areaGetSpace (area: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_area_get_space, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &area.content)
@@ -810,7 +810,7 @@ open class PhysicsServer2D: Object {
     
     /// Adds a shape to the area, with the given local transform. The shape (together with its `transform` and `disabled` properties) is added to an array of shapes, and the shapes of an area are usually referenced by their index in this array.
     public static func areaAddShape (area: RID, shape: RID, transform: Transform2D = Transform2D (xAxis: Vector2 (x: 1, y: 0), yAxis: Vector2 (x: 0, y: 1), origin: Vector2 (x: 0, y: 0)), disabled: Bool = false) {
-        #if true
+        #if false
         
         var copy_transform = transform
         var copy_disabled = disabled
@@ -853,7 +853,7 @@ open class PhysicsServer2D: Object {
     
     /// Replaces the area's shape at the given index by another shape, while not affecting the `transform` and `disabled` properties at the same index.
     public static func areaSetShape (area: RID, shapeIdx: Int32, shape: RID) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -891,7 +891,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the local transform matrix of the area's shape with the given index.
     public static func areaSetShapeTransform (area: RID, shapeIdx: Int32, transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         var copy_transform = transform
@@ -931,7 +931,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the disabled property of the area's shape with the given index. If `disabled` is `true`, then the shape will not detect any other shapes entering or exiting it.
     public static func areaSetShapeDisabled (area: RID, shapeIdx: Int32, disabled: Bool) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         var copy_disabled = disabled
@@ -972,7 +972,7 @@ open class PhysicsServer2D: Object {
     /// Returns the number of shapes added to the area.
     public static func areaGetShapeCount (area: RID)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_area_get_shape_count, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &area.content)
@@ -1004,7 +1004,7 @@ open class PhysicsServer2D: Object {
     /// Returns the ``RID`` of the shape with the given index in the area's array of shapes.
     public static func areaGetShape (area: RID, shapeIdx: Int32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -1041,7 +1041,7 @@ open class PhysicsServer2D: Object {
     /// Returns the local transform matrix of the shape with the given index in the area's array of shapes.
     public static func areaGetShapeTransform (area: RID, shapeIdx: Int32)-> Transform2D {
         var _result: Transform2D = Transform2D ()
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -1077,7 +1077,7 @@ open class PhysicsServer2D: Object {
     
     /// Removes the shape with the given index from the area's array of shapes. The shape itself is not deleted, so it can continue to be used elsewhere or added back later. As a result of this operation, the area's shapes which used to have indices higher than `shapeIdx` will have their index decreased by one.
     public static func areaRemoveShape (area: RID, shapeIdx: Int32) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -1112,7 +1112,7 @@ open class PhysicsServer2D: Object {
     
     /// Removes all shapes from the area. This does not delete the shapes themselves, so they can continue to be used elsewhere or added back later.
     public static func areaClearShapes (area: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_area_clear_shapes, UnsafeMutableRawPointer (mutating: shared.handle), nil, &area.content)
@@ -1142,7 +1142,7 @@ open class PhysicsServer2D: Object {
     
     /// Assigns the area to one or many physics layers, via a bitmask.
     public static func areaSetCollisionLayer (area: RID, layer: UInt32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -1178,7 +1178,7 @@ open class PhysicsServer2D: Object {
     /// Returns the physics layer or layers the area belongs to, as a bitmask.
     public static func areaGetCollisionLayer (area: RID)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_area_get_collision_layer, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &area.content)
@@ -1209,7 +1209,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets which physics layers the area will monitor, via a bitmask.
     public static func areaSetCollisionMask (area: RID, mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -1245,7 +1245,7 @@ open class PhysicsServer2D: Object {
     /// Returns the physics layer or layers the area can contact with, as a bitmask.
     public static func areaGetCollisionMask (area: RID)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_area_get_collision_mask, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &area.content)
@@ -1276,7 +1276,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the value of the given area parameter. See ``PhysicsServer2D/AreaParameter`` for the list of available parameters.
     public static func areaSetParam (area: RID, param: PhysicsServer2D.AreaParameter, value: Variant) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -1314,7 +1314,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the transform matrix of the area.
     public static func areaSetTransform (area: RID, transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -1350,7 +1350,7 @@ open class PhysicsServer2D: Object {
     /// Returns the value of the given area parameter. See ``PhysicsServer2D/AreaParameter`` for the list of available parameters.
     public static func areaGetParam (area: RID, param: PhysicsServer2D.AreaParameter)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -1387,7 +1387,7 @@ open class PhysicsServer2D: Object {
     /// Returns the transform matrix of the area.
     public static func areaGetTransform (area: RID)-> Transform2D {
         var _result: Transform2D = Transform2D ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_area_get_transform, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &area.content)
@@ -1418,7 +1418,7 @@ open class PhysicsServer2D: Object {
     
     /// Attaches the `ObjectID` of an ``Object`` to the area. Use ``Object/getInstanceId()`` to get the `ObjectID` of a ``CollisionObject2D``.
     public static func areaAttachObjectInstanceId (area: RID, id: UInt) {
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -1454,7 +1454,7 @@ open class PhysicsServer2D: Object {
     /// Returns the `ObjectID` attached to the area. Use ``@GlobalScope.instance_from_id`` to retrieve an ``Object`` from a nonzero `ObjectID`.
     public static func areaGetObjectInstanceId (area: RID)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_area_get_object_instance_id, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &area.content)
@@ -1485,7 +1485,7 @@ open class PhysicsServer2D: Object {
     
     /// Attaches the `ObjectID` of a canvas to the area. Use ``Object/getInstanceId()`` to get the `ObjectID` of a ``CanvasLayer``.
     public static func areaAttachCanvasInstanceId (area: RID, id: UInt) {
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -1521,7 +1521,7 @@ open class PhysicsServer2D: Object {
     /// Returns the `ObjectID` of the canvas attached to the area. Use ``@GlobalScope.instance_from_id`` to retrieve a ``CanvasLayer`` from a nonzero `ObjectID`.
     public static func areaGetCanvasInstanceId (area: RID)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_area_get_canvas_instance_id, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &area.content)
@@ -1565,7 +1565,7 @@ open class PhysicsServer2D: Object {
     /// By counting (or keeping track of) the shapes that enter and exit, it can be determined if a body (with all its shapes) is entering for the first time or exiting for the last time.
     /// 
     public static func areaSetMonitorCallback (area: RID, callback: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_area_set_monitor_callback, UnsafeMutableRawPointer (mutating: shared.handle), nil, &area.content, &callback.content)
@@ -1611,7 +1611,7 @@ open class PhysicsServer2D: Object {
     /// By counting (or keeping track of) the shapes that enter and exit, it can be determined if an area (with all its shapes) is entering for the first time or exiting for the last time.
     /// 
     public static func areaSetAreaMonitorCallback (area: RID, callback: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_area_set_area_monitor_callback, UnsafeMutableRawPointer (mutating: shared.handle), nil, &area.content, &callback.content)
@@ -1644,7 +1644,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets whether the area is monitorable or not. If `monitorable` is `true`, the area monitoring callback of other areas will be called when this area enters or exits them.
     public static func areaSetMonitorable (area: RID, monitorable: Bool) {
-        #if true
+        #if false
         
         var copy_monitorable = monitorable
         
@@ -1704,7 +1704,7 @@ open class PhysicsServer2D: Object {
     /// > Note: To remove a body from a space without immediately adding it back elsewhere, use `PhysicsServer2D.body_set_space(body, RID())`.
     /// 
     public static func bodySetSpace (body: RID, space: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_set_space, UnsafeMutableRawPointer (mutating: shared.handle), nil, &body.content, &space.content)
@@ -1738,7 +1738,7 @@ open class PhysicsServer2D: Object {
     /// Returns the ``RID`` of the space assigned to the body. Returns an empty ``RID`` if no space is assigned.
     public static func bodyGetSpace (body: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_get_space, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &body.content)
@@ -1769,7 +1769,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the body's mode. See ``PhysicsServer2D/BodyMode`` for the list of available modes.
     public static func bodySetMode (body: RID, mode: PhysicsServer2D.BodyMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1805,7 +1805,7 @@ open class PhysicsServer2D: Object {
     /// Returns the body's mode (see ``PhysicsServer2D/BodyMode``).
     public static func bodyGetMode (body: RID)-> PhysicsServer2D.BodyMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_get_mode, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -1836,7 +1836,7 @@ open class PhysicsServer2D: Object {
     
     /// Adds a shape to the area, with the given local transform. The shape (together with its `transform` and `disabled` properties) is added to an array of shapes, and the shapes of a body are usually referenced by their index in this array.
     public static func bodyAddShape (body: RID, shape: RID, transform: Transform2D = Transform2D (xAxis: Vector2 (x: 1, y: 0), yAxis: Vector2 (x: 0, y: 1), origin: Vector2 (x: 0, y: 0)), disabled: Bool = false) {
-        #if true
+        #if false
         
         var copy_transform = transform
         var copy_disabled = disabled
@@ -1879,7 +1879,7 @@ open class PhysicsServer2D: Object {
     
     /// Replaces the body's shape at the given index by another shape, while not affecting the `transform`, `disabled`, and one-way collision properties at the same index.
     public static func bodySetShape (body: RID, shapeIdx: Int32, shape: RID) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -1917,7 +1917,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the local transform matrix of the body's shape with the given index.
     public static func bodySetShapeTransform (body: RID, shapeIdx: Int32, transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         var copy_transform = transform
@@ -1958,7 +1958,7 @@ open class PhysicsServer2D: Object {
     /// Returns the number of shapes added to the body.
     public static func bodyGetShapeCount (body: RID)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_get_shape_count, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -1990,7 +1990,7 @@ open class PhysicsServer2D: Object {
     /// Returns the ``RID`` of the shape with the given index in the body's array of shapes.
     public static func bodyGetShape (body: RID, shapeIdx: Int32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -2027,7 +2027,7 @@ open class PhysicsServer2D: Object {
     /// Returns the local transform matrix of the shape with the given index in the area's array of shapes.
     public static func bodyGetShapeTransform (body: RID, shapeIdx: Int32)-> Transform2D {
         var _result: Transform2D = Transform2D ()
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -2063,7 +2063,7 @@ open class PhysicsServer2D: Object {
     
     /// Removes the shape with the given index from the body's array of shapes. The shape itself is not deleted, so it can continue to be used elsewhere or added back later. As a result of this operation, the body's shapes which used to have indices higher than `shapeIdx` will have their index decreased by one.
     public static func bodyRemoveShape (body: RID, shapeIdx: Int32) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -2098,7 +2098,7 @@ open class PhysicsServer2D: Object {
     
     /// Removes all shapes from the body. This does not delete the shapes themselves, so they can continue to be used elsewhere or added back later.
     public static func bodyClearShapes (body: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_clear_shapes, UnsafeMutableRawPointer (mutating: shared.handle), nil, &body.content)
@@ -2128,7 +2128,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the disabled property of the body's shape with the given index. If `disabled` is `true`, then the shape will be ignored in all collision detection.
     public static func bodySetShapeDisabled (body: RID, shapeIdx: Int32, disabled: Bool) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         var copy_disabled = disabled
@@ -2168,7 +2168,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the one-way collision properties of the body's shape with the given index. If `enable` is `true`, the one-way collision direction given by the shape's local upward axis `body_get_shape_transform(body, shape_idx).y` will be used to ignore collisions with the shape in the opposite direction, and to ensure depenetration of kinematic bodies happens in this direction.
     public static func bodySetShapeAsOneWayCollision (body: RID, shapeIdx: Int32, enable: Bool, margin: Double) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         var copy_enable = enable
@@ -2213,7 +2213,7 @@ open class PhysicsServer2D: Object {
     
     /// Attaches the `ObjectID` of an ``Object`` to the body. Use ``Object/getInstanceId()`` to get the `ObjectID` of a ``CollisionObject2D``.
     public static func bodyAttachObjectInstanceId (body: RID, id: UInt) {
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -2249,7 +2249,7 @@ open class PhysicsServer2D: Object {
     /// Returns the `ObjectID` attached to the body. Use ``@GlobalScope.instance_from_id`` to retrieve an ``Object`` from a nonzero `ObjectID`.
     public static func bodyGetObjectInstanceId (body: RID)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_get_object_instance_id, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -2280,7 +2280,7 @@ open class PhysicsServer2D: Object {
     
     /// Attaches the `ObjectID` of a canvas to the body. Use ``Object/getInstanceId()`` to get the `ObjectID` of a ``CanvasLayer``.
     public static func bodyAttachCanvasInstanceId (body: RID, id: UInt) {
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -2316,7 +2316,7 @@ open class PhysicsServer2D: Object {
     /// Returns the `ObjectID` of the canvas attached to the body. Use ``@GlobalScope.instance_from_id`` to retrieve a ``CanvasLayer`` from a nonzero `ObjectID`.
     public static func bodyGetCanvasInstanceId (body: RID)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_get_canvas_instance_id, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -2350,7 +2350,7 @@ open class PhysicsServer2D: Object {
     /// Continuous collision detection tries to predict where a moving body would collide in between physics updates, instead of moving it and correcting its movement if it collided.
     /// 
     public static func bodySetContinuousCollisionDetectionMode (body: RID, mode: PhysicsServer2D.CCDMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -2386,7 +2386,7 @@ open class PhysicsServer2D: Object {
     /// Returns the body's continuous collision detection mode (see ``PhysicsServer2D/CCDMode``).
     public static func bodyGetContinuousCollisionDetectionMode (body: RID)-> PhysicsServer2D.CCDMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_get_continuous_collision_detection_mode, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -2417,7 +2417,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the physics layer or layers the body belongs to, via a bitmask.
     public static func bodySetCollisionLayer (body: RID, layer: UInt32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -2453,7 +2453,7 @@ open class PhysicsServer2D: Object {
     /// Returns the physics layer or layers the body belongs to, as a bitmask.
     public static func bodyGetCollisionLayer (body: RID)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_get_collision_layer, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -2484,7 +2484,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the physics layer or layers the body can collide with, via a bitmask.
     public static func bodySetCollisionMask (body: RID, mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -2520,7 +2520,7 @@ open class PhysicsServer2D: Object {
     /// Returns the physics layer or layers the body can collide with, as a bitmask.
     public static func bodyGetCollisionMask (body: RID)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_get_collision_mask, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -2551,7 +2551,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the body's collision priority. This is used in the depenetration phase of ``bodyTestMotion(body:parameters:result:)``. The higher the priority is, the lower the penetration into the body will be.
     public static func bodySetCollisionPriority (body: RID, priority: Double) {
-        #if true
+        #if false
         
         var copy_priority = priority
         
@@ -2587,7 +2587,7 @@ open class PhysicsServer2D: Object {
     /// Returns the body's collision priority. This is used in the depenetration phase of ``bodyTestMotion(body:parameters:result:)``. The higher the priority is, the lower the penetration into the body will be.
     public static func bodyGetCollisionPriority (body: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_get_collision_priority, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -2618,7 +2618,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the value of the given body parameter. See ``PhysicsServer2D/BodyParameter`` for the list of available parameters.
     public static func bodySetParam (body: RID, param: PhysicsServer2D.BodyParameter, value: Variant) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -2657,7 +2657,7 @@ open class PhysicsServer2D: Object {
     /// Returns the value of the given body parameter. See ``PhysicsServer2D/BodyParameter`` for the list of available parameters.
     public static func bodyGetParam (body: RID, param: PhysicsServer2D.BodyParameter)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -2693,7 +2693,7 @@ open class PhysicsServer2D: Object {
     
     /// Restores the default inertia and center of mass of the body based on its shapes. This undoes any custom values previously set using ``bodySetParam(body:param:value:)``.
     public static func bodyResetMassProperties (body: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_reset_mass_properties, UnsafeMutableRawPointer (mutating: shared.handle), nil, &body.content)
@@ -2726,7 +2726,7 @@ open class PhysicsServer2D: Object {
     /// > Note: The state change doesn't take effect immediately. The state will change on the next physics frame.
     /// 
     public static func bodySetState (body: RID, state: PhysicsServer2D.BodyState, value: Variant) {
-        #if true
+        #if false
         
         var copy_state = Int64 (state.rawValue)
         
@@ -2765,7 +2765,7 @@ open class PhysicsServer2D: Object {
     /// Returns the value of the given state of the body. See ``PhysicsServer2D/BodyState`` for the list of available states.
     public static func bodyGetState (body: RID, state: PhysicsServer2D.BodyState)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_state = Int64 (state.rawValue)
         
@@ -2806,7 +2806,7 @@ open class PhysicsServer2D: Object {
     /// This is equivalent to using ``bodyApplyImpulse(body:impulse:position:)`` at the body's center of mass.
     /// 
     public static func bodyApplyCentralImpulse (body: RID, impulse: Vector2) {
-        #if true
+        #if false
         
         var copy_impulse = impulse
         
@@ -2844,7 +2844,7 @@ open class PhysicsServer2D: Object {
     /// An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
     /// 
     public static func bodyApplyTorqueImpulse (body: RID, impulse: Double) {
-        #if true
+        #if false
         
         var copy_impulse = impulse
         
@@ -2884,7 +2884,7 @@ open class PhysicsServer2D: Object {
     /// `position` is the offset from the body origin in global coordinates.
     /// 
     public static func bodyApplyImpulse (body: RID, impulse: Vector2, position: Vector2 = Vector2 (x: 0, y: 0)) {
-        #if true
+        #if false
         
         var copy_impulse = impulse
         var copy_position = position
@@ -2927,7 +2927,7 @@ open class PhysicsServer2D: Object {
     /// This is equivalent to using ``bodyApplyForce(body:force:position:)`` at the body's center of mass.
     /// 
     public static func bodyApplyCentralForce (body: RID, force: Vector2) {
-        #if true
+        #if false
         
         var copy_force = force
         
@@ -2965,7 +2965,7 @@ open class PhysicsServer2D: Object {
     /// `position` is the offset from the body origin in global coordinates.
     /// 
     public static func bodyApplyForce (body: RID, force: Vector2, position: Vector2 = Vector2 (x: 0, y: 0)) {
-        #if true
+        #if false
         
         var copy_force = force
         var copy_position = position
@@ -3005,7 +3005,7 @@ open class PhysicsServer2D: Object {
     
     /// Applies a rotational force to the body. The force does not affect position. A force is time dependent and meant to be applied every physics update.
     public static func bodyApplyTorque (body: RID, torque: Double) {
-        #if true
+        #if false
         
         var copy_torque = torque
         
@@ -3043,7 +3043,7 @@ open class PhysicsServer2D: Object {
     /// This is equivalent to using ``bodyAddConstantForce(body:force:position:)`` at the body's center of mass.
     /// 
     public static func bodyAddConstantCentralForce (body: RID, force: Vector2) {
-        #if true
+        #if false
         
         var copy_force = force
         
@@ -3081,7 +3081,7 @@ open class PhysicsServer2D: Object {
     /// `position` is the offset from the body origin in global coordinates.
     /// 
     public static func bodyAddConstantForce (body: RID, force: Vector2, position: Vector2 = Vector2 (x: 0, y: 0)) {
-        #if true
+        #if false
         
         var copy_force = force
         var copy_position = position
@@ -3121,7 +3121,7 @@ open class PhysicsServer2D: Object {
     
     /// Adds a constant rotational force to the body. The force does not affect position. The force remains applied over time until cleared with `PhysicsServer2D.body_set_constant_torque(body, 0)`.
     public static func bodyAddConstantTorque (body: RID, torque: Double) {
-        #if true
+        #if false
         
         var copy_torque = torque
         
@@ -3159,7 +3159,7 @@ open class PhysicsServer2D: Object {
     /// See ``bodyAddConstantForce(body:force:position:)`` and ``bodyAddConstantCentralForce(body:force:)``.
     /// 
     public static func bodySetConstantForce (body: RID, force: Vector2) {
-        #if true
+        #if false
         
         var copy_force = force
         
@@ -3198,7 +3198,7 @@ open class PhysicsServer2D: Object {
     /// 
     public static func bodyGetConstantForce (body: RID)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_get_constant_force, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -3232,7 +3232,7 @@ open class PhysicsServer2D: Object {
     /// See ``bodyAddConstantTorque(body:torque:)``.
     /// 
     public static func bodySetConstantTorque (body: RID, torque: Double) {
-        #if true
+        #if false
         
         var copy_torque = torque
         
@@ -3271,7 +3271,7 @@ open class PhysicsServer2D: Object {
     /// 
     public static func bodyGetConstantTorque (body: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_get_constant_torque, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -3302,7 +3302,7 @@ open class PhysicsServer2D: Object {
     
     /// Modifies the body's linear velocity so that its projection to the axis `axis_velocity.normalized()` is exactly `axis_velocity.length()`. This is useful for jumping behavior.
     public static func bodySetAxisVelocity (body: RID, axisVelocity: Vector2) {
-        #if true
+        #if false
         
         var copy_axis_velocity = axisVelocity
         
@@ -3337,7 +3337,7 @@ open class PhysicsServer2D: Object {
     
     /// Adds `exceptedBody` to the body's list of collision exceptions, so that collisions with it are ignored.
     public static func bodyAddCollisionException (body: RID, exceptedBody: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_add_collision_exception, UnsafeMutableRawPointer (mutating: shared.handle), nil, &body.content, &exceptedBody.content)
@@ -3370,7 +3370,7 @@ open class PhysicsServer2D: Object {
     
     /// Removes `exceptedBody` from the body's list of collision exceptions, so that collisions with it are no longer ignored.
     public static func bodyRemoveCollisionException (body: RID, exceptedBody: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_remove_collision_exception, UnsafeMutableRawPointer (mutating: shared.handle), nil, &body.content, &exceptedBody.content)
@@ -3403,7 +3403,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the maximum number of contacts that the body can report. If `amount` is greater than zero, then the body will keep track of at most this many contacts with other bodies.
     public static func bodySetMaxContactsReported (body: RID, amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -3439,7 +3439,7 @@ open class PhysicsServer2D: Object {
     /// Returns the maximum number of contacts that the body can report. See ``bodySetMaxContactsReported(body:amount:)``.
     public static func bodyGetMaxContactsReported (body: RID)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_get_max_contacts_reported, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -3470,7 +3470,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets whether the body uses a callback function to calculate its own physics (see ``bodySetForceIntegrationCallback(body:callable:userdata:)``).
     public static func bodySetOmitForceIntegration (body: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3506,7 +3506,7 @@ open class PhysicsServer2D: Object {
     /// Returns `true` if the body uses a callback function to calculate its own physics (see ``bodySetForceIntegrationCallback(body:callable:userdata:)``).
     public static func bodyIsOmittingForceIntegration (body: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_is_omitting_force_integration, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -3546,7 +3546,7 @@ open class PhysicsServer2D: Object {
     /// > Note: This callback is currently not called in Godot Physics.
     /// 
     public static func bodySetForceIntegrationCallback (body: RID, callable: Callable, userdata: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_set_force_integration_callback, UnsafeMutableRawPointer (mutating: shared.handle), nil, &body.content, &callable.content, &userdata.content)
@@ -3583,7 +3583,7 @@ open class PhysicsServer2D: Object {
     /// Returns `true` if a collision would result from moving the body along a motion vector from a given point in space. See ``PhysicsTestMotionParameters2D`` for the available motion parameters. Optionally a ``PhysicsTestMotionResult2D`` object can be passed, which will be used to store the information about the resulting collision.
     public static func bodyTestMotion (body: RID, parameters: PhysicsTestMotionParameters2D?, result: PhysicsTestMotionResult2D? = nil)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_parameters_handle = parameters?.handle
         var copy_result_handle = result?.handle
@@ -3623,7 +3623,7 @@ open class PhysicsServer2D: Object {
     /// Returns the ``PhysicsDirectBodyState2D`` of the body. Returns `null` if the body is destroyed or not assigned to a space.
     public static func bodyGetDirectState (body: RID)-> PhysicsDirectBodyState2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_body_get_direct_state, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -3672,7 +3672,7 @@ open class PhysicsServer2D: Object {
     
     /// Destroys the joint with the given ``RID``, creates a new uninitialized joint, and makes the ``RID`` refer to this new joint.
     public static func jointClear (joint: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_joint_clear, UnsafeMutableRawPointer (mutating: shared.handle), nil, &joint.content)
@@ -3702,7 +3702,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the value of the given joint parameter. See ``PhysicsServer2D/JointParam`` for the list of available parameters.
     public static func jointSetParam (joint: RID, param: PhysicsServer2D.JointParam, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -3743,7 +3743,7 @@ open class PhysicsServer2D: Object {
     /// Returns the value of the given joint parameter. See ``PhysicsServer2D/JointParam`` for the list of available parameters.
     public static func jointGetParam (joint: RID, param: PhysicsServer2D.JointParam)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -3779,7 +3779,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets whether the bodies attached to the ``Joint2D`` will collide with each other.
     public static func jointDisableCollisionsBetweenBodies (joint: RID, disable: Bool) {
-        #if true
+        #if false
         
         var copy_disable = disable
         
@@ -3815,7 +3815,7 @@ open class PhysicsServer2D: Object {
     /// Returns whether the bodies attached to the ``Joint2D`` will collide with each other.
     public static func jointIsDisabledCollisionsBetweenBodies (joint: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_joint_is_disabled_collisions_between_bodies, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &joint.content)
@@ -3846,7 +3846,7 @@ open class PhysicsServer2D: Object {
     
     /// Makes the joint a pin joint. If `bodyB` is an empty ``RID``, then `bodyA` is pinned to the point `anchor` (given in global coordinates); otherwise, `bodyA` is pinned to `bodyB` at the point `anchor` (given in global coordinates). To set the parameters which are specific to the pin joint, see ``pinJointSetParam(joint:param:value:)``.
     public static func jointMakePin (joint: RID, anchor: Vector2, bodyA: RID, bodyB: RID = RID()) {
-        #if true
+        #if false
         
         var copy_anchor = anchor
         
@@ -3887,7 +3887,7 @@ open class PhysicsServer2D: Object {
     
     /// Makes the joint a groove joint.
     public static func jointMakeGroove (joint: RID, groove1A: Vector2, groove2A: Vector2, anchorB: Vector2, bodyA: RID = RID(), bodyB: RID = RID()) {
-        #if true
+        #if false
         
         var copy_groove1_a = groove1A
         var copy_groove2_a = groove2A
@@ -3938,7 +3938,7 @@ open class PhysicsServer2D: Object {
     
     /// Makes the joint a damped spring joint, attached at the point `anchorA` (given in global coordinates) on the body `bodyA` and at the point `anchorB` (given in global coordinates) on the body `bodyB`. To set the parameters which are specific to the damped spring, see ``dampedSpringJointSetParam(joint:param:value:)``.
     public static func jointMakeDampedSpring (joint: RID, anchorA: Vector2, anchorB: Vector2, bodyA: RID, bodyB: RID = RID()) {
-        #if true
+        #if false
         
         var copy_anchor_a = anchorA
         var copy_anchor_b = anchorB
@@ -3984,7 +3984,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets a pin joint flag (see ``PhysicsServer2D/PinJointFlag`` constants).
     public static func pinJointSetFlag (joint: RID, flag: PhysicsServer2D.PinJointFlag, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         var copy_enabled = enabled
@@ -4025,7 +4025,7 @@ open class PhysicsServer2D: Object {
     /// Gets a pin joint flag (see ``PhysicsServer2D/PinJointFlag`` constants).
     public static func pinJointGetFlag (joint: RID, flag: PhysicsServer2D.PinJointFlag)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         
@@ -4061,7 +4061,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets a pin joint parameter. See ``PhysicsServer2D/PinJointParam`` for a list of available parameters.
     public static func pinJointSetParam (joint: RID, param: PhysicsServer2D.PinJointParam, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -4102,7 +4102,7 @@ open class PhysicsServer2D: Object {
     /// Returns the value of a pin joint parameter. See ``PhysicsServer2D/PinJointParam`` for a list of available parameters.
     public static func pinJointGetParam (joint: RID, param: PhysicsServer2D.PinJointParam)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -4138,7 +4138,7 @@ open class PhysicsServer2D: Object {
     
     /// Sets the value of the given damped spring joint parameter. See ``PhysicsServer2D/DampedSpringParam`` for the list of available parameters.
     public static func dampedSpringJointSetParam (joint: RID, param: PhysicsServer2D.DampedSpringParam, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -4179,7 +4179,7 @@ open class PhysicsServer2D: Object {
     /// Returns the value of the given damped spring joint parameter. See ``PhysicsServer2D/DampedSpringParam`` for the list of available parameters.
     public static func dampedSpringJointGetParam (joint: RID, param: PhysicsServer2D.DampedSpringParam)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -4216,7 +4216,7 @@ open class PhysicsServer2D: Object {
     /// Returns the joint's type (see ``PhysicsServer2D/JointType``).
     public static func jointGetType (joint: RID)-> PhysicsServer2D.JointType {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_joint_get_type, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &joint.content)
@@ -4247,7 +4247,7 @@ open class PhysicsServer2D: Object {
     
     /// Destroys any of the objects created by PhysicsServer2D. If the ``RID`` passed is not one of the objects that can be created by PhysicsServer2D, an error will be printed to the console.
     public static func freeRid (_ rid: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2D.method_free_rid, UnsafeMutableRawPointer (mutating: shared.handle), nil, &rid.content)
@@ -4277,7 +4277,7 @@ open class PhysicsServer2D: Object {
     
     /// Activates or deactivates the 2D physics server. If `active` is `false`, then the physics server will not do anything in its physics step.
     public static func setActive (_ active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         
@@ -4310,7 +4310,7 @@ open class PhysicsServer2D: Object {
     /// Returns information about the current state of the 2D physics engine. See ``PhysicsServer2D/ProcessInfo`` for the list of available states.
     public static func getProcessInfo (_ processInfo: PhysicsServer2D.ProcessInfo)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_process_info = Int64 (processInfo.rawValue)
         

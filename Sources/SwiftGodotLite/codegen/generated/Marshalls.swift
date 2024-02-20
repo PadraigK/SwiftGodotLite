@@ -36,7 +36,7 @@ open class Marshalls: Object {
     /// 
     public static func variantToBase64 (variant: Variant, fullObjects: Bool = false)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_full_objects = fullObjects
         
@@ -78,7 +78,7 @@ open class Marshalls: Object {
     /// 
     public static func base64ToVariant (base64Str: String, allowObjects: Bool = false)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         let gstr_base64_str = GString (base64Str)
         var copy_allow_objects = allowObjects
@@ -117,7 +117,7 @@ open class Marshalls: Object {
     /// Returns a Base64-encoded string of a given ``PackedByteArray``.
     public static func rawToBase64 (array: PackedByteArray)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Marshalls.method_raw_to_base64, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &array.content)
@@ -149,7 +149,7 @@ open class Marshalls: Object {
     /// Returns a decoded ``PackedByteArray`` corresponding to the Base64-encoded string `base64Str`.
     public static func base64ToRaw (base64Str: String)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         let gstr_base64_str = GString (base64Str)
         
@@ -183,7 +183,7 @@ open class Marshalls: Object {
     /// Returns a Base64-encoded string of the UTF-8 string `utf8Str`.
     public static func utf8ToBase64 (utf8Str: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_utf8_str = GString (utf8Str)
         
@@ -217,7 +217,7 @@ open class Marshalls: Object {
     /// Returns a decoded string corresponding to the Base64-encoded string `base64Str`.
     public static func base64ToUtf8 (base64Str: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_base64_str = GString (base64Str)
         

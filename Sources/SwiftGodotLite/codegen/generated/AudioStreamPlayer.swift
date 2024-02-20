@@ -143,7 +143,7 @@ open class AudioStreamPlayer: Node {
     
     @inline(__always)
     fileprivate final func set_stream (_ stream: AudioStream?) {
-        #if true
+        #if false
         
         var copy_stream_handle = stream?.handle
         
@@ -192,7 +192,7 @@ open class AudioStreamPlayer: Node {
     
     @inline(__always)
     fileprivate final func set_volume_db (_ volumeDb: Double) {
-        #if true
+        #if false
         
         var copy_volume_db = volumeDb
         
@@ -242,7 +242,7 @@ open class AudioStreamPlayer: Node {
     
     @inline(__always)
     fileprivate final func set_pitch_scale (_ pitchScale: Double) {
-        #if true
+        #if false
         
         var copy_pitch_scale = pitchScale
         
@@ -292,7 +292,7 @@ open class AudioStreamPlayer: Node {
     
     /// Plays the audio from the given `fromPosition`, in seconds.
     public final func play (fromPosition: Double = 0.0) {
-        #if true
+        #if false
         
         var copy_from_position = fromPosition
         
@@ -324,7 +324,7 @@ open class AudioStreamPlayer: Node {
     
     /// Sets the position from which audio will be played, in seconds.
     public final func seek (toPosition: Double) {
-        #if true
+        #if false
         
         var copy_to_position = toPosition
         
@@ -407,7 +407,7 @@ open class AudioStreamPlayer: Node {
     
     @inline(__always)
     fileprivate final func set_bus (_ bus: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AudioStreamPlayer.method_set_bus, UnsafeMutableRawPointer (mutating: handle), nil, &bus.content)
@@ -455,7 +455,7 @@ open class AudioStreamPlayer: Node {
     
     @inline(__always)
     fileprivate final func set_autoplay (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -505,7 +505,7 @@ open class AudioStreamPlayer: Node {
     
     @inline(__always)
     fileprivate final func set_mix_target (_ mixTarget: AudioStreamPlayer.MixTarget) {
-        #if true
+        #if false
         
         var copy_mix_target = Int64 (mixTarget.rawValue)
         
@@ -555,7 +555,7 @@ open class AudioStreamPlayer: Node {
     
     @inline(__always)
     fileprivate final func set_stream_paused (_ pause: Bool) {
-        #if true
+        #if false
         
         var copy_pause = pause
         
@@ -605,7 +605,7 @@ open class AudioStreamPlayer: Node {
     
     @inline(__always)
     fileprivate final func set_max_polyphony (_ maxPolyphony: Int32) {
-        #if true
+        #if false
         
         var copy_max_polyphony: Int = Int (maxPolyphony)
         

@@ -30,7 +30,7 @@ open class ScriptCreateDialog: ConfirmationDialog {
     
     /// Prefills required fields to configure the ScriptCreateDialog for use.
     public final func config (inherits: String, path: String, builtInEnabled: Bool = true, loadEnabled: Bool = true) {
-        #if true
+        #if false
         
         let gstr_inherits = GString (inherits)
         let gstr_path = GString (path)

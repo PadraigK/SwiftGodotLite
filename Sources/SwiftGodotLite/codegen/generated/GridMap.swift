@@ -198,7 +198,7 @@ open class GridMap: Node3D {
     
     @inline(__always)
     fileprivate final func set_collision_layer (_ layer: UInt32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -248,7 +248,7 @@ open class GridMap: Node3D {
     
     @inline(__always)
     fileprivate final func set_collision_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -298,7 +298,7 @@ open class GridMap: Node3D {
     
     /// Based on `value`, enables or disables the specified layer in the ``collisionMask``, given a `layerNumber` between 1 and 32.
     public final func setCollisionMaskValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -336,7 +336,7 @@ open class GridMap: Node3D {
     /// Returns whether or not the specified layer of the ``collisionMask`` is enabled, given a `layerNumber` between 1 and 32.
     public final func getCollisionMaskValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -369,7 +369,7 @@ open class GridMap: Node3D {
     
     /// Based on `value`, enables or disables the specified layer in the ``collisionLayer``, given a `layerNumber` between 1 and 32.
     public final func setCollisionLayerValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -407,7 +407,7 @@ open class GridMap: Node3D {
     /// Returns whether or not the specified layer of the ``collisionLayer`` is enabled, given a `layerNumber` between 1 and 32.
     public final func getCollisionLayerValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -440,7 +440,7 @@ open class GridMap: Node3D {
     
     @inline(__always)
     fileprivate final func set_collision_priority (_ priority: Double) {
-        #if true
+        #if false
         
         var copy_priority = priority
         
@@ -490,7 +490,7 @@ open class GridMap: Node3D {
     
     @inline(__always)
     fileprivate final func set_physics_material (_ material: PhysicsMaterial?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         
@@ -539,7 +539,7 @@ open class GridMap: Node3D {
     
     @inline(__always)
     fileprivate final func set_bake_navigation (_ bakeNavigation: Bool) {
-        #if true
+        #if false
         
         var copy_bake_navigation = bakeNavigation
         
@@ -589,7 +589,7 @@ open class GridMap: Node3D {
     
     /// Sets the ``RID`` of the navigation map this GridMap node should use for its cell baked navigation meshes.
     public final func setNavigationMap (_ navigationMap: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GridMap.method_set_navigation_map, UnsafeMutableRawPointer (mutating: handle), nil, &navigationMap.content)
@@ -640,7 +640,7 @@ open class GridMap: Node3D {
     
     @inline(__always)
     fileprivate final func set_mesh_library (_ meshLibrary: MeshLibrary?) {
-        #if true
+        #if false
         
         var copy_mesh_library_handle = meshLibrary?.handle
         
@@ -689,7 +689,7 @@ open class GridMap: Node3D {
     
     @inline(__always)
     fileprivate final func set_cell_size (_ size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -739,7 +739,7 @@ open class GridMap: Node3D {
     
     @inline(__always)
     fileprivate final func set_cell_scale (_ scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -789,7 +789,7 @@ open class GridMap: Node3D {
     
     @inline(__always)
     fileprivate final func set_octant_size (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -844,7 +844,7 @@ open class GridMap: Node3D {
     /// Optionally, the item's orientation can be passed. For valid orientation values, see ``getOrthogonalIndexFromBasis(_:)``.
     /// 
     public final func setCellItem (position: Vector3i, item: Int32, orientation: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_item: Int = Int (item)
@@ -887,7 +887,7 @@ open class GridMap: Node3D {
     /// The ``MeshLibrary`` item index located at the given grid coordinates. If the cell is empty, ``invalidCellItem`` will be returned.
     public final func getCellItem (position: Vector3i)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -921,7 +921,7 @@ open class GridMap: Node3D {
     /// The orientation of the cell at the given grid coordinates. `-1` is returned if the cell is empty.
     public final func getCellItemOrientation (position: Vector3i)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -955,7 +955,7 @@ open class GridMap: Node3D {
     /// Returns the basis that gives the specified cell its orientation.
     public final func getCellItemBasis (position: Vector3i)-> Basis {
         var _result: Basis = Basis ()
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -989,7 +989,7 @@ open class GridMap: Node3D {
     /// Returns one of 24 possible rotations that lie along the vectors (x,y,z) with each component being either -1, 0, or 1. For further details, refer to the Godot source code.
     public final func getBasisWithOrthogonalIndex (_ index: Int32)-> Basis {
         var _result: Basis = Basis ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1023,7 +1023,7 @@ open class GridMap: Node3D {
     /// This function considers a discretization of rotations into 24 points on unit sphere, lying along the vectors (x,y,z) with each component being either -1, 0, or 1, and returns the index (in the range from 0 to 23) of the point best representing the orientation of the object. For further details, refer to the Godot source code.
     public final func getOrthogonalIndexFromBasis (_ basis: Basis)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_basis = basis
         
@@ -1057,7 +1057,7 @@ open class GridMap: Node3D {
     /// Returns the map coordinates of the cell containing the given `localPosition`. If `localPosition` is in global coordinates, consider using ``Node3D/toLocal(globalPoint:)`` before passing it to this method. See also ``mapToLocal(mapPosition:)``.
     public final func localToMap (localPosition: Vector3)-> Vector3i {
         var _result: Vector3i = Vector3i ()
-        #if true
+        #if false
         
         var copy_local_position = localPosition
         
@@ -1091,7 +1091,7 @@ open class GridMap: Node3D {
     /// Returns the position of a grid cell in the GridMap's local coordinate space. To convert the returned value into global coordinates, use ``Node3D/toGlobal(localPoint:)``. See also ``mapToLocal(mapPosition:)``.
     public final func mapToLocal (mapPosition: Vector3i)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_map_position = mapPosition
         
@@ -1124,7 +1124,7 @@ open class GridMap: Node3D {
     
     /// _Obsoleted._ Use [signal Resource.changed] instead.
     public final func resourceChanged (resource: Resource?) {
-        #if true
+        #if false
         
         var copy_resource_handle = resource?.handle
         
@@ -1155,7 +1155,7 @@ open class GridMap: Node3D {
     
     @inline(__always)
     fileprivate final func set_center_x (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1205,7 +1205,7 @@ open class GridMap: Node3D {
     
     @inline(__always)
     fileprivate final func set_center_y (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1255,7 +1255,7 @@ open class GridMap: Node3D {
     
     @inline(__always)
     fileprivate final func set_center_z (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1340,7 +1340,7 @@ open class GridMap: Node3D {
     /// Returns an array of all cells with the given item index specified in `item`.
     public final func getUsedCellsByItem (_ item: Int32)-> VariantCollection<Vector3i> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_item: Int = Int (item)
         
@@ -1410,7 +1410,7 @@ open class GridMap: Node3D {
     /// Returns ``RID`` of a baked mesh with the given `idx`.
     public final func getBakeMeshInstance (idx: Int32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1459,7 +1459,7 @@ open class GridMap: Node3D {
     
     /// Bakes lightmap data for all meshes in the assigned ``MeshLibrary``.
     public final func makeBakedMeshes (genLightmapUv: Bool = false, lightmapUvTexelSize: Double = 0.1) {
-        #if true
+        #if false
         
         var copy_gen_lightmap_uv = genLightmapUv
         var copy_lightmap_uv_texel_size = lightmapUvTexelSize

@@ -122,7 +122,7 @@ open class Tween: RefCounted {
     /// 
     public final func tweenProperty (object: Object?, property: NodePath, finalVal: Variant, duration: Double)-> PropertyTweener? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_duration = duration
         var copy_object_handle = object?.handle
@@ -171,7 +171,7 @@ open class Tween: RefCounted {
     /// 
     public final func tweenInterval (time: Double)-> IntervalTweener? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_time = time
         
@@ -210,7 +210,7 @@ open class Tween: RefCounted {
     /// 
     public final func tweenCallback (_ callback: Callable)-> CallbackTweener? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Tween.method_tween_callback, UnsafeMutableRawPointer (mutating: handle), &_result, &callback.content)
@@ -247,7 +247,7 @@ open class Tween: RefCounted {
     /// 
     public final func tweenMethod (_ method: Callable, from: Variant, to: Variant, duration: Double)-> MethodTweener? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_duration = duration
         
@@ -293,7 +293,7 @@ open class Tween: RefCounted {
     /// 
     public final func customStep (delta: Double)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_delta = delta
         
@@ -457,7 +457,7 @@ open class Tween: RefCounted {
     /// 
     public final func bindNode (_ node: Node?)-> Tween? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -493,7 +493,7 @@ open class Tween: RefCounted {
     /// 
     public final func setProcessMode (_ mode: Tween.TweenProcessMode)-> Tween? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -530,7 +530,7 @@ open class Tween: RefCounted {
     /// 
     public final func setPauseMode (_ mode: Tween.TweenPauseMode)-> Tween? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -564,7 +564,7 @@ open class Tween: RefCounted {
     /// If `parallel` is `true`, the ``Tweener``s appended after this method will by default run simultaneously, as opposed to sequentially.
     public final func setParallel (_ parallel: Bool = true)-> Tween? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_parallel = parallel
         
@@ -603,7 +603,7 @@ open class Tween: RefCounted {
     /// 
     public final func setLoops (_ loops: Int32 = 0)-> Tween? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_loops: Int = Int (loops)
         
@@ -655,7 +655,7 @@ open class Tween: RefCounted {
     /// Scales the speed of tweening. This affects all ``Tweener``s and their delays.
     public final func setSpeedScale (speed: Double)-> Tween? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_speed = speed
         
@@ -692,7 +692,7 @@ open class Tween: RefCounted {
     /// 
     public final func setTrans (_ trans: Tween.TransitionType)-> Tween? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_trans = Int64 (trans.rawValue)
         
@@ -729,7 +729,7 @@ open class Tween: RefCounted {
     /// 
     public final func setEase (_ ease: Tween.EaseType)-> Tween? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_ease = Int64 (ease.rawValue)
         
@@ -818,7 +818,7 @@ open class Tween: RefCounted {
     /// 
     public static func interpolateValue (initialValue: Variant, deltaValue: Variant, elapsedTime: Double, duration: Double, transType: Tween.TransitionType, easeType: Tween.EaseType)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_elapsed_time = elapsedTime
         var copy_duration = duration

@@ -68,7 +68,7 @@ open class JSON: Resource {
     /// 
     public static func stringify (data: Variant, indent: String = "", sortKeys: Bool = true, fullPrecision: Bool = false)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_indent = GString (indent)
         var copy_sort_keys = sortKeys
@@ -115,7 +115,7 @@ open class JSON: Resource {
     /// Attempts to parse the `jsonString` provided and returns the parsed data. Returns `null` if parse failed.
     public static func parseString (jsonString: String)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         let gstr_json_string = GString (jsonString)
         
@@ -156,7 +156,7 @@ open class JSON: Resource {
     /// 
     public final func parse (jsonText: String, keepText: Bool = false)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_json_text = GString (jsonText)
         var copy_keep_text = keepText
@@ -212,7 +212,7 @@ open class JSON: Resource {
     
     @inline(__always)
     fileprivate final func set_data (_ data: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (JSON.method_set_data, UnsafeMutableRawPointer (mutating: handle), nil, &data.content)

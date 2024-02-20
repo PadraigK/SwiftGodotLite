@@ -891,7 +891,7 @@ open class Control: CanvasItem {
     /// If `keepOffsets` is `true`, control's position will also be updated.
     /// 
     public final func setAnchorsPreset (_ preset: Control.LayoutPreset, keepOffsets: Bool = false) {
-        #if true
+        #if false
         
         var copy_preset = Int64 (preset.rawValue)
         var copy_keep_offsets = keepOffsets
@@ -933,7 +933,7 @@ open class Control: CanvasItem {
     /// Use parameter `margin` to determine the gap between the ``Control`` and the edges.
     /// 
     public final func setOffsetsPreset (_ preset: Control.LayoutPreset, resizeMode: Control.LayoutPresetMode = .minsize, margin: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_preset = Int64 (preset.rawValue)
         var copy_resize_mode = Int64 (resizeMode.rawValue)
@@ -975,7 +975,7 @@ open class Control: CanvasItem {
     
     /// Sets both anchor preset and offset preset. See ``setAnchorsPreset(_:keepOffsets:)`` and ``setOffsetsPreset(_:resizeMode:margin:)``.
     public final func setAnchorsAndOffsetsPreset (_ preset: Control.LayoutPreset, resizeMode: Control.LayoutPresetMode = .minsize, margin: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_preset = Int64 (preset.rawValue)
         var copy_resize_mode = Int64 (resizeMode.rawValue)
@@ -1022,7 +1022,7 @@ open class Control: CanvasItem {
     /// If `pushOppositeAnchor` is `true` and the opposite anchor overlaps this anchor, the opposite one will have its value overridden. For example, when setting left anchor to 1 and the right anchor has value of 0.5, the right anchor will also get value of 1. If `pushOppositeAnchor` was `false`, the left anchor would get value 0.5.
     /// 
     public final func setAnchor (side: Side, anchor: Double, keepOffset: Bool = false, pushOppositeAnchor: Bool = true) {
-        #if true
+        #if false
         
         var copy_side = Int64 (side.rawValue)
         var copy_anchor = anchor
@@ -1070,7 +1070,7 @@ open class Control: CanvasItem {
     /// Returns the anchor for the specified ``Side``. A getter method for ``anchorBottom``, ``anchorLeft``, ``anchorRight`` and ``anchorTop``.
     public final func getAnchor (side: Side)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_side = Int64 (side.rawValue)
         
@@ -1104,7 +1104,7 @@ open class Control: CanvasItem {
     @inline(__always)
     /// Sets the offset for the specified ``Side`` to `offset`. A setter method for ``offsetBottom``, ``offsetLeft``, ``offsetRight`` and ``offsetTop``.
     fileprivate final func set_offset (_ side: Side, _ offset: Double) {
-        #if true
+        #if false
         
         var copy_side = Int64 (side.rawValue)
         var copy_offset = offset
@@ -1143,7 +1143,7 @@ open class Control: CanvasItem {
     /// Returns the offset for the specified ``Side``. A getter method for ``offsetBottom``, ``offsetLeft``, ``offsetRight`` and ``offsetTop``.
     fileprivate final func get_offset (_ offset: Side)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_offset = Int64 (offset.rawValue)
         
@@ -1176,7 +1176,7 @@ open class Control: CanvasItem {
     
     /// Works the same as ``setAnchor(side:anchor:keepOffset:pushOppositeAnchor:)``, but instead of `keep_offset` argument and automatic update of offset, it allows to set the offset yourself (see ``setOffset(side:offset:)``).
     public final func setAnchorAndOffset (side: Side, anchor: Double, offset: Double, pushOppositeAnchor: Bool = false) {
-        #if true
+        #if false
         
         var copy_side = Int64 (side.rawValue)
         var copy_anchor = anchor
@@ -1223,7 +1223,7 @@ open class Control: CanvasItem {
     
     /// Sets ``offsetLeft`` and ``offsetTop`` at the same time. Equivalent of changing ``position``.
     public final func setBegin (position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -1255,7 +1255,7 @@ open class Control: CanvasItem {
     
     /// Sets ``offsetRight`` and ``offsetBottom`` at the same time.
     public final func setEnd (position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -1290,7 +1290,7 @@ open class Control: CanvasItem {
     /// If `keepOffsets` is `true`, control's anchors will be updated instead of offsets.
     /// 
     public final func setPosition (_ position: Vector2, keepOffsets: Bool = false) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_keep_offsets = keepOffsets
@@ -1330,7 +1330,7 @@ open class Control: CanvasItem {
     /// If `keepOffsets` is `true`, control's anchors will be updated instead of offsets.
     /// 
     public final func setSize (_ size: Vector2, keepOffsets: Bool = false) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_keep_offsets = keepOffsets
@@ -1383,7 +1383,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_custom_minimum_size (_ size: Vector2) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -1418,7 +1418,7 @@ open class Control: CanvasItem {
     /// If `keepOffsets` is `true`, control's anchors will be updated instead of offsets.
     /// 
     public final func setGlobalPosition (_ position: Vector2, keepOffsets: Bool = false) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_keep_offsets = keepOffsets
@@ -1455,7 +1455,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_rotation (_ radians: Double) {
-        #if true
+        #if false
         
         var copy_radians = radians
         
@@ -1487,7 +1487,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_rotation_degrees (_ degrees: Double) {
-        #if true
+        #if false
         
         var copy_degrees = degrees
         
@@ -1519,7 +1519,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_scale (_ scale: Vector2) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -1551,7 +1551,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_pivot_offset (_ pivotOffset: Vector2) {
-        #if true
+        #if false
         
         var copy_pivot_offset = pivotOffset
         
@@ -1847,7 +1847,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_focus_mode (_ mode: Control.FocusMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1990,7 +1990,7 @@ open class Control: CanvasItem {
     /// 
     public final func findValidFocusNeighbor (side: Side)-> Control? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_side = Int64 (side.rawValue)
         
@@ -2023,7 +2023,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_h_size_flags (_ flags: Control.SizeFlags) {
-        #if true
+        #if false
         
         var copy_flags = flags
         
@@ -2073,7 +2073,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_stretch_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -2123,7 +2123,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_v_size_flags (_ flags: Control.SizeFlags) {
-        #if true
+        #if false
         
         var copy_flags = flags
         
@@ -2173,7 +2173,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_theme (_ theme: Theme?) {
-        #if true
+        #if false
         
         var copy_theme_handle = theme?.handle
         
@@ -2222,7 +2222,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_theme_type_variation (_ themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_set_theme_type_variation, UnsafeMutableRawPointer (mutating: handle), nil, &themeType.content)
@@ -2305,7 +2305,7 @@ open class Control: CanvasItem {
     /// See also ``getThemeIcon(name:themeType:)``.
     /// 
     public final func addThemeIconOverride (name: StringName, texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -2344,7 +2344,7 @@ open class Control: CanvasItem {
     /// **Example of modifying a property in a StyleBox by duplicating it:**
     /// 
     public final func addThemeStyleboxOverride (name: StringName, stylebox: StyleBox?) {
-        #if true
+        #if false
         
         var copy_stylebox_handle = stylebox?.handle
         
@@ -2381,7 +2381,7 @@ open class Control: CanvasItem {
     /// See also ``getThemeFont(name:themeType:)``.
     /// 
     public final func addThemeFontOverride (name: StringName, font: Font?) {
-        #if true
+        #if false
         
         var copy_font_handle = font?.handle
         
@@ -2418,7 +2418,7 @@ open class Control: CanvasItem {
     /// See also ``getThemeFontSize(name:themeType:)``.
     /// 
     public final func addThemeFontSizeOverride (name: StringName, fontSize: Int32) {
-        #if true
+        #if false
         
         var copy_font_size: Int = Int (fontSize)
         
@@ -2458,7 +2458,7 @@ open class Control: CanvasItem {
     /// **Example of overriding a label's color and resetting it later:**
     /// 
     public final func addThemeColorOverride (name: StringName, color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -2496,7 +2496,7 @@ open class Control: CanvasItem {
     /// See also ``getThemeConstant(name:themeType:)``.
     /// 
     public final func addThemeConstantOverride (name: StringName, constant: Int32) {
-        #if true
+        #if false
         
         var copy_constant: Int = Int (constant)
         
@@ -2531,7 +2531,7 @@ open class Control: CanvasItem {
     
     /// Removes a local override for a theme icon with the specified `name` previously added by ``addThemeIconOverride(name:texture:)`` or via the Inspector dock.
     public final func removeThemeIconOverride (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_remove_theme_icon_override, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -2561,7 +2561,7 @@ open class Control: CanvasItem {
     
     /// Removes a local override for a theme ``StyleBox`` with the specified `name` previously added by ``addThemeStyleboxOverride(name:stylebox:)`` or via the Inspector dock.
     public final func removeThemeStyleboxOverride (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_remove_theme_stylebox_override, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -2591,7 +2591,7 @@ open class Control: CanvasItem {
     
     /// Removes a local override for a theme ``Font`` with the specified `name` previously added by ``addThemeFontOverride(name:font:)`` or via the Inspector dock.
     public final func removeThemeFontOverride (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_remove_theme_font_override, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -2621,7 +2621,7 @@ open class Control: CanvasItem {
     
     /// Removes a local override for a theme font size with the specified `name` previously added by ``addThemeFontSizeOverride(name:fontSize:)`` or via the Inspector dock.
     public final func removeThemeFontSizeOverride (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_remove_theme_font_size_override, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -2651,7 +2651,7 @@ open class Control: CanvasItem {
     
     /// Removes a local override for a theme ``Color`` with the specified `name` previously added by ``addThemeColorOverride(name:color:)`` or via the Inspector dock.
     public final func removeThemeColorOverride (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_remove_theme_color_override, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -2681,7 +2681,7 @@ open class Control: CanvasItem {
     
     /// Removes a local override for a theme constant with the specified `name` previously added by ``addThemeConstantOverride(name:constant:)`` or via the Inspector dock.
     public final func removeThemeConstantOverride (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_remove_theme_constant_override, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -2715,7 +2715,7 @@ open class Control: CanvasItem {
     /// 
     public final func getThemeIcon (name: StringName, themeType: StringName = StringName (""))-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_get_theme_icon, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -2753,7 +2753,7 @@ open class Control: CanvasItem {
     /// 
     public final func getThemeStylebox (name: StringName, themeType: StringName = StringName (""))-> StyleBox? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_get_theme_stylebox, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -2791,7 +2791,7 @@ open class Control: CanvasItem {
     /// 
     public final func getThemeFont (name: StringName, themeType: StringName = StringName (""))-> Font? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_get_theme_font, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -2829,7 +2829,7 @@ open class Control: CanvasItem {
     /// 
     public final func getThemeFontSize (name: StringName, themeType: StringName = StringName (""))-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_get_theme_font_size, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -2867,7 +2867,7 @@ open class Control: CanvasItem {
     /// 
     public final func getThemeColor (name: StringName, themeType: StringName = StringName (""))-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_get_theme_color, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -2905,7 +2905,7 @@ open class Control: CanvasItem {
     /// 
     public final func getThemeConstant (name: StringName, themeType: StringName = StringName (""))-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_get_theme_constant, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -2943,7 +2943,7 @@ open class Control: CanvasItem {
     /// 
     public final func hasThemeIconOverride (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_has_theme_icon_override, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -2978,7 +2978,7 @@ open class Control: CanvasItem {
     /// 
     public final func hasThemeStyleboxOverride (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_has_theme_stylebox_override, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -3013,7 +3013,7 @@ open class Control: CanvasItem {
     /// 
     public final func hasThemeFontOverride (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_has_theme_font_override, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -3048,7 +3048,7 @@ open class Control: CanvasItem {
     /// 
     public final func hasThemeFontSizeOverride (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_has_theme_font_size_override, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -3083,7 +3083,7 @@ open class Control: CanvasItem {
     /// 
     public final func hasThemeColorOverride (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_has_theme_color_override, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -3118,7 +3118,7 @@ open class Control: CanvasItem {
     /// 
     public final func hasThemeConstantOverride (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_has_theme_constant_override, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -3153,7 +3153,7 @@ open class Control: CanvasItem {
     /// 
     public final func hasThemeIcon (name: StringName, themeType: StringName = StringName (""))-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_has_theme_icon, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -3191,7 +3191,7 @@ open class Control: CanvasItem {
     /// 
     public final func hasThemeStylebox (name: StringName, themeType: StringName = StringName (""))-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_has_theme_stylebox, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -3229,7 +3229,7 @@ open class Control: CanvasItem {
     /// 
     public final func hasThemeFont (name: StringName, themeType: StringName = StringName (""))-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_has_theme_font, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -3267,7 +3267,7 @@ open class Control: CanvasItem {
     /// 
     public final func hasThemeFontSize (name: StringName, themeType: StringName = StringName (""))-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_has_theme_font_size, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -3305,7 +3305,7 @@ open class Control: CanvasItem {
     /// 
     public final func hasThemeColor (name: StringName, themeType: StringName = StringName (""))-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_has_theme_color, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -3343,7 +3343,7 @@ open class Control: CanvasItem {
     /// 
     public final func hasThemeConstant (name: StringName, themeType: StringName = StringName (""))-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_has_theme_constant, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -3458,7 +3458,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_h_grow_direction (_ direction: Control.GrowDirection) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -3508,7 +3508,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_v_grow_direction (_ direction: Control.GrowDirection) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -3558,7 +3558,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_tooltip_text (_ hint: String) {
-        #if true
+        #if false
         
         let gstr_hint = GString (hint)
         
@@ -3614,7 +3614,7 @@ open class Control: CanvasItem {
     /// 
     public final func getTooltip (atPosition: Vector2 = Vector2 (x: 0, y: 0))-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_at_position = atPosition
         
@@ -3647,7 +3647,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_default_cursor_shape (_ shape: Control.CursorShape) {
-        #if true
+        #if false
         
         var copy_shape = Int64 (shape.rawValue)
         
@@ -3698,7 +3698,7 @@ open class Control: CanvasItem {
     /// Returns the mouse cursor shape the control displays on mouse hover. See ``Control/CursorShape``.
     public final func getCursorShape (position: Vector2 = Vector2 (x: 0, y: 0))-> Control.CursorShape {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -3732,7 +3732,7 @@ open class Control: CanvasItem {
     @inline(__always)
     /// Sets the focus neighbor for the specified ``Side`` to the ``Control`` at `neighbor` node path. A setter method for ``focusNeighborBottom``, ``focusNeighborLeft``, ``focusNeighborRight`` and ``focusNeighborTop``.
     fileprivate final func set_focus_neighbor (_ side: Side, _ neighbor: NodePath) {
-        #if true
+        #if false
         
         var copy_side = Int64 (side.rawValue)
         
@@ -3772,7 +3772,7 @@ open class Control: CanvasItem {
     /// 
     fileprivate final func get_focus_neighbor (_ side: Side)-> NodePath {
         let _result: NodePath = NodePath ()
-        #if true
+        #if false
         
         var copy_side = Int64 (side.rawValue)
         
@@ -3805,7 +3805,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_focus_next (_ next: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_set_focus_next, UnsafeMutableRawPointer (mutating: handle), nil, &next.content)
@@ -3853,7 +3853,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_focus_previous (_ previous: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_set_focus_previous, UnsafeMutableRawPointer (mutating: handle), nil, &previous.content)
@@ -3904,7 +3904,7 @@ open class Control: CanvasItem {
     /// The methods ``_canDropData(atPosition:data:)`` and ``_dropData(atPosition:data:)`` must be implemented on controls that want to receive drop data.
     /// 
     public final func forceDrag (data: Variant, preview: Control?) {
-        #if true
+        #if false
         
         var copy_preview_handle = preview?.handle
         
@@ -3938,7 +3938,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_mouse_filter (_ filter: Control.MouseFilter) {
-        #if true
+        #if false
         
         var copy_filter = Int64 (filter.rawValue)
         
@@ -3988,7 +3988,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_force_pass_scroll_events (_ forcePassScrollEvents: Bool) {
-        #if true
+        #if false
         
         var copy_force_pass_scroll_events = forcePassScrollEvents
         
@@ -4038,7 +4038,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_clip_contents (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -4110,7 +4110,7 @@ open class Control: CanvasItem {
     /// The function format for each callable should be exactly the same as the virtual functions described above.
     /// 
     public final func setDragForwarding (dragFunc: Callable, canDropFunc: Callable, dropFunc: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Control.method_set_drag_forwarding, UnsafeMutableRawPointer (mutating: handle), nil, &dragFunc.content, &canDropFunc.content, &dropFunc.content)
@@ -4147,7 +4147,7 @@ open class Control: CanvasItem {
     /// Shows the given control at the mouse pointer. A good time to call this method is in ``_getDragData(atPosition:)``. The control must not be in the scene tree. You should not free the control, and you should not keep a reference to the control beyond the duration of the drag. It will be deleted automatically after the drag has ended.
     /// 
     public final func setDragPreview (control: Control?) {
-        #if true
+        #if false
         
         var copy_control_handle = control?.handle
         
@@ -4202,7 +4202,7 @@ open class Control: CanvasItem {
     /// > Note: ``warpMouse(position:)`` is only supported on Windows, macOS and Linux. It has no effect on Android, iOS and Web.
     /// 
     public final func warpMouse (position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -4234,7 +4234,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_shortcut_context (_ node: Node?) {
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -4299,7 +4299,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_layout_direction (_ direction: Control.LayoutDirection) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -4367,7 +4367,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_auto_translate (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -4417,7 +4417,7 @@ open class Control: CanvasItem {
     
     @inline(__always)
     fileprivate final func set_localize_numeral_system (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

@@ -146,7 +146,7 @@ open class ScrollContainer: Container {
     
     @inline(__always)
     fileprivate final func set_h_scroll (_ value: Int32) {
-        #if true
+        #if false
         
         var copy_value: Int = Int (value)
         
@@ -196,7 +196,7 @@ open class ScrollContainer: Container {
     
     @inline(__always)
     fileprivate final func set_v_scroll (_ value: Int32) {
-        #if true
+        #if false
         
         var copy_value: Int = Int (value)
         
@@ -246,7 +246,7 @@ open class ScrollContainer: Container {
     
     @inline(__always)
     fileprivate final func set_horizontal_custom_step (_ value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -296,7 +296,7 @@ open class ScrollContainer: Container {
     
     @inline(__always)
     fileprivate final func set_vertical_custom_step (_ value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -346,7 +346,7 @@ open class ScrollContainer: Container {
     
     @inline(__always)
     fileprivate final func set_horizontal_scroll_mode (_ enable: ScrollContainer.ScrollMode) {
-        #if true
+        #if false
         
         var copy_enable = Int64 (enable.rawValue)
         
@@ -396,7 +396,7 @@ open class ScrollContainer: Container {
     
     @inline(__always)
     fileprivate final func set_vertical_scroll_mode (_ enable: ScrollContainer.ScrollMode) {
-        #if true
+        #if false
         
         var copy_enable = Int64 (enable.rawValue)
         
@@ -446,7 +446,7 @@ open class ScrollContainer: Container {
     
     @inline(__always)
     fileprivate final func set_deadzone (_ deadzone: Int32) {
-        #if true
+        #if false
         
         var copy_deadzone: Int = Int (deadzone)
         
@@ -496,7 +496,7 @@ open class ScrollContainer: Container {
     
     @inline(__always)
     fileprivate final func set_follow_focus (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -591,7 +591,7 @@ open class ScrollContainer: Container {
     /// > Note: This will not work on a node that was just added during the same frame. If you want to scroll to a newly added child, you must wait until the next frame using [signal SceneTree.process_frame]:
     /// 
     public final func ensureControlVisible (control: Control?) {
-        #if true
+        #if false
         
         var copy_control_handle = control?.handle
         

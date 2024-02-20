@@ -24,7 +24,7 @@ open class VisualShaderNodeGroupBase: VisualShaderNodeResizableBase {
     
     /// Defines all input ports using a ``String`` formatted as a colon-separated list: `id,type,name;` (see ``addInputPort(id:type:name:)``).
     public final func setInputs (_ inputs: String) {
-        #if true
+        #if false
         
         let gstr_inputs = GString (inputs)
         
@@ -74,7 +74,7 @@ open class VisualShaderNodeGroupBase: VisualShaderNodeResizableBase {
     
     /// Defines all output ports using a ``String`` formatted as a colon-separated list: `id,type,name;` (see ``addOutputPort(id:type:name:)``).
     public final func setOutputs (_ outputs: String) {
-        #if true
+        #if false
         
         let gstr_outputs = GString (outputs)
         
@@ -125,7 +125,7 @@ open class VisualShaderNodeGroupBase: VisualShaderNodeResizableBase {
     /// Returns `true` if the specified port name does not override an existed port name and is valid within the shader.
     public final func isValidPortName (_ name: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -158,7 +158,7 @@ open class VisualShaderNodeGroupBase: VisualShaderNodeResizableBase {
     
     /// Adds an input port with the specified `type` (see ``VisualShaderNode.PortType``) and `name`.
     public final func addInputPort (id: Int32, type: Int32, name: String) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_type: Int = Int (type)
@@ -200,7 +200,7 @@ open class VisualShaderNodeGroupBase: VisualShaderNodeResizableBase {
     
     /// Removes the specified input port.
     public final func removeInputPort (id: Int32) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -251,7 +251,7 @@ open class VisualShaderNodeGroupBase: VisualShaderNodeResizableBase {
     /// Returns `true` if the specified input port exists.
     public final func hasInputPort (id: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -300,7 +300,7 @@ open class VisualShaderNodeGroupBase: VisualShaderNodeResizableBase {
     
     /// Adds an output port with the specified `type` (see ``VisualShaderNode.PortType``) and `name`.
     public final func addOutputPort (id: Int32, type: Int32, name: String) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_type: Int = Int (type)
@@ -342,7 +342,7 @@ open class VisualShaderNodeGroupBase: VisualShaderNodeResizableBase {
     
     /// Removes the specified output port.
     public final func removeOutputPort (id: Int32) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -393,7 +393,7 @@ open class VisualShaderNodeGroupBase: VisualShaderNodeResizableBase {
     /// Returns `true` if the specified output port exists.
     public final func hasOutputPort (id: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -442,7 +442,7 @@ open class VisualShaderNodeGroupBase: VisualShaderNodeResizableBase {
     
     /// Renames the specified input port.
     public final func setInputPortName (id: Int32, name: String) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         let gstr_name = GString (name)
@@ -479,7 +479,7 @@ open class VisualShaderNodeGroupBase: VisualShaderNodeResizableBase {
     
     /// Sets the specified input port's type (see ``VisualShaderNode.PortType``).
     public final func setInputPortType (id: Int32, type: Int32) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_type: Int = Int (type)
@@ -516,7 +516,7 @@ open class VisualShaderNodeGroupBase: VisualShaderNodeResizableBase {
     
     /// Renames the specified output port.
     public final func setOutputPortName (id: Int32, name: String) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         let gstr_name = GString (name)
@@ -553,7 +553,7 @@ open class VisualShaderNodeGroupBase: VisualShaderNodeResizableBase {
     
     /// Sets the specified output port's type (see ``VisualShaderNode.PortType``).
     public final func setOutputPortType (id: Int32, type: Int32) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_type: Int = Int (type)

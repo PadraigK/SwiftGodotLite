@@ -83,7 +83,7 @@ open class VisualShaderNodeCubemap: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_source (_ value: VisualShaderNodeCubemap.Source) {
-        #if true
+        #if false
         
         var copy_value = Int64 (value.rawValue)
         
@@ -133,7 +133,7 @@ open class VisualShaderNodeCubemap: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_cube_map (_ value: Cubemap?) {
-        #if true
+        #if false
         
         var copy_value_handle = value?.handle
         
@@ -182,7 +182,7 @@ open class VisualShaderNodeCubemap: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_texture_type (_ value: VisualShaderNodeCubemap.TextureType) {
-        #if true
+        #if false
         
         var copy_value = Int64 (value.rawValue)
         

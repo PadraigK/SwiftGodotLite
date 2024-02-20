@@ -62,7 +62,7 @@ open class VisualShaderNodeParameter: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_parameter_name (_ name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -112,7 +112,7 @@ open class VisualShaderNodeParameter: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_qualifier (_ qualifier: VisualShaderNodeParameter.Qualifier) {
-        #if true
+        #if false
         
         var copy_qualifier = Int64 (qualifier.rawValue)
         

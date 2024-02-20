@@ -114,7 +114,7 @@ open class VoxelGIData: Resource {
     
     /// 
     public final func allocate (toCellXform: Transform3D, aabb: AABB, octreeSize: Vector3, octreeCells: PackedByteArray, dataCells: PackedByteArray, distanceField: PackedByteArray, levelCounts: PackedInt32Array) {
-        #if true
+        #if false
         
         var copy_to_cell_xform = toCellXform
         var copy_aabb = aabb
@@ -279,7 +279,7 @@ open class VoxelGIData: Resource {
     
     @inline(__always)
     fileprivate final func set_dynamic_range (_ dynamicRange: Double) {
-        #if true
+        #if false
         
         var copy_dynamic_range = dynamicRange
         
@@ -329,7 +329,7 @@ open class VoxelGIData: Resource {
     
     @inline(__always)
     fileprivate final func set_energy (_ energy: Double) {
-        #if true
+        #if false
         
         var copy_energy = energy
         
@@ -379,7 +379,7 @@ open class VoxelGIData: Resource {
     
     @inline(__always)
     fileprivate final func set_bias (_ bias: Double) {
-        #if true
+        #if false
         
         var copy_bias = bias
         
@@ -429,7 +429,7 @@ open class VoxelGIData: Resource {
     
     @inline(__always)
     fileprivate final func set_normal_bias (_ bias: Double) {
-        #if true
+        #if false
         
         var copy_bias = bias
         
@@ -479,7 +479,7 @@ open class VoxelGIData: Resource {
     
     @inline(__always)
     fileprivate final func set_propagation (_ propagation: Double) {
-        #if true
+        #if false
         
         var copy_propagation = propagation
         
@@ -529,7 +529,7 @@ open class VoxelGIData: Resource {
     
     @inline(__always)
     fileprivate final func set_interior (_ interior: Bool) {
-        #if true
+        #if false
         
         var copy_interior = interior
         
@@ -579,7 +579,7 @@ open class VoxelGIData: Resource {
     
     @inline(__always)
     fileprivate final func set_use_two_bounces (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

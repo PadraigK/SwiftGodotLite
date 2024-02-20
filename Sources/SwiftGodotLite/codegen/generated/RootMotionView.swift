@@ -90,7 +90,7 @@ open class RootMotionView: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_animation_path (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RootMotionView.method_set_animation_path, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -138,7 +138,7 @@ open class RootMotionView: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -188,7 +188,7 @@ open class RootMotionView: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_cell_size (_ size: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -238,7 +238,7 @@ open class RootMotionView: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_radius (_ size: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -288,7 +288,7 @@ open class RootMotionView: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_zero_y (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

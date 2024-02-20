@@ -43,7 +43,7 @@ open class EditorFileSystemDirectory: Object {
     /// Returns the subdirectory at index `idx`.
     public final func getSubdir (idx: Int32)-> EditorFileSystemDirectory? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -95,7 +95,7 @@ open class EditorFileSystemDirectory: Object {
     /// Returns the name of the file at index `idx`.
     public final func getFile (idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -129,7 +129,7 @@ open class EditorFileSystemDirectory: Object {
     /// Returns the path to the file at index `idx`.
     public final func getFilePath (idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -163,7 +163,7 @@ open class EditorFileSystemDirectory: Object {
     /// Returns the resource type of the file at index `idx`. This returns a string such as `"Resource"` or `"GDScript"`, _not_ a file extension such as `".gd"`.
     public final func getFileType (idx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -197,7 +197,7 @@ open class EditorFileSystemDirectory: Object {
     /// Returns the name of the script class defined in the file at index `idx`. If the file doesn't define a script class using the `class_name` syntax, this will return an empty string.
     public final func getFileScriptClassName (idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -231,7 +231,7 @@ open class EditorFileSystemDirectory: Object {
     /// Returns the base class of the script class defined in the file at index `idx`. If the file doesn't define a script class using the `class_name` syntax, this will return an empty string.
     public final func getFileScriptClassExtends (idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -265,7 +265,7 @@ open class EditorFileSystemDirectory: Object {
     /// Returns `true` if the file at index `idx` imported properly.
     public final func getFileImportIsValid (idx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -353,7 +353,7 @@ open class EditorFileSystemDirectory: Object {
     /// Returns the index of the file with name `name` or `-1` if not found.
     public final func findFileIndex (name: String)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -387,7 +387,7 @@ open class EditorFileSystemDirectory: Object {
     /// Returns the index of the directory with name `name` or `-1` if not found.
     public final func findDirIndex (name: String)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         

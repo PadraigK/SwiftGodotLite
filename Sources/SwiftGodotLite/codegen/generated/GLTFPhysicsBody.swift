@@ -103,7 +103,7 @@ open class GLTFPhysicsBody: Resource {
     /// Create a new GLTFPhysicsBody instance from the given Godot ``CollisionObject3D`` node.
     public static func fromNode (bodyNode: CollisionObject3D?)-> GLTFPhysicsBody? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_body_node_handle = bodyNode?.handle
         
@@ -154,7 +154,7 @@ open class GLTFPhysicsBody: Resource {
     /// Creates a new GLTFPhysicsBody instance by parsing the given ``GDictionary``.
     public static func fromDictionary (_ dictionary: GDictionary)-> GLTFPhysicsBody? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFPhysicsBody.method_from_dictionary, nil, &_result, &dictionary.content)
@@ -221,7 +221,7 @@ open class GLTFPhysicsBody: Resource {
     
     @inline(__always)
     fileprivate final func set_body_type (_ bodyType: String) {
-        #if true
+        #if false
         
         let gstr_body_type = GString (bodyType)
         
@@ -271,7 +271,7 @@ open class GLTFPhysicsBody: Resource {
     
     @inline(__always)
     fileprivate final func set_mass (_ mass: Double) {
-        #if true
+        #if false
         
         var copy_mass = mass
         
@@ -321,7 +321,7 @@ open class GLTFPhysicsBody: Resource {
     
     @inline(__always)
     fileprivate final func set_linear_velocity (_ linearVelocity: Vector3) {
-        #if true
+        #if false
         
         var copy_linear_velocity = linearVelocity
         
@@ -371,7 +371,7 @@ open class GLTFPhysicsBody: Resource {
     
     @inline(__always)
     fileprivate final func set_angular_velocity (_ angularVelocity: Vector3) {
-        #if true
+        #if false
         
         var copy_angular_velocity = angularVelocity
         
@@ -421,7 +421,7 @@ open class GLTFPhysicsBody: Resource {
     
     @inline(__always)
     fileprivate final func set_center_of_mass (_ centerOfMass: Vector3) {
-        #if true
+        #if false
         
         var copy_center_of_mass = centerOfMass
         
@@ -471,7 +471,7 @@ open class GLTFPhysicsBody: Resource {
     
     @inline(__always)
     fileprivate final func set_inertia_tensor (_ inertiaTensor: Basis) {
-        #if true
+        #if false
         
         var copy_inertia_tensor = inertiaTensor
         

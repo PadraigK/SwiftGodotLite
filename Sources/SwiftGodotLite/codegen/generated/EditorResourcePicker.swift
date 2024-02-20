@@ -98,7 +98,7 @@ open class EditorResourcePicker: HBoxContainer {
     
     @inline(__always)
     fileprivate final func set_base_type (_ baseType: String) {
-        #if true
+        #if false
         
         let gstr_base_type = GString (baseType)
         
@@ -166,7 +166,7 @@ open class EditorResourcePicker: HBoxContainer {
     
     @inline(__always)
     fileprivate final func set_edited_resource (_ resource: Resource?) {
-        #if true
+        #if false
         
         var copy_resource_handle = resource?.handle
         
@@ -215,7 +215,7 @@ open class EditorResourcePicker: HBoxContainer {
     
     @inline(__always)
     fileprivate final func set_toggle_mode (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -265,7 +265,7 @@ open class EditorResourcePicker: HBoxContainer {
     
     /// Sets the toggle mode state for the main button. Works only if ``toggleMode`` is set to `true`.
     public final func setTogglePressed (_ pressed: Bool) {
-        #if true
+        #if false
         
         var copy_pressed = pressed
         
@@ -297,7 +297,7 @@ open class EditorResourcePicker: HBoxContainer {
     
     @inline(__always)
     fileprivate final func set_editable (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

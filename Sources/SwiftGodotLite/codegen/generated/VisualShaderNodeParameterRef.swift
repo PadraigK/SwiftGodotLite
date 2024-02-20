@@ -39,7 +39,7 @@ open class VisualShaderNodeParameterRef: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_parameter_name (_ name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         

@@ -27,7 +27,7 @@ open class TileMapPattern: Resource {
     
     /// Sets the tile identifiers for the cell at coordinates `coords`. See ``TileMap/setCell(layer:coords:sourceId:atlasCoords:alternativeTile:)``.
     public final func setCell (coords: Vector2i, sourceId: Int32 = -1, atlasCoords: Vector2i = Vector2i (x: -1, y: -1), alternativeTile: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_coords = coords
         var copy_source_id: Int = Int (sourceId)
@@ -75,7 +75,7 @@ open class TileMapPattern: Resource {
     /// Returns whether the pattern has a tile at the given coordinates.
     public final func hasCell (coords: Vector2i)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_coords = coords
         
@@ -108,7 +108,7 @@ open class TileMapPattern: Resource {
     
     /// Remove the cell at the given coordinates.
     public final func removeCell (coords: Vector2i, updateSize: Bool) {
-        #if true
+        #if false
         
         var copy_coords = coords
         var copy_update_size = updateSize
@@ -146,7 +146,7 @@ open class TileMapPattern: Resource {
     /// Returns the tile source ID of the cell at `coords`.
     public final func getCellSourceId (coords: Vector2i)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_coords = coords
         
@@ -180,7 +180,7 @@ open class TileMapPattern: Resource {
     /// Returns the tile atlas coordinates ID of the cell at `coords`.
     public final func getCellAtlasCoords (_ coords: Vector2i)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_coords = coords
         
@@ -214,7 +214,7 @@ open class TileMapPattern: Resource {
     /// Returns the tile alternative ID of the cell at `coords`.
     public final func getCellAlternativeTile (coords: Vector2i)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_coords = coords
         
@@ -283,7 +283,7 @@ open class TileMapPattern: Resource {
     
     /// Sets the size of the pattern.
     public final func setSize (_ size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         

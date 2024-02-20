@@ -84,7 +84,7 @@ open class NavigationMeshSourceGeometryData2D: Resource {
     @inline(__always)
     /// Sets all the traversable area outlines arrays.
     fileprivate final func set_traversable_outlines (_ traversableOutlines: VariantCollection<PackedVector2Array>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationMeshSourceGeometryData2D.method_set_traversable_outlines, UnsafeMutableRawPointer (mutating: handle), nil, &traversableOutlines.array.content)
@@ -134,7 +134,7 @@ open class NavigationMeshSourceGeometryData2D: Resource {
     @inline(__always)
     /// Sets all the obstructed area outlines arrays.
     fileprivate final func set_obstruction_outlines (_ obstructionOutlines: VariantCollection<PackedVector2Array>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationMeshSourceGeometryData2D.method_set_obstruction_outlines, UnsafeMutableRawPointer (mutating: handle), nil, &obstructionOutlines.array.content)
@@ -183,7 +183,7 @@ open class NavigationMeshSourceGeometryData2D: Resource {
     
     /// Adds the outline points of a shape as traversable area.
     public final func addTraversableOutline (shapeOutline: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationMeshSourceGeometryData2D.method_add_traversable_outline, UnsafeMutableRawPointer (mutating: handle), nil, &shapeOutline.content)
@@ -213,7 +213,7 @@ open class NavigationMeshSourceGeometryData2D: Resource {
     
     /// Adds the outline points of a shape as obstructed area.
     public final func addObstructionOutline (shapeOutline: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationMeshSourceGeometryData2D.method_add_obstruction_outline, UnsafeMutableRawPointer (mutating: handle), nil, &shapeOutline.content)

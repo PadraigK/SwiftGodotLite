@@ -81,7 +81,7 @@ open class AudioEffectPitchShift: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_pitch_scale (_ rate: Double) {
-        #if true
+        #if false
         
         var copy_rate = rate
         
@@ -131,7 +131,7 @@ open class AudioEffectPitchShift: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_oversampling (_ amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -181,7 +181,7 @@ open class AudioEffectPitchShift: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_fft_size (_ size: AudioEffectPitchShift.FFTSize) {
-        #if true
+        #if false
         
         var copy_size = Int64 (size.rawValue)
         

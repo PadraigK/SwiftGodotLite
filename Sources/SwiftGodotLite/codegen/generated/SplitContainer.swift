@@ -92,7 +92,7 @@ open class SplitContainer: Container {
     
     @inline(__always)
     fileprivate final func set_split_offset (_ offset: Int32) {
-        #if true
+        #if false
         
         var copy_offset: Int = Int (offset)
         
@@ -158,7 +158,7 @@ open class SplitContainer: Container {
     
     @inline(__always)
     fileprivate final func set_collapsed (_ collapsed: Bool) {
-        #if true
+        #if false
         
         var copy_collapsed = collapsed
         
@@ -208,7 +208,7 @@ open class SplitContainer: Container {
     
     @inline(__always)
     fileprivate final func set_dragger_visibility (_ mode: SplitContainer.DraggerVisibility) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -258,7 +258,7 @@ open class SplitContainer: Container {
     
     @inline(__always)
     fileprivate final func set_vertical (_ vertical: Bool) {
-        #if true
+        #if false
         
         var copy_vertical = vertical
         

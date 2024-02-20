@@ -235,7 +235,7 @@ open class Line2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_points (_ points: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Line2D.method_set_points, UnsafeMutableRawPointer (mutating: handle), nil, &points.content)
@@ -283,7 +283,7 @@ open class Line2D: Node2D {
     
     /// Overwrites the position of the point at the given `index` with the supplied `position`.
     public final func setPointPosition (index: Int32, position: Vector2) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_position = position
@@ -321,7 +321,7 @@ open class Line2D: Node2D {
     /// Returns the position of the point at index `index`.
     public final func getPointPosition (index: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -375,7 +375,7 @@ open class Line2D: Node2D {
     /// If `index` is given, the new point is inserted before the existing point identified by index `index`. The indices of the points after the new point get increased by 1. The provided `index` must not exceed the number of existing points in the polyline. See ``getPointCount()``.
     /// 
     public final func addPoint (position: Vector2, index: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_index: Int = Int (index)
@@ -412,7 +412,7 @@ open class Line2D: Node2D {
     
     /// Removes the point at index `index` from the polyline.
     public final func removePoint (index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -460,7 +460,7 @@ open class Line2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_closed (_ closed: Bool) {
-        #if true
+        #if false
         
         var copy_closed = closed
         
@@ -510,7 +510,7 @@ open class Line2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_width (_ width: Double) {
-        #if true
+        #if false
         
         var copy_width = width
         
@@ -560,7 +560,7 @@ open class Line2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_curve (_ curve: Curve?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         
@@ -609,7 +609,7 @@ open class Line2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_default_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -659,7 +659,7 @@ open class Line2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_gradient (_ color: Gradient?) {
-        #if true
+        #if false
         
         var copy_color_handle = color?.handle
         
@@ -708,7 +708,7 @@ open class Line2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -757,7 +757,7 @@ open class Line2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_texture_mode (_ mode: Line2D.LineTextureMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -807,7 +807,7 @@ open class Line2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_joint_mode (_ mode: Line2D.LineJointMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -857,7 +857,7 @@ open class Line2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_begin_cap_mode (_ mode: Line2D.LineCapMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -907,7 +907,7 @@ open class Line2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_end_cap_mode (_ mode: Line2D.LineCapMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -957,7 +957,7 @@ open class Line2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_sharp_limit (_ limit: Double) {
-        #if true
+        #if false
         
         var copy_limit = limit
         
@@ -1007,7 +1007,7 @@ open class Line2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_round_precision (_ precision: Int32) {
-        #if true
+        #if false
         
         var copy_precision: Int = Int (precision)
         
@@ -1057,7 +1057,7 @@ open class Line2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_antialiased (_ antialiased: Bool) {
-        #if true
+        #if false
         
         var copy_antialiased = antialiased
         

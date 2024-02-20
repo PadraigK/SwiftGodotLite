@@ -53,7 +53,7 @@ open class NavigationMeshSourceGeometryData3D: Resource {
     /// > Warning: Inappropriate data can crash the baking process of the involved third-party libraries.
     /// 
     fileprivate final func set_vertices (_ vertices: PackedFloat32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationMeshSourceGeometryData3D.method_set_vertices, UnsafeMutableRawPointer (mutating: handle), nil, &vertices.content)
@@ -106,7 +106,7 @@ open class NavigationMeshSourceGeometryData3D: Resource {
     /// > Warning: Inappropriate data can crash the baking process of the involved third-party libraries.
     /// 
     fileprivate final func set_indices (_ indices: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationMeshSourceGeometryData3D.method_set_indices, UnsafeMutableRawPointer (mutating: handle), nil, &indices.content)
@@ -189,7 +189,7 @@ open class NavigationMeshSourceGeometryData3D: Resource {
     
     /// Adds the geometry data of a ``Mesh`` resource to the navigation mesh baking data. The mesh must have valid triangulated mesh data to be considered. Since ``NavigationMesh`` resources have no transform, all vertex positions need to be offset by the node's transform using `xform`.
     public final func addMesh (_ mesh: Mesh?, xform: Transform3D) {
-        #if true
+        #if false
         
         var copy_xform = xform
         var copy_mesh_handle = mesh?.handle
@@ -225,7 +225,7 @@ open class NavigationMeshSourceGeometryData3D: Resource {
     
     /// Adds an ``GArray`` the size of ``Mesh/ArrayType/arrayMax`` and with vertices at index ``Mesh/ArrayType/arrayVertex`` and indices at index ``Mesh/ArrayType/arrayIndex`` to the navigation mesh baking data. The array must have valid triangulated mesh data to be considered. Since ``NavigationMesh`` resources have no transform, all vertex positions need to be offset by the node's transform using `xform`.
     public final func addMeshArray (_ meshArray: GArray, xform: Transform3D) {
-        #if true
+        #if false
         
         var copy_xform = xform
         
@@ -260,7 +260,7 @@ open class NavigationMeshSourceGeometryData3D: Resource {
     
     /// Adds an array of vertex positions to the geometry data for navigation mesh baking to form triangulated faces. For each face the array must have three vertex positions in clockwise winding order. Since ``NavigationMesh`` resources have no transform, all vertex positions need to be offset by the node's transform using `xform`.
     public final func addFaces (_ faces: PackedVector3Array, xform: Transform3D) {
-        #if true
+        #if false
         
         var copy_xform = xform
         

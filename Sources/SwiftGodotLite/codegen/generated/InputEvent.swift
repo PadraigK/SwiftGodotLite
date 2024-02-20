@@ -42,7 +42,7 @@ open class InputEvent: Resource {
     
     @inline(__always)
     fileprivate final func set_device (_ device: Int32) {
-        #if true
+        #if false
         
         var copy_device: Int = Int (device)
         
@@ -96,7 +96,7 @@ open class InputEvent: Resource {
     /// 
     public final func isAction (_ action: StringName, exactMatch: Bool = false)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_exact_match = exactMatch
         
@@ -138,7 +138,7 @@ open class InputEvent: Resource {
     /// 
     public final func isActionPressed (action: StringName, allowEcho: Bool = false, exactMatch: Bool = false)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_allow_echo = allowEcho
         var copy_exact_match = exactMatch
@@ -183,7 +183,7 @@ open class InputEvent: Resource {
     /// 
     public final func isActionReleased (action: StringName, exactMatch: Bool = false)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_exact_match = exactMatch
         
@@ -223,7 +223,7 @@ open class InputEvent: Resource {
     /// 
     public final func getActionStrength (action: StringName, exactMatch: Bool = false)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_exact_match = exactMatch
         
@@ -356,7 +356,7 @@ open class InputEvent: Resource {
     /// 
     public final func isMatch (event: InputEvent?, exactMatch: Bool = true)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_exact_match = exactMatch
         var copy_event_handle = event?.handle
@@ -415,7 +415,7 @@ open class InputEvent: Resource {
     /// 
     public final func accumulate (withEvent: InputEvent?)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_with_event_handle = withEvent?.handle
         
@@ -448,7 +448,7 @@ open class InputEvent: Resource {
     /// Returns a copy of the given input event which has been offset by `localOfs` and transformed by `xform`. Relevant for events of type ``InputEventMouseButton``, ``InputEventMouseMotion``, ``InputEventScreenTouch``, ``InputEventScreenDrag``, ``InputEventMagnifyGesture`` and ``InputEventPanGesture``.
     public final func xformedBy (xform: Transform2D, localOfs: Vector2 = Vector2 (x: 0, y: 0))-> InputEvent? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_xform = xform
         var copy_local_ofs = localOfs

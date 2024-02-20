@@ -179,7 +179,7 @@ open class AnimationMixer: Node {
     /// Adds `library` to the animation player, under the key `name`.
     public final func addAnimationLibrary (name: StringName, library: AnimationLibrary?)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_library_handle = library?.handle
         
@@ -214,7 +214,7 @@ open class AnimationMixer: Node {
     
     /// Removes the ``AnimationLibrary`` associated with the key `name`.
     public final func removeAnimationLibrary (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationMixer.method_remove_animation_library, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -244,7 +244,7 @@ open class AnimationMixer: Node {
     
     /// Moves the ``AnimationLibrary`` associated with the key `name` to the key `newname`.
     public final func renameAnimationLibrary (name: StringName, newname: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationMixer.method_rename_animation_library, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &newname.content)
@@ -278,7 +278,7 @@ open class AnimationMixer: Node {
     /// Returns `true` if the ``AnimationPlayer`` stores an ``AnimationLibrary`` with key `name`.
     public final func hasAnimationLibrary (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationMixer.method_has_animation_library, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -313,7 +313,7 @@ open class AnimationMixer: Node {
     /// 
     public final func getAnimationLibrary (name: StringName)-> AnimationLibrary? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationMixer.method_get_animation_library, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -363,7 +363,7 @@ open class AnimationMixer: Node {
     /// Returns `true` if the ``AnimationPlayer`` stores an ``Animation`` with key `name`.
     public final func hasAnimation (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationMixer.method_has_animation, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -395,7 +395,7 @@ open class AnimationMixer: Node {
     /// Returns the ``Animation`` with the key `name`. If the animation does not exist, `null` is returned and an error is logged.
     public final func getAnimation (name: StringName)-> Animation? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationMixer.method_get_animation, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -444,7 +444,7 @@ open class AnimationMixer: Node {
     
     @inline(__always)
     fileprivate final func set_active (_ active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         
@@ -494,7 +494,7 @@ open class AnimationMixer: Node {
     
     @inline(__always)
     fileprivate final func set_deterministic (_ deterministic: Bool) {
-        #if true
+        #if false
         
         var copy_deterministic = deterministic
         
@@ -544,7 +544,7 @@ open class AnimationMixer: Node {
     
     @inline(__always)
     fileprivate final func set_root_node (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationMixer.method_set_root_node, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -592,7 +592,7 @@ open class AnimationMixer: Node {
     
     @inline(__always)
     fileprivate final func set_callback_mode_process (_ mode: AnimationMixer.AnimationCallbackModeProcess) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -642,7 +642,7 @@ open class AnimationMixer: Node {
     
     @inline(__always)
     fileprivate final func set_callback_mode_method (_ mode: AnimationMixer.AnimationCallbackModeMethod) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -692,7 +692,7 @@ open class AnimationMixer: Node {
     
     @inline(__always)
     fileprivate final func set_audio_max_polyphony (_ maxPolyphony: Int32) {
-        #if true
+        #if false
         
         var copy_max_polyphony: Int = Int (maxPolyphony)
         
@@ -742,7 +742,7 @@ open class AnimationMixer: Node {
     
     @inline(__always)
     fileprivate final func set_root_motion_track (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationMixer.method_set_root_motion_track, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -958,7 +958,7 @@ open class AnimationMixer: Node {
     
     /// Manually advance the animations by the specified time (in seconds).
     public final func advance (delta: Double) {
-        #if true
+        #if false
         
         var copy_delta = delta
         
@@ -990,7 +990,7 @@ open class AnimationMixer: Node {
     
     @inline(__always)
     fileprivate final func set_reset_on_save_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1041,7 +1041,7 @@ open class AnimationMixer: Node {
     /// Returns the key of `animation` or an empty ``StringName`` if not found.
     public final func findAnimation (_ animation: Animation?)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_animation_handle = animation?.handle
         
@@ -1074,7 +1074,7 @@ open class AnimationMixer: Node {
     /// Returns the key for the ``AnimationLibrary`` that contains `animation` or an empty ``StringName`` if not found.
     public final func findAnimationLibrary (animation: Animation?)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_animation_handle = animation?.handle
         

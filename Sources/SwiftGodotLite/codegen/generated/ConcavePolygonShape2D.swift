@@ -48,7 +48,7 @@ open class ConcavePolygonShape2D: Shape2D {
     
     @inline(__always)
     fileprivate final func set_segments (_ segments: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ConcavePolygonShape2D.method_set_segments, UnsafeMutableRawPointer (mutating: handle), nil, &segments.content)

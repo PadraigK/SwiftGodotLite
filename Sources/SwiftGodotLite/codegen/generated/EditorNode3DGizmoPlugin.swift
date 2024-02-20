@@ -147,7 +147,7 @@ open class EditorNode3DGizmoPlugin: Resource {
     
     /// Creates an unshaded material with its variants (selected and/or editable) and adds them to the internal material list. They can then be accessed with ``getMaterial(name:gizmo:)`` and used in ``EditorNode3DGizmo/addMesh(_:material:transform:skeleton:)`` and ``EditorNode3DGizmo/addLines(_:material:billboard:modulate:)``. Should not be overridden.
     public final func createMaterial (name: String, color: Color, billboard: Bool = false, onTop: Bool = false, useVertexColor: Bool = false) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_color = color
@@ -199,7 +199,7 @@ open class EditorNode3DGizmoPlugin: Resource {
     
     /// Creates an icon material with its variants (selected and/or editable) and adds them to the internal material list. They can then be accessed with ``getMaterial(name:gizmo:)`` and used in ``EditorNode3DGizmo/addUnscaledBillboard(material:defaultScale:modulate:)``. Should not be overridden.
     public final func createIconMaterial (name: String, texture: Texture2D?, onTop: Bool = false, color: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_on_top = onTop
@@ -248,7 +248,7 @@ open class EditorNode3DGizmoPlugin: Resource {
     /// You can optionally provide a texture to use instead of the default icon.
     /// 
     public final func createHandleMaterial (name: String, billboard: Bool = false, texture: Texture2D? = nil) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_billboard = billboard
@@ -289,7 +289,7 @@ open class EditorNode3DGizmoPlugin: Resource {
     
     /// Adds a new material to the internal material list for the plugin. It can then be accessed with ``getMaterial(name:gizmo:)``. Should not be overridden.
     public final func addMaterial (name: String, material: StandardMaterial3D?) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_material_handle = material?.handle
@@ -326,7 +326,7 @@ open class EditorNode3DGizmoPlugin: Resource {
     /// Gets material from the internal list of materials. If an ``EditorNode3DGizmo`` is provided, it will try to get the corresponding variant (selected and/or editable).
     public final func getMaterial (name: String, gizmo: EditorNode3DGizmo? = nil)-> StandardMaterial3D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_gizmo_handle = gizmo?.handle

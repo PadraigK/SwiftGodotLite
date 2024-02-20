@@ -54,7 +54,7 @@ open class PackedScene: Resource {
     /// Pack will ignore any sub-nodes not owned by given node. See ``Node/owner``.
     public final func pack (path: Node?)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_path_handle = path?.handle
         
@@ -87,7 +87,7 @@ open class PackedScene: Resource {
     /// Instantiates the scene's node hierarchy. Triggers child scene instantiation(s). Triggers a ``Node/``notificationSceneInstantiated```` notification on the root node.
     public final func instantiate (editState: PackedScene.GenEditState = .disabled)-> Node? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_edit_state = Int64 (editState.rawValue)
         

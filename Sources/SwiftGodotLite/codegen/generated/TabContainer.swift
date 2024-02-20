@@ -170,7 +170,7 @@ open class TabContainer: Container {
     
     @inline(__always)
     fileprivate final func set_current_tab (_ tabIdx: Int32) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -314,7 +314,7 @@ open class TabContainer: Container {
     /// Returns the ``Control`` node from the tab at index `tabIdx`.
     public final func getTabControl (tabIdx: Int32)-> Control? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -347,7 +347,7 @@ open class TabContainer: Container {
     
     @inline(__always)
     fileprivate final func set_tab_alignment (_ alignment: TabBar.AlignmentMode) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -397,7 +397,7 @@ open class TabContainer: Container {
     
     @inline(__always)
     fileprivate final func set_clip_tabs (_ clipTabs: Bool) {
-        #if true
+        #if false
         
         var copy_clip_tabs = clipTabs
         
@@ -447,7 +447,7 @@ open class TabContainer: Container {
     
     @inline(__always)
     fileprivate final func set_tabs_visible (_ visible: Bool) {
-        #if true
+        #if false
         
         var copy_visible = visible
         
@@ -497,7 +497,7 @@ open class TabContainer: Container {
     
     @inline(__always)
     fileprivate final func set_all_tabs_in_front (_ isFront: Bool) {
-        #if true
+        #if false
         
         var copy_is_front = isFront
         
@@ -547,7 +547,7 @@ open class TabContainer: Container {
     
     /// Sets a custom title for the tab at index `tabIdx` (tab titles default to the name of the indexed child node). Set it back to the child's name to make the tab default to it again.
     public final func setTabTitle (tabIdx: Int32, title: String) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         let gstr_title = GString (title)
@@ -585,7 +585,7 @@ open class TabContainer: Container {
     /// Returns the title of the tab at index `tabIdx`. Tab titles default to the name of the indexed child node, but this can be overridden with ``setTabTitle(tabIdx:title:)``.
     public final func getTabTitle (tabIdx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -618,7 +618,7 @@ open class TabContainer: Container {
     
     /// Sets an icon for the tab at index `tabIdx`.
     public final func setTabIcon (tabIdx: Int32, icon: Texture2D?) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         var copy_icon_handle = icon?.handle
@@ -655,7 +655,7 @@ open class TabContainer: Container {
     /// Returns the ``Texture2D`` for the tab at index `tabIdx` or `null` if the tab has no ``Texture2D``.
     public final func getTabIcon (tabIdx: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -688,7 +688,7 @@ open class TabContainer: Container {
     
     /// If `disabled` is `true`, disables the tab at index `tabIdx`, making it non-interactable.
     public final func setTabDisabled (tabIdx: Int32, disabled: Bool) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         var copy_disabled = disabled
@@ -726,7 +726,7 @@ open class TabContainer: Container {
     /// Returns `true` if the tab at index `tabIdx` is disabled.
     public final func isTabDisabled (tabIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -759,7 +759,7 @@ open class TabContainer: Container {
     
     /// If `hidden` is `true`, hides the tab at index `tabIdx`, making it disappear from the tab area.
     public final func setTabHidden (tabIdx: Int32, hidden: Bool) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         var copy_hidden = hidden
@@ -797,7 +797,7 @@ open class TabContainer: Container {
     /// Returns `true` if the tab at index `tabIdx` is hidden.
     public final func isTabHidden (tabIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -830,7 +830,7 @@ open class TabContainer: Container {
     
     /// Sets the metadata value for the tab at index `tabIdx`, which can be retrieved later using ``getTabMetadata(tabIdx:)``.
     public final func setTabMetadata (tabIdx: Int32, metadata: Variant) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -866,7 +866,7 @@ open class TabContainer: Container {
     /// Returns the metadata value set to the tab at index `tabIdx` using ``setTabMetadata(tabIdx:metadata:)``. If no metadata was previously set, returns `null` by default.
     public final func getTabMetadata (tabIdx: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -899,7 +899,7 @@ open class TabContainer: Container {
     
     /// Sets the button icon from the tab at index `tabIdx`.
     public final func setTabButtonIcon (tabIdx: Int32, icon: Texture2D?) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         var copy_icon_handle = icon?.handle
@@ -936,7 +936,7 @@ open class TabContainer: Container {
     /// Returns the button icon from the tab at index `tabIdx`.
     public final func getTabButtonIcon (tabIdx: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -970,7 +970,7 @@ open class TabContainer: Container {
     /// Returns the index of the tab at local coordinates `point`. Returns `-1` if the point is outside the control boundaries or if there's no tab at the queried position.
     public final func getTabIdxAtPoint (_ point: Vector2)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_point = point
         
@@ -1004,7 +1004,7 @@ open class TabContainer: Container {
     /// Returns the index of the tab tied to the given `control`. The control must be a child of the ``TabContainer``.
     public final func getTabIdxFromControl (_ control: Control?)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_control_handle = control?.handle
         
@@ -1036,7 +1036,7 @@ open class TabContainer: Container {
     
     /// If set on a ``Popup`` node instance, a popup menu icon appears in the top-right corner of the ``TabContainer`` (setting it to `null` will make it go away). Clicking it will expand the ``Popup`` node.
     public final func setPopup (_ popup: Node?) {
-        #if true
+        #if false
         
         var copy_popup_handle = popup?.handle
         
@@ -1088,7 +1088,7 @@ open class TabContainer: Container {
     
     @inline(__always)
     fileprivate final func set_drag_to_rearrange_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1138,7 +1138,7 @@ open class TabContainer: Container {
     
     @inline(__always)
     fileprivate final func set_tabs_rearrange_group (_ groupId: Int32) {
-        #if true
+        #if false
         
         var copy_group_id: Int = Int (groupId)
         
@@ -1188,7 +1188,7 @@ open class TabContainer: Container {
     
     @inline(__always)
     fileprivate final func set_use_hidden_tabs_for_min_size (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1238,7 +1238,7 @@ open class TabContainer: Container {
     
     @inline(__always)
     fileprivate final func set_tab_focus_mode (_ focusMode: Control.FocusMode) {
-        #if true
+        #if false
         
         var copy_focus_mode = Int64 (focusMode.rawValue)
         

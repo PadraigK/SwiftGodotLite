@@ -31,7 +31,7 @@ open class InstancePlaceholder: Node {
     /// 
     public final func getStoredValues (withOrder: Bool = false)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_with_order = withOrder
         
@@ -68,7 +68,7 @@ open class InstancePlaceholder: Node {
     /// 
     public final func createInstance (replace: Bool = false, customScene: PackedScene? = nil)-> Node? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_replace = replace
         var copy_custom_scene_handle = customScene?.handle

@@ -110,7 +110,7 @@ open class VisualShaderNodeCompare: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_comparison_type (_ type: VisualShaderNodeCompare.ComparisonType) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -160,7 +160,7 @@ open class VisualShaderNodeCompare: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_function (_ `func`: VisualShaderNodeCompare.Function) {
-        #if true
+        #if false
         
         var copy_func = Int64 (`func`.rawValue)
         
@@ -210,7 +210,7 @@ open class VisualShaderNodeCompare: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_condition (_ condition: VisualShaderNodeCompare.Condition) {
-        #if true
+        #if false
         
         var copy_condition = Int64 (condition.rawValue)
         

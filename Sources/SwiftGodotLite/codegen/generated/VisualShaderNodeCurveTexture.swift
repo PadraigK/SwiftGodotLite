@@ -39,7 +39,7 @@ open class VisualShaderNodeCurveTexture: VisualShaderNodeResizableBase {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: CurveTexture?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         

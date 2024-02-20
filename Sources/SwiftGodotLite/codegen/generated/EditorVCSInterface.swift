@@ -175,7 +175,7 @@ open class EditorVCSInterface: Object {
     /// Helper function to create a ``GDictionary`` for storing a line diff. `newLineNo` is the line number in the new file (can be `-1` if the line is deleted). `oldLineNo` is the line number in the old file (can be `-1` if the line is added). `content` is the diff text. `status` is a single character string which stores the line origin.
     public final func createDiffLine (newLineNo: Int32, oldLineNo: Int32, content: String, status: String)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_new_line_no: Int = Int (newLineNo)
         var copy_old_line_no: Int = Int (oldLineNo)
@@ -224,7 +224,7 @@ open class EditorVCSInterface: Object {
     /// Helper function to create a ``GDictionary`` for storing diff hunk data. `oldStart` is the starting line number in old file. `newStart` is the starting line number in new file. `oldLines` is the number of lines in the old file. `newLines` is the number of lines in the new file.
     public final func createDiffHunk (oldStart: Int32, newStart: Int32, oldLines: Int32, newLines: Int32)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_old_start: Int = Int (oldStart)
         var copy_new_start: Int = Int (newStart)
@@ -273,7 +273,7 @@ open class EditorVCSInterface: Object {
     /// Helper function to create a ``GDictionary`` for storing old and new diff file paths.
     public final func createDiffFile (newFile: String, oldFile: String)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         let gstr_new_file = GString (newFile)
         let gstr_old_file = GString (oldFile)
@@ -312,7 +312,7 @@ open class EditorVCSInterface: Object {
     /// Helper function to create a commit ``GDictionary`` item. `msg` is the commit message of the commit. `author` is a single human-readable string containing all the author's details, e.g. the email and name configured in the VCS. `id` is the identifier of the commit, in whichever format your VCS may provide an identifier to commits. `unixTimestamp` is the UTC Unix timestamp of when the commit was created. `offsetMinutes` is the timezone offset in minutes, recorded from the system timezone where the commit was created.
     public final func createCommit (msg: String, author: String, id: String, unixTimestamp: Int, offsetMinutes: Int)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         let gstr_msg = GString (msg)
         let gstr_author = GString (author)
@@ -366,7 +366,7 @@ open class EditorVCSInterface: Object {
     /// Helper function to create a ``GDictionary`` used by editor to read the status of a file.
     public final func createStatusFile (filePath: String, changeType: EditorVCSInterface.ChangeType, area: EditorVCSInterface.TreeArea)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         let gstr_file_path = GString (filePath)
         var copy_change_type = Int64 (changeType.rawValue)
@@ -410,7 +410,7 @@ open class EditorVCSInterface: Object {
     /// Helper function to add an array of `diffHunks` into a `diffFile`.
     public final func addDiffHunksIntoDiffFile (_ diffFile: GDictionary, diffHunks: VariantCollection<GDictionary>)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorVCSInterface.method_add_diff_hunks_into_diff_file, UnsafeMutableRawPointer (mutating: handle), &_result.content, &diffFile.content, &diffHunks.array.content)
@@ -445,7 +445,7 @@ open class EditorVCSInterface: Object {
     /// Helper function to add an array of `lineDiffs` into a `diffHunk`.
     public final func addLineDiffsIntoDiffHunk (_ diffHunk: GDictionary, lineDiffs: VariantCollection<GDictionary>)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorVCSInterface.method_add_line_diffs_into_diff_hunk, UnsafeMutableRawPointer (mutating: handle), &_result.content, &diffHunk.content, &lineDiffs.array.content)
@@ -479,7 +479,7 @@ open class EditorVCSInterface: Object {
     
     /// Pops up an error message in the editor which is shown as coming from the underlying VCS. Use this to show VCS specific error messages.
     public final func popupError (msg: String) {
-        #if true
+        #if false
         
         let gstr_msg = GString (msg)
         

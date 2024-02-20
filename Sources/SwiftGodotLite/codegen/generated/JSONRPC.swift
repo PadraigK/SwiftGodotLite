@@ -37,7 +37,7 @@ open class JSONRPC: Object {
     
     /// 
     public final func setScope (_ scope: String, target: Object?) {
-        #if true
+        #if false
         
         let gstr_scope = GString (scope)
         var copy_target_handle = target?.handle
@@ -79,7 +79,7 @@ open class JSONRPC: Object {
     /// 
     public final func processAction (_ action: Variant, recurse: Bool = false)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_recurse = recurse
         
@@ -116,7 +116,7 @@ open class JSONRPC: Object {
     /// 
     public final func processString (action: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_action = GString (action)
         
@@ -157,7 +157,7 @@ open class JSONRPC: Object {
     /// 
     public final func makeRequest (method: String, params: Variant, id: Variant)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         let gstr_method = GString (method)
         
@@ -202,7 +202,7 @@ open class JSONRPC: Object {
     /// 
     public final func makeResponse (result: Variant, id: Variant)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (JSONRPC.method_make_response, UnsafeMutableRawPointer (mutating: handle), &_result.content, &result.content, &id.content)
@@ -242,7 +242,7 @@ open class JSONRPC: Object {
     /// 
     public final func makeNotification (method: String, params: Variant)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         let gstr_method = GString (method)
         
@@ -286,7 +286,7 @@ open class JSONRPC: Object {
     /// 
     public final func makeResponseError (code: Int32, message: String, id: Variant)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_code: Int = Int (code)
         let gstr_message = GString (message)

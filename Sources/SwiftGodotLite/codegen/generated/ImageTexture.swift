@@ -38,7 +38,7 @@ open class ImageTexture: Texture2D {
     /// Creates a new ``ImageTexture`` and initializes it by allocating and setting the data from an ``Image``.
     public static func createFromImage (_ image: Image?)-> ImageTexture? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_image_handle = image?.handle
         
@@ -91,7 +91,7 @@ open class ImageTexture: Texture2D {
     /// If you want to update the image, but don't need to change its parameters (format, size), use ``update(image:)`` instead for better performance.
     /// 
     public final func setImage (_ image: Image?) {
-        #if true
+        #if false
         
         var copy_image_handle = image?.handle
         
@@ -127,7 +127,7 @@ open class ImageTexture: Texture2D {
     /// Use this method over ``setImage(_:)`` if you need to update the texture frequently, which is faster than allocating additional memory for a new texture each time.
     /// 
     public final func update (image: Image?) {
-        #if true
+        #if false
         
         var copy_image_handle = image?.handle
         
@@ -158,7 +158,7 @@ open class ImageTexture: Texture2D {
     
     /// Resizes the texture to the specified dimensions.
     public final func setSizeOverride (size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         

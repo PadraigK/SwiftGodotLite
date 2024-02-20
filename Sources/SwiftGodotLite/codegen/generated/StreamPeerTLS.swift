@@ -57,7 +57,7 @@ open class StreamPeerTLS: StreamPeer {
     /// Accepts a peer connection as a server using the given `serverOptions`. See ``TLSOptions/server(key:certificate:)``.
     public final func acceptStream (_ stream: StreamPeer?, serverOptions: TLSOptions?)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_stream_handle = stream?.handle
         var copy_server_options_handle = serverOptions?.handle
@@ -94,7 +94,7 @@ open class StreamPeerTLS: StreamPeer {
     /// Connects to a peer using an underlying ``StreamPeer`` `stream` and verifying the remote certificate is correctly signed for the given `commonName`. You can pass the optional `clientOptions` parameter to customize the trusted certification authorities, or disable the common name verification. See ``TLSOptions/client(trustedChain:commonNameOverride:)`` and ``TLSOptions/clientUnsafe(trustedChain:)``.
     public final func connectToStream (_ stream: StreamPeer?, commonName: String, clientOptions: TLSOptions? = nil)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_common_name = GString (commonName)
         var copy_stream_handle = stream?.handle

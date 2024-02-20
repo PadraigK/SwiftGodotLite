@@ -198,7 +198,7 @@ open class ColorPicker: VBoxContainer {
     
     @inline(__always)
     fileprivate final func set_pick_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -248,7 +248,7 @@ open class ColorPicker: VBoxContainer {
     
     @inline(__always)
     fileprivate final func set_deferred_mode (_ mode: Bool) {
-        #if true
+        #if false
         
         var copy_mode = mode
         
@@ -298,7 +298,7 @@ open class ColorPicker: VBoxContainer {
     
     @inline(__always)
     fileprivate final func set_color_mode (_ colorMode: ColorPicker.ColorModeType) {
-        #if true
+        #if false
         
         var copy_color_mode = Int64 (colorMode.rawValue)
         
@@ -348,7 +348,7 @@ open class ColorPicker: VBoxContainer {
     
     @inline(__always)
     fileprivate final func set_edit_alpha (_ show: Bool) {
-        #if true
+        #if false
         
         var copy_show = show
         
@@ -398,7 +398,7 @@ open class ColorPicker: VBoxContainer {
     
     @inline(__always)
     fileprivate final func set_can_add_swatches (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -448,7 +448,7 @@ open class ColorPicker: VBoxContainer {
     
     @inline(__always)
     fileprivate final func set_presets_visible (_ visible: Bool) {
-        #if true
+        #if false
         
         var copy_visible = visible
         
@@ -498,7 +498,7 @@ open class ColorPicker: VBoxContainer {
     
     @inline(__always)
     fileprivate final func set_modes_visible (_ visible: Bool) {
-        #if true
+        #if false
         
         var copy_visible = visible
         
@@ -548,7 +548,7 @@ open class ColorPicker: VBoxContainer {
     
     @inline(__always)
     fileprivate final func set_sampler_visible (_ visible: Bool) {
-        #if true
+        #if false
         
         var copy_visible = visible
         
@@ -598,7 +598,7 @@ open class ColorPicker: VBoxContainer {
     
     @inline(__always)
     fileprivate final func set_sliders_visible (_ visible: Bool) {
-        #if true
+        #if false
         
         var copy_visible = visible
         
@@ -648,7 +648,7 @@ open class ColorPicker: VBoxContainer {
     
     @inline(__always)
     fileprivate final func set_hex_visible (_ visible: Bool) {
-        #if true
+        #if false
         
         var copy_visible = visible
         
@@ -701,7 +701,7 @@ open class ColorPicker: VBoxContainer {
     /// > Note: The presets list is only for _this_ color picker.
     /// 
     public final func addPreset (color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -733,7 +733,7 @@ open class ColorPicker: VBoxContainer {
     
     /// Removes the given color from the list of color presets of this color picker.
     public final func erasePreset (color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -786,7 +786,7 @@ open class ColorPicker: VBoxContainer {
     /// > Note: The recent presets list is only for _this_ color picker.
     /// 
     public final func addRecentPreset (color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -818,7 +818,7 @@ open class ColorPicker: VBoxContainer {
     
     /// Removes the given color from the list of color recent presets of this color picker.
     public final func eraseRecentPreset (color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -868,7 +868,7 @@ open class ColorPicker: VBoxContainer {
     
     @inline(__always)
     fileprivate final func set_picker_shape (_ shape: ColorPicker.PickerShapeType) {
-        #if true
+        #if false
         
         var copy_shape = Int64 (shape.rawValue)
         

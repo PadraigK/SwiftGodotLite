@@ -54,7 +54,7 @@ open class SyntaxHighlighter: Resource {
     /// 
     public final func getLineSyntaxHighlighting (line: Int32)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         

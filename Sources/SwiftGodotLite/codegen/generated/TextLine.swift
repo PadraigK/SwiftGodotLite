@@ -139,7 +139,7 @@ open class TextLine: RefCounted {
     
     @inline(__always)
     fileprivate final func set_direction (_ direction: TextServer.Direction) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -189,7 +189,7 @@ open class TextLine: RefCounted {
     
     @inline(__always)
     fileprivate final func set_orientation (_ orientation: TextServer.Orientation) {
-        #if true
+        #if false
         
         var copy_orientation = Int64 (orientation.rawValue)
         
@@ -239,7 +239,7 @@ open class TextLine: RefCounted {
     
     @inline(__always)
     fileprivate final func set_preserve_invalid (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -289,7 +289,7 @@ open class TextLine: RefCounted {
     
     @inline(__always)
     fileprivate final func set_preserve_control (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -342,7 +342,7 @@ open class TextLine: RefCounted {
     /// Override ranges should cover full source text without overlaps. BiDi algorithm will be used on each range separately.
     /// 
     public final func setBidiOverride (_ override: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextLine.method_set_bidi_override, UnsafeMutableRawPointer (mutating: handle), nil, &override.content)
@@ -373,7 +373,7 @@ open class TextLine: RefCounted {
     /// Adds text span and font to draw it.
     public final func addString (text: String, font: Font?, fontSize: Int32, language: String = "", meta: Variant)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         var copy_font_size: Int = Int (fontSize)
@@ -424,7 +424,7 @@ open class TextLine: RefCounted {
     /// Adds inline object to the text buffer, `key` must be unique. In the text, object is represented as `length` object replacement characters.
     public final func addObject (key: Variant, size: Vector2, inlineAlign: InlineAlignment = .center, length: Int32 = 1, baseline: Double = 0.0)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_size = size
         var copy_inline_align = Int64 (inlineAlign.rawValue)
@@ -476,7 +476,7 @@ open class TextLine: RefCounted {
     /// Sets new size and alignment of embedded object.
     public final func resizeObject (key: Variant, size: Vector2, inlineAlign: InlineAlignment = .center, baseline: Double = 0.0)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_size = size
         var copy_inline_align = Int64 (inlineAlign.rawValue)
@@ -522,7 +522,7 @@ open class TextLine: RefCounted {
     
     @inline(__always)
     fileprivate final func set_width (_ width: Double) {
-        #if true
+        #if false
         
         var copy_width = width
         
@@ -572,7 +572,7 @@ open class TextLine: RefCounted {
     
     @inline(__always)
     fileprivate final func set_horizontal_alignment (_ alignment: HorizontalAlignment) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -622,7 +622,7 @@ open class TextLine: RefCounted {
     
     /// Aligns text to the given tab-stops.
     public final func tabAlign (tabStops: PackedFloat32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextLine.method_tab_align, UnsafeMutableRawPointer (mutating: handle), nil, &tabStops.content)
@@ -652,7 +652,7 @@ open class TextLine: RefCounted {
     
     @inline(__always)
     fileprivate final func set_flags (_ flags: TextServer.JustificationFlag) {
-        #if true
+        #if false
         
         var copy_flags = flags
         
@@ -702,7 +702,7 @@ open class TextLine: RefCounted {
     
     @inline(__always)
     fileprivate final func set_text_overrun_behavior (_ overrunBehavior: TextServer.OverrunBehavior) {
-        #if true
+        #if false
         
         var copy_overrun_behavior = Int64 (overrunBehavior.rawValue)
         
@@ -771,7 +771,7 @@ open class TextLine: RefCounted {
     /// Returns bounding rectangle of the inline object.
     public final func getObjectRect (key: Variant)-> Rect2 {
         var _result: Rect2 = Rect2 ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextLine.method_get_object_rect, UnsafeMutableRawPointer (mutating: handle), &_result, &key.content)
@@ -928,7 +928,7 @@ open class TextLine: RefCounted {
     
     /// Draw text into a canvas item at a given position, with `color`. `pos` specifies the top left corner of the bounding box.
     public final func draw (canvas: RID, pos: Vector2, color: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_color = color
@@ -968,7 +968,7 @@ open class TextLine: RefCounted {
     
     /// Draw text into a canvas item at a given position, with `color`. `pos` specifies the top left corner of the bounding box.
     public final func drawOutline (canvas: RID, pos: Vector2, outlineSize: Int32 = 1, color: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_outline_size: Int = Int (outlineSize)
@@ -1014,7 +1014,7 @@ open class TextLine: RefCounted {
     /// Returns caret character offset at the specified pixel offset at the baseline. This function always returns a valid position.
     public final func hitTest (coords: Double)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_coords = coords
         

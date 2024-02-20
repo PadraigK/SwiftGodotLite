@@ -79,7 +79,7 @@ open class ResourceSaver: Object {
     /// 
     public static func save (resource: Resource?, path: String = "", flags: ResourceSaver.SaverFlags = [])-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_flags = flags
@@ -122,7 +122,7 @@ open class ResourceSaver: Object {
     /// Returns the list of extensions available for saving a resource of a given type.
     public static func getRecognizedExtensions (type: Resource?)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         var copy_type_handle = type?.handle
         
@@ -157,7 +157,7 @@ open class ResourceSaver: Object {
     /// This method is performed implicitly for ResourceFormatSavers written in GDScript (see ``ResourceFormatSaver`` for more information).
     /// 
     public static func addResourceFormatSaver (_ formatSaver: ResourceFormatSaver?, atFront: Bool = false) {
-        #if true
+        #if false
         
         var copy_at_front = atFront
         var copy_format_saver_handle = formatSaver?.handle
@@ -193,7 +193,7 @@ open class ResourceSaver: Object {
     
     /// Unregisters the given ``ResourceFormatSaver``.
     public static func removeResourceFormatSaver (_ formatSaver: ResourceFormatSaver?) {
-        #if true
+        #if false
         
         var copy_format_saver_handle = formatSaver?.handle
         

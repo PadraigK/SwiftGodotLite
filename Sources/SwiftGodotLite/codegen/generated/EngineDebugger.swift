@@ -50,7 +50,7 @@ open class EngineDebugger: Object {
     
     /// Registers a profiler with the given `name`. See ``EngineProfiler`` for more information.
     public static func registerProfiler (name: StringName, profiler: EngineProfiler?) {
-        #if true
+        #if false
         
         var copy_profiler_handle = profiler?.handle
         
@@ -84,7 +84,7 @@ open class EngineDebugger: Object {
     
     /// Unregisters a profiler with given `name`.
     public static func unregisterProfiler (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EngineDebugger.method_unregister_profiler, UnsafeMutableRawPointer (mutating: shared.handle), nil, &name.content)
@@ -115,7 +115,7 @@ open class EngineDebugger: Object {
     /// Returns `true` if a profiler with the given name is present and active otherwise `false`.
     public static func isProfiling (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EngineDebugger.method_is_profiling, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &name.content)
@@ -147,7 +147,7 @@ open class EngineDebugger: Object {
     /// Returns `true` if a profiler with the given name is present otherwise `false`.
     public static func hasProfiler (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EngineDebugger.method_has_profiler, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &name.content)
@@ -178,7 +178,7 @@ open class EngineDebugger: Object {
     
     /// Calls the `add` callable of the profiler with given `name` and `data`.
     public static func profilerAddFrameData (name: StringName, data: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EngineDebugger.method_profiler_add_frame_data, UnsafeMutableRawPointer (mutating: shared.handle), nil, &name.content, &data.content)
@@ -211,7 +211,7 @@ open class EngineDebugger: Object {
     
     /// Calls the `toggle` callable of the profiler with given `name` and `arguments`. Enables/Disables the same profiler depending on `enable` argument.
     public static func profilerEnable (name: StringName, enable: Bool, arguments: GArray = GArray ()) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -252,7 +252,7 @@ open class EngineDebugger: Object {
     /// Callable must accept a message string and a data array as argument. If the message and data are valid then callable must return `true` otherwise `false`.
     /// 
     public static func registerMessageCapture (name: StringName, callable: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EngineDebugger.method_register_message_capture, UnsafeMutableRawPointer (mutating: shared.handle), nil, &name.content, &callable.content)
@@ -285,7 +285,7 @@ open class EngineDebugger: Object {
     
     /// Unregisters the message capture with given `name`.
     public static func unregisterMessageCapture (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EngineDebugger.method_unregister_message_capture, UnsafeMutableRawPointer (mutating: shared.handle), nil, &name.content)
@@ -316,7 +316,7 @@ open class EngineDebugger: Object {
     /// Returns `true` if a capture with the given name is present otherwise `false`.
     public static func hasCapture (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EngineDebugger.method_has_capture, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &name.content)
@@ -347,7 +347,7 @@ open class EngineDebugger: Object {
     
     /// Sends a message with given `message` and `data` array.
     public static func sendMessage (_ message: String, data: GArray) {
-        #if true
+        #if false
         
         let gstr_message = GString (message)
         

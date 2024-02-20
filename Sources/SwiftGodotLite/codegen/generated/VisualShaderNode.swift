@@ -74,7 +74,7 @@ open class VisualShaderNode: Resource {
     /// Returns the input port which should be connected by default when this node is created as a result of dragging a connection from an existing node to the empty space on the graph.
     public final func getDefaultInputPort (type: VisualShaderNode.PortType)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -107,7 +107,7 @@ open class VisualShaderNode: Resource {
     
     @inline(__always)
     fileprivate final func set_output_port_for_preview (_ port: Int32) {
-        #if true
+        #if false
         
         var copy_port: Int = Int (port)
         
@@ -157,7 +157,7 @@ open class VisualShaderNode: Resource {
     
     /// Sets the default `value` for the selected input `port`.
     public final func setInputPortDefaultValue (port: Int32, value: Variant, prevValue: Variant) {
-        #if true
+        #if false
         
         var copy_port: Int = Int (port)
         
@@ -196,7 +196,7 @@ open class VisualShaderNode: Resource {
     /// Returns the default value of the input `port`.
     public final func getInputPortDefaultValue (port: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_port: Int = Int (port)
         
@@ -229,7 +229,7 @@ open class VisualShaderNode: Resource {
     
     /// Removes the default value of the input `port`.
     public final func removeInputPortDefaultValue (port: Int32) {
-        #if true
+        #if false
         
         var copy_port: Int = Int (port)
         
@@ -278,7 +278,7 @@ open class VisualShaderNode: Resource {
     @inline(__always)
     /// Sets the default input ports values using an ``GArray`` of the form `[index0, value0, index1, value1, ...]`. For example: `[0, Vector3(0, 0, 0), 1, Vector3(0, 0, 0)]`.
     fileprivate final func set_default_input_values (_ values: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (VisualShaderNode.method_set_default_input_values, UnsafeMutableRawPointer (mutating: handle), nil, &values.content)

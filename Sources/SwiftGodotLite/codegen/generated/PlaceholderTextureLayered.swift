@@ -58,7 +58,7 @@ open class PlaceholderTextureLayered: TextureLayered {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -108,7 +108,7 @@ open class PlaceholderTextureLayered: TextureLayered {
     
     @inline(__always)
     fileprivate final func set_layers (_ layers: Int32) {
-        #if true
+        #if false
         
         var copy_layers: Int = Int (layers)
         

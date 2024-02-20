@@ -82,7 +82,7 @@ open class RDVertexAttribute: RefCounted {
     
     @inline(__always)
     fileprivate final func set_location (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         
@@ -132,7 +132,7 @@ open class RDVertexAttribute: RefCounted {
     
     @inline(__always)
     fileprivate final func set_offset (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         
@@ -182,7 +182,7 @@ open class RDVertexAttribute: RefCounted {
     
     @inline(__always)
     fileprivate final func set_format (_ pMember: RenderingDevice.DataFormat) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -232,7 +232,7 @@ open class RDVertexAttribute: RefCounted {
     
     @inline(__always)
     fileprivate final func set_stride (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         
@@ -282,7 +282,7 @@ open class RDVertexAttribute: RefCounted {
     
     @inline(__always)
     fileprivate final func set_frequency (_ pMember: RenderingDevice.VertexFrequency) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         

@@ -93,7 +93,7 @@ open class Material: Resource {
     
     @inline(__always)
     fileprivate final func set_next_pass (_ nextPass: Material?) {
-        #if true
+        #if false
         
         var copy_next_pass_handle = nextPass?.handle
         
@@ -142,7 +142,7 @@ open class Material: Resource {
     
     @inline(__always)
     fileprivate final func set_render_priority (_ priority: Int32) {
-        #if true
+        #if false
         
         var copy_priority: Int = Int (priority)
         

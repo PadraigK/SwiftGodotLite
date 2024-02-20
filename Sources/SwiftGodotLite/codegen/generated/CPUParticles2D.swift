@@ -888,7 +888,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_emitting (_ emitting: Bool) {
-        #if true
+        #if false
         
         var copy_emitting = emitting
         
@@ -920,7 +920,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_amount (_ amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -952,7 +952,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_lifetime (_ secs: Double) {
-        #if true
+        #if false
         
         var copy_secs = secs
         
@@ -984,7 +984,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_one_shot (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1016,7 +1016,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_pre_process_time (_ secs: Double) {
-        #if true
+        #if false
         
         var copy_secs = secs
         
@@ -1048,7 +1048,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_explosiveness_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -1080,7 +1080,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_randomness_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -1112,7 +1112,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_lifetime_randomness (_ random: Double) {
-        #if true
+        #if false
         
         var copy_random = random
         
@@ -1144,7 +1144,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_use_local_coordinates (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1176,7 +1176,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_fixed_fps (_ fps: Int32) {
-        #if true
+        #if false
         
         var copy_fps: Int = Int (fps)
         
@@ -1208,7 +1208,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_fractional_delta (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1240,7 +1240,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_speed_scale (_ scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -1488,7 +1488,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_draw_order (_ order: CPUParticles2D.DrawOrder) {
-        #if true
+        #if false
         
         var copy_order = Int64 (order.rawValue)
         
@@ -1538,7 +1538,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -1603,7 +1603,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_direction (_ direction: Vector2) {
-        #if true
+        #if false
         
         var copy_direction = direction
         
@@ -1653,7 +1653,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_spread (_ spread: Double) {
-        #if true
+        #if false
         
         var copy_spread = spread
         
@@ -1704,7 +1704,7 @@ open class CPUParticles2D: Node2D {
     @inline(__always)
     /// Sets the minimum value for the given parameter.
     fileprivate final func set_param_min (_ param: CPUParticles2D.Parameter, _ value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -1743,7 +1743,7 @@ open class CPUParticles2D: Node2D {
     /// Returns the minimum value range for the given parameter.
     fileprivate final func get_param_min (_ param: CPUParticles2D.Parameter)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -1777,7 +1777,7 @@ open class CPUParticles2D: Node2D {
     @inline(__always)
     /// Sets the maximum value for the given parameter.
     fileprivate final func set_param_max (_ param: CPUParticles2D.Parameter, _ value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -1816,7 +1816,7 @@ open class CPUParticles2D: Node2D {
     /// Returns the maximum value range for the given parameter.
     fileprivate final func get_param_max (_ param: CPUParticles2D.Parameter)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -1850,7 +1850,7 @@ open class CPUParticles2D: Node2D {
     @inline(__always)
     /// Sets the ``Curve`` of the parameter specified by ``CPUParticles2D/Parameter``.
     fileprivate final func set_param_curve (_ param: CPUParticles2D.Parameter, _ curve: Curve?) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_curve_handle = curve?.handle
@@ -1888,7 +1888,7 @@ open class CPUParticles2D: Node2D {
     /// Returns the ``Curve`` of the parameter specified by ``CPUParticles2D/Parameter``.
     fileprivate final func get_param_curve (_ param: CPUParticles2D.Parameter)-> Curve? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -1921,7 +1921,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -1971,7 +1971,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_color_ramp (_ ramp: Gradient?) {
-        #if true
+        #if false
         
         var copy_ramp_handle = ramp?.handle
         
@@ -2020,7 +2020,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_color_initial_ramp (_ ramp: Gradient?) {
-        #if true
+        #if false
         
         var copy_ramp_handle = ramp?.handle
         
@@ -2070,7 +2070,7 @@ open class CPUParticles2D: Node2D {
     @inline(__always)
     /// Enables or disables the given flag (see ``CPUParticles2D/ParticleFlags`` for options).
     fileprivate final func set_particle_flag (_ particleFlag: CPUParticles2D.ParticleFlags, _ enable: Bool) {
-        #if true
+        #if false
         
         var copy_particle_flag = Int64 (particleFlag.rawValue)
         var copy_enable = enable
@@ -2109,7 +2109,7 @@ open class CPUParticles2D: Node2D {
     /// Returns the enabled state of the given flag (see ``CPUParticles2D/ParticleFlags`` for options).
     fileprivate final func get_particle_flag (_ particleFlag: CPUParticles2D.ParticleFlags)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_particle_flag = Int64 (particleFlag.rawValue)
         
@@ -2142,7 +2142,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_emission_shape (_ shape: CPUParticles2D.EmissionShape) {
-        #if true
+        #if false
         
         var copy_shape = Int64 (shape.rawValue)
         
@@ -2192,7 +2192,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_emission_sphere_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -2242,7 +2242,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_emission_rect_extents (_ extents: Vector2) {
-        #if true
+        #if false
         
         var copy_extents = extents
         
@@ -2292,7 +2292,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_emission_points (_ array: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CPUParticles2D.method_set_emission_points, UnsafeMutableRawPointer (mutating: handle), nil, &array.content)
@@ -2340,7 +2340,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_emission_normals (_ array: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CPUParticles2D.method_set_emission_normals, UnsafeMutableRawPointer (mutating: handle), nil, &array.content)
@@ -2388,7 +2388,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_emission_colors (_ array: PackedColorArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CPUParticles2D.method_set_emission_colors, UnsafeMutableRawPointer (mutating: handle), nil, &array.content)
@@ -2454,7 +2454,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_gravity (_ accelVec: Vector2) {
-        #if true
+        #if false
         
         var copy_accel_vec = accelVec
         
@@ -2504,7 +2504,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_split_scale (_ splitScale: Bool) {
-        #if true
+        #if false
         
         var copy_split_scale = splitScale
         
@@ -2554,7 +2554,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_scale_curve_x (_ scaleCurve: Curve?) {
-        #if true
+        #if false
         
         var copy_scale_curve_handle = scaleCurve?.handle
         
@@ -2603,7 +2603,7 @@ open class CPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_scale_curve_y (_ scaleCurve: Curve?) {
-        #if true
+        #if false
         
         var copy_scale_curve_handle = scaleCurve?.handle
         
@@ -2634,7 +2634,7 @@ open class CPUParticles2D: Node2D {
     
     /// Sets this node's properties to match a given ``GPUParticles2D`` node with an assigned ``ParticleProcessMaterial``.
     public final func convertFromParticles (_ particles: Node?) {
-        #if true
+        #if false
         
         var copy_particles_handle = particles?.handle
         

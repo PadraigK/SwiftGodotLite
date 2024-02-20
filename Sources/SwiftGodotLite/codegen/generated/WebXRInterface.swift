@@ -173,7 +173,7 @@ open class WebXRInterface: XRInterface {
     /// This method returns nothing, instead it emits the [signal session_supported] signal with the result.
     /// 
     public final func isSessionSupported (sessionMode: String) {
-        #if true
+        #if false
         
         let gstr_session_mode = GString (sessionMode)
         
@@ -205,7 +205,7 @@ open class WebXRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_session_mode (_ sessionMode: String) {
-        #if true
+        #if false
         
         let gstr_session_mode = GString (sessionMode)
         
@@ -255,7 +255,7 @@ open class WebXRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_required_features (_ requiredFeatures: String) {
-        #if true
+        #if false
         
         let gstr_required_features = GString (requiredFeatures)
         
@@ -305,7 +305,7 @@ open class WebXRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_optional_features (_ optionalFeatures: String) {
-        #if true
+        #if false
         
         let gstr_optional_features = GString (optionalFeatures)
         
@@ -373,7 +373,7 @@ open class WebXRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_requested_reference_space_types (_ requestedReferenceSpaceTypes: String) {
-        #if true
+        #if false
         
         let gstr_requested_reference_space_types = GString (requestedReferenceSpaceTypes)
         
@@ -424,7 +424,7 @@ open class WebXRInterface: XRInterface {
     /// Returns `true` if there is an active input source with the given `inputSourceId`.
     public final func isInputSourceActive (inputSourceId: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_input_source_id: Int = Int (inputSourceId)
         
@@ -475,7 +475,7 @@ open class WebXRInterface: XRInterface {
     /// 
     public final func getInputSourceTracker (inputSourceId: Int32)-> XRPositionalTracker? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_input_source_id: Int = Int (inputSourceId)
         
@@ -512,7 +512,7 @@ open class WebXRInterface: XRInterface {
     /// 
     public final func getInputSourceTargetRayMode (inputSourceId: Int32)-> WebXRInterface.TargetRayMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_input_source_id: Int = Int (inputSourceId)
         
@@ -581,7 +581,7 @@ open class WebXRInterface: XRInterface {
     
     /// Sets the display refresh rate for the current HMD. Not supported on all HMDs and browsers. It won't take effect right away until after [signal display_refresh_rate_changed] is emitted.
     public final func setDisplayRefreshRate (_ refreshRate: Double) {
-        #if true
+        #if false
         
         var copy_refresh_rate = refreshRate
         

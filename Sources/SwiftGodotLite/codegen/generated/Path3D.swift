@@ -47,7 +47,7 @@ open class Path3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_curve (_ curve: Curve3D?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         

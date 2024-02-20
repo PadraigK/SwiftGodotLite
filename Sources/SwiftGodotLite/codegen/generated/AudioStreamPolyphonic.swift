@@ -42,7 +42,7 @@ open class AudioStreamPolyphonic: AudioStream {
     
     @inline(__always)
     fileprivate final func set_polyphony (_ voices: Int32) {
-        #if true
+        #if false
         
         var copy_voices: Int = Int (voices)
         

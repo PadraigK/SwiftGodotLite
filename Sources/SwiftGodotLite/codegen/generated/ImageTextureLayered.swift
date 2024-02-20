@@ -28,7 +28,7 @@ open class ImageTextureLayered: TextureLayered {
     /// 
     public final func createFromImages (_ images: ObjectCollection<Image>)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ImageTextureLayered.method_create_from_images, UnsafeMutableRawPointer (mutating: handle), &_result, &images.array.content)
@@ -66,7 +66,7 @@ open class ImageTextureLayered: TextureLayered {
     /// The update is immediate: it's synchronized with drawing.
     /// 
     public final func updateLayer (image: Image?, layer: Int32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_image_handle = image?.handle

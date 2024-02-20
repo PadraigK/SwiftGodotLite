@@ -51,7 +51,7 @@ open class Translation: Resource {
     
     @inline(__always)
     fileprivate final func set_locale (_ locale: String) {
-        #if true
+        #if false
         
         let gstr_locale = GString (locale)
         
@@ -104,7 +104,7 @@ open class Translation: Resource {
     /// An additional context could be used to specify the translation context or differentiate polysemic words.
     /// 
     public final func addMessage (srcMessage: StringName, xlatedMessage: StringName, context: StringName = StringName ("")) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Translation.method_add_message, UnsafeMutableRawPointer (mutating: handle), nil, &srcMessage.content, &xlatedMessage.content, &context.content)
@@ -143,7 +143,7 @@ open class Translation: Resource {
     /// An additional context could be used to specify the translation context or differentiate polysemic words.
     /// 
     public final func addPluralMessage (srcMessage: StringName, xlatedMessages: PackedStringArray, context: StringName = StringName ("")) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Translation.method_add_plural_message, UnsafeMutableRawPointer (mutating: handle), nil, &srcMessage.content, &xlatedMessages.content, &context.content)
@@ -180,7 +180,7 @@ open class Translation: Resource {
     /// Returns a message's translation.
     public final func getMessage (srcMessage: StringName, context: StringName = StringName (""))-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Translation.method_get_message, UnsafeMutableRawPointer (mutating: handle), &_result.content, &srcMessage.content, &context.content)
@@ -218,7 +218,7 @@ open class Translation: Resource {
     /// 
     public final func getPluralMessage (srcMessage: StringName, srcPluralMessage: StringName, n: Int32, context: StringName = StringName (""))-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_n: Int = Int (n)
         
@@ -260,7 +260,7 @@ open class Translation: Resource {
     
     /// Erases a message.
     public final func eraseMessage (srcMessage: StringName, context: StringName = StringName ("")) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Translation.method_erase_message, UnsafeMutableRawPointer (mutating: handle), nil, &srcMessage.content, &context.content)

@@ -192,7 +192,7 @@ open class GLTFNode: Resource {
     
     @inline(__always)
     fileprivate final func set_parent (_ parent: Int32) {
-        #if true
+        #if false
         
         var copy_parent: Int = Int (parent)
         
@@ -242,7 +242,7 @@ open class GLTFNode: Resource {
     
     @inline(__always)
     fileprivate final func set_height (_ height: Int32) {
-        #if true
+        #if false
         
         var copy_height: Int = Int (height)
         
@@ -292,7 +292,7 @@ open class GLTFNode: Resource {
     
     @inline(__always)
     fileprivate final func set_xform (_ xform: Transform3D) {
-        #if true
+        #if false
         
         var copy_xform = xform
         
@@ -342,7 +342,7 @@ open class GLTFNode: Resource {
     
     @inline(__always)
     fileprivate final func set_mesh (_ mesh: Int32) {
-        #if true
+        #if false
         
         var copy_mesh: Int = Int (mesh)
         
@@ -392,7 +392,7 @@ open class GLTFNode: Resource {
     
     @inline(__always)
     fileprivate final func set_camera (_ camera: Int32) {
-        #if true
+        #if false
         
         var copy_camera: Int = Int (camera)
         
@@ -442,7 +442,7 @@ open class GLTFNode: Resource {
     
     @inline(__always)
     fileprivate final func set_skin (_ skin: Int32) {
-        #if true
+        #if false
         
         var copy_skin: Int = Int (skin)
         
@@ -492,7 +492,7 @@ open class GLTFNode: Resource {
     
     @inline(__always)
     fileprivate final func set_skeleton (_ skeleton: Int32) {
-        #if true
+        #if false
         
         var copy_skeleton: Int = Int (skeleton)
         
@@ -542,7 +542,7 @@ open class GLTFNode: Resource {
     
     @inline(__always)
     fileprivate final func set_position (_ position: Vector3) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -592,7 +592,7 @@ open class GLTFNode: Resource {
     
     @inline(__always)
     fileprivate final func set_rotation (_ rotation: Quaternion) {
-        #if true
+        #if false
         
         var copy_rotation = rotation
         
@@ -642,7 +642,7 @@ open class GLTFNode: Resource {
     
     @inline(__always)
     fileprivate final func set_scale (_ scale: Vector3) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -692,7 +692,7 @@ open class GLTFNode: Resource {
     
     @inline(__always)
     fileprivate final func set_children (_ children: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFNode.method_set_children, UnsafeMutableRawPointer (mutating: handle), nil, &children.content)
@@ -740,7 +740,7 @@ open class GLTFNode: Resource {
     
     @inline(__always)
     fileprivate final func set_light (_ light: Int32) {
-        #if true
+        #if false
         
         var copy_light: Int = Int (light)
         
@@ -776,7 +776,7 @@ open class GLTFNode: Resource {
     /// 
     public final func getAdditionalData (extensionName: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFNode.method_get_additional_data, UnsafeMutableRawPointer (mutating: handle), &_result.content, &extensionName.content)
@@ -810,7 +810,7 @@ open class GLTFNode: Resource {
     /// The first argument should be the ``GLTFDocumentExtension`` name (does not have to match the extension name in the GLTF file), and the second argument can be anything you want.
     /// 
     public final func setAdditionalData (extensionName: StringName, additionalData: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFNode.method_set_additional_data, UnsafeMutableRawPointer (mutating: handle), nil, &extensionName.content, &additionalData.content)

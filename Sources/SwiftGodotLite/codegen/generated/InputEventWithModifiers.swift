@@ -87,7 +87,7 @@ open class InputEventWithModifiers: InputEventFromWindow {
     
     @inline(__always)
     fileprivate final func set_command_or_control_autoremap (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -158,7 +158,7 @@ open class InputEventWithModifiers: InputEventFromWindow {
     
     @inline(__always)
     fileprivate final func set_alt_pressed (_ pressed: Bool) {
-        #if true
+        #if false
         
         var copy_pressed = pressed
         
@@ -208,7 +208,7 @@ open class InputEventWithModifiers: InputEventFromWindow {
     
     @inline(__always)
     fileprivate final func set_shift_pressed (_ pressed: Bool) {
-        #if true
+        #if false
         
         var copy_pressed = pressed
         
@@ -258,7 +258,7 @@ open class InputEventWithModifiers: InputEventFromWindow {
     
     @inline(__always)
     fileprivate final func set_ctrl_pressed (_ pressed: Bool) {
-        #if true
+        #if false
         
         var copy_pressed = pressed
         
@@ -308,7 +308,7 @@ open class InputEventWithModifiers: InputEventFromWindow {
     
     @inline(__always)
     fileprivate final func set_meta_pressed (_ pressed: Bool) {
-        #if true
+        #if false
         
         var copy_pressed = pressed
         

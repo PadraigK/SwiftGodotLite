@@ -51,7 +51,7 @@ open class ClassDB: Object {
     /// Returns the names of all the classes that directly or indirectly inherit from `class`.
     public static func getInheritersFromClass (_ `class`: StringName)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ClassDB.method_get_inheriters_from_class, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &`class`.content)
@@ -83,7 +83,7 @@ open class ClassDB: Object {
     /// Returns the parent class of `class`.
     public static func getParentClass (_ `class`: StringName)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ClassDB.method_get_parent_class, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &`class`.content)
@@ -115,7 +115,7 @@ open class ClassDB: Object {
     /// Returns whether the specified `class` is available or not.
     public static func classExists (`class`: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ClassDB.method_class_exists, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &`class`.content)
@@ -147,7 +147,7 @@ open class ClassDB: Object {
     /// Returns whether `inherits` is an ancestor of `class` or not.
     public static func isParentClass (_ `class`: StringName, inherits: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ClassDB.method_is_parent_class, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &`class`.content, &inherits.content)
@@ -182,7 +182,7 @@ open class ClassDB: Object {
     /// Returns `true` if objects can be instantiated from the specified `class`, otherwise returns `false`.
     public static func canInstantiate (`class`: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ClassDB.method_can_instantiate, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &`class`.content)
@@ -214,7 +214,7 @@ open class ClassDB: Object {
     /// Creates an instance of `class`.
     public static func instantiate (`class`: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ClassDB.method_instantiate, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &`class`.content)
@@ -246,7 +246,7 @@ open class ClassDB: Object {
     /// Returns whether `class` or its ancestry has a signal called `signal` or not.
     public static func classHasSignal (`class`: StringName, signal: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ClassDB.method_class_has_signal, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &`class`.content, &signal.content)
@@ -281,7 +281,7 @@ open class ClassDB: Object {
     /// Returns the `signal` data of `class` or its ancestry. The returned value is a ``GDictionary`` with the following keys: `args`, `default_args`, `flags`, `id`, `name`, `return: (class_name, hint, hint_string, name, type, usage)`.
     public static func classGetSignal (`class`: StringName, signal: StringName)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ClassDB.method_class_get_signal, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &`class`.content, &signal.content)
@@ -316,7 +316,7 @@ open class ClassDB: Object {
     /// Returns an array with all the signals of `class` or its ancestry if `noInheritance` is `false`. Every element of the array is a ``GDictionary`` as described in ``classGetSignal(`class`:signal:)``.
     public static func classGetSignalList (`class`: StringName, noInheritance: Bool = false)-> VariantCollection<GDictionary> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_no_inheritance = noInheritance
         
@@ -353,7 +353,7 @@ open class ClassDB: Object {
     /// Returns an array with all the properties of `class` or its ancestry if `noInheritance` is `false`.
     public static func classGetPropertyList (`class`: StringName, noInheritance: Bool = false)-> VariantCollection<GDictionary> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_no_inheritance = noInheritance
         
@@ -390,7 +390,7 @@ open class ClassDB: Object {
     /// Returns the value of `property` of `object` or its ancestry.
     public static func classGetProperty (object: Object?, property: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_object_handle = object?.handle
         
@@ -426,7 +426,7 @@ open class ClassDB: Object {
     /// Sets `property` value of `object` to `value`.
     public static func classSetProperty (object: Object?, property: StringName, value: Variant)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_object_handle = object?.handle
         
@@ -465,7 +465,7 @@ open class ClassDB: Object {
     /// Returns whether `class` (or its ancestry if `noInheritance` is `false`) has a method called `method` or not.
     public static func classHasMethod (`class`: StringName, method: StringName, noInheritance: Bool = false)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_no_inheritance = noInheritance
         
@@ -508,7 +508,7 @@ open class ClassDB: Object {
     /// 
     public static func classGetMethodList (`class`: StringName, noInheritance: Bool = false)-> VariantCollection<GDictionary> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_no_inheritance = noInheritance
         
@@ -545,7 +545,7 @@ open class ClassDB: Object {
     /// Returns an array with the names all the integer constants of `class` or its ancestry.
     public static func classGetIntegerConstantList (`class`: StringName, noInheritance: Bool = false)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         var copy_no_inheritance = noInheritance
         
@@ -582,7 +582,7 @@ open class ClassDB: Object {
     /// Returns whether `class` or its ancestry has an integer constant called `name` or not.
     public static func classHasIntegerConstant (`class`: StringName, name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ClassDB.method_class_has_integer_constant, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &`class`.content, &name.content)
@@ -617,7 +617,7 @@ open class ClassDB: Object {
     /// Returns the value of the integer constant `name` of `class` or its ancestry. Always returns 0 when the constant could not be found.
     public static func classGetIntegerConstant (`class`: StringName, name: StringName)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ClassDB.method_class_get_integer_constant, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &`class`.content, &name.content)
@@ -652,7 +652,7 @@ open class ClassDB: Object {
     /// Returns whether `class` or its ancestry has an enum called `name` or not.
     public static func classHasEnum (`class`: StringName, name: StringName, noInheritance: Bool = false)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_no_inheritance = noInheritance
         
@@ -692,7 +692,7 @@ open class ClassDB: Object {
     /// Returns an array with all the enums of `class` or its ancestry.
     public static func classGetEnumList (`class`: StringName, noInheritance: Bool = false)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         var copy_no_inheritance = noInheritance
         
@@ -729,7 +729,7 @@ open class ClassDB: Object {
     /// Returns an array with all the keys in `enum` of `class` or its ancestry.
     public static func classGetEnumConstants (`class`: StringName, `enum`: StringName, noInheritance: Bool = false)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         var copy_no_inheritance = noInheritance
         
@@ -769,7 +769,7 @@ open class ClassDB: Object {
     /// Returns which enum the integer constant `name` of `class` or its ancestry belongs to.
     public static func classGetIntegerConstantEnum (`class`: StringName, name: StringName, noInheritance: Bool = false)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_no_inheritance = noInheritance
         
@@ -809,7 +809,7 @@ open class ClassDB: Object {
     /// Returns whether this `class` is enabled or not.
     public static func isClassEnabled (`class`: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ClassDB.method_is_class_enabled, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &`class`.content)

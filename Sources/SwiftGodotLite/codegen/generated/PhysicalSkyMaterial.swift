@@ -164,7 +164,7 @@ open class PhysicalSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_rayleigh_coefficient (_ rayleigh: Double) {
-        #if true
+        #if false
         
         var copy_rayleigh = rayleigh
         
@@ -214,7 +214,7 @@ open class PhysicalSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_rayleigh_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -264,7 +264,7 @@ open class PhysicalSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_mie_coefficient (_ mie: Double) {
-        #if true
+        #if false
         
         var copy_mie = mie
         
@@ -314,7 +314,7 @@ open class PhysicalSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_mie_eccentricity (_ eccentricity: Double) {
-        #if true
+        #if false
         
         var copy_eccentricity = eccentricity
         
@@ -364,7 +364,7 @@ open class PhysicalSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_mie_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -414,7 +414,7 @@ open class PhysicalSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_turbidity (_ turbidity: Double) {
-        #if true
+        #if false
         
         var copy_turbidity = turbidity
         
@@ -464,7 +464,7 @@ open class PhysicalSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_sun_disk_scale (_ scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -514,7 +514,7 @@ open class PhysicalSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_ground_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -564,7 +564,7 @@ open class PhysicalSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_energy_multiplier (_ multiplier: Double) {
-        #if true
+        #if false
         
         var copy_multiplier = multiplier
         
@@ -614,7 +614,7 @@ open class PhysicalSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_use_debanding (_ useDebanding: Bool) {
-        #if true
+        #if false
         
         var copy_use_debanding = useDebanding
         
@@ -664,7 +664,7 @@ open class PhysicalSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_night_sky (_ nightSky: Texture2D?) {
-        #if true
+        #if false
         
         var copy_night_sky_handle = nightSky?.handle
         

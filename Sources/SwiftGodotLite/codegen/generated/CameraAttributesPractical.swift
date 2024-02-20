@@ -144,7 +144,7 @@ open class CameraAttributesPractical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_dof_blur_far_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -194,7 +194,7 @@ open class CameraAttributesPractical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_dof_blur_far_distance (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -244,7 +244,7 @@ open class CameraAttributesPractical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_dof_blur_far_transition (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -294,7 +294,7 @@ open class CameraAttributesPractical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_dof_blur_near_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -344,7 +344,7 @@ open class CameraAttributesPractical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_dof_blur_near_distance (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -394,7 +394,7 @@ open class CameraAttributesPractical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_dof_blur_near_transition (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -444,7 +444,7 @@ open class CameraAttributesPractical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_dof_blur_amount (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -494,7 +494,7 @@ open class CameraAttributesPractical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_auto_exposure_max_sensitivity (_ maxSensitivity: Double) {
-        #if true
+        #if false
         
         var copy_max_sensitivity = maxSensitivity
         
@@ -544,7 +544,7 @@ open class CameraAttributesPractical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_auto_exposure_min_sensitivity (_ minSensitivity: Double) {
-        #if true
+        #if false
         
         var copy_min_sensitivity = minSensitivity
         

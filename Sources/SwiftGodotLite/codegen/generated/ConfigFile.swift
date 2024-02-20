@@ -39,7 +39,7 @@ open class ConfigFile: RefCounted {
     
     /// Assigns a value to the specified key of the specified section. If either the section or the key do not exist, they are created. Passing a `null` value deletes the specified key if it exists, and deletes the section if it ends up empty once the key has been removed.
     public final func setValue (section: String, key: String, value: Variant) {
-        #if true
+        #if false
         
         let gstr_section = GString (section)
         let gstr_key = GString (key)
@@ -80,7 +80,7 @@ open class ConfigFile: RefCounted {
     /// Returns the current value for the specified section and key. If either the section or the key do not exist, the method returns the fallback `default` value. If `default` is not specified or set to `null`, an error is also raised.
     public final func getValue (section: String, key: String, `default`: Variant)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         let gstr_section = GString (section)
         let gstr_key = GString (key)
@@ -122,7 +122,7 @@ open class ConfigFile: RefCounted {
     /// Returns `true` if the specified section exists.
     public final func hasSection (_ section: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_section = GString (section)
         
@@ -156,7 +156,7 @@ open class ConfigFile: RefCounted {
     /// Returns `true` if the specified section-key pair exists.
     public final func hasSectionKey (section: String, key: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_section = GString (section)
         let gstr_key = GString (key)
@@ -213,7 +213,7 @@ open class ConfigFile: RefCounted {
     /// Returns an array of all defined key identifiers in the specified section. Raises an error and returns an empty array if the section does not exist.
     public final func getSectionKeys (section: String)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_section = GString (section)
         
@@ -246,7 +246,7 @@ open class ConfigFile: RefCounted {
     
     /// Deletes the specified section along with all the key-value pairs inside. Raises an error if the section does not exist.
     public final func eraseSection (_ section: String) {
-        #if true
+        #if false
         
         let gstr_section = GString (section)
         
@@ -278,7 +278,7 @@ open class ConfigFile: RefCounted {
     
     /// Deletes the specified key in a section. Raises an error if either the section or the key do not exist.
     public final func eraseSectionKey (section: String, key: String) {
-        #if true
+        #if false
         
         let gstr_section = GString (section)
         let gstr_key = GString (key)
@@ -319,7 +319,7 @@ open class ConfigFile: RefCounted {
     /// 
     public final func load (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -356,7 +356,7 @@ open class ConfigFile: RefCounted {
     /// 
     public final func parse (data: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_data = GString (data)
         
@@ -393,7 +393,7 @@ open class ConfigFile: RefCounted {
     /// 
     public final func save (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -448,7 +448,7 @@ open class ConfigFile: RefCounted {
     /// 
     public final func loadEncrypted (path: String, key: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -488,7 +488,7 @@ open class ConfigFile: RefCounted {
     /// 
     public final func loadEncryptedPass (path: String, password: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         let gstr_password = GString (password)
@@ -530,7 +530,7 @@ open class ConfigFile: RefCounted {
     /// 
     public final func saveEncrypted (path: String, key: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -570,7 +570,7 @@ open class ConfigFile: RefCounted {
     /// 
     public final func saveEncryptedPass (path: String, password: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         let gstr_password = GString (password)

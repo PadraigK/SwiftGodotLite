@@ -186,7 +186,7 @@ open class AStarGrid2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_region (_ region: Rect2i) {
-        #if true
+        #if false
         
         var copy_region = region
         
@@ -236,7 +236,7 @@ open class AStarGrid2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -286,7 +286,7 @@ open class AStarGrid2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -336,7 +336,7 @@ open class AStarGrid2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_cell_size (_ cellSize: Vector2) {
-        #if true
+        #if false
         
         var copy_cell_size = cellSize
         
@@ -387,7 +387,7 @@ open class AStarGrid2D: RefCounted {
     /// Returns `true` if the `x` and `y` is a valid grid coordinate (id), i.e. if it is inside ``region``. Equivalent to `region.has_point(Vector2i(x, y))`.
     public final func isInBounds (x: Int32, y: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_x: Int = Int (x)
         var copy_y: Int = Int (y)
@@ -426,7 +426,7 @@ open class AStarGrid2D: RefCounted {
     /// Returns `true` if the `id` vector is a valid grid coordinate, i.e. if it is inside ``region``. Equivalent to `region.has_point(id)`.
     public final func isInBoundsv (id: Vector2i)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -496,7 +496,7 @@ open class AStarGrid2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_jumping_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -546,7 +546,7 @@ open class AStarGrid2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_diagonal_mode (_ mode: AStarGrid2D.DiagonalMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -596,7 +596,7 @@ open class AStarGrid2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_default_compute_heuristic (_ heuristic: AStarGrid2D.Heuristic) {
-        #if true
+        #if false
         
         var copy_heuristic = Int64 (heuristic.rawValue)
         
@@ -646,7 +646,7 @@ open class AStarGrid2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_default_estimate_heuristic (_ heuristic: AStarGrid2D.Heuristic) {
-        #if true
+        #if false
         
         var copy_heuristic = Int64 (heuristic.rawValue)
         
@@ -699,7 +699,7 @@ open class AStarGrid2D: RefCounted {
     /// > Note: Calling ``update()`` is not needed after the call of this function.
     /// 
     public final func setPointSolid (id: Vector2i, solid: Bool = true) {
-        #if true
+        #if false
         
         var copy_id = id
         var copy_solid = solid
@@ -737,7 +737,7 @@ open class AStarGrid2D: RefCounted {
     /// Returns `true` if a point is disabled for pathfinding. By default, all points are enabled.
     public final func isPointSolid (id: Vector2i)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -773,7 +773,7 @@ open class AStarGrid2D: RefCounted {
     /// > Note: Calling ``update()`` is not needed after the call of this function.
     /// 
     public final func setPointWeightScale (id: Vector2i, weightScale: Double) {
-        #if true
+        #if false
         
         var copy_id = id
         var copy_weight_scale = weightScale
@@ -811,7 +811,7 @@ open class AStarGrid2D: RefCounted {
     /// Returns the weight scale of the point associated with the given `id`.
     public final func getPointWeightScale (id: Vector2i)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -847,7 +847,7 @@ open class AStarGrid2D: RefCounted {
     /// > Note: Calling ``update()`` is not needed after the call of this function.
     /// 
     public final func fillSolidRegion (_ region: Rect2i, solid: Bool = true) {
-        #if true
+        #if false
         
         var copy_region = region
         var copy_solid = solid
@@ -887,7 +887,7 @@ open class AStarGrid2D: RefCounted {
     /// > Note: Calling ``update()`` is not needed after the call of this function.
     /// 
     public final func fillWeightScaleRegion (_ region: Rect2i, weightScale: Double) {
-        #if true
+        #if false
         
         var copy_region = region
         var copy_weight_scale = weightScale
@@ -941,7 +941,7 @@ open class AStarGrid2D: RefCounted {
     /// Returns the position of the point associated with the given `id`.
     public final func getPointPosition (id: Vector2i)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -978,7 +978,7 @@ open class AStarGrid2D: RefCounted {
     /// 
     public final func getPointPath (fromId: Vector2i, toId: Vector2i)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_from_id = fromId
         var copy_to_id = toId
@@ -1017,7 +1017,7 @@ open class AStarGrid2D: RefCounted {
     /// Returns an array with the IDs of the points that form the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
     public final func getIdPath (fromId: Vector2i, toId: Vector2i)-> VariantCollection<Vector2i> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_from_id = fromId
         var copy_to_id = toId

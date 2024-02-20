@@ -44,7 +44,7 @@ open class ScrollBar: Range {
     
     @inline(__always)
     fileprivate final func set_custom_step (_ step: Double) {
-        #if true
+        #if false
         
         var copy_step = step
         

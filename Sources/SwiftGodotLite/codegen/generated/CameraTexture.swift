@@ -66,7 +66,7 @@ open class CameraTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_camera_feed_id (_ feedId: Int32) {
-        #if true
+        #if false
         
         var copy_feed_id: Int = Int (feedId)
         
@@ -116,7 +116,7 @@ open class CameraTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_which_feed (_ whichFeed: CameraServer.FeedImage) {
-        #if true
+        #if false
         
         var copy_which_feed = Int64 (whichFeed.rawValue)
         
@@ -166,7 +166,7 @@ open class CameraTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_camera_active (_ active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         

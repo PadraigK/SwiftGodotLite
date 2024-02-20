@@ -51,7 +51,7 @@ open class PacketPeer: RefCounted {
     /// 
     public final func getVar (allowObjects: Bool = false)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_allow_objects = allowObjects
         
@@ -88,7 +88,7 @@ open class PacketPeer: RefCounted {
     /// 
     public final func putVar (_ `var`: Variant, fullObjects: Bool = false)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_full_objects = fullObjects
         
@@ -143,7 +143,7 @@ open class PacketPeer: RefCounted {
     /// Sends a raw packet.
     public final func putPacket (buffer: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PacketPeer.method_put_packet, UnsafeMutableRawPointer (mutating: handle), &_result, &buffer.content)
@@ -228,7 +228,7 @@ open class PacketPeer: RefCounted {
     
     @inline(__always)
     fileprivate final func set_encode_buffer_max_size (_ maxSize: Int32) {
-        #if true
+        #if false
         
         var copy_max_size: Int = Int (maxSize)
         

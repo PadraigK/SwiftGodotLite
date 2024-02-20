@@ -63,7 +63,7 @@ open class OggPacketSequence: Resource {
     
     @inline(__always)
     fileprivate final func set_packet_data (_ packetData: VariantCollection<GArray>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (OggPacketSequence.method_set_packet_data, UnsafeMutableRawPointer (mutating: handle), nil, &packetData.array.content)
@@ -111,7 +111,7 @@ open class OggPacketSequence: Resource {
     
     @inline(__always)
     fileprivate final func set_packet_granule_positions (_ granulePositions: PackedInt64Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (OggPacketSequence.method_set_packet_granule_positions, UnsafeMutableRawPointer (mutating: handle), nil, &granulePositions.content)
@@ -159,7 +159,7 @@ open class OggPacketSequence: Resource {
     
     @inline(__always)
     fileprivate final func set_sampling_rate (_ samplingRate: Double) {
-        #if true
+        #if false
         
         var copy_sampling_rate = samplingRate
         

@@ -127,7 +127,7 @@ open class MultiplayerSynchronizer: Node {
     
     @inline(__always)
     fileprivate final func set_root_path (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (MultiplayerSynchronizer.method_set_root_path, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -175,7 +175,7 @@ open class MultiplayerSynchronizer: Node {
     
     @inline(__always)
     fileprivate final func set_replication_interval (_ milliseconds: Double) {
-        #if true
+        #if false
         
         var copy_milliseconds = milliseconds
         
@@ -225,7 +225,7 @@ open class MultiplayerSynchronizer: Node {
     
     @inline(__always)
     fileprivate final func set_delta_interval (_ milliseconds: Double) {
-        #if true
+        #if false
         
         var copy_milliseconds = milliseconds
         
@@ -275,7 +275,7 @@ open class MultiplayerSynchronizer: Node {
     
     @inline(__always)
     fileprivate final func set_replication_config (_ config: SceneReplicationConfig?) {
-        #if true
+        #if false
         
         var copy_config_handle = config?.handle
         
@@ -324,7 +324,7 @@ open class MultiplayerSynchronizer: Node {
     
     @inline(__always)
     fileprivate final func set_visibility_update_mode (_ mode: MultiplayerSynchronizer.VisibilityUpdateMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -374,7 +374,7 @@ open class MultiplayerSynchronizer: Node {
     
     /// Updates the visibility of `forPeer` according to visibility filters. If `forPeer` is `0` (the default), all peers' visibilties are updated.
     public final func updateVisibility (forPeer: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_for_peer: Int = Int (forPeer)
         
@@ -406,7 +406,7 @@ open class MultiplayerSynchronizer: Node {
     
     @inline(__always)
     fileprivate final func set_visibility_public (_ visible: Bool) {
-        #if true
+        #if false
         
         var copy_visible = visible
         
@@ -459,7 +459,7 @@ open class MultiplayerSynchronizer: Node {
     /// `filter` should take a peer ID integer and return a [bool].
     /// 
     public final func addVisibilityFilter (_ filter: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (MultiplayerSynchronizer.method_add_visibility_filter, UnsafeMutableRawPointer (mutating: handle), nil, &filter.content)
@@ -489,7 +489,7 @@ open class MultiplayerSynchronizer: Node {
     
     /// Removes a peer visibility filter from this synchronizer.
     public final func removeVisibilityFilter (_ filter: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (MultiplayerSynchronizer.method_remove_visibility_filter, UnsafeMutableRawPointer (mutating: handle), nil, &filter.content)
@@ -519,7 +519,7 @@ open class MultiplayerSynchronizer: Node {
     
     /// Sets the visibility of `peer` to `visible`. If `peer` is `0`, the value of ``publicVisibility`` will be updated instead.
     public final func setVisibilityFor (peer: Int32, visible: Bool) {
-        #if true
+        #if false
         
         var copy_peer: Int = Int (peer)
         var copy_visible = visible
@@ -557,7 +557,7 @@ open class MultiplayerSynchronizer: Node {
     /// Queries the current visibility for peer `peer`.
     public final func getVisibilityFor (peer: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_peer: Int = Int (peer)
         

@@ -106,7 +106,7 @@ open class WebRTCDataChannel: PacketPeer {
     
     @inline(__always)
     fileprivate final func set_write_mode (_ writeMode: WebRTCDataChannel.WriteMode) {
-        #if true
+        #if false
         
         var copy_write_mode = Int64 (writeMode.rawValue)
         

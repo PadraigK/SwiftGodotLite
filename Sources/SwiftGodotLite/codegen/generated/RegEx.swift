@@ -44,7 +44,7 @@ open class RegEx: RefCounted {
     /// Creates and compiles a new ``RegEx`` object.
     public static func createFromString (pattern: String)-> RegEx? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_pattern = GString (pattern)
         
@@ -94,7 +94,7 @@ open class RegEx: RefCounted {
     /// Compiles and assign the search pattern to use. Returns ``GodotError/ok`` if the compilation is successful. If an error is encountered, details are printed to standard output and an error is returned.
     public final func compile (pattern: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_pattern = GString (pattern)
         
@@ -131,7 +131,7 @@ open class RegEx: RefCounted {
     /// 
     public final func search (subject: String, offset: Int32 = 0, end: Int32 = -1)-> RegExMatch? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_subject = GString (subject)
         var copy_offset: Int = Int (offset)
@@ -178,7 +178,7 @@ open class RegEx: RefCounted {
     /// 
     public final func searchAll (subject: String, offset: Int32 = 0, end: Int32 = -1)-> ObjectCollection<RegExMatch> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         let gstr_subject = GString (subject)
         var copy_offset: Int = Int (offset)
@@ -225,7 +225,7 @@ open class RegEx: RefCounted {
     /// 
     public final func sub (subject: String, replacement: String, all: Bool = false, offset: Int32 = 0, end: Int32 = -1)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_subject = GString (subject)
         let gstr_replacement = GString (replacement)

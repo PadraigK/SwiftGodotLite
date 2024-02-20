@@ -363,7 +363,7 @@ open class DisplayServer: Object {
     /// Returns `true` if the specified `feature` is supported by the current ``DisplayServer``, `false` otherwise.
     public static func hasFeature (_ feature: DisplayServer.Feature)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_feature = Int64 (feature.rawValue)
         
@@ -417,7 +417,7 @@ open class DisplayServer: Object {
     
     /// Registers callables to emit when the menu is respectively about to show or closed.
     public static func globalMenuSetPopupCallbacks (menuRoot: String, openCallback: Callable, closeCallback: Callable) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         
@@ -463,7 +463,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuAddSubmenuItem (menuRoot: String, label: String, submenu: String, index: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         let gstr_label = GString (label)
@@ -523,7 +523,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuAddItem (menuRoot: String, label: String, callback: Callable = Callable(), keyCallback: Callable = Callable(), tag: Variant, accelerator: Key = .none, index: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         let gstr_label = GString (label)
@@ -592,7 +592,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuAddCheckItem (menuRoot: String, label: String, callback: Callable = Callable(), keyCallback: Callable = Callable(), tag: Variant, accelerator: Key = .none, index: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         let gstr_label = GString (label)
@@ -661,7 +661,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuAddIconItem (menuRoot: String, icon: Texture2D?, label: String, callback: Callable = Callable(), keyCallback: Callable = Callable(), tag: Variant, accelerator: Key = .none, index: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         let gstr_label = GString (label)
@@ -734,7 +734,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuAddIconCheckItem (menuRoot: String, icon: Texture2D?, label: String, callback: Callable = Callable(), keyCallback: Callable = Callable(), tag: Variant, accelerator: Key = .none, index: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         let gstr_label = GString (label)
@@ -809,7 +809,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuAddRadioCheckItem (menuRoot: String, label: String, callback: Callable = Callable(), keyCallback: Callable = Callable(), tag: Variant, accelerator: Key = .none, index: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         let gstr_label = GString (label)
@@ -880,7 +880,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuAddIconRadioCheckItem (menuRoot: String, icon: Texture2D?, label: String, callback: Callable = Callable(), keyCallback: Callable = Callable(), tag: Variant, accelerator: Key = .none, index: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         let gstr_label = GString (label)
@@ -957,7 +957,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuAddMultistateItem (menuRoot: String, label: String, maxStates: Int32, defaultState: Int32, callback: Callable = Callable(), keyCallback: Callable = Callable(), tag: Variant, accelerator: Key = .none, index: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         let gstr_label = GString (label)
@@ -1032,7 +1032,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuAddSeparator (menuRoot: String, index: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_index: Int = Int (index)
@@ -1074,7 +1074,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuGetItemIndexFromText (menuRoot: String, text: String)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         let gstr_text = GString (text)
@@ -1116,7 +1116,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuGetItemIndexFromTag (menuRoot: String, tag: Variant)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         
@@ -1156,7 +1156,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuIsItemChecked (menuRoot: String, idx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1198,7 +1198,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuIsItemCheckable (menuRoot: String, idx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1242,7 +1242,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuIsItemRadioCheckable (menuRoot: String, idx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1284,7 +1284,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuGetItemCallback (menuRoot: String, idx: Int32)-> Callable {
         let _result: Callable = Callable ()
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1326,7 +1326,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuGetItemKeyCallback (menuRoot: String, idx: Int32)-> Callable {
         let _result: Callable = Callable ()
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1368,7 +1368,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuGetItemTag (menuRoot: String, idx: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1410,7 +1410,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuGetItemText (menuRoot: String, idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1452,7 +1452,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuGetItemSubmenu (menuRoot: String, idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1494,7 +1494,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuGetItemAccelerator (menuRoot: String, idx: Int32)-> Key {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1538,7 +1538,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuIsItemDisabled (menuRoot: String, idx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1582,7 +1582,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuIsItemHidden (menuRoot: String, idx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1624,7 +1624,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuGetItemTooltip (menuRoot: String, idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1666,7 +1666,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuGetItemState (menuRoot: String, idx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1708,7 +1708,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuGetItemMaxStates (menuRoot: String, idx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1750,7 +1750,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuGetItemIcon (menuRoot: String, idx: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1792,7 +1792,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuGetItemIndentationLevel (menuRoot: String, idx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1833,7 +1833,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemChecked (menuRoot: String, idx: Int32, checked: Bool) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1878,7 +1878,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemCheckable (menuRoot: String, idx: Int32, checkable: Bool) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1925,7 +1925,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemRadioCheckable (menuRoot: String, idx: Int32, checkable: Bool) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -1972,7 +1972,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemCallback (menuRoot: String, idx: Int32, callback: Callable) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2017,7 +2017,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemHoverCallbacks (menuRoot: String, idx: Int32, callback: Callable) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2062,7 +2062,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemKeyCallback (menuRoot: String, idx: Int32, keyCallback: Callable) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2105,7 +2105,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemTag (menuRoot: String, idx: Int32, tag: Variant) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2148,7 +2148,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemText (menuRoot: String, idx: Int32, text: String) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2193,7 +2193,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemSubmenu (menuRoot: String, idx: Int32, submenu: String) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2238,7 +2238,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemAccelerator (menuRoot: String, idx: Int32, keycode: Key) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2283,7 +2283,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemDisabled (menuRoot: String, idx: Int32, disabled: Bool) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2328,7 +2328,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemHidden (menuRoot: String, idx: Int32, hidden: Bool) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2373,7 +2373,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemTooltip (menuRoot: String, idx: Int32, tooltip: String) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2418,7 +2418,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemState (menuRoot: String, idx: Int32, state: Int32) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2463,7 +2463,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemMaxStates (menuRoot: String, idx: Int32, maxStates: Int32) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2510,7 +2510,7 @@ open class DisplayServer: Object {
     /// > Note: This method is not supported by macOS "_dock" menu items.
     /// 
     public static func globalMenuSetItemIcon (menuRoot: String, idx: Int32, icon: Texture2D?) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2554,7 +2554,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuSetItemIndentationLevel (menuRoot: String, idx: Int32, level: Int32) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2600,7 +2600,7 @@ open class DisplayServer: Object {
     /// 
     public static func globalMenuGetItemCount (menuRoot: String)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         
@@ -2638,7 +2638,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on macOS.
     /// 
     public static func globalMenuRemoveItem (menuRoot: String, idx: Int32) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         var copy_idx: Int = Int (idx)
@@ -2680,7 +2680,7 @@ open class DisplayServer: Object {
     /// **Supported system menu IDs:**
     /// 
     public static func globalMenuClear (menuRoot: String) {
-        #if true
+        #if false
         
         let gstr_menu_root = GString (menuRoot)
         
@@ -2797,7 +2797,7 @@ open class DisplayServer: Object {
     /// 
     public static func ttsGetVoicesForLanguage (_ language: String)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -2849,7 +2849,7 @@ open class DisplayServer: Object {
     /// > Note: ``ProjectSettings/audio/general/textToSpeech`` should be `true` to use text-to-speech.
     /// 
     public static func ttsSpeak (text: String, voice: String, volume: Int32 = 50, pitch: Double = 1.0, rate: Double = 1.0, utteranceId: Int32 = 0, interrupt: Bool = false) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         let gstr_voice = GString (voice)
@@ -2985,7 +2985,7 @@ open class DisplayServer: Object {
     /// > Note: ``ProjectSettings/audio/general/textToSpeech`` should be `true` to use text-to-speech.
     /// 
     public static func ttsSetUtteranceCallback (event: DisplayServer.TTSUtteranceEvent, callable: Callable) {
-        #if true
+        #if false
         
         var copy_event = Int64 (event.rawValue)
         
@@ -3083,7 +3083,7 @@ open class DisplayServer: Object {
     
     /// Sets the current mouse mode. See also ``mouseGetMode()``.
     public static func mouseSetMode (mouseMode: DisplayServer.MouseMode) {
-        #if true
+        #if false
         
         var copy_mouse_mode = Int64 (mouseMode.rawValue)
         
@@ -3136,7 +3136,7 @@ open class DisplayServer: Object {
     /// > Note: ``warpMouse(position:)`` is only supported on Windows, macOS and Linux. It has no effect on Android, iOS and Web.
     /// 
     public static func warpMouse (position: Vector2i) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -3204,7 +3204,7 @@ open class DisplayServer: Object {
     
     /// Sets the user's clipboard content to the given string.
     public static func clipboardSet (clipboard: String) {
-        #if true
+        #if false
         
         let gstr_clipboard = GString (clipboard)
         
@@ -3311,7 +3311,7 @@ open class DisplayServer: Object {
     /// > Note: This method is only implemented on Linux (X11).
     /// 
     public static func clipboardSetPrimary (clipboardPrimary: String) {
-        #if true
+        #if false
         
         let gstr_clipboard_primary = GString (clipboardPrimary)
         
@@ -3458,7 +3458,7 @@ open class DisplayServer: Object {
     /// Returns index of the screen which contains specified rectangle.
     public static func getScreenFromRect (_ rect: Rect2)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_rect = rect
         
@@ -3495,7 +3495,7 @@ open class DisplayServer: Object {
     /// 
     public static func screenGetPosition (screen: Int32 = -1)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_screen: Int = Int (screen)
         
@@ -3529,7 +3529,7 @@ open class DisplayServer: Object {
     /// Returns the screen's size in pixels. See also ``screenGetPosition(screen:)`` and ``screenGetUsableRect(screen:)``.
     public static func screenGetSize (screen: Int32 = -1)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_screen: Int = Int (screen)
         
@@ -3563,7 +3563,7 @@ open class DisplayServer: Object {
     /// Returns the portion of the screen that is not obstructed by a status bar in pixels. See also ``screenGetSize(screen:)``.
     public static func screenGetUsableRect (screen: Int32 = -1)-> Rect2i {
         var _result: Rect2i = Rect2i ()
-        #if true
+        #if false
         
         var copy_screen: Int = Int (screen)
         
@@ -3604,7 +3604,7 @@ open class DisplayServer: Object {
     /// 
     public static func screenGetDpi (screen: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_screen: Int = Int (screen)
         
@@ -3643,7 +3643,7 @@ open class DisplayServer: Object {
     /// 
     public static func screenGetScale (screen: Int32 = -1)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_screen: Int = Int (screen)
         
@@ -3723,7 +3723,7 @@ open class DisplayServer: Object {
     /// 
     public static func screenGetRefreshRate (screen: Int32 = -1)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_screen: Int = Int (screen)
         
@@ -3762,7 +3762,7 @@ open class DisplayServer: Object {
     /// 
     public static func screenGetPixel (position: Vector2i)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -3801,7 +3801,7 @@ open class DisplayServer: Object {
     /// 
     public static func screenGetImage (screen: Int32 = -1)-> Image? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_screen: Int = Int (screen)
         
@@ -3837,7 +3837,7 @@ open class DisplayServer: Object {
     /// > Note: On iOS, this method has no effect if ``ProjectSettings/display/window/handheld/orientation`` is not set to .screenSensor.
     /// 
     public static func screenSetOrientation (_ orientation: DisplayServer.ScreenOrientation, screen: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_orientation = Int64 (orientation.rawValue)
         var copy_screen: Int = Int (screen)
@@ -3878,7 +3878,7 @@ open class DisplayServer: Object {
     /// 
     public static func screenGetOrientation (screen: Int32 = -1)-> DisplayServer.ScreenOrientation {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_screen: Int = Int (screen)
         
@@ -3911,7 +3911,7 @@ open class DisplayServer: Object {
     
     /// Sets whether the screen should never be turned off by the operating system's power-saving measures. See also ``screenIsKeptOn()``.
     public static func screenSetKeepOn (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3984,7 +3984,7 @@ open class DisplayServer: Object {
     /// 
     public static func getWindowAtScreenPosition (_ position: Vector2i)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -4021,7 +4021,7 @@ open class DisplayServer: Object {
     /// 
     public static func windowGetNativeHandle (handleType: DisplayServer.HandleType, windowId: Int32 = 0)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_handle_type = Int64 (handleType.rawValue)
         var copy_window_id: Int = Int (windowId)
@@ -4077,7 +4077,7 @@ open class DisplayServer: Object {
     
     /// Sets the bounding box of control, or menu item that was used to open the popup window, in the screen coordinate system. Clicking this area will not auto-close this popup.
     public static func windowSetPopupSafeRect (window: Int32, rect: Rect2i) {
-        #if true
+        #if false
         
         var copy_window: Int = Int (window)
         var copy_rect = rect
@@ -4115,7 +4115,7 @@ open class DisplayServer: Object {
     /// Returns the bounding box of control, or menu item that was used to open the popup window, in the screen coordinate system.
     public static func windowGetPopupSafeRect (window: Int32)-> Rect2i {
         var _result: Rect2i = Rect2i ()
-        #if true
+        #if false
         
         var copy_window: Int = Int (window)
         
@@ -4153,7 +4153,7 @@ open class DisplayServer: Object {
     /// > Note: Avoid changing the window title every frame, as this can cause performance issues on certain window managers. Try to change the window title only a few times per second at most.
     /// 
     public static func windowSetTitle (_ title: String, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         let gstr_title = GString (title)
         var copy_window_id: Int = Int (windowId)
@@ -4194,7 +4194,7 @@ open class DisplayServer: Object {
     /// 
     public static func windowGetTitleSize (title: String, windowId: Int32 = 0)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         let gstr_title = GString (title)
         var copy_window_id: Int = Int (windowId)
@@ -4239,7 +4239,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented on Linux (X11), macOS and Windows.
     /// 
     public static func windowSetMousePassthrough (region: PackedVector2Array, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4275,7 +4275,7 @@ open class DisplayServer: Object {
     /// Returns the screen the window specified by `windowId` is currently positioned on. If the screen overlaps multiple displays, the screen where the window's center is located is returned. See also ``windowSetCurrentScreen(_:windowId:)``.
     public static func windowGetCurrentScreen (windowId: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4308,7 +4308,7 @@ open class DisplayServer: Object {
     
     /// Moves the window specified by `windowId` to the specified `screen`. See also ``windowGetCurrentScreen(windowId:)``.
     public static func windowSetCurrentScreen (_ screen: Int32, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_screen: Int = Int (screen)
         var copy_window_id: Int = Int (windowId)
@@ -4346,7 +4346,7 @@ open class DisplayServer: Object {
     /// Returns the position of the client area of the given window on the screen.
     public static func windowGetPosition (windowId: Int32 = 0)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4380,7 +4380,7 @@ open class DisplayServer: Object {
     /// Returns the position of the given window on the screen including the borders drawn by the operating system. See also ``windowGetPosition(windowId:)``.
     public static func windowGetPositionWithDecorations (windowId: Int32 = 0)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4418,7 +4418,7 @@ open class DisplayServer: Object {
     /// > Note: It's recommended to change this value using ``Window/position`` instead.
     /// 
     public static func windowSetPosition (_ position: Vector2i, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_window_id: Int = Int (windowId)
@@ -4456,7 +4456,7 @@ open class DisplayServer: Object {
     /// Returns the size of the window specified by `windowId` (in pixels), excluding the borders drawn by the operating system. This is also called the "client area". See also ``windowGetSizeWithDecorations(windowId:)``, ``windowSetSize(_:windowId:)`` and ``windowGetPosition(windowId:)``.
     public static func windowGetSize (windowId: Int32 = 0)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4492,7 +4492,7 @@ open class DisplayServer: Object {
     /// > Note: It's recommended to change this value using ``Window/size`` instead.
     /// 
     public static func windowSetSize (_ size: Vector2i, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_window_id: Int = Int (windowId)
@@ -4532,7 +4532,7 @@ open class DisplayServer: Object {
     /// > Warning: Advanced users only! Adding such a callback to a ``Window`` node will override its default implementation, which can introduce bugs.
     /// 
     public static func windowSetRectChangedCallback (_ callback: Callable, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4570,7 +4570,7 @@ open class DisplayServer: Object {
     /// > Warning: Advanced users only! Adding such a callback to a ``Window`` node will override its default implementation, which can introduce bugs.
     /// 
     public static func windowSetWindowEventCallback (_ callback: Callable, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4608,7 +4608,7 @@ open class DisplayServer: Object {
     /// > Warning: Advanced users only! Adding such a callback to a ``Window`` node will override its default implementation, which can introduce bugs.
     /// 
     public static func windowSetInputEventCallback (_ callback: Callable, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4646,7 +4646,7 @@ open class DisplayServer: Object {
     /// > Warning: Advanced users only! Adding such a callback to a ``Window`` node will override its default implementation, which can introduce bugs.
     /// 
     public static func windowSetInputTextCallback (_ callback: Callable, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4686,7 +4686,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented on Windows, macOS, Linux (X11) and Web.
     /// 
     public static func windowSetDropFilesCallback (_ callback: Callable, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4722,7 +4722,7 @@ open class DisplayServer: Object {
     /// Returns the ``Object/getInstanceId()`` of the ``Window`` the `windowId` is attached to.
     public static func windowGetAttachedInstanceId (windowId: Int32 = 0)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4756,7 +4756,7 @@ open class DisplayServer: Object {
     /// Returns the window's maximum size (in pixels). See also ``windowSetMaxSize(_:windowId:)``.
     public static func windowGetMaxSize (windowId: Int32 = 0)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4794,7 +4794,7 @@ open class DisplayServer: Object {
     /// > Note: Using third-party tools, it is possible for users to disable window geometry restrictions and therefore bypass this limit.
     /// 
     public static func windowSetMaxSize (_ maxSize: Vector2i, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_max_size = maxSize
         var copy_window_id: Int = Int (windowId)
@@ -4832,7 +4832,7 @@ open class DisplayServer: Object {
     /// Returns the window's minimum size (in pixels). See also ``windowSetMinSize(_:windowId:)``.
     public static func windowGetMinSize (windowId: Int32 = 0)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4872,7 +4872,7 @@ open class DisplayServer: Object {
     /// > Note: Using third-party tools, it is possible for users to disable window geometry restrictions and therefore bypass this limit.
     /// 
     public static func windowSetMinSize (_ minSize: Vector2i, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_min_size = minSize
         var copy_window_id: Int = Int (windowId)
@@ -4910,7 +4910,7 @@ open class DisplayServer: Object {
     /// Returns the size of the window specified by `windowId` (in pixels), including the borders drawn by the operating system. See also ``windowGetSize(windowId:)``.
     public static func windowGetSizeWithDecorations (windowId: Int32 = 0)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4944,7 +4944,7 @@ open class DisplayServer: Object {
     /// Returns the mode of the given window.
     public static func windowGetMode (windowId: Int32 = 0)-> DisplayServer.WindowMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -4980,7 +4980,7 @@ open class DisplayServer: Object {
     /// > Note: Setting the window to full screen forcibly sets the borderless flag to `true`, so make sure to set it back to `false` when not wanted.
     /// 
     public static func windowSetMode (_ mode: DisplayServer.WindowMode, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         var copy_window_id: Int = Int (windowId)
@@ -5017,7 +5017,7 @@ open class DisplayServer: Object {
     
     /// Enables or disables the given window's given `flag`. See ``DisplayServer/WindowFlags`` for possible values and their behavior.
     public static func windowSetFlag (_ flag: DisplayServer.WindowFlags, enabled: Bool, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         var copy_enabled = enabled
@@ -5060,7 +5060,7 @@ open class DisplayServer: Object {
     /// Returns the current value of the given window's `flag`.
     public static func windowGetFlag (_ flag: DisplayServer.WindowFlags, windowId: Int32 = 0)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         var copy_window_id: Int = Int (windowId)
@@ -5101,7 +5101,7 @@ open class DisplayServer: Object {
     /// > Note: This flag is implemented only on macOS.
     /// 
     public static func windowSetWindowButtonsOffset (_ offset: Vector2i, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_offset = offset
         var copy_window_id: Int = Int (windowId)
@@ -5139,7 +5139,7 @@ open class DisplayServer: Object {
     /// Returns left margins (`x`), right margins (`y`) and height (`z`) of the title that are safe to use (contains no buttons or other elements) when .windowFlagExtendToTitle flag is set.
     public static func windowGetSafeTitleMargins (windowId: Int32 = 0)-> Vector3i {
         var _result: Vector3i = Vector3i ()
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -5172,7 +5172,7 @@ open class DisplayServer: Object {
     
     /// Makes the window specified by `windowId` request attention, which is materialized by the window title and taskbar entry blinking until the window is focused. This usually has no visible effect if the window is currently focused. The exact behavior varies depending on the operating system.
     public static func windowRequestAttention (windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -5204,7 +5204,7 @@ open class DisplayServer: Object {
     
     /// Moves the window specified by `windowId` to the foreground, so that it is visible over other windows.
     public static func windowMoveToForeground (windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -5237,7 +5237,7 @@ open class DisplayServer: Object {
     /// Returns `true` if the window specified by `windowId` is focused.
     public static func windowIsFocused (windowId: Int32 = 0)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -5271,7 +5271,7 @@ open class DisplayServer: Object {
     /// Returns `true` if anything can be drawn in the window specified by `windowId`, `false` otherwise. Using the `--disable-render-loop` command line argument or a headless build will return `false`.
     public static func windowCanDraw (windowId: Int32 = 0)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -5309,7 +5309,7 @@ open class DisplayServer: Object {
     /// > Note: The behavior might be different depending on the platform.
     /// 
     public static func windowSetTransient (windowId: Int32, parentWindowId: Int32) {
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         var copy_parent_window_id: Int = Int (parentWindowId)
@@ -5351,7 +5351,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented on macOS and Windows.
     /// 
     public static func windowSetExclusive (windowId: Int32, exclusive: Bool) {
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         var copy_exclusive = exclusive
@@ -5388,7 +5388,7 @@ open class DisplayServer: Object {
     
     /// Sets whether [url=https://en.wikipedia.org/wiki/Input_method]Input Method Editor[/url] should be enabled for the window specified by `windowId`. See also ``windowSetImePosition(_:windowId:)``.
     public static func windowSetImeActive (_ active: Bool, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_active = active
         var copy_window_id: Int = Int (windowId)
@@ -5425,7 +5425,7 @@ open class DisplayServer: Object {
     
     /// Sets the position of the [url=https://en.wikipedia.org/wiki/Input_method]Input Method Editor[/url] popup for the specified `windowId`. Only effective if ``windowSetImeActive(_:windowId:)`` was set to `true` for the specified `windowId`.
     public static func windowSetImePosition (_ position: Vector2i, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_window_id: Int = Int (windowId)
@@ -5469,7 +5469,7 @@ open class DisplayServer: Object {
     /// > Note: V-Sync modes other than .vsyncEnabled are only supported in the Forward+ and Mobile rendering methods, not Compatibility.
     /// 
     public static func windowSetVsyncMode (_ vsyncMode: DisplayServer.VSyncMode, windowId: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_vsync_mode = Int64 (vsyncMode.rawValue)
         var copy_window_id: Int = Int (windowId)
@@ -5507,7 +5507,7 @@ open class DisplayServer: Object {
     /// Returns the V-Sync mode of the given window.
     public static func windowGetVsyncMode (windowId: Int32 = 0)-> DisplayServer.VSyncMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -5541,7 +5541,7 @@ open class DisplayServer: Object {
     /// Returns `true` if the given window can be maximized (the maximize button is enabled).
     public static func windowIsMaximizeAllowed (windowId: Int32 = 0)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_window_id: Int = Int (windowId)
         
@@ -5673,7 +5673,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented on Android, iOS and Web.
     /// 
     public static func virtualKeyboardShow (existingText: String, position: Rect2 = Rect2 (x: 0, y: 0, width: 0, height: 0), type: DisplayServer.VirtualKeyboardType = .`default`, maxLength: Int32 = -1, cursorStart: Int32 = -1, cursorEnd: Int32 = -1) {
-        #if true
+        #if false
         
         let gstr_existing_text = GString (existingText)
         var copy_position = position
@@ -5764,7 +5764,7 @@ open class DisplayServer: Object {
     
     /// Sets the default mouse cursor shape. The cursor's appearance will vary depending on the user's operating system and mouse cursor theme. See also ``cursorGetShape()`` and ``cursorSetCustomImage(cursor:shape:hotspot:)``.
     public static func cursorSetShape (_ shape: DisplayServer.CursorShape) {
-        #if true
+        #if false
         
         var copy_shape = Int64 (shape.rawValue)
         
@@ -5814,7 +5814,7 @@ open class DisplayServer: Object {
     
     /// Sets a custom mouse cursor image for the defined `shape`. This means the user's operating system and mouse cursor theme will no longer influence the mouse cursor's appearance. The image must be `256x256` or smaller for correct appearance. `hotspot` can optionally be set to define the area where the cursor will click. By default, `hotspot` is set to `Vector2(0, 0)`, which is the top-left corner of the image. See also ``cursorSetShape(_:)``.
     public static func cursorSetCustomImage (cursor: Resource?, shape: DisplayServer.CursorShape = .arrow, hotspot: Vector2 = Vector2 (x: 0, y: 0)) {
-        #if true
+        #if false
         
         var copy_shape = Int64 (shape.rawValue)
         var copy_hotspot = hotspot
@@ -5879,7 +5879,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on Windows.
     /// 
     public static func enableForStealingFocus (processId: Int) {
-        #if true
+        #if false
         
         var copy_process_id = processId
         
@@ -5915,7 +5915,7 @@ open class DisplayServer: Object {
     /// 
     public static func dialogShow (title: String, description: String, buttons: PackedStringArray, callback: Callable)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_title = GString (title)
         let gstr_description = GString (description)
@@ -5963,7 +5963,7 @@ open class DisplayServer: Object {
     /// 
     public static func dialogInputText (title: String, description: String, existingText: String, callback: Callable)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_title = GString (title)
         let gstr_description = GString (description)
@@ -6025,7 +6025,7 @@ open class DisplayServer: Object {
     /// 
     public static func fileDialogShow (title: String, currentDirectory: String, filename: String, showHidden: Bool, mode: DisplayServer.FileDialogMode, filters: PackedStringArray, callback: Callable)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_title = GString (title)
         let gstr_current_directory = GString (currentDirectory)
@@ -6129,7 +6129,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented on Linux (X11), macOS and Windows.
     /// 
     public static func keyboardSetCurrentLayout (index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -6165,7 +6165,7 @@ open class DisplayServer: Object {
     /// 
     public static func keyboardGetLayoutLanguage (index: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -6202,7 +6202,7 @@ open class DisplayServer: Object {
     /// 
     public static func keyboardGetLayoutName (index: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -6239,7 +6239,7 @@ open class DisplayServer: Object {
     /// 
     public static func keyboardGetKeycodeFromPhysical (keycode: Key)-> Key {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_keycode = Int64 (keycode.rawValue)
         
@@ -6276,7 +6276,7 @@ open class DisplayServer: Object {
     /// 
     public static func keyboardGetLabelFromPhysical (keycode: Key)-> Key {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_keycode = Int64 (keycode.rawValue)
         
@@ -6344,7 +6344,7 @@ open class DisplayServer: Object {
     
     /// Sets the window icon (usually displayed in the top-left corner) in the operating system's _native_ format. The file at `filename` must be in `.ico` format on Windows or `.icns` on macOS. By using specially crafted `.ico` or `.icns` icons, ``setNativeIcon(filename:)`` allows specifying different icons depending on the size the icon is displayed at. This size is determined by the operating system and user preferences (including the display scale factor). To use icons in other formats, use ``setIcon(image:)`` instead.
     public static func setNativeIcon (filename: String) {
-        #if true
+        #if false
         
         let gstr_filename = GString (filename)
         
@@ -6376,7 +6376,7 @@ open class DisplayServer: Object {
     
     /// Sets the window icon (usually displayed in the top-left corner) with an ``Image``. To use icons in the operating system's native format, use ``setNativeIcon(filename:)`` instead.
     public static func setIcon (image: Image?) {
-        #if true
+        #if false
         
         var copy_image_handle = image?.handle
         
@@ -6432,7 +6432,7 @@ open class DisplayServer: Object {
     /// 
     public static func tabletGetDriverName (idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -6489,7 +6489,7 @@ open class DisplayServer: Object {
     /// > Note: This method is implemented only on Windows.
     /// 
     public static func tabletSetCurrentDriver (name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         

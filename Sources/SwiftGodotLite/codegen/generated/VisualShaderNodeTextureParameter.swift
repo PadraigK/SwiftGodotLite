@@ -160,7 +160,7 @@ open class VisualShaderNodeTextureParameter: VisualShaderNodeParameter {
     
     @inline(__always)
     fileprivate final func set_texture_type (_ type: VisualShaderNodeTextureParameter.TextureType) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -210,7 +210,7 @@ open class VisualShaderNodeTextureParameter: VisualShaderNodeParameter {
     
     @inline(__always)
     fileprivate final func set_color_default (_ color: VisualShaderNodeTextureParameter.ColorDefault) {
-        #if true
+        #if false
         
         var copy_color = Int64 (color.rawValue)
         
@@ -260,7 +260,7 @@ open class VisualShaderNodeTextureParameter: VisualShaderNodeParameter {
     
     @inline(__always)
     fileprivate final func set_texture_filter (_ filter: VisualShaderNodeTextureParameter.TextureFilter) {
-        #if true
+        #if false
         
         var copy_filter = Int64 (filter.rawValue)
         
@@ -310,7 +310,7 @@ open class VisualShaderNodeTextureParameter: VisualShaderNodeParameter {
     
     @inline(__always)
     fileprivate final func set_texture_repeat (_ `repeat`: VisualShaderNodeTextureParameter.TextureRepeat) {
-        #if true
+        #if false
         
         var copy_repeat = Int64 (`repeat`.rawValue)
         
@@ -360,7 +360,7 @@ open class VisualShaderNodeTextureParameter: VisualShaderNodeParameter {
     
     @inline(__always)
     fileprivate final func set_texture_source (_ source: VisualShaderNodeTextureParameter.TextureSource) {
-        #if true
+        #if false
         
         var copy_source = Int64 (source.rawValue)
         

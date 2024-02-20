@@ -64,7 +64,7 @@ open class PacketPeerStream: PacketPeer {
     
     @inline(__always)
     fileprivate final func set_stream_peer (_ peer: StreamPeer?) {
-        #if true
+        #if false
         
         var copy_peer_handle = peer?.handle
         
@@ -113,7 +113,7 @@ open class PacketPeerStream: PacketPeer {
     
     @inline(__always)
     fileprivate final func set_input_buffer_max_size (_ maxSizeBytes: Int32) {
-        #if true
+        #if false
         
         var copy_max_size_bytes: Int = Int (maxSizeBytes)
         
@@ -145,7 +145,7 @@ open class PacketPeerStream: PacketPeer {
     
     @inline(__always)
     fileprivate final func set_output_buffer_max_size (_ maxSizeBytes: Int32) {
-        #if true
+        #if false
         
         var copy_max_size_bytes: Int = Int (maxSizeBytes)
         

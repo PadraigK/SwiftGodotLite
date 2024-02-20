@@ -151,7 +151,7 @@ open class Texture2D: Texture {
     
     /// Draws the texture using a ``CanvasItem`` with the ``RenderingServer`` API at the specified `position`.
     public final func draw (canvasItem: RID, position: Vector2, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), transpose: Bool = false) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_modulate = modulate
@@ -196,7 +196,7 @@ open class Texture2D: Texture {
     
     /// Draws the texture using a ``CanvasItem`` with the ``RenderingServer`` API.
     public final func drawRect (canvasItem: RID, rect: Rect2, tile: Bool, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), transpose: Bool = false) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_tile = tile
@@ -246,7 +246,7 @@ open class Texture2D: Texture {
     
     /// Draws a part of the texture using a ``CanvasItem`` with the ``RenderingServer`` API.
     public final func drawRectRegion (canvasItem: RID, rect: Rect2, srcRect: Rect2, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), transpose: Bool = false, clipUv: Bool = true) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_src_rect = srcRect

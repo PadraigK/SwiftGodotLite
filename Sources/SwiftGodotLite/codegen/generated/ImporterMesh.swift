@@ -27,7 +27,7 @@ open class ImporterMesh: Resource {
     
     /// Adds name for a blend shape that will be added with ``addSurface(primitive:arrays:blendShapes:lods:material:name:flags:)``. Must be called before surface is added.
     public final func addBlendShape (name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -78,7 +78,7 @@ open class ImporterMesh: Resource {
     /// Returns the name of the blend shape at this index.
     public final func getBlendShapeName (blendShapeIdx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_blend_shape_idx: Int = Int (blendShapeIdx)
         
@@ -111,7 +111,7 @@ open class ImporterMesh: Resource {
     
     /// Sets the blend shape mode to one of ``Mesh.BlendShapeMode``.
     public final func setBlendShapeMode (_ mode: Mesh.BlendShapeMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -174,7 +174,7 @@ open class ImporterMesh: Resource {
     /// > Note: When using indices, it is recommended to only use points, lines, or triangles.
     /// 
     public final func addSurface (primitive: Mesh.PrimitiveType, arrays: GArray, blendShapes: VariantCollection<GArray> = VariantCollection<GArray> (), lods: GDictionary = GDictionary (), material: Material? = nil, name: String = "", flags: UInt = 0) {
-        #if true
+        #if false
         
         var copy_primitive = Int64 (primitive.rawValue)
         let gstr_name = GString (name)
@@ -248,7 +248,7 @@ open class ImporterMesh: Resource {
     /// Returns the primitive type of the requested surface (see ``addSurface(primitive:arrays:blendShapes:lods:material:name:flags:)``).
     public final func getSurfacePrimitiveType (surfaceIdx: Int32)-> Mesh.PrimitiveType {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_surface_idx: Int = Int (surfaceIdx)
         
@@ -282,7 +282,7 @@ open class ImporterMesh: Resource {
     /// Gets the name assigned to this surface.
     public final func getSurfaceName (surfaceIdx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_surface_idx: Int = Int (surfaceIdx)
         
@@ -316,7 +316,7 @@ open class ImporterMesh: Resource {
     /// Returns the arrays for the vertices, normals, UVs, etc. that make up the requested surface. See ``addSurface(primitive:arrays:blendShapes:lods:material:name:flags:)``.
     public final func getSurfaceArrays (surfaceIdx: Int32)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_surface_idx: Int = Int (surfaceIdx)
         
@@ -350,7 +350,7 @@ open class ImporterMesh: Resource {
     /// Returns a single set of blend shape arrays for the requested blend shape index for a surface.
     public final func getSurfaceBlendShapeArrays (surfaceIdx: Int32, blendShapeIdx: Int32)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_surface_idx: Int = Int (surfaceIdx)
         var copy_blend_shape_idx: Int = Int (blendShapeIdx)
@@ -389,7 +389,7 @@ open class ImporterMesh: Resource {
     /// Returns the number of lods that the mesh holds on a given surface.
     public final func getSurfaceLodCount (surfaceIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_surface_idx: Int = Int (surfaceIdx)
         
@@ -423,7 +423,7 @@ open class ImporterMesh: Resource {
     /// Returns the screen ratio which activates a lod for a surface.
     public final func getSurfaceLodSize (surfaceIdx: Int32, lodIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_surface_idx: Int = Int (surfaceIdx)
         var copy_lod_idx: Int = Int (lodIdx)
@@ -462,7 +462,7 @@ open class ImporterMesh: Resource {
     /// Returns the index buffer of a lod for a surface.
     public final func getSurfaceLodIndices (surfaceIdx: Int32, lodIdx: Int32)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_surface_idx: Int = Int (surfaceIdx)
         var copy_lod_idx: Int = Int (lodIdx)
@@ -501,7 +501,7 @@ open class ImporterMesh: Resource {
     /// Returns a ``Material`` in a given surface. Surface is rendered using this material.
     public final func getSurfaceMaterial (surfaceIdx: Int32)-> Material? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_surface_idx: Int = Int (surfaceIdx)
         
@@ -535,7 +535,7 @@ open class ImporterMesh: Resource {
     /// Returns the format of the surface that the mesh holds.
     public final func getSurfaceFormat (surfaceIdx: Int32)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         var copy_surface_idx: Int = Int (surfaceIdx)
         
@@ -568,7 +568,7 @@ open class ImporterMesh: Resource {
     
     /// Sets a name for a given surface.
     public final func setSurfaceName (surfaceIdx: Int32, name: String) {
-        #if true
+        #if false
         
         var copy_surface_idx: Int = Int (surfaceIdx)
         let gstr_name = GString (name)
@@ -605,7 +605,7 @@ open class ImporterMesh: Resource {
     
     /// Sets a ``Material`` for a given surface. Surface will be rendered using this material.
     public final func setSurfaceMaterial (surfaceIdx: Int32, material: Material?) {
-        #if true
+        #if false
         
         var copy_surface_idx: Int = Int (surfaceIdx)
         var copy_material_handle = material?.handle
@@ -648,7 +648,7 @@ open class ImporterMesh: Resource {
     /// `boneTransformArray` is an ``GArray`` which can be either empty or contain ``Transform3D``s which, for each of the mesh's bone IDs, will apply mesh skinning when generating the LOD mesh variations. This is usually used to account for discrepancies in scale between the mesh itself and its skinning data.
     /// 
     public final func generateLods (normalMergeAngle: Double, normalSplitAngle: Double, boneTransformArray: GArray) {
-        #if true
+        #if false
         
         var copy_normal_merge_angle = normalMergeAngle
         var copy_normal_split_angle = normalSplitAngle
@@ -694,7 +694,7 @@ open class ImporterMesh: Resource {
     /// 
     public final func getMesh (baseMesh: ArrayMesh? = nil)-> ArrayMesh? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_base_mesh_handle = baseMesh?.handle
         
@@ -742,7 +742,7 @@ open class ImporterMesh: Resource {
     
     /// Sets the size hint of this mesh for lightmap-unwrapping in UV-space.
     public final func setLightmapSizeHint (size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         

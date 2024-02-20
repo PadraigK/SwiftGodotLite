@@ -186,7 +186,7 @@ open class AudioEffectDelay: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_dry (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -236,7 +236,7 @@ open class AudioEffectDelay: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_tap1_active (_ amount: Bool) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -286,7 +286,7 @@ open class AudioEffectDelay: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_tap1_delay_ms (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -336,7 +336,7 @@ open class AudioEffectDelay: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_tap1_level_db (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -386,7 +386,7 @@ open class AudioEffectDelay: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_tap1_pan (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -436,7 +436,7 @@ open class AudioEffectDelay: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_tap2_active (_ amount: Bool) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -486,7 +486,7 @@ open class AudioEffectDelay: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_tap2_delay_ms (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -536,7 +536,7 @@ open class AudioEffectDelay: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_tap2_level_db (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -586,7 +586,7 @@ open class AudioEffectDelay: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_tap2_pan (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -636,7 +636,7 @@ open class AudioEffectDelay: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_feedback_active (_ amount: Bool) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -686,7 +686,7 @@ open class AudioEffectDelay: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_feedback_delay_ms (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -736,7 +736,7 @@ open class AudioEffectDelay: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_feedback_level_db (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -786,7 +786,7 @@ open class AudioEffectDelay: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_feedback_lowpass (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         

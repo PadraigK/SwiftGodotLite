@@ -90,7 +90,7 @@ open class SphereMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -140,7 +140,7 @@ open class SphereMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_height (_ height: Double) {
-        #if true
+        #if false
         
         var copy_height = height
         
@@ -190,7 +190,7 @@ open class SphereMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_radial_segments (_ radialSegments: Int32) {
-        #if true
+        #if false
         
         var copy_radial_segments: Int = Int (radialSegments)
         
@@ -240,7 +240,7 @@ open class SphereMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_rings (_ rings: Int32) {
-        #if true
+        #if false
         
         var copy_rings: Int = Int (rings)
         
@@ -290,7 +290,7 @@ open class SphereMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_is_hemisphere (_ isHemisphere: Bool) {
-        #if true
+        #if false
         
         var copy_is_hemisphere = isHemisphere
         

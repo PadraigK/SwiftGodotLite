@@ -72,7 +72,7 @@ open class Curve2D: Resource {
     
     @inline(__always)
     fileprivate final func set_point_count (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -107,7 +107,7 @@ open class Curve2D: Resource {
     /// If `index` is given, the new point is inserted before the existing point identified by index `index`. Every existing point starting from `index` is shifted further down the list of points. The index must be greater than or equal to `0` and must not exceed the number of existing points in the line. See ``pointCount``.
     /// 
     public final func addPoint (position: Vector2, `in`: Vector2 = Vector2 (x: 0, y: 0), out: Vector2 = Vector2 (x: 0, y: 0), index: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_in = `in`
@@ -154,7 +154,7 @@ open class Curve2D: Resource {
     
     /// Sets the position for the vertex `idx`. If the index is out of bounds, the function sends an error to the console.
     public final func setPointPosition (idx: Int32, position: Vector2) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_position = position
@@ -192,7 +192,7 @@ open class Curve2D: Resource {
     /// Returns the position of the vertex `idx`. If the index is out of bounds, the function sends an error to the console, and returns `(0, 0)`.
     public final func getPointPosition (idx: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -225,7 +225,7 @@ open class Curve2D: Resource {
     
     /// Sets the position of the control point leading to the vertex `idx`. If the index is out of bounds, the function sends an error to the console. The position is relative to the vertex.
     public final func setPointIn (idx: Int32, position: Vector2) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_position = position
@@ -263,7 +263,7 @@ open class Curve2D: Resource {
     /// Returns the position of the control point leading to the vertex `idx`. The returned position is relative to the vertex `idx`. If the index is out of bounds, the function sends an error to the console, and returns `(0, 0)`.
     public final func getPointIn (idx: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -296,7 +296,7 @@ open class Curve2D: Resource {
     
     /// Sets the position of the control point leading out of the vertex `idx`. If the index is out of bounds, the function sends an error to the console. The position is relative to the vertex.
     public final func setPointOut (idx: Int32, position: Vector2) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_position = position
@@ -334,7 +334,7 @@ open class Curve2D: Resource {
     /// Returns the position of the control point leading out of the vertex `idx`. The returned position is relative to the vertex `idx`. If the index is out of bounds, the function sends an error to the console, and returns `(0, 0)`.
     public final func getPointOut (idx: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -367,7 +367,7 @@ open class Curve2D: Resource {
     
     /// Deletes the point `idx` from the curve. Sends an error to the console if `idx` is out of bounds.
     public final func removePoint (idx: Int32) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -419,7 +419,7 @@ open class Curve2D: Resource {
     /// 
     public final func sample (idx: Int32, t: Double)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_t = t
@@ -458,7 +458,7 @@ open class Curve2D: Resource {
     /// Returns the position at the vertex `fofs`. It calls ``sample(idx:t:)`` using the integer part of `fofs` as `idx`, and its fractional part as `t`.
     public final func samplef (fofs: Double)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_fofs = fofs
         
@@ -491,7 +491,7 @@ open class Curve2D: Resource {
     
     @inline(__always)
     fileprivate final func set_bake_interval (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -565,7 +565,7 @@ open class Curve2D: Resource {
     /// 
     public final func sampleBaked (offset: Double = 0.0, cubic: Bool = false)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_offset = offset
         var copy_cubic = cubic
@@ -605,7 +605,7 @@ open class Curve2D: Resource {
     /// 
     public final func sampleBakedWithRotation (offset: Double = 0.0, cubic: Bool = false)-> Transform2D {
         var _result: Transform2D = Transform2D ()
-        #if true
+        #if false
         
         var copy_offset = offset
         var copy_cubic = cubic
@@ -665,7 +665,7 @@ open class Curve2D: Resource {
     /// 
     public final func getClosestPoint (toPoint: Vector2)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_to_point = toPoint
         
@@ -702,7 +702,7 @@ open class Curve2D: Resource {
     /// 
     public final func getClosestOffset (toPoint: Vector2)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_to_point = toPoint
         
@@ -743,7 +743,7 @@ open class Curve2D: Resource {
     /// 
     public final func tessellate (maxStages: Int32 = 5, toleranceDegrees: Double = 4)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_max_stages: Int = Int (maxStages)
         var copy_tolerance_degrees = toleranceDegrees
@@ -785,7 +785,7 @@ open class Curve2D: Resource {
     /// 
     public final func tessellateEvenLength (maxStages: Int32 = 5, toleranceLength: Double = 20.0)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_max_stages: Int = Int (maxStages)
         var copy_tolerance_length = toleranceLength

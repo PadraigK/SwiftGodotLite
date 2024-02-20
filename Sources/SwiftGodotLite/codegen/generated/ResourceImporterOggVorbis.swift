@@ -30,7 +30,7 @@ open class ResourceImporterOggVorbis: ResourceImporter {
     /// This method loads audio data from a PackedByteArray buffer into an AudioStreamOggVorbis object.
     public static func loadFromBuffer (_ buffer: PackedByteArray)-> AudioStreamOggVorbis? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ResourceImporterOggVorbis.method_load_from_buffer, nil, &_result, &buffer.content)
@@ -62,7 +62,7 @@ open class ResourceImporterOggVorbis: ResourceImporter {
     /// This method loads audio data from a file into an AudioStreamOggVorbis object. The file path is provided as a string.
     public static func loadFromFile (path: String)-> AudioStreamOggVorbis? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         

@@ -392,7 +392,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -442,7 +442,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_anchor_mode (_ anchorMode: Camera2D.AnchorMode) {
-        #if true
+        #if false
         
         var copy_anchor_mode = Int64 (anchorMode.rawValue)
         
@@ -492,7 +492,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_ignore_rotation (_ ignore: Bool) {
-        #if true
+        #if false
         
         var copy_ignore = ignore
         
@@ -542,7 +542,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_process_callback (_ mode: Camera2D.Camera2DProcessCallback) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -592,7 +592,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -677,7 +677,7 @@ open class Camera2D: Node2D {
     @inline(__always)
     /// Sets the camera limit for the specified ``Side``. See also ``limitBottom``, ``limitTop``, ``limitLeft``, and ``limitRight``.
     fileprivate final func set_limit (_ margin: Side, _ limit: Int32) {
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         var copy_limit: Int = Int (limit)
@@ -716,7 +716,7 @@ open class Camera2D: Node2D {
     /// Returns the camera limit for the specified ``Side``. See also ``limitBottom``, ``limitTop``, ``limitLeft``, and ``limitRight``.
     fileprivate final func get_limit (_ margin: Side)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         
@@ -749,7 +749,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_limit_smoothing_enabled (_ limitSmoothingEnabled: Bool) {
-        #if true
+        #if false
         
         var copy_limit_smoothing_enabled = limitSmoothingEnabled
         
@@ -799,7 +799,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_drag_vertical_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -849,7 +849,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_drag_horizontal_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -899,7 +899,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_drag_vertical_offset (_ offset: Double) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -949,7 +949,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_drag_horizontal_offset (_ offset: Double) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -1000,7 +1000,7 @@ open class Camera2D: Node2D {
     @inline(__always)
     /// Sets the specified ``Side``'s margin. See also ``dragBottomMargin``, ``dragTopMargin``, ``dragLeftMargin``, and ``dragRightMargin``.
     fileprivate final func set_drag_margin (_ margin: Side, _ dragMargin: Double) {
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         var copy_drag_margin = dragMargin
@@ -1039,7 +1039,7 @@ open class Camera2D: Node2D {
     /// Returns the specified ``Side``'s margin. See also ``dragBottomMargin``, ``dragTopMargin``, ``dragLeftMargin``, and ``dragRightMargin``.
     fileprivate final func get_drag_margin (_ margin: Side)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         
@@ -1114,7 +1114,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_zoom (_ zoom: Vector2) {
-        #if true
+        #if false
         
         var copy_zoom = zoom
         
@@ -1164,7 +1164,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_custom_viewport (_ viewport: Node?) {
-        #if true
+        #if false
         
         var copy_viewport_handle = viewport?.handle
         
@@ -1213,7 +1213,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_position_smoothing_speed (_ positionSmoothingSpeed: Double) {
-        #if true
+        #if false
         
         var copy_position_smoothing_speed = positionSmoothingSpeed
         
@@ -1263,7 +1263,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_position_smoothing_enabled (_ positionSmoothingSpeed: Bool) {
-        #if true
+        #if false
         
         var copy_position_smoothing_speed = positionSmoothingSpeed
         
@@ -1313,7 +1313,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_rotation_smoothing_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1363,7 +1363,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_rotation_smoothing_speed (_ speed: Double) {
-        #if true
+        #if false
         
         var copy_speed = speed
         
@@ -1464,7 +1464,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_screen_drawing_enabled (_ screenDrawingEnabled: Bool) {
-        #if true
+        #if false
         
         var copy_screen_drawing_enabled = screenDrawingEnabled
         
@@ -1514,7 +1514,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_limit_drawing_enabled (_ limitDrawingEnabled: Bool) {
-        #if true
+        #if false
         
         var copy_limit_drawing_enabled = limitDrawingEnabled
         
@@ -1564,7 +1564,7 @@ open class Camera2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_margin_drawing_enabled (_ marginDrawingEnabled: Bool) {
-        #if true
+        #if false
         
         var copy_margin_drawing_enabled = marginDrawingEnabled
         

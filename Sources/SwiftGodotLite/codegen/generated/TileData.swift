@@ -164,7 +164,7 @@ open class TileData: Object {
     
     @inline(__always)
     fileprivate final func set_flip_h (_ flipH: Bool) {
-        #if true
+        #if false
         
         var copy_flip_h = flipH
         
@@ -214,7 +214,7 @@ open class TileData: Object {
     
     @inline(__always)
     fileprivate final func set_flip_v (_ flipV: Bool) {
-        #if true
+        #if false
         
         var copy_flip_v = flipV
         
@@ -264,7 +264,7 @@ open class TileData: Object {
     
     @inline(__always)
     fileprivate final func set_transpose (_ transpose: Bool) {
-        #if true
+        #if false
         
         var copy_transpose = transpose
         
@@ -314,7 +314,7 @@ open class TileData: Object {
     
     @inline(__always)
     fileprivate final func set_material (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         
@@ -363,7 +363,7 @@ open class TileData: Object {
     
     @inline(__always)
     fileprivate final func set_texture_origin (_ textureOrigin: Vector2i) {
-        #if true
+        #if false
         
         var copy_texture_origin = textureOrigin
         
@@ -413,7 +413,7 @@ open class TileData: Object {
     
     @inline(__always)
     fileprivate final func set_modulate (_ modulate: Color) {
-        #if true
+        #if false
         
         var copy_modulate = modulate
         
@@ -463,7 +463,7 @@ open class TileData: Object {
     
     @inline(__always)
     fileprivate final func set_z_index (_ zIndex: Int32) {
-        #if true
+        #if false
         
         var copy_z_index: Int = Int (zIndex)
         
@@ -513,7 +513,7 @@ open class TileData: Object {
     
     @inline(__always)
     fileprivate final func set_y_sort_origin (_ ySortOrigin: Int32) {
-        #if true
+        #if false
         
         var copy_y_sort_origin: Int = Int (ySortOrigin)
         
@@ -563,7 +563,7 @@ open class TileData: Object {
     
     /// Sets the occluder for the TileSet occlusion layer with index `layerId`.
     public final func setOccluder (layerId: Int32, occluderPolygon: OccluderPolygon2D?) {
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         var copy_occluder_polygon_handle = occluderPolygon?.handle
@@ -600,7 +600,7 @@ open class TileData: Object {
     /// Returns the occluder polygon of the tile for the TileSet occlusion layer with index `layerId`.
     public final func getOccluder (layerId: Int32)-> OccluderPolygon2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         
@@ -633,7 +633,7 @@ open class TileData: Object {
     
     /// Sets the constant linear velocity. This does not move the tile. This linear velocity is applied to objects colliding with this tile. This is useful to create conveyor belts.
     public final func setConstantLinearVelocity (layerId: Int32, velocity: Vector2) {
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         var copy_velocity = velocity
@@ -671,7 +671,7 @@ open class TileData: Object {
     /// Returns the constant linear velocity applied to objects colliding with this tile.
     public final func getConstantLinearVelocity (layerId: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         
@@ -704,7 +704,7 @@ open class TileData: Object {
     
     /// Sets the constant angular velocity. This does not rotate the tile. This angular velocity is applied to objects colliding with this tile.
     public final func setConstantAngularVelocity (layerId: Int32, velocity: Double) {
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         var copy_velocity = velocity
@@ -742,7 +742,7 @@ open class TileData: Object {
     /// Returns the constant angular velocity applied to objects colliding with this tile.
     public final func getConstantAngularVelocity (layerId: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         
@@ -775,7 +775,7 @@ open class TileData: Object {
     
     /// Sets the polygons count for TileSet physics layer with index `layerId`.
     public final func setCollisionPolygonsCount (layerId: Int32, polygonsCount: Int32) {
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         var copy_polygons_count: Int = Int (polygonsCount)
@@ -813,7 +813,7 @@ open class TileData: Object {
     /// Returns how many polygons the tile has for TileSet physics layer with index `layerId`.
     public final func getCollisionPolygonsCount (layerId: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         
@@ -846,7 +846,7 @@ open class TileData: Object {
     
     /// Adds a collision polygon to the tile on the given TileSet physics layer.
     public final func addCollisionPolygon (layerId: Int32) {
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         
@@ -878,7 +878,7 @@ open class TileData: Object {
     
     /// Removes the polygon at index `polygonIndex` for TileSet physics layer with index `layerId`.
     public final func removeCollisionPolygon (layerId: Int32, polygonIndex: Int32) {
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         var copy_polygon_index: Int = Int (polygonIndex)
@@ -915,7 +915,7 @@ open class TileData: Object {
     
     /// Sets the points of the polygon at index `polygonIndex` for TileSet physics layer with index `layerId`.
     public final func setCollisionPolygonPoints (layerId: Int32, polygonIndex: Int32, polygon: PackedVector2Array) {
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         var copy_polygon_index: Int = Int (polygonIndex)
@@ -956,7 +956,7 @@ open class TileData: Object {
     /// Returns the points of the polygon at index `polygonIndex` for TileSet physics layer with index `layerId`.
     public final func getCollisionPolygonPoints (layerId: Int32, polygonIndex: Int32)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         var copy_polygon_index: Int = Int (polygonIndex)
@@ -994,7 +994,7 @@ open class TileData: Object {
     
     /// Enables/disables one-way collisions on the polygon at index `polygonIndex` for TileSet physics layer with index `layerId`.
     public final func setCollisionPolygonOneWay (layerId: Int32, polygonIndex: Int32, oneWay: Bool) {
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         var copy_polygon_index: Int = Int (polygonIndex)
@@ -1037,7 +1037,7 @@ open class TileData: Object {
     /// Returns whether one-way collisions are enabled for the polygon at index `polygonIndex` for TileSet physics layer with index `layerId`.
     public final func isCollisionPolygonOneWay (layerId: Int32, polygonIndex: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         var copy_polygon_index: Int = Int (polygonIndex)
@@ -1075,7 +1075,7 @@ open class TileData: Object {
     
     /// Enables/disables one-way collisions on the polygon at index `polygonIndex` for TileSet physics layer with index `layerId`.
     public final func setCollisionPolygonOneWayMargin (layerId: Int32, polygonIndex: Int32, oneWayMargin: Double) {
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         var copy_polygon_index: Int = Int (polygonIndex)
@@ -1118,7 +1118,7 @@ open class TileData: Object {
     /// Returns the one-way margin (for one-way platforms) of the polygon at index `polygonIndex` for TileSet physics layer with index `layerId`.
     public final func getCollisionPolygonOneWayMargin (layerId: Int32, polygonIndex: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         var copy_polygon_index: Int = Int (polygonIndex)
@@ -1156,7 +1156,7 @@ open class TileData: Object {
     
     @inline(__always)
     fileprivate final func set_terrain_set (_ terrainSet: Int32) {
-        #if true
+        #if false
         
         var copy_terrain_set: Int = Int (terrainSet)
         
@@ -1206,7 +1206,7 @@ open class TileData: Object {
     
     @inline(__always)
     fileprivate final func set_terrain (_ terrain: Int32) {
-        #if true
+        #if false
         
         var copy_terrain: Int = Int (terrain)
         
@@ -1256,7 +1256,7 @@ open class TileData: Object {
     
     /// Sets the tile's terrain bit for the given `peeringBit` direction.
     public final func setTerrainPeeringBit (_ peeringBit: TileSet.CellNeighbor, terrain: Int32) {
-        #if true
+        #if false
         
         var copy_peering_bit = Int64 (peeringBit.rawValue)
         var copy_terrain: Int = Int (terrain)
@@ -1294,7 +1294,7 @@ open class TileData: Object {
     /// Returns the tile's terrain bit for the given `peeringBit` direction.
     public final func getTerrainPeeringBit (_ peeringBit: TileSet.CellNeighbor)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_peering_bit = Int64 (peeringBit.rawValue)
         
@@ -1327,7 +1327,7 @@ open class TileData: Object {
     
     /// Sets the navigation polygon for the TileSet navigation layer with index `layerId`.
     public final func setNavigationPolygon (layerId: Int32, navigationPolygon: NavigationPolygon?) {
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         var copy_navigation_polygon_handle = navigationPolygon?.handle
@@ -1364,7 +1364,7 @@ open class TileData: Object {
     /// Returns the navigation polygon of the tile for the TileSet navigation layer with index `layerId`.
     public final func getNavigationPolygon (layerId: Int32)-> NavigationPolygon? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         
@@ -1397,7 +1397,7 @@ open class TileData: Object {
     
     @inline(__always)
     fileprivate final func set_probability (_ probability: Double) {
-        #if true
+        #if false
         
         var copy_probability = probability
         
@@ -1447,7 +1447,7 @@ open class TileData: Object {
     
     /// Sets the tile's custom data value for the TileSet custom data layer with name `layerName`.
     public final func setCustomData (layerName: String, value: Variant) {
-        #if true
+        #if false
         
         let gstr_layer_name = GString (layerName)
         
@@ -1483,7 +1483,7 @@ open class TileData: Object {
     /// Returns the custom data value for custom data layer named `layerName`.
     public final func getCustomData (layerName: String)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         let gstr_layer_name = GString (layerName)
         
@@ -1516,7 +1516,7 @@ open class TileData: Object {
     
     /// Sets the tile's custom data value for the TileSet custom data layer with index `layerId`.
     public final func setCustomDataByLayerId (_ layerId: Int32, value: Variant) {
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         
@@ -1552,7 +1552,7 @@ open class TileData: Object {
     /// Returns the custom data value for custom data layer with index `layerId`.
     public final func getCustomDataByLayerId (_ layerId: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_layer_id: Int = Int (layerId)
         

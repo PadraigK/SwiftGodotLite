@@ -133,7 +133,7 @@ open class CanvasItemMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_blend_mode (_ blendMode: CanvasItemMaterial.BlendMode) {
-        #if true
+        #if false
         
         var copy_blend_mode = Int64 (blendMode.rawValue)
         
@@ -183,7 +183,7 @@ open class CanvasItemMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_light_mode (_ lightMode: CanvasItemMaterial.LightMode) {
-        #if true
+        #if false
         
         var copy_light_mode = Int64 (lightMode.rawValue)
         
@@ -233,7 +233,7 @@ open class CanvasItemMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_particles_animation (_ particlesAnim: Bool) {
-        #if true
+        #if false
         
         var copy_particles_anim = particlesAnim
         
@@ -283,7 +283,7 @@ open class CanvasItemMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_particles_anim_h_frames (_ frames: Int32) {
-        #if true
+        #if false
         
         var copy_frames: Int = Int (frames)
         
@@ -333,7 +333,7 @@ open class CanvasItemMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_particles_anim_v_frames (_ frames: Int32) {
-        #if true
+        #if false
         
         var copy_frames: Int = Int (frames)
         
@@ -383,7 +383,7 @@ open class CanvasItemMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_particles_anim_loop (_ loop: Bool) {
-        #if true
+        #if false
         
         var copy_loop = loop
         

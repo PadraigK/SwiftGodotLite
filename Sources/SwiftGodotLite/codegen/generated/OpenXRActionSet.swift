@@ -66,7 +66,7 @@ open class OpenXRActionSet: Resource {
     
     @inline(__always)
     fileprivate final func set_localized_name (_ localizedName: String) {
-        #if true
+        #if false
         
         let gstr_localized_name = GString (localizedName)
         
@@ -116,7 +116,7 @@ open class OpenXRActionSet: Resource {
     
     @inline(__always)
     fileprivate final func set_priority (_ priority: Int32) {
-        #if true
+        #if false
         
         var copy_priority: Int = Int (priority)
         
@@ -184,7 +184,7 @@ open class OpenXRActionSet: Resource {
     
     @inline(__always)
     fileprivate final func set_actions (_ actions: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (OpenXRActionSet.method_set_actions, UnsafeMutableRawPointer (mutating: handle), nil, &actions.content)
@@ -232,7 +232,7 @@ open class OpenXRActionSet: Resource {
     
     /// Add an action to this action set.
     public final func addAction (_ action: OpenXRAction?) {
-        #if true
+        #if false
         
         var copy_action_handle = action?.handle
         
@@ -263,7 +263,7 @@ open class OpenXRActionSet: Resource {
     
     /// Remove an action from this action set.
     public final func removeAction (_ action: OpenXRAction?) {
-        #if true
+        #if false
         
         var copy_action_handle = action?.handle
         

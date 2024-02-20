@@ -42,7 +42,7 @@ open class VisualShaderNodeColorConstant: VisualShaderNodeConstant {
     
     @inline(__always)
     fileprivate final func set_constant (_ constant: Color) {
-        #if true
+        #if false
         
         var copy_constant = constant
         

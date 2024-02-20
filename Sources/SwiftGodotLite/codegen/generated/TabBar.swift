@@ -196,7 +196,7 @@ open class TabBar: Control {
     
     @inline(__always)
     fileprivate final func set_tab_count (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -246,7 +246,7 @@ open class TabBar: Control {
     
     @inline(__always)
     fileprivate final func set_current_tab (_ tabIdx: Int32) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -350,7 +350,7 @@ open class TabBar: Control {
     
     /// Sets a `title` for the tab at index `tabIdx`.
     public final func setTabTitle (tabIdx: Int32, title: String) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         let gstr_title = GString (title)
@@ -388,7 +388,7 @@ open class TabBar: Control {
     /// Returns the title of the tab at index `tabIdx`.
     public final func getTabTitle (tabIdx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -421,7 +421,7 @@ open class TabBar: Control {
     
     /// Sets tab title base writing direction.
     public final func setTabTextDirection (tabIdx: Int32, direction: Control.TextDirection) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         var copy_direction = Int64 (direction.rawValue)
@@ -459,7 +459,7 @@ open class TabBar: Control {
     /// Returns tab title text base writing direction.
     public final func getTabTextDirection (tabIdx: Int32)-> Control.TextDirection {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -492,7 +492,7 @@ open class TabBar: Control {
     
     /// Sets language code of tab title used for line-breaking and text shaping algorithms, if left empty current locale is used instead.
     public final func setTabLanguage (tabIdx: Int32, language: String) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         let gstr_language = GString (language)
@@ -530,7 +530,7 @@ open class TabBar: Control {
     /// Returns tab title language code.
     public final func getTabLanguage (tabIdx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -563,7 +563,7 @@ open class TabBar: Control {
     
     /// Sets an `icon` for the tab at index `tabIdx`.
     public final func setTabIcon (tabIdx: Int32, icon: Texture2D?) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         var copy_icon_handle = icon?.handle
@@ -600,7 +600,7 @@ open class TabBar: Control {
     /// Returns the icon for the tab at index `tabIdx` or `null` if the tab has no icon.
     public final func getTabIcon (tabIdx: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -633,7 +633,7 @@ open class TabBar: Control {
     
     /// Sets the maximum allowed width of the icon for the tab at index `tabIdx`. This limit is applied on top of the default size of the icon and on top of [theme_item icon_max_width]. The height is adjusted according to the icon's ratio.
     public final func setTabIconMaxWidth (tabIdx: Int32, width: Int32) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         var copy_width: Int = Int (width)
@@ -671,7 +671,7 @@ open class TabBar: Control {
     /// Returns the maximum allowed width of the icon for the tab at index `tabIdx`.
     public final func getTabIconMaxWidth (tabIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -704,7 +704,7 @@ open class TabBar: Control {
     
     /// Sets an `icon` for the button of the tab at index `tabIdx` (located to the right, before the close button), making it visible and clickable (See [signal tab_button_pressed]). Giving it a `null` value will hide the button.
     public final func setTabButtonIcon (tabIdx: Int32, icon: Texture2D?) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         var copy_icon_handle = icon?.handle
@@ -741,7 +741,7 @@ open class TabBar: Control {
     /// Returns the icon for the right button of the tab at index `tabIdx` or `null` if the right button has no icon.
     public final func getTabButtonIcon (tabIdx: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -774,7 +774,7 @@ open class TabBar: Control {
     
     /// If `disabled` is `true`, disables the tab at index `tabIdx`, making it non-interactable.
     public final func setTabDisabled (tabIdx: Int32, disabled: Bool) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         var copy_disabled = disabled
@@ -812,7 +812,7 @@ open class TabBar: Control {
     /// Returns `true` if the tab at index `tabIdx` is disabled.
     public final func isTabDisabled (tabIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -845,7 +845,7 @@ open class TabBar: Control {
     
     /// If `hidden` is `true`, hides the tab at index `tabIdx`, making it disappear from the tab area.
     public final func setTabHidden (tabIdx: Int32, hidden: Bool) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         var copy_hidden = hidden
@@ -883,7 +883,7 @@ open class TabBar: Control {
     /// Returns `true` if the tab at index `tabIdx` is hidden.
     public final func isTabHidden (tabIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -916,7 +916,7 @@ open class TabBar: Control {
     
     /// Sets the metadata value for the tab at index `tabIdx`, which can be retrieved later using ``getTabMetadata(tabIdx:)``.
     public final func setTabMetadata (tabIdx: Int32, metadata: Variant) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -952,7 +952,7 @@ open class TabBar: Control {
     /// Returns the metadata value set to the tab at index `tabIdx` using ``setTabMetadata(tabIdx:metadata:)``. If no metadata was previously set, returns `null` by default.
     public final func getTabMetadata (tabIdx: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -985,7 +985,7 @@ open class TabBar: Control {
     
     /// Removes the tab at index `tabIdx`.
     public final func removeTab (tabIdx: Int32) {
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -1017,7 +1017,7 @@ open class TabBar: Control {
     
     /// Adds a new tab.
     public final func addTab (title: String = "", icon: Texture2D? = nil) {
-        #if true
+        #if false
         
         let gstr_title = GString (title)
         var copy_icon_handle = icon?.handle
@@ -1054,7 +1054,7 @@ open class TabBar: Control {
     /// Returns the index of the tab at local coordinates `point`. Returns `-1` if the point is outside the control boundaries or if there's no tab at the queried position.
     public final func getTabIdxAtPoint (_ point: Vector2)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_point = point
         
@@ -1087,7 +1087,7 @@ open class TabBar: Control {
     
     @inline(__always)
     fileprivate final func set_tab_alignment (_ alignment: TabBar.AlignmentMode) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -1137,7 +1137,7 @@ open class TabBar: Control {
     
     @inline(__always)
     fileprivate final func set_clip_tabs (_ clipTabs: Bool) {
-        #if true
+        #if false
         
         var copy_clip_tabs = clipTabs
         
@@ -1223,7 +1223,7 @@ open class TabBar: Control {
     
     /// Moves the scroll view to make the tab visible.
     public final func ensureTabVisible (idx: Int32) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1256,7 +1256,7 @@ open class TabBar: Control {
     /// Returns tab ``Rect2`` with local position and size.
     public final func getTabRect (tabIdx: Int32)-> Rect2 {
         var _result: Rect2 = Rect2 ()
-        #if true
+        #if false
         
         var copy_tab_idx: Int = Int (tabIdx)
         
@@ -1289,7 +1289,7 @@ open class TabBar: Control {
     
     /// Moves a tab from `from` to `to`.
     public final func moveTab (from: Int32, to: Int32) {
-        #if true
+        #if false
         
         var copy_from: Int = Int (from)
         var copy_to: Int = Int (to)
@@ -1326,7 +1326,7 @@ open class TabBar: Control {
     
     @inline(__always)
     fileprivate final func set_tab_close_display_policy (_ policy: TabBar.CloseButtonDisplayPolicy) {
-        #if true
+        #if false
         
         var copy_policy = Int64 (policy.rawValue)
         
@@ -1376,7 +1376,7 @@ open class TabBar: Control {
     
     @inline(__always)
     fileprivate final func set_max_tab_width (_ width: Int32) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         
@@ -1426,7 +1426,7 @@ open class TabBar: Control {
     
     @inline(__always)
     fileprivate final func set_scrolling_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1476,7 +1476,7 @@ open class TabBar: Control {
     
     @inline(__always)
     fileprivate final func set_drag_to_rearrange_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1526,7 +1526,7 @@ open class TabBar: Control {
     
     @inline(__always)
     fileprivate final func set_tabs_rearrange_group (_ groupId: Int32) {
-        #if true
+        #if false
         
         var copy_group_id: Int = Int (groupId)
         
@@ -1576,7 +1576,7 @@ open class TabBar: Control {
     
     @inline(__always)
     fileprivate final func set_scroll_to_selected (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1626,7 +1626,7 @@ open class TabBar: Control {
     
     @inline(__always)
     fileprivate final func set_select_with_rmb (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

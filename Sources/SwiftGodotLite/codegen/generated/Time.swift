@@ -89,7 +89,7 @@ open class Time: Object {
     /// 
     public static func getDatetimeDictFromUnixTime (unixTimeVal: Int)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_unix_time_val = unixTimeVal
         
@@ -123,7 +123,7 @@ open class Time: Object {
     /// Converts the given Unix timestamp to a dictionary of keys: `year`, `month`, `day`, and `weekday`.
     public static func getDateDictFromUnixTime (unixTimeVal: Int)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_unix_time_val = unixTimeVal
         
@@ -157,7 +157,7 @@ open class Time: Object {
     /// Converts the given time to a dictionary of keys: `hour`, `minute`, and `second`.
     public static func getTimeDictFromUnixTime (unixTimeVal: Int)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_unix_time_val = unixTimeVal
         
@@ -194,7 +194,7 @@ open class Time: Object {
     /// 
     public static func getDatetimeStringFromUnixTime (unixTimeVal: Int, useSpace: Bool = false)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_unix_time_val = unixTimeVal
         var copy_use_space = useSpace
@@ -233,7 +233,7 @@ open class Time: Object {
     /// Converts the given Unix timestamp to an ISO 8601 date string (YYYY-MM-DD).
     public static func getDateStringFromUnixTime (unixTimeVal: Int)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_unix_time_val = unixTimeVal
         
@@ -267,7 +267,7 @@ open class Time: Object {
     /// Converts the given Unix timestamp to an ISO 8601 time string (HH:MM:SS).
     public static func getTimeStringFromUnixTime (unixTimeVal: Int)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_unix_time_val = unixTimeVal
         
@@ -306,7 +306,7 @@ open class Time: Object {
     /// 
     public static func getDatetimeDictFromDatetimeString (datetime: String, weekday: Bool)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         let gstr_datetime = GString (datetime)
         var copy_weekday = weekday
@@ -352,7 +352,7 @@ open class Time: Object {
     /// 
     public static func getDatetimeStringFromDatetimeDict (datetime: GDictionary, useSpace: Bool)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_use_space = useSpace
         
@@ -398,7 +398,7 @@ open class Time: Object {
     /// 
     public static func getUnixTimeFromDatetimeDict (datetime: GDictionary)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Time.method_get_unix_time_from_datetime_dict, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &datetime.content)
@@ -435,7 +435,7 @@ open class Time: Object {
     /// 
     public static func getUnixTimeFromDatetimeString (datetime: String)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         let gstr_datetime = GString (datetime)
         
@@ -469,7 +469,7 @@ open class Time: Object {
     /// Converts the given timezone offset in minutes to a timezone offset string. For example, -480 returns "-08:00", 345 returns "+05:45", and 0 returns "+00:00".
     public static func getOffsetStringFromOffsetMinutes (_ offsetMinutes: Int)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_offset_minutes = offsetMinutes
         
@@ -503,7 +503,7 @@ open class Time: Object {
     /// Returns the current date as a dictionary of keys: `year`, `month`, `day`, `weekday`, `hour`, `minute`, `second`, and `dst` (Daylight Savings Time).
     public static func getDatetimeDictFromSystem (utc: Bool = false)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_utc = utc
         
@@ -540,7 +540,7 @@ open class Time: Object {
     /// 
     public static func getDateDictFromSystem (utc: Bool = false)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_utc = utc
         
@@ -577,7 +577,7 @@ open class Time: Object {
     /// 
     public static func getTimeDictFromSystem (utc: Bool = false)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_utc = utc
         
@@ -616,7 +616,7 @@ open class Time: Object {
     /// 
     public static func getDatetimeStringFromSystem (utc: Bool = false, useSpace: Bool = false)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_utc = utc
         var copy_use_space = useSpace
@@ -658,7 +658,7 @@ open class Time: Object {
     /// 
     public static func getDateStringFromSystem (utc: Bool = false)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_utc = utc
         
@@ -695,7 +695,7 @@ open class Time: Object {
     /// 
     public static func getTimeStringFromSystem (utc: Bool = false)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_utc = utc
         

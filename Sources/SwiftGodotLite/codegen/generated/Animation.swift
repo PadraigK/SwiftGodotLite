@@ -148,7 +148,7 @@ open class Animation: Resource {
     /// Adds a track to the Animation.
     public final func addTrack (type: Animation.TrackType, atPosition: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_at_position: Int = Int (atPosition)
@@ -186,7 +186,7 @@ open class Animation: Resource {
     
     /// Removes a track by specifying the track index.
     public final func removeTrack (trackIdx: Int32) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         
@@ -237,7 +237,7 @@ open class Animation: Resource {
     /// Gets the type of a track.
     public final func trackGetType (trackIdx: Int32)-> Animation.TrackType {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         
@@ -271,7 +271,7 @@ open class Animation: Resource {
     /// Gets the path of a track. For more information on the path format, see ``trackSetPath(trackIdx:path:)``.
     public final func trackGetPath (trackIdx: Int32)-> NodePath {
         let _result: NodePath = NodePath ()
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         
@@ -307,7 +307,7 @@ open class Animation: Resource {
     /// For example, `"character/skeleton:ankle"` or `"character/mesh:transform/local"`.
     /// 
     public final func trackSetPath (trackIdx: Int32, path: NodePath) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         
@@ -343,7 +343,7 @@ open class Animation: Resource {
     /// Returns the index of the specified track. If the track is not found, return -1.
     public final func findTrack (path: NodePath, type: Animation.TrackType)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -379,7 +379,7 @@ open class Animation: Resource {
     
     /// Moves a track up.
     public final func trackMoveUp (trackIdx: Int32) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         
@@ -411,7 +411,7 @@ open class Animation: Resource {
     
     /// Moves a track down.
     public final func trackMoveDown (trackIdx: Int32) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         
@@ -443,7 +443,7 @@ open class Animation: Resource {
     
     /// Changes the index position of track `trackIdx` to the one defined in `toIdx`.
     public final func trackMoveTo (trackIdx: Int32, toIdx: Int32) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_to_idx: Int = Int (toIdx)
@@ -480,7 +480,7 @@ open class Animation: Resource {
     
     /// Swaps the track `trackIdx`'s index position with the track `withIdx`.
     public final func trackSwap (trackIdx: Int32, withIdx: Int32) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_with_idx: Int = Int (withIdx)
@@ -517,7 +517,7 @@ open class Animation: Resource {
     
     /// Sets the given track as imported or not.
     public final func trackSetImported (trackIdx: Int32, imported: Bool) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_imported = imported
@@ -555,7 +555,7 @@ open class Animation: Resource {
     /// Returns `true` if the given track is imported. Else, return `false`.
     public final func trackIsImported (trackIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         
@@ -588,7 +588,7 @@ open class Animation: Resource {
     
     /// Enables/disables the given track. Tracks are enabled by default.
     public final func trackSetEnabled (trackIdx: Int32, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_enabled = enabled
@@ -626,7 +626,7 @@ open class Animation: Resource {
     /// Returns `true` if the track at index `trackIdx` is enabled.
     public final func trackIsEnabled (trackIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         
@@ -660,7 +660,7 @@ open class Animation: Resource {
     /// Inserts a key in a given 3D position track. Returns the key index.
     public final func positionTrackInsertKey (trackIdx: Int32, time: Double, position: Vector3)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time = time
@@ -704,7 +704,7 @@ open class Animation: Resource {
     /// Inserts a key in a given 3D rotation track. Returns the key index.
     public final func rotationTrackInsertKey (trackIdx: Int32, time: Double, rotation: Quaternion)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time = time
@@ -748,7 +748,7 @@ open class Animation: Resource {
     /// Inserts a key in a given 3D scale track. Returns the key index.
     public final func scaleTrackInsertKey (trackIdx: Int32, time: Double, scale: Vector3)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time = time
@@ -792,7 +792,7 @@ open class Animation: Resource {
     /// Inserts a key in a given blend shape track. Returns the key index.
     public final func blendShapeTrackInsertKey (trackIdx: Int32, time: Double, amount: Double)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time = time
@@ -836,7 +836,7 @@ open class Animation: Resource {
     /// Returns the interpolated position value at the given time (in seconds). The `trackIdx` must be the index of a 3D position track.
     public final func positionTrackInterpolate (trackIdx: Int32, timeSec: Double)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time_sec = timeSec
@@ -875,7 +875,7 @@ open class Animation: Resource {
     /// Returns the interpolated rotation value at the given time (in seconds). The `trackIdx` must be the index of a 3D rotation track.
     public final func rotationTrackInterpolate (trackIdx: Int32, timeSec: Double)-> Quaternion {
         var _result: Quaternion = Quaternion ()
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time_sec = timeSec
@@ -914,7 +914,7 @@ open class Animation: Resource {
     /// Returns the interpolated scale value at the given time (in seconds). The `trackIdx` must be the index of a 3D scale track.
     public final func scaleTrackInterpolate (trackIdx: Int32, timeSec: Double)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time_sec = timeSec
@@ -953,7 +953,7 @@ open class Animation: Resource {
     /// Returns the interpolated blend shape value at the given time (in seconds). The `trackIdx` must be the index of a blend shape track.
     public final func blendShapeTrackInterpolate (trackIdx: Int32, timeSec: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time_sec = timeSec
@@ -992,7 +992,7 @@ open class Animation: Resource {
     /// Inserts a generic key in a given track. Returns the key index.
     public final func trackInsertKey (trackIdx: Int32, time: Double, key: Variant, transition: Double = 1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time = time
@@ -1038,7 +1038,7 @@ open class Animation: Resource {
     
     /// Removes a key by index in a given track.
     public final func trackRemoveKey (trackIdx: Int32, keyIdx: Int32) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -1075,7 +1075,7 @@ open class Animation: Resource {
     
     /// Removes a key at `time` in a given track.
     public final func trackRemoveKeyAtTime (trackIdx: Int32, time: Double) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time = time
@@ -1112,7 +1112,7 @@ open class Animation: Resource {
     
     /// Sets the value of an existing key.
     public final func trackSetKeyValue (trackIdx: Int32, key: Int32, value: Variant) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key: Int = Int (key)
@@ -1152,7 +1152,7 @@ open class Animation: Resource {
     
     /// Sets the transition curve (easing) for a specific key (see the built-in math function ``@GlobalScope.ease``).
     public final func trackSetKeyTransition (trackIdx: Int32, keyIdx: Int32, transition: Double) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -1194,7 +1194,7 @@ open class Animation: Resource {
     
     /// Sets the time of an existing key.
     public final func trackSetKeyTime (trackIdx: Int32, keyIdx: Int32, time: Double) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -1237,7 +1237,7 @@ open class Animation: Resource {
     /// Returns the transition curve (easing) for a specific key (see the built-in math function ``@GlobalScope.ease``).
     public final func trackGetKeyTransition (trackIdx: Int32, keyIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -1276,7 +1276,7 @@ open class Animation: Resource {
     /// Returns the number of keys in a given track.
     public final func trackGetKeyCount (trackIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         
@@ -1310,7 +1310,7 @@ open class Animation: Resource {
     /// Returns the value of a given key in a given track.
     public final func trackGetKeyValue (trackIdx: Int32, keyIdx: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -1349,7 +1349,7 @@ open class Animation: Resource {
     /// Returns the time at which the key is located.
     public final func trackGetKeyTime (trackIdx: Int32, keyIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -1388,7 +1388,7 @@ open class Animation: Resource {
     /// Finds the key index by time in a given track. Optionally, only find it if the approx/exact time is given.
     public final func trackFindKey (trackIdx: Int32, time: Double, findMode: Animation.FindMode = .nearest)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time = time
@@ -1431,7 +1431,7 @@ open class Animation: Resource {
     
     /// Sets the interpolation type of a given track.
     public final func trackSetInterpolationType (trackIdx: Int32, interpolation: Animation.InterpolationType) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_interpolation = Int64 (interpolation.rawValue)
@@ -1469,7 +1469,7 @@ open class Animation: Resource {
     /// Returns the interpolation type of a given track.
     public final func trackGetInterpolationType (trackIdx: Int32)-> Animation.InterpolationType {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         
@@ -1502,7 +1502,7 @@ open class Animation: Resource {
     
     /// If `true`, the track at `trackIdx` wraps the interpolation loop.
     public final func trackSetInterpolationLoopWrap (trackIdx: Int32, interpolation: Bool) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_interpolation = interpolation
@@ -1540,7 +1540,7 @@ open class Animation: Resource {
     /// Returns `true` if the track at `trackIdx` wraps the interpolation loop. New tracks wrap the interpolation loop by default.
     public final func trackGetInterpolationLoopWrap (trackIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         
@@ -1574,7 +1574,7 @@ open class Animation: Resource {
     /// Returns `true` if the track is compressed, `false` otherwise. See also ``compress(pageSize:fps:splitTolerance:)``.
     public final func trackIsCompressed (trackIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         
@@ -1607,7 +1607,7 @@ open class Animation: Resource {
     
     /// Sets the update mode (see ``Animation/UpdateMode``) of a value track.
     public final func valueTrackSetUpdateMode (trackIdx: Int32, mode: Animation.UpdateMode) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_mode = Int64 (mode.rawValue)
@@ -1645,7 +1645,7 @@ open class Animation: Resource {
     /// Returns the update mode of a value track.
     public final func valueTrackGetUpdateMode (trackIdx: Int32)-> Animation.UpdateMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         
@@ -1679,7 +1679,7 @@ open class Animation: Resource {
     /// Returns the interpolated value at the given time (in seconds). The `trackIdx` must be the index of a value track.
     public final func valueTrackInterpolate (trackIdx: Int32, timeSec: Double)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time_sec = timeSec
@@ -1718,7 +1718,7 @@ open class Animation: Resource {
     /// Returns the method name of a method track.
     public final func methodTrackGetName (trackIdx: Int32, keyIdx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -1757,7 +1757,7 @@ open class Animation: Resource {
     /// Returns the arguments values to be called on a method track for a given key in a given track.
     public final func methodTrackGetParams (trackIdx: Int32, keyIdx: Int32)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -1799,7 +1799,7 @@ open class Animation: Resource {
     /// 
     public final func bezierTrackInsertKey (trackIdx: Int32, time: Double, value: Double, inHandle: Vector2 = Vector2 (x: 0, y: 0), outHandle: Vector2 = Vector2 (x: 0, y: 0))-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time = time
@@ -1852,7 +1852,7 @@ open class Animation: Resource {
     
     /// Sets the value of the key identified by `keyIdx` to the given value. The `trackIdx` must be the index of a Bezier Track.
     public final func bezierTrackSetKeyValue (trackIdx: Int32, keyIdx: Int32, value: Double) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -1894,7 +1894,7 @@ open class Animation: Resource {
     
     /// Sets the in handle of the key identified by `keyIdx` to value `inHandle`. The `trackIdx` must be the index of a Bezier Track.
     public final func bezierTrackSetKeyInHandle (trackIdx: Int32, keyIdx: Int32, inHandle: Vector2, balancedValueTimeRatio: Double = 1.0) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -1941,7 +1941,7 @@ open class Animation: Resource {
     
     /// Sets the out handle of the key identified by `keyIdx` to value `outHandle`. The `trackIdx` must be the index of a Bezier Track.
     public final func bezierTrackSetKeyOutHandle (trackIdx: Int32, keyIdx: Int32, outHandle: Vector2, balancedValueTimeRatio: Double = 1.0) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -1989,7 +1989,7 @@ open class Animation: Resource {
     /// Returns the value of the key identified by `keyIdx`. The `trackIdx` must be the index of a Bezier Track.
     public final func bezierTrackGetKeyValue (trackIdx: Int32, keyIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -2028,7 +2028,7 @@ open class Animation: Resource {
     /// Returns the in handle of the key identified by `keyIdx`. The `trackIdx` must be the index of a Bezier Track.
     public final func bezierTrackGetKeyInHandle (trackIdx: Int32, keyIdx: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -2067,7 +2067,7 @@ open class Animation: Resource {
     /// Returns the out handle of the key identified by `keyIdx`. The `trackIdx` must be the index of a Bezier Track.
     public final func bezierTrackGetKeyOutHandle (trackIdx: Int32, keyIdx: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -2106,7 +2106,7 @@ open class Animation: Resource {
     /// Returns the interpolated value at the given `time` (in seconds). The `trackIdx` must be the index of a Bezier Track.
     public final func bezierTrackInterpolate (trackIdx: Int32, time: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time = time
@@ -2148,7 +2148,7 @@ open class Animation: Resource {
     /// 
     public final func audioTrackInsertKey (trackIdx: Int32, time: Double, stream: Resource?, startOffset: Double = 0, endOffset: Double = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time = time
@@ -2200,7 +2200,7 @@ open class Animation: Resource {
     
     /// Sets the stream of the key identified by `keyIdx` to value `stream`. The `trackIdx` must be the index of an Audio Track.
     public final func audioTrackSetKeyStream (trackIdx: Int32, keyIdx: Int32, stream: Resource?) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -2241,7 +2241,7 @@ open class Animation: Resource {
     
     /// Sets the start offset of the key identified by `keyIdx` to value `offset`. The `trackIdx` must be the index of an Audio Track.
     public final func audioTrackSetKeyStartOffset (trackIdx: Int32, keyIdx: Int32, offset: Double) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -2283,7 +2283,7 @@ open class Animation: Resource {
     
     /// Sets the end offset of the key identified by `keyIdx` to value `offset`. The `trackIdx` must be the index of an Audio Track.
     public final func audioTrackSetKeyEndOffset (trackIdx: Int32, keyIdx: Int32, offset: Double) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -2326,7 +2326,7 @@ open class Animation: Resource {
     /// Returns the audio stream of the key identified by `keyIdx`. The `trackIdx` must be the index of an Audio Track.
     public final func audioTrackGetKeyStream (trackIdx: Int32, keyIdx: Int32)-> Resource? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -2368,7 +2368,7 @@ open class Animation: Resource {
     /// 
     public final func audioTrackGetKeyStartOffset (trackIdx: Int32, keyIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -2410,7 +2410,7 @@ open class Animation: Resource {
     /// 
     public final func audioTrackGetKeyEndOffset (trackIdx: Int32, keyIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -2448,7 +2448,7 @@ open class Animation: Resource {
     
     /// Sets whether the track will be blended with other animations. If `true`, the audio playback volume changes depending on the blend value.
     public final func audioTrackSetUseBlend (trackIdx: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_enable = enable
@@ -2486,7 +2486,7 @@ open class Animation: Resource {
     /// Returns `true` if the track at `trackIdx` will be blended with other animations.
     public final func audioTrackIsUseBlend (trackIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         
@@ -2520,7 +2520,7 @@ open class Animation: Resource {
     /// Inserts a key with value `animation` at the given `time` (in seconds). The `trackIdx` must be the index of an Animation Track.
     public final func animationTrackInsertKey (trackIdx: Int32, time: Double, animation: StringName)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_time = time
@@ -2561,7 +2561,7 @@ open class Animation: Resource {
     
     /// Sets the key identified by `keyIdx` to value `animation`. The `trackIdx` must be the index of an Animation Track.
     public final func animationTrackSetKeyAnimation (trackIdx: Int32, keyIdx: Int32, animation: StringName) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -2602,7 +2602,7 @@ open class Animation: Resource {
     /// Returns the animation name at the key identified by `keyIdx`. The `trackIdx` must be the index of an Animation Track.
     public final func animationTrackGetKeyAnimation (trackIdx: Int32, keyIdx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_key_idx: Int = Int (keyIdx)
@@ -2640,7 +2640,7 @@ open class Animation: Resource {
     
     @inline(__always)
     fileprivate final func set_length (_ timeSec: Double) {
-        #if true
+        #if false
         
         var copy_time_sec = timeSec
         
@@ -2690,7 +2690,7 @@ open class Animation: Resource {
     
     @inline(__always)
     fileprivate final func set_loop_mode (_ loopMode: Animation.LoopMode) {
-        #if true
+        #if false
         
         var copy_loop_mode = Int64 (loopMode.rawValue)
         
@@ -2740,7 +2740,7 @@ open class Animation: Resource {
     
     @inline(__always)
     fileprivate final func set_step (_ sizeSec: Double) {
-        #if true
+        #if false
         
         var copy_size_sec = sizeSec
         
@@ -2806,7 +2806,7 @@ open class Animation: Resource {
     
     /// Adds a new track to `toAnimation` that is a copy of the given track from this animation.
     public final func copyTrack (trackIdx: Int32, toAnimation: Animation?) {
-        #if true
+        #if false
         
         var copy_track_idx: Int = Int (trackIdx)
         var copy_to_animation_handle = toAnimation?.handle
@@ -2845,7 +2845,7 @@ open class Animation: Resource {
     /// > Note: Compressed tracks have various limitations (such as not being editable from the editor), so only use compressed animations if you actually need them.
     /// 
     public final func compress (pageSize: UInt32 = 8192, fps: UInt32 = 120, splitTolerance: Double = 4.0) {
-        #if true
+        #if false
         
         var copy_page_size: Int = Int (pageSize)
         var copy_fps: Int = Int (fps)

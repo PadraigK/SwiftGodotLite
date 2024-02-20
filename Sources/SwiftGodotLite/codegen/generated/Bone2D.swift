@@ -46,7 +46,7 @@ open class Bone2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_rest (_ rest: Transform2D) {
-        #if true
+        #if false
         
         var copy_rest = rest
         
@@ -148,7 +148,7 @@ open class Bone2D: Node2D {
     
     /// When set to `true`, the ``Bone2D`` node will attempt to automatically calculate the bone angle and length using the first child ``Bone2D`` node, if one exists. If none exist, the ``Bone2D`` cannot automatically calculate these values and will print a warning.
     public final func setAutocalculateLengthAndAngle (autoCalculate: Bool) {
-        #if true
+        #if false
         
         var copy_auto_calculate = autoCalculate
         
@@ -198,7 +198,7 @@ open class Bone2D: Node2D {
     
     /// Sets the length of the bone in the ``Bone2D``.
     public final func setLength (_ length: Double) {
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -251,7 +251,7 @@ open class Bone2D: Node2D {
     /// > Note: This is different from the ``Bone2D``'s rotation. The bone's angle is the rotation of the bone shown by the gizmo, which is unaffected by the ``Bone2D``'s ``Node2D/transform``.
     /// 
     public final func setBoneAngle (_ angle: Double) {
-        #if true
+        #if false
         
         var copy_angle = angle
         

@@ -245,7 +245,7 @@ open class Camera3D: Node3D {
     /// Returns a normal vector in world space, that is the result of projecting a point on the ``Viewport`` rectangle by the inverse camera projection. This is useful for casting rays in the form of (origin, normal) for object intersection or picking.
     public final func projectRayNormal (screenPoint: Vector2)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_screen_point = screenPoint
         
@@ -279,7 +279,7 @@ open class Camera3D: Node3D {
     /// Returns a normal vector from the screen point location directed along the camera. Orthogonal cameras are normalized. Perspective cameras account for perspective, screen width/height, etc.
     public final func projectLocalRayNormal (screenPoint: Vector2)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_screen_point = screenPoint
         
@@ -313,7 +313,7 @@ open class Camera3D: Node3D {
     /// Returns a 3D position in world space, that is the result of projecting a point on the ``Viewport`` rectangle by the inverse camera projection. This is useful for casting rays in the form of (origin, normal) for object intersection or picking.
     public final func projectRayOrigin (screenPoint: Vector2)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_screen_point = screenPoint
         
@@ -350,7 +350,7 @@ open class Camera3D: Node3D {
     /// 
     public final func unprojectPosition (worldPoint: Vector3)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_world_point = worldPoint
         
@@ -387,7 +387,7 @@ open class Camera3D: Node3D {
     /// 
     public final func isPositionBehind (worldPoint: Vector3)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_world_point = worldPoint
         
@@ -421,7 +421,7 @@ open class Camera3D: Node3D {
     /// Returns the 3D point in world space that maps to the given 2D coordinate in the ``Viewport`` rectangle on a plane that is the given `zDepth` distance into the scene away from the camera.
     public final func projectPosition (screenPoint: Vector2, zDepth: Double)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_screen_point = screenPoint
         var copy_z_depth = zDepth
@@ -459,7 +459,7 @@ open class Camera3D: Node3D {
     
     /// Sets the camera projection to perspective mode (see .projectionPerspective), by specifying a `fov` (field of view) angle in degrees, and the `zNear` and `zFar` clip planes in world space units.
     public final func setPerspective (fov: Double, zNear: Double, zFar: Double) {
-        #if true
+        #if false
         
         var copy_fov = fov
         var copy_z_near = zNear
@@ -501,7 +501,7 @@ open class Camera3D: Node3D {
     
     /// Sets the camera projection to orthogonal mode (see .projectionOrthogonal), by specifying a `size`, and the `zNear` and `zFar` clip planes in world space units. (As a hint, 2D games often use this projection, with values specified in pixels.)
     public final func setOrthogonal (size: Double, zNear: Double, zFar: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_z_near = zNear
@@ -543,7 +543,7 @@ open class Camera3D: Node3D {
     
     /// Sets the camera projection to frustum mode (see .projectionFrustum), by specifying a `size`, an `offset`, and the `zNear` and `zFar` clip planes in world space units. See also ``frustumOffset``.
     public final func setFrustum (size: Double, offset: Vector2, zNear: Double, zFar: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_offset = offset
@@ -606,7 +606,7 @@ open class Camera3D: Node3D {
     
     /// If this is the current camera, remove it from being current. If `enableNext` is `true`, request to make the next camera current, if any.
     public final func clearCurrent (enableNext: Bool = true) {
-        #if true
+        #if false
         
         var copy_enable_next = enableNext
         
@@ -638,7 +638,7 @@ open class Camera3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_current (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -814,7 +814,7 @@ open class Camera3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_fov (_ fov: Double) {
-        #if true
+        #if false
         
         var copy_fov = fov
         
@@ -846,7 +846,7 @@ open class Camera3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_frustum_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -878,7 +878,7 @@ open class Camera3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -910,7 +910,7 @@ open class Camera3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_far (_ far: Double) {
-        #if true
+        #if false
         
         var copy_far = far
         
@@ -942,7 +942,7 @@ open class Camera3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_near (_ near: Double) {
-        #if true
+        #if false
         
         var copy_near = near
         
@@ -992,7 +992,7 @@ open class Camera3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_projection (_ mode: Camera3D.ProjectionType) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1024,7 +1024,7 @@ open class Camera3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_h_offset (_ offset: Double) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -1074,7 +1074,7 @@ open class Camera3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_v_offset (_ offset: Double) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -1124,7 +1124,7 @@ open class Camera3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_cull_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -1174,7 +1174,7 @@ open class Camera3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_environment (_ env: Environment?) {
-        #if true
+        #if false
         
         var copy_env_handle = env?.handle
         
@@ -1223,7 +1223,7 @@ open class Camera3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_attributes (_ env: CameraAttributes?) {
-        #if true
+        #if false
         
         var copy_env_handle = env?.handle
         
@@ -1272,7 +1272,7 @@ open class Camera3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_keep_aspect_mode (_ mode: Camera3D.KeepAspect) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1322,7 +1322,7 @@ open class Camera3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_doppler_tracking (_ mode: Camera3D.DopplerTracking) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1391,7 +1391,7 @@ open class Camera3D: Node3D {
     /// Returns `true` if the given position is inside the camera's frustum (the green part of the linked diagram). [url=https://raw.githubusercontent.com/godotengine/godot-docs/master/img/camera3d_position_frustum.png]See this diagram[/url] for an overview of position query methods.
     public final func isPositionInFrustum (worldPoint: Vector3)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_world_point = worldPoint
         
@@ -1460,7 +1460,7 @@ open class Camera3D: Node3D {
     
     /// Based on `value`, enables or disables the specified layer in the ``cullMask``, given a `layerNumber` between 1 and 20.
     public final func setCullMaskValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -1498,7 +1498,7 @@ open class Camera3D: Node3D {
     /// Returns whether or not the specified layer of the ``cullMask`` is enabled, given a `layerNumber` between 1 and 20.
     public final func getCullMaskValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         

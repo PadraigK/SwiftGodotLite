@@ -161,7 +161,7 @@ open class OS: Object {
     
     /// Displays a modal dialog box using the host OS' facilities. Execution is blocked until the dialog is closed.
     public static func alert (text: String, title: String = "Alert!") {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         let gstr_title = GString (title)
@@ -198,7 +198,7 @@ open class OS: Object {
     
     /// Crashes the engine (or the editor if called within a `@tool` script). This should _only_ be used for testing the system's crash handler, not for any other purpose. For general error reporting, use (in order of preference) ``@GDScript.assert``, ``@GlobalScope.push_error`` or ``alert(text:title:)``. See also ``kill(pid:)``.
     public static func crash (message: String) {
-        #if true
+        #if false
         
         let gstr_message = GString (message)
         
@@ -230,7 +230,7 @@ open class OS: Object {
     
     @inline(__always)
     fileprivate static func set_low_processor_usage_mode (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -280,7 +280,7 @@ open class OS: Object {
     
     @inline(__always)
     fileprivate static func set_low_processor_usage_mode_sleep_usec (_ usec: Int32) {
-        #if true
+        #if false
         
         var copy_usec: Int = Int (usec)
         
@@ -330,7 +330,7 @@ open class OS: Object {
     
     @inline(__always)
     fileprivate static func set_delta_smoothing (_ deltaSmoothingEnabled: Bool) {
-        #if true
+        #if false
         
         var copy_delta_smoothing_enabled = deltaSmoothingEnabled
         
@@ -448,7 +448,7 @@ open class OS: Object {
     /// 
     public static func getSystemFontPath (fontName: String, weight: Int32 = 400, stretch: Int32 = 100, italic: Bool = false)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_font_name = GString (fontName)
         var copy_weight: Int = Int (weight)
@@ -506,7 +506,7 @@ open class OS: Object {
     /// 
     public static func getSystemFontPathForText (fontName: String, text: String, locale: String = "", script: String = "", weight: Int32 = 400, stretch: Int32 = 100, italic: Bool = false)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_font_name = GString (fontName)
         let gstr_text = GString (text)
@@ -633,7 +633,7 @@ open class OS: Object {
     /// 
     public static func execute (path: String, arguments: PackedStringArray, output: GArray = GArray (), readStderr: Bool = false, openConsole: Bool = false)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_read_stderr = readStderr
@@ -696,7 +696,7 @@ open class OS: Object {
     /// 
     public static func createProcess (path: String, arguments: PackedStringArray, openConsole: Bool = false)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_open_console = openConsole
@@ -743,7 +743,7 @@ open class OS: Object {
     /// 
     public static func createInstance (arguments: PackedStringArray)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (OS.method_create_instance, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &arguments.content)
@@ -780,7 +780,7 @@ open class OS: Object {
     /// 
     public static func kill (pid: Int32)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_pid: Int = Int (pid)
         
@@ -827,7 +827,7 @@ open class OS: Object {
     /// 
     public static func shellOpen (uri: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_uri = GString (uri)
         
@@ -868,7 +868,7 @@ open class OS: Object {
     /// 
     public static func shellShowInFileManager (fileOrDirPath: String, openFolder: Bool = true)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_file_or_dir_path = GString (fileOrDirPath)
         var copy_open_folder = openFolder
@@ -912,7 +912,7 @@ open class OS: Object {
     /// 
     public static func isProcessRunning (pid: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_pid: Int = Int (pid)
         
@@ -970,7 +970,7 @@ open class OS: Object {
     /// 
     public static func hasEnvironment (variable: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_variable = GString (variable)
         
@@ -1007,7 +1007,7 @@ open class OS: Object {
     /// 
     public static func getEnvironment (variable: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_variable = GString (variable)
         
@@ -1043,7 +1043,7 @@ open class OS: Object {
     /// > Note: Environment variable names are case-sensitive on all platforms except Windows. The `variable` name cannot be empty or include the `=` character. On Windows, there is a 32767 characters limit for the combined length of `variable`, `value`, and the `=` and null terminator characters that will be registered in the environment block.
     /// 
     public static func setEnvironment (variable: String, value: String) {
-        #if true
+        #if false
         
         let gstr_variable = GString (variable)
         let gstr_value = GString (value)
@@ -1083,7 +1083,7 @@ open class OS: Object {
     /// > Note: Environment variable names are case-sensitive on all platforms except Windows. The `variable` name cannot be empty or include the `=` character.
     /// 
     public static func unsetEnvironment (variable: String) {
-        #if true
+        #if false
         
         let gstr_variable = GString (variable)
         
@@ -1286,7 +1286,7 @@ open class OS: Object {
     /// > Note: If the project process crashes or is _killed_ by the user (by sending `SIGKILL` instead of the usual `SIGTERM`), the project won't restart automatically.
     /// 
     public static func setRestartOnExit (restart: Bool, arguments: PackedStringArray = PackedStringArray()) {
-        #if true
+        #if false
         
         var copy_restart = restart
         
@@ -1362,7 +1362,7 @@ open class OS: Object {
     /// > Note: When ``delayUsec(_:)`` is called on the main thread, it will freeze the project and will prevent it from redrawing and registering input until the delay has passed. When using ``delayUsec(_:)`` as part of an ``EditorPlugin`` or ``EditorScript``, it will freeze the editor but won't freeze the project if it is currently running (since the project is an independent child process).
     /// 
     public static func delayUsec (_ usec: Int32) {
-        #if true
+        #if false
         
         var copy_usec: Int = Int (usec)
         
@@ -1399,7 +1399,7 @@ open class OS: Object {
     /// > Note: When ``delayMsec(_:)`` is called on the main thread, it will freeze the project and will prevent it from redrawing and registering input until the delay has passed. When using ``delayMsec(_:)`` as part of an ``EditorPlugin`` or ``EditorScript``, it will freeze the editor but won't freeze the project if it is currently running (since the project is an independent child process).
     /// 
     public static func delayMsec (_ msec: Int32) {
-        #if true
+        #if false
         
         var copy_msec: Int = Int (msec)
         
@@ -1630,7 +1630,7 @@ open class OS: Object {
     /// 
     public static func moveToTrash (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -1702,7 +1702,7 @@ open class OS: Object {
     /// 
     public static func getSystemDir (_ dir: OS.SystemDir, sharedStorage: Bool = true)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_dir = Int64 (dir.rawValue)
         var copy_shared_storage = sharedStorage
@@ -1830,7 +1830,7 @@ open class OS: Object {
     /// 
     public static func getKeycodeString (code: Key)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_code = Int64 (code.rawValue)
         
@@ -1864,7 +1864,7 @@ open class OS: Object {
     /// Returns `true` if the input keycode corresponds to a Unicode character.
     public static func isKeycodeUnicode (code: Int64)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_code = code
         
@@ -1898,7 +1898,7 @@ open class OS: Object {
     /// Returns the keycode of the given string (e.g. "Escape").
     public static func findKeycodeFromString (_ string: String)-> Key {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_string = GString (string)
         
@@ -1931,7 +1931,7 @@ open class OS: Object {
     
     /// Enables backup saves if `enabled` is `true`.
     public static func setUseFileAccessSaveAndSwap (enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1964,7 +1964,7 @@ open class OS: Object {
     /// Sets the name of the current thread.
     public static func setThreadName (_ name: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -2047,7 +2047,7 @@ open class OS: Object {
     /// 
     public static func hasFeature (tagName: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_tag_name = GString (tagName)
         
@@ -2102,7 +2102,7 @@ open class OS: Object {
     /// At the moment this function is only used by `AudioDriverOpenSL` to request permission for `RECORD_AUDIO` on Android.
     public static func requestPermission (name: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         

@@ -102,7 +102,7 @@ open class PhysicsPointQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_position (_ position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -152,7 +152,7 @@ open class PhysicsPointQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_canvas_instance_id (_ canvasInstanceId: UInt) {
-        #if true
+        #if false
         
         var copy_canvas_instance_id = canvasInstanceId
         
@@ -202,7 +202,7 @@ open class PhysicsPointQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_collision_mask (_ collisionMask: UInt32) {
-        #if true
+        #if false
         
         var copy_collision_mask: Int = Int (collisionMask)
         
@@ -252,7 +252,7 @@ open class PhysicsPointQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_exclude (_ exclude: VariantCollection<RID>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsPointQueryParameters2D.method_set_exclude, UnsafeMutableRawPointer (mutating: handle), nil, &exclude.array.content)
@@ -300,7 +300,7 @@ open class PhysicsPointQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_collide_with_bodies (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -350,7 +350,7 @@ open class PhysicsPointQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_collide_with_areas (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

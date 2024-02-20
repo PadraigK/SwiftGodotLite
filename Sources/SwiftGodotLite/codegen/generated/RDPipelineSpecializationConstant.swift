@@ -54,7 +54,7 @@ open class RDPipelineSpecializationConstant: RefCounted {
     
     @inline(__always)
     fileprivate final func set_value (_ value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RDPipelineSpecializationConstant.method_set_value, UnsafeMutableRawPointer (mutating: handle), nil, &value.content)
@@ -102,7 +102,7 @@ open class RDPipelineSpecializationConstant: RefCounted {
     
     @inline(__always)
     fileprivate final func set_constant_id (_ constantId: UInt32) {
-        #if true
+        #if false
         
         var copy_constant_id: Int = Int (constantId)
         

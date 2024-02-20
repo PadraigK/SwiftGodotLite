@@ -86,7 +86,7 @@ open class GLTFSkeleton: Resource {
     
     @inline(__always)
     fileprivate final func set_joints (_ joints: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFSkeleton.method_set_joints, UnsafeMutableRawPointer (mutating: handle), nil, &joints.content)
@@ -134,7 +134,7 @@ open class GLTFSkeleton: Resource {
     
     @inline(__always)
     fileprivate final func set_roots (_ roots: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFSkeleton.method_set_roots, UnsafeMutableRawPointer (mutating: handle), nil, &roots.content)
@@ -202,7 +202,7 @@ open class GLTFSkeleton: Resource {
     @inline(__always)
     /// 
     fileprivate final func set_unique_names (_ uniqueNames: VariantCollection<String>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFSkeleton.method_set_unique_names, UnsafeMutableRawPointer (mutating: handle), nil, &uniqueNames.array.content)
@@ -252,7 +252,7 @@ open class GLTFSkeleton: Resource {
     @inline(__always)
     /// Sets a ``GDictionary`` that maps skeleton bone indices to the indices of GLTF nodes. This property is unused during import, and only set during export. In a GLTF file, a bone is a node, so Godot converts skeleton bones to GLTF nodes.
     fileprivate final func set_godot_bone_node (_ godotBoneNode: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFSkeleton.method_set_godot_bone_node, UnsafeMutableRawPointer (mutating: handle), nil, &godotBoneNode.content)
@@ -301,7 +301,7 @@ open class GLTFSkeleton: Resource {
     /// 
     public final func getBoneAttachment (idx: Int32)-> BoneAttachment3D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         

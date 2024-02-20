@@ -174,7 +174,7 @@ open class VideoStreamPlayer: Control {
     
     @inline(__always)
     fileprivate final func set_stream (_ stream: VideoStream?) {
-        #if true
+        #if false
         
         var copy_stream_handle = stream?.handle
         
@@ -279,7 +279,7 @@ open class VideoStreamPlayer: Control {
     
     @inline(__always)
     fileprivate final func set_paused (_ paused: Bool) {
-        #if true
+        #if false
         
         var copy_paused = paused
         
@@ -329,7 +329,7 @@ open class VideoStreamPlayer: Control {
     
     @inline(__always)
     fileprivate final func set_loop (_ loop: Bool) {
-        #if true
+        #if false
         
         var copy_loop = loop
         
@@ -379,7 +379,7 @@ open class VideoStreamPlayer: Control {
     
     @inline(__always)
     fileprivate final func set_volume (_ volume: Double) {
-        #if true
+        #if false
         
         var copy_volume = volume
         
@@ -429,7 +429,7 @@ open class VideoStreamPlayer: Control {
     
     @inline(__always)
     fileprivate final func set_volume_db (_ db: Double) {
-        #if true
+        #if false
         
         var copy_db = db
         
@@ -479,7 +479,7 @@ open class VideoStreamPlayer: Control {
     
     @inline(__always)
     fileprivate final func set_audio_track (_ track: Int32) {
-        #if true
+        #if false
         
         var copy_track: Int = Int (track)
         
@@ -568,7 +568,7 @@ open class VideoStreamPlayer: Control {
     
     @inline(__always)
     fileprivate final func set_stream_position (_ position: Double) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -618,7 +618,7 @@ open class VideoStreamPlayer: Control {
     
     @inline(__always)
     fileprivate final func set_autoplay (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -668,7 +668,7 @@ open class VideoStreamPlayer: Control {
     
     @inline(__always)
     fileprivate final func set_expand (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -718,7 +718,7 @@ open class VideoStreamPlayer: Control {
     
     @inline(__always)
     fileprivate final func set_buffering_msec (_ msec: Int32) {
-        #if true
+        #if false
         
         var copy_msec: Int = Int (msec)
         
@@ -768,7 +768,7 @@ open class VideoStreamPlayer: Control {
     
     @inline(__always)
     fileprivate final func set_bus (_ bus: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (VideoStreamPlayer.method_set_bus, UnsafeMutableRawPointer (mutating: handle), nil, &bus.content)

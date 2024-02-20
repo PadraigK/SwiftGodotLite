@@ -53,7 +53,7 @@ open class MeshDataTool: RefCounted {
     /// 
     public final func createFromSurface (mesh: ArrayMesh?, surface: Int32)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         var copy_mesh_handle = mesh?.handle
@@ -91,7 +91,7 @@ open class MeshDataTool: RefCounted {
     /// Adds a new surface to specified ``Mesh`` with edited data.
     public final func commitToSurface (mesh: ArrayMesh?, compressionFlags: UInt = 0)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_compression_flags = compressionFlags
         var copy_mesh_handle = mesh?.handle
@@ -203,7 +203,7 @@ open class MeshDataTool: RefCounted {
     
     /// Sets the position of the given vertex.
     public final func setVertex (idx: Int32, vertex: Vector3) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_vertex = vertex
@@ -241,7 +241,7 @@ open class MeshDataTool: RefCounted {
     /// Returns the position of the given vertex.
     public final func getVertex (idx: Int32)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -274,7 +274,7 @@ open class MeshDataTool: RefCounted {
     
     /// Sets the normal of the given vertex.
     public final func setVertexNormal (idx: Int32, normal: Vector3) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_normal = normal
@@ -312,7 +312,7 @@ open class MeshDataTool: RefCounted {
     /// Returns the normal of the given vertex.
     public final func getVertexNormal (idx: Int32)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -345,7 +345,7 @@ open class MeshDataTool: RefCounted {
     
     /// Sets the tangent of the given vertex.
     public final func setVertexTangent (idx: Int32, tangent: Plane) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_tangent = tangent
@@ -383,7 +383,7 @@ open class MeshDataTool: RefCounted {
     /// Returns the tangent of the given vertex.
     public final func getVertexTangent (idx: Int32)-> Plane {
         var _result: Plane = Plane ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -416,7 +416,7 @@ open class MeshDataTool: RefCounted {
     
     /// Sets the UV of the given vertex.
     public final func setVertexUv (idx: Int32, uv: Vector2) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_uv = uv
@@ -454,7 +454,7 @@ open class MeshDataTool: RefCounted {
     /// Returns the UV of the given vertex.
     public final func getVertexUv (idx: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -487,7 +487,7 @@ open class MeshDataTool: RefCounted {
     
     /// Sets the UV2 of the given vertex.
     public final func setVertexUv2 (idx: Int32, uv2: Vector2) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_uv2 = uv2
@@ -525,7 +525,7 @@ open class MeshDataTool: RefCounted {
     /// Returns the UV2 of the given vertex.
     public final func getVertexUv2 (idx: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -558,7 +558,7 @@ open class MeshDataTool: RefCounted {
     
     /// Sets the color of the given vertex.
     public final func setVertexColor (idx: Int32, color: Color) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_color = color
@@ -596,7 +596,7 @@ open class MeshDataTool: RefCounted {
     /// Returns the color of the given vertex.
     public final func getVertexColor (idx: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -629,7 +629,7 @@ open class MeshDataTool: RefCounted {
     
     /// Sets the bones of the given vertex.
     public final func setVertexBones (idx: Int32, bones: PackedInt32Array) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -665,7 +665,7 @@ open class MeshDataTool: RefCounted {
     /// Returns the bones of the given vertex.
     public final func getVertexBones (idx: Int32)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -698,7 +698,7 @@ open class MeshDataTool: RefCounted {
     
     /// Sets the bone weights of the given vertex.
     public final func setVertexWeights (idx: Int32, weights: PackedFloat32Array) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -734,7 +734,7 @@ open class MeshDataTool: RefCounted {
     /// Returns bone weights of the given vertex.
     public final func getVertexWeights (idx: Int32)-> PackedFloat32Array {
         let _result: PackedFloat32Array = PackedFloat32Array ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -767,7 +767,7 @@ open class MeshDataTool: RefCounted {
     
     /// Sets the metadata associated with the given vertex.
     public final func setVertexMeta (idx: Int32, meta: Variant) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -803,7 +803,7 @@ open class MeshDataTool: RefCounted {
     /// Returns the metadata associated with the given vertex.
     public final func getVertexMeta (idx: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -837,7 +837,7 @@ open class MeshDataTool: RefCounted {
     /// Returns an array of edges that share the given vertex.
     public final func getVertexEdges (idx: Int32)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -871,7 +871,7 @@ open class MeshDataTool: RefCounted {
     /// Returns an array of faces that share the given vertex.
     public final func getVertexFaces (idx: Int32)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -908,7 +908,7 @@ open class MeshDataTool: RefCounted {
     /// 
     public final func getEdgeVertex (idx: Int32, vertex: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_vertex: Int = Int (vertex)
@@ -947,7 +947,7 @@ open class MeshDataTool: RefCounted {
     /// Returns array of faces that touch given edge.
     public final func getEdgeFaces (idx: Int32)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -980,7 +980,7 @@ open class MeshDataTool: RefCounted {
     
     /// Sets the metadata of the given edge.
     public final func setEdgeMeta (idx: Int32, meta: Variant) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1016,7 +1016,7 @@ open class MeshDataTool: RefCounted {
     /// Returns meta information assigned to given edge.
     public final func getEdgeMeta (idx: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1055,7 +1055,7 @@ open class MeshDataTool: RefCounted {
     /// 
     public final func getFaceVertex (idx: Int32, vertex: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_vertex: Int = Int (vertex)
@@ -1097,7 +1097,7 @@ open class MeshDataTool: RefCounted {
     /// 
     public final func getFaceEdge (idx: Int32, edge: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_edge: Int = Int (edge)
@@ -1135,7 +1135,7 @@ open class MeshDataTool: RefCounted {
     
     /// Sets the metadata of the given face.
     public final func setFaceMeta (idx: Int32, meta: Variant) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1171,7 +1171,7 @@ open class MeshDataTool: RefCounted {
     /// Returns the metadata associated with the given face.
     public final func getFaceMeta (idx: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1205,7 +1205,7 @@ open class MeshDataTool: RefCounted {
     /// Calculates and returns the face normal of the given face.
     public final func getFaceNormal (idx: Int32)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1238,7 +1238,7 @@ open class MeshDataTool: RefCounted {
     
     /// Sets the material to be used by newly-constructed ``Mesh``.
     public final func setMaterial (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         

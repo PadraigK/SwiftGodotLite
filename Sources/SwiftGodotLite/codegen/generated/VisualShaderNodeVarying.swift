@@ -51,7 +51,7 @@ open class VisualShaderNodeVarying: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_varying_name (_ name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -101,7 +101,7 @@ open class VisualShaderNodeVarying: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_varying_type (_ type: VisualShader.VaryingType) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         

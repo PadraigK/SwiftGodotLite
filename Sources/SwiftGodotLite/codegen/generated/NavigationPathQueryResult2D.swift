@@ -82,7 +82,7 @@ open class NavigationPathQueryResult2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_path (_ path: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationPathQueryResult2D.method_set_path, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -130,7 +130,7 @@ open class NavigationPathQueryResult2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_path_types (_ pathTypes: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationPathQueryResult2D.method_set_path_types, UnsafeMutableRawPointer (mutating: handle), nil, &pathTypes.content)
@@ -178,7 +178,7 @@ open class NavigationPathQueryResult2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_path_rids (_ pathRids: VariantCollection<RID>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationPathQueryResult2D.method_set_path_rids, UnsafeMutableRawPointer (mutating: handle), nil, &pathRids.array.content)
@@ -226,7 +226,7 @@ open class NavigationPathQueryResult2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_path_owner_ids (_ pathOwnerIds: PackedInt64Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationPathQueryResult2D.method_set_path_owner_ids, UnsafeMutableRawPointer (mutating: handle), nil, &pathOwnerIds.content)

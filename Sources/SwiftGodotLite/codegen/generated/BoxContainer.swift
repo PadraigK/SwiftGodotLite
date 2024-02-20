@@ -64,7 +64,7 @@ open class BoxContainer: Container {
     /// Adds a ``Control`` node to the box as a spacer. If `begin` is `true`, it will insert the ``Control`` node in front of all other children.
     public final func addSpacer (begin: Bool)-> Control? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_begin = begin
         
@@ -97,7 +97,7 @@ open class BoxContainer: Container {
     
     @inline(__always)
     fileprivate final func set_alignment (_ alignment: BoxContainer.AlignmentMode) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -147,7 +147,7 @@ open class BoxContainer: Container {
     
     @inline(__always)
     fileprivate final func set_vertical (_ vertical: Bool) {
-        #if true
+        #if false
         
         var copy_vertical = vertical
         

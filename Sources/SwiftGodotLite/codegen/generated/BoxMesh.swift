@@ -80,7 +80,7 @@ open class BoxMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -130,7 +130,7 @@ open class BoxMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_subdivide_width (_ subdivide: Int32) {
-        #if true
+        #if false
         
         var copy_subdivide: Int = Int (subdivide)
         
@@ -180,7 +180,7 @@ open class BoxMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_subdivide_height (_ divisions: Int32) {
-        #if true
+        #if false
         
         var copy_divisions: Int = Int (divisions)
         
@@ -230,7 +230,7 @@ open class BoxMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_subdivide_depth (_ divisions: Int32) {
-        #if true
+        #if false
         
         var copy_divisions: Int = Int (divisions)
         

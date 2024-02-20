@@ -32,7 +32,7 @@ open class AnimationNodeStateMachinePlayback: Resource {
     /// If `resetOnTeleport` is `true`, the animation is played from the beginning when the travel cause a teleportation.
     /// 
     public final func travel (toNode: StringName, resetOnTeleport: Bool = true) {
-        #if true
+        #if false
         
         var copy_reset_on_teleport = resetOnTeleport
         
@@ -70,7 +70,7 @@ open class AnimationNodeStateMachinePlayback: Resource {
     /// If `reset` is `true`, the animation is played from the beginning.
     /// 
     public final func start (node: StringName, reset: Bool = true) {
-        #if true
+        #if false
         
         var copy_reset = reset
         

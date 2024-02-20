@@ -98,7 +98,7 @@ open class VisualShaderNodeDerivativeFunc: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_op_type (_ type: VisualShaderNodeDerivativeFunc.OpType) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -148,7 +148,7 @@ open class VisualShaderNodeDerivativeFunc: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_function (_ `func`: VisualShaderNodeDerivativeFunc.Function) {
-        #if true
+        #if false
         
         var copy_func = Int64 (`func`.rawValue)
         
@@ -198,7 +198,7 @@ open class VisualShaderNodeDerivativeFunc: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_precision (_ precision: VisualShaderNodeDerivativeFunc.Precision) {
-        #if true
+        #if false
         
         var copy_precision = Int64 (precision.rawValue)
         

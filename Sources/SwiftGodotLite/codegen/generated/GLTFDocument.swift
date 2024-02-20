@@ -87,7 +87,7 @@ open class GLTFDocument: Resource {
     /// 
     public final func appendFromFile (path: String, state: GLTFState?, flags: UInt32 = 0, basePath: String = "")-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_flags: Int = Int (flags)
@@ -138,7 +138,7 @@ open class GLTFDocument: Resource {
     /// 
     public final func appendFromBuffer (bytes: PackedByteArray, basePath: String, state: GLTFState?, flags: UInt32 = 0)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_base_path = GString (basePath)
         var copy_flags: Int = Int (flags)
@@ -184,7 +184,7 @@ open class GLTFDocument: Resource {
     /// Takes a Godot Engine scene node and exports it and its descendants to the given ``GLTFState`` object through the `state` parameter.
     public final func appendFromScene (node: Node?, state: GLTFState?, flags: UInt32 = 0)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_flags: Int = Int (flags)
         var copy_node_handle = node?.handle
@@ -226,7 +226,7 @@ open class GLTFDocument: Resource {
     /// Takes a ``GLTFState`` object through the `state` parameter and returns a Godot Engine scene node.
     public final func generateScene (state: GLTFState?, bakeFps: Double = 30, trimming: Bool = false, removeImmutableTracks: Bool = true)-> Node? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_bake_fps = bakeFps
         var copy_trimming = trimming
@@ -274,7 +274,7 @@ open class GLTFDocument: Resource {
     /// Takes a ``GLTFState`` object through the `state` parameter and returns a GLTF ``PackedByteArray``.
     public final func generateBuffer (state: GLTFState?)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         var copy_state_handle = state?.handle
         
@@ -310,7 +310,7 @@ open class GLTFDocument: Resource {
     /// 
     public final func writeToFilesystem (state: GLTFState?, path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_state_handle = state?.handle
@@ -347,7 +347,7 @@ open class GLTFDocument: Resource {
     
     @inline(__always)
     fileprivate final func set_image_format (_ imageFormat: String) {
-        #if true
+        #if false
         
         let gstr_image_format = GString (imageFormat)
         
@@ -397,7 +397,7 @@ open class GLTFDocument: Resource {
     
     @inline(__always)
     fileprivate final func set_lossy_quality (_ lossyQuality: Double) {
-        #if true
+        #if false
         
         var copy_lossy_quality = lossyQuality
         
@@ -447,7 +447,7 @@ open class GLTFDocument: Resource {
     
     @inline(__always)
     fileprivate final func set_root_node_mode (_ rootNodeMode: GLTFDocument.RootNodeMode) {
-        #if true
+        #if false
         
         var copy_root_node_mode = Int64 (rootNodeMode.rawValue)
         
@@ -500,7 +500,7 @@ open class GLTFDocument: Resource {
     /// > Note: Like GLTFDocument itself, all GLTFDocumentExtension classes must be stateless in order to function properly. If you need to store data, use the `set_additional_data` and `get_additional_data` methods in ``GLTFState`` or ``GLTFNode``.
     /// 
     public static func registerGltfDocumentExtension (_ `extension`: GLTFDocumentExtension?, firstPriority: Bool = false) {
-        #if true
+        #if false
         
         var copy_first_priority = firstPriority
         var copy_extension_handle = `extension`?.handle
@@ -536,7 +536,7 @@ open class GLTFDocument: Resource {
     
     /// Unregisters the given ``GLTFDocumentExtension`` instance.
     public static func unregisterGltfDocumentExtension (_ `extension`: GLTFDocumentExtension?) {
-        #if true
+        #if false
         
         var copy_extension_handle = `extension`?.handle
         

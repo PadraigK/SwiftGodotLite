@@ -83,7 +83,7 @@ open class PortableCompressedTexture2D: Texture2D {
     /// If lossy compression is requested, the quality setting can optionally be provided. This maps to Lossy WebP compression quality.
     /// 
     public final func createFromImage (_ image: Image?, compressionMode: PortableCompressedTexture2D.CompressionMode, normalMap: Bool = false, lossyQuality: Double = 0.8) {
-        #if true
+        #if false
         
         var copy_compression_mode = Int64 (compressionMode.rawValue)
         var copy_normal_map = normalMap
@@ -165,7 +165,7 @@ open class PortableCompressedTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_size_override (_ size: Vector2) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -215,7 +215,7 @@ open class PortableCompressedTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_keep_compressed_buffer (_ keep: Bool) {
-        #if true
+        #if false
         
         var copy_keep = keep
         
@@ -265,7 +265,7 @@ open class PortableCompressedTexture2D: Texture2D {
     
     /// Overrides the flag globally for all textures of this type. This is used primarily by the editor.
     public static func setKeepAllCompressedBuffers (keep: Bool) {
-        #if true
+        #if false
         
         var copy_keep = keep
         

@@ -69,7 +69,7 @@ open class SceneState: RefCounted {
     /// Returns the type of the node at `idx`.
     public final func getNodeType (idx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -103,7 +103,7 @@ open class SceneState: RefCounted {
     /// Returns the name of the node at `idx`.
     public final func getNodeName (idx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -140,7 +140,7 @@ open class SceneState: RefCounted {
     /// 
     public final func getNodePath (idx: Int32, forParent: Bool = false)-> NodePath {
         let _result: NodePath = NodePath ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_for_parent = forParent
@@ -179,7 +179,7 @@ open class SceneState: RefCounted {
     /// Returns the path to the owner of the node at `idx`, relative to the root node.
     public final func getNodeOwnerPath (idx: Int32)-> NodePath {
         let _result: NodePath = NodePath ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -213,7 +213,7 @@ open class SceneState: RefCounted {
     /// Returns `true` if the node at `idx` is an ``InstancePlaceholder``.
     public final func isNodeInstancePlaceholder (idx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -247,7 +247,7 @@ open class SceneState: RefCounted {
     /// Returns the path to the represented scene file if the node at `idx` is an ``InstancePlaceholder``.
     public final func getNodeInstancePlaceholder (idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -281,7 +281,7 @@ open class SceneState: RefCounted {
     /// Returns a ``PackedScene`` for the node at `idx` (i.e. the whole branch starting at this node, with its child nodes and resources), or `null` if the node is not an instance.
     public final func getNodeInstance (idx: Int32)-> PackedScene? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -315,7 +315,7 @@ open class SceneState: RefCounted {
     /// Returns the list of group names associated with the node at `idx`.
     public final func getNodeGroups (idx: Int32)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -349,7 +349,7 @@ open class SceneState: RefCounted {
     /// Returns the node's index, which is its position relative to its siblings. This is only relevant and saved in scenes for cases where new nodes are added to an instantiated or inherited scene among siblings from the base scene. Despite the name, this index is not related to the `idx` argument used here and in other methods.
     public final func getNodeIndex (idx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -386,7 +386,7 @@ open class SceneState: RefCounted {
     /// 
     public final func getNodePropertyCount (idx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -420,7 +420,7 @@ open class SceneState: RefCounted {
     /// Returns the name of the property at `propIdx` for the node at `idx`.
     public final func getNodePropertyName (idx: Int32, propIdx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_prop_idx: Int = Int (propIdx)
@@ -459,7 +459,7 @@ open class SceneState: RefCounted {
     /// Returns the value of the property at `propIdx` for the node at `idx`.
     public final func getNodePropertyValue (idx: Int32, propIdx: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_prop_idx: Int = Int (propIdx)
@@ -519,7 +519,7 @@ open class SceneState: RefCounted {
     /// Returns the path to the node that owns the signal at `idx`, relative to the root node.
     public final func getConnectionSource (idx: Int32)-> NodePath {
         let _result: NodePath = NodePath ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -553,7 +553,7 @@ open class SceneState: RefCounted {
     /// Returns the name of the signal at `idx`.
     public final func getConnectionSignal (idx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -587,7 +587,7 @@ open class SceneState: RefCounted {
     /// Returns the path to the node that owns the method connected to the signal at `idx`, relative to the root node.
     public final func getConnectionTarget (idx: Int32)-> NodePath {
         let _result: NodePath = NodePath ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -621,7 +621,7 @@ open class SceneState: RefCounted {
     /// Returns the method connected to the signal at `idx`.
     public final func getConnectionMethod (idx: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -655,7 +655,7 @@ open class SceneState: RefCounted {
     /// Returns the connection flags for the signal at `idx`. See ``Object.ConnectFlags`` constants.
     public final func getConnectionFlags (idx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -689,7 +689,7 @@ open class SceneState: RefCounted {
     /// Returns the list of bound parameters for the signal at `idx`.
     public final func getConnectionBinds (idx: Int32)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -723,7 +723,7 @@ open class SceneState: RefCounted {
     /// Returns the number of unbound parameters for the signal at `idx`.
     public final func getConnectionUnbinds (idx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         

@@ -42,7 +42,7 @@ open class CircleShape2D: Shape2D {
     
     @inline(__always)
     fileprivate final func set_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         

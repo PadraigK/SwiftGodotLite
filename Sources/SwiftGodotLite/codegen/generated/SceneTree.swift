@@ -222,7 +222,7 @@ open class SceneTree: MainLoop {
     /// 
     public final func hasGroup (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SceneTree.method_has_group, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -271,7 +271,7 @@ open class SceneTree: MainLoop {
     
     @inline(__always)
     fileprivate final func set_auto_accept_quit (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -321,7 +321,7 @@ open class SceneTree: MainLoop {
     
     @inline(__always)
     fileprivate final func set_quit_on_go_back (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -353,7 +353,7 @@ open class SceneTree: MainLoop {
     
     @inline(__always)
     fileprivate final func set_debug_collisions_hint (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -403,7 +403,7 @@ open class SceneTree: MainLoop {
     
     @inline(__always)
     fileprivate final func set_debug_paths_hint (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -453,7 +453,7 @@ open class SceneTree: MainLoop {
     
     @inline(__always)
     fileprivate final func set_debug_navigation_hint (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -503,7 +503,7 @@ open class SceneTree: MainLoop {
     
     @inline(__always)
     fileprivate final func set_edited_scene_root (_ scene: Node?) {
-        #if true
+        #if false
         
         var copy_scene_handle = scene?.handle
         
@@ -552,7 +552,7 @@ open class SceneTree: MainLoop {
     
     @inline(__always)
     fileprivate final func set_pause (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -616,7 +616,7 @@ open class SceneTree: MainLoop {
     /// 
     public final func createTimer (timeSec: Double, processAlways: Bool = true, processInPhysics: Bool = false, ignoreTimeScale: Bool = false)-> SceneTreeTimer? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_time_sec = timeSec
         var copy_process_always = processAlways
@@ -746,7 +746,7 @@ open class SceneTree: MainLoop {
     /// > Note: On iOS this method doesn't work. Instead, as recommended by the iOS Human Interface Guidelines, the user is expected to close apps via the Home button.
     /// 
     public final func quit (exitCode: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_exit_code: Int = Int (exitCode)
         
@@ -778,7 +778,7 @@ open class SceneTree: MainLoop {
     
     /// Queues the given object for deletion, delaying the call to ``Object/free()`` to the end of the current frame.
     public final func queueDelete (obj: Object?) {
-        #if true
+        #if false
         
         var copy_obj_handle = obj?.handle
         
@@ -865,7 +865,7 @@ open class SceneTree: MainLoop {
     /// > Note: Group call flags are used to control the notification sending behavior. By default, notifications will be sent immediately in a way similar to ``notifyGroup(_:notification:)``. However, if the .groupCallDeferred flag is present in the `callFlags` argument, notifications will be sent at the end of the current frame in a way similar to using `Object.call_deferred("notification", ...)`.
     /// 
     public final func notifyGroupFlags (callFlags: UInt32, group: StringName, notification: Int32) {
-        #if true
+        #if false
         
         var copy_call_flags: Int = Int (callFlags)
         var copy_notification: Int = Int (notification)
@@ -908,7 +908,7 @@ open class SceneTree: MainLoop {
     /// > Note: Group call flags are used to control the property setting behavior. By default, properties will be set immediately in a way similar to ``setGroup(_:property:value:)``. However, if the .groupCallDeferred flag is present in the `callFlags` argument, properties will be set at the end of the frame in a way similar to ``Object/callDeferred(method:)``.
     /// 
     public final func setGroupFlags (callFlags: UInt32, group: StringName, property: String, value: Variant) {
-        #if true
+        #if false
         
         var copy_call_flags: Int = Int (callFlags)
         let gstr_property = GString (property)
@@ -1002,7 +1002,7 @@ open class SceneTree: MainLoop {
     /// > Note: ``notifyGroup(_:notification:)`` will immediately notify all members at once, which can cause stuttering if an expensive method is called as a result of sending the notification to lots of members.
     /// 
     public final func notifyGroup (_ group: StringName, notification: Int32) {
-        #if true
+        #if false
         
         var copy_notification: Int = Int (notification)
         
@@ -1040,7 +1040,7 @@ open class SceneTree: MainLoop {
     /// > Note: ``setGroup(_:property:value:)`` will set the property immediately on all members at once, which can cause stuttering if a property with an expensive setter is set on lots of members.
     /// 
     public final func setGroup (_ group: StringName, property: String, value: Variant) {
-        #if true
+        #if false
         
         let gstr_property = GString (property)
         
@@ -1079,7 +1079,7 @@ open class SceneTree: MainLoop {
     /// Returns a list of all nodes assigned to the given group.
     public final func getNodesInGroup (_ group: StringName)-> ObjectCollection<Node> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SceneTree.method_get_nodes_in_group, UnsafeMutableRawPointer (mutating: handle), &_result, &group.content)
@@ -1111,7 +1111,7 @@ open class SceneTree: MainLoop {
     /// Returns the first node in the specified group, or `null` if the group is empty or does not exist.
     public final func getFirstNodeInGroup (_ group: StringName)-> Node? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SceneTree.method_get_first_node_in_group, UnsafeMutableRawPointer (mutating: handle), &_result, &group.content)
@@ -1142,7 +1142,7 @@ open class SceneTree: MainLoop {
     
     @inline(__always)
     fileprivate final func set_current_scene (_ childNode: Node?) {
-        #if true
+        #if false
         
         var copy_child_node_handle = childNode?.handle
         
@@ -1197,7 +1197,7 @@ open class SceneTree: MainLoop {
     /// 
     public final func changeSceneToFile (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -1242,7 +1242,7 @@ open class SceneTree: MainLoop {
     /// 
     public final func changeSceneToPacked (packedScene: PackedScene?)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_packed_scene_handle = packedScene?.handle
         
@@ -1314,7 +1314,7 @@ open class SceneTree: MainLoop {
     /// > Note: No ``MultiplayerAPI`` must be configured for the subpath containing `rootPath`, nested custom multiplayers are not allowed. I.e. if one is configured for `"/root/Foo"` setting one for `"/root/Foo/Bar"` will cause an error.
     /// 
     public final func setMultiplayer (_ multiplayer: MultiplayerAPI?, rootPath: NodePath = NodePath("")) {
-        #if true
+        #if false
         
         var copy_multiplayer_handle = multiplayer?.handle
         
@@ -1349,7 +1349,7 @@ open class SceneTree: MainLoop {
     /// Searches for the ``MultiplayerAPI`` configured for the given path, if one does not exist it searches the parent paths until one is found. If the path is empty, or none is found, the default one is returned. See ``setMultiplayer(_:rootPath:)``.
     public final func getMultiplayer (forPath: NodePath = NodePath(""))-> MultiplayerAPI? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SceneTree.method_get_multiplayer, UnsafeMutableRawPointer (mutating: handle), &_result, &forPath.content)
@@ -1380,7 +1380,7 @@ open class SceneTree: MainLoop {
     
     @inline(__always)
     fileprivate final func set_multiplayer_poll_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

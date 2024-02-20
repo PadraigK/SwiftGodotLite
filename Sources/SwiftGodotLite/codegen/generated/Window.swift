@@ -602,7 +602,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_title (_ title: String) {
-        #if true
+        #if false
         
         let gstr_title = GString (title)
         
@@ -670,7 +670,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_initial_position (_ initialPosition: Window.WindowInitialPosition) {
-        #if true
+        #if false
         
         var copy_initial_position = Int64 (initialPosition.rawValue)
         
@@ -720,7 +720,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_current_screen (_ index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -770,7 +770,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_position (_ position: Vector2i) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -836,7 +836,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -938,7 +938,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_max_size (_ maxSize: Vector2i) {
-        #if true
+        #if false
         
         var copy_max_size = maxSize
         
@@ -988,7 +988,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_min_size (_ minSize: Vector2i) {
-        #if true
+        #if false
         
         var copy_min_size = minSize
         
@@ -1038,7 +1038,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_mode (_ mode: Window.Mode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1089,7 +1089,7 @@ open class Window: Viewport {
     @inline(__always)
     /// Sets a specified window flag.
     fileprivate final func set_flag (_ flag: Window.Flags, _ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         var copy_enabled = enabled
@@ -1128,7 +1128,7 @@ open class Window: Viewport {
     /// Returns `true` if the `flag` is set.
     fileprivate final func get_flag (_ flag: Window.Flags)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         
@@ -1211,7 +1211,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_visible (_ visible: Bool) {
-        #if true
+        #if false
         
         var copy_visible = visible
         
@@ -1293,7 +1293,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_transient (_ transient: Bool) {
-        #if true
+        #if false
         
         var copy_transient = transient
         
@@ -1343,7 +1343,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_exclusive (_ exclusive: Bool) {
-        #if true
+        #if false
         
         var copy_exclusive = exclusive
         
@@ -1396,7 +1396,7 @@ open class Window: Viewport {
     /// > Note: Make sure to keep a reference to the node, otherwise it will be orphaned. You also need to manually call ``Node/queueFree()`` to free the window if it's not parented.
     /// 
     public final func setUnparentWhenInvisible (unparent: Bool) {
-        #if true
+        #if false
         
         var copy_unparent = unparent
         
@@ -1480,7 +1480,7 @@ open class Window: Viewport {
     
     /// If `active` is `true`, enables system's native IME (Input Method Editor).
     public final func setImeActive (_ active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         
@@ -1512,7 +1512,7 @@ open class Window: Viewport {
     
     /// Moves IME to the given position.
     public final func setImePosition (_ position: Vector2i) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -1583,7 +1583,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_content_scale_size (_ size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -1633,7 +1633,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_content_scale_mode (_ mode: Window.ContentScaleMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1683,7 +1683,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_content_scale_aspect (_ aspect: Window.ContentScaleAspect) {
-        #if true
+        #if false
         
         var copy_aspect = Int64 (aspect.rawValue)
         
@@ -1733,7 +1733,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_content_scale_stretch (_ stretch: Window.ContentScaleStretch) {
-        #if true
+        #if false
         
         var copy_stretch = Int64 (stretch.rawValue)
         
@@ -1783,7 +1783,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_keep_title_visible (_ titleVisible: Bool) {
-        #if true
+        #if false
         
         var copy_title_visible = titleVisible
         
@@ -1833,7 +1833,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_content_scale_factor (_ factor: Double) {
-        #if true
+        #if false
         
         var copy_factor = factor
         
@@ -1883,7 +1883,7 @@ open class Window: Viewport {
     
     /// Enables font oversampling. This makes fonts look better when they are scaled up.
     public final func setUseFontOversampling (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1933,7 +1933,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_mouse_passthrough_polygon (_ polygon: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_set_mouse_passthrough_polygon, UnsafeMutableRawPointer (mutating: handle), nil, &polygon.content)
@@ -1981,7 +1981,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_wrap_controls (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2047,7 +2047,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_theme (_ theme: Theme?) {
-        #if true
+        #if false
         
         var copy_theme_handle = theme?.handle
         
@@ -2096,7 +2096,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_theme_type_variation (_ themeType: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_set_theme_type_variation, UnsafeMutableRawPointer (mutating: handle), nil, &themeType.content)
@@ -2179,7 +2179,7 @@ open class Window: Viewport {
     /// See also ``getThemeIcon(name:themeType:)``.
     /// 
     public final func addThemeIconOverride (name: StringName, texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -2216,7 +2216,7 @@ open class Window: Viewport {
     /// See also ``getThemeStylebox(name:themeType:)`` and ``Control/addThemeStyleboxOverride(name:stylebox:)`` for more details.
     /// 
     public final func addThemeStyleboxOverride (name: StringName, stylebox: StyleBox?) {
-        #if true
+        #if false
         
         var copy_stylebox_handle = stylebox?.handle
         
@@ -2253,7 +2253,7 @@ open class Window: Viewport {
     /// See also ``getThemeFont(name:themeType:)``.
     /// 
     public final func addThemeFontOverride (name: StringName, font: Font?) {
-        #if true
+        #if false
         
         var copy_font_handle = font?.handle
         
@@ -2290,7 +2290,7 @@ open class Window: Viewport {
     /// See also ``getThemeFontSize(name:themeType:)``.
     /// 
     public final func addThemeFontSizeOverride (name: StringName, fontSize: Int32) {
-        #if true
+        #if false
         
         var copy_font_size: Int = Int (fontSize)
         
@@ -2328,7 +2328,7 @@ open class Window: Viewport {
     /// See also ``getThemeColor(name:themeType:)`` and ``Control/addThemeColorOverride(name:color:)`` for more details.
     /// 
     public final func addThemeColorOverride (name: StringName, color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -2366,7 +2366,7 @@ open class Window: Viewport {
     /// See also ``getThemeConstant(name:themeType:)``.
     /// 
     public final func addThemeConstantOverride (name: StringName, constant: Int32) {
-        #if true
+        #if false
         
         var copy_constant: Int = Int (constant)
         
@@ -2401,7 +2401,7 @@ open class Window: Viewport {
     
     /// Removes a local override for a theme icon with the specified `name` previously added by ``addThemeIconOverride(name:texture:)`` or via the Inspector dock.
     public final func removeThemeIconOverride (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_remove_theme_icon_override, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -2431,7 +2431,7 @@ open class Window: Viewport {
     
     /// Removes a local override for a theme ``StyleBox`` with the specified `name` previously added by ``addThemeStyleboxOverride(name:stylebox:)`` or via the Inspector dock.
     public final func removeThemeStyleboxOverride (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_remove_theme_stylebox_override, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -2461,7 +2461,7 @@ open class Window: Viewport {
     
     /// Removes a local override for a theme ``Font`` with the specified `name` previously added by ``addThemeFontOverride(name:font:)`` or via the Inspector dock.
     public final func removeThemeFontOverride (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_remove_theme_font_override, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -2491,7 +2491,7 @@ open class Window: Viewport {
     
     /// Removes a local override for a theme font size with the specified `name` previously added by ``addThemeFontSizeOverride(name:fontSize:)`` or via the Inspector dock.
     public final func removeThemeFontSizeOverride (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_remove_theme_font_size_override, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -2521,7 +2521,7 @@ open class Window: Viewport {
     
     /// Removes a local override for a theme ``Color`` with the specified `name` previously added by ``addThemeColorOverride(name:color:)`` or via the Inspector dock.
     public final func removeThemeColorOverride (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_remove_theme_color_override, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -2551,7 +2551,7 @@ open class Window: Viewport {
     
     /// Removes a local override for a theme constant with the specified `name` previously added by ``addThemeConstantOverride(name:constant:)`` or via the Inspector dock.
     public final func removeThemeConstantOverride (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_remove_theme_constant_override, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -2585,7 +2585,7 @@ open class Window: Viewport {
     /// 
     public final func getThemeIcon (name: StringName, themeType: StringName = StringName (""))-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_get_theme_icon, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -2623,7 +2623,7 @@ open class Window: Viewport {
     /// 
     public final func getThemeStylebox (name: StringName, themeType: StringName = StringName (""))-> StyleBox? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_get_theme_stylebox, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -2661,7 +2661,7 @@ open class Window: Viewport {
     /// 
     public final func getThemeFont (name: StringName, themeType: StringName = StringName (""))-> Font? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_get_theme_font, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -2699,7 +2699,7 @@ open class Window: Viewport {
     /// 
     public final func getThemeFontSize (name: StringName, themeType: StringName = StringName (""))-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_get_theme_font_size, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -2737,7 +2737,7 @@ open class Window: Viewport {
     /// 
     public final func getThemeColor (name: StringName, themeType: StringName = StringName (""))-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_get_theme_color, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -2775,7 +2775,7 @@ open class Window: Viewport {
     /// 
     public final func getThemeConstant (name: StringName, themeType: StringName = StringName (""))-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_get_theme_constant, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -2813,7 +2813,7 @@ open class Window: Viewport {
     /// 
     public final func hasThemeIconOverride (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_has_theme_icon_override, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -2848,7 +2848,7 @@ open class Window: Viewport {
     /// 
     public final func hasThemeStyleboxOverride (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_has_theme_stylebox_override, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -2883,7 +2883,7 @@ open class Window: Viewport {
     /// 
     public final func hasThemeFontOverride (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_has_theme_font_override, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -2918,7 +2918,7 @@ open class Window: Viewport {
     /// 
     public final func hasThemeFontSizeOverride (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_has_theme_font_size_override, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -2953,7 +2953,7 @@ open class Window: Viewport {
     /// 
     public final func hasThemeColorOverride (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_has_theme_color_override, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -2988,7 +2988,7 @@ open class Window: Viewport {
     /// 
     public final func hasThemeConstantOverride (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_has_theme_constant_override, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -3023,7 +3023,7 @@ open class Window: Viewport {
     /// 
     public final func hasThemeIcon (name: StringName, themeType: StringName = StringName (""))-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_has_theme_icon, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -3061,7 +3061,7 @@ open class Window: Viewport {
     /// 
     public final func hasThemeStylebox (name: StringName, themeType: StringName = StringName (""))-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_has_theme_stylebox, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -3099,7 +3099,7 @@ open class Window: Viewport {
     /// 
     public final func hasThemeFont (name: StringName, themeType: StringName = StringName (""))-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_has_theme_font, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -3137,7 +3137,7 @@ open class Window: Viewport {
     /// 
     public final func hasThemeFontSize (name: StringName, themeType: StringName = StringName (""))-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_has_theme_font_size, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -3175,7 +3175,7 @@ open class Window: Viewport {
     /// 
     public final func hasThemeColor (name: StringName, themeType: StringName = StringName (""))-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_has_theme_color, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -3213,7 +3213,7 @@ open class Window: Viewport {
     /// 
     public final func hasThemeConstant (name: StringName, themeType: StringName = StringName (""))-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Window.method_has_theme_constant, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content, &themeType.content)
@@ -3310,7 +3310,7 @@ open class Window: Viewport {
     
     /// Sets layout direction and text writing direction. Right-to-left layouts are necessary for certain languages (e.g. Arabic and Hebrew).
     public final func setLayoutDirection (_ direction: Window.LayoutDirection) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -3378,7 +3378,7 @@ open class Window: Viewport {
     
     @inline(__always)
     fileprivate final func set_auto_translate (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3428,7 +3428,7 @@ open class Window: Viewport {
     
     /// Shows the ``Window`` and makes it transient (see ``transient``). If `rect` is provided, it will be set as the ``Window``'s size. Fails if called on the main window.
     public final func popup (rect: Rect2i = Rect2i (x: 0, y: 0, width: 0, height: 0)) {
-        #if true
+        #if false
         
         var copy_rect = rect
         
@@ -3460,7 +3460,7 @@ open class Window: Viewport {
     
     /// Popups the ``Window`` with a position shifted by parent ``Window``'s position. If the ``Window`` is embedded, has the same effect as ``popup(rect:)``.
     public final func popupOnParent (parentRect: Rect2i) {
-        #if true
+        #if false
         
         var copy_parent_rect = parentRect
         
@@ -3495,7 +3495,7 @@ open class Window: Viewport {
     /// > Note: Calling it with the default value of `minsize` is equivalent to calling it with ``size``.
     /// 
     public final func popupCentered (minsize: Vector2i = Vector2i (x: 0, y: 0)) {
-        #if true
+        #if false
         
         var copy_minsize = minsize
         
@@ -3530,7 +3530,7 @@ open class Window: Viewport {
     /// If ``Window`` is a native window, popups the ``Window`` centered inside the screen of its parent ``Window`` and sets its size as a `ratio` of the screen size.
     /// 
     public final func popupCenteredRatio (_ ratio: Double = 0.8) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -3565,7 +3565,7 @@ open class Window: Viewport {
     /// > Note: Calling it with the default value of `minsize` is equivalent to calling it with ``size``.
     /// 
     public final func popupCenteredClamped (minsize: Vector2i = Vector2i (x: 0, y: 0), fallbackRatio: Double = 0.75) {
-        #if true
+        #if false
         
         var copy_minsize = minsize
         var copy_fallback_ratio = fallbackRatio
@@ -3605,7 +3605,7 @@ open class Window: Viewport {
     /// See also ``setUnparentWhenInvisible(unparent:)`` and ``Node/getLastExclusiveWindow()``.
     /// 
     public final func popupExclusive (fromNode: Node?, rect: Rect2i = Rect2i (x: 0, y: 0, width: 0, height: 0)) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_from_node_handle = fromNode?.handle
@@ -3644,7 +3644,7 @@ open class Window: Viewport {
     /// See also ``setUnparentWhenInvisible(unparent:)`` and ``Node/getLastExclusiveWindow()``.
     /// 
     public final func popupExclusiveOnParent (fromNode: Node?, parentRect: Rect2i) {
-        #if true
+        #if false
         
         var copy_parent_rect = parentRect
         var copy_from_node_handle = fromNode?.handle
@@ -3683,7 +3683,7 @@ open class Window: Viewport {
     /// See also ``setUnparentWhenInvisible(unparent:)`` and ``Node/getLastExclusiveWindow()``.
     /// 
     public final func popupExclusiveCentered (fromNode: Node?, minsize: Vector2i = Vector2i (x: 0, y: 0)) {
-        #if true
+        #if false
         
         var copy_minsize = minsize
         var copy_from_node_handle = fromNode?.handle
@@ -3722,7 +3722,7 @@ open class Window: Viewport {
     /// See also ``setUnparentWhenInvisible(unparent:)`` and ``Node/getLastExclusiveWindow()``.
     /// 
     public final func popupExclusiveCenteredRatio (fromNode: Node?, ratio: Double = 0.8) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         var copy_from_node_handle = fromNode?.handle
@@ -3761,7 +3761,7 @@ open class Window: Viewport {
     /// See also ``setUnparentWhenInvisible(unparent:)`` and ``Node/getLastExclusiveWindow()``.
     /// 
     public final func popupExclusiveCenteredClamped (fromNode: Node?, minsize: Vector2i = Vector2i (x: 0, y: 0), fallbackRatio: Double = 0.75) {
-        #if true
+        #if false
         
         var copy_minsize = minsize
         var copy_fallback_ratio = fallbackRatio

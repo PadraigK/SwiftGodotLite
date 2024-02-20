@@ -169,7 +169,7 @@ open class Button: BaseButton {
     
     @inline(__always)
     fileprivate final func set_text (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -219,7 +219,7 @@ open class Button: BaseButton {
     
     @inline(__always)
     fileprivate final func set_text_overrun_behavior (_ overrunBehavior: TextServer.OverrunBehavior) {
-        #if true
+        #if false
         
         var copy_overrun_behavior = Int64 (overrunBehavior.rawValue)
         
@@ -269,7 +269,7 @@ open class Button: BaseButton {
     
     @inline(__always)
     fileprivate final func set_text_direction (_ direction: Control.TextDirection) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -319,7 +319,7 @@ open class Button: BaseButton {
     
     @inline(__always)
     fileprivate final func set_language (_ language: String) {
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -369,7 +369,7 @@ open class Button: BaseButton {
     
     @inline(__always)
     fileprivate final func set_button_icon (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -418,7 +418,7 @@ open class Button: BaseButton {
     
     @inline(__always)
     fileprivate final func set_flat (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -468,7 +468,7 @@ open class Button: BaseButton {
     
     @inline(__always)
     fileprivate final func set_clip_text (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -518,7 +518,7 @@ open class Button: BaseButton {
     
     @inline(__always)
     fileprivate final func set_text_alignment (_ alignment: HorizontalAlignment) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -568,7 +568,7 @@ open class Button: BaseButton {
     
     @inline(__always)
     fileprivate final func set_icon_alignment (_ iconAlignment: HorizontalAlignment) {
-        #if true
+        #if false
         
         var copy_icon_alignment = Int64 (iconAlignment.rawValue)
         
@@ -618,7 +618,7 @@ open class Button: BaseButton {
     
     @inline(__always)
     fileprivate final func set_vertical_icon_alignment (_ verticalIconAlignment: VerticalAlignment) {
-        #if true
+        #if false
         
         var copy_vertical_icon_alignment = Int64 (verticalIconAlignment.rawValue)
         
@@ -668,7 +668,7 @@ open class Button: BaseButton {
     
     @inline(__always)
     fileprivate final func set_expand_icon (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

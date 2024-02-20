@@ -127,7 +127,7 @@ open class XRServer: Object {
     
     @inline(__always)
     fileprivate static func set_world_scale (_ scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -177,7 +177,7 @@ open class XRServer: Object {
     
     @inline(__always)
     fileprivate static func set_world_origin (_ worldOrigin: Transform3D) {
-        #if true
+        #if false
         
         var copy_world_origin = worldOrigin
         
@@ -238,7 +238,7 @@ open class XRServer: Object {
     /// You should call this method after a few seconds have passed. For example, when the user requests a realignment of the display holding a designated button on a controller for a short period of time, or when implementing a teleport mechanism.
     /// 
     public static func centerOnHmd (rotationMode: XRServer.RotationMode, keepHeight: Bool) {
-        #if true
+        #if false
         
         var copy_rotation_mode = Int64 (rotationMode.rawValue)
         var copy_keep_height = keepHeight
@@ -293,7 +293,7 @@ open class XRServer: Object {
     
     /// Registers an ``XRInterface`` object.
     public static func addInterface (_ interface: XRInterface?) {
-        #if true
+        #if false
         
         var copy_interface_handle = interface?.handle
         
@@ -342,7 +342,7 @@ open class XRServer: Object {
     
     /// Removes this `interface`.
     public static func removeInterface (_ interface: XRInterface?) {
-        #if true
+        #if false
         
         var copy_interface_handle = interface?.handle
         
@@ -374,7 +374,7 @@ open class XRServer: Object {
     /// Returns the interface registered at the given `idx` index in the list of interfaces.
     public static func getInterface (idx: Int32)-> XRInterface? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -426,7 +426,7 @@ open class XRServer: Object {
     /// Finds an interface by its `name`. For example, if your project uses capabilities of an AR/VR platform, you can find the interface for that platform by name and initialize it.
     public static func findInterface (name: String)-> XRInterface? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -459,7 +459,7 @@ open class XRServer: Object {
     
     /// Registers a new ``XRPositionalTracker`` that tracks a spatial location in real space.
     public static func addTracker (_ tracker: XRPositionalTracker?) {
-        #if true
+        #if false
         
         var copy_tracker_handle = tracker?.handle
         
@@ -490,7 +490,7 @@ open class XRServer: Object {
     
     /// Removes this positional `tracker`.
     public static func removeTracker (_ tracker: XRPositionalTracker?) {
-        #if true
+        #if false
         
         var copy_tracker_handle = tracker?.handle
         
@@ -522,7 +522,7 @@ open class XRServer: Object {
     /// Returns a dictionary of trackers for `trackerTypes`.
     public static func getTrackers (trackerTypes: Int32)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_tracker_types: Int = Int (trackerTypes)
         
@@ -556,7 +556,7 @@ open class XRServer: Object {
     /// Returns the positional tracker with the given `trackerName`.
     public static func getTracker (trackerName: StringName)-> XRPositionalTracker? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRServer.method_get_tracker, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &trackerName.content)
@@ -605,7 +605,7 @@ open class XRServer: Object {
     
     @inline(__always)
     fileprivate static func set_primary_interface (_ interface: XRInterface?) {
-        #if true
+        #if false
         
         var copy_interface_handle = interface?.handle
         

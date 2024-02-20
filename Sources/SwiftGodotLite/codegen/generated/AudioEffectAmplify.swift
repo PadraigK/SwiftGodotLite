@@ -39,7 +39,7 @@ open class AudioEffectAmplify: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_volume_db (_ volume: Double) {
-        #if true
+        #if false
         
         var copy_volume = volume
         

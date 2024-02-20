@@ -78,7 +78,7 @@ open class CurveXYZTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_width (_ width: Int32) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         
@@ -110,7 +110,7 @@ open class CurveXYZTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_curve_x (_ curve: Curve?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         
@@ -159,7 +159,7 @@ open class CurveXYZTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_curve_y (_ curve: Curve?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         
@@ -208,7 +208,7 @@ open class CurveXYZTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_curve_z (_ curve: Curve?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         

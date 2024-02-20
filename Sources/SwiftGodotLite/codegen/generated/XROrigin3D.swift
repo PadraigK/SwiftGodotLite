@@ -61,7 +61,7 @@ open class XROrigin3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_world_scale (_ worldScale: Double) {
-        #if true
+        #if false
         
         var copy_world_scale = worldScale
         
@@ -111,7 +111,7 @@ open class XROrigin3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_current (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

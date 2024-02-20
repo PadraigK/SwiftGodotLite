@@ -332,7 +332,7 @@ open class Image: Resource {
     
     /// Converts the image's format. See ``Image/Format`` constants.
     public final func convert (format: Image.Format) {
-        #if true
+        #if false
         
         var copy_format = Int64 (format.rawValue)
         
@@ -383,7 +383,7 @@ open class Image: Resource {
     /// Returns the offset where the image's mipmap with index `mipmap` is stored in the ``data`` dictionary.
     public final func getMipmapOffset (mipmap: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_mipmap: Int = Int (mipmap)
         
@@ -416,7 +416,7 @@ open class Image: Resource {
     
     /// Resizes the image to the nearest power of 2 for the width and height. If `square` is `true` then set width and height to be the same. New pixels are calculated using the `interpolation` mode defined via ``Image/Interpolation`` constants.
     public final func resizeToPo2 (square: Bool = false, interpolation: Image.Interpolation = .bilinear) {
-        #if true
+        #if false
         
         var copy_square = square
         var copy_interpolation = Int64 (interpolation.rawValue)
@@ -453,7 +453,7 @@ open class Image: Resource {
     
     /// Resizes the image to the given `width` and `height`. New pixels are calculated using the `interpolation` mode defined via ``Image/Interpolation`` constants.
     public final func resize (width: Int32, height: Int32, interpolation: Image.Interpolation = .bilinear) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         var copy_height: Int = Int (height)
@@ -511,7 +511,7 @@ open class Image: Resource {
     
     /// Crops the image to the given `width` and `height`. If the specified size is larger than the current size, the extra area is filled with black pixels.
     public final func crop (width: Int32, height: Int32) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         var copy_height: Int = Int (height)
@@ -584,7 +584,7 @@ open class Image: Resource {
     /// 
     public final func generateMipmaps (renormalize: Bool = false)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_renormalize = renormalize
         
@@ -634,7 +634,7 @@ open class Image: Resource {
     /// Creates an empty image of given size and format. See ``Image/Format`` constants. If `useMipmaps` is `true`, then generate mipmaps for this image. See the ``generateMipmaps(renormalize:)``.
     public static func create (width: Int32, height: Int32, useMipmaps: Bool, format: Image.Format)-> Image? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         var copy_height: Int = Int (height)
@@ -683,7 +683,7 @@ open class Image: Resource {
     /// Creates a new image of given size and format. See ``Image/Format`` constants. Fills the image with the given raw data. If `useMipmaps` is `true` then loads mipmaps for this image from `data`. See ``generateMipmaps(renormalize:)``.
     public static func createFromData (width: Int32, height: Int32, useMipmaps: Bool, format: Image.Format, data: PackedByteArray)-> Image? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         var copy_height: Int = Int (height)
@@ -734,7 +734,7 @@ open class Image: Resource {
     
     /// Overwrites data of an existing ``Image``. Non-static equivalent of ``createFromData(width:height:useMipmaps:format:data:)``.
     public final func setData (width: Int32, height: Int32, useMipmaps: Bool, format: Image.Format, data: PackedByteArray) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         var copy_height: Int = Int (height)
@@ -808,7 +808,7 @@ open class Image: Resource {
     /// 
     public final func load (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -842,7 +842,7 @@ open class Image: Resource {
     /// Creates a new ``Image`` and loads data from the specified file.
     public static func loadFromFile (path: String)-> Image? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -876,7 +876,7 @@ open class Image: Resource {
     /// Saves the image as a PNG file to the file at `path`.
     public final func savePng (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -931,7 +931,7 @@ open class Image: Resource {
     /// 
     public final func saveJpg (path: String, quality: Double = 0.75)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_quality = quality
@@ -973,7 +973,7 @@ open class Image: Resource {
     /// 
     public final func saveJpgToBuffer (quality: Double = 0.75)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         var copy_quality = quality
         
@@ -1010,7 +1010,7 @@ open class Image: Resource {
     /// 
     public final func saveExr (path: String, grayscale: Bool = false)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_grayscale = grayscale
@@ -1052,7 +1052,7 @@ open class Image: Resource {
     /// 
     public final func saveExrToBuffer (grayscale: Bool = false)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         var copy_grayscale = grayscale
         
@@ -1089,7 +1089,7 @@ open class Image: Resource {
     /// 
     public final func saveWebp (path: String, lossy: Bool = false, quality: Double = 0.75)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_lossy = lossy
@@ -1136,7 +1136,7 @@ open class Image: Resource {
     /// 
     public final func saveWebpToBuffer (lossy: Bool = false, quality: Double = 0.75)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         var copy_lossy = lossy
         var copy_quality = quality
@@ -1211,7 +1211,7 @@ open class Image: Resource {
     /// 
     public final func detectUsedChannels (source: Image.CompressSource = .generic)-> Image.UsedChannels {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_source = Int64 (source.rawValue)
         
@@ -1250,7 +1250,7 @@ open class Image: Resource {
     /// 
     public final func compress (mode: Image.CompressMode, source: Image.CompressSource = .generic, astcFormat: Image.ASTCFormat = .astcFormat4x4)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         var copy_source = Int64 (source.rawValue)
@@ -1299,7 +1299,7 @@ open class Image: Resource {
     /// 
     public final func compressFromChannels (mode: Image.CompressMode, channels: Image.UsedChannels, astcFormat: Image.ASTCFormat = .astcFormat4x4)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         var copy_channels = Int64 (channels.rawValue)
@@ -1381,7 +1381,7 @@ open class Image: Resource {
     
     /// Rotates the image in the specified `direction` by `90` degrees. The width and height of the image must be greater than `1`. If the width and height are not equal, the image will be resized.
     public final func rotate90 (direction: ClockDirection) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -1511,7 +1511,7 @@ open class Image: Resource {
     
     /// Converts a bump map to a normal map. A bump map provides a height offset per-pixel, while a normal map provides a normal direction per pixel.
     public final func bumpMapToNormalMap (bumpScale: Double = 1.0) {
-        #if true
+        #if false
         
         var copy_bump_scale = bumpScale
         
@@ -1547,7 +1547,7 @@ open class Image: Resource {
     /// 
     public final func computeImageMetrics (comparedImage: Image?, useLuma: Bool)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_use_luma = useLuma
         var copy_compared_image_handle = comparedImage?.handle
@@ -1584,7 +1584,7 @@ open class Image: Resource {
     
     /// Copies `srcRect` from `src` image to this image at coordinates `dst`, clipped accordingly to both image bounds. This image and `src` image **must** have the same format. `srcRect` with non-positive size is treated as empty.
     public final func blitRect (src: Image, srcRect: Rect2i, dst: Vector2i) {
-        #if true
+        #if false
         
         var copy_src_rect = srcRect
         var copy_dst = dst
@@ -1625,7 +1625,7 @@ open class Image: Resource {
     
     /// Blits `srcRect` area from `src` image to this image at the coordinates given by `dst`, clipped accordingly to both image bounds. `src` pixel is copied onto `dst` if the corresponding `mask` pixel's alpha value is not 0. This image and `src` image **must** have the same format. `src` image and `mask` image **must** have the same size (width and height) but they can have different formats. `srcRect` with non-positive size is treated as empty.
     public final func blitRectMask (src: Image?, mask: Image?, srcRect: Rect2i, dst: Vector2i) {
-        #if true
+        #if false
         
         var copy_src_rect = srcRect
         var copy_dst = dst
@@ -1670,7 +1670,7 @@ open class Image: Resource {
     
     /// Alpha-blends `srcRect` from `src` image to this image at coordinates `dst`, clipped accordingly to both image bounds. This image and `src` image **must** have the same format. `srcRect` with non-positive size is treated as empty.
     public final func blendRect (src: Image?, srcRect: Rect2i, dst: Vector2i) {
-        #if true
+        #if false
         
         var copy_src_rect = srcRect
         var copy_dst = dst
@@ -1711,7 +1711,7 @@ open class Image: Resource {
     
     /// Alpha-blends `srcRect` from `src` image to this image using `mask` image at coordinates `dst`, clipped accordingly to both image bounds. Alpha channels are required for both `src` and `mask`. `dst` pixels and `src` pixels will blend if the corresponding mask pixel's alpha value is not 0. This image and `src` image **must** have the same format. `src` image and `mask` image **must** have the same size (width and height) but they can have different formats. `srcRect` with non-positive size is treated as empty.
     public final func blendRectMask (src: Image?, mask: Image?, srcRect: Rect2i, dst: Vector2i) {
-        #if true
+        #if false
         
         var copy_src_rect = srcRect
         var copy_dst = dst
@@ -1756,7 +1756,7 @@ open class Image: Resource {
     
     /// Fills the image with `color`.
     public final func fill (color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -1788,7 +1788,7 @@ open class Image: Resource {
     
     /// Fills `rect` with `color`.
     public final func fillRect (_ rect: Rect2i, color: Color) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_color = color
@@ -1844,7 +1844,7 @@ open class Image: Resource {
     /// Returns a new ``Image`` that is a copy of this ``Image``'s area specified with `region`.
     public final func getRegion (_ region: Rect2i)-> Image? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_region = region
         
@@ -1877,7 +1877,7 @@ open class Image: Resource {
     
     /// Copies `src` image to this image.
     public final func copyFrom (src: Image?) {
-        #if true
+        #if false
         
         var copy_src_handle = src?.handle
         
@@ -1912,7 +1912,7 @@ open class Image: Resource {
     /// 
     public final func getPixelv (point: Vector2i)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_point = point
         
@@ -1949,7 +1949,7 @@ open class Image: Resource {
     /// 
     public final func getPixel (x: Int32, y: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_x: Int = Int (x)
         var copy_y: Int = Int (y)
@@ -1992,7 +1992,7 @@ open class Image: Resource {
     /// This is the same as ``setPixel(x:y:color:)``, but with a ``Vector2i`` argument instead of two integer arguments.
     /// 
     public final func setPixelv (point: Vector2i, color: Color) {
-        #if true
+        #if false
         
         var copy_point = point
         var copy_color = color
@@ -2034,7 +2034,7 @@ open class Image: Resource {
     /// This is the same as ``setPixelv(point:color:)``, but with a two integer arguments instead of a ``Vector2i`` argument.
     /// 
     public final func setPixel (x: Int32, y: Int32, color: Color) {
-        #if true
+        #if false
         
         var copy_x: Int = Int (x)
         var copy_y: Int = Int (y)
@@ -2076,7 +2076,7 @@ open class Image: Resource {
     
     /// 
     public final func adjustBcs (brightness: Double, contrast: Double, saturation: Double) {
-        #if true
+        #if false
         
         var copy_brightness = brightness
         var copy_contrast = contrast
@@ -2119,7 +2119,7 @@ open class Image: Resource {
     /// Loads an image from the binary contents of a PNG file.
     public final func loadPngFromBuffer (_ buffer: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Image.method_load_png_from_buffer, UnsafeMutableRawPointer (mutating: handle), &_result, &buffer.content)
@@ -2151,7 +2151,7 @@ open class Image: Resource {
     /// Loads an image from the binary contents of a JPEG file.
     public final func loadJpgFromBuffer (_ buffer: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Image.method_load_jpg_from_buffer, UnsafeMutableRawPointer (mutating: handle), &_result, &buffer.content)
@@ -2183,7 +2183,7 @@ open class Image: Resource {
     /// Loads an image from the binary contents of a WebP file.
     public final func loadWebpFromBuffer (_ buffer: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Image.method_load_webp_from_buffer, UnsafeMutableRawPointer (mutating: handle), &_result, &buffer.content)
@@ -2218,7 +2218,7 @@ open class Image: Resource {
     /// 
     public final func loadTgaFromBuffer (_ buffer: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Image.method_load_tga_from_buffer, UnsafeMutableRawPointer (mutating: handle), &_result, &buffer.content)
@@ -2255,7 +2255,7 @@ open class Image: Resource {
     /// 
     public final func loadBmpFromBuffer (_ buffer: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Image.method_load_bmp_from_buffer, UnsafeMutableRawPointer (mutating: handle), &_result, &buffer.content)
@@ -2292,7 +2292,7 @@ open class Image: Resource {
     /// 
     public final func loadKtxFromBuffer (_ buffer: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Image.method_load_ktx_from_buffer, UnsafeMutableRawPointer (mutating: handle), &_result, &buffer.content)
@@ -2329,7 +2329,7 @@ open class Image: Resource {
     /// 
     public final func loadSvgFromBuffer (_ buffer: PackedByteArray, scale: Double = 1.0)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -2369,7 +2369,7 @@ open class Image: Resource {
     /// 
     public final func loadSvgFromString (svgStr: String, scale: Double = 1.0)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_svg_str = GString (svgStr)
         var copy_scale = scale

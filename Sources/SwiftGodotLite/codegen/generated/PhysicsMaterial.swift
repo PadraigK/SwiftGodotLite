@@ -75,7 +75,7 @@ open class PhysicsMaterial: Resource {
     
     @inline(__always)
     fileprivate final func set_friction (_ friction: Double) {
-        #if true
+        #if false
         
         var copy_friction = friction
         
@@ -125,7 +125,7 @@ open class PhysicsMaterial: Resource {
     
     @inline(__always)
     fileprivate final func set_rough (_ rough: Bool) {
-        #if true
+        #if false
         
         var copy_rough = rough
         
@@ -175,7 +175,7 @@ open class PhysicsMaterial: Resource {
     
     @inline(__always)
     fileprivate final func set_bounce (_ bounce: Double) {
-        #if true
+        #if false
         
         var copy_bounce = bounce
         
@@ -225,7 +225,7 @@ open class PhysicsMaterial: Resource {
     
     @inline(__always)
     fileprivate final func set_absorbent (_ absorbent: Bool) {
-        #if true
+        #if false
         
         var copy_absorbent = absorbent
         

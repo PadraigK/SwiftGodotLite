@@ -98,7 +98,7 @@ open class EditorSpinSlider: Range {
     
     @inline(__always)
     fileprivate final func set_label (_ label: String) {
-        #if true
+        #if false
         
         let gstr_label = GString (label)
         
@@ -148,7 +148,7 @@ open class EditorSpinSlider: Range {
     
     @inline(__always)
     fileprivate final func set_suffix (_ suffix: String) {
-        #if true
+        #if false
         
         let gstr_suffix = GString (suffix)
         
@@ -198,7 +198,7 @@ open class EditorSpinSlider: Range {
     
     @inline(__always)
     fileprivate final func set_read_only (_ readOnly: Bool) {
-        #if true
+        #if false
         
         var copy_read_only = readOnly
         
@@ -248,7 +248,7 @@ open class EditorSpinSlider: Range {
     
     @inline(__always)
     fileprivate final func set_flat (_ flat: Bool) {
-        #if true
+        #if false
         
         var copy_flat = flat
         
@@ -298,7 +298,7 @@ open class EditorSpinSlider: Range {
     
     @inline(__always)
     fileprivate final func set_hide_slider (_ hideSlider: Bool) {
-        #if true
+        #if false
         
         var copy_hide_slider = hideSlider
         

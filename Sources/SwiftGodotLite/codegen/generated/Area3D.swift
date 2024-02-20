@@ -330,7 +330,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_gravity_space_override_mode (_ spaceOverrideMode: Area3D.SpaceOverride) {
-        #if true
+        #if false
         
         var copy_space_override_mode = Int64 (spaceOverrideMode.rawValue)
         
@@ -380,7 +380,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_gravity_is_point (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -430,7 +430,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_gravity_point_unit_distance (_ distanceScale: Double) {
-        #if true
+        #if false
         
         var copy_distance_scale = distanceScale
         
@@ -480,7 +480,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_gravity_point_center (_ center: Vector3) {
-        #if true
+        #if false
         
         var copy_center = center
         
@@ -530,7 +530,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_gravity_direction (_ direction: Vector3) {
-        #if true
+        #if false
         
         var copy_direction = direction
         
@@ -580,7 +580,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_gravity (_ gravity: Double) {
-        #if true
+        #if false
         
         var copy_gravity = gravity
         
@@ -630,7 +630,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_linear_damp_space_override_mode (_ spaceOverrideMode: Area3D.SpaceOverride) {
-        #if true
+        #if false
         
         var copy_space_override_mode = Int64 (spaceOverrideMode.rawValue)
         
@@ -680,7 +680,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_angular_damp_space_override_mode (_ spaceOverrideMode: Area3D.SpaceOverride) {
-        #if true
+        #if false
         
         var copy_space_override_mode = Int64 (spaceOverrideMode.rawValue)
         
@@ -730,7 +730,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_angular_damp (_ angularDamp: Double) {
-        #if true
+        #if false
         
         var copy_angular_damp = angularDamp
         
@@ -780,7 +780,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_linear_damp (_ linearDamp: Double) {
-        #if true
+        #if false
         
         var copy_linear_damp = linearDamp
         
@@ -830,7 +830,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_priority (_ priority: Int32) {
-        #if true
+        #if false
         
         var copy_priority: Int = Int (priority)
         
@@ -880,7 +880,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_wind_force_magnitude (_ windForceMagnitude: Double) {
-        #if true
+        #if false
         
         var copy_wind_force_magnitude = windForceMagnitude
         
@@ -930,7 +930,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_wind_attenuation_factor (_ windAttenuationFactor: Double) {
-        #if true
+        #if false
         
         var copy_wind_attenuation_factor = windAttenuationFactor
         
@@ -980,7 +980,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_wind_source_path (_ windSourcePath: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Area3D.method_set_wind_source_path, UnsafeMutableRawPointer (mutating: handle), nil, &windSourcePath.content)
@@ -1028,7 +1028,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_monitorable (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1078,7 +1078,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_monitoring (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1218,7 +1218,7 @@ open class Area3D: CollisionObject3D {
     /// 
     public final func overlapsBody (_ body: Node?)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_body_handle = body?.handle
         
@@ -1254,7 +1254,7 @@ open class Area3D: CollisionObject3D {
     /// 
     public final func overlapsArea (_ area: Node?)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_area_handle = area?.handle
         
@@ -1286,7 +1286,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_audio_bus_override (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1336,7 +1336,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_audio_bus_name (_ name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Area3D.method_set_audio_bus_name, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -1384,7 +1384,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_use_reverb_bus (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1434,7 +1434,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_reverb_bus_name (_ name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Area3D.method_set_reverb_bus_name, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -1482,7 +1482,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_reverb_amount (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -1532,7 +1532,7 @@ open class Area3D: CollisionObject3D {
     
     @inline(__always)
     fileprivate final func set_reverb_uniformity (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         

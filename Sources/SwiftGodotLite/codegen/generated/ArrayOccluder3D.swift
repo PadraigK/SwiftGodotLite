@@ -60,7 +60,7 @@ open class ArrayOccluder3D: Occluder3D {
     
     /// Sets ``indices`` and ``vertices``, while updating the final occluder only once after both values are set.
     public final func setArrays (vertices: PackedVector3Array, indices: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ArrayOccluder3D.method_set_arrays, UnsafeMutableRawPointer (mutating: handle), nil, &vertices.content, &indices.content)
@@ -93,7 +93,7 @@ open class ArrayOccluder3D: Occluder3D {
     
     @inline(__always)
     fileprivate final func set_vertices (_ vertices: PackedVector3Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ArrayOccluder3D.method_set_vertices, UnsafeMutableRawPointer (mutating: handle), nil, &vertices.content)
@@ -123,7 +123,7 @@ open class ArrayOccluder3D: Occluder3D {
     
     @inline(__always)
     fileprivate final func set_indices (_ indices: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ArrayOccluder3D.method_set_indices, UnsafeMutableRawPointer (mutating: handle), nil, &indices.content)

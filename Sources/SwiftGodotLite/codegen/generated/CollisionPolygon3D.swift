@@ -81,7 +81,7 @@ open class CollisionPolygon3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_depth (_ depth: Double) {
-        #if true
+        #if false
         
         var copy_depth = depth
         
@@ -131,7 +131,7 @@ open class CollisionPolygon3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_polygon (_ polygon: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CollisionPolygon3D.method_set_polygon, UnsafeMutableRawPointer (mutating: handle), nil, &polygon.content)
@@ -179,7 +179,7 @@ open class CollisionPolygon3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_disabled (_ disabled: Bool) {
-        #if true
+        #if false
         
         var copy_disabled = disabled
         
@@ -229,7 +229,7 @@ open class CollisionPolygon3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_margin (_ margin: Double) {
-        #if true
+        #if false
         
         var copy_margin = margin
         

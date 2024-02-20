@@ -39,7 +39,7 @@ open class Texture2DRD: Texture2D {
     
     @inline(__always)
     fileprivate final func set_texture_rd_rid (_ textureRdRid: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Texture2DRD.method_set_texture_rd_rid, UnsafeMutableRawPointer (mutating: handle), nil, &textureRdRid.content)

@@ -54,7 +54,7 @@ open class OpenXRInteractionProfile: Resource {
     
     @inline(__always)
     fileprivate final func set_interaction_profile_path (_ interactionProfilePath: String) {
-        #if true
+        #if false
         
         let gstr_interaction_profile_path = GString (interactionProfilePath)
         
@@ -123,7 +123,7 @@ open class OpenXRInteractionProfile: Resource {
     /// Retrieve the binding at this index.
     public final func getBinding (index: Int32)-> OpenXRIPBinding? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -156,7 +156,7 @@ open class OpenXRInteractionProfile: Resource {
     
     @inline(__always)
     fileprivate final func set_bindings (_ bindings: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (OpenXRInteractionProfile.method_set_bindings, UnsafeMutableRawPointer (mutating: handle), nil, &bindings.content)

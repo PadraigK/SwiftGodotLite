@@ -15,7 +15,7 @@ public class GD {
     /// 
     public static func sinh (x: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_x = x
         
@@ -51,7 +51,7 @@ public class GD {
     /// 
     public static func abs (x: Variant)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         withArgPointers(&x.content) { _args in
@@ -87,7 +87,7 @@ public class GD {
     /// 
     public static func sign (x: Variant)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         withArgPointers(&x.content) { _args in
@@ -119,7 +119,7 @@ public class GD {
     /// 
     public static func signf (x: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_x = x
         
@@ -153,7 +153,7 @@ public class GD {
     /// 
     public static func signi (x: Int64)-> Int64 {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_x = x
         
@@ -189,7 +189,7 @@ public class GD {
     /// 
     public static func snappedi (x: Double, step: Int64)-> Int64 {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_x = x
         var copy_step = step
@@ -227,7 +227,7 @@ public class GD {
     /// Returns `true` if `x` is a NaN ("Not a Number" or invalid) value.
     public static func isNan (x: Double)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_x = x
         
@@ -260,7 +260,7 @@ public class GD {
     /// Returns `true` if `x` is either positive infinity or negative infinity.
     public static func isInf (x: Double)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_x = x
         
@@ -298,7 +298,7 @@ public class GD {
     /// 
     public static func isEqualApprox (a: Double, b: Double)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_a = a
         var copy_b = b
@@ -339,7 +339,7 @@ public class GD {
     /// 
     public static func isZeroApprox (x: Double)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_x = x
         
@@ -372,7 +372,7 @@ public class GD {
     /// Returns whether `x` is a finite value, i.e. it is not ``@GDScript.NAN``, positive infinity, or negative infinity.
     public static func isFinite (x: Double)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_x = x
         
@@ -410,7 +410,7 @@ public class GD {
     /// 
     public static func ease (x: Double, curve: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_x = x
         var copy_curve = curve
@@ -449,7 +449,7 @@ public class GD {
     /// 
     public static func stepDecimals (x: Double)-> Int64 {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_x = x
         
@@ -482,7 +482,7 @@ public class GD {
     /// Cubic interpolates between two values by the factor defined in `weight` with `pre` and `post` values.
     public static func cubicInterpolate (from: Double, to: Double, pre: Double, post: Double, weight: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -535,7 +535,7 @@ public class GD {
     /// Cubic interpolates between two rotation values with shortest path by the factor defined in `weight` with `pre` and `post` values. See also ``lerpAngle()``.
     public static func cubicInterpolateAngle (from: Double, to: Double, pre: Double, post: Double, weight: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -591,7 +591,7 @@ public class GD {
     /// 
     public static func cubicInterpolateInTime (from: Double, to: Double, pre: Double, post: Double, weight: Double, toT: Double, preT: Double, postT: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -662,7 +662,7 @@ public class GD {
     /// 
     public static func cubicInterpolateAngleInTime (from: Double, to: Double, pre: Double, post: Double, weight: Double, toT: Double, preT: Double, postT: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -730,7 +730,7 @@ public class GD {
     /// Returns the point at the given `t` on a one-dimensional [url=https://en.wikipedia.org/wiki/B%C3%A9zier_curve]Bézier curve[/url] defined by the given `control1`, `control2`, and `end` points.
     public static func bezierInterpolate (start: Double, control1: Double, control2: Double, end: Double, t: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_start = start
         var copy_control_1 = control1
@@ -783,7 +783,7 @@ public class GD {
     /// Returns the derivative at the given `t` on a one-dimensional [url=https://en.wikipedia.org/wiki/B%C3%A9zier_curve]Bézier curve[/url] defined by the given `control1`, `control2`, and `end` points.
     public static func bezierDerivative (start: Double, control1: Double, control2: Double, end: Double, t: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_start = start
         var copy_control_1 = control1
@@ -836,7 +836,7 @@ public class GD {
     /// Returns the difference between the two angles, in the range of `[-PI, +PI]`. When `from` and `to` are opposite, returns `-PI` if `from` is smaller than `to`, or `PI` otherwise.
     public static func angleDifference (from: Double, to: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -879,7 +879,7 @@ public class GD {
     /// 
     public static func lerpAngle (from: Double, to: Double, weight: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -925,7 +925,7 @@ public class GD {
     /// 
     public static func remap (value: Double, istart: Double, istop: Double, ostart: Double, ostop: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_value = value
         var copy_istart = istart
@@ -987,7 +987,7 @@ public class GD {
     /// 
     public static func smoothstep (from: Double, to: Double, x: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -1033,7 +1033,7 @@ public class GD {
     /// 
     public static func moveToward (from: Double, to: Double, delta: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -1081,7 +1081,7 @@ public class GD {
     /// 
     public static func rotateToward (from: Double, to: Double, delta: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -1127,7 +1127,7 @@ public class GD {
     /// 
     public static func linearToDb (lin: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_lin = lin
         
@@ -1160,7 +1160,7 @@ public class GD {
     /// Converts from decibels to linear energy (audio).
     public static func dbToLinear (db: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_db = db
         
@@ -1196,7 +1196,7 @@ public class GD {
     /// 
     public static func wrap (value: Variant, min: Variant, max: Variant)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         withArgPointers(&value.content, &min.content, &max.content) { _args in
@@ -1234,7 +1234,7 @@ public class GD {
     /// 
     public static func wrapi (value: Int64, min: Int64, max: Int64)-> Int64 {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_value = value
         var copy_min = min
@@ -1282,7 +1282,7 @@ public class GD {
     /// 
     public static func wrapf (value: Double, min: Double, max: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_value = value
         var copy_min = min
@@ -1372,7 +1372,7 @@ public class GD {
     /// 
     public static func maxi (a: Int64, b: Int64)-> Int64 {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_a = a
         var copy_b = b
@@ -1411,7 +1411,7 @@ public class GD {
     /// 
     public static func maxf (a: Double, b: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_a = a
         var copy_b = b
@@ -1496,7 +1496,7 @@ public class GD {
     /// 
     public static func mini (a: Int64, b: Int64)-> Int64 {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_a = a
         var copy_b = b
@@ -1535,7 +1535,7 @@ public class GD {
     /// 
     public static func minf (a: Double, b: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_a = a
         var copy_b = b
@@ -1576,7 +1576,7 @@ public class GD {
     /// 
     public static func clamp (value: Variant, min: Variant, max: Variant)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         withArgPointers(&value.content, &min.content, &max.content) { _args in
@@ -1614,7 +1614,7 @@ public class GD {
     /// 
     public static func clampi (value: Int64, min: Int64, max: Int64)-> Int64 {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_value = value
         var copy_min = min
@@ -1658,7 +1658,7 @@ public class GD {
     /// 
     public static func clampf (value: Double, min: Double, max: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_value = value
         var copy_min = min
@@ -1704,7 +1704,7 @@ public class GD {
     /// 
     public static func nearestPo2 (value: Int64)-> Int64 {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -1738,7 +1738,7 @@ public class GD {
     /// 
     public static func pingpong (value: Double, length: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_value = value
         var copy_length = length
@@ -1825,7 +1825,7 @@ public class GD {
     /// 
     public static func randiRange (from: Int64, to: Int64)-> Int64 {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -1864,7 +1864,7 @@ public class GD {
     /// 
     public static func randfRange (from: Double, to: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -1902,7 +1902,7 @@ public class GD {
     /// Returns a normally-distributed pseudo-random floating point value using Box-Muller transform with the specified `mean` and a standard `deviation`. This is also called Gaussian distribution.
     public static func randfn (mean: Double, deviation: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_mean = mean
         var copy_deviation = deviation
@@ -1940,7 +1940,7 @@ public class GD {
     /// Sets the seed for the random number generator to `base`. Setting the seed manually can ensure consistent, repeatable results for most random functions.
     /// 
     public static func seed (base: Int64) {
-        #if true
+        #if false
         
         var copy_base = base
         
@@ -1975,7 +1975,7 @@ public class GD {
     /// 
     public static func randFromSeed (_ seed: Int64)-> PackedInt64Array {
         let _result: PackedInt64Array = PackedInt64Array ()
-        #if true
+        #if false
         
         var copy_seed = seed
         
@@ -2011,7 +2011,7 @@ public class GD {
     /// 
     public static func weakref (obj: Variant)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         withArgPointers(&obj.content) { _args in
@@ -2045,7 +2045,7 @@ public class GD {
     /// 
     public static func typeof (variable: Variant)-> Int64 {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         withArgPointers(&variable.content) { _args in
@@ -2081,7 +2081,7 @@ public class GD {
     /// 
     public static func typeConvert (variant: Variant, type: Int64)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_type = type
         
@@ -2159,7 +2159,7 @@ public class GD {
     /// 
     public static func errorString (error: Int64)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_error = error
         
@@ -2195,7 +2195,7 @@ public class GD {
     /// 
     public static func typeString (type: Int64)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_type = type
         
@@ -2608,7 +2608,7 @@ public class GD {
     /// 
     public static func varToStr (variable: Variant)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         
         withArgPointers(&variable.content) { _args in
@@ -2640,7 +2640,7 @@ public class GD {
     /// 
     public static func strToVar (string: String)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         let gstr_string = GString (string)
         
@@ -2676,7 +2676,7 @@ public class GD {
     /// 
     public static func varToBytes (variable: Variant)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         
         withArgPointers(&variable.content) { _args in
@@ -2710,7 +2710,7 @@ public class GD {
     /// 
     public static func bytesToVar (bytes: PackedByteArray)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         withArgPointers(&bytes.content) { _args in
@@ -2741,7 +2741,7 @@ public class GD {
     /// Encodes a ``Variant`` value to a byte array. Encoding objects is allowed (and can potentially include executable code). Deserialization can be done with ``bytesToVarWithObjects()``.
     public static func varToBytesWithObjects (variable: Variant)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         
         withArgPointers(&variable.content) { _args in
@@ -2775,7 +2775,7 @@ public class GD {
     /// 
     public static func bytesToVarWithObjects (bytes: PackedByteArray)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         withArgPointers(&bytes.content) { _args in
@@ -2807,7 +2807,7 @@ public class GD {
     /// 
     public static func hash (variable: Variant)-> Int64 {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         withArgPointers(&variable.content) { _args in
@@ -2839,7 +2839,7 @@ public class GD {
     /// 
     public static func instanceFromId (instanceId: Int64)-> Object? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_instance_id = instanceId
         
@@ -2872,7 +2872,7 @@ public class GD {
     /// Returns `true` if the Object that corresponds to `id` is a valid object (e.g. has not been deleted from memory). All Objects have a unique instance ID.
     public static func isInstanceIdValid (id: Int64)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -2905,7 +2905,7 @@ public class GD {
     /// Returns `true` if `instance` is a valid Object (e.g. has not been deleted from memory).
     public static func isInstanceValid (instance: Variant)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         withArgPointers(&instance.content) { _args in
@@ -2951,7 +2951,7 @@ public class GD {
     /// Creates a RID from a `base`. This is used mainly from native extensions to build servers.
     public static func ridFromInt64 (base: Int64)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_base = base
         
@@ -2989,7 +2989,7 @@ public class GD {
     /// 
     public static func isSame (a: Variant, b: Variant)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         withArgPointers(&a.content, &b.content) { _args in

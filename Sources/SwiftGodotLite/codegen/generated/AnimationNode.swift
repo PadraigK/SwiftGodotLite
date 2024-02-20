@@ -114,7 +114,7 @@ open class AnimationNode: Resource {
     /// Adds an input to the animation node. This is only useful for animation nodes created for use in an ``AnimationNodeBlendTree``. If the addition fails, returns `false`.
     public final func addInput (name: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -147,7 +147,7 @@ open class AnimationNode: Resource {
     
     /// Removes an input, call this only when inactive.
     public final func removeInput (index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -180,7 +180,7 @@ open class AnimationNode: Resource {
     /// Sets the name of the input at the given `input` index. If the setting fails, returns `false`.
     public final func setInputName (input: Int32, name: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_input: Int = Int (input)
         let gstr_name = GString (name)
@@ -219,7 +219,7 @@ open class AnimationNode: Resource {
     /// Gets the name of an input by index.
     public final func getInputName (input: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_input: Int = Int (input)
         
@@ -271,7 +271,7 @@ open class AnimationNode: Resource {
     /// Returns the input index which corresponds to `name`. If not found, returns `-1`.
     public final func findInput (name: String)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -304,7 +304,7 @@ open class AnimationNode: Resource {
     
     /// Adds or removes a path for the filter.
     public final func setFilterPath (_ path: NodePath, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -340,7 +340,7 @@ open class AnimationNode: Resource {
     /// Returns whether the given path is filtered.
     public final func isPathFiltered (path: NodePath)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNode.method_is_path_filtered, UnsafeMutableRawPointer (mutating: handle), &_result, &path.content)
@@ -371,7 +371,7 @@ open class AnimationNode: Resource {
     
     @inline(__always)
     fileprivate final func set_filter_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -424,7 +424,7 @@ open class AnimationNode: Resource {
     /// A `loopedFlag` is used by internal processing immediately after the loop. See also ``Animation.LoopedFlag``.
     /// 
     public final func blendAnimation (_ animation: StringName, time: Double, delta: Double, seeked: Bool, isExternalSeeking: Bool, blend: Double, loopedFlag: Animation.LoopedFlag = .none) {
-        #if true
+        #if false
         
         var copy_time = time
         var copy_delta = delta
@@ -485,7 +485,7 @@ open class AnimationNode: Resource {
     /// Blend another animation node (in case this animation node contains children animation nodes). This function is only useful if you inherit from ``AnimationRootNode`` instead, else editors will not display your animation node for addition.
     public final func blendNode (name: StringName, node: AnimationNode?, time: Double, seek: Bool, isExternalSeeking: Bool, blend: Double, filter: AnimationNode.FilterAction = .ignore, sync: Bool = true, testOnly: Bool = false)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_time = time
         var copy_seek = seek
@@ -556,7 +556,7 @@ open class AnimationNode: Resource {
     /// Blend an input. This is only useful for animation nodes created for an ``AnimationNodeBlendTree``. The `time` parameter is a relative delta, unless `seek` is `true`, in which case it is absolute. A filter mode may be optionally passed (see ``AnimationNode/FilterAction`` for options).
     public final func blendInput (inputIndex: Int32, time: Double, seek: Bool, isExternalSeeking: Bool, blend: Double, filter: AnimationNode.FilterAction = .ignore, sync: Bool = true, testOnly: Bool = false)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_input_index: Int = Int (inputIndex)
         var copy_time = time
@@ -624,7 +624,7 @@ open class AnimationNode: Resource {
     
     /// Sets a custom parameter. These are used as local memory, because resources can be reused across the tree or scenes.
     public final func setParameter (name: StringName, value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNode.method_set_parameter, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &value.content)
@@ -658,7 +658,7 @@ open class AnimationNode: Resource {
     /// Gets the value of a parameter. Parameters are custom local memory used for your animation nodes, given a resource can be reused in multiple trees.
     public final func getParameter (name: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNode.method_get_parameter, UnsafeMutableRawPointer (mutating: handle), &_result.content, &name.content)

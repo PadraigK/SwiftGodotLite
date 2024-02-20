@@ -105,7 +105,7 @@ open class Gradient: Resource {
     
     /// Adds the specified color to the gradient, with the specified offset.
     public final func addPoint (offset: Double, color: Color) {
-        #if true
+        #if false
         
         var copy_offset = offset
         var copy_color = color
@@ -142,7 +142,7 @@ open class Gradient: Resource {
     
     /// Removes the color at index `point`.
     public final func removePoint (_ point: Int32) {
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         
@@ -174,7 +174,7 @@ open class Gradient: Resource {
     
     /// Sets the offset for the gradient color at index `point`.
     public final func setOffset (point: Int32, offset: Double) {
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         var copy_offset = offset
@@ -212,7 +212,7 @@ open class Gradient: Resource {
     /// Returns the offset of the gradient color at index `point`.
     public final func getOffset (point: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         
@@ -264,7 +264,7 @@ open class Gradient: Resource {
     
     /// Sets the color of the gradient color at index `point`.
     public final func setColor (point: Int32, color: Color) {
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         var copy_color = color
@@ -302,7 +302,7 @@ open class Gradient: Resource {
     /// Returns the color of the gradient color at index `point`.
     public final func getColor (point: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         
@@ -336,7 +336,7 @@ open class Gradient: Resource {
     /// Returns the interpolated color specified by `offset`.
     public final func sample (offset: Double)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -387,7 +387,7 @@ open class Gradient: Resource {
     
     @inline(__always)
     fileprivate final func set_offsets (_ offsets: PackedFloat32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Gradient.method_set_offsets, UnsafeMutableRawPointer (mutating: handle), nil, &offsets.content)
@@ -435,7 +435,7 @@ open class Gradient: Resource {
     
     @inline(__always)
     fileprivate final func set_colors (_ colors: PackedColorArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Gradient.method_set_colors, UnsafeMutableRawPointer (mutating: handle), nil, &colors.content)
@@ -483,7 +483,7 @@ open class Gradient: Resource {
     
     @inline(__always)
     fileprivate final func set_interpolation_mode (_ interpolationMode: Gradient.InterpolationMode) {
-        #if true
+        #if false
         
         var copy_interpolation_mode = Int64 (interpolationMode.rawValue)
         
@@ -533,7 +533,7 @@ open class Gradient: Resource {
     
     @inline(__always)
     fileprivate final func set_interpolation_color_space (_ interpolationColorSpace: Gradient.ColorSpace) {
-        #if true
+        #if false
         
         var copy_interpolation_color_space = Int64 (interpolationColorSpace.rawValue)
         

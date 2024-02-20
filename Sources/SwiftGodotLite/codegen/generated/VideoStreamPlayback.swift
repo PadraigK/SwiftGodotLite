@@ -97,7 +97,7 @@ open class VideoStreamPlayback: Resource {
     /// Render `numFrames` audio frames (of ``_getChannels()`` floats each) from `buffer`, starting from index `offset` in the array. Returns the number of audio frames rendered, or -1 on error.
     public final func mixAudio (numFrames: Int32, buffer: PackedFloat32Array = PackedFloat32Array(), offset: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_num_frames: Int = Int (numFrames)
         var copy_offset: Int = Int (offset)

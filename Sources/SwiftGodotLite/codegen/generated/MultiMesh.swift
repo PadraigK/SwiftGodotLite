@@ -134,7 +134,7 @@ open class MultiMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_mesh (_ mesh: Mesh?) {
-        #if true
+        #if false
         
         var copy_mesh_handle = mesh?.handle
         
@@ -183,7 +183,7 @@ open class MultiMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_use_colors (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -233,7 +233,7 @@ open class MultiMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_use_custom_data (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -283,7 +283,7 @@ open class MultiMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_transform_format (_ format: MultiMesh.TransformFormat) {
-        #if true
+        #if false
         
         var copy_format = Int64 (format.rawValue)
         
@@ -333,7 +333,7 @@ open class MultiMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_instance_count (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -383,7 +383,7 @@ open class MultiMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_visible_instance_count (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -433,7 +433,7 @@ open class MultiMesh: Resource {
     
     /// Sets the ``Transform3D`` for a specific instance.
     public final func setInstanceTransform (instance: Int32, transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_instance: Int = Int (instance)
         var copy_transform = transform
@@ -470,7 +470,7 @@ open class MultiMesh: Resource {
     
     /// Sets the ``Transform2D`` for a specific instance.
     public final func setInstanceTransform2d (instance: Int32, transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_instance: Int = Int (instance)
         var copy_transform = transform
@@ -508,7 +508,7 @@ open class MultiMesh: Resource {
     /// Returns the ``Transform3D`` of a specific instance.
     public final func getInstanceTransform (instance: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_instance: Int = Int (instance)
         
@@ -542,7 +542,7 @@ open class MultiMesh: Resource {
     /// Returns the ``Transform2D`` of a specific instance.
     public final func getInstanceTransform2d (instance: Int32)-> Transform2D {
         var _result: Transform2D = Transform2D ()
-        #if true
+        #if false
         
         var copy_instance: Int = Int (instance)
         
@@ -578,7 +578,7 @@ open class MultiMesh: Resource {
     /// For the color to take effect, ensure that ``useColors`` is `true` on the ``MultiMesh`` and ``BaseMaterial3D/vertexColorUseAsAlbedo`` is `true` on the material. If you intend to set an absolute color instead of tinting, make sure the material's albedo color is set to pure white (`Color(1, 1, 1)`).
     /// 
     public final func setInstanceColor (instance: Int32, color: Color) {
-        #if true
+        #if false
         
         var copy_instance: Int = Int (instance)
         var copy_color = color
@@ -616,7 +616,7 @@ open class MultiMesh: Resource {
     /// Gets a specific instance's color multiplier.
     public final func getInstanceColor (instance: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_instance: Int = Int (instance)
         
@@ -654,7 +654,7 @@ open class MultiMesh: Resource {
     /// This custom instance data has to be manually accessed in your custom shader using `INSTANCE_CUSTOM`.
     /// 
     public final func setInstanceCustomData (instance: Int32, customData: Color) {
-        #if true
+        #if false
         
         var copy_instance: Int = Int (instance)
         var copy_custom_data = customData
@@ -692,7 +692,7 @@ open class MultiMesh: Resource {
     /// Returns the custom data that has been set for a specific instance.
     public final func getInstanceCustomData (instance: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_instance: Int = Int (instance)
         
@@ -761,7 +761,7 @@ open class MultiMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_buffer (_ buffer: PackedFloat32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (MultiMesh.method_set_buffer, UnsafeMutableRawPointer (mutating: handle), nil, &buffer.content)

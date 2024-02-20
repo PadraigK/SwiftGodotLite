@@ -73,7 +73,7 @@ open class MovieWriter: Object {
     /// > Note: ``addWriter(_:)`` must be called early enough in the engine initialization to work, as movie writing is designed to start at the same time as the rest of the engine.
     /// 
     public static func addWriter (_ writer: MovieWriter?) {
-        #if true
+        #if false
         
         var copy_writer_handle = writer?.handle
         

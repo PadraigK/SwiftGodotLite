@@ -121,7 +121,7 @@ open class NavigationLink2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -171,7 +171,7 @@ open class NavigationLink2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_bidirectional (_ bidirectional: Bool) {
-        #if true
+        #if false
         
         var copy_bidirectional = bidirectional
         
@@ -221,7 +221,7 @@ open class NavigationLink2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_navigation_layers (_ navigationLayers: UInt32) {
-        #if true
+        #if false
         
         var copy_navigation_layers: Int = Int (navigationLayers)
         
@@ -271,7 +271,7 @@ open class NavigationLink2D: Node2D {
     
     /// Based on `value`, enables or disables the specified layer in the ``navigationLayers`` bitmask, given a `layerNumber` between 1 and 32.
     public final func setNavigationLayerValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -309,7 +309,7 @@ open class NavigationLink2D: Node2D {
     /// Returns whether or not the specified layer of the ``navigationLayers`` bitmask is enabled, given a `layerNumber` between 1 and 32.
     public final func getNavigationLayerValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -342,7 +342,7 @@ open class NavigationLink2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_start_position (_ position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -392,7 +392,7 @@ open class NavigationLink2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_end_position (_ position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -442,7 +442,7 @@ open class NavigationLink2D: Node2D {
     
     /// Sets the ``startPosition`` that is relative to the link from a global `position`.
     public final func setGlobalStartPosition (_ position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -492,7 +492,7 @@ open class NavigationLink2D: Node2D {
     
     /// Sets the ``endPosition`` that is relative to the link from a global `position`.
     public final func setGlobalEndPosition (_ position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -542,7 +542,7 @@ open class NavigationLink2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_enter_cost (_ enterCost: Double) {
-        #if true
+        #if false
         
         var copy_enter_cost = enterCost
         
@@ -592,7 +592,7 @@ open class NavigationLink2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_travel_cost (_ travelCost: Double) {
-        #if true
+        #if false
         
         var copy_travel_cost = travelCost
         

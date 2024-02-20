@@ -72,7 +72,7 @@ open class ArrayMesh: Mesh {
     
     /// Adds name for a blend shape that will be added with ``addSurfaceFromArrays(primitive:arrays:blendShapes:lods:flags:)``. Must be called before surface is added.
     public final func addBlendShape (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ArrayMesh.method_add_blend_shape, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -121,7 +121,7 @@ open class ArrayMesh: Mesh {
     /// Returns the name of the blend shape at this index.
     public final func getBlendShapeName (index: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -154,7 +154,7 @@ open class ArrayMesh: Mesh {
     
     /// Sets the name of the blend shape at this index.
     public final func setBlendShapeName (index: Int32, name: StringName) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -205,7 +205,7 @@ open class ArrayMesh: Mesh {
     
     @inline(__always)
     fileprivate final func set_blend_shape_mode (_ mode: Mesh.BlendShapeMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -268,7 +268,7 @@ open class ArrayMesh: Mesh {
     /// > Note: When using indices, it is recommended to only use points, lines, or triangles.
     /// 
     public final func addSurfaceFromArrays (primitive: Mesh.PrimitiveType, arrays: GArray, blendShapes: VariantCollection<GArray> = VariantCollection<GArray> (), lods: GDictionary = GDictionary (), flags: Mesh.ArrayFormat = []) {
-        #if true
+        #if false
         
         var copy_primitive = Int64 (primitive.rawValue)
         var copy_flags = flags
@@ -330,7 +330,7 @@ open class ArrayMesh: Mesh {
     
     /// 
     public final func surfaceUpdateVertexRegion (surfIdx: Int32, offset: Int32, data: PackedByteArray) {
-        #if true
+        #if false
         
         var copy_surf_idx: Int = Int (surfIdx)
         var copy_offset: Int = Int (offset)
@@ -370,7 +370,7 @@ open class ArrayMesh: Mesh {
     
     /// 
     public final func surfaceUpdateAttributeRegion (surfIdx: Int32, offset: Int32, data: PackedByteArray) {
-        #if true
+        #if false
         
         var copy_surf_idx: Int = Int (surfIdx)
         var copy_offset: Int = Int (offset)
@@ -410,7 +410,7 @@ open class ArrayMesh: Mesh {
     
     /// 
     public final func surfaceUpdateSkinRegion (surfIdx: Int32, offset: Int32, data: PackedByteArray) {
-        #if true
+        #if false
         
         var copy_surf_idx: Int = Int (surfIdx)
         var copy_offset: Int = Int (offset)
@@ -451,7 +451,7 @@ open class ArrayMesh: Mesh {
     /// Returns the length in vertices of the vertex array in the requested surface (see ``addSurfaceFromArrays(primitive:arrays:blendShapes:lods:flags:)``).
     public final func surfaceGetArrayLen (surfIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_surf_idx: Int = Int (surfIdx)
         
@@ -485,7 +485,7 @@ open class ArrayMesh: Mesh {
     /// Returns the length in indices of the index array in the requested surface (see ``addSurfaceFromArrays(primitive:arrays:blendShapes:lods:flags:)``).
     public final func surfaceGetArrayIndexLen (surfIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_surf_idx: Int = Int (surfIdx)
         
@@ -519,7 +519,7 @@ open class ArrayMesh: Mesh {
     /// Returns the format mask of the requested surface (see ``addSurfaceFromArrays(primitive:arrays:blendShapes:lods:flags:)``).
     public final func surfaceGetFormat (surfIdx: Int32)-> Mesh.ArrayFormat {
         var _result: Mesh.ArrayFormat = Mesh.ArrayFormat ()
-        #if true
+        #if false
         
         var copy_surf_idx: Int = Int (surfIdx)
         
@@ -553,7 +553,7 @@ open class ArrayMesh: Mesh {
     /// Returns the primitive type of the requested surface (see ``addSurfaceFromArrays(primitive:arrays:blendShapes:lods:flags:)``).
     public final func surfaceGetPrimitiveType (surfIdx: Int32)-> Mesh.PrimitiveType {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_surf_idx: Int = Int (surfIdx)
         
@@ -587,7 +587,7 @@ open class ArrayMesh: Mesh {
     /// Returns the index of the first surface with this name held within this ``ArrayMesh``. If none are found, -1 is returned.
     public final func surfaceFindByName (_ name: String)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -620,7 +620,7 @@ open class ArrayMesh: Mesh {
     
     /// Sets a name for a given surface.
     public final func surfaceSetName (surfIdx: Int32, name: String) {
-        #if true
+        #if false
         
         var copy_surf_idx: Int = Int (surfIdx)
         let gstr_name = GString (name)
@@ -658,7 +658,7 @@ open class ArrayMesh: Mesh {
     /// Gets the name assigned to this surface.
     public final func surfaceGetName (surfIdx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_surf_idx: Int = Int (surfIdx)
         
@@ -708,7 +708,7 @@ open class ArrayMesh: Mesh {
     /// Performs a UV unwrap on the ``ArrayMesh`` to prepare the mesh for lightmapping.
     public final func lightmapUnwrap (transform: Transform3D, texelSize: Double)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_transform = transform
         var copy_texel_size = texelSize
@@ -746,7 +746,7 @@ open class ArrayMesh: Mesh {
     
     @inline(__always)
     fileprivate final func set_custom_aabb (_ aabb: AABB) {
-        #if true
+        #if false
         
         var copy_aabb = aabb
         
@@ -796,7 +796,7 @@ open class ArrayMesh: Mesh {
     
     @inline(__always)
     fileprivate final func set_shadow_mesh (_ mesh: ArrayMesh?) {
-        #if true
+        #if false
         
         var copy_mesh_handle = mesh?.handle
         

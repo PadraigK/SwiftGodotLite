@@ -156,7 +156,7 @@ open class CanvasLayer: Node {
     
     @inline(__always)
     fileprivate final func set_layer (_ layer: Int32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -206,7 +206,7 @@ open class CanvasLayer: Node {
     
     @inline(__always)
     fileprivate final func set_visible (_ visible: Bool) {
-        #if true
+        #if false
         
         var copy_visible = visible
         
@@ -288,7 +288,7 @@ open class CanvasLayer: Node {
     
     @inline(__always)
     fileprivate final func set_transform (_ transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -356,7 +356,7 @@ open class CanvasLayer: Node {
     
     @inline(__always)
     fileprivate final func set_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -406,7 +406,7 @@ open class CanvasLayer: Node {
     
     @inline(__always)
     fileprivate final func set_rotation (_ radians: Double) {
-        #if true
+        #if false
         
         var copy_radians = radians
         
@@ -456,7 +456,7 @@ open class CanvasLayer: Node {
     
     @inline(__always)
     fileprivate final func set_scale (_ scale: Vector2) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -506,7 +506,7 @@ open class CanvasLayer: Node {
     
     @inline(__always)
     fileprivate final func set_follow_viewport (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -556,7 +556,7 @@ open class CanvasLayer: Node {
     
     @inline(__always)
     fileprivate final func set_follow_viewport_scale (_ scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -606,7 +606,7 @@ open class CanvasLayer: Node {
     
     @inline(__always)
     fileprivate final func set_custom_viewport (_ viewport: Node?) {
-        #if true
+        #if false
         
         var copy_viewport_handle = viewport?.handle
         

@@ -42,7 +42,7 @@ open class InputEventMagnifyGesture: InputEventGesture {
     
     @inline(__always)
     fileprivate final func set_factor (_ factor: Double) {
-        #if true
+        #if false
         
         var copy_factor = factor
         

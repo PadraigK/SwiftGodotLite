@@ -56,7 +56,7 @@ open class PanoramaSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_panorama (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -105,7 +105,7 @@ open class PanoramaSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_filtering_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

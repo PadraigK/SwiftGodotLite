@@ -256,7 +256,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_polygon (_ polygon: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CSGPolygon3D.method_set_polygon, UnsafeMutableRawPointer (mutating: handle), nil, &polygon.content)
@@ -304,7 +304,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_mode (_ mode: CSGPolygon3D.Mode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -354,7 +354,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_depth (_ depth: Double) {
-        #if true
+        #if false
         
         var copy_depth = depth
         
@@ -404,7 +404,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_spin_degrees (_ degrees: Double) {
-        #if true
+        #if false
         
         var copy_degrees = degrees
         
@@ -454,7 +454,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_spin_sides (_ spinSides: Int32) {
-        #if true
+        #if false
         
         var copy_spin_sides: Int = Int (spinSides)
         
@@ -504,7 +504,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_path_node (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CSGPolygon3D.method_set_path_node, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -552,7 +552,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_path_interval_type (_ intervalType: CSGPolygon3D.PathIntervalType) {
-        #if true
+        #if false
         
         var copy_interval_type = Int64 (intervalType.rawValue)
         
@@ -602,7 +602,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_path_interval (_ interval: Double) {
-        #if true
+        #if false
         
         var copy_interval = interval
         
@@ -652,7 +652,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_path_simplify_angle (_ degrees: Double) {
-        #if true
+        #if false
         
         var copy_degrees = degrees
         
@@ -702,7 +702,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_path_rotation (_ pathRotation: CSGPolygon3D.PathRotation) {
-        #if true
+        #if false
         
         var copy_path_rotation = Int64 (pathRotation.rawValue)
         
@@ -752,7 +752,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_path_local (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -802,7 +802,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_path_continuous_u (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -852,7 +852,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_path_u_distance (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -902,7 +902,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_path_joined (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -952,7 +952,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_material (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         
@@ -1001,7 +1001,7 @@ open class CSGPolygon3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_smooth_faces (_ smoothFaces: Bool) {
-        #if true
+        #if false
         
         var copy_smooth_faces = smoothFaces
         

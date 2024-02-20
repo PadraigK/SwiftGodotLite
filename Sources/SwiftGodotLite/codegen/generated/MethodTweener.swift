@@ -30,7 +30,7 @@ open class MethodTweener: Tweener {
     /// Sets the time in seconds after which the ``MethodTweener`` will start interpolating. By default there's no delay.
     public final func setDelay (_ delay: Double)-> MethodTweener? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_delay = delay
         
@@ -64,7 +64,7 @@ open class MethodTweener: Tweener {
     /// Sets the type of used transition from ``Tween.TransitionType``. If not set, the default transition is used from the ``Tween`` that contains this Tweener.
     public final func setTrans (_ trans: Tween.TransitionType)-> MethodTweener? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_trans = Int64 (trans.rawValue)
         
@@ -98,7 +98,7 @@ open class MethodTweener: Tweener {
     /// Sets the type of used easing from ``Tween.EaseType``. If not set, the default easing is used from the ``Tween`` that contains this Tweener.
     public final func setEase (_ ease: Tween.EaseType)-> MethodTweener? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_ease = Int64 (ease.rawValue)
         

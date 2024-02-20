@@ -116,7 +116,7 @@ open class MobileVRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_eye_height (_ eyeHeight: Double) {
-        #if true
+        #if false
         
         var copy_eye_height = eyeHeight
         
@@ -166,7 +166,7 @@ open class MobileVRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_iod (_ iod: Double) {
-        #if true
+        #if false
         
         var copy_iod = iod
         
@@ -216,7 +216,7 @@ open class MobileVRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_display_width (_ displayWidth: Double) {
-        #if true
+        #if false
         
         var copy_display_width = displayWidth
         
@@ -266,7 +266,7 @@ open class MobileVRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_display_to_lens (_ displayToLens: Double) {
-        #if true
+        #if false
         
         var copy_display_to_lens = displayToLens
         
@@ -316,7 +316,7 @@ open class MobileVRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_oversample (_ oversample: Double) {
-        #if true
+        #if false
         
         var copy_oversample = oversample
         
@@ -366,7 +366,7 @@ open class MobileVRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_k1 (_ k: Double) {
-        #if true
+        #if false
         
         var copy_k = k
         
@@ -416,7 +416,7 @@ open class MobileVRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_k2 (_ k: Double) {
-        #if true
+        #if false
         
         var copy_k = k
         

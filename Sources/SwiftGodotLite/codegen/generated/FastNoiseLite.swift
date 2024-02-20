@@ -363,7 +363,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_noise_type (_ type: FastNoiseLite.NoiseType) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -413,7 +413,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_seed (_ seed: Int32) {
-        #if true
+        #if false
         
         var copy_seed: Int = Int (seed)
         
@@ -463,7 +463,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_frequency (_ freq: Double) {
-        #if true
+        #if false
         
         var copy_freq = freq
         
@@ -513,7 +513,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_offset (_ offset: Vector3) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -563,7 +563,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_fractal_type (_ type: FastNoiseLite.FractalType) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -613,7 +613,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_fractal_octaves (_ octaveCount: Int32) {
-        #if true
+        #if false
         
         var copy_octave_count: Int = Int (octaveCount)
         
@@ -663,7 +663,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_fractal_lacunarity (_ lacunarity: Double) {
-        #if true
+        #if false
         
         var copy_lacunarity = lacunarity
         
@@ -713,7 +713,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_fractal_gain (_ gain: Double) {
-        #if true
+        #if false
         
         var copy_gain = gain
         
@@ -763,7 +763,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_fractal_weighted_strength (_ weightedStrength: Double) {
-        #if true
+        #if false
         
         var copy_weighted_strength = weightedStrength
         
@@ -813,7 +813,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_fractal_ping_pong_strength (_ pingPongStrength: Double) {
-        #if true
+        #if false
         
         var copy_ping_pong_strength = pingPongStrength
         
@@ -863,7 +863,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_cellular_distance_function (_ `func`: FastNoiseLite.CellularDistanceFunction) {
-        #if true
+        #if false
         
         var copy_func = Int64 (`func`.rawValue)
         
@@ -913,7 +913,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_cellular_jitter (_ jitter: Double) {
-        #if true
+        #if false
         
         var copy_jitter = jitter
         
@@ -963,7 +963,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_cellular_return_type (_ ret: FastNoiseLite.CellularReturnType) {
-        #if true
+        #if false
         
         var copy_ret = Int64 (ret.rawValue)
         
@@ -1013,7 +1013,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_domain_warp_enabled (_ domainWarpEnabled: Bool) {
-        #if true
+        #if false
         
         var copy_domain_warp_enabled = domainWarpEnabled
         
@@ -1063,7 +1063,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_domain_warp_type (_ domainWarpType: FastNoiseLite.DomainWarpType) {
-        #if true
+        #if false
         
         var copy_domain_warp_type = Int64 (domainWarpType.rawValue)
         
@@ -1113,7 +1113,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_domain_warp_amplitude (_ domainWarpAmplitude: Double) {
-        #if true
+        #if false
         
         var copy_domain_warp_amplitude = domainWarpAmplitude
         
@@ -1163,7 +1163,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_domain_warp_frequency (_ domainWarpFrequency: Double) {
-        #if true
+        #if false
         
         var copy_domain_warp_frequency = domainWarpFrequency
         
@@ -1213,7 +1213,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_domain_warp_fractal_type (_ domainWarpFractalType: FastNoiseLite.DomainWarpFractalType) {
-        #if true
+        #if false
         
         var copy_domain_warp_fractal_type = Int64 (domainWarpFractalType.rawValue)
         
@@ -1263,7 +1263,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_domain_warp_fractal_octaves (_ domainWarpOctaveCount: Int32) {
-        #if true
+        #if false
         
         var copy_domain_warp_octave_count: Int = Int (domainWarpOctaveCount)
         
@@ -1313,7 +1313,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_domain_warp_fractal_lacunarity (_ domainWarpLacunarity: Double) {
-        #if true
+        #if false
         
         var copy_domain_warp_lacunarity = domainWarpLacunarity
         
@@ -1363,7 +1363,7 @@ open class FastNoiseLite: Noise {
     
     @inline(__always)
     fileprivate final func set_domain_warp_fractal_gain (_ domainWarpGain: Double) {
-        #if true
+        #if false
         
         var copy_domain_warp_gain = domainWarpGain
         

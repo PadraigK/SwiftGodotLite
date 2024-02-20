@@ -62,7 +62,7 @@ open class ENetConnection: RefCounted {
     /// Create an ENetHost like ``createHost(maxPeers:maxChannels:inBandwidth:outBandwidth:)`` which is also bound to the given `bindAddress` and `bindPort`.
     public final func createHostBound (bindAddress: String, bindPort: Int32, maxPeers: Int32 = 32, maxChannels: Int32 = 0, inBandwidth: Int32 = 0, outBandwidth: Int32 = 0)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_bind_address = GString (bindAddress)
         var copy_bind_port: Int = Int (bindPort)
@@ -121,7 +121,7 @@ open class ENetConnection: RefCounted {
     /// Create an ENetHost that will allow up to `maxPeers` connected peers, each allocating up to `maxChannels` channels, optionally limiting bandwidth to `inBandwidth` and `outBandwidth`.
     public final func createHost (maxPeers: Int32 = 32, maxChannels: Int32 = 0, inBandwidth: Int32 = 0, outBandwidth: Int32 = 0)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_max_peers: Int = Int (maxPeers)
         var copy_max_channels: Int = Int (maxChannels)
@@ -189,7 +189,7 @@ open class ENetConnection: RefCounted {
     /// 
     public final func connectToHost (address: String, port: Int32, channels: Int32 = 0, data: Int32 = 0)-> ENetPacketPeer? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_address = GString (address)
         var copy_port: Int = Int (port)
@@ -241,7 +241,7 @@ open class ENetConnection: RefCounted {
     /// 
     public final func service (timeout: Int32 = 0)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_timeout: Int = Int (timeout)
         
@@ -290,7 +290,7 @@ open class ENetConnection: RefCounted {
     
     /// Adjusts the bandwidth limits of a host.
     public final func bandwidthLimit (inBandwidth: Int32 = 0, outBandwidth: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_in_bandwidth: Int = Int (inBandwidth)
         var copy_out_bandwidth: Int = Int (outBandwidth)
@@ -327,7 +327,7 @@ open class ENetConnection: RefCounted {
     
     /// Limits the maximum allowed channels of future incoming connections.
     public final func channelLimit (_ limit: Int32) {
-        #if true
+        #if false
         
         var copy_limit: Int = Int (limit)
         
@@ -359,7 +359,7 @@ open class ENetConnection: RefCounted {
     
     /// Queues a `packet` to be sent to all peers associated with the host over the specified `channel`. See ``ENetPacketPeer`` `FLAG_*` constants for available packet flags.
     public final func broadcast (channel: Int32, packet: PackedByteArray, flags: Int32) {
-        #if true
+        #if false
         
         var copy_channel: Int = Int (channel)
         var copy_flags: Int = Int (flags)
@@ -404,7 +404,7 @@ open class ENetConnection: RefCounted {
     /// > Note: The compression mode must be set to the same value on both the server and all its clients. Clients will fail to connect if the compression mode set on the client differs from the one set on the server.
     /// 
     public final func compress (mode: ENetConnection.CompressionMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -437,7 +437,7 @@ open class ENetConnection: RefCounted {
     /// Configure this ENetHost to use the custom Godot extension allowing DTLS encryption for ENet servers. Call this right after ``createHostBound(bindAddress:bindPort:maxPeers:maxChannels:inBandwidth:outBandwidth:)`` to have ENet expect peers to connect using DTLS. See ``TLSOptions/server(key:certificate:)``.
     public final func dtlsServerSetup (serverOptions: TLSOptions?)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_server_options_handle = serverOptions?.handle
         
@@ -470,7 +470,7 @@ open class ENetConnection: RefCounted {
     /// Configure this ENetHost to use the custom Godot extension allowing DTLS encryption for ENet clients. Call this before ``connectToHost(address:port:channels:data:)`` to have ENet connect using DTLS validating the server certificate against `hostname`. You can pass the optional `clientOptions` parameter to customize the trusted certification authorities, or disable the common name verification. See ``TLSOptions/client(trustedChain:commonNameOverride:)`` and ``TLSOptions/clientUnsafe(trustedChain:)``.
     public final func dtlsClientSetup (hostname: String, clientOptions: TLSOptions? = nil)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_hostname = GString (hostname)
         var copy_client_options_handle = clientOptions?.handle
@@ -510,7 +510,7 @@ open class ENetConnection: RefCounted {
     /// > Note: This method is only relevant after calling ``dtlsServerSetup(serverOptions:)``.
     /// 
     public final func refuseNewConnections (refuse: Bool) {
-        #if true
+        #if false
         
         var copy_refuse = refuse
         
@@ -543,7 +543,7 @@ open class ENetConnection: RefCounted {
     /// Returns and resets host statistics. See ``ENetConnection/HostStatistic`` for more info.
     public final func popStatistic (_ statistic: ENetConnection.HostStatistic)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_statistic = Int64 (statistic.rawValue)
         
@@ -638,7 +638,7 @@ open class ENetConnection: RefCounted {
     /// This requires forward knowledge of a prospective client's address and communication port as seen by the public internet - after any NAT devices have handled their connection request. This information can be obtained by a [url=https://en.wikipedia.org/wiki/STUN]STUN[/url] service, and must be handed off to your host by an entity that is not the prospective client. This will never work for a client behind a Symmetric NAT due to the nature of the Symmetric NAT routing algorithm, as their IP and Port cannot be known beforehand.
     /// 
     public final func socketSend (destinationAddress: String, destinationPort: Int32, packet: PackedByteArray) {
-        #if true
+        #if false
         
         let gstr_destination_address = GString (destinationAddress)
         var copy_destination_port: Int = Int (destinationPort)

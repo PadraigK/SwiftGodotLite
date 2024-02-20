@@ -63,7 +63,7 @@ open class BoneAttachment3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_bone_name (_ boneName: String) {
-        #if true
+        #if false
         
         let gstr_bone_name = GString (boneName)
         
@@ -113,7 +113,7 @@ open class BoneAttachment3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_bone_idx (_ boneIdx: Int32) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         
@@ -163,7 +163,7 @@ open class BoneAttachment3D: Node3D {
     
     /// A function that is called automatically when the ``Skeleton3D`` the BoneAttachment3D node is using has a bone that has changed its pose. This function is where the BoneAttachment3D node updates its position so it is correctly bound when it is _not_ set to override the bone pose.
     public final func onBonePoseUpdate (boneIndex: Int32) {
-        #if true
+        #if false
         
         var copy_bone_index: Int = Int (boneIndex)
         
@@ -195,7 +195,7 @@ open class BoneAttachment3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_override_pose (_ overridePose: Bool) {
-        #if true
+        #if false
         
         var copy_override_pose = overridePose
         
@@ -245,7 +245,7 @@ open class BoneAttachment3D: Node3D {
     
     /// Sets whether the BoneAttachment3D node will use an external ``Skeleton3D`` node rather than attempting to use its parent node as the ``Skeleton3D``. When set to `true`, the BoneAttachment3D node will use the external ``Skeleton3D`` node set in ``setExternalSkeleton(_:)``.
     public final func setUseExternalSkeleton (_ useExternalSkeleton: Bool) {
-        #if true
+        #if false
         
         var copy_use_external_skeleton = useExternalSkeleton
         
@@ -295,7 +295,7 @@ open class BoneAttachment3D: Node3D {
     
     /// Sets the ``NodePath`` to the external skeleton that the BoneAttachment3D node should use. See ``setUseExternalSkeleton(_:)`` to enable the external ``Skeleton3D`` node.
     public final func setExternalSkeleton (_ externalSkeleton: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (BoneAttachment3D.method_set_external_skeleton, UnsafeMutableRawPointer (mutating: handle), nil, &externalSkeleton.content)

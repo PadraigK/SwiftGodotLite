@@ -42,7 +42,7 @@ open class BoxShape3D: Shape3D {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         

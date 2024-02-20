@@ -63,7 +63,7 @@ open class GradientTexture1D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_gradient (_ gradient: Gradient?) {
-        #if true
+        #if false
         
         var copy_gradient_handle = gradient?.handle
         
@@ -112,7 +112,7 @@ open class GradientTexture1D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_width (_ width: Int32) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         
@@ -144,7 +144,7 @@ open class GradientTexture1D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_use_hdr (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

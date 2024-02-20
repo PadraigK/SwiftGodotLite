@@ -137,7 +137,7 @@ open class TileMap: Node2D {
     
     /// See ``setLayerNavigationMap(layer:map:)``.
     public final func setNavigationMap (layer: Int32, map: RID) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -173,7 +173,7 @@ open class TileMap: Node2D {
     /// See ``getLayerNavigationMap(layer:)``.
     public final func getNavigationMap (layer: Int32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -206,7 +206,7 @@ open class TileMap: Node2D {
     
     /// _Deprecated._ See ``notifyRuntimeTileDataUpdate(layer:)`` and ``updateInternals()``.
     public final func forceUpdate (layer: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -238,7 +238,7 @@ open class TileMap: Node2D {
     
     @inline(__always)
     fileprivate final func set_tileset (_ tileset: TileSet?) {
-        #if true
+        #if false
         
         var copy_tileset_handle = tileset?.handle
         
@@ -287,7 +287,7 @@ open class TileMap: Node2D {
     
     @inline(__always)
     fileprivate final func set_rendering_quadrant_size (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -355,7 +355,7 @@ open class TileMap: Node2D {
     
     /// Adds a layer at the given position `toPosition` in the array. If `toPosition` is negative, the position is counted from the end, with `-1` adding the layer at the end of the array.
     public final func addLayer (toPosition: Int32) {
-        #if true
+        #if false
         
         var copy_to_position: Int = Int (toPosition)
         
@@ -387,7 +387,7 @@ open class TileMap: Node2D {
     
     /// Moves the layer at index `layer` to the given position `toPosition` in the array.
     public final func moveLayer (_ layer: Int32, toPosition: Int32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_to_position: Int = Int (toPosition)
@@ -424,7 +424,7 @@ open class TileMap: Node2D {
     
     /// Removes the layer at index `layer`.
     public final func removeLayer (_ layer: Int32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -459,7 +459,7 @@ open class TileMap: Node2D {
     /// If `layer` is negative, the layers are accessed from the last one.
     /// 
     public final func setLayerName (layer: Int32, name: String) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         let gstr_name = GString (name)
@@ -500,7 +500,7 @@ open class TileMap: Node2D {
     /// 
     public final func getLayerName (layer: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -536,7 +536,7 @@ open class TileMap: Node2D {
     /// If `layer` is negative, the layers are accessed from the last one.
     /// 
     public final func setLayerEnabled (layer: Int32, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_enabled = enabled
@@ -577,7 +577,7 @@ open class TileMap: Node2D {
     /// 
     public final func isLayerEnabled (layer: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -613,7 +613,7 @@ open class TileMap: Node2D {
     /// If `layer` is negative, the layers are accessed from the last one.
     /// 
     public final func setLayerModulate (layer: Int32, modulate: Color) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_modulate = modulate
@@ -654,7 +654,7 @@ open class TileMap: Node2D {
     /// 
     public final func getLayerModulate (layer: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -692,7 +692,7 @@ open class TileMap: Node2D {
     /// If `layer` is negative, the layers are accessed from the last one.
     /// 
     public final func setLayerYSortEnabled (layer: Int32, ySortEnabled: Bool) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_y_sort_enabled = ySortEnabled
@@ -733,7 +733,7 @@ open class TileMap: Node2D {
     /// 
     public final func isLayerYSortEnabled (layer: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -771,7 +771,7 @@ open class TileMap: Node2D {
     /// If `layer` is negative, the layers are accessed from the last one.
     /// 
     public final func setLayerYSortOrigin (layer: Int32, ySortOrigin: Int32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_y_sort_origin: Int = Int (ySortOrigin)
@@ -812,7 +812,7 @@ open class TileMap: Node2D {
     /// 
     public final func getLayerYSortOrigin (layer: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -848,7 +848,7 @@ open class TileMap: Node2D {
     /// If `layer` is negative, the layers are accessed from the last one.
     /// 
     public final func setLayerZIndex (layer: Int32, zIndex: Int32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_z_index: Int = Int (zIndex)
@@ -889,7 +889,7 @@ open class TileMap: Node2D {
     /// 
     public final func getLayerZIndex (layer: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -922,7 +922,7 @@ open class TileMap: Node2D {
     
     /// Enables or disables a layer's built-in navigation regions generation. Disable this if you need to bake navigation regions from a TileMap using a ``NavigationRegion2D`` node.
     public final func setLayerNavigationEnabled (layer: Int32, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_enabled = enabled
@@ -960,7 +960,7 @@ open class TileMap: Node2D {
     /// Returns if a layer's built-in navigation regions generation is enabled.
     public final func isLayerNavigationEnabled (layer: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -1000,7 +1000,7 @@ open class TileMap: Node2D {
     /// If `layer` is negative, the layers are accessed from the last one.
     /// 
     public final func setLayerNavigationMap (layer: Int32, map: RID) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -1043,7 +1043,7 @@ open class TileMap: Node2D {
     /// 
     public final func getLayerNavigationMap (layer: Int32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -1076,7 +1076,7 @@ open class TileMap: Node2D {
     
     @inline(__always)
     fileprivate final func set_collision_animatable (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1126,7 +1126,7 @@ open class TileMap: Node2D {
     
     @inline(__always)
     fileprivate final func set_collision_visibility_mode (_ collisionVisibilityMode: TileMap.VisibilityMode) {
-        #if true
+        #if false
         
         var copy_collision_visibility_mode = Int64 (collisionVisibilityMode.rawValue)
         
@@ -1176,7 +1176,7 @@ open class TileMap: Node2D {
     
     @inline(__always)
     fileprivate final func set_navigation_visibility_mode (_ navigationVisibilityMode: TileMap.VisibilityMode) {
-        #if true
+        #if false
         
         var copy_navigation_visibility_mode = Int64 (navigationVisibilityMode.rawValue)
         
@@ -1237,7 +1237,7 @@ open class TileMap: Node2D {
     /// If `layer` is negative, the layers are accessed from the last one.
     /// 
     public final func setCell (layer: Int32, coords: Vector2i, sourceId: Int32 = -1, atlasCoords: Vector2i = Vector2i (x: -1, y: -1), alternativeTile: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_coords = coords
@@ -1292,7 +1292,7 @@ open class TileMap: Node2D {
     /// If `layer` is negative, the layers are accessed from the last one.
     /// 
     public final func eraseCell (layer: Int32, coords: Vector2i) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_coords = coords
@@ -1335,7 +1335,7 @@ open class TileMap: Node2D {
     /// 
     public final func getCellSourceId (layer: Int32, coords: Vector2i, useProxies: Bool = false)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_coords = coords
@@ -1382,7 +1382,7 @@ open class TileMap: Node2D {
     /// 
     public final func getCellAtlasCoords (layer: Int32, coords: Vector2i, useProxies: Bool = false)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_coords = coords
@@ -1429,7 +1429,7 @@ open class TileMap: Node2D {
     /// 
     public final func getCellAlternativeTile (layer: Int32, coords: Vector2i, useProxies: Bool = false)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_coords = coords
@@ -1478,7 +1478,7 @@ open class TileMap: Node2D {
     /// 
     public final func getCellTileData (layer: Int32, coords: Vector2i, useProxies: Bool = false)-> TileData? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_coords = coords
@@ -1522,7 +1522,7 @@ open class TileMap: Node2D {
     /// Returns the coordinates of the tile for given physics body RID. Such RID can be retrieved from ``KinematicCollision2D/getColliderRid()``, when colliding with a tile.
     public final func getCoordsForBodyRid (body: RID)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TileMap.method_get_coords_for_body_rid, UnsafeMutableRawPointer (mutating: handle), &_result, &body.content)
@@ -1554,7 +1554,7 @@ open class TileMap: Node2D {
     /// Returns the tilemap layer of the tile for given physics body RID. Such RID can be retrieved from ``KinematicCollision2D/getColliderRid()``, when colliding with a tile.
     public final func getLayerForBodyRid (body: RID)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TileMap.method_get_layer_for_body_rid, UnsafeMutableRawPointer (mutating: handle), &_result, &body.content)
@@ -1589,7 +1589,7 @@ open class TileMap: Node2D {
     /// 
     public final func getPattern (layer: Int32, coordsArray: VariantCollection<Vector2i>)-> TileMapPattern? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -1626,7 +1626,7 @@ open class TileMap: Node2D {
     /// Returns for the given coordinate `coordsInPattern` in a ``TileMapPattern`` the corresponding cell coordinates if the pattern was pasted at the `positionInTilemap` coordinates (see ``setPattern(layer:position:pattern:)``). This mapping is required as in half-offset tile shapes, the mapping might not work by calculating `position_in_tile_map + coords_in_pattern`.
     public final func mapPattern (positionInTilemap: Vector2i, coordsInPattern: Vector2i, pattern: TileMapPattern?)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_position_in_tilemap = positionInTilemap
         var copy_coords_in_pattern = coordsInPattern
@@ -1671,7 +1671,7 @@ open class TileMap: Node2D {
     /// If `layer` is negative, the layers are accessed from the last one.
     /// 
     public final func setPattern (layer: Int32, position: Vector2i, pattern: TileMapPattern?) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_position = position
@@ -1719,7 +1719,7 @@ open class TileMap: Node2D {
     /// > Note: To work correctly, this method requires the TileMap's TileSet to have terrains set up with all required terrain combinations. Otherwise, it may produce unexpected results.
     /// 
     public final func setCellsTerrainConnect (layer: Int32, cells: VariantCollection<Vector2i>, terrainSet: Int32, terrain: Int32, ignoreEmptyTerrains: Bool = true) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_terrain_set: Int = Int (terrainSet)
@@ -1776,7 +1776,7 @@ open class TileMap: Node2D {
     /// > Note: To work correctly, this method requires the TileMap's TileSet to have terrains set up with all required terrain combinations. Otherwise, it may produce unexpected results.
     /// 
     public final func setCellsTerrainPath (layer: Int32, path: VariantCollection<Vector2i>, terrainSet: Int32, terrain: Int32, ignoreEmptyTerrains: Bool = true) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_terrain_set: Int = Int (terrainSet)
@@ -1845,7 +1845,7 @@ open class TileMap: Node2D {
     /// If `layer` is negative, the layers are accessed from the last one.
     /// 
     public final func clearLayer (_ layer: Int32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -1921,7 +1921,7 @@ open class TileMap: Node2D {
     /// > Note: This does not trigger a direct update of the TileMap, the update will be done at the end of the frame as usual (unless you call ``updateInternals()``).
     /// 
     public final func notifyRuntimeTileDataUpdate (layer: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -1954,7 +1954,7 @@ open class TileMap: Node2D {
     /// Returns the list of all neighbourings cells to the one at `coords`.
     public final func getSurroundingCells (coords: Vector2i)-> VariantCollection<Vector2i> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_coords = coords
         
@@ -1991,7 +1991,7 @@ open class TileMap: Node2D {
     /// 
     public final func getUsedCells (layer: Int32)-> VariantCollection<Vector2i> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -2032,7 +2032,7 @@ open class TileMap: Node2D {
     /// 
     public final func getUsedCellsById (layer: Int32, sourceId: Int32 = -1, atlasCoords: Vector2i = Vector2i (x: -1, y: -1), alternativeTile: Int32 = -1)-> VariantCollection<Vector2i> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_source_id: Int = Int (sourceId)
@@ -2102,7 +2102,7 @@ open class TileMap: Node2D {
     /// 
     public final func mapToLocal (mapPosition: Vector2i)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_map_position = mapPosition
         
@@ -2136,7 +2136,7 @@ open class TileMap: Node2D {
     /// Returns the map coordinates of the cell containing the given `localPosition`. If `localPosition` is in global coordinates, consider using ``Node2D/toLocal(globalPoint:)`` before passing it to this method. See also ``mapToLocal(mapPosition:)``.
     public final func localToMap (localPosition: Vector2)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_local_position = localPosition
         
@@ -2170,7 +2170,7 @@ open class TileMap: Node2D {
     /// Returns the neighboring cell to the one at coordinates `coords`, identified by the `neighbor` direction. This method takes into account the different layouts a TileMap can take.
     public final func getNeighborCell (coords: Vector2i, neighbor: TileSet.CellNeighbor)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_coords = coords
         var copy_neighbor = Int64 (neighbor.rawValue)

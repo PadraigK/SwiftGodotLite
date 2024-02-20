@@ -47,7 +47,7 @@ open class ViewportTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_viewport_path_in_scene (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ViewportTexture.method_set_viewport_path_in_scene, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)

@@ -203,7 +203,7 @@ open class FileDialog: ConfirmationDialog {
     /// For example, a `filter` of `"*.png, *.jpg"` and a `description` of `"Images"` results in filter text "Images (*.png, *.jpg)".
     /// 
     public final func addFilter (_ filter: String, description: String = "") {
-        #if true
+        #if false
         
         let gstr_filter = GString (filter)
         let gstr_description = GString (description)
@@ -240,7 +240,7 @@ open class FileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_filters (_ filters: PackedStringArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (FileDialog.method_set_filters, UnsafeMutableRawPointer (mutating: handle), nil, &filters.content)
@@ -342,7 +342,7 @@ open class FileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_current_dir (_ dir: String) {
-        #if true
+        #if false
         
         let gstr_dir = GString (dir)
         
@@ -374,7 +374,7 @@ open class FileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_current_file (_ file: String) {
-        #if true
+        #if false
         
         let gstr_file = GString (file)
         
@@ -406,7 +406,7 @@ open class FileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_current_path (_ path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -438,7 +438,7 @@ open class FileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_mode_overrides_title (_ override: Bool) {
-        #if true
+        #if false
         
         var copy_override = override
         
@@ -488,7 +488,7 @@ open class FileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_file_mode (_ mode: FileDialog.FileMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -580,7 +580,7 @@ open class FileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_access (_ access: FileDialog.Access) {
-        #if true
+        #if false
         
         var copy_access = Int64 (access.rawValue)
         
@@ -630,7 +630,7 @@ open class FileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_root_subfolder (_ dir: String) {
-        #if true
+        #if false
         
         let gstr_dir = GString (dir)
         
@@ -680,7 +680,7 @@ open class FileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_show_hidden_files (_ show: Bool) {
-        #if true
+        #if false
         
         var copy_show = show
         
@@ -730,7 +730,7 @@ open class FileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_use_native_dialog (_ native: Bool) {
-        #if true
+        #if false
         
         var copy_native = native
         

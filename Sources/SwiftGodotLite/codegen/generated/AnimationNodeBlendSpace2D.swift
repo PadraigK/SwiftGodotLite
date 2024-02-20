@@ -145,7 +145,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     
     /// Adds a new point that represents a `node` at the position set by `pos`. You can insert it at a specific index using the `atIndex` argument. If you use the default value for `atIndex`, the point is inserted at the end of the blend points array.
     public final func addBlendPoint (node: AnimationRootNode?, pos: Vector2, atIndex: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_at_index: Int = Int (atIndex)
@@ -186,7 +186,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     
     /// Updates the position of the point at index `point` on the blend axis.
     public final func setBlendPointPosition (point: Int32, pos: Vector2) {
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         var copy_pos = pos
@@ -224,7 +224,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     /// Returns the position of the point at index `point`.
     public final func getBlendPointPosition (point: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         
@@ -257,7 +257,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     
     /// Changes the ``AnimationNode`` referenced by the point at index `point`.
     public final func setBlendPointNode (point: Int32, node: AnimationRootNode?) {
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         var copy_node_handle = node?.handle
@@ -294,7 +294,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     /// Returns the ``AnimationRootNode`` referenced by the point at index `point`.
     public final func getBlendPointNode (point: Int32)-> AnimationRootNode? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         
@@ -327,7 +327,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     
     /// Removes the point at index `point` from the blend space.
     public final func removeBlendPoint (_ point: Int32) {
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         
@@ -377,7 +377,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     
     /// Creates a new triangle using three points `x`, `y`, and `z`. Triangles can overlap. You can insert the triangle at a specific index using the `atIndex` argument. If you use the default value for `atIndex`, the point is inserted at the end of the blend points array.
     public final func addTriangle (x: Int32, y: Int32, z: Int32, atIndex: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_x: Int = Int (x)
         var copy_y: Int = Int (y)
@@ -425,7 +425,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     /// Returns the position of the point at index `point` in the triangle of index `triangle`.
     public final func getTrianglePoint (triangle: Int32, point: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_triangle: Int = Int (triangle)
         var copy_point: Int = Int (point)
@@ -463,7 +463,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     
     /// Removes the triangle at index `triangle` from the blend space.
     public final func removeTriangle (_ triangle: Int32) {
-        #if true
+        #if false
         
         var copy_triangle: Int = Int (triangle)
         
@@ -513,7 +513,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_min_space (_ minSpace: Vector2) {
-        #if true
+        #if false
         
         var copy_min_space = minSpace
         
@@ -563,7 +563,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_max_space (_ maxSpace: Vector2) {
-        #if true
+        #if false
         
         var copy_max_space = maxSpace
         
@@ -613,7 +613,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_snap (_ snap: Vector2) {
-        #if true
+        #if false
         
         var copy_snap = snap
         
@@ -663,7 +663,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_x_label (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -713,7 +713,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_y_label (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -763,7 +763,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_auto_triangles (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -813,7 +813,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_blend_mode (_ mode: AnimationNodeBlendSpace2D.BlendMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -863,7 +863,7 @@ open class AnimationNodeBlendSpace2D: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_use_sync (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

@@ -124,7 +124,7 @@ open class SpinBox: Range {
     
     @inline(__always)
     fileprivate final func set_horizontal_alignment (_ alignment: HorizontalAlignment) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -174,7 +174,7 @@ open class SpinBox: Range {
     
     @inline(__always)
     fileprivate final func set_suffix (_ suffix: String) {
-        #if true
+        #if false
         
         let gstr_suffix = GString (suffix)
         
@@ -224,7 +224,7 @@ open class SpinBox: Range {
     
     @inline(__always)
     fileprivate final func set_prefix (_ prefix: String) {
-        #if true
+        #if false
         
         let gstr_prefix = GString (prefix)
         
@@ -274,7 +274,7 @@ open class SpinBox: Range {
     
     @inline(__always)
     fileprivate final func set_editable (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -306,7 +306,7 @@ open class SpinBox: Range {
     
     @inline(__always)
     fileprivate final func set_custom_arrow_step (_ arrowStep: Double) {
-        #if true
+        #if false
         
         var copy_arrow_step = arrowStep
         
@@ -374,7 +374,7 @@ open class SpinBox: Range {
     
     @inline(__always)
     fileprivate final func set_update_on_text_changed (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -424,7 +424,7 @@ open class SpinBox: Range {
     
     @inline(__always)
     fileprivate final func set_select_all_on_focus (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

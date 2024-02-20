@@ -97,7 +97,7 @@ open class GLTFBufferView: Resource {
     
     @inline(__always)
     fileprivate final func set_buffer (_ buffer: Int32) {
-        #if true
+        #if false
         
         var copy_buffer: Int = Int (buffer)
         
@@ -147,7 +147,7 @@ open class GLTFBufferView: Resource {
     
     @inline(__always)
     fileprivate final func set_byte_offset (_ byteOffset: Int32) {
-        #if true
+        #if false
         
         var copy_byte_offset: Int = Int (byteOffset)
         
@@ -197,7 +197,7 @@ open class GLTFBufferView: Resource {
     
     @inline(__always)
     fileprivate final func set_byte_length (_ byteLength: Int32) {
-        #if true
+        #if false
         
         var copy_byte_length: Int = Int (byteLength)
         
@@ -247,7 +247,7 @@ open class GLTFBufferView: Resource {
     
     @inline(__always)
     fileprivate final func set_byte_stride (_ byteStride: Int32) {
-        #if true
+        #if false
         
         var copy_byte_stride: Int = Int (byteStride)
         
@@ -297,7 +297,7 @@ open class GLTFBufferView: Resource {
     
     @inline(__always)
     fileprivate final func set_indices (_ indices: Bool) {
-        #if true
+        #if false
         
         var copy_indices = indices
         

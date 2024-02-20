@@ -37,7 +37,7 @@ open class HashingContext: RefCounted {
     /// Starts a new hash computation of the given `type` (e.g. .hashSha256 to start computation of a SHA-256).
     public final func start (type: HashingContext.HashType)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -71,7 +71,7 @@ open class HashingContext: RefCounted {
     /// Updates the computation with the given `chunk` of data.
     public final func update (chunk: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (HashingContext.method_update, UnsafeMutableRawPointer (mutating: handle), &_result, &chunk.content)

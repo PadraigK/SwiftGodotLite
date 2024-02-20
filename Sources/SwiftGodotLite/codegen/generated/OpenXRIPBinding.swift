@@ -51,7 +51,7 @@ open class OpenXRIPBinding: Resource {
     
     @inline(__always)
     fileprivate final func set_action (_ action: OpenXRAction?) {
-        #if true
+        #if false
         
         var copy_action_handle = action?.handle
         
@@ -118,7 +118,7 @@ open class OpenXRIPBinding: Resource {
     
     @inline(__always)
     fileprivate final func set_paths (_ paths: PackedStringArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (OpenXRIPBinding.method_set_paths, UnsafeMutableRawPointer (mutating: handle), nil, &paths.content)
@@ -167,7 +167,7 @@ open class OpenXRIPBinding: Resource {
     /// Returns `true` if this input/output path is part of this binding.
     public final func hasPath (_ path: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -200,7 +200,7 @@ open class OpenXRIPBinding: Resource {
     
     /// Add an input/output path to this binding.
     public final func addPath (_ path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -232,7 +232,7 @@ open class OpenXRIPBinding: Resource {
     
     /// Removes this input/output path from this binding.
     public final func removePath (_ path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         

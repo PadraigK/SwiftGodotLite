@@ -151,7 +151,7 @@ open class ThemeDB: Object {
     
     @inline(__always)
     fileprivate static func set_fallback_base_scale (_ baseScale: Double) {
-        #if true
+        #if false
         
         var copy_base_scale = baseScale
         
@@ -201,7 +201,7 @@ open class ThemeDB: Object {
     
     @inline(__always)
     fileprivate static func set_fallback_font (_ font: Font?) {
-        #if true
+        #if false
         
         var copy_font_handle = font?.handle
         
@@ -250,7 +250,7 @@ open class ThemeDB: Object {
     
     @inline(__always)
     fileprivate static func set_fallback_font_size (_ fontSize: Int32) {
-        #if true
+        #if false
         
         var copy_font_size: Int = Int (fontSize)
         
@@ -300,7 +300,7 @@ open class ThemeDB: Object {
     
     @inline(__always)
     fileprivate static func set_fallback_icon (_ icon: Texture2D?) {
-        #if true
+        #if false
         
         var copy_icon_handle = icon?.handle
         
@@ -349,7 +349,7 @@ open class ThemeDB: Object {
     
     @inline(__always)
     fileprivate static func set_fallback_stylebox (_ stylebox: StyleBox?) {
-        #if true
+        #if false
         
         var copy_stylebox_handle = stylebox?.handle
         

@@ -61,7 +61,7 @@ open class EditorUndoRedoManager: Object {
     /// The way undo operation are ordered in actions is dictated by `backwardUndoOps`. When `backwardUndoOps` is `false` undo option are ordered in the same order they were added. Which means the first operation to be added will be the first to be undone.
     /// 
     public final func createAction (name: String, mergeMode: UndoRedo.MergeMode = .disable, customContext: Object? = nil, backwardUndoOps: Bool = false) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_merge_mode = Int64 (mergeMode.rawValue)
@@ -107,7 +107,7 @@ open class EditorUndoRedoManager: Object {
     
     /// Commit the action. If `execute` is true (default), all "do" methods/properties are called/set when this function is called.
     public final func commitAction (execute: Bool = true) {
-        #if true
+        #if false
         
         var copy_execute = execute
         
@@ -256,7 +256,7 @@ open class EditorUndoRedoManager: Object {
     /// If this is the first operation, the `object` will be used to deduce target undo history.
     /// 
     public final func addDoProperty (object: Object?, property: StringName, value: Variant) {
-        #if true
+        #if false
         
         var copy_object_handle = object?.handle
         
@@ -296,7 +296,7 @@ open class EditorUndoRedoManager: Object {
     /// If this is the first operation, the `object` will be used to deduce target undo history.
     /// 
     public final func addUndoProperty (object: Object?, property: StringName, value: Variant) {
-        #if true
+        #if false
         
         var copy_object_handle = object?.handle
         
@@ -333,7 +333,7 @@ open class EditorUndoRedoManager: Object {
     
     /// Register a reference for "do" that will be erased if the "do" history is lost. This is useful mostly for new nodes created for the "do" call. Do not use for resources.
     public final func addDoReference (object: Object?) {
-        #if true
+        #if false
         
         var copy_object_handle = object?.handle
         
@@ -364,7 +364,7 @@ open class EditorUndoRedoManager: Object {
     
     /// Register a reference for "undo" that will be erased if the "undo" history is lost. This is useful mostly for nodes removed with the "do" call (not the "undo" call!).
     public final func addUndoReference (object: Object?) {
-        #if true
+        #if false
         
         var copy_object_handle = object?.handle
         
@@ -396,7 +396,7 @@ open class EditorUndoRedoManager: Object {
     /// Returns the history ID deduced from the given `object`. It can be used with ``getHistoryUndoRedo(id:)``.
     public final func getObjectHistoryId (object: Object?)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_object_handle = object?.handle
         
@@ -434,7 +434,7 @@ open class EditorUndoRedoManager: Object {
     /// 
     public final func getHistoryUndoRedo (id: Int32)-> UndoRedo? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         

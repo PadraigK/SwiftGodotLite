@@ -261,7 +261,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_horizontal_alignment (_ alignment: HorizontalAlignment) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -311,7 +311,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_vertical_alignment (_ alignment: VerticalAlignment) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -361,7 +361,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_text (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -411,7 +411,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_label_settings (_ settings: LabelSettings?) {
-        #if true
+        #if false
         
         var copy_settings_handle = settings?.handle
         
@@ -460,7 +460,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_text_direction (_ direction: Control.TextDirection) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -510,7 +510,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_language (_ language: String) {
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -560,7 +560,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_autowrap_mode (_ autowrapMode: TextServer.AutowrapMode) {
-        #if true
+        #if false
         
         var copy_autowrap_mode = Int64 (autowrapMode.rawValue)
         
@@ -610,7 +610,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_justification_flags (_ justificationFlags: TextServer.JustificationFlag) {
-        #if true
+        #if false
         
         var copy_justification_flags = justificationFlags
         
@@ -660,7 +660,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_clip_text (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -710,7 +710,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_tab_stops (_ tabStops: PackedFloat32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Label.method_set_tab_stops, UnsafeMutableRawPointer (mutating: handle), nil, &tabStops.content)
@@ -758,7 +758,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_text_overrun_behavior (_ overrunBehavior: TextServer.OverrunBehavior) {
-        #if true
+        #if false
         
         var copy_overrun_behavior = Int64 (overrunBehavior.rawValue)
         
@@ -808,7 +808,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_uppercase (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -864,7 +864,7 @@ open class Label: Control {
     /// 
     public final func getLineHeight (line: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -951,7 +951,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_visible_characters (_ amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -1019,7 +1019,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_visible_characters_behavior (_ behavior: TextServer.VisibleCharactersBehavior) {
-        #if true
+        #if false
         
         var copy_behavior = Int64 (behavior.rawValue)
         
@@ -1051,7 +1051,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_visible_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -1101,7 +1101,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_lines_skipped (_ linesSkipped: Int32) {
-        #if true
+        #if false
         
         var copy_lines_skipped: Int = Int (linesSkipped)
         
@@ -1151,7 +1151,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_max_lines_visible (_ linesVisible: Int32) {
-        #if true
+        #if false
         
         var copy_lines_visible: Int = Int (linesVisible)
         
@@ -1201,7 +1201,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_structured_text_bidi_override (_ parser: TextServer.StructuredTextParser) {
-        #if true
+        #if false
         
         var copy_parser = Int64 (parser.rawValue)
         
@@ -1251,7 +1251,7 @@ open class Label: Control {
     
     @inline(__always)
     fileprivate final func set_structured_text_bidi_override_options (_ args: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Label.method_set_structured_text_bidi_override_options, UnsafeMutableRawPointer (mutating: handle), nil, &args.content)

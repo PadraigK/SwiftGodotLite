@@ -1349,7 +1349,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_direction (_ degrees: Vector3) {
-        #if true
+        #if false
         
         var copy_degrees = degrees
         
@@ -1399,7 +1399,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_inherit_velocity_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -1449,7 +1449,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_spread (_ degrees: Double) {
-        #if true
+        #if false
         
         var copy_degrees = degrees
         
@@ -1499,7 +1499,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_flatness (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -1550,7 +1550,7 @@ open class ParticleProcessMaterial: Material {
     @inline(__always)
     /// Sets the minimum value range for the given parameter.
     fileprivate final func set_param_min (_ param: ParticleProcessMaterial.Parameter, _ value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -1589,7 +1589,7 @@ open class ParticleProcessMaterial: Material {
     /// Returns the minimum value range for the given parameter.
     fileprivate final func get_param_min (_ param: ParticleProcessMaterial.Parameter)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -1623,7 +1623,7 @@ open class ParticleProcessMaterial: Material {
     @inline(__always)
     /// Sets the maximum value range for the given parameter.
     fileprivate final func set_param_max (_ param: ParticleProcessMaterial.Parameter, _ value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -1662,7 +1662,7 @@ open class ParticleProcessMaterial: Material {
     /// Returns the maximum value range for the given parameter.
     fileprivate final func get_param_max (_ param: ParticleProcessMaterial.Parameter)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -1696,7 +1696,7 @@ open class ParticleProcessMaterial: Material {
     @inline(__always)
     /// Sets the ``Texture2D`` for the specified ``ParticleProcessMaterial/Parameter``.
     fileprivate final func set_param_texture (_ param: ParticleProcessMaterial.Parameter, _ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_texture_handle = texture?.handle
@@ -1734,7 +1734,7 @@ open class ParticleProcessMaterial: Material {
     /// Returns the ``Texture2D`` used by the specified parameter.
     fileprivate final func get_param_texture (_ param: ParticleProcessMaterial.Parameter)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -1767,7 +1767,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -1817,7 +1817,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_color_ramp (_ ramp: Texture2D?) {
-        #if true
+        #if false
         
         var copy_ramp_handle = ramp?.handle
         
@@ -1866,7 +1866,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_alpha_curve (_ curve: Texture2D?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         
@@ -1915,7 +1915,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission_curve (_ curve: Texture2D?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         
@@ -1964,7 +1964,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_color_initial_ramp (_ ramp: Texture2D?) {
-        #if true
+        #if false
         
         var copy_ramp_handle = ramp?.handle
         
@@ -2013,7 +2013,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_velocity_limit_curve (_ curve: Texture2D?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         
@@ -2063,7 +2063,7 @@ open class ParticleProcessMaterial: Material {
     @inline(__always)
     /// If `true`, enables the specified particle flag. See ``ParticleProcessMaterial/ParticleFlags`` for options.
     fileprivate final func set_particle_flag (_ particleFlag: ParticleProcessMaterial.ParticleFlags, _ enable: Bool) {
-        #if true
+        #if false
         
         var copy_particle_flag = Int64 (particleFlag.rawValue)
         var copy_enable = enable
@@ -2102,7 +2102,7 @@ open class ParticleProcessMaterial: Material {
     /// Returns `true` if the specified particle flag is enabled. See ``ParticleProcessMaterial/ParticleFlags`` for options.
     fileprivate final func get_particle_flag (_ particleFlag: ParticleProcessMaterial.ParticleFlags)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_particle_flag = Int64 (particleFlag.rawValue)
         
@@ -2135,7 +2135,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_velocity_pivot (_ pivot: Vector3) {
-        #if true
+        #if false
         
         var copy_pivot = pivot
         
@@ -2185,7 +2185,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission_shape (_ shape: ParticleProcessMaterial.EmissionShape) {
-        #if true
+        #if false
         
         var copy_shape = Int64 (shape.rawValue)
         
@@ -2235,7 +2235,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission_sphere_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -2285,7 +2285,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission_box_extents (_ extents: Vector3) {
-        #if true
+        #if false
         
         var copy_extents = extents
         
@@ -2335,7 +2335,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission_point_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -2384,7 +2384,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission_normal_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -2433,7 +2433,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission_color_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -2482,7 +2482,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission_point_count (_ pointCount: Int32) {
-        #if true
+        #if false
         
         var copy_point_count: Int = Int (pointCount)
         
@@ -2532,7 +2532,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission_ring_axis (_ axis: Vector3) {
-        #if true
+        #if false
         
         var copy_axis = axis
         
@@ -2582,7 +2582,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission_ring_height (_ height: Double) {
-        #if true
+        #if false
         
         var copy_height = height
         
@@ -2632,7 +2632,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission_ring_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -2682,7 +2682,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission_ring_inner_radius (_ innerRadius: Double) {
-        #if true
+        #if false
         
         var copy_inner_radius = innerRadius
         
@@ -2732,7 +2732,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission_shape_offset (_ emissionShapeOffset: Vector3) {
-        #if true
+        #if false
         
         var copy_emission_shape_offset = emissionShapeOffset
         
@@ -2782,7 +2782,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_emission_shape_scale (_ emissionShapeScale: Vector3) {
-        #if true
+        #if false
         
         var copy_emission_shape_scale = emissionShapeScale
         
@@ -2850,7 +2850,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_turbulence_enabled (_ turbulenceEnabled: Bool) {
-        #if true
+        #if false
         
         var copy_turbulence_enabled = turbulenceEnabled
         
@@ -2900,7 +2900,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_turbulence_noise_strength (_ turbulenceNoiseStrength: Double) {
-        #if true
+        #if false
         
         var copy_turbulence_noise_strength = turbulenceNoiseStrength
         
@@ -2950,7 +2950,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_turbulence_noise_scale (_ turbulenceNoiseScale: Double) {
-        #if true
+        #if false
         
         var copy_turbulence_noise_scale = turbulenceNoiseScale
         
@@ -3000,7 +3000,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_turbulence_noise_speed_random (_ turbulenceNoiseSpeedRandom: Double) {
-        #if true
+        #if false
         
         var copy_turbulence_noise_speed_random = turbulenceNoiseSpeedRandom
         
@@ -3050,7 +3050,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_turbulence_noise_speed (_ turbulenceNoiseSpeed: Vector3) {
-        #if true
+        #if false
         
         var copy_turbulence_noise_speed = turbulenceNoiseSpeed
         
@@ -3100,7 +3100,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_gravity (_ accelVec: Vector3) {
-        #if true
+        #if false
         
         var copy_accel_vec = accelVec
         
@@ -3132,7 +3132,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_lifetime_randomness (_ randomness: Double) {
-        #if true
+        #if false
         
         var copy_randomness = randomness
         
@@ -3200,7 +3200,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_sub_emitter_mode (_ mode: ParticleProcessMaterial.SubEmitterMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -3250,7 +3250,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_sub_emitter_frequency (_ hz: Double) {
-        #if true
+        #if false
         
         var copy_hz = hz
         
@@ -3300,7 +3300,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_sub_emitter_amount_at_end (_ amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -3350,7 +3350,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_sub_emitter_amount_at_collision (_ amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -3400,7 +3400,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_sub_emitter_keep_velocity (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3432,7 +3432,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_attractor_interaction_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -3482,7 +3482,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_collision_mode (_ mode: ParticleProcessMaterial.CollisionMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -3532,7 +3532,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_collision_use_scale (_ radius: Bool) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -3582,7 +3582,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_collision_friction (_ friction: Double) {
-        #if true
+        #if false
         
         var copy_friction = friction
         
@@ -3632,7 +3632,7 @@ open class ParticleProcessMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_collision_bounce (_ bounce: Double) {
-        #if true
+        #if false
         
         var copy_bounce = bounce
         

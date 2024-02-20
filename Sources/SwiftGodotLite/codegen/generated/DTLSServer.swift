@@ -28,7 +28,7 @@ open class DTLSServer: RefCounted {
     /// Setup the DTLS server to use the given `serverOptions`. See ``TLSOptions/server(key:certificate:)``.
     public final func setup (serverOptions: TLSOptions?)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_server_options_handle = serverOptions?.handle
         
@@ -64,7 +64,7 @@ open class DTLSServer: RefCounted {
     /// 
     public final func takeConnection (udpPeer: PacketPeerUDP?)-> PacketPeerDTLS? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_udp_peer_handle = udpPeer?.handle
         

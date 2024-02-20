@@ -42,7 +42,7 @@ open class SphereShape3D: Shape3D {
     
     @inline(__always)
     fileprivate final func set_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         

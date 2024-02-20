@@ -1252,7 +1252,7 @@ open class RenderingServer: Object {
     /// 
     public static func texture2dCreate (image: Image?)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_image_handle = image?.handle
         
@@ -1290,7 +1290,7 @@ open class RenderingServer: Object {
     /// 
     public static func texture2dLayeredCreate (layers: ObjectCollection<Image>, layeredType: RenderingServer.TextureLayeredType)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_layered_type = Int64 (layeredType.rawValue)
         
@@ -1327,7 +1327,7 @@ open class RenderingServer: Object {
     /// > Note: The equivalent resource is ``Texture3D``.
     public static func texture3dCreate (format: Image.Format, width: Int32, height: Int32, depth: Int32, mipmaps: Bool, data: ObjectCollection<Image>)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_format = Int64 (format.rawValue)
         var copy_width: Int = Int (width)
@@ -1384,7 +1384,7 @@ open class RenderingServer: Object {
     /// _Deprecated._ ProxyTexture was removed in Godot 4, so this method does nothing when called and always returns a null ``RID``.
     public static func textureProxyCreate (base: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_texture_proxy_create, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &base.content)
@@ -1418,7 +1418,7 @@ open class RenderingServer: Object {
     /// > Note: The `image` must have the same width, height and format as the current `texture` data. Otherwise, an error will be printed and the original texture won't be modified. If you need to use different width, height or format, use ``textureReplace(texture:byTexture:)`` instead.
     /// 
     public static func texture2dUpdate (texture: RID, image: Image?, layer: Int32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_image_handle = image?.handle
@@ -1460,7 +1460,7 @@ open class RenderingServer: Object {
     /// > Note: The `texture` must have the same width, height, depth and format as the current texture data. Otherwise, an error will be printed and the original texture won't be modified. If you need to use different width, height, depth or format, use ``textureReplace(texture:byTexture:)`` instead.
     /// 
     public static func texture3dUpdate (texture: RID, data: ObjectCollection<Image>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_texture_3d_update, UnsafeMutableRawPointer (mutating: shared.handle), nil, &texture.content, &data.array.content)
@@ -1493,7 +1493,7 @@ open class RenderingServer: Object {
     
     /// _Deprecated._ ProxyTexture was removed in Godot 4, so this method cannot be used anymore.
     public static func textureProxyUpdate (texture: RID, proxyTo: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_texture_proxy_update, UnsafeMutableRawPointer (mutating: shared.handle), nil, &texture.content, &proxyTo.content)
@@ -1553,7 +1553,7 @@ open class RenderingServer: Object {
     /// 
     public static func texture2dLayeredPlaceholderCreate (layeredType: RenderingServer.TextureLayeredType)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_layered_type = Int64 (layeredType.rawValue)
         
@@ -1613,7 +1613,7 @@ open class RenderingServer: Object {
     /// 
     public static func texture2dGet (texture: RID)-> Image? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_texture_2d_get, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &texture.content)
@@ -1645,7 +1645,7 @@ open class RenderingServer: Object {
     /// Returns an ``Image`` instance from the given `texture` ``RID`` and `layer`.
     public static func texture2dLayerGet (texture: RID, layer: Int32)-> Image? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -1682,7 +1682,7 @@ open class RenderingServer: Object {
     /// Returns 3D texture data as an array of ``Image``s for the specified texture ``RID``.
     public static func texture3dGet (texture: RID)-> ObjectCollection<Image> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_texture_3d_get, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &texture.content)
@@ -1713,7 +1713,7 @@ open class RenderingServer: Object {
     
     /// Replaces `texture`'s texture data by the texture specified by the `byTexture` RID, without changing `texture`'s RID.
     public static func textureReplace (texture: RID, byTexture: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_texture_replace, UnsafeMutableRawPointer (mutating: shared.handle), nil, &texture.content, &byTexture.content)
@@ -1746,7 +1746,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func textureSetSizeOverride (texture: RID, width: Int32, height: Int32) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         var copy_height: Int = Int (height)
@@ -1786,7 +1786,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func textureSetPath (texture: RID, path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -1822,7 +1822,7 @@ open class RenderingServer: Object {
     /// 
     public static func textureGetPath (texture: RID)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_texture_get_path, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &texture.content)
@@ -1854,7 +1854,7 @@ open class RenderingServer: Object {
     /// Returns the ``Image.Format`` for the texture.
     public static func textureGetFormat (texture: RID)-> Image.Format {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_texture_get_format, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &texture.content)
@@ -1885,7 +1885,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func textureSetForceRedrawIfVisible (texture: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1921,7 +1921,7 @@ open class RenderingServer: Object {
     /// Creates a new texture object based on a texture created directly on the ``RenderingDevice``. If the texture contains layers, `layerType` is used to define the layer type.
     public static func textureRdCreate (rdTexture: RID, layerType: RenderingServer.TextureLayeredType = .textureLayered2dArray)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_layer_type = Int64 (layerType.rawValue)
         
@@ -1958,7 +1958,7 @@ open class RenderingServer: Object {
     /// Returns a texture ``RID`` that can be used with ``RenderingDevice``.
     public static func textureGetRdTexture (_ texture: RID, srgb: Bool = false)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_srgb = srgb
         
@@ -1998,7 +1998,7 @@ open class RenderingServer: Object {
     /// 
     public static func textureGetNativeHandle (texture: RID, srgb: Bool = false)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         var copy_srgb = srgb
         
@@ -2057,7 +2057,7 @@ open class RenderingServer: Object {
     
     /// Sets the shader's source code (which triggers recompilation after being changed).
     public static func shaderSetCode (shader: RID, code: String) {
-        #if true
+        #if false
         
         let gstr_code = GString (code)
         
@@ -2092,7 +2092,7 @@ open class RenderingServer: Object {
     
     /// Sets the path hint for the specified shader. This should generally match the ``Shader`` resource's ``Resource/resourcePath``.
     public static func shaderSetPathHint (shader: RID, path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -2128,7 +2128,7 @@ open class RenderingServer: Object {
     /// Returns a shader's source code as a string.
     public static func shaderGetCode (shader: RID)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_shader_get_code, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &shader.content)
@@ -2160,7 +2160,7 @@ open class RenderingServer: Object {
     /// Returns the parameters of a shader.
     public static func getShaderParameterList (shader: RID)-> VariantCollection<GDictionary> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_get_shader_parameter_list, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &shader.content)
@@ -2192,7 +2192,7 @@ open class RenderingServer: Object {
     /// Returns the default value for the specified shader uniform. This is usually the value written in the shader source code.
     public static func shaderGetParameterDefault (shader: RID, name: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_shader_get_parameter_default, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &shader.content, &name.content)
@@ -2229,7 +2229,7 @@ open class RenderingServer: Object {
     /// > Note: If the sampler array is used use `index` to access the specified texture.
     /// 
     public static func shaderSetDefaultTextureParameter (shader: RID, name: StringName, texture: RID, index: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2274,7 +2274,7 @@ open class RenderingServer: Object {
     /// 
     public static func shaderGetDefaultTextureParameter (shader: RID, name: StringName, index: Int32 = 0)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2336,7 +2336,7 @@ open class RenderingServer: Object {
     
     /// Sets a shader material's shader.
     public static func materialSetShader (shaderMaterial: RID, shader: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_material_set_shader, UnsafeMutableRawPointer (mutating: shared.handle), nil, &shaderMaterial.content, &shader.content)
@@ -2369,7 +2369,7 @@ open class RenderingServer: Object {
     
     /// Sets a material's parameter.
     public static func materialSetParam (material: RID, parameter: StringName, value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_material_set_param, UnsafeMutableRawPointer (mutating: shared.handle), nil, &material.content, &parameter.content, &value.content)
@@ -2406,7 +2406,7 @@ open class RenderingServer: Object {
     /// Returns the value of a certain material's parameter.
     public static func materialGetParam (material: RID, parameter: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_material_get_param, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &material.content, &parameter.content)
@@ -2440,7 +2440,7 @@ open class RenderingServer: Object {
     
     /// Sets a material's render priority.
     public static func materialSetRenderPriority (material: RID, priority: Int32) {
-        #if true
+        #if false
         
         var copy_priority: Int = Int (priority)
         
@@ -2475,7 +2475,7 @@ open class RenderingServer: Object {
     
     /// Sets an object's next material.
     public static func materialSetNextPass (material: RID, nextMaterial: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_material_set_next_pass, UnsafeMutableRawPointer (mutating: shared.handle), nil, &material.content, &nextMaterial.content)
@@ -2509,7 +2509,7 @@ open class RenderingServer: Object {
     /// 
     public static func meshCreateFromSurfaces (_ surfaces: VariantCollection<GDictionary>, blendShapeCount: Int32 = 0)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_blend_shape_count: Int = Int (blendShapeCount)
         
@@ -2571,7 +2571,7 @@ open class RenderingServer: Object {
     /// Returns the offset of a given attribute by `arrayIndex` in the start of its respective buffer.
     public static func meshSurfaceGetFormatOffset (format: RenderingServer.ArrayFormat, vertexCount: Int32, arrayIndex: Int32)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         var copy_format = format
         var copy_vertex_count: Int = Int (vertexCount)
@@ -2615,7 +2615,7 @@ open class RenderingServer: Object {
     /// Returns the stride of the vertex positions for a mesh with given `format`. Note importantly that vertex positions are stored consecutively and are not interleaved with the other attributes in the vertex buffer (normals and tangents).
     public static func meshSurfaceGetFormatVertexStride (format: RenderingServer.ArrayFormat, vertexCount: Int32)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         var copy_format = format
         var copy_vertex_count: Int = Int (vertexCount)
@@ -2654,7 +2654,7 @@ open class RenderingServer: Object {
     /// Returns the stride of the combined normals and tangents for a mesh with given `format`. Note importantly that, while normals and tangents are in the vertex buffer with vertices, they are only interleaved with each other and so have a different stride than vertex positions.
     public static func meshSurfaceGetFormatNormalTangentStride (format: RenderingServer.ArrayFormat, vertexCount: Int32)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         var copy_format = format
         var copy_vertex_count: Int = Int (vertexCount)
@@ -2693,7 +2693,7 @@ open class RenderingServer: Object {
     /// Returns the stride of the attribute buffer for a mesh with given `format`.
     public static func meshSurfaceGetFormatAttributeStride (format: RenderingServer.ArrayFormat, vertexCount: Int32)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         var copy_format = format
         var copy_vertex_count: Int = Int (vertexCount)
@@ -2732,7 +2732,7 @@ open class RenderingServer: Object {
     /// Returns the stride of the skin buffer for a mesh with given `format`.
     public static func meshSurfaceGetFormatSkinStride (format: RenderingServer.ArrayFormat, vertexCount: Int32)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         var copy_format = format
         var copy_vertex_count: Int = Int (vertexCount)
@@ -2770,7 +2770,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func meshAddSurface (mesh: RID, surface: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_mesh_add_surface, UnsafeMutableRawPointer (mutating: shared.handle), nil, &mesh.content, &surface.content)
@@ -2803,7 +2803,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func meshAddSurfaceFromArrays (mesh: RID, primitive: RenderingServer.PrimitiveType, arrays: GArray, blendShapes: GArray = GArray (), lods: GDictionary = GDictionary (), compressFormat: RenderingServer.ArrayFormat = []) {
-        #if true
+        #if false
         
         var copy_primitive = Int64 (primitive.rawValue)
         var copy_compress_format = compressFormat
@@ -2853,7 +2853,7 @@ open class RenderingServer: Object {
     /// Returns a mesh's blend shape count.
     public static func meshGetBlendShapeCount (mesh: RID)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_mesh_get_blend_shape_count, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &mesh.content)
@@ -2884,7 +2884,7 @@ open class RenderingServer: Object {
     
     /// Sets a mesh's blend shape mode.
     public static func meshSetBlendShapeMode (mesh: RID, mode: RenderingServer.BlendShapeMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -2920,7 +2920,7 @@ open class RenderingServer: Object {
     /// Returns a mesh's blend shape mode.
     public static func meshGetBlendShapeMode (mesh: RID)-> RenderingServer.BlendShapeMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_mesh_get_blend_shape_mode, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &mesh.content)
@@ -2951,7 +2951,7 @@ open class RenderingServer: Object {
     
     /// Sets a mesh's surface's material.
     public static func meshSurfaceSetMaterial (mesh: RID, surface: Int32, material: RID) {
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         
@@ -2990,7 +2990,7 @@ open class RenderingServer: Object {
     /// Returns a mesh's surface's material.
     public static func meshSurfaceGetMaterial (mesh: RID, surface: Int32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         
@@ -3027,7 +3027,7 @@ open class RenderingServer: Object {
     /// 
     public static func meshGetSurface (mesh: RID, surface: Int32)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         
@@ -3064,7 +3064,7 @@ open class RenderingServer: Object {
     /// Returns a mesh's surface's buffer arrays.
     public static func meshSurfaceGetArrays (mesh: RID, surface: Int32)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         
@@ -3101,7 +3101,7 @@ open class RenderingServer: Object {
     /// Returns a mesh's surface's arrays for blend shapes.
     public static func meshSurfaceGetBlendShapeArrays (mesh: RID, surface: Int32)-> VariantCollection<GArray> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         
@@ -3138,7 +3138,7 @@ open class RenderingServer: Object {
     /// Returns a mesh's number of surfaces.
     public static func meshGetSurfaceCount (mesh: RID)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_mesh_get_surface_count, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &mesh.content)
@@ -3169,7 +3169,7 @@ open class RenderingServer: Object {
     
     /// Sets a mesh's custom aabb.
     public static func meshSetCustomAabb (mesh: RID, aabb: AABB) {
-        #if true
+        #if false
         
         var copy_aabb = aabb
         
@@ -3205,7 +3205,7 @@ open class RenderingServer: Object {
     /// Returns a mesh's custom aabb.
     public static func meshGetCustomAabb (mesh: RID)-> AABB {
         var _result: AABB = AABB ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_mesh_get_custom_aabb, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &mesh.content)
@@ -3236,7 +3236,7 @@ open class RenderingServer: Object {
     
     /// Removes all surfaces from a mesh.
     public static func meshClear (mesh: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_mesh_clear, UnsafeMutableRawPointer (mutating: shared.handle), nil, &mesh.content)
@@ -3266,7 +3266,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func meshSurfaceUpdateVertexRegion (mesh: RID, surface: Int32, offset: Int32, data: PackedByteArray) {
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         var copy_offset: Int = Int (offset)
@@ -3309,7 +3309,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func meshSurfaceUpdateAttributeRegion (mesh: RID, surface: Int32, offset: Int32, data: PackedByteArray) {
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         var copy_offset: Int = Int (offset)
@@ -3352,7 +3352,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func meshSurfaceUpdateSkinRegion (mesh: RID, surface: Int32, offset: Int32, data: PackedByteArray) {
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         var copy_offset: Int = Int (offset)
@@ -3395,7 +3395,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func meshSetShadowMesh (_ mesh: RID, shadowMesh: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_mesh_set_shadow_mesh, UnsafeMutableRawPointer (mutating: shared.handle), nil, &mesh.content, &shadowMesh.content)
@@ -3453,7 +3453,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func multimeshAllocateData (multimesh: RID, instances: Int32, transformFormat: RenderingServer.MultimeshTransformFormat, colorFormat: Bool = false, customDataFormat: Bool = false) {
-        #if true
+        #if false
         
         var copy_instances: Int = Int (instances)
         var copy_transform_format = Int64 (transformFormat.rawValue)
@@ -3504,7 +3504,7 @@ open class RenderingServer: Object {
     /// Returns the number of instances allocated for this multimesh.
     public static func multimeshGetInstanceCount (multimesh: RID)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_multimesh_get_instance_count, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &multimesh.content)
@@ -3535,7 +3535,7 @@ open class RenderingServer: Object {
     
     /// Sets the mesh to be drawn by the multimesh. Equivalent to ``MultiMesh/mesh``.
     public static func multimeshSetMesh (multimesh: RID, mesh: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_multimesh_set_mesh, UnsafeMutableRawPointer (mutating: shared.handle), nil, &multimesh.content, &mesh.content)
@@ -3568,7 +3568,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``Transform3D`` for this instance. Equivalent to ``MultiMesh/setInstanceTransform(instance:transform:)``.
     public static func multimeshInstanceSetTransform (multimesh: RID, index: Int32, transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_transform = transform
@@ -3608,7 +3608,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``Transform2D`` for this instance. For use when multimesh is used in 2D. Equivalent to ``MultiMesh/setInstanceTransform2d(instance:transform:)``.
     public static func multimeshInstanceSetTransform2d (multimesh: RID, index: Int32, transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_transform = transform
@@ -3648,7 +3648,7 @@ open class RenderingServer: Object {
     
     /// Sets the color by which this instance will be modulated. Equivalent to ``MultiMesh/setInstanceColor(instance:color:)``.
     public static func multimeshInstanceSetColor (multimesh: RID, index: Int32, color: Color) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_color = color
@@ -3688,7 +3688,7 @@ open class RenderingServer: Object {
     
     /// Sets the custom data for this instance. Custom data is passed as a ``Color``, but is interpreted as a `vec4` in the shader. Equivalent to ``MultiMesh/setInstanceCustomData(instance:customData:)``.
     public static func multimeshInstanceSetCustomData (multimesh: RID, index: Int32, customData: Color) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_custom_data = customData
@@ -3729,7 +3729,7 @@ open class RenderingServer: Object {
     /// Returns the RID of the mesh that will be used in drawing this multimesh.
     public static func multimeshGetMesh (multimesh: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_multimesh_get_mesh, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &multimesh.content)
@@ -3761,7 +3761,7 @@ open class RenderingServer: Object {
     /// Calculates and returns the axis-aligned bounding box that encloses all instances within the multimesh.
     public static func multimeshGetAabb (multimesh: RID)-> AABB {
         var _result: AABB = AABB ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_multimesh_get_aabb, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &multimesh.content)
@@ -3793,7 +3793,7 @@ open class RenderingServer: Object {
     /// Returns the ``Transform3D`` of the specified instance.
     public static func multimeshInstanceGetTransform (multimesh: RID, index: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -3830,7 +3830,7 @@ open class RenderingServer: Object {
     /// Returns the ``Transform2D`` of the specified instance. For use when the multimesh is set to use 2D transforms.
     public static func multimeshInstanceGetTransform2d (multimesh: RID, index: Int32)-> Transform2D {
         var _result: Transform2D = Transform2D ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -3867,7 +3867,7 @@ open class RenderingServer: Object {
     /// Returns the color by which the specified instance will be modulated.
     public static func multimeshInstanceGetColor (multimesh: RID, index: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -3904,7 +3904,7 @@ open class RenderingServer: Object {
     /// Returns the custom data associated with the specified instance.
     public static func multimeshInstanceGetCustomData (multimesh: RID, index: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -3940,7 +3940,7 @@ open class RenderingServer: Object {
     
     /// Sets the number of instances visible at a given time. If -1, all instances that have been allocated are drawn. Equivalent to ``MultiMesh/visibleInstanceCount``.
     public static func multimeshSetVisibleInstances (multimesh: RID, visible: Int32) {
-        #if true
+        #if false
         
         var copy_visible: Int = Int (visible)
         
@@ -3976,7 +3976,7 @@ open class RenderingServer: Object {
     /// Returns the number of visible instances for this multimesh.
     public static func multimeshGetVisibleInstances (multimesh: RID)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_multimesh_get_visible_instances, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &multimesh.content)
@@ -4010,7 +4010,7 @@ open class RenderingServer: Object {
     /// The per-instance data size and expected data order is:
     /// 
     public static func multimeshSetBuffer (multimesh: RID, buffer: PackedFloat32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_multimesh_set_buffer, UnsafeMutableRawPointer (mutating: shared.handle), nil, &multimesh.content, &buffer.content)
@@ -4047,7 +4047,7 @@ open class RenderingServer: Object {
     /// 
     public static func multimeshGetBuffer (multimesh: RID)-> PackedFloat32Array {
         let _result: PackedFloat32Array = PackedFloat32Array ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_multimesh_get_buffer, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &multimesh.content)
@@ -4099,7 +4099,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func skeletonAllocateData (skeleton: RID, bones: Int32, is2dSkeleton: Bool = false) {
-        #if true
+        #if false
         
         var copy_bones: Int = Int (bones)
         var copy_is_2d_skeleton = is2dSkeleton
@@ -4140,7 +4140,7 @@ open class RenderingServer: Object {
     /// Returns the number of bones allocated for this skeleton.
     public static func skeletonGetBoneCount (skeleton: RID)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_skeleton_get_bone_count, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &skeleton.content)
@@ -4171,7 +4171,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``Transform3D`` for a specific bone of this skeleton.
     public static func skeletonBoneSetTransform (skeleton: RID, bone: Int32, transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_bone: Int = Int (bone)
         var copy_transform = transform
@@ -4212,7 +4212,7 @@ open class RenderingServer: Object {
     /// Returns the ``Transform3D`` set for a specific bone of this skeleton.
     public static func skeletonBoneGetTransform (skeleton: RID, bone: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_bone: Int = Int (bone)
         
@@ -4248,7 +4248,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``Transform2D`` for a specific bone of this skeleton.
     public static func skeletonBoneSetTransform2d (skeleton: RID, bone: Int32, transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_bone: Int = Int (bone)
         var copy_transform = transform
@@ -4289,7 +4289,7 @@ open class RenderingServer: Object {
     /// Returns the ``Transform2D`` set for a specific bone of this skeleton.
     public static func skeletonBoneGetTransform2d (skeleton: RID, bone: Int32)-> Transform2D {
         var _result: Transform2D = Transform2D ()
-        #if true
+        #if false
         
         var copy_bone: Int = Int (bone)
         
@@ -4325,7 +4325,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func skeletonSetBaseTransform2d (skeleton: RID, baseTransform: Transform2D) {
-        #if true
+        #if false
         
         var copy_base_transform = baseTransform
         
@@ -4433,7 +4433,7 @@ open class RenderingServer: Object {
     
     /// Sets the color of the light. Equivalent to ``Light3D/lightColor``.
     public static func lightSetColor (light: RID, color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -4468,7 +4468,7 @@ open class RenderingServer: Object {
     
     /// Sets the specified 3D light parameter. See ``RenderingServer/LightParam`` for options. Equivalent to ``Light3D/setParam(_:value:)``.
     public static func lightSetParam (light: RID, param: RenderingServer.LightParam, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -4508,7 +4508,7 @@ open class RenderingServer: Object {
     
     /// If `true`, light will cast shadows. Equivalent to ``Light3D/shadowEnabled``.
     public static func lightSetShadow (light: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -4543,7 +4543,7 @@ open class RenderingServer: Object {
     
     /// Sets the projector texture to use for the specified 3D light. Equivalent to ``Light3D/lightProjector``.
     public static func lightSetProjector (light: RID, texture: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_light_set_projector, UnsafeMutableRawPointer (mutating: shared.handle), nil, &light.content, &texture.content)
@@ -4576,7 +4576,7 @@ open class RenderingServer: Object {
     
     /// If `true`, the 3D light will subtract light instead of adding light. Equivalent to ``Light3D/lightNegative``.
     public static func lightSetNegative (light: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -4611,7 +4611,7 @@ open class RenderingServer: Object {
     
     /// Sets the cull mask for this 3D light. Lights only affect objects in the selected layers. Equivalent to ``Light3D/lightCullMask``.
     public static func lightSetCullMask (light: RID, mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -4646,7 +4646,7 @@ open class RenderingServer: Object {
     
     /// Sets the distance fade for this 3D light. This acts as a form of level of detail (LOD) and can be used to improve performance. Equivalent to ``Light3D/distanceFadeEnabled``, ``Light3D/distanceFadeBegin``, ``Light3D/distanceFadeShadow``, and ``Light3D/distanceFadeLength``.
     public static func lightSetDistanceFade (decal: RID, enabled: Bool, begin: Double, shadow: Double, length: Double) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         var copy_begin = begin
@@ -4696,7 +4696,7 @@ open class RenderingServer: Object {
     
     /// If `true`, reverses the backface culling of the mesh. This can be useful when you have a flat mesh that has a light behind it. If you need to cast a shadow on both sides of the mesh, set the mesh to use double-sided shadows with ``instanceGeometrySetCastShadowsSetting(instance:shadowCastingSetting:)``. Equivalent to ``Light3D/shadowReverseCullFace``.
     public static func lightSetReverseCullFaceMode (light: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -4731,7 +4731,7 @@ open class RenderingServer: Object {
     
     /// Sets the bake mode to use for the specified 3D light. Equivalent to ``Light3D/lightBakeMode``.
     public static func lightSetBakeMode (light: RID, bakeMode: RenderingServer.LightBakeMode) {
-        #if true
+        #if false
         
         var copy_bake_mode = Int64 (bakeMode.rawValue)
         
@@ -4766,7 +4766,7 @@ open class RenderingServer: Object {
     
     /// Sets the maximum SDFGI cascade in which the 3D light's indirect lighting is rendered. Higher values allow the light to be rendered in SDFGI further away from the camera.
     public static func lightSetMaxSdfgiCascade (light: RID, cascade: UInt32) {
-        #if true
+        #if false
         
         var copy_cascade: Int = Int (cascade)
         
@@ -4801,7 +4801,7 @@ open class RenderingServer: Object {
     
     /// Sets whether to use a dual paraboloid or a cubemap for the shadow map. Dual paraboloid is faster but may suffer from artifacts. Equivalent to ``OmniLight3D/omniShadowMode``.
     public static func lightOmniSetShadowMode (light: RID, mode: RenderingServer.LightOmniShadowMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -4836,7 +4836,7 @@ open class RenderingServer: Object {
     
     /// Sets the shadow mode for this directional light. Equivalent to ``DirectionalLight3D/directionalShadowMode``. See ``RenderingServer/LightDirectionalShadowMode`` for options.
     public static func lightDirectionalSetShadowMode (light: RID, mode: RenderingServer.LightDirectionalShadowMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -4871,7 +4871,7 @@ open class RenderingServer: Object {
     
     /// If `true`, this directional light will blend between shadow map splits resulting in a smoother transition between them. Equivalent to ``DirectionalLight3D/directionalShadowBlendSplits``.
     public static func lightDirectionalSetBlendSplits (light: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -4906,7 +4906,7 @@ open class RenderingServer: Object {
     
     /// If `true`, this light will not be used for anything except sky shaders. Use this for lights that impact your sky shader that you may want to hide from affecting the rest of the scene. For example, you may want to enable this when the sun in your sky shader falls below the horizon.
     public static func lightDirectionalSetSkyMode (light: RID, mode: RenderingServer.LightDirectionalSkyMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -4941,7 +4941,7 @@ open class RenderingServer: Object {
     
     /// Sets the texture filter mode to use when rendering light projectors. This parameter is global and cannot be set on a per-light basis.
     public static func lightProjectorsSetFilter (_ filter: RenderingServer.LightProjectorFilter) {
-        #if true
+        #if false
         
         var copy_filter = Int64 (filter.rawValue)
         
@@ -4973,7 +4973,7 @@ open class RenderingServer: Object {
     
     /// Sets the filter quality for omni and spot light shadows in 3D. See also ``ProjectSettings/rendering/lightsAndShadows/positionalShadow/softShadowFilterQuality``. This parameter is global and cannot be set on a per-viewport basis.
     public static func positionalSoftShadowFilterSetQuality (_ quality: RenderingServer.ShadowQuality) {
-        #if true
+        #if false
         
         var copy_quality = Int64 (quality.rawValue)
         
@@ -5005,7 +5005,7 @@ open class RenderingServer: Object {
     
     /// Sets the filter `quality` for directional light shadows in 3D. See also ``ProjectSettings/rendering/lightsAndShadows/directionalShadow/softShadowFilterQuality``. This parameter is global and cannot be set on a per-viewport basis.
     public static func directionalSoftShadowFilterSetQuality (_ quality: RenderingServer.ShadowQuality) {
-        #if true
+        #if false
         
         var copy_quality = Int64 (quality.rawValue)
         
@@ -5037,7 +5037,7 @@ open class RenderingServer: Object {
     
     /// Sets the `size` of the directional light shadows in 3D. See also ``ProjectSettings/rendering/lightsAndShadows/directionalShadow/size``. This parameter is global and cannot be set on a per-viewport basis.
     public static func directionalShadowAtlasSetSize (_ size: Int32, is16bits: Bool) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         var copy_is_16bits = is16bits
@@ -5099,7 +5099,7 @@ open class RenderingServer: Object {
     
     /// Sets how often the reflection probe updates. Can either be once or every frame. See ``RenderingServer/ReflectionProbeUpdateMode`` for options.
     public static func reflectionProbeSetUpdateMode (probe: RID, mode: RenderingServer.ReflectionProbeUpdateMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -5134,7 +5134,7 @@ open class RenderingServer: Object {
     
     /// Sets the intensity of the reflection probe. Intensity modulates the strength of the reflection. Equivalent to ``ReflectionProbe/intensity``.
     public static func reflectionProbeSetIntensity (probe: RID, intensity: Double) {
-        #if true
+        #if false
         
         var copy_intensity = intensity
         
@@ -5169,7 +5169,7 @@ open class RenderingServer: Object {
     
     /// Sets the reflection probe's ambient light mode. Equivalent to ``ReflectionProbe/ambientMode``.
     public static func reflectionProbeSetAmbientMode (probe: RID, mode: RenderingServer.ReflectionProbeAmbientMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -5204,7 +5204,7 @@ open class RenderingServer: Object {
     
     /// Sets the reflection probe's custom ambient light color. Equivalent to ``ReflectionProbe/ambientColor``.
     public static func reflectionProbeSetAmbientColor (probe: RID, color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -5239,7 +5239,7 @@ open class RenderingServer: Object {
     
     /// Sets the reflection probe's custom ambient light energy. Equivalent to ``ReflectionProbe/ambientColorEnergy``.
     public static func reflectionProbeSetAmbientEnergy (probe: RID, energy: Double) {
-        #if true
+        #if false
         
         var copy_energy = energy
         
@@ -5274,7 +5274,7 @@ open class RenderingServer: Object {
     
     /// Sets the max distance away from the probe an object can be before it is culled. Equivalent to ``ReflectionProbe/maxDistance``.
     public static func reflectionProbeSetMaxDistance (probe: RID, distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -5309,7 +5309,7 @@ open class RenderingServer: Object {
     
     /// Sets the size of the area that the reflection probe will capture. Equivalent to ``ReflectionProbe/size``.
     public static func reflectionProbeSetSize (probe: RID, size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -5344,7 +5344,7 @@ open class RenderingServer: Object {
     
     /// Sets the origin offset to be used when this reflection probe is in box project mode. Equivalent to ``ReflectionProbe/originOffset``.
     public static func reflectionProbeSetOriginOffset (probe: RID, offset: Vector3) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -5379,7 +5379,7 @@ open class RenderingServer: Object {
     
     /// If `true`, reflections will ignore sky contribution. Equivalent to ``ReflectionProbe/interior``.
     public static func reflectionProbeSetAsInterior (probe: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -5414,7 +5414,7 @@ open class RenderingServer: Object {
     
     /// If `true`, uses box projection. This can make reflections look more correct in certain situations. Equivalent to ``ReflectionProbe/boxProjection``.
     public static func reflectionProbeSetEnableBoxProjection (probe: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -5449,7 +5449,7 @@ open class RenderingServer: Object {
     
     /// If `true`, computes shadows in the reflection probe. This makes the reflection much slower to compute. Equivalent to ``ReflectionProbe/enableShadows``.
     public static func reflectionProbeSetEnableShadows (probe: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -5484,7 +5484,7 @@ open class RenderingServer: Object {
     
     /// Sets the render cull mask for this reflection probe. Only instances with a matching cull mask will be rendered by this probe. Equivalent to ``ReflectionProbe/cullMask``.
     public static func reflectionProbeSetCullMask (probe: RID, layers: UInt32) {
-        #if true
+        #if false
         
         var copy_layers: Int = Int (layers)
         
@@ -5519,7 +5519,7 @@ open class RenderingServer: Object {
     
     /// Sets the resolution to use when rendering the specified reflection probe. The `resolution` is specified for each cubemap face: for instance, specifying `512` will allocate 6 faces of 512×512 each (plus mipmaps for roughness levels).
     public static func reflectionProbeSetResolution (probe: RID, resolution: Int32) {
-        #if true
+        #if false
         
         var copy_resolution: Int = Int (resolution)
         
@@ -5554,7 +5554,7 @@ open class RenderingServer: Object {
     
     /// Sets the mesh level of detail to use in the reflection probe rendering. Higher values will use less detailed versions of meshes that have LOD variations generated, which can improve performance. Equivalent to ``ReflectionProbe/meshLodThreshold``.
     public static func reflectionProbeSetMeshLodThreshold (probe: RID, pixels: Double) {
-        #if true
+        #if false
         
         var copy_pixels = pixels
         
@@ -5614,7 +5614,7 @@ open class RenderingServer: Object {
     
     /// Sets the `size` of the decal specified by the `decal` RID. Equivalent to ``Decal/size``.
     public static func decalSetSize (decal: RID, size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -5649,7 +5649,7 @@ open class RenderingServer: Object {
     
     /// Sets the `texture` in the given texture `type` slot for the specified decal. Equivalent to ``Decal/setTexture(type:texture:)``.
     public static func decalSetTexture (decal: RID, type: RenderingServer.DecalTexture, texture: RID) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -5687,7 +5687,7 @@ open class RenderingServer: Object {
     
     /// Sets the emission `energy` in the decal specified by the `decal` RID. Equivalent to ``Decal/emissionEnergy``.
     public static func decalSetEmissionEnergy (decal: RID, energy: Double) {
-        #if true
+        #if false
         
         var copy_energy = energy
         
@@ -5722,7 +5722,7 @@ open class RenderingServer: Object {
     
     /// Sets the `albedoMix` in the decal specified by the `decal` RID. Equivalent to ``Decal/albedoMix``.
     public static func decalSetAlbedoMix (decal: RID, albedoMix: Double) {
-        #if true
+        #if false
         
         var copy_albedo_mix = albedoMix
         
@@ -5757,7 +5757,7 @@ open class RenderingServer: Object {
     
     /// Sets the color multiplier in the decal specified by the `decal` RID to `color`. Equivalent to ``Decal/modulate``.
     public static func decalSetModulate (decal: RID, color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -5792,7 +5792,7 @@ open class RenderingServer: Object {
     
     /// Sets the cull `mask` in the decal specified by the `decal` RID. Equivalent to ``Decal/cullMask``.
     public static func decalSetCullMask (decal: RID, mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -5827,7 +5827,7 @@ open class RenderingServer: Object {
     
     /// Sets the distance fade parameters in the decal specified by the `decal` RID. Equivalent to ``Decal/distanceFadeEnabled``, ``Decal/distanceFadeBegin`` and ``Decal/distanceFadeLength``.
     public static func decalSetDistanceFade (decal: RID, enabled: Bool, begin: Double, length: Double) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         var copy_begin = begin
@@ -5872,7 +5872,7 @@ open class RenderingServer: Object {
     
     /// Sets the upper fade (`above`) and lower fade (`below`) in the decal specified by the `decal` RID. Equivalent to ``Decal/upperFade`` and ``Decal/lowerFade``.
     public static func decalSetFade (decal: RID, above: Double, below: Double) {
-        #if true
+        #if false
         
         var copy_above = above
         var copy_below = below
@@ -5912,7 +5912,7 @@ open class RenderingServer: Object {
     
     /// Sets the normal `fade` in the decal specified by the `decal` RID. Equivalent to ``Decal/normalFade``.
     public static func decalSetNormalFade (decal: RID, fade: Double) {
-        #if true
+        #if false
         
         var copy_fade = fade
         
@@ -5947,7 +5947,7 @@ open class RenderingServer: Object {
     
     /// Sets the texture `filter` mode to use when rendering decals. This parameter is global and cannot be set on a per-decal basis.
     public static func decalsSetFilter (_ filter: RenderingServer.DecalFilter) {
-        #if true
+        #if false
         
         var copy_filter = Int64 (filter.rawValue)
         
@@ -5979,7 +5979,7 @@ open class RenderingServer: Object {
     
     /// If `halfResolution` is `true`, renders ``VoxelGI`` and SDFGI (``Environment/sdfgiEnabled``) buffers at halved resolution on each axis (e.g. 960×540 when the viewport size is 1920×1080). This improves performance significantly when VoxelGI or SDFGI is enabled, at the cost of artifacts that may be visible on polygon edges. The loss in quality becomes less noticeable as the viewport resolution increases. ``LightmapGI`` rendering is not affected by this setting. Equivalent to ``ProjectSettings/rendering/globalIllumination/gi/useHalfResolution``.
     public static func giSetUseHalfResolution (_ halfResolution: Bool) {
-        #if true
+        #if false
         
         var copy_half_resolution = halfResolution
         
@@ -6034,7 +6034,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func voxelGiAllocateData (voxelGi: RID, toCellXform: Transform3D, aabb: AABB, octreeSize: Vector3i, octreeCells: PackedByteArray, dataCells: PackedByteArray, distanceField: PackedByteArray, levelCounts: PackedInt32Array) {
-        #if true
+        #if false
         
         var copy_to_cell_xform = toCellXform
         var copy_aabb = aabb
@@ -6092,7 +6092,7 @@ open class RenderingServer: Object {
     /// 
     public static func voxelGiGetOctreeSize (voxelGi: RID)-> Vector3i {
         var _result: Vector3i = Vector3i ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_voxel_gi_get_octree_size, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &voxelGi.content)
@@ -6124,7 +6124,7 @@ open class RenderingServer: Object {
     /// 
     public static func voxelGiGetOctreeCells (voxelGi: RID)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_voxel_gi_get_octree_cells, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &voxelGi.content)
@@ -6156,7 +6156,7 @@ open class RenderingServer: Object {
     /// 
     public static func voxelGiGetDataCells (voxelGi: RID)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_voxel_gi_get_data_cells, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &voxelGi.content)
@@ -6188,7 +6188,7 @@ open class RenderingServer: Object {
     /// 
     public static func voxelGiGetDistanceField (voxelGi: RID)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_voxel_gi_get_distance_field, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &voxelGi.content)
@@ -6220,7 +6220,7 @@ open class RenderingServer: Object {
     /// 
     public static func voxelGiGetLevelCounts (voxelGi: RID)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_voxel_gi_get_level_counts, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &voxelGi.content)
@@ -6252,7 +6252,7 @@ open class RenderingServer: Object {
     /// 
     public static func voxelGiGetToCellXform (voxelGi: RID)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_voxel_gi_get_to_cell_xform, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &voxelGi.content)
@@ -6283,7 +6283,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``VoxelGIData/dynamicRange`` value to use on the specified `voxelGi`'s ``RID``.
     public static func voxelGiSetDynamicRange (voxelGi: RID, range: Double) {
-        #if true
+        #if false
         
         var copy_range = range
         
@@ -6318,7 +6318,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``VoxelGIData/propagation`` value to use on the specified `voxelGi`'s ``RID``.
     public static func voxelGiSetPropagation (voxelGi: RID, amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -6353,7 +6353,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``VoxelGIData/energy`` value to use on the specified `voxelGi`'s ``RID``.
     public static func voxelGiSetEnergy (voxelGi: RID, energy: Double) {
-        #if true
+        #if false
         
         var copy_energy = energy
         
@@ -6388,7 +6388,7 @@ open class RenderingServer: Object {
     
     /// Used to inform the renderer what exposure normalization value was used while baking the voxel gi. This value will be used and modulated at run time to ensure that the voxel gi maintains a consistent level of exposure even if the scene-wide exposure normalization is changed at run time. For more information see ``cameraAttributesSetExposure(cameraAttributes:multiplier:normalization:)``.
     public static func voxelGiSetBakedExposureNormalization (voxelGi: RID, bakedExposure: Double) {
-        #if true
+        #if false
         
         var copy_baked_exposure = bakedExposure
         
@@ -6423,7 +6423,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``VoxelGIData/bias`` value to use on the specified `voxelGi`'s ``RID``.
     public static func voxelGiSetBias (voxelGi: RID, bias: Double) {
-        #if true
+        #if false
         
         var copy_bias = bias
         
@@ -6458,7 +6458,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``VoxelGIData/normalBias`` value to use on the specified `voxelGi`'s ``RID``.
     public static func voxelGiSetNormalBias (voxelGi: RID, bias: Double) {
-        #if true
+        #if false
         
         var copy_bias = bias
         
@@ -6493,7 +6493,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``VoxelGIData/interior`` value to use on the specified `voxelGi`'s ``RID``.
     public static func voxelGiSetInterior (voxelGi: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -6528,7 +6528,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``VoxelGIData/useTwoBounces`` value to use on the specified `voxelGi`'s ``RID``.
     public static func voxelGiSetUseTwoBounces (voxelGi: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -6563,7 +6563,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``ProjectSettings/rendering/globalIllumination/voxelGi/quality`` value to use when rendering. This parameter is global and cannot be set on a per-VoxelGI basis.
     public static func voxelGiSetQuality (_ quality: RenderingServer.VoxelGIQuality) {
-        #if true
+        #if false
         
         var copy_quality = Int64 (quality.rawValue)
         
@@ -6618,7 +6618,7 @@ open class RenderingServer: Object {
     
     /// Set the textures on the given `lightmap` GI instance to the texture array pointed to by the `light` RID. If the lightmap texture was baked with ``LightmapGI/directional`` set to `true`, then `usesSh` must also be `true`.
     public static func lightmapSetTextures (lightmap: RID, light: RID, usesSh: Bool) {
-        #if true
+        #if false
         
         var copy_uses_sh = usesSh
         
@@ -6656,7 +6656,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func lightmapSetProbeBounds (lightmap: RID, bounds: AABB) {
-        #if true
+        #if false
         
         var copy_bounds = bounds
         
@@ -6691,7 +6691,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func lightmapSetProbeInterior (lightmap: RID, interior: Bool) {
-        #if true
+        #if false
         
         var copy_interior = interior
         
@@ -6726,7 +6726,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func lightmapSetProbeCaptureData (lightmap: RID, points: PackedVector3Array, pointSh: PackedColorArray, tetrahedra: PackedInt32Array, bspTree: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_lightmap_set_probe_capture_data, UnsafeMutableRawPointer (mutating: shared.handle), nil, &lightmap.content, &points.content, &pointSh.content, &tetrahedra.content, &bspTree.content)
@@ -6769,7 +6769,7 @@ open class RenderingServer: Object {
     /// 
     public static func lightmapGetProbeCapturePoints (lightmap: RID)-> PackedVector3Array {
         let _result: PackedVector3Array = PackedVector3Array ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_lightmap_get_probe_capture_points, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &lightmap.content)
@@ -6801,7 +6801,7 @@ open class RenderingServer: Object {
     /// 
     public static func lightmapGetProbeCaptureSh (lightmap: RID)-> PackedColorArray {
         let _result: PackedColorArray = PackedColorArray ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_lightmap_get_probe_capture_sh, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &lightmap.content)
@@ -6833,7 +6833,7 @@ open class RenderingServer: Object {
     /// 
     public static func lightmapGetProbeCaptureTetrahedra (lightmap: RID)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_lightmap_get_probe_capture_tetrahedra, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &lightmap.content)
@@ -6865,7 +6865,7 @@ open class RenderingServer: Object {
     /// 
     public static func lightmapGetProbeCaptureBspTree (lightmap: RID)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_lightmap_get_probe_capture_bsp_tree, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &lightmap.content)
@@ -6896,7 +6896,7 @@ open class RenderingServer: Object {
     
     /// Used to inform the renderer what exposure normalization value was used while baking the lightmap. This value will be used and modulated at run time to ensure that the lightmap maintains a consistent level of exposure even if the scene-wide exposure normalization is changed at run time. For more information see ``cameraAttributesSetExposure(cameraAttributes:multiplier:normalization:)``.
     public static func lightmapSetBakedExposureNormalization (lightmap: RID, bakedExposure: Double) {
-        #if true
+        #if false
         
         var copy_baked_exposure = bakedExposure
         
@@ -6931,7 +6931,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func lightmapSetProbeCaptureUpdateSpeed (_ speed: Double) {
-        #if true
+        #if false
         
         var copy_speed = speed
         
@@ -6990,7 +6990,7 @@ open class RenderingServer: Object {
     
     /// Sets whether the GPU particles specified by the `particles` RID should be rendered in 2D or 3D according to `mode`.
     public static func particlesSetMode (particles: RID, mode: RenderingServer.ParticlesMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -7025,7 +7025,7 @@ open class RenderingServer: Object {
     
     /// If `true`, particles will emit over time. Setting to false does not reset the particles, but only stops their emission. Equivalent to ``GPUParticles3D/emitting``.
     public static func particlesSetEmitting (particles: RID, emitting: Bool) {
-        #if true
+        #if false
         
         var copy_emitting = emitting
         
@@ -7061,7 +7061,7 @@ open class RenderingServer: Object {
     /// Returns `true` if particles are currently set to emitting.
     public static func particlesGetEmitting (particles: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_particles_get_emitting, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &particles.content)
@@ -7092,7 +7092,7 @@ open class RenderingServer: Object {
     
     /// Sets the number of particles to be drawn and allocates the memory for them. Equivalent to ``GPUParticles3D/amount``.
     public static func particlesSetAmount (particles: RID, amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -7127,7 +7127,7 @@ open class RenderingServer: Object {
     
     /// Sets the amount ratio for particles to be emitted. Equivalent to ``GPUParticles3D/amountRatio``.
     public static func particlesSetAmountRatio (particles: RID, ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -7162,7 +7162,7 @@ open class RenderingServer: Object {
     
     /// Sets the lifetime of each particle in the system. Equivalent to ``GPUParticles3D/lifetime``.
     public static func particlesSetLifetime (particles: RID, lifetime: Double) {
-        #if true
+        #if false
         
         var copy_lifetime = lifetime
         
@@ -7197,7 +7197,7 @@ open class RenderingServer: Object {
     
     /// If `true`, particles will emit once and then stop. Equivalent to ``GPUParticles3D/oneShot``.
     public static func particlesSetOneShot (particles: RID, oneShot: Bool) {
-        #if true
+        #if false
         
         var copy_one_shot = oneShot
         
@@ -7232,7 +7232,7 @@ open class RenderingServer: Object {
     
     /// Sets the preprocess time for the particles' animation. This lets you delay starting an animation until after the particles have begun emitting. Equivalent to ``GPUParticles3D/preprocess``.
     public static func particlesSetPreProcessTime (particles: RID, time: Double) {
-        #if true
+        #if false
         
         var copy_time = time
         
@@ -7267,7 +7267,7 @@ open class RenderingServer: Object {
     
     /// Sets the explosiveness ratio. Equivalent to ``GPUParticles3D/explosiveness``.
     public static func particlesSetExplosivenessRatio (particles: RID, ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -7302,7 +7302,7 @@ open class RenderingServer: Object {
     
     /// Sets the emission randomness ratio. This randomizes the emission of particles within their phase. Equivalent to ``GPUParticles3D/randomness``.
     public static func particlesSetRandomnessRatio (particles: RID, ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -7337,7 +7337,7 @@ open class RenderingServer: Object {
     
     /// Sets the value that informs a ``ParticleProcessMaterial`` to rush all particles towards the end of their lifetime.
     public static func particlesSetInterpToEnd (particles: RID, factor: Double) {
-        #if true
+        #if false
         
         var copy_factor = factor
         
@@ -7372,7 +7372,7 @@ open class RenderingServer: Object {
     
     /// Sets the velocity of a particle node, that will be used by ``ParticleProcessMaterial/inheritVelocityRatio``.
     public static func particlesSetEmitterVelocity (particles: RID, velocity: Vector3) {
-        #if true
+        #if false
         
         var copy_velocity = velocity
         
@@ -7407,7 +7407,7 @@ open class RenderingServer: Object {
     
     /// Sets a custom axis-aligned bounding box for the particle system. Equivalent to ``GPUParticles3D/visibilityAabb``.
     public static func particlesSetCustomAabb (particles: RID, aabb: AABB) {
-        #if true
+        #if false
         
         var copy_aabb = aabb
         
@@ -7442,7 +7442,7 @@ open class RenderingServer: Object {
     
     /// Sets the speed scale of the particle system. Equivalent to ``GPUParticles3D/speedScale``.
     public static func particlesSetSpeedScale (particles: RID, scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -7477,7 +7477,7 @@ open class RenderingServer: Object {
     
     /// If `true`, particles use local coordinates. If `false` they use global coordinates. Equivalent to ``GPUParticles3D/localCoords``.
     public static func particlesSetUseLocalCoordinates (particles: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -7515,7 +7515,7 @@ open class RenderingServer: Object {
     /// > Note: This is not the material used to draw the materials. Equivalent to ``GPUParticles3D/processMaterial``.
     /// 
     public static func particlesSetProcessMaterial (particles: RID, material: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_particles_set_process_material, UnsafeMutableRawPointer (mutating: shared.handle), nil, &particles.content, &material.content)
@@ -7548,7 +7548,7 @@ open class RenderingServer: Object {
     
     /// Sets the frame rate that the particle system rendering will be fixed to. Equivalent to ``GPUParticles3D/fixedFps``.
     public static func particlesSetFixedFps (particles: RID, fps: Int32) {
-        #if true
+        #if false
         
         var copy_fps: Int = Int (fps)
         
@@ -7583,7 +7583,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func particlesSetInterpolate (particles: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -7618,7 +7618,7 @@ open class RenderingServer: Object {
     
     /// If `true`, uses fractional delta which smooths the movement of the particles. Equivalent to ``GPUParticles3D/fractDelta``.
     public static func particlesSetFractionalDelta (particles: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -7653,7 +7653,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func particlesSetCollisionBaseSize (particles: RID, size: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -7688,7 +7688,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func particlesSetTransformAlign (particles: RID, align: RenderingServer.ParticlesTransformAlign) {
-        #if true
+        #if false
         
         var copy_align = Int64 (align.rawValue)
         
@@ -7723,7 +7723,7 @@ open class RenderingServer: Object {
     
     /// If `enable` is `true`, enables trails for the `particles` with the specified `lengthSec` in seconds. Equivalent to ``GPUParticles3D/trailEnabled`` and ``GPUParticles3D/trailLifetime``.
     public static func particlesSetTrails (particles: RID, enable: Bool, lengthSec: Double) {
-        #if true
+        #if false
         
         var copy_enable = enable
         var copy_length_sec = lengthSec
@@ -7763,7 +7763,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func particlesSetTrailBindPoses (particles: RID, bindPoses: VariantCollection<Transform3D>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_particles_set_trail_bind_poses, UnsafeMutableRawPointer (mutating: shared.handle), nil, &particles.content, &bindPoses.array.content)
@@ -7797,7 +7797,7 @@ open class RenderingServer: Object {
     /// Returns `true` if particles are not emitting and particles are set to inactive.
     public static func particlesIsInactive (particles: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_particles_is_inactive, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &particles.content)
@@ -7828,7 +7828,7 @@ open class RenderingServer: Object {
     
     /// Add particle system to list of particle systems that need to be updated. Update will take place on the next frame, or on the next call to ``instancesCullAabb(_:scenario:)``, ``instancesCullConvex(_:scenario:)``, or ``instancesCullRay(from:to:scenario:)``.
     public static func particlesRequestProcess (particles: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_particles_request_process, UnsafeMutableRawPointer (mutating: shared.handle), nil, &particles.content)
@@ -7858,7 +7858,7 @@ open class RenderingServer: Object {
     
     /// Reset the particles on the next update. Equivalent to ``GPUParticles3D/restart()``.
     public static func particlesRestart (particles: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_particles_restart, UnsafeMutableRawPointer (mutating: shared.handle), nil, &particles.content)
@@ -7888,7 +7888,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func particlesSetSubemitter (particles: RID, subemitterParticles: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_particles_set_subemitter, UnsafeMutableRawPointer (mutating: shared.handle), nil, &particles.content, &subemitterParticles.content)
@@ -7921,7 +7921,7 @@ open class RenderingServer: Object {
     
     /// Manually emits particles from the `particles` instance.
     public static func particlesEmit (particles: RID, transform: Transform3D, velocity: Vector3, color: Color, custom: Color, emitFlags: UInt32) {
-        #if true
+        #if false
         
         var copy_transform = transform
         var copy_velocity = velocity
@@ -7976,7 +7976,7 @@ open class RenderingServer: Object {
     
     /// Sets the draw order of the particles to one of the named enums from ``RenderingServer/ParticlesDrawOrder``. See ``RenderingServer/ParticlesDrawOrder`` for options. Equivalent to ``GPUParticles3D/drawOrder``.
     public static func particlesSetDrawOrder (particles: RID, order: RenderingServer.ParticlesDrawOrder) {
-        #if true
+        #if false
         
         var copy_order = Int64 (order.rawValue)
         
@@ -8011,7 +8011,7 @@ open class RenderingServer: Object {
     
     /// Sets the number of draw passes to use. Equivalent to ``GPUParticles3D/drawPasses``.
     public static func particlesSetDrawPasses (particles: RID, count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -8046,7 +8046,7 @@ open class RenderingServer: Object {
     
     /// Sets the mesh to be used for the specified draw pass. Equivalent to ``GPUParticles3D/drawPass1``, ``GPUParticles3D/drawPass2``, ``GPUParticles3D/drawPass3``, and ``GPUParticles3D/drawPass4``.
     public static func particlesSetDrawPassMesh (particles: RID, pass: Int32, mesh: RID) {
-        #if true
+        #if false
         
         var copy_pass: Int = Int (pass)
         
@@ -8085,7 +8085,7 @@ open class RenderingServer: Object {
     /// Calculates and returns the axis-aligned bounding box that contains all the particles. Equivalent to ``GPUParticles3D/captureAabb()``.
     public static func particlesGetCurrentAabb (particles: RID)-> AABB {
         var _result: AABB = AABB ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_particles_get_current_aabb, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &particles.content)
@@ -8116,7 +8116,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``Transform3D`` that will be used by the particles when they first emit.
     public static func particlesSetEmissionTransform (particles: RID, transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -8172,7 +8172,7 @@ open class RenderingServer: Object {
     
     /// Sets the collision or attractor shape `type` for the 3D GPU particles collision or attractor specified by the `particlesCollision` RID.
     public static func particlesCollisionSetCollisionType (particlesCollision: RID, type: RenderingServer.ParticlesCollisionType) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -8207,7 +8207,7 @@ open class RenderingServer: Object {
     
     /// Sets the cull `mask` for the 3D GPU particles collision or attractor specified by the `particlesCollision` RID. Equivalent to ``GPUParticlesCollision3D/cullMask`` or ``GPUParticlesAttractor3D/cullMask`` depending on the `particlesCollision` type.
     public static func particlesCollisionSetCullMask (particlesCollision: RID, mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -8242,7 +8242,7 @@ open class RenderingServer: Object {
     
     /// Sets the `radius` for the 3D GPU particles sphere collision or attractor specified by the `particlesCollision` RID. Equivalent to ``GPUParticlesCollisionSphere3D/radius`` or ``GPUParticlesAttractorSphere3D/radius`` depending on the `particlesCollision` type.
     public static func particlesCollisionSetSphereRadius (particlesCollision: RID, radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -8277,7 +8277,7 @@ open class RenderingServer: Object {
     
     /// Sets the `extents` for the 3D GPU particles collision by the `particlesCollision` RID. Equivalent to ``GPUParticlesCollisionBox3D/size``, ``GPUParticlesCollisionSDF3D/size``, ``GPUParticlesCollisionHeightField3D/size``, ``GPUParticlesAttractorBox3D/size`` or ``GPUParticlesAttractorVectorField3D/size`` depending on the `particlesCollision` type.
     public static func particlesCollisionSetBoxExtents (particlesCollision: RID, extents: Vector3) {
-        #if true
+        #if false
         
         var copy_extents = extents
         
@@ -8312,7 +8312,7 @@ open class RenderingServer: Object {
     
     /// Sets the `strength` for the 3D GPU particles attractor specified by the `particlesCollision` RID. Only used for attractors, not colliders. Equivalent to ``GPUParticlesAttractor3D/strength``.
     public static func particlesCollisionSetAttractorStrength (particlesCollision: RID, strength: Double) {
-        #if true
+        #if false
         
         var copy_strength = strength
         
@@ -8347,7 +8347,7 @@ open class RenderingServer: Object {
     
     /// Sets the directionality `amount` for the 3D GPU particles attractor specified by the `particlesCollision` RID. Only used for attractors, not colliders. Equivalent to ``GPUParticlesAttractor3D/directionality``.
     public static func particlesCollisionSetAttractorDirectionality (particlesCollision: RID, amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -8382,7 +8382,7 @@ open class RenderingServer: Object {
     
     /// Sets the attenuation `curve` for the 3D GPU particles attractor specified by the `particlesCollision` RID. Only used for attractors, not colliders. Equivalent to ``GPUParticlesAttractor3D/attenuation``.
     public static func particlesCollisionSetAttractorAttenuation (particlesCollision: RID, curve: Double) {
-        #if true
+        #if false
         
         var copy_curve = curve
         
@@ -8417,7 +8417,7 @@ open class RenderingServer: Object {
     
     /// Sets the signed distance field `texture` for the 3D GPU particles collision specified by the `particlesCollision` RID. Equivalent to ``GPUParticlesCollisionSDF3D/texture`` or ``GPUParticlesAttractorVectorField3D/texture`` depending on the `particlesCollision` type.
     public static func particlesCollisionSetFieldTexture (particlesCollision: RID, texture: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_particles_collision_set_field_texture, UnsafeMutableRawPointer (mutating: shared.handle), nil, &particlesCollision.content, &texture.content)
@@ -8450,7 +8450,7 @@ open class RenderingServer: Object {
     
     /// Requests an update for the 3D GPU particle collision heightfield. This may be automatically called by the 3D GPU particle collision heightfield depending on its ``GPUParticlesCollisionHeightField3D/updateMode``.
     public static func particlesCollisionHeightFieldUpdate (particlesCollision: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_particles_collision_height_field_update, UnsafeMutableRawPointer (mutating: shared.handle), nil, &particlesCollision.content)
@@ -8480,7 +8480,7 @@ open class RenderingServer: Object {
     
     /// Sets the heightmap `resolution` for the 3D GPU particles heightfield collision specified by the `particlesCollision` RID. Equivalent to ``GPUParticlesCollisionHeightField3D/resolution``.
     public static func particlesCollisionSetHeightFieldResolution (particlesCollision: RID, resolution: RenderingServer.ParticlesCollisionHeightfieldResolution) {
-        #if true
+        #if false
         
         var copy_resolution = Int64 (resolution.rawValue)
         
@@ -8538,7 +8538,7 @@ open class RenderingServer: Object {
     
     /// Sets the shape of the fog volume to either ``RenderingServer/FogVolumeShape/ellipsoid``, ``RenderingServer/FogVolumeShape/cone``, ``RenderingServer/FogVolumeShape/cylinder``, ``RenderingServer/FogVolumeShape/box`` or ``RenderingServer/FogVolumeShape/world``.
     public static func fogVolumeSetShape (fogVolume: RID, shape: RenderingServer.FogVolumeShape) {
-        #if true
+        #if false
         
         var copy_shape = Int64 (shape.rawValue)
         
@@ -8573,7 +8573,7 @@ open class RenderingServer: Object {
     
     /// Sets the size of the fog volume when shape is ``RenderingServer/FogVolumeShape/ellipsoid``, ``RenderingServer/FogVolumeShape/cone``, ``RenderingServer/FogVolumeShape/cylinder`` or ``RenderingServer/FogVolumeShape/box``.
     public static func fogVolumeSetSize (fogVolume: RID, size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -8608,7 +8608,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``Material`` of the fog volume. Can be either a ``FogMaterial`` or a custom ``ShaderMaterial``.
     public static func fogVolumeSetMaterial (fogVolume: RID, material: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_fog_volume_set_material, UnsafeMutableRawPointer (mutating: shared.handle), nil, &fogVolume.content, &material.content)
@@ -8666,7 +8666,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func visibilityNotifierSetAabb (notifier: RID, aabb: AABB) {
-        #if true
+        #if false
         
         var copy_aabb = aabb
         
@@ -8701,7 +8701,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func visibilityNotifierSetCallbacks (notifier: RID, enterCallable: Callable, exitCallable: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_visibility_notifier_set_callbacks, UnsafeMutableRawPointer (mutating: shared.handle), nil, &notifier.content, &enterCallable.content, &exitCallable.content)
@@ -8760,7 +8760,7 @@ open class RenderingServer: Object {
     
     /// Sets the mesh data for the given occluder RID, which controls the shape of the occlusion culling that will be performed.
     public static func occluderSetMesh (occluder: RID, vertices: PackedVector3Array, indices: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_occluder_set_mesh, UnsafeMutableRawPointer (mutating: shared.handle), nil, &occluder.content, &vertices.content, &indices.content)
@@ -8819,7 +8819,7 @@ open class RenderingServer: Object {
     
     /// Sets camera to use perspective projection. Objects on the screen becomes smaller when they are far away.
     public static func cameraSetPerspective (camera: RID, fovyDegrees: Double, zNear: Double, zFar: Double) {
-        #if true
+        #if false
         
         var copy_fovy_degrees = fovyDegrees
         var copy_z_near = zNear
@@ -8864,7 +8864,7 @@ open class RenderingServer: Object {
     
     /// Sets camera to use orthogonal projection, also known as orthographic projection. Objects remain the same size on the screen no matter how far away they are.
     public static func cameraSetOrthogonal (camera: RID, size: Double, zNear: Double, zFar: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_z_near = zNear
@@ -8909,7 +8909,7 @@ open class RenderingServer: Object {
     
     /// Sets camera to use frustum projection. This mode allows adjusting the `offset` argument to create "tilted frustum" effects.
     public static func cameraSetFrustum (camera: RID, size: Double, offset: Vector2, zNear: Double, zFar: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_offset = offset
@@ -8959,7 +8959,7 @@ open class RenderingServer: Object {
     
     /// Sets ``Transform3D`` of camera.
     public static func cameraSetTransform (camera: RID, transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -8994,7 +8994,7 @@ open class RenderingServer: Object {
     
     /// Sets the cull mask associated with this camera. The cull mask describes which 3D layers are rendered by this camera. Equivalent to ``Camera3D/cullMask``.
     public static func cameraSetCullMask (camera: RID, layers: UInt32) {
-        #if true
+        #if false
         
         var copy_layers: Int = Int (layers)
         
@@ -9029,7 +9029,7 @@ open class RenderingServer: Object {
     
     /// Sets the environment used by this camera. Equivalent to ``Camera3D/environment``.
     public static func cameraSetEnvironment (camera: RID, env: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_camera_set_environment, UnsafeMutableRawPointer (mutating: shared.handle), nil, &camera.content, &env.content)
@@ -9062,7 +9062,7 @@ open class RenderingServer: Object {
     
     /// Sets the camera_attributes created with ``cameraAttributesCreate()`` to the given camera.
     public static func cameraSetCameraAttributes (camera: RID, effects: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_camera_set_camera_attributes, UnsafeMutableRawPointer (mutating: shared.handle), nil, &camera.content, &effects.content)
@@ -9095,7 +9095,7 @@ open class RenderingServer: Object {
     
     /// If `true`, preserves the horizontal aspect ratio which is equivalent to ``Camera3D/KeepAspect/keepWidth``. If `false`, preserves the vertical aspect ratio which is equivalent to ``Camera3D/KeepAspect/keepHeight``.
     public static func cameraSetUseVerticalAspect (camera: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -9153,7 +9153,7 @@ open class RenderingServer: Object {
     
     /// If `true`, the viewport uses augmented or virtual reality technologies. See ``XRInterface``.
     public static func viewportSetUseXr (viewport: RID, useXr: Bool) {
-        #if true
+        #if false
         
         var copy_use_xr = useXr
         
@@ -9188,7 +9188,7 @@ open class RenderingServer: Object {
     
     /// Sets the viewport's width and height in pixels.
     public static func viewportSetSize (viewport: RID, width: Int32, height: Int32) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         var copy_height: Int = Int (height)
@@ -9228,7 +9228,7 @@ open class RenderingServer: Object {
     
     /// If `true`, sets the viewport active, else sets it inactive.
     public static func viewportSetActive (viewport: RID, active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         
@@ -9263,7 +9263,7 @@ open class RenderingServer: Object {
     
     /// Sets the viewport's parent to the viewport specified by the `parentViewport` RID.
     public static func viewportSetParentViewport (_ viewport: RID, parentViewport: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_viewport_set_parent_viewport, UnsafeMutableRawPointer (mutating: shared.handle), nil, &viewport.content, &parentViewport.content)
@@ -9303,7 +9303,7 @@ open class RenderingServer: Object {
     /// Using this can result in significant optimization, especially on lower-end devices. However, it comes at the cost of having to manage your viewports manually. For further optimization, see ``viewportSetRenderDirectToScreen(viewport:enabled:)``.
     /// 
     public static func viewportAttachToScreen (viewport: RID, rect: Rect2 = Rect2 (x: 0, y: 0, width: 0, height: 0), screen: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_screen: Int = Int (screen)
@@ -9343,7 +9343,7 @@ open class RenderingServer: Object {
     
     /// If `true`, render the contents of the viewport directly to screen. This allows a low-level optimization where you can skip drawing a viewport to the root viewport. While this optimization can result in a significant increase in speed (especially on older devices), it comes at a cost of usability. When this is enabled, you cannot read from the viewport or from the screen_texture. You also lose the benefit of certain window settings, such as the various stretch modes. Another consequence to be aware of is that in 2D the rendering happens in window coordinates, so if you have a viewport that is double the size of the window, and you set this, then only the portion that fits within the window will be drawn, no automatic scaling is possible, even if your game scene is significantly larger than the window size.
     public static func viewportSetRenderDirectToScreen (viewport: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -9378,7 +9378,7 @@ open class RenderingServer: Object {
     
     /// Sets the rendering mask associated with this ``Viewport``. Only ``CanvasItem`` nodes with a matching rendering visibility layer will be rendered by this ``Viewport``.
     public static func viewportSetCanvasCullMask (viewport: RID, canvasCullMask: UInt32) {
-        #if true
+        #if false
         
         var copy_canvas_cull_mask: Int = Int (canvasCullMask)
         
@@ -9413,7 +9413,7 @@ open class RenderingServer: Object {
     
     /// Sets the 3D resolution scaling mode. Bilinear scaling renders at different resolution to either undersample or supersample the viewport. FidelityFX Super Resolution 1.0, abbreviated to FSR, is an upscaling technology that produces high quality images at fast framerates by using a spatially aware upscaling algorithm. FSR is slightly more expensive than bilinear, but it produces significantly higher image quality. FSR should be used where possible.
     public static func viewportSetScaling3dMode (viewport: RID, scaling3dMode: RenderingServer.ViewportScaling3DMode) {
-        #if true
+        #if false
         
         var copy_scaling_3d_mode = Int64 (scaling3dMode.rawValue)
         
@@ -9451,7 +9451,7 @@ open class RenderingServer: Object {
     /// When using FSR upscaling, AMD recommends exposing the following values as preset options to users "Ultra Quality: 0.77", "Quality: 0.67", "Balanced: 0.59", "Performance: 0.5" instead of exposing the entire scale.
     /// 
     public static func viewportSetScaling3dScale (viewport: RID, scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -9486,7 +9486,7 @@ open class RenderingServer: Object {
     
     /// Determines how sharp the upscaled image will be when using the FSR upscaling mode. Sharpness halves with every whole number. Values go from 0.0 (sharpest) to 2.0. Values above 2.0 won't make a visible difference.
     public static func viewportSetFsrSharpness (viewport: RID, sharpness: Double) {
-        #if true
+        #if false
         
         var copy_sharpness = sharpness
         
@@ -9524,7 +9524,7 @@ open class RenderingServer: Object {
     /// > Note: When the 3D scaling mode is set to FSR 1.0, this value is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is `-log2(1.0 / scale) + mipmap_bias`.
     /// 
     public static func viewportSetTextureMipmapBias (viewport: RID, mipmapBias: Double) {
-        #if true
+        #if false
         
         var copy_mipmap_bias = mipmapBias
         
@@ -9559,7 +9559,7 @@ open class RenderingServer: Object {
     
     /// Sets when the viewport should be updated. See ``RenderingServer/ViewportUpdateMode`` constants for options.
     public static func viewportSetUpdateMode (viewport: RID, updateMode: RenderingServer.ViewportUpdateMode) {
-        #if true
+        #if false
         
         var copy_update_mode = Int64 (updateMode.rawValue)
         
@@ -9594,7 +9594,7 @@ open class RenderingServer: Object {
     
     /// Sets the clear mode of a viewport. See ``RenderingServer/ViewportClearMode`` for options.
     public static func viewportSetClearMode (viewport: RID, clearMode: RenderingServer.ViewportClearMode) {
-        #if true
+        #if false
         
         var copy_clear_mode = Int64 (clearMode.rawValue)
         
@@ -9630,7 +9630,7 @@ open class RenderingServer: Object {
     /// Returns the render target for the viewport.
     public static func viewportGetRenderTarget (viewport: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_viewport_get_render_target, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &viewport.content)
@@ -9662,7 +9662,7 @@ open class RenderingServer: Object {
     /// Returns the viewport's last rendered frame.
     public static func viewportGetTexture (viewport: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_viewport_get_texture, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &viewport.content)
@@ -9693,7 +9693,7 @@ open class RenderingServer: Object {
     
     /// If `true`, the viewport's 3D elements are not rendered.
     public static func viewportSetDisable3d (viewport: RID, disable: Bool) {
-        #if true
+        #if false
         
         var copy_disable = disable
         
@@ -9728,7 +9728,7 @@ open class RenderingServer: Object {
     
     /// If `true`, the viewport's canvas (i.e. 2D and GUI elements) is not rendered.
     public static func viewportSetDisable2d (viewport: RID, disable: Bool) {
-        #if true
+        #if false
         
         var copy_disable = disable
         
@@ -9763,7 +9763,7 @@ open class RenderingServer: Object {
     
     /// Sets the viewport's environment mode which allows enabling or disabling rendering of 3D environment over 2D canvas. When disabled, 2D will not be affected by the environment. When enabled, 2D will be affected by the environment if the environment background mode is .envBgCanvas. The default behavior is to inherit the setting from the viewport's parent. If the topmost parent is also set to .viewportEnvironmentInherit, then the behavior will be the same as if it was set to .viewportEnvironmentEnabled.
     public static func viewportSetEnvironmentMode (viewport: RID, mode: RenderingServer.ViewportEnvironmentMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -9798,7 +9798,7 @@ open class RenderingServer: Object {
     
     /// Sets a viewport's camera.
     public static func viewportAttachCamera (viewport: RID, camera: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_viewport_attach_camera, UnsafeMutableRawPointer (mutating: shared.handle), nil, &viewport.content, &camera.content)
@@ -9831,7 +9831,7 @@ open class RenderingServer: Object {
     
     /// Sets a viewport's scenario. The scenario contains information about environment information, reflection atlas, etc.
     public static func viewportSetScenario (viewport: RID, scenario: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_viewport_set_scenario, UnsafeMutableRawPointer (mutating: shared.handle), nil, &viewport.content, &scenario.content)
@@ -9864,7 +9864,7 @@ open class RenderingServer: Object {
     
     /// Sets a viewport's canvas.
     public static func viewportAttachCanvas (viewport: RID, canvas: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_viewport_attach_canvas, UnsafeMutableRawPointer (mutating: shared.handle), nil, &viewport.content, &canvas.content)
@@ -9897,7 +9897,7 @@ open class RenderingServer: Object {
     
     /// Detaches a viewport from a canvas and vice versa.
     public static func viewportRemoveCanvas (viewport: RID, canvas: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_viewport_remove_canvas, UnsafeMutableRawPointer (mutating: shared.handle), nil, &viewport.content, &canvas.content)
@@ -9930,7 +9930,7 @@ open class RenderingServer: Object {
     
     /// If `true`, canvas item transforms (i.e. origin position) are snapped to the nearest pixel when rendering. This can lead to a crisper appearance at the cost of less smooth movement, especially when ``Camera2D`` smoothing is enabled. Equivalent to ``ProjectSettings/rendering/2d/snap/snap2dTransformsToPixel``.
     public static func viewportSetSnap2dTransformsToPixel (viewport: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -9965,7 +9965,7 @@ open class RenderingServer: Object {
     
     /// If `true`, canvas item vertices (i.e. polygon points) are snapped to the nearest pixel when rendering. This can lead to a crisper appearance at the cost of less smooth movement, especially when ``Camera2D`` smoothing is enabled. Equivalent to ``ProjectSettings/rendering/2d/snap/snap2dVerticesToPixel``.
     public static func viewportSetSnap2dVerticesToPixel (viewport: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -10000,7 +10000,7 @@ open class RenderingServer: Object {
     
     /// Sets the default texture filtering mode for the specified `viewport` RID. See ``RenderingServer/CanvasItemTextureFilter`` for options.
     public static func viewportSetDefaultCanvasItemTextureFilter (viewport: RID, filter: RenderingServer.CanvasItemTextureFilter) {
-        #if true
+        #if false
         
         var copy_filter = Int64 (filter.rawValue)
         
@@ -10035,7 +10035,7 @@ open class RenderingServer: Object {
     
     /// Sets the default texture repeat mode for the specified `viewport` RID. See ``RenderingServer/CanvasItemTextureRepeat`` for options.
     public static func viewportSetDefaultCanvasItemTextureRepeat (viewport: RID, `repeat`: RenderingServer.CanvasItemTextureRepeat) {
-        #if true
+        #if false
         
         var copy_repeat = Int64 (`repeat`.rawValue)
         
@@ -10070,7 +10070,7 @@ open class RenderingServer: Object {
     
     /// Sets the transformation of a viewport's canvas.
     public static func viewportSetCanvasTransform (viewport: RID, canvas: RID, offset: Transform2D) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -10111,7 +10111,7 @@ open class RenderingServer: Object {
     /// `layer` is the actual canvas layer, while `sublayer` specifies the stacking order of the canvas among those in the same layer.
     /// 
     public static func viewportSetCanvasStacking (viewport: RID, canvas: RID, layer: Int32, sublayer: Int32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_sublayer: Int = Int (sublayer)
@@ -10154,7 +10154,7 @@ open class RenderingServer: Object {
     
     /// If `true`, the viewport renders its background as transparent.
     public static func viewportSetTransparentBackground (viewport: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -10189,7 +10189,7 @@ open class RenderingServer: Object {
     
     /// Sets the viewport's global transformation matrix.
     public static func viewportSetGlobalCanvasTransform (viewport: RID, transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -10224,7 +10224,7 @@ open class RenderingServer: Object {
     
     /// Sets the viewport's 2D signed distance field ``ProjectSettings/rendering/2d/sdf/oversize`` and ``ProjectSettings/rendering/2d/sdf/scale``. This is used when sampling the signed distance field in ``CanvasItem`` shaders as well as ``GPUParticles2D`` collision. This is _not_ used by SDFGI in 3D rendering.
     public static func viewportSetSdfOversizeAndScale (viewport: RID, oversize: RenderingServer.ViewportSDFOversize, scale: RenderingServer.ViewportSDFScale) {
-        #if true
+        #if false
         
         var copy_oversize = Int64 (oversize.rawValue)
         var copy_scale = Int64 (scale.rawValue)
@@ -10267,7 +10267,7 @@ open class RenderingServer: Object {
     /// > Note: If this is set to `0`, no positional shadows will be visible at all. This can improve performance significantly on low-end systems by reducing both the CPU and GPU load (as fewer draw calls are needed to draw the scene without shadows).
     /// 
     public static func viewportSetPositionalShadowAtlasSize (viewport: RID, size: Int32, use16Bits: Bool = false) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         var copy_use_16_bits = use16Bits
@@ -10307,7 +10307,7 @@ open class RenderingServer: Object {
     
     /// Sets the number of subdivisions to use in the specified shadow atlas `quadrant` for omni and spot shadows. See also ``Viewport/setPositionalShadowAtlasQuadrantSubdiv(quadrant:subdiv:)``.
     public static func viewportSetPositionalShadowAtlasQuadrantSubdivision (viewport: RID, quadrant: Int32, subdivision: Int32) {
-        #if true
+        #if false
         
         var copy_quadrant: Int = Int (quadrant)
         var copy_subdivision: Int = Int (subdivision)
@@ -10347,7 +10347,7 @@ open class RenderingServer: Object {
     
     /// Sets the multisample anti-aliasing mode for 3D on the specified `viewport` RID. See ``RenderingServer/ViewportMSAA`` for options.
     public static func viewportSetMsaa3d (viewport: RID, msaa: RenderingServer.ViewportMSAA) {
-        #if true
+        #if false
         
         var copy_msaa = Int64 (msaa.rawValue)
         
@@ -10382,7 +10382,7 @@ open class RenderingServer: Object {
     
     /// Sets the multisample anti-aliasing mode for 2D/Canvas on the specified `viewport` RID. See ``RenderingServer/ViewportMSAA`` for options.
     public static func viewportSetMsaa2d (viewport: RID, msaa: RenderingServer.ViewportMSAA) {
-        #if true
+        #if false
         
         var copy_msaa = Int64 (msaa.rawValue)
         
@@ -10420,7 +10420,7 @@ open class RenderingServer: Object {
     /// > Note: This setting will have no effect when using the GL Compatibility renderer as the GL Compatibility renderer always renders in low dynamic range for performance reasons.
     /// 
     public static func viewportSetUseHdr2d (viewport: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -10455,7 +10455,7 @@ open class RenderingServer: Object {
     
     /// Sets the viewport's screen-space antialiasing mode.
     public static func viewportSetScreenSpaceAa (viewport: RID, mode: RenderingServer.ViewportScreenSpaceAA) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -10490,7 +10490,7 @@ open class RenderingServer: Object {
     
     /// If `true`, use Temporal Anti-Aliasing. Equivalent to ``ProjectSettings/rendering/antiAliasing/quality/useTaa``.
     public static func viewportSetUseTaa (viewport: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -10525,7 +10525,7 @@ open class RenderingServer: Object {
     
     /// If `true`, enables debanding on the specified viewport. Equivalent to ``ProjectSettings/rendering/antiAliasing/quality/useDebanding``.
     public static func viewportSetUseDebanding (viewport: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -10560,7 +10560,7 @@ open class RenderingServer: Object {
     
     /// If `true`, enables occlusion culling on the specified viewport. Equivalent to ``ProjectSettings/rendering/occlusionCulling/useOcclusionCulling``.
     public static func viewportSetUseOcclusionCulling (viewport: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -10595,7 +10595,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``ProjectSettings/rendering/occlusionCulling/occlusionRaysPerThread`` to use for occlusion culling. This parameter is global and cannot be set on a per-viewport basis.
     public static func viewportSetOcclusionRaysPerThread (_ raysPerThread: Int32) {
-        #if true
+        #if false
         
         var copy_rays_per_thread: Int = Int (raysPerThread)
         
@@ -10627,7 +10627,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``ProjectSettings/rendering/occlusionCulling/bvhBuildQuality`` to use for occlusion culling. This parameter is global and cannot be set on a per-viewport basis.
     public static func viewportSetOcclusionCullingBuildQuality (_ quality: RenderingServer.ViewportOcclusionCullingBuildQuality) {
-        #if true
+        #if false
         
         var copy_quality = Int64 (quality.rawValue)
         
@@ -10665,7 +10665,7 @@ open class RenderingServer: Object {
     /// 
     public static func viewportGetRenderInfo (viewport: RID, type: RenderingServer.ViewportRenderInfoType, info: RenderingServer.ViewportRenderInfo)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_info = Int64 (info.rawValue)
@@ -10706,7 +10706,7 @@ open class RenderingServer: Object {
     
     /// Sets the debug draw mode of a viewport. See ``RenderingServer/ViewportDebugDraw`` for options.
     public static func viewportSetDebugDraw (viewport: RID, draw: RenderingServer.ViewportDebugDraw) {
-        #if true
+        #if false
         
         var copy_draw = Int64 (draw.rawValue)
         
@@ -10741,7 +10741,7 @@ open class RenderingServer: Object {
     
     /// Sets the measurement for the given `viewport` RID (obtained using ``Viewport/getViewportRid()``). Once enabled, ``viewportGetMeasuredRenderTimeCpu(viewport:)`` and ``viewportGetMeasuredRenderTimeGpu(viewport:)`` will return values greater than `0.0` when queried with the given `viewport`.
     public static func viewportSetMeasureRenderTime (viewport: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -10780,7 +10780,7 @@ open class RenderingServer: Object {
     /// 
     public static func viewportGetMeasuredRenderTimeCpu (viewport: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_viewport_get_measured_render_time_cpu, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &viewport.content)
@@ -10817,7 +10817,7 @@ open class RenderingServer: Object {
     /// 
     public static func viewportGetMeasuredRenderTimeGpu (viewport: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_viewport_get_measured_render_time_gpu, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &viewport.content)
@@ -10848,7 +10848,7 @@ open class RenderingServer: Object {
     
     /// Sets the Variable Rate Shading (VRS) mode for the viewport. If the GPU does not support VRS, this property is ignored. Equivalent to ``ProjectSettings/rendering/vrs/mode``.
     public static func viewportSetVrsMode (viewport: RID, mode: RenderingServer.ViewportVRSMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -10883,7 +10883,7 @@ open class RenderingServer: Object {
     
     /// The texture to use when the VRS mode is set to ``RenderingServer/ViewportVRSMode/viewportVrsTexture``. Equivalent to ``ProjectSettings/rendering/vrs/texture``.
     public static func viewportSetVrsTexture (viewport: RID, texture: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_viewport_set_vrs_texture, UnsafeMutableRawPointer (mutating: shared.handle), nil, &viewport.content, &texture.content)
@@ -10937,7 +10937,7 @@ open class RenderingServer: Object {
     
     /// Sets the `radianceSize` of the sky specified by the `sky` RID (in pixels). Equivalent to ``Sky/radianceSize``.
     public static func skySetRadianceSize (sky: RID, radianceSize: Int32) {
-        #if true
+        #if false
         
         var copy_radiance_size: Int = Int (radianceSize)
         
@@ -10972,7 +10972,7 @@ open class RenderingServer: Object {
     
     /// Sets the process `mode` of the sky specified by the `sky` RID. Equivalent to ``Sky/processMode``.
     public static func skySetMode (sky: RID, mode: RenderingServer.SkyMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -11007,7 +11007,7 @@ open class RenderingServer: Object {
     
     /// Sets the material that the sky uses to render the background, ambient and reflection maps.
     public static func skySetMaterial (sky: RID, material: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_sky_set_material, UnsafeMutableRawPointer (mutating: shared.handle), nil, &sky.content, &material.content)
@@ -11046,7 +11046,7 @@ open class RenderingServer: Object {
     /// 
     public static func skyBakePanorama (sky: RID, energy: Double, bakeIrradiance: Bool, size: Vector2i)-> Image? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_energy = energy
         var copy_bake_irradiance = bakeIrradiance
@@ -11115,7 +11115,7 @@ open class RenderingServer: Object {
     
     /// Sets the environment's background mode. Equivalent to ``Environment/backgroundMode``.
     public static func environmentSetBackground (env: RID, bg: RenderingServer.EnvironmentBG) {
-        #if true
+        #if false
         
         var copy_bg = Int64 (bg.rawValue)
         
@@ -11150,7 +11150,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``Sky`` to be used as the environment's background when using _BGMode_ sky. Equivalent to ``Environment/sky``.
     public static func environmentSetSky (env: RID, sky: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_environment_set_sky, UnsafeMutableRawPointer (mutating: shared.handle), nil, &env.content, &sky.content)
@@ -11183,7 +11183,7 @@ open class RenderingServer: Object {
     
     /// Sets a custom field of view for the background ``Sky``. Equivalent to ``Environment/skyCustomFov``.
     public static func environmentSetSkyCustomFov (env: RID, scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -11218,7 +11218,7 @@ open class RenderingServer: Object {
     
     /// Sets the rotation of the background ``Sky`` expressed as a ``Basis``. Equivalent to ``Environment/skyRotation``, where the rotation vector is used to construct the ``Basis``.
     public static func environmentSetSkyOrientation (env: RID, orientation: Basis) {
-        #if true
+        #if false
         
         var copy_orientation = orientation
         
@@ -11253,7 +11253,7 @@ open class RenderingServer: Object {
     
     /// Color displayed for clear areas of the scene. Only effective if using the .envBgColor background mode.
     public static func environmentSetBgColor (env: RID, color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -11288,7 +11288,7 @@ open class RenderingServer: Object {
     
     /// Sets the intensity of the background color.
     public static func environmentSetBgEnergy (env: RID, multiplier: Double, exposureValue: Double) {
-        #if true
+        #if false
         
         var copy_multiplier = multiplier
         var copy_exposure_value = exposureValue
@@ -11328,7 +11328,7 @@ open class RenderingServer: Object {
     
     /// Sets the maximum layer to use if using Canvas background mode.
     public static func environmentSetCanvasMaxLayer (env: RID, maxLayer: Int32) {
-        #if true
+        #if false
         
         var copy_max_layer: Int = Int (maxLayer)
         
@@ -11363,7 +11363,7 @@ open class RenderingServer: Object {
     
     /// Sets the values to be used for ambient light rendering. See ``Environment`` for more details.
     public static func environmentSetAmbientLight (env: RID, color: Color, ambient: RenderingServer.EnvironmentAmbientSource = .bg, energy: Double = 1.0, skyContibution: Double = 0.0, reflectionSource: RenderingServer.EnvironmentReflectionSource = .bg) {
-        #if true
+        #if false
         
         var copy_color = color
         var copy_ambient = Int64 (ambient.rawValue)
@@ -11418,7 +11418,7 @@ open class RenderingServer: Object {
     
     /// Configures glow for the specified environment RID. See `glow_*` properties in ``Environment`` for more information.
     public static func environmentSetGlow (env: RID, enable: Bool, levels: PackedFloat32Array, intensity: Double, strength: Double, mix: Double, bloomThreshold: Double, blendMode: RenderingServer.EnvironmentGlowBlendMode, hdrBleedThreshold: Double, hdrBleedScale: Double, hdrLuminanceCap: Double, glowMapStrength: Double, glowMap: RID) {
-        #if true
+        #if false
         
         var copy_enable = enable
         var copy_intensity = intensity
@@ -11504,7 +11504,7 @@ open class RenderingServer: Object {
     
     /// Sets the variables to be used with the "tonemap" post-process effect. See ``Environment`` for more details.
     public static func environmentSetTonemap (env: RID, toneMapper: RenderingServer.EnvironmentToneMapper, exposure: Double, white: Double) {
-        #if true
+        #if false
         
         var copy_tone_mapper = Int64 (toneMapper.rawValue)
         var copy_exposure = exposure
@@ -11549,7 +11549,7 @@ open class RenderingServer: Object {
     
     /// Sets the values to be used with the "adjustments" post-process effect. See ``Environment`` for more details.
     public static func environmentSetAdjustment (env: RID, enable: Bool, brightness: Double, contrast: Double, saturation: Double, use1dColorCorrection: Bool, colorCorrection: RID) {
-        #if true
+        #if false
         
         var copy_enable = enable
         var copy_brightness = brightness
@@ -11607,7 +11607,7 @@ open class RenderingServer: Object {
     
     /// Sets the variables to be used with the screen-space reflections (SSR) post-process effect. See ``Environment`` for more details.
     public static func environmentSetSsr (env: RID, enable: Bool, maxSteps: Int32, fadeIn: Double, fadeOut: Double, depthTolerance: Double) {
-        #if true
+        #if false
         
         var copy_enable = enable
         var copy_max_steps: Int = Int (maxSteps)
@@ -11662,7 +11662,7 @@ open class RenderingServer: Object {
     
     /// Sets the variables to be used with the screen-space ambient occlusion (SSAO) post-process effect. See ``Environment`` for more details.
     public static func environmentSetSsao (env: RID, enable: Bool, radius: Double, intensity: Double, power: Double, detail: Double, horizon: Double, sharpness: Double, lightAffect: Double, aoChannelAffect: Double) {
-        #if true
+        #if false
         
         var copy_enable = enable
         var copy_radius = radius
@@ -11737,7 +11737,7 @@ open class RenderingServer: Object {
     
     /// Configures fog for the specified environment RID. See `fog_*` properties in ``Environment`` for more information.
     public static func environmentSetFog (env: RID, enable: Bool, lightColor: Color, lightEnergy: Double, sunScatter: Double, density: Double, height: Double, heightDensity: Double, aerialPerspective: Double, skyAffect: Double) {
-        #if true
+        #if false
         
         var copy_enable = enable
         var copy_light_color = lightColor
@@ -11812,7 +11812,7 @@ open class RenderingServer: Object {
     
     /// Configures signed distance field global illumination for the specified environment RID. See `sdfgi_*` properties in ``Environment`` for more information.
     public static func environmentSetSdfgi (env: RID, enable: Bool, cascades: Int32, minCellSize: Double, yScale: RenderingServer.EnvironmentSDFGIYScale, useOcclusion: Bool, bounceFeedback: Double, readSky: Bool, energy: Double, normalBias: Double, probeBias: Double) {
-        #if true
+        #if false
         
         var copy_enable = enable
         var copy_cascades: Int = Int (cascades)
@@ -11892,7 +11892,7 @@ open class RenderingServer: Object {
     
     /// Sets the variables to be used with the volumetric fog post-process effect. See ``Environment`` for more details.
     public static func environmentSetVolumetricFog (env: RID, enable: Bool, density: Double, albedo: Color, emission: Color, emissionEnergy: Double, anisotropy: Double, length: Double, pDetailSpread: Double, giInject: Double, temporalReprojection: Bool, temporalReprojectionAmount: Double, ambientInject: Double, skyAffect: Double) {
-        #if true
+        #if false
         
         var copy_enable = enable
         var copy_density = density
@@ -11987,7 +11987,7 @@ open class RenderingServer: Object {
     
     /// If `enable` is `true`, enables bicubic upscaling for glow which improves quality at the cost of performance. Equivalent to ``ProjectSettings/rendering/environment/glow/upscaleMode``.
     public static func environmentGlowSetUseBicubicUpscale (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -12019,7 +12019,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func environmentSetSsrRoughnessQuality (_ quality: RenderingServer.EnvironmentSSRRoughnessQuality) {
-        #if true
+        #if false
         
         var copy_quality = Int64 (quality.rawValue)
         
@@ -12051,7 +12051,7 @@ open class RenderingServer: Object {
     
     /// Sets the quality level of the screen-space ambient occlusion (SSAO) post-process effect. See ``Environment`` for more details.
     public static func environmentSetSsaoQuality (_ quality: RenderingServer.EnvironmentSSAOQuality, halfSize: Bool, adaptiveTarget: Double, blurPasses: Int32, fadeoutFrom: Double, fadeoutTo: Double) {
-        #if true
+        #if false
         
         var copy_quality = Int64 (quality.rawValue)
         var copy_half_size = halfSize
@@ -12108,7 +12108,7 @@ open class RenderingServer: Object {
     
     /// Sets the quality level of the screen-space indirect lighting (SSIL) post-process effect. See ``Environment`` for more details.
     public static func environmentSetSsilQuality (_ quality: RenderingServer.EnvironmentSSILQuality, halfSize: Bool, adaptiveTarget: Double, blurPasses: Int32, fadeoutFrom: Double, fadeoutTo: Double) {
-        #if true
+        #if false
         
         var copy_quality = Int64 (quality.rawValue)
         var copy_half_size = halfSize
@@ -12165,7 +12165,7 @@ open class RenderingServer: Object {
     
     /// Sets the number of rays to throw per frame when computing signed distance field global illumination. Equivalent to ``ProjectSettings/rendering/globalIllumination/sdfgi/probeRayCount``.
     public static func environmentSetSdfgiRayCount (_ rayCount: RenderingServer.EnvironmentSDFGIRayCount) {
-        #if true
+        #if false
         
         var copy_ray_count = Int64 (rayCount.rawValue)
         
@@ -12197,7 +12197,7 @@ open class RenderingServer: Object {
     
     /// Sets the number of frames to use for converging signed distance field global illumination. Equivalent to ``ProjectSettings/rendering/globalIllumination/sdfgi/framesToConverge``.
     public static func environmentSetSdfgiFramesToConverge (frames: RenderingServer.EnvironmentSDFGIFramesToConverge) {
-        #if true
+        #if false
         
         var copy_frames = Int64 (frames.rawValue)
         
@@ -12229,7 +12229,7 @@ open class RenderingServer: Object {
     
     /// Sets the update speed for dynamic lights' indirect lighting when computing signed distance field global illumination. Equivalent to ``ProjectSettings/rendering/globalIllumination/sdfgi/framesToUpdateLights``.
     public static func environmentSetSdfgiFramesToUpdateLight (frames: RenderingServer.EnvironmentSDFGIFramesToUpdateLight) {
-        #if true
+        #if false
         
         var copy_frames = Int64 (frames.rawValue)
         
@@ -12261,7 +12261,7 @@ open class RenderingServer: Object {
     
     /// Sets the resolution of the volumetric fog's froxel buffer. `size` is modified by the screen's aspect ratio and then used to set the width and height of the buffer. While `depth` is directly used to set the depth of the buffer.
     public static func environmentSetVolumetricFogVolumeSize (_ size: Int32, depth: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         var copy_depth: Int = Int (depth)
@@ -12298,7 +12298,7 @@ open class RenderingServer: Object {
     
     /// Enables filtering of the volumetric fog scattering buffer. This results in much smoother volumes with very few under-sampling artifacts.
     public static func environmentSetVolumetricFogFilterActive (_ active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         
@@ -12336,7 +12336,7 @@ open class RenderingServer: Object {
     /// 
     public static func environmentBakePanorama (environment: RID, bakeIrradiance: Bool, size: Vector2i)-> Image? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_bake_irradiance = bakeIrradiance
         var copy_size = size
@@ -12377,7 +12377,7 @@ open class RenderingServer: Object {
     
     /// Sets the screen-space roughness limiter parameters, such as whether it should be enabled and its thresholds. Equivalent to ``ProjectSettings/rendering/antiAliasing/screenSpaceRoughnessLimiter/enabled``, ``ProjectSettings/rendering/antiAliasing/screenSpaceRoughnessLimiter/amount`` and ``ProjectSettings/rendering/antiAliasing/screenSpaceRoughnessLimiter/limit``.
     public static func screenSpaceRoughnessLimiterSetActive (enable: Bool, amount: Double, limit: Double) {
-        #if true
+        #if false
         
         var copy_enable = enable
         var copy_amount = amount
@@ -12419,7 +12419,7 @@ open class RenderingServer: Object {
     
     /// Sets ``ProjectSettings/rendering/environment/subsurfaceScattering/subsurfaceScatteringQuality`` to use when rendering materials that have subsurface scattering enabled.
     public static func subSurfaceScatteringSetQuality (_ quality: RenderingServer.SubSurfaceScatteringQuality) {
-        #if true
+        #if false
         
         var copy_quality = Int64 (quality.rawValue)
         
@@ -12451,7 +12451,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``ProjectSettings/rendering/environment/subsurfaceScattering/subsurfaceScatteringScale`` and ``ProjectSettings/rendering/environment/subsurfaceScattering/subsurfaceScatteringDepthScale`` to use when rendering materials that have subsurface scattering enabled.
     public static func subSurfaceScatteringSetScale (_ scale: Double, depthScale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         var copy_depth_scale = depthScale
@@ -12511,7 +12511,7 @@ open class RenderingServer: Object {
     
     /// Sets the quality level of the DOF blur effect to one of the options in ``RenderingServer/DOFBlurQuality``. `useJitter` can be used to jitter samples taken during the blur pass to hide artifacts at the cost of looking more fuzzy.
     public static func cameraAttributesSetDofBlurQuality (_ quality: RenderingServer.DOFBlurQuality, useJitter: Bool) {
-        #if true
+        #if false
         
         var copy_quality = Int64 (quality.rawValue)
         var copy_use_jitter = useJitter
@@ -12548,7 +12548,7 @@ open class RenderingServer: Object {
     
     /// Sets the shape of the DOF bokeh pattern. Different shapes may be used to achieve artistic effect, or to meet performance targets. For more detail on available options see ``RenderingServer/DOFBokehShape``.
     public static func cameraAttributesSetDofBlurBokehShape (_ shape: RenderingServer.DOFBokehShape) {
-        #if true
+        #if false
         
         var copy_shape = Int64 (shape.rawValue)
         
@@ -12580,7 +12580,7 @@ open class RenderingServer: Object {
     
     /// Sets the parameters to use with the DOF blur effect. These parameters take on the same meaning as their counterparts in ``CameraAttributesPractical``.
     public static func cameraAttributesSetDofBlur (cameraAttributes: RID, farEnable: Bool, farDistance: Double, farTransition: Double, nearEnable: Bool, nearDistance: Double, nearTransition: Double, amount: Double) {
-        #if true
+        #if false
         
         var copy_far_enable = farEnable
         var copy_far_distance = farDistance
@@ -12650,7 +12650,7 @@ open class RenderingServer: Object {
     /// The exposure value can be calculated from aperture (in f-stops), shutter speed (in seconds), and sensitivity (in ISO) as follows:
     /// 
     public static func cameraAttributesSetExposure (cameraAttributes: RID, multiplier: Double, normalization: Double) {
-        #if true
+        #if false
         
         var copy_multiplier = multiplier
         var copy_normalization = normalization
@@ -12690,7 +12690,7 @@ open class RenderingServer: Object {
     
     /// Sets the parameters to use with the auto-exposure effect. These parameters take on the same meaning as their counterparts in ``CameraAttributes`` and ``CameraAttributesPractical``.
     public static func cameraAttributesSetAutoExposure (cameraAttributes: RID, enable: Bool, minSensitivity: Double, maxSensitivity: Double, speed: Double, scale: Double) {
-        #if true
+        #if false
         
         var copy_enable = enable
         var copy_min_sensitivity = minSensitivity
@@ -12768,7 +12768,7 @@ open class RenderingServer: Object {
     
     /// Sets the environment that will be used with this scenario. See also ``Environment``.
     public static func scenarioSetEnvironment (scenario: RID, environment: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_scenario_set_environment, UnsafeMutableRawPointer (mutating: shared.handle), nil, &scenario.content, &environment.content)
@@ -12801,7 +12801,7 @@ open class RenderingServer: Object {
     
     /// Sets the fallback environment to be used by this scenario. The fallback environment is used if no environment is set. Internally, this is used by the editor to provide a default environment.
     public static func scenarioSetFallbackEnvironment (scenario: RID, environment: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_scenario_set_fallback_environment, UnsafeMutableRawPointer (mutating: shared.handle), nil, &scenario.content, &environment.content)
@@ -12834,7 +12834,7 @@ open class RenderingServer: Object {
     
     /// Sets the camera attributes (`effects`) that will be used with this scenario. See also ``CameraAttributes``.
     public static func scenarioSetCameraAttributes (scenario: RID, effects: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_scenario_set_camera_attributes, UnsafeMutableRawPointer (mutating: shared.handle), nil, &scenario.content, &effects.content)
@@ -12871,7 +12871,7 @@ open class RenderingServer: Object {
     /// 
     public static func instanceCreate2 (base: RID, scenario: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_instance_create2, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &base.content, &scenario.content)
@@ -12930,7 +12930,7 @@ open class RenderingServer: Object {
     
     /// Sets the base of the instance. A base can be any of the 3D objects that are created in the RenderingServer that can be displayed. For example, any of the light types, mesh, multimesh, particle system, reflection probe, decal, lightmap, voxel GI and visibility notifiers are all types that can be set as the base of an instance in order to be displayed in the scenario.
     public static func instanceSetBase (instance: RID, base: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_instance_set_base, UnsafeMutableRawPointer (mutating: shared.handle), nil, &instance.content, &base.content)
@@ -12963,7 +12963,7 @@ open class RenderingServer: Object {
     
     /// Sets the scenario that the instance is in. The scenario is the 3D world that the objects will be displayed in.
     public static func instanceSetScenario (instance: RID, scenario: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_instance_set_scenario, UnsafeMutableRawPointer (mutating: shared.handle), nil, &instance.content, &scenario.content)
@@ -12996,7 +12996,7 @@ open class RenderingServer: Object {
     
     /// Sets the render layers that this instance will be drawn to. Equivalent to ``VisualInstance3D/layers``.
     public static func instanceSetLayerMask (instance: RID, mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -13031,7 +13031,7 @@ open class RenderingServer: Object {
     
     /// Sets the sorting offset and switches between using the bounding box or instance origin for depth sorting.
     public static func instanceSetPivotData (instance: RID, sortingOffset: Double, useAabbCenter: Bool) {
-        #if true
+        #if false
         
         var copy_sorting_offset = sortingOffset
         var copy_use_aabb_center = useAabbCenter
@@ -13071,7 +13071,7 @@ open class RenderingServer: Object {
     
     /// Sets the world space transform of the instance. Equivalent to ``Node3D/transform``.
     public static func instanceSetTransform (instance: RID, transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -13106,7 +13106,7 @@ open class RenderingServer: Object {
     
     /// Attaches a unique Object ID to instance. Object ID must be attached to instance for proper culling with ``instancesCullAabb(_:scenario:)``, ``instancesCullConvex(_:scenario:)``, and ``instancesCullRay(from:to:scenario:)``.
     public static func instanceAttachObjectInstanceId (instance: RID, id: UInt) {
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -13141,7 +13141,7 @@ open class RenderingServer: Object {
     
     /// Sets the weight for a given blend shape associated with this instance.
     public static func instanceSetBlendShapeWeight (instance: RID, shape: Int32, weight: Double) {
-        #if true
+        #if false
         
         var copy_shape: Int = Int (shape)
         var copy_weight = weight
@@ -13181,7 +13181,7 @@ open class RenderingServer: Object {
     
     /// Sets the override material of a specific surface. Equivalent to ``MeshInstance3D/setSurfaceOverrideMaterial(surface:material:)``.
     public static func instanceSetSurfaceOverrideMaterial (instance: RID, surface: Int32, material: RID) {
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         
@@ -13219,7 +13219,7 @@ open class RenderingServer: Object {
     
     /// Sets whether an instance is drawn or not. Equivalent to ``Node3D/visible``.
     public static func instanceSetVisible (instance: RID, visible: Bool) {
-        #if true
+        #if false
         
         var copy_visible = visible
         
@@ -13261,7 +13261,7 @@ open class RenderingServer: Object {
     /// > Note: `transparency` is clamped between `0.0` and `1.0`, so this property cannot be used to make transparent materials more opaque than they originally are.
     /// 
     public static func instanceGeometrySetTransparency (instance: RID, transparency: Double) {
-        #if true
+        #if false
         
         var copy_transparency = transparency
         
@@ -13296,7 +13296,7 @@ open class RenderingServer: Object {
     
     /// Sets a custom AABB to use when culling objects from the view frustum. Equivalent to setting ``GeometryInstance3D/customAabb``.
     public static func instanceSetCustomAabb (instance: RID, aabb: AABB) {
-        #if true
+        #if false
         
         var copy_aabb = aabb
         
@@ -13331,7 +13331,7 @@ open class RenderingServer: Object {
     
     /// Attaches a skeleton to an instance. Removes the previous skeleton from the instance.
     public static func instanceAttachSkeleton (instance: RID, skeleton: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_instance_attach_skeleton, UnsafeMutableRawPointer (mutating: shared.handle), nil, &instance.content, &skeleton.content)
@@ -13364,7 +13364,7 @@ open class RenderingServer: Object {
     
     /// Sets a margin to increase the size of the AABB when culling objects from the view frustum. This allows you to avoid culling objects that fall outside the view frustum. Equivalent to ``GeometryInstance3D/extraCullMargin``.
     public static func instanceSetExtraVisibilityMargin (instance: RID, margin: Double) {
-        #if true
+        #if false
         
         var copy_margin = margin
         
@@ -13399,7 +13399,7 @@ open class RenderingServer: Object {
     
     /// Sets the visibility parent for the given instance. Equivalent to ``Node3D/visibilityParent``.
     public static func instanceSetVisibilityParent (instance: RID, parent: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_instance_set_visibility_parent, UnsafeMutableRawPointer (mutating: shared.handle), nil, &instance.content, &parent.content)
@@ -13432,7 +13432,7 @@ open class RenderingServer: Object {
     
     /// If `true`, ignores both frustum and occlusion culling on the specified 3D geometry instance. This is not the same as ``GeometryInstance3D/ignoreOcclusionCulling``, which only ignores occlusion culling and leaves frustum culling intact.
     public static func instanceSetIgnoreCulling (instance: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -13467,7 +13467,7 @@ open class RenderingServer: Object {
     
     /// Sets the flag for a given ``RenderingServer/InstanceFlags``. See ``RenderingServer/InstanceFlags`` for more details.
     public static func instanceGeometrySetFlag (instance: RID, flag: RenderingServer.InstanceFlags, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         var copy_enabled = enabled
@@ -13507,7 +13507,7 @@ open class RenderingServer: Object {
     
     /// Sets the shadow casting setting to one of ``RenderingServer/ShadowCastingSetting``. Equivalent to ``GeometryInstance3D/castShadow``.
     public static func instanceGeometrySetCastShadowsSetting (instance: RID, shadowCastingSetting: RenderingServer.ShadowCastingSetting) {
-        #if true
+        #if false
         
         var copy_shadow_casting_setting = Int64 (shadowCastingSetting.rawValue)
         
@@ -13542,7 +13542,7 @@ open class RenderingServer: Object {
     
     /// Sets a material that will override the material for all surfaces on the mesh associated with this instance. Equivalent to ``GeometryInstance3D/materialOverride``.
     public static func instanceGeometrySetMaterialOverride (instance: RID, material: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_instance_geometry_set_material_override, UnsafeMutableRawPointer (mutating: shared.handle), nil, &instance.content, &material.content)
@@ -13575,7 +13575,7 @@ open class RenderingServer: Object {
     
     /// Sets a material that will be rendered for all surfaces on top of active materials for the mesh associated with this instance. Equivalent to ``GeometryInstance3D/materialOverlay``.
     public static func instanceGeometrySetMaterialOverlay (instance: RID, material: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_instance_geometry_set_material_overlay, UnsafeMutableRawPointer (mutating: shared.handle), nil, &instance.content, &material.content)
@@ -13608,7 +13608,7 @@ open class RenderingServer: Object {
     
     /// Sets the visibility range values for the given geometry instance. Equivalent to ``GeometryInstance3D/visibilityRangeBegin`` and related properties.
     public static func instanceGeometrySetVisibilityRange (instance: RID, min: Double, max: Double, minMargin: Double, maxMargin: Double, fadeMode: RenderingServer.VisibilityRangeFadeMode) {
-        #if true
+        #if false
         
         var copy_min = min
         var copy_max = max
@@ -13663,7 +13663,7 @@ open class RenderingServer: Object {
     
     /// Sets the lightmap GI instance to use for the specified 3D geometry instance. The lightmap UV scale for the specified instance (equivalent to ``GeometryInstance3D/giLightmapScale``) and lightmap atlas slice must also be specified.
     public static func instanceGeometrySetLightmap (instance: RID, lightmap: RID, lightmapUvScale: Rect2, lightmapSlice: Int32) {
-        #if true
+        #if false
         
         var copy_lightmap_uv_scale = lightmapUvScale
         var copy_lightmap_slice: Int = Int (lightmapSlice)
@@ -13706,7 +13706,7 @@ open class RenderingServer: Object {
     
     /// Sets the level of detail bias to use when rendering the specified 3D geometry instance. Higher values result in higher detail from further away. Equivalent to ``GeometryInstance3D/lodBias``.
     public static func instanceGeometrySetLodBias (instance: RID, lodBias: Double) {
-        #if true
+        #if false
         
         var copy_lod_bias = lodBias
         
@@ -13741,7 +13741,7 @@ open class RenderingServer: Object {
     
     /// Sets the per-instance shader uniform on the specified 3D geometry instance. Equivalent to ``GeometryInstance3D/setInstanceShaderParameter(name:value:)``.
     public static func instanceGeometrySetShaderParameter (instance: RID, parameter: StringName, value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_instance_geometry_set_shader_parameter, UnsafeMutableRawPointer (mutating: shared.handle), nil, &instance.content, &parameter.content, &value.content)
@@ -13781,7 +13781,7 @@ open class RenderingServer: Object {
     /// 
     public static func instanceGeometryGetShaderParameter (instance: RID, parameter: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_instance_geometry_get_shader_parameter, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &instance.content, &parameter.content)
@@ -13816,7 +13816,7 @@ open class RenderingServer: Object {
     /// Returns the default value of the per-instance shader uniform from the specified 3D geometry instance. Equivalent to ``GeometryInstance3D/getInstanceShaderParameter(name:)``.
     public static func instanceGeometryGetShaderParameterDefaultValue (instance: RID, parameter: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_instance_geometry_get_shader_parameter_default_value, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &instance.content, &parameter.content)
@@ -13851,7 +13851,7 @@ open class RenderingServer: Object {
     /// Returns a dictionary of per-instance shader uniform names of the per-instance shader uniform from the specified 3D geometry instance. The returned dictionary is in PropertyInfo format, with the keys `name`, `class_name`, `type`, `hint`, `hint_string` and `usage`. Equivalent to ``GeometryInstance3D/getInstanceShaderParameter(name:)``.
     public static func instanceGeometryGetShaderParameterList (instance: RID)-> VariantCollection<GDictionary> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_instance_geometry_get_shader_parameter_list, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &instance.content)
@@ -13886,7 +13886,7 @@ open class RenderingServer: Object {
     /// 
     public static func instancesCullAabb (_ aabb: AABB, scenario: RID = RID())-> PackedInt64Array {
         let _result: PackedInt64Array = PackedInt64Array ()
-        #if true
+        #if false
         
         var copy_aabb = aabb
         
@@ -13926,7 +13926,7 @@ open class RenderingServer: Object {
     /// 
     public static func instancesCullRay (from: Vector3, to: Vector3, scenario: RID = RID())-> PackedInt64Array {
         let _result: PackedInt64Array = PackedInt64Array ()
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -13971,7 +13971,7 @@ open class RenderingServer: Object {
     /// 
     public static func instancesCullConvex (_ convex: VariantCollection<Plane>, scenario: RID = RID())-> PackedInt64Array {
         let _result: PackedInt64Array = PackedInt64Array ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_instances_cull_convex, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &convex.array.content, &scenario.content)
@@ -14006,7 +14006,7 @@ open class RenderingServer: Object {
     /// Bakes the material data of the Mesh passed in the `base` parameter with optional `materialOverrides` to a set of ``Image``s of size `imageSize`. Returns an array of ``Image``s containing material properties as specified in ``RenderingServer/BakeChannels``.
     public static func bakeRenderUv2 (base: RID, materialOverrides: VariantCollection<RID>, imageSize: Vector2i)-> ObjectCollection<Image> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_image_size = imageSize
         
@@ -14068,7 +14068,7 @@ open class RenderingServer: Object {
     
     /// A copy of the canvas item will be drawn with a local offset of the mirroring ``Vector2``.
     public static func canvasSetItemMirroring (canvas: RID, item: RID, mirroring: Vector2) {
-        #if true
+        #if false
         
         var copy_mirroring = mirroring
         
@@ -14106,7 +14106,7 @@ open class RenderingServer: Object {
     
     /// Modulates all colors in the given canvas.
     public static func canvasSetModulate (canvas: RID, color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -14141,7 +14141,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func canvasSetDisableScale (disable: Bool) {
-        #if true
+        #if false
         
         var copy_disable = disable
         
@@ -14196,7 +14196,7 @@ open class RenderingServer: Object {
     
     /// Sets the `channel`'s `texture` for the canvas texture specified by the `canvasTexture` RID. Equivalent to ``CanvasTexture/diffuseTexture``, ``CanvasTexture/normalTexture`` and ``CanvasTexture/specularTexture``.
     public static func canvasTextureSetChannel (canvasTexture: RID, channel: RenderingServer.CanvasTextureChannel, texture: RID) {
-        #if true
+        #if false
         
         var copy_channel = Int64 (channel.rawValue)
         
@@ -14234,7 +14234,7 @@ open class RenderingServer: Object {
     
     /// Sets the `baseColor` and `shininess` to use for the canvas texture specified by the `canvasTexture` RID. Equivalent to ``CanvasTexture/specularColor`` and ``CanvasTexture/specularShininess``.
     public static func canvasTextureSetShadingParameters (canvasTexture: RID, baseColor: Color, shininess: Double) {
-        #if true
+        #if false
         
         var copy_base_color = baseColor
         var copy_shininess = shininess
@@ -14274,7 +14274,7 @@ open class RenderingServer: Object {
     
     /// Sets the texture `filter` mode to use for the canvas texture specified by the `canvasTexture` RID.
     public static func canvasTextureSetTextureFilter (canvasTexture: RID, filter: RenderingServer.CanvasItemTextureFilter) {
-        #if true
+        #if false
         
         var copy_filter = Int64 (filter.rawValue)
         
@@ -14309,7 +14309,7 @@ open class RenderingServer: Object {
     
     /// Sets the texture `repeat` mode to use for the canvas texture specified by the `canvasTexture` RID.
     public static func canvasTextureSetTextureRepeat (canvasTexture: RID, `repeat`: RenderingServer.CanvasItemTextureRepeat) {
-        #if true
+        #if false
         
         var copy_repeat = Int64 (`repeat`.rawValue)
         
@@ -14367,7 +14367,7 @@ open class RenderingServer: Object {
     
     /// Sets a parent ``CanvasItem`` to the ``CanvasItem``. The item will inherit transform, modulation and visibility from its parent, like ``CanvasItem`` nodes in the scene tree.
     public static func canvasItemSetParent (item: RID, parent: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_canvas_item_set_parent, UnsafeMutableRawPointer (mutating: shared.handle), nil, &item.content, &parent.content)
@@ -14400,7 +14400,7 @@ open class RenderingServer: Object {
     
     /// Sets the default texture filter mode for the canvas item specified by the `item` RID. Equivalent to ``CanvasItem/textureFilter``.
     public static func canvasItemSetDefaultTextureFilter (item: RID, filter: RenderingServer.CanvasItemTextureFilter) {
-        #if true
+        #if false
         
         var copy_filter = Int64 (filter.rawValue)
         
@@ -14435,7 +14435,7 @@ open class RenderingServer: Object {
     
     /// Sets the default texture repeat mode for the canvas item specified by the `item` RID. Equivalent to ``CanvasItem/textureRepeat``.
     public static func canvasItemSetDefaultTextureRepeat (item: RID, `repeat`: RenderingServer.CanvasItemTextureRepeat) {
-        #if true
+        #if false
         
         var copy_repeat = Int64 (`repeat`.rawValue)
         
@@ -14470,7 +14470,7 @@ open class RenderingServer: Object {
     
     /// Sets the visibility of the ``CanvasItem``.
     public static func canvasItemSetVisible (item: RID, visible: Bool) {
-        #if true
+        #if false
         
         var copy_visible = visible
         
@@ -14505,7 +14505,7 @@ open class RenderingServer: Object {
     
     /// Sets the light `mask` for the canvas item specified by the `item` RID. Equivalent to ``CanvasItem/lightMask``.
     public static func canvasItemSetLightMask (item: RID, mask: Int32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -14540,7 +14540,7 @@ open class RenderingServer: Object {
     
     /// Sets the rendering visibility layer associated with this ``CanvasItem``. Only ``Viewport`` nodes with a matching rendering mask will render this ``CanvasItem``.
     public static func canvasItemSetVisibilityLayer (item: RID, visibilityLayer: UInt32) {
-        #if true
+        #if false
         
         var copy_visibility_layer: Int = Int (visibilityLayer)
         
@@ -14575,7 +14575,7 @@ open class RenderingServer: Object {
     
     /// Sets the `transform` of the canvas item specified by the `item` RID. This affects where and how the item will be drawn. Child canvas items' transforms are multiplied by their parent's transform. Equivalent to ``Node2D/transform``.
     public static func canvasItemSetTransform (item: RID, transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -14613,7 +14613,7 @@ open class RenderingServer: Object {
     /// > Note: The equivalent node functionality is found in ``Label/clipText``, ``RichTextLabel`` (always enabled) and more.
     /// 
     public static func canvasItemSetClip (item: RID, clip: Bool) {
-        #if true
+        #if false
         
         var copy_clip = clip
         
@@ -14648,7 +14648,7 @@ open class RenderingServer: Object {
     
     /// If `enabled` is `true`, enables multichannel signed distance field rendering mode for the canvas item specified by the `item` RID. This is meant to be used for font rendering, or with specially generated images using [url=https://github.com/Chlumsky/msdfgen]msdfgen[/url].
     public static func canvasItemSetDistanceFieldMode (item: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -14683,7 +14683,7 @@ open class RenderingServer: Object {
     
     /// If `useCustomRect` is `true`, sets the custom visibility rectangle (used for culling) to `rect` for the canvas item specified by `item`. Setting a custom visibility rect can reduce CPU load when drawing lots of 2D instances. If `useCustomRect` is `false`, automatically computes a visibility rectangle based on the canvas item's draw commands.
     public static func canvasItemSetCustomRect (item: RID, useCustomRect: Bool, rect: Rect2 = Rect2 (x: 0, y: 0, width: 0, height: 0)) {
-        #if true
+        #if false
         
         var copy_use_custom_rect = useCustomRect
         var copy_rect = rect
@@ -14723,7 +14723,7 @@ open class RenderingServer: Object {
     
     /// Multiplies the color of the canvas item specified by the `item` RID, while affecting its children. See also ``canvasItemSetSelfModulate(item:color:)``. Equivalent to ``CanvasItem/modulate``.
     public static func canvasItemSetModulate (item: RID, color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -14758,7 +14758,7 @@ open class RenderingServer: Object {
     
     /// Multiplies the color of the canvas item specified by the `item` RID, without affecting its children. See also ``canvasItemSetModulate(item:color:)``. Equivalent to ``CanvasItem/selfModulate``.
     public static func canvasItemSetSelfModulate (item: RID, color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -14793,7 +14793,7 @@ open class RenderingServer: Object {
     
     /// If `enabled` is `true`, draws the canvas item specified by the `item` RID behind its parent. Equivalent to ``CanvasItem/showBehindParent``.
     public static func canvasItemSetDrawBehindParent (item: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -14828,7 +14828,7 @@ open class RenderingServer: Object {
     
     /// Draws a line on the ``CanvasItem`` pointed to by the `item` ``RID``. See also ``CanvasItem/drawLine(from:to:color:width:antialiased:)``.
     public static func canvasItemAddLine (item: RID, from: Vector2, to: Vector2, color: Color, width: Double = -1.0, antialiased: Bool = false) {
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -14883,7 +14883,7 @@ open class RenderingServer: Object {
     
     /// Draws a 2D polyline on the ``CanvasItem`` pointed to by the `item` ``RID``. See also ``CanvasItem/drawPolyline(points:color:width:antialiased:)`` and ``CanvasItem/drawPolylineColors(points:colors:width:antialiased:)``.
     public static func canvasItemAddPolyline (item: RID, points: PackedVector2Array, colors: PackedColorArray, width: Double = -1.0, antialiased: Bool = false) {
-        #if true
+        #if false
         
         var copy_width = width
         var copy_antialiased = antialiased
@@ -14929,7 +14929,7 @@ open class RenderingServer: Object {
     
     /// Draws a 2D multiline on the ``CanvasItem`` pointed to by the `item` ``RID``. See also ``CanvasItem/drawMultiline(points:color:width:)`` and ``CanvasItem/drawMultilineColors(points:colors:width:)``.
     public static func canvasItemAddMultiline (item: RID, points: PackedVector2Array, colors: PackedColorArray, width: Double = -1.0) {
-        #if true
+        #if false
         
         var copy_width = width
         
@@ -14970,7 +14970,7 @@ open class RenderingServer: Object {
     
     /// Draws a rectangle on the ``CanvasItem`` pointed to by the `item` ``RID``. See also ``CanvasItem/drawRect(_:color:filled:width:)``.
     public static func canvasItemAddRect (item: RID, rect: Rect2, color: Color) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_color = color
@@ -15010,7 +15010,7 @@ open class RenderingServer: Object {
     
     /// Draws a circle on the ``CanvasItem`` pointed to by the `item` ``RID``. See also ``CanvasItem/drawCircle(position:radius:color:)``.
     public static func canvasItemAddCircle (item: RID, pos: Vector2, radius: Double, color: Color) {
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_radius = radius
@@ -15055,7 +15055,7 @@ open class RenderingServer: Object {
     
     /// Draws a 2D textured rectangle on the ``CanvasItem`` pointed to by the `item` ``RID``. See also ``CanvasItem/drawTextureRect(texture:rect:tile:modulate:transpose:)`` and ``Texture2D/drawRect(canvasItem:rect:tile:modulate:transpose:)``.
     public static func canvasItemAddTextureRect (item: RID, rect: Rect2, texture: RID, tile: Bool = false, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), transpose: Bool = false) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_tile = tile
@@ -15108,7 +15108,7 @@ open class RenderingServer: Object {
     
     /// See also ``CanvasItem/drawMsdfTextureRectRegion(texture:rect:srcRect:modulate:outline:pixelRange:scale:)``.
     public static func canvasItemAddMsdfTextureRectRegion (item: RID, rect: Rect2, texture: RID, srcRect: Rect2, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), outlineSize: Int32 = 0, pxRange: Double = 1.0, scale: Double = 1.0) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_src_rect = srcRect
@@ -15171,7 +15171,7 @@ open class RenderingServer: Object {
     
     /// See also ``CanvasItem/drawLcdTextureRectRegion(texture:rect:srcRect:modulate:)``.
     public static func canvasItemAddLcdTextureRectRegion (item: RID, rect: Rect2, texture: RID, srcRect: Rect2, modulate: Color) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_src_rect = srcRect
@@ -15219,7 +15219,7 @@ open class RenderingServer: Object {
     
     /// Draws the specified region of a 2D textured rectangle on the ``CanvasItem`` pointed to by the `item` ``RID``. See also ``CanvasItem/drawTextureRectRegion(texture:rect:srcRect:modulate:transpose:clipUv:)`` and ``Texture2D/drawRectRegion(canvasItem:rect:srcRect:modulate:transpose:clipUv:)``.
     public static func canvasItemAddTextureRectRegion (item: RID, rect: Rect2, texture: RID, srcRect: Rect2, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), transpose: Bool = false, clipUv: Bool = true) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_src_rect = srcRect
@@ -15277,7 +15277,7 @@ open class RenderingServer: Object {
     
     /// Draws a nine-patch rectangle on the ``CanvasItem`` pointed to by the `item` ``RID``.
     public static func canvasItemAddNinePatch (item: RID, rect: Rect2, source: Rect2, texture: RID, topleft: Vector2, bottomright: Vector2, xAxisMode: RenderingServer.NinePatchAxisMode = .stretch, yAxisMode: RenderingServer.NinePatchAxisMode = .stretch, drawCenter: Bool = true, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_source = source
@@ -15350,7 +15350,7 @@ open class RenderingServer: Object {
     
     /// Draws a 2D primitive on the ``CanvasItem`` pointed to by the `item` ``RID``. See also ``CanvasItem/drawPrimitive(points:colors:uvs:texture:)``.
     public static func canvasItemAddPrimitive (item: RID, points: PackedVector2Array, colors: PackedColorArray, uvs: PackedVector2Array, texture: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_canvas_item_add_primitive, UnsafeMutableRawPointer (mutating: shared.handle), nil, &item.content, &points.content, &colors.content, &uvs.content, &texture.content)
@@ -15392,7 +15392,7 @@ open class RenderingServer: Object {
     
     /// Draws a 2D polygon on the ``CanvasItem`` pointed to by the `item` ``RID``. If you need more flexibility (such as being able to use bones), use ``canvasItemAddTriangleArray(item:indices:points:colors:uvs:bones:weights:texture:count:)`` instead. See also ``CanvasItem/drawPolygon(points:colors:uvs:texture:)``.
     public static func canvasItemAddPolygon (item: RID, points: PackedVector2Array, colors: PackedColorArray, uvs: PackedVector2Array = PackedVector2Array(), texture: RID = RID()) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_canvas_item_add_polygon, UnsafeMutableRawPointer (mutating: shared.handle), nil, &item.content, &points.content, &colors.content, &uvs.content, &texture.content)
@@ -15437,7 +15437,7 @@ open class RenderingServer: Object {
     /// > Note: `count` is unused and can be left unspecified.
     /// 
     public static func canvasItemAddTriangleArray (item: RID, indices: PackedInt32Array, points: PackedVector2Array, colors: PackedColorArray, uvs: PackedVector2Array = PackedVector2Array(), bones: PackedInt32Array = PackedInt32Array(), weights: PackedFloat32Array = PackedFloat32Array(), texture: RID = RID(), count: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -15493,7 +15493,7 @@ open class RenderingServer: Object {
     
     /// Draws a mesh created with ``meshCreate()`` with given `transform`, `modulate` color, and `texture`. This is used internally by ``MeshInstance2D``.
     public static func canvasItemAddMesh (item: RID, mesh: RID, transform: Transform2D = Transform2D (xAxis: Vector2 (x: 1, y: 0), yAxis: Vector2 (x: 0, y: 1), origin: Vector2 (x: 0, y: 0)), modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), texture: RID = RID()) {
-        #if true
+        #if false
         
         var copy_transform = transform
         var copy_modulate = modulate
@@ -15539,7 +15539,7 @@ open class RenderingServer: Object {
     
     /// Draws a 2D ``MultiMesh`` on the ``CanvasItem`` pointed to by the `item` ``RID``. See also ``CanvasItem/drawMultimesh(_:texture:)``.
     public static func canvasItemAddMultimesh (item: RID, mesh: RID, texture: RID = RID()) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_canvas_item_add_multimesh, UnsafeMutableRawPointer (mutating: shared.handle), nil, &item.content, &mesh.content, &texture.content)
@@ -15575,7 +15575,7 @@ open class RenderingServer: Object {
     
     /// Draws particles on the ``CanvasItem`` pointed to by the `item` ``RID``.
     public static func canvasItemAddParticles (item: RID, particles: RID, texture: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_canvas_item_add_particles, UnsafeMutableRawPointer (mutating: shared.handle), nil, &item.content, &particles.content, &texture.content)
@@ -15611,7 +15611,7 @@ open class RenderingServer: Object {
     
     /// Sets a ``Transform2D`` that will be used to transform subsequent canvas item commands.
     public static func canvasItemAddSetTransform (item: RID, transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -15646,7 +15646,7 @@ open class RenderingServer: Object {
     
     /// If `ignore` is `true`, ignore clipping on items drawn with this canvas item until this is called again with `ignore` set to false.
     public static func canvasItemAddClipIgnore (item: RID, ignore: Bool) {
-        #if true
+        #if false
         
         var copy_ignore = ignore
         
@@ -15681,7 +15681,7 @@ open class RenderingServer: Object {
     
     /// Subsequent drawing commands will be ignored unless they fall within the specified animation slice. This is a faster way to implement animations that loop on background rather than redrawing constantly.
     public static func canvasItemAddAnimationSlice (item: RID, animationLength: Double, sliceBegin: Double, sliceEnd: Double, offset: Double = 0.0) {
-        #if true
+        #if false
         
         var copy_animation_length = animationLength
         var copy_slice_begin = sliceBegin
@@ -15731,7 +15731,7 @@ open class RenderingServer: Object {
     
     /// If `enabled` is `true`, child nodes with the lowest Y position are drawn before those with a higher Y position. Y-sorting only affects children that inherit from the canvas item specified by the `item` RID, not the canvas item itself. Equivalent to ``CanvasItem/ySortEnabled``.
     public static func canvasItemSetSortChildrenByY (item: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -15766,7 +15766,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``CanvasItem``'s Z index, i.e. its draw order (lower indexes are drawn first).
     public static func canvasItemSetZIndex (item: RID, zIndex: Int32) {
-        #if true
+        #if false
         
         var copy_z_index: Int = Int (zIndex)
         
@@ -15801,7 +15801,7 @@ open class RenderingServer: Object {
     
     /// If this is enabled, the Z index of the parent will be added to the children's Z index.
     public static func canvasItemSetZAsRelativeToParent (item: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -15836,7 +15836,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``CanvasItem`` to copy a rect to the backbuffer.
     public static func canvasItemSetCopyToBackbuffer (item: RID, enabled: Bool, rect: Rect2) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         var copy_rect = rect
@@ -15876,7 +15876,7 @@ open class RenderingServer: Object {
     
     /// Clears the ``CanvasItem`` and removes all commands in it.
     public static func canvasItemClear (item: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_canvas_item_clear, UnsafeMutableRawPointer (mutating: shared.handle), nil, &item.content)
@@ -15906,7 +15906,7 @@ open class RenderingServer: Object {
     
     /// Sets the index for the ``CanvasItem``.
     public static func canvasItemSetDrawIndex (item: RID, index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -15941,7 +15941,7 @@ open class RenderingServer: Object {
     
     /// Sets a new `material` to the canvas item specified by the `item` RID. Equivalent to ``CanvasItem/material``.
     public static func canvasItemSetMaterial (item: RID, material: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_canvas_item_set_material, UnsafeMutableRawPointer (mutating: shared.handle), nil, &item.content, &material.content)
@@ -15974,7 +15974,7 @@ open class RenderingServer: Object {
     
     /// Sets if the ``CanvasItem`` uses its parent's material.
     public static func canvasItemSetUseParentMaterial (item: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -16012,7 +16012,7 @@ open class RenderingServer: Object {
     /// This method can be used to manually mimic ``VisibleOnScreenNotifier2D``.
     /// 
     public static func canvasItemSetVisibilityNotifier (item: RID, enable: Bool, area: Rect2, enterCallable: Callable, exitCallable: Callable) {
-        #if true
+        #if false
         
         var copy_enable = enable
         var copy_area = area
@@ -16061,7 +16061,7 @@ open class RenderingServer: Object {
     /// > Note: The equivalent node functionality is found in ``CanvasGroup`` and ``CanvasItem/clipChildren``.
     /// 
     public static func canvasItemSetCanvasGroupMode (item: RID, mode: RenderingServer.CanvasGroupMode, clearMargin: Double = 5.0, fitEmpty: Bool = false, fitMargin: Double = 0.0, blurMipmaps: Bool = false) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         var copy_clear_margin = clearMargin
@@ -16139,7 +16139,7 @@ open class RenderingServer: Object {
     
     /// Attaches the canvas light to the canvas. Removes it from its previous canvas.
     public static func canvasLightAttachToCanvas (light: RID, canvas: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_canvas_light_attach_to_canvas, UnsafeMutableRawPointer (mutating: shared.handle), nil, &light.content, &canvas.content)
@@ -16172,7 +16172,7 @@ open class RenderingServer: Object {
     
     /// Enables or disables a canvas light.
     public static func canvasLightSetEnabled (light: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -16207,7 +16207,7 @@ open class RenderingServer: Object {
     
     /// Sets the scale factor of a ``PointLight2D``'s texture. Equivalent to ``PointLight2D/textureScale``.
     public static func canvasLightSetTextureScale (light: RID, scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -16242,7 +16242,7 @@ open class RenderingServer: Object {
     
     /// Sets the canvas light's ``Transform2D``.
     public static func canvasLightSetTransform (light: RID, transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -16277,7 +16277,7 @@ open class RenderingServer: Object {
     
     /// Sets the texture to be used by a ``PointLight2D``. Equivalent to ``PointLight2D/texture``.
     public static func canvasLightSetTexture (light: RID, texture: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_canvas_light_set_texture, UnsafeMutableRawPointer (mutating: shared.handle), nil, &light.content, &texture.content)
@@ -16310,7 +16310,7 @@ open class RenderingServer: Object {
     
     /// Sets the offset of a ``PointLight2D``'s texture. Equivalent to ``PointLight2D/offset``.
     public static func canvasLightSetTextureOffset (light: RID, offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -16345,7 +16345,7 @@ open class RenderingServer: Object {
     
     /// Sets the color for a light.
     public static func canvasLightSetColor (light: RID, color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -16380,7 +16380,7 @@ open class RenderingServer: Object {
     
     /// Sets a canvas light's height.
     public static func canvasLightSetHeight (light: RID, height: Double) {
-        #if true
+        #if false
         
         var copy_height = height
         
@@ -16415,7 +16415,7 @@ open class RenderingServer: Object {
     
     /// Sets a canvas light's energy.
     public static func canvasLightSetEnergy (light: RID, energy: Double) {
-        #if true
+        #if false
         
         var copy_energy = energy
         
@@ -16450,7 +16450,7 @@ open class RenderingServer: Object {
     
     /// Sets the Z range of objects that will be affected by this light. Equivalent to ``Light2D/rangeZMin`` and ``Light2D/rangeZMax``.
     public static func canvasLightSetZRange (light: RID, minZ: Int32, maxZ: Int32) {
-        #if true
+        #if false
         
         var copy_min_z: Int = Int (minZ)
         var copy_max_z: Int = Int (maxZ)
@@ -16490,7 +16490,7 @@ open class RenderingServer: Object {
     
     /// The layer range that gets rendered with this light.
     public static func canvasLightSetLayerRange (light: RID, minLayer: Int32, maxLayer: Int32) {
-        #if true
+        #if false
         
         var copy_min_layer: Int = Int (minLayer)
         var copy_max_layer: Int = Int (maxLayer)
@@ -16530,7 +16530,7 @@ open class RenderingServer: Object {
     
     /// The light mask. See ``LightOccluder2D`` for more information on light masks.
     public static func canvasLightSetItemCullMask (light: RID, mask: Int32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -16565,7 +16565,7 @@ open class RenderingServer: Object {
     
     /// The binary mask used to determine which layers this canvas light's shadows affects. See ``LightOccluder2D`` for more information on light masks.
     public static func canvasLightSetItemShadowCullMask (light: RID, mask: Int32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -16600,7 +16600,7 @@ open class RenderingServer: Object {
     
     /// The mode of the light, see ``RenderingServer/CanvasLightMode`` constants.
     public static func canvasLightSetMode (light: RID, mode: RenderingServer.CanvasLightMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -16635,7 +16635,7 @@ open class RenderingServer: Object {
     
     /// Enables or disables the canvas light's shadow.
     public static func canvasLightSetShadowEnabled (light: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -16670,7 +16670,7 @@ open class RenderingServer: Object {
     
     /// Sets the canvas light's shadow's filter, see ``RenderingServer/CanvasLightShadowFilter`` constants.
     public static func canvasLightSetShadowFilter (light: RID, filter: RenderingServer.CanvasLightShadowFilter) {
-        #if true
+        #if false
         
         var copy_filter = Int64 (filter.rawValue)
         
@@ -16705,7 +16705,7 @@ open class RenderingServer: Object {
     
     /// Sets the color of the canvas light's shadow.
     public static func canvasLightSetShadowColor (light: RID, color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -16740,7 +16740,7 @@ open class RenderingServer: Object {
     
     /// Smoothens the shadow. The lower, the smoother.
     public static func canvasLightSetShadowSmooth (light: RID, smooth: Double) {
-        #if true
+        #if false
         
         var copy_smooth = smooth
         
@@ -16775,7 +16775,7 @@ open class RenderingServer: Object {
     
     /// Sets the blend mode for the given canvas light. See ``RenderingServer/CanvasLightBlendMode`` for options. Equivalent to ``Light2D/blendMode``.
     public static func canvasLightSetBlendMode (light: RID, mode: RenderingServer.CanvasLightBlendMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -16833,7 +16833,7 @@ open class RenderingServer: Object {
     
     /// Attaches a light occluder to the canvas. Removes it from its previous canvas.
     public static func canvasLightOccluderAttachToCanvas (occluder: RID, canvas: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_canvas_light_occluder_attach_to_canvas, UnsafeMutableRawPointer (mutating: shared.handle), nil, &occluder.content, &canvas.content)
@@ -16866,7 +16866,7 @@ open class RenderingServer: Object {
     
     /// Enables or disables light occluder.
     public static func canvasLightOccluderSetEnabled (occluder: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -16901,7 +16901,7 @@ open class RenderingServer: Object {
     
     /// Sets a light occluder's polygon.
     public static func canvasLightOccluderSetPolygon (occluder: RID, polygon: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_canvas_light_occluder_set_polygon, UnsafeMutableRawPointer (mutating: shared.handle), nil, &occluder.content, &polygon.content)
@@ -16934,7 +16934,7 @@ open class RenderingServer: Object {
     
     /// 
     public static func canvasLightOccluderSetAsSdfCollision (occluder: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -16969,7 +16969,7 @@ open class RenderingServer: Object {
     
     /// Sets a light occluder's ``Transform2D``.
     public static func canvasLightOccluderSetTransform (occluder: RID, transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -17004,7 +17004,7 @@ open class RenderingServer: Object {
     
     /// The light mask. See ``LightOccluder2D`` for more information on light masks.
     public static func canvasLightOccluderSetLightMask (occluder: RID, mask: Int32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -17062,7 +17062,7 @@ open class RenderingServer: Object {
     
     /// Sets the shape of the occluder polygon.
     public static func canvasOccluderPolygonSetShape (occluderPolygon: RID, shape: PackedVector2Array, closed: Bool) {
-        #if true
+        #if false
         
         var copy_closed = closed
         
@@ -17100,7 +17100,7 @@ open class RenderingServer: Object {
     
     /// Sets an occluder polygons cull mode. See ``RenderingServer/CanvasOccluderPolygonCullMode`` constants.
     public static func canvasOccluderPolygonSetCullMode (occluderPolygon: RID, mode: RenderingServer.CanvasOccluderPolygonCullMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -17135,7 +17135,7 @@ open class RenderingServer: Object {
     
     /// Sets the ``ProjectSettings/rendering/2d/shadowAtlas/size`` to use for ``Light2D`` shadow rendering (in pixels). The value is rounded up to the nearest power of 2.
     public static func canvasSetShadowTextureSize (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -17170,7 +17170,7 @@ open class RenderingServer: Object {
     /// > Note: Global shader parameter names are case-sensitive.
     /// 
     public static func globalShaderParameterAdd (name: StringName, type: RenderingServer.GlobalShaderParameterType, defaultValue: Variant) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -17208,7 +17208,7 @@ open class RenderingServer: Object {
     
     /// Removes the global shader uniform specified by `name`.
     public static func globalShaderParameterRemove (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_global_shader_parameter_remove, UnsafeMutableRawPointer (mutating: shared.handle), nil, &name.content)
@@ -17259,7 +17259,7 @@ open class RenderingServer: Object {
     
     /// Sets the global shader uniform `name` to `value`.
     public static func globalShaderParameterSet (name: StringName, value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_global_shader_parameter_set, UnsafeMutableRawPointer (mutating: shared.handle), nil, &name.content, &value.content)
@@ -17292,7 +17292,7 @@ open class RenderingServer: Object {
     
     /// Overrides the global shader uniform `name` with `value`. Equivalent to the ``ShaderGlobalsOverride`` node.
     public static func globalShaderParameterSetOverride (name: StringName, value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_global_shader_parameter_set_override, UnsafeMutableRawPointer (mutating: shared.handle), nil, &name.content, &value.content)
@@ -17329,7 +17329,7 @@ open class RenderingServer: Object {
     /// 
     public static func globalShaderParameterGet (name: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_global_shader_parameter_get, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &name.content)
@@ -17364,7 +17364,7 @@ open class RenderingServer: Object {
     /// 
     public static func globalShaderParameterGetType (name: StringName)-> RenderingServer.GlobalShaderParameterType {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_global_shader_parameter_get_type, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &name.content)
@@ -17395,7 +17395,7 @@ open class RenderingServer: Object {
     
     /// Tries to free an object in the RenderingServer. To avoid memory leaks, this should be called after using an object as memory management does not occur automatically when using RenderingServer directly.
     public static func freeRid (_ rid: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_free_rid, UnsafeMutableRawPointer (mutating: shared.handle), nil, &rid.content)
@@ -17425,7 +17425,7 @@ open class RenderingServer: Object {
     
     /// Schedules a callback to the given callable after a frame has been drawn.
     public static func requestFrameDrawnCallback (callable: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_request_frame_drawn_callback, UnsafeMutableRawPointer (mutating: shared.handle), nil, &callable.content)
@@ -17479,7 +17479,7 @@ open class RenderingServer: Object {
     /// 
     public static func getRenderingInfo (_ info: RenderingServer.RenderingInfo)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         var copy_info = Int64 (info.rawValue)
         
@@ -17599,7 +17599,7 @@ open class RenderingServer: Object {
     /// Returns a mesh of a sphere with the given number of horizontal subdivisions, vertical subdivisions and radius. See also ``getTestCube()``.
     public static func makeSphereMesh (latitudes: Int32, longitudes: Int32, radius: Double)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_latitudes: Int = Int (latitudes)
         var copy_longitudes: Int = Int (longitudes)
@@ -17702,7 +17702,7 @@ open class RenderingServer: Object {
     
     /// Sets a boot image. The color defines the background color. If `scale` is `true`, the image will be scaled to fit the screen size. If `useFilter` is `true`, the image will be scaled with linear interpolation. If `useFilter` is `false`, the image will be scaled with nearest-neighbor interpolation.
     public static func setBootImage (_ image: Image?, color: Color, scale: Bool, useFilter: Bool = true) {
-        #if true
+        #if false
         
         var copy_color = color
         var copy_scale = scale
@@ -17766,7 +17766,7 @@ open class RenderingServer: Object {
     
     /// Sets the default clear color which is used when a specific clear color has not been selected. See also ``getDefaultClearColor()``.
     public static func setDefaultClearColor (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -17799,7 +17799,7 @@ open class RenderingServer: Object {
     /// Not yet implemented. Always returns `false`.
     public static func hasFeature (_ feature: RenderingServer.Features)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_feature = Int64 (feature.rawValue)
         
@@ -17833,7 +17833,7 @@ open class RenderingServer: Object {
     /// Returns `true` if the OS supports a certain `feature`. Features might be `s3tc`, `etc`, and `etc2`.
     public static func hasOsFeature (_ feature: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_feature = GString (feature)
         
@@ -17866,7 +17866,7 @@ open class RenderingServer: Object {
     
     /// This method is currently unimplemented and does nothing if called with `generate` set to `true`.
     public static func setDebugGenerateWireframes (generate: Bool) {
-        #if true
+        #if false
         
         var copy_generate = generate
         
@@ -17916,7 +17916,7 @@ open class RenderingServer: Object {
     
     @inline(__always)
     fileprivate static func set_render_loop_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -17982,7 +17982,7 @@ open class RenderingServer: Object {
     
     /// Forces redrawing of all viewports at once.
     public static func forceDraw (swapBuffers: Bool = true, frameStep: Double = 0.0) {
-        #if true
+        #if false
         
         var copy_swap_buffers = swapBuffers
         var copy_frame_step = frameStep
@@ -18061,7 +18061,7 @@ open class RenderingServer: Object {
     
     /// As the RenderingServer actual logic may run on an separate thread, accessing its internals from the main (or any other) thread will result in errors. To make it easier to run code that can safely access the rendering internals (such as ``RenderingDevice`` and similar RD classes), push a callable via this function so it will be executed on the render thread.
     public static func callOnRenderThread (callable: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingServer.method_call_on_render_thread, UnsafeMutableRawPointer (mutating: shared.handle), nil, &callable.content)

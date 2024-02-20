@@ -87,7 +87,7 @@ open class EditorScenePostImportPlugin: RefCounted {
     /// Query the value of an option. This function can only be called from those querying visibility, or processing.
     public final func getOptionValue (name: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorScenePostImportPlugin.method_get_option_value, UnsafeMutableRawPointer (mutating: handle), &_result.content, &name.content)
@@ -118,7 +118,7 @@ open class EditorScenePostImportPlugin: RefCounted {
     
     /// Add a specific import option (name and default value only). This function can only be called from ``_getImportOptions(path:)`` and ``_getInternalImportOptions(category:)``.
     public final func addImportOption (name: String, value: Variant) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -153,7 +153,7 @@ open class EditorScenePostImportPlugin: RefCounted {
     
     /// Add a specific import option. This function can only be called from ``_getImportOptions(path:)`` and ``_getInternalImportOptions(category:)``.
     public final func addImportOptionAdvanced (type: Variant.GType, name: String, defaultValue: Variant, hint: PropertyHint = .none, hintString: String = "", usageFlags: Int32 = 6) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         let gstr_name = GString (name)

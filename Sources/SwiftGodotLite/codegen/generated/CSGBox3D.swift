@@ -54,7 +54,7 @@ open class CSGBox3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -104,7 +104,7 @@ open class CSGBox3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_material (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         

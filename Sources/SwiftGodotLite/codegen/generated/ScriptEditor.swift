@@ -72,7 +72,7 @@ open class ScriptEditor: PanelContainer {
     /// > Note: Does not apply to scripts that are already opened.
     /// 
     public final func registerSyntaxHighlighter (_ syntaxHighlighter: EditorSyntaxHighlighter?) {
-        #if true
+        #if false
         
         var copy_syntax_highlighter_handle = syntaxHighlighter?.handle
         
@@ -106,7 +106,7 @@ open class ScriptEditor: PanelContainer {
     /// > Note: The ``EditorSyntaxHighlighter`` will still be applied to scripts that are already opened.
     /// 
     public final func unregisterSyntaxHighlighter (_ syntaxHighlighter: EditorSyntaxHighlighter?) {
-        #if true
+        #if false
         
         var copy_syntax_highlighter_handle = syntaxHighlighter?.handle
         
@@ -137,7 +137,7 @@ open class ScriptEditor: PanelContainer {
     
     /// Goes to the specified line in the current script.
     public final func gotoLine (lineNumber: Int32) {
-        #if true
+        #if false
         
         var copy_line_number: Int = Int (lineNumber)
         
@@ -205,7 +205,7 @@ open class ScriptEditor: PanelContainer {
     
     /// Opens the script create dialog. The script will extend `baseName`. The file extension can be omitted from `basePath`. It will be added based on the selected scripting language.
     public final func openScriptCreateDialog (baseName: String, basePath: String) {
-        #if true
+        #if false
         
         let gstr_base_name = GString (baseName)
         let gstr_base_path = GString (basePath)

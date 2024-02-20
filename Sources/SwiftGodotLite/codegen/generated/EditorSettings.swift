@@ -40,7 +40,7 @@ open class EditorSettings: Resource {
     /// Returns `true` if the setting specified by `name` exists, `false` otherwise.
     public final func hasSetting (name: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -73,7 +73,7 @@ open class EditorSettings: Resource {
     
     /// Sets the `value` of the setting specified by `name`. This is equivalent to using ``Object/set(property:value:)`` on the EditorSettings instance.
     public final func setSetting (name: String, value: Variant) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -109,7 +109,7 @@ open class EditorSettings: Resource {
     /// Returns the value of the setting specified by `name`. This is equivalent to using ``Object/get(property:)`` on the EditorSettings instance.
     public final func getSetting (name: String)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -142,7 +142,7 @@ open class EditorSettings: Resource {
     
     /// Erases the setting whose name is specified by `property`.
     public final func erase (property: String) {
-        #if true
+        #if false
         
         let gstr_property = GString (property)
         
@@ -174,7 +174,7 @@ open class EditorSettings: Resource {
     
     /// Sets the initial value of the setting specified by `name` to `value`. This is used to provide a value for the Revert button in the Editor Settings. If `updateCurrent` is true, the current value of the setting will be set to `value` as well.
     public final func setInitialValue (name: StringName, value: Variant, updateCurrent: Bool) {
-        #if true
+        #if false
         
         var copy_update_current = updateCurrent
         
@@ -221,7 +221,7 @@ open class EditorSettings: Resource {
     /// **Example:**
     /// 
     public final func addPropertyInfo (_ info: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorSettings.method_add_property_info, UnsafeMutableRawPointer (mutating: handle), nil, &info.content)
@@ -251,7 +251,7 @@ open class EditorSettings: Resource {
     
     /// Sets project-specific metadata with the `section`, `key` and `data` specified. This metadata is stored outside the project folder and therefore won't be checked into version control. See also ``getProjectMetadata(section:key:`default`:)``.
     public final func setProjectMetadata (section: String, key: String, data: Variant) {
-        #if true
+        #if false
         
         let gstr_section = GString (section)
         let gstr_key = GString (key)
@@ -292,7 +292,7 @@ open class EditorSettings: Resource {
     /// Returns project-specific metadata for the `section` and `key` specified. If the metadata doesn't exist, `default` will be returned instead. See also ``setProjectMetadata(section:key:data:)``.
     public final func getProjectMetadata (section: String, key: String, `default`: Variant)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         let gstr_section = GString (section)
         let gstr_key = GString (key)
@@ -333,7 +333,7 @@ open class EditorSettings: Resource {
     
     /// Sets the list of favorite files and directories for this project.
     public final func setFavorites (dirs: PackedStringArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorSettings.method_set_favorites, UnsafeMutableRawPointer (mutating: handle), nil, &dirs.content)
@@ -381,7 +381,7 @@ open class EditorSettings: Resource {
     
     /// Sets the list of recently visited folders in the file dialog for this project.
     public final func setRecentDirs (_ dirs: PackedStringArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorSettings.method_set_recent_dirs, UnsafeMutableRawPointer (mutating: handle), nil, &dirs.content)
@@ -429,7 +429,7 @@ open class EditorSettings: Resource {
     
     /// Overrides the built-in editor action `name` with the input actions defined in `actionsList`.
     public final func setBuiltinActionOverride (name: String, actionsList: ObjectCollection<InputEvent>) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -465,7 +465,7 @@ open class EditorSettings: Resource {
     /// Checks if any settings with the prefix `settingPrefix` exist in the set of changed settings. See also ``getChangedSettings()``.
     public final func checkChangedSettingsInGroup (settingPrefix: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_setting_prefix = GString (settingPrefix)
         
@@ -516,7 +516,7 @@ open class EditorSettings: Resource {
     
     /// Marks the passed editor setting as being changed, see ``getChangedSettings()``. Only settings which exist (see ``hasSetting(name:)``) will be accepted.
     public final func markSettingChanged (setting: String) {
-        #if true
+        #if false
         
         let gstr_setting = GString (setting)
         

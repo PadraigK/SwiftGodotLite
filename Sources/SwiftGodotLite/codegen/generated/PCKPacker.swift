@@ -28,7 +28,7 @@ open class PCKPacker: RefCounted {
     /// Creates a new PCK file with the name `pckName`. The `.pck` file extension isn't added automatically, so it should be part of `pckName` (even though it's not required).
     public final func pckStart (pckName: String, alignment: Int32 = 32, key: String = "0000000000000000000000000000000000000000000000000000000000000000", encryptDirectory: Bool = false)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_pck_name = GString (pckName)
         var copy_alignment: Int = Int (alignment)
@@ -77,7 +77,7 @@ open class PCKPacker: RefCounted {
     /// Adds the `sourcePath` file to the current PCK package at the `pckPath` internal path (should start with `res://`).
     public final func addFile (pckPath: String, sourcePath: String, encrypt: Bool = false)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_pck_path = GString (pckPath)
         let gstr_source_path = GString (sourcePath)
@@ -121,7 +121,7 @@ open class PCKPacker: RefCounted {
     /// Writes the files specified using all ``addFile(pckPath:sourcePath:encrypt:)`` calls since the last flush. If `verbose` is `true`, a list of files added will be printed to the console for easier debugging.
     public final func flush (verbose: Bool = false)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_verbose = verbose
         

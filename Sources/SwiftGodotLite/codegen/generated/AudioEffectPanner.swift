@@ -39,7 +39,7 @@ open class AudioEffectPanner: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_pan (_ cpanume: Double) {
-        #if true
+        #if false
         
         var copy_cpanume = cpanume
         

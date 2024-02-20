@@ -49,7 +49,7 @@ open class ConvexPolygonShape2D: Shape2D {
     
     /// Based on the set of points provided, this assigns the ``points`` property using the convex hull algorithm, removing all unneeded points. See ``Geometry2D/convexHull(points:)`` for details.
     public final func setPointCloud (_ pointCloud: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ConvexPolygonShape2D.method_set_point_cloud, UnsafeMutableRawPointer (mutating: handle), nil, &pointCloud.content)
@@ -79,7 +79,7 @@ open class ConvexPolygonShape2D: Shape2D {
     
     @inline(__always)
     fileprivate final func set_points (_ points: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ConvexPolygonShape2D.method_set_points, UnsafeMutableRawPointer (mutating: handle), nil, &points.content)

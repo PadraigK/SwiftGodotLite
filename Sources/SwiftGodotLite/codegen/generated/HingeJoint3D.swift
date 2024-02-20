@@ -54,7 +54,7 @@ open class HingeJoint3D: Joint3D {
     
     /// Sets the value of the specified parameter.
     public final func setParam (_ param: HingeJoint3D.Param, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -92,7 +92,7 @@ open class HingeJoint3D: Joint3D {
     /// Returns the value of the specified parameter.
     public final func getParam (_ param: HingeJoint3D.Param)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -125,7 +125,7 @@ open class HingeJoint3D: Joint3D {
     
     /// If `true`, enables the specified flag.
     public final func setFlag (_ flag: HingeJoint3D.Flag, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         var copy_enabled = enabled
@@ -163,7 +163,7 @@ open class HingeJoint3D: Joint3D {
     /// Returns the value of the specified flag.
     public final func getFlag (_ flag: HingeJoint3D.Flag)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         

@@ -69,7 +69,7 @@ open class Container: Control {
     
     /// Fit a child control in a given rect. This is mainly a helper for creating custom container classes.
     public final func fitChildInRect (child: Control?, rect: Rect2) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_child_handle = child?.handle

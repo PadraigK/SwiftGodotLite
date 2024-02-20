@@ -234,7 +234,7 @@ open class VisualShaderNodeCustom: VisualShaderNode {
     /// Returns the selected index of the drop-down list option within a graph. You may use this function to define the specific behavior in the ``_getCode(inputVars:outputVars:mode:type:)`` or ``_getGlobalCode(mode:)``.
     public final func getOptionIndex (option: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_option: Int = Int (option)
         

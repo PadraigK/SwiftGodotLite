@@ -33,7 +33,7 @@ open class AnimationLibrary: Resource {
     /// Adds the `animation` to the library, accessible by the key `name`.
     public final func addAnimation (name: StringName, animation: Animation?)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_animation_handle = animation?.handle
         
@@ -68,7 +68,7 @@ open class AnimationLibrary: Resource {
     
     /// Removes the ``Animation`` with the key `name`.
     public final func removeAnimation (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationLibrary.method_remove_animation, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -98,7 +98,7 @@ open class AnimationLibrary: Resource {
     
     /// Changes the key of the ``Animation`` associated with the key `name` to `newname`.
     public final func renameAnimation (name: StringName, newname: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationLibrary.method_rename_animation, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &newname.content)
@@ -132,7 +132,7 @@ open class AnimationLibrary: Resource {
     /// Returns `true` if the library stores an ``Animation`` with `name` as the key.
     public final func hasAnimation (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationLibrary.method_has_animation, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -164,7 +164,7 @@ open class AnimationLibrary: Resource {
     /// Returns the ``Animation`` with the key `name`. If the animation does not exist, `null` is returned and an error is logged.
     public final func getAnimation (name: StringName)-> Animation? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationLibrary.method_get_animation, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)

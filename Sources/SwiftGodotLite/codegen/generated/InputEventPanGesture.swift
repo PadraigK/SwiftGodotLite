@@ -42,7 +42,7 @@ open class InputEventPanGesture: InputEventGesture {
     
     @inline(__always)
     fileprivate final func set_delta (_ delta: Vector2) {
-        #if true
+        #if false
         
         var copy_delta = delta
         

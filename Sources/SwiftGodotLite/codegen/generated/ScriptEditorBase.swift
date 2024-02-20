@@ -55,7 +55,7 @@ open class ScriptEditorBase: VBoxContainer {
     
     /// Adds a ``EditorSyntaxHighlighter`` to the open script.
     public final func addSyntaxHighlighter (_ highlighter: EditorSyntaxHighlighter?) {
-        #if true
+        #if false
         
         var copy_highlighter_handle = highlighter?.handle
         

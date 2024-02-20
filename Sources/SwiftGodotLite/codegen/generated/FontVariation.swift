@@ -163,7 +163,7 @@ open class FontVariation: Font {
     
     @inline(__always)
     fileprivate final func set_base_font (_ font: Font?) {
-        #if true
+        #if false
         
         var copy_font_handle = font?.handle
         
@@ -212,7 +212,7 @@ open class FontVariation: Font {
     
     @inline(__always)
     fileprivate final func set_variation_opentype (_ coords: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (FontVariation.method_set_variation_opentype, UnsafeMutableRawPointer (mutating: handle), nil, &coords.content)
@@ -260,7 +260,7 @@ open class FontVariation: Font {
     
     @inline(__always)
     fileprivate final func set_variation_embolden (_ strength: Double) {
-        #if true
+        #if false
         
         var copy_strength = strength
         
@@ -310,7 +310,7 @@ open class FontVariation: Font {
     
     @inline(__always)
     fileprivate final func set_variation_face_index (_ faceIndex: Int32) {
-        #if true
+        #if false
         
         var copy_face_index: Int = Int (faceIndex)
         
@@ -360,7 +360,7 @@ open class FontVariation: Font {
     
     @inline(__always)
     fileprivate final func set_variation_transform (_ transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -410,7 +410,7 @@ open class FontVariation: Font {
     
     @inline(__always)
     fileprivate final func set_opentype_features (_ features: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (FontVariation.method_set_opentype_features, UnsafeMutableRawPointer (mutating: handle), nil, &features.content)
@@ -441,7 +441,7 @@ open class FontVariation: Font {
     @inline(__always)
     /// Sets the spacing for `spacing` (see ``TextServer.SpacingType``) to `value` in pixels (not relative to the font size).
     fileprivate final func set_spacing (_ spacing: TextServer.SpacingType, _ value: Int32) {
-        #if true
+        #if false
         
         var copy_spacing = Int64 (spacing.rawValue)
         var copy_value: Int = Int (value)

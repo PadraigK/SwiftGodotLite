@@ -28,7 +28,7 @@ open class Crypto: RefCounted {
     /// Generates a ``PackedByteArray`` of cryptographically secure random bytes with given `size`.
     public final func generateRandomBytes (size: Int32)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -62,7 +62,7 @@ open class Crypto: RefCounted {
     /// Generates an RSA ``CryptoKey`` that can be used for creating self-signed certificates and passed to ``StreamPeerTLS/acceptStream(_:serverOptions:)``.
     public final func generateRsa (size: Int32)-> CryptoKey? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -99,7 +99,7 @@ open class Crypto: RefCounted {
     /// 
     public final func generateSelfSignedCertificate (key: CryptoKey?, issuerName: String = "CN=myserver,O=myorganisation,C=IT", notBefore: String = "20140101000000", notAfter: String = "20340101000000")-> X509Certificate? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_issuer_name = GString (issuerName)
         let gstr_not_before = GString (notBefore)
@@ -147,7 +147,7 @@ open class Crypto: RefCounted {
     /// Sign a given `hash` of type `hashType` with the provided private `key`.
     public final func sign (hashType: HashingContext.HashType, hash: PackedByteArray, key: CryptoKey?)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         var copy_hash_type = Int64 (hashType.rawValue)
         var copy_key_handle = key?.handle
@@ -188,7 +188,7 @@ open class Crypto: RefCounted {
     /// Verify that a given `signature` for `hash` of type `hashType` against the provided public `key`.
     public final func verify (hashType: HashingContext.HashType, hash: PackedByteArray, signature: PackedByteArray, key: CryptoKey?)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_hash_type = Int64 (hashType.rawValue)
         var copy_key_handle = key?.handle
@@ -235,7 +235,7 @@ open class Crypto: RefCounted {
     /// 
     public final func encrypt (key: CryptoKey?, plaintext: PackedByteArray)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         var copy_key_handle = key?.handle
         
@@ -274,7 +274,7 @@ open class Crypto: RefCounted {
     /// 
     public final func decrypt (key: CryptoKey?, ciphertext: PackedByteArray)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         var copy_key_handle = key?.handle
         
@@ -313,7 +313,7 @@ open class Crypto: RefCounted {
     /// 
     public final func hmacDigest (hashType: HashingContext.HashType, key: PackedByteArray, msg: PackedByteArray)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         var copy_hash_type = Int64 (hashType.rawValue)
         
@@ -356,7 +356,7 @@ open class Crypto: RefCounted {
     /// 
     public final func constantTimeCompare (trusted: PackedByteArray, received: PackedByteArray)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Crypto.method_constant_time_compare, UnsafeMutableRawPointer (mutating: handle), &_result, &trusted.content, &received.content)

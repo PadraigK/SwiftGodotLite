@@ -56,7 +56,7 @@ open class WorldEnvironment: Node {
     
     @inline(__always)
     fileprivate final func set_environment (_ env: Environment?) {
-        #if true
+        #if false
         
         var copy_env_handle = env?.handle
         
@@ -105,7 +105,7 @@ open class WorldEnvironment: Node {
     
     @inline(__always)
     fileprivate final func set_camera_attributes (_ cameraAttributes: CameraAttributes?) {
-        #if true
+        #if false
         
         var copy_camera_attributes_handle = cameraAttributes?.handle
         

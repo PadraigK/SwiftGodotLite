@@ -73,7 +73,7 @@ open class Shader: Resource {
     
     @inline(__always)
     fileprivate final func set_code (_ code: String) {
-        #if true
+        #if false
         
         let gstr_code = GString (code)
         
@@ -128,7 +128,7 @@ open class Shader: Resource {
     /// > Note: If the sampler array is used use `index` to access the specified texture.
     /// 
     public final func setDefaultTextureParameter (name: StringName, texture: Texture2D?, index: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_texture_handle = texture?.handle
@@ -173,7 +173,7 @@ open class Shader: Resource {
     /// 
     public final func getDefaultTextureParameter (name: StringName, index: Int32 = 0)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -213,7 +213,7 @@ open class Shader: Resource {
     /// 
     public final func getShaderUniformList (getGroups: Bool = false)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_get_groups = getGroups
         

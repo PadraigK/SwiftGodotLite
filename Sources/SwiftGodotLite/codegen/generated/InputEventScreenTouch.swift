@@ -87,7 +87,7 @@ open class InputEventScreenTouch: InputEventFromWindow {
     
     @inline(__always)
     fileprivate final func set_index (_ index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -137,7 +137,7 @@ open class InputEventScreenTouch: InputEventFromWindow {
     
     @inline(__always)
     fileprivate final func set_position (_ position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -187,7 +187,7 @@ open class InputEventScreenTouch: InputEventFromWindow {
     
     @inline(__always)
     fileprivate final func set_pressed (_ pressed: Bool) {
-        #if true
+        #if false
         
         var copy_pressed = pressed
         
@@ -219,7 +219,7 @@ open class InputEventScreenTouch: InputEventFromWindow {
     
     @inline(__always)
     fileprivate final func set_canceled (_ canceled: Bool) {
-        #if true
+        #if false
         
         var copy_canceled = canceled
         
@@ -251,7 +251,7 @@ open class InputEventScreenTouch: InputEventFromWindow {
     
     @inline(__always)
     fileprivate final func set_double_tap (_ doubleTap: Bool) {
-        #if true
+        #if false
         
         var copy_double_tap = doubleTap
         

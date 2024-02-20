@@ -24,7 +24,7 @@ open class PolygonPathFinder: Resource {
     
     /// 
     public final func setup (points: PackedVector2Array, connections: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PolygonPathFinder.method_setup, UnsafeMutableRawPointer (mutating: handle), nil, &points.content, &connections.content)
@@ -58,7 +58,7 @@ open class PolygonPathFinder: Resource {
     /// 
     public final func findPath (from: Vector2, to: Vector2)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -97,7 +97,7 @@ open class PolygonPathFinder: Resource {
     /// 
     public final func getIntersections (from: Vector2, to: Vector2)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -136,7 +136,7 @@ open class PolygonPathFinder: Resource {
     /// 
     public final func getClosestPoint (_ point: Vector2)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_point = point
         
@@ -170,7 +170,7 @@ open class PolygonPathFinder: Resource {
     /// 
     public final func isPointInside (point: Vector2)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_point = point
         
@@ -203,7 +203,7 @@ open class PolygonPathFinder: Resource {
     
     /// 
     public final func setPointPenalty (idx: Int32, penalty: Double) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_penalty = penalty
@@ -241,7 +241,7 @@ open class PolygonPathFinder: Resource {
     /// 
     public final func getPointPenalty (idx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         

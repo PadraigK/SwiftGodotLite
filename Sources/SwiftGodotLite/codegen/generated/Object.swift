@@ -108,7 +108,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func isClass (_ `class`: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_class = GString (`class`)
         
@@ -144,7 +144,7 @@ open class Object: Wrapped, GodotObject {
     /// > Note: In C#, `property` must be in snake_case when referring to built-in Godot properties. Prefer using the names exposed in the `PropertyName` class to avoid allocating a new ``StringName`` on each call.
     /// 
     public final func set (property: StringName, value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_set, UnsafeMutableRawPointer (mutating: handle), nil, &property.content, &value.content)
@@ -181,7 +181,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func get (property: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_get, UnsafeMutableRawPointer (mutating: handle), &_result.content, &property.content)
@@ -215,7 +215,7 @@ open class Object: Wrapped, GodotObject {
     /// > Note: In C#, `propertyPath` must be in snake_case when referring to built-in Godot properties. Prefer using the names exposed in the `PropertyName` class to avoid allocating a new ``StringName`` on each call.
     /// 
     public final func setIndexed (propertyPath: NodePath, value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_set_indexed, UnsafeMutableRawPointer (mutating: handle), nil, &propertyPath.content, &value.content)
@@ -256,7 +256,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func getIndexed (propertyPath: NodePath)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_get_indexed, UnsafeMutableRawPointer (mutating: handle), &_result.content, &propertyPath.content)
@@ -357,7 +357,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func propertyCanRevert (property: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_property_can_revert, UnsafeMutableRawPointer (mutating: handle), &_result, &property.content)
@@ -392,7 +392,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func propertyGetRevert (property: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_property_get_revert, UnsafeMutableRawPointer (mutating: handle), &_result.content, &property.content)
@@ -426,7 +426,7 @@ open class Object: Wrapped, GodotObject {
     /// If `reversed` is `true`, the call order is reversed.
     /// 
     public final func notification (what: Int32, reversed: Bool = false) {
-        #if true
+        #if false
         
         var copy_what: Int = Int (what)
         var copy_reversed = reversed
@@ -502,7 +502,7 @@ open class Object: Wrapped, GodotObject {
     /// If a script already exists, its instance is detached, and its property values and state are lost. Built-in property values are still kept.
     /// 
     public final func setScript (_ script: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_set_script, UnsafeMutableRawPointer (mutating: handle), nil, &script.content)
@@ -557,7 +557,7 @@ open class Object: Wrapped, GodotObject {
     /// > Note: Metadata that has a name starting with an underscore (`_`) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
     /// 
     public final func setMeta (name: StringName, value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_set_meta, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &value.content)
@@ -595,7 +595,7 @@ open class Object: Wrapped, GodotObject {
     /// > Note: Metadata that has a name starting with an underscore (`_`) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
     /// 
     public final func removeMeta (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_remove_meta, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -631,7 +631,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func getMeta (name: StringName, `default`: Variant)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_get_meta, UnsafeMutableRawPointer (mutating: handle), &_result.content, &name.content, &`default`.content)
@@ -671,7 +671,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func hasMeta (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_has_meta, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -721,7 +721,7 @@ open class Object: Wrapped, GodotObject {
     /// Adds a user-defined `signal`. Optional arguments for the signal can be added as an ``GArray`` of dictionaries, each defining a `name` ``String`` and a `type` integer (see ``Variant.GType``). See also ``hasUserSignal(_:)``.
     /// 
     public final func addUserSignal (_ signal: String, arguments: GArray = GArray ()) {
-        #if true
+        #if false
         
         let gstr_signal = GString (signal)
         
@@ -757,7 +757,7 @@ open class Object: Wrapped, GodotObject {
     /// Returns `true` if the given user-defined `signal` name exists. Only signals added with ``addUserSignal(_:arguments:)`` are included.
     public final func hasUserSignal (_ signal: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_has_user_signal, UnsafeMutableRawPointer (mutating: handle), &_result, &signal.content)
@@ -934,7 +934,7 @@ open class Object: Wrapped, GodotObject {
     /// > Note: In C#, `property` must be in snake_case when referring to built-in Godot properties. Prefer using the names exposed in the `PropertyName` class to avoid allocating a new ``StringName`` on each call.
     /// 
     public final func setDeferred (property: StringName, value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_set_deferred, UnsafeMutableRawPointer (mutating: handle), nil, &property.content, &value.content)
@@ -971,7 +971,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func callv (method: StringName, argArray: GArray)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_callv, UnsafeMutableRawPointer (mutating: handle), &_result.content, &method.content, &argArray.content)
@@ -1009,7 +1009,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func hasMethod (_ method: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_has_method, UnsafeMutableRawPointer (mutating: handle), &_result, &method.content)
@@ -1044,7 +1044,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func hasSignal (_ signal: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_has_signal, UnsafeMutableRawPointer (mutating: handle), &_result, &signal.content)
@@ -1104,7 +1104,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func getSignalConnectionList (signal: StringName)-> VariantCollection<GDictionary> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_get_signal_connection_list, UnsafeMutableRawPointer (mutating: handle), &_result, &signal.content)
@@ -1182,7 +1182,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func connect (signal: StringName, callable: Callable, flags: UInt32 = 0)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_flags: Int = Int (flags)
         
@@ -1221,7 +1221,7 @@ open class Object: Wrapped, GodotObject {
     
     /// Disconnects a `signal` by name from a given `callable`. If the connection does not exist, generates an error. Use ``isConnected(signal:callable:)`` to make sure that the connection exists.
     public final func disconnect (signal: StringName, callable: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_disconnect, UnsafeMutableRawPointer (mutating: handle), nil, &signal.content, &callable.content)
@@ -1258,7 +1258,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func isConnected (signal: StringName, callable: Callable)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_is_connected, UnsafeMutableRawPointer (mutating: handle), &_result, &signal.content, &callable.content)
@@ -1292,7 +1292,7 @@ open class Object: Wrapped, GodotObject {
     
     /// If set to `true`, the object becomes unable to emit signals. As such, ``emitSignal(_:)`` and signal connections will not work, until it is set to `false`.
     public final func setBlockSignals (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1358,7 +1358,7 @@ open class Object: Wrapped, GodotObject {
     
     /// If set to `true`, allows the object to translate messages with ``tr(message:context:)`` and ``trN(message:pluralMessage:n:context:)``. Enabled by default. See also ``canTranslateMessages()``.
     public final func setMessageTranslation (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1414,7 +1414,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func tr (message: StringName, context: StringName = StringName (""))-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Object.method_tr, UnsafeMutableRawPointer (mutating: handle), &_result.content, &message.content, &context.content)
@@ -1458,7 +1458,7 @@ open class Object: Wrapped, GodotObject {
     /// 
     public final func trN (message: StringName, pluralMessage: StringName, n: Int32, context: StringName = StringName (""))-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_n: Int = Int (n)
         

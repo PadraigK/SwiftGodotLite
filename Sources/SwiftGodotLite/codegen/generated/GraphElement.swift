@@ -101,7 +101,7 @@ open class GraphElement: Container {
     
     @inline(__always)
     fileprivate final func set_resizable (_ resizable: Bool) {
-        #if true
+        #if false
         
         var copy_resizable = resizable
         
@@ -151,7 +151,7 @@ open class GraphElement: Container {
     
     @inline(__always)
     fileprivate final func set_draggable (_ draggable: Bool) {
-        #if true
+        #if false
         
         var copy_draggable = draggable
         
@@ -201,7 +201,7 @@ open class GraphElement: Container {
     
     @inline(__always)
     fileprivate final func set_selectable (_ selectable: Bool) {
-        #if true
+        #if false
         
         var copy_selectable = selectable
         
@@ -251,7 +251,7 @@ open class GraphElement: Container {
     
     @inline(__always)
     fileprivate final func set_selected (_ selected: Bool) {
-        #if true
+        #if false
         
         var copy_selected = selected
         
@@ -301,7 +301,7 @@ open class GraphElement: Container {
     
     @inline(__always)
     fileprivate final func set_position_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         

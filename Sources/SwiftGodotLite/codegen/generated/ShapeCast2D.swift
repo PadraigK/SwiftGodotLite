@@ -140,7 +140,7 @@ open class ShapeCast2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -190,7 +190,7 @@ open class ShapeCast2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_shape (_ shape: Shape2D?) {
-        #if true
+        #if false
         
         var copy_shape_handle = shape?.handle
         
@@ -239,7 +239,7 @@ open class ShapeCast2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_target_position (_ localPoint: Vector2) {
-        #if true
+        #if false
         
         var copy_local_point = localPoint
         
@@ -289,7 +289,7 @@ open class ShapeCast2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_margin (_ margin: Double) {
-        #if true
+        #if false
         
         var copy_margin = margin
         
@@ -339,7 +339,7 @@ open class ShapeCast2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_max_results (_ maxResults: Int32) {
-        #if true
+        #if false
         
         var copy_max_results: Int = Int (maxResults)
         
@@ -445,7 +445,7 @@ open class ShapeCast2D: Node2D {
     /// Returns the collided ``Object`` of one of the multiple collisions at `index`, or `null` if no object is intersecting the shape (i.e. ``isColliding()`` returns `false`).
     public final func getCollider (index: Int32)-> Object? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -479,7 +479,7 @@ open class ShapeCast2D: Node2D {
     /// Returns the ``RID`` of the collided object of one of the multiple collisions at `index`.
     public final func getColliderRid (index: Int32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -513,7 +513,7 @@ open class ShapeCast2D: Node2D {
     /// Returns the shape ID of the colliding shape of one of the multiple collisions at `index`, or `0` if no object is intersecting the shape (i.e. ``isColliding()`` returns `false`).
     public final func getColliderShape (index: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -550,7 +550,7 @@ open class ShapeCast2D: Node2D {
     /// 
     public final func getCollisionPoint (index: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -584,7 +584,7 @@ open class ShapeCast2D: Node2D {
     /// Returns the normal of one of the multiple collisions at `index` of the intersecting object.
     public final func getCollisionNormal (index: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -653,7 +653,7 @@ open class ShapeCast2D: Node2D {
     
     /// Adds a collision exception so the shape does not report collisions with the specified ``RID``.
     public final func addExceptionRid (_ rid: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ShapeCast2D.method_add_exception_rid, UnsafeMutableRawPointer (mutating: handle), nil, &rid.content)
@@ -683,7 +683,7 @@ open class ShapeCast2D: Node2D {
     
     /// Adds a collision exception so the shape does not report collisions with the specified ``CollisionObject2D`` node.
     public final func addException (node: CollisionObject2D?) {
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -714,7 +714,7 @@ open class ShapeCast2D: Node2D {
     
     /// Removes a collision exception so the shape does report collisions with the specified ``RID``.
     public final func removeExceptionRid (_ rid: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ShapeCast2D.method_remove_exception_rid, UnsafeMutableRawPointer (mutating: handle), nil, &rid.content)
@@ -744,7 +744,7 @@ open class ShapeCast2D: Node2D {
     
     /// Removes a collision exception so the shape does report collisions with the specified ``CollisionObject2D`` node.
     public final func removeException (node: CollisionObject2D?) {
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -791,7 +791,7 @@ open class ShapeCast2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_collision_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -841,7 +841,7 @@ open class ShapeCast2D: Node2D {
     
     /// Based on `value`, enables or disables the specified layer in the ``collisionMask``, given a `layerNumber` between 1 and 32.
     public final func setCollisionMaskValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -879,7 +879,7 @@ open class ShapeCast2D: Node2D {
     /// Returns whether or not the specified layer of the ``collisionMask`` is enabled, given a `layerNumber` between 1 and 32.
     public final func getCollisionMaskValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -912,7 +912,7 @@ open class ShapeCast2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_exclude_parent_body (_ mask: Bool) {
-        #if true
+        #if false
         
         var copy_mask = mask
         
@@ -962,7 +962,7 @@ open class ShapeCast2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_collide_with_areas (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1012,7 +1012,7 @@ open class ShapeCast2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_collide_with_bodies (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

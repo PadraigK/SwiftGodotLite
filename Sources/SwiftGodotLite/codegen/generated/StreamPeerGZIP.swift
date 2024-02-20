@@ -28,7 +28,7 @@ open class StreamPeerGZIP: StreamPeer {
     /// Start the stream in compression mode with the given `bufferSize`, if `useDeflate` is `true` uses deflate instead of GZIP.
     public final func startCompression (useDeflate: Bool = false, bufferSize: Int32 = 65535)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_use_deflate = useDeflate
         var copy_buffer_size: Int = Int (bufferSize)
@@ -67,7 +67,7 @@ open class StreamPeerGZIP: StreamPeer {
     /// Start the stream in decompression mode with the given `bufferSize`, if `useDeflate` is `true` uses deflate instead of GZIP.
     public final func startDecompression (useDeflate: Bool = false, bufferSize: Int32 = 65535)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_use_deflate = useDeflate
         var copy_buffer_size: Int = Int (bufferSize)

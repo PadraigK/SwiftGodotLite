@@ -39,7 +39,7 @@ open class InputEventShortcut: InputEvent {
     
     @inline(__always)
     fileprivate final func set_shortcut (_ shortcut: Shortcut?) {
-        #if true
+        #if false
         
         var copy_shortcut_handle = shortcut?.handle
         

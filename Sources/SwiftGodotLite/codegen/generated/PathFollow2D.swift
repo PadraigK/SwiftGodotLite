@@ -119,7 +119,7 @@ open class PathFollow2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_progress (_ progress: Double) {
-        #if true
+        #if false
         
         var copy_progress = progress
         
@@ -169,7 +169,7 @@ open class PathFollow2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_h_offset (_ hOffset: Double) {
-        #if true
+        #if false
         
         var copy_h_offset = hOffset
         
@@ -219,7 +219,7 @@ open class PathFollow2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_v_offset (_ vOffset: Double) {
-        #if true
+        #if false
         
         var copy_v_offset = vOffset
         
@@ -269,7 +269,7 @@ open class PathFollow2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_progress_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -319,7 +319,7 @@ open class PathFollow2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_rotates (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -369,7 +369,7 @@ open class PathFollow2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_cubic_interpolation (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -419,7 +419,7 @@ open class PathFollow2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_loop (_ loop: Bool) {
-        #if true
+        #if false
         
         var copy_loop = loop
         

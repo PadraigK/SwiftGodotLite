@@ -46,7 +46,7 @@ open class PlaceholderTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector2) {
-        #if true
+        #if false
         
         var copy_size = size
         

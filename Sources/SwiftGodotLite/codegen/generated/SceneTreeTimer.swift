@@ -51,7 +51,7 @@ open class SceneTreeTimer: RefCounted {
     
     @inline(__always)
     fileprivate final func set_time_left (_ time: Double) {
-        #if true
+        #if false
         
         var copy_time = time
         

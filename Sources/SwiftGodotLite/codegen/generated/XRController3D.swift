@@ -40,7 +40,7 @@ open class XRController3D: XRNode3D {
     /// Returns `true` if the button with the given `name` is pressed.
     public final func isButtonPressed (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRController3D.method_is_button_pressed, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -72,7 +72,7 @@ open class XRController3D: XRNode3D {
     /// Returns a ``Variant`` for the input with the given `name`. This works for any input type, the variant will be typed according to the actions configuration.
     public final func getInput (name: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRController3D.method_get_input, UnsafeMutableRawPointer (mutating: handle), &_result.content, &name.content)
@@ -104,7 +104,7 @@ open class XRController3D: XRNode3D {
     /// Returns a numeric value for the input with the given `name`. This is used for triggers and grip sensors.
     public final func getFloat (name: StringName)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRController3D.method_get_float, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -136,7 +136,7 @@ open class XRController3D: XRNode3D {
     /// Returns a ``Vector2`` for the input with the given `name`. This is used for thumbsticks and thumbpads found on many controllers.
     public final func getVector2 (name: StringName)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRController3D.method_get_vector2, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)

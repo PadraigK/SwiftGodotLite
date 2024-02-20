@@ -110,7 +110,7 @@ open class Curve: Resource {
     
     @inline(__always)
     fileprivate final func set_point_count (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -143,7 +143,7 @@ open class Curve: Resource {
     /// Adds a point to the curve. For each side, if the `*_mode` is .tangentLinear, the `*_tangent` angle (in degrees) uses the slope of the curve halfway to the adjacent point. Allows custom assignments to the `*_tangent` angle if `*_mode` is set to .tangentFree.
     public final func addPoint (position: Vector2, leftTangent: Double = 0, rightTangent: Double = 0, leftMode: Curve.TangentMode = .free, rightMode: Curve.TangentMode = .free)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_position = position
         var copy_left_tangent = leftTangent
@@ -196,7 +196,7 @@ open class Curve: Resource {
     
     /// Removes the point at `index` from the curve.
     public final func removePoint (index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -245,7 +245,7 @@ open class Curve: Resource {
     /// Returns the curve coordinates for the point at `index`.
     public final func getPointPosition (index: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -278,7 +278,7 @@ open class Curve: Resource {
     
     /// Assigns the vertical position `y` to the point at `index`.
     public final func setPointValue (index: Int32, y: Double) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_y = y
@@ -316,7 +316,7 @@ open class Curve: Resource {
     /// Sets the offset from `0.5`.
     public final func setPointOffset (index: Int32, offset: Double)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_offset = offset
@@ -355,7 +355,7 @@ open class Curve: Resource {
     /// Returns the Y value for the point that would exist at the X position `offset` along the curve.
     public final func sample (offset: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -389,7 +389,7 @@ open class Curve: Resource {
     /// Returns the Y value for the point that would exist at the X position `offset` along the curve using the baked cache. Bakes the curve's points if not already baked.
     public final func sampleBaked (offset: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -423,7 +423,7 @@ open class Curve: Resource {
     /// Returns the left tangent angle (in degrees) for the point at `index`.
     public final func getPointLeftTangent (index: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -457,7 +457,7 @@ open class Curve: Resource {
     /// Returns the right tangent angle (in degrees) for the point at `index`.
     public final func getPointRightTangent (index: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -491,7 +491,7 @@ open class Curve: Resource {
     /// Returns the left ``Curve/TangentMode`` for the point at `index`.
     public final func getPointLeftMode (index: Int32)-> Curve.TangentMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -525,7 +525,7 @@ open class Curve: Resource {
     /// Returns the right ``Curve/TangentMode`` for the point at `index`.
     public final func getPointRightMode (index: Int32)-> Curve.TangentMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -558,7 +558,7 @@ open class Curve: Resource {
     
     /// Sets the left tangent angle for the point at `index` to `tangent`.
     public final func setPointLeftTangent (index: Int32, tangent: Double) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_tangent = tangent
@@ -595,7 +595,7 @@ open class Curve: Resource {
     
     /// Sets the right tangent angle for the point at `index` to `tangent`.
     public final func setPointRightTangent (index: Int32, tangent: Double) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_tangent = tangent
@@ -632,7 +632,7 @@ open class Curve: Resource {
     
     /// Sets the left ``Curve/TangentMode`` for the point at `index` to `mode`.
     public final func setPointLeftMode (index: Int32, mode: Curve.TangentMode) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_mode = Int64 (mode.rawValue)
@@ -669,7 +669,7 @@ open class Curve: Resource {
     
     /// Sets the right ``Curve/TangentMode`` for the point at `index` to `mode`.
     public final func setPointRightMode (index: Int32, mode: Curve.TangentMode) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_mode = Int64 (mode.rawValue)
@@ -724,7 +724,7 @@ open class Curve: Resource {
     
     @inline(__always)
     fileprivate final func set_min_value (_ min: Double) {
-        #if true
+        #if false
         
         var copy_min = min
         
@@ -774,7 +774,7 @@ open class Curve: Resource {
     
     @inline(__always)
     fileprivate final func set_max_value (_ max: Double) {
-        #if true
+        #if false
         
         var copy_max = max
         
@@ -856,7 +856,7 @@ open class Curve: Resource {
     
     @inline(__always)
     fileprivate final func set_bake_resolution (_ resolution: Int32) {
-        #if true
+        #if false
         
         var copy_resolution: Int = Int (resolution)
         

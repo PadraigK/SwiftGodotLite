@@ -435,7 +435,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_emitting (_ emitting: Bool) {
-        #if true
+        #if false
         
         var copy_emitting = emitting
         
@@ -467,7 +467,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_amount (_ amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -499,7 +499,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_lifetime (_ secs: Double) {
-        #if true
+        #if false
         
         var copy_secs = secs
         
@@ -531,7 +531,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_one_shot (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -563,7 +563,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_pre_process_time (_ secs: Double) {
-        #if true
+        #if false
         
         var copy_secs = secs
         
@@ -595,7 +595,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_explosiveness_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -627,7 +627,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_randomness_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -659,7 +659,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_visibility_aabb (_ aabb: AABB) {
-        #if true
+        #if false
         
         var copy_aabb = aabb
         
@@ -691,7 +691,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_use_local_coordinates (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -723,7 +723,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_fixed_fps (_ fps: Int32) {
-        #if true
+        #if false
         
         var copy_fps: Int = Int (fps)
         
@@ -755,7 +755,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_fractional_delta (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -787,7 +787,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_interpolate (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -819,7 +819,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_process_material (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         
@@ -850,7 +850,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_speed_scale (_ scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -882,7 +882,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_collision_base_size (_ size: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -914,7 +914,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_interp_to_end (_ interp: Double) {
-        #if true
+        #if false
         
         var copy_interp = interp
         
@@ -1234,7 +1234,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_draw_order (_ order: GPUParticles3D.DrawOrder) {
-        #if true
+        #if false
         
         var copy_order = Int64 (order.rawValue)
         
@@ -1284,7 +1284,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_draw_passes (_ passes: Int32) {
-        #if true
+        #if false
         
         var copy_passes: Int = Int (passes)
         
@@ -1317,7 +1317,7 @@ open class GPUParticles3D: GeometryInstance3D {
     @inline(__always)
     /// Sets the ``Mesh`` that is drawn at index `pass`.
     fileprivate final func set_draw_pass_mesh (_ pass: Int32, _ mesh: Mesh?) {
-        #if true
+        #if false
         
         var copy_pass: Int = Int (pass)
         var copy_mesh_handle = mesh?.handle
@@ -1373,7 +1373,7 @@ open class GPUParticles3D: GeometryInstance3D {
     /// Returns the ``Mesh`` that is drawn at index `pass`.
     fileprivate final func get_draw_pass_mesh (_ pass: Int32)-> Mesh? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_pass: Int = Int (pass)
         
@@ -1406,7 +1406,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_skin (_ skin: Skin?) {
-        #if true
+        #if false
         
         var copy_skin_handle = skin?.handle
         
@@ -1489,7 +1489,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_sub_emitter (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GPUParticles3D.method_set_sub_emitter, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -1537,7 +1537,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     /// Emits a single particle. Whether `xform`, `velocity`, `color` and `custom` are applied depends on the value of `flags`. See ``GPUParticles3D/EmitFlags``.
     public final func emitParticle (xform: Transform3D, velocity: Vector3, color: Color, custom: Color, flags: UInt32) {
-        #if true
+        #if false
         
         var copy_xform = xform
         var copy_velocity = velocity
@@ -1589,7 +1589,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_trail_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1621,7 +1621,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_trail_lifetime (_ secs: Double) {
-        #if true
+        #if false
         
         var copy_secs = secs
         
@@ -1689,7 +1689,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_transform_align (_ align: GPUParticles3D.TransformAlign) {
-        #if true
+        #if false
         
         var copy_align = Int64 (align.rawValue)
         
@@ -1739,7 +1739,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     /// Sets this node's properties to match a given ``CPUParticles3D`` node.
     public final func convertFromParticles (_ particles: Node?) {
-        #if true
+        #if false
         
         var copy_particles_handle = particles?.handle
         
@@ -1770,7 +1770,7 @@ open class GPUParticles3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_amount_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         

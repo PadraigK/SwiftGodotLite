@@ -88,7 +88,7 @@ open class GLTFCamera: Resource {
     /// Create a new GLTFCamera instance from the given Godot ``Camera3D`` node.
     public static func fromNode (cameraNode: Camera3D?)-> GLTFCamera? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_camera_node_handle = cameraNode?.handle
         
@@ -139,7 +139,7 @@ open class GLTFCamera: Resource {
     /// Creates a new GLTFCamera instance by parsing the given ``GDictionary``.
     public static func fromDictionary (_ dictionary: GDictionary)-> GLTFCamera? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFCamera.method_from_dictionary, nil, &_result, &dictionary.content)
@@ -206,7 +206,7 @@ open class GLTFCamera: Resource {
     
     @inline(__always)
     fileprivate final func set_perspective (_ perspective: Bool) {
-        #if true
+        #if false
         
         var copy_perspective = perspective
         
@@ -256,7 +256,7 @@ open class GLTFCamera: Resource {
     
     @inline(__always)
     fileprivate final func set_fov (_ fov: Double) {
-        #if true
+        #if false
         
         var copy_fov = fov
         
@@ -306,7 +306,7 @@ open class GLTFCamera: Resource {
     
     @inline(__always)
     fileprivate final func set_size_mag (_ sizeMag: Double) {
-        #if true
+        #if false
         
         var copy_size_mag = sizeMag
         
@@ -356,7 +356,7 @@ open class GLTFCamera: Resource {
     
     @inline(__always)
     fileprivate final func set_depth_far (_ zdepthFar: Double) {
-        #if true
+        #if false
         
         var copy_zdepth_far = zdepthFar
         
@@ -406,7 +406,7 @@ open class GLTFCamera: Resource {
     
     @inline(__always)
     fileprivate final func set_depth_near (_ zdepthNear: Double) {
-        #if true
+        #if false
         
         var copy_zdepth_near = zdepthNear
         

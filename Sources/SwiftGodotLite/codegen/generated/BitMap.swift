@@ -27,7 +27,7 @@ open class BitMap: Resource {
     
     /// Creates a bitmap with the specified size, filled with `false`.
     public final func create (size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -59,7 +59,7 @@ open class BitMap: Resource {
     
     /// Creates a bitmap that matches the given image dimensions, every element of the bitmap is set to `false` if the alpha value of the image at that position is equal to `threshold` or less, and `true` in other case.
     public final func createFromImageAlpha (image: Image?, threshold: Double = 0.1) {
-        #if true
+        #if false
         
         var copy_threshold = threshold
         var copy_image_handle = image?.handle
@@ -95,7 +95,7 @@ open class BitMap: Resource {
     
     /// Sets the bitmap's element at the specified position, to the specified value.
     public final func setBitv (position: Vector2i, bit: Bool) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_bit = bit
@@ -132,7 +132,7 @@ open class BitMap: Resource {
     
     /// Sets the bitmap's element at the specified position, to the specified value.
     public final func setBit (x: Int32, y: Int32, bit: Bool) {
-        #if true
+        #if false
         
         var copy_x: Int = Int (x)
         var copy_y: Int = Int (y)
@@ -175,7 +175,7 @@ open class BitMap: Resource {
     /// Returns bitmap's value at the specified position.
     public final func getBitv (position: Vector2i)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -209,7 +209,7 @@ open class BitMap: Resource {
     /// Returns bitmap's value at the specified position.
     public final func getBit (x: Int32, y: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_x: Int = Int (x)
         var copy_y: Int = Int (y)
@@ -247,7 +247,7 @@ open class BitMap: Resource {
     
     /// Sets a rectangular portion of the bitmap to the specified value.
     public final func setBitRect (_ rect: Rect2i, bit: Bool) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_bit = bit
@@ -320,7 +320,7 @@ open class BitMap: Resource {
     
     /// Resizes the image to `newSize`.
     public final func resize (newSize: Vector2i) {
-        #if true
+        #if false
         
         var copy_new_size = newSize
         
@@ -352,7 +352,7 @@ open class BitMap: Resource {
     
     /// Applies morphological dilation or erosion to the bitmap. If `pixels` is positive, dilation is applied to the bitmap. If `pixels` is negative, erosion is applied to the bitmap. `rect` defines the area where the morphological operation is applied. Pixels located outside the `rect` are unaffected by ``growMask(pixels:rect:)``.
     public final func growMask (pixels: Int32, rect: Rect2i) {
-        #if true
+        #if false
         
         var copy_pixels: Int = Int (pixels)
         var copy_rect = rect
@@ -413,7 +413,7 @@ open class BitMap: Resource {
     /// 
     public final func opaqueToPolygons (rect: Rect2i, epsilon: Double = 2.0)-> VariantCollection<PackedVector2Array> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_epsilon = epsilon

@@ -100,7 +100,7 @@ open class MultiplayerPeer: PacketPeer {
     
     @inline(__always)
     fileprivate final func set_transfer_channel (_ channel: Int32) {
-        #if true
+        #if false
         
         var copy_channel: Int = Int (channel)
         
@@ -150,7 +150,7 @@ open class MultiplayerPeer: PacketPeer {
     
     @inline(__always)
     fileprivate final func set_transfer_mode (_ mode: MultiplayerPeer.TransferMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -203,7 +203,7 @@ open class MultiplayerPeer: PacketPeer {
     /// The `id` can be one of: ``targetPeerBroadcast`` to send to all connected peers, ``targetPeerServer`` to send to the peer acting as server, a valid peer ID to send to that specific peer, a negative peer ID to send to all peers except that one. By default, the target peer is ``targetPeerBroadcast``.
     /// 
     public final func setTargetPeer (id: Int32) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -321,7 +321,7 @@ open class MultiplayerPeer: PacketPeer {
     
     /// Disconnects the given `peer` from this host. If `force` is `true` the [signal peer_disconnected] signal will not be emitted for this peer.
     public final func disconnectPeer (_ peer: Int32, force: Bool = false) {
-        #if true
+        #if false
         
         var copy_peer: Int = Int (peer)
         var copy_force = force
@@ -412,7 +412,7 @@ open class MultiplayerPeer: PacketPeer {
     
     @inline(__always)
     fileprivate final func set_refuse_new_connections (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

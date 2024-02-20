@@ -53,7 +53,7 @@ open class GLTFAnimation: Resource {
     
     @inline(__always)
     fileprivate final func set_loop (_ loop: Bool) {
-        #if true
+        #if false
         
         var copy_loop = loop
         

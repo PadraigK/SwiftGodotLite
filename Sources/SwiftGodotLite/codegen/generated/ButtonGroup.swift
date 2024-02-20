@@ -83,7 +83,7 @@ open class ButtonGroup: Resource {
     
     @inline(__always)
     fileprivate final func set_allow_unpress (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

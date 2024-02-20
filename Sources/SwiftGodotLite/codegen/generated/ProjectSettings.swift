@@ -45,7 +45,7 @@ open class ProjectSettings: Object {
     /// Returns `true` if a configuration value is present.
     public static func hasSetting (name: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -83,7 +83,7 @@ open class ProjectSettings: Object {
     /// This can also be used to erase custom project settings. To do this change the setting value to `null`.
     /// 
     public static func setSetting (name: String, value: Variant) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -124,7 +124,7 @@ open class ProjectSettings: Object {
     /// 
     public static func getSetting (name: String, defaultValue: Variant)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -168,7 +168,7 @@ open class ProjectSettings: Object {
     /// 
     public static func getSettingWithOverride (name: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ProjectSettings.method_get_setting_with_override, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &name.content)
@@ -230,7 +230,7 @@ open class ProjectSettings: Object {
     
     /// Sets the order of a configuration value (influences when saved to the config file).
     public static func setOrder (name: String, position: Int32) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_position: Int = Int (position)
@@ -268,7 +268,7 @@ open class ProjectSettings: Object {
     /// Returns the order of a configuration value (influences when saved to the config file).
     public static func getOrder (name: String)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -301,7 +301,7 @@ open class ProjectSettings: Object {
     
     /// Sets the specified setting's initial value. This is the value the setting reverts to.
     public static func setInitialValue (name: String, value: Variant) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -336,7 +336,7 @@ open class ProjectSettings: Object {
     
     /// Defines if the specified setting is considered basic or advanced. Basic settings will always be shown in the project settings. Advanced settings will only be shown if the user enables the "Advanced Settings" option.
     public static func setAsBasic (name: String, basic: Bool) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_basic = basic
@@ -373,7 +373,7 @@ open class ProjectSettings: Object {
     
     /// Defines if the specified setting is considered internal. An internal setting won't show up in the Project Settings dialog. This is mostly useful for addons that need to store their own internal settings without exposing them directly to the user.
     public static func setAsInternal (name: String, `internal`: Bool) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_internal = `internal`
@@ -419,7 +419,7 @@ open class ProjectSettings: Object {
     /// **Example:**
     /// 
     public static func addPropertyInfo (hint: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ProjectSettings.method_add_property_info, UnsafeMutableRawPointer (mutating: shared.handle), nil, &hint.content)
@@ -452,7 +452,7 @@ open class ProjectSettings: Object {
     /// > Note: This is just a hint to display to the user that the editor must be restarted for changes to take effect. Enabling ``setRestartIfChanged(name:restart:)`` does _not_ delay the setting being set when changed.
     /// 
     public static func setRestartIfChanged (name: String, restart: Bool) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_restart = restart
@@ -489,7 +489,7 @@ open class ProjectSettings: Object {
     
     /// Clears the whole configuration (not recommended, may break things).
     public static func clear (name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -522,7 +522,7 @@ open class ProjectSettings: Object {
     /// Returns the localized path (starting with `res://`) corresponding to the absolute, native OS `path`. See also ``globalizePath(_:)``.
     public static func localizePath (_ path: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -559,7 +559,7 @@ open class ProjectSettings: Object {
     /// 
     public static func globalizePath (_ path: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -619,7 +619,7 @@ open class ProjectSettings: Object {
     /// 
     public static func loadResourcePack (_ pack: String, replaceFiles: Bool = true, offset: Int32 = 0)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_pack = GString (pack)
         var copy_replace_files = replaceFiles
@@ -663,7 +663,7 @@ open class ProjectSettings: Object {
     /// Saves the configuration to a custom file. The file extension must be `.godot` (to save in text-based ``ConfigFile`` format) or `.binary` (to save in binary format). You can also save `override.cfg` file, which is also text, but can be used in exported projects unlike other formats.
     public static func saveCustom (file: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_file = GString (file)
         

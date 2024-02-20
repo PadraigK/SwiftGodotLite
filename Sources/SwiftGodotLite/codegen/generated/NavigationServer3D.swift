@@ -111,7 +111,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the map active.
     public static func mapSetActive (map: RID, active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         
@@ -147,7 +147,7 @@ open class NavigationServer3D: Object {
     /// Returns true if the map is active.
     public static func mapIsActive (map: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_map_is_active, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &map.content)
@@ -178,7 +178,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the map up direction.
     public static func mapSetUp (map: RID, up: Vector3) {
-        #if true
+        #if false
         
         var copy_up = up
         
@@ -214,7 +214,7 @@ open class NavigationServer3D: Object {
     /// Returns the map's up direction.
     public static func mapGetUp (map: RID)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_map_get_up, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &map.content)
@@ -245,7 +245,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the map cell size used to rasterize the navigation mesh vertices on the XZ plane. Must match with the cell size of the used navigation meshes.
     public static func mapSetCellSize (map: RID, cellSize: Double) {
-        #if true
+        #if false
         
         var copy_cell_size = cellSize
         
@@ -281,7 +281,7 @@ open class NavigationServer3D: Object {
     /// Returns the map cell size used to rasterize the navigation mesh vertices on the XZ plane.
     public static func mapGetCellSize (map: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_map_get_cell_size, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &map.content)
@@ -312,7 +312,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the map cell height used to rasterize the navigation mesh vertices on the Y axis. Must match with the cell height of the used navigation meshes.
     public static func mapSetCellHeight (map: RID, cellHeight: Double) {
-        #if true
+        #if false
         
         var copy_cell_height = cellHeight
         
@@ -348,7 +348,7 @@ open class NavigationServer3D: Object {
     /// Returns the map cell height used to rasterize the navigation mesh vertices on the Y axis.
     public static func mapGetCellHeight (map: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_map_get_cell_height, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &map.content)
@@ -379,7 +379,7 @@ open class NavigationServer3D: Object {
     
     /// Set the navigation `map` edge connection use. If `enabled` is `true`, the navigation map allows navigation regions to use edge connections to connect with other navigation regions within proximity of the navigation map edge connection margin.
     public static func mapSetUseEdgeConnections (map: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -415,7 +415,7 @@ open class NavigationServer3D: Object {
     /// Returns true if the navigation `map` allows navigation regions to use edge connections to connect with other navigation regions within proximity of the navigation map edge connection margin.
     public static func mapGetUseEdgeConnections (map: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_map_get_use_edge_connections, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &map.content)
@@ -446,7 +446,7 @@ open class NavigationServer3D: Object {
     
     /// Set the map edge connection margin used to weld the compatible region edges.
     public static func mapSetEdgeConnectionMargin (map: RID, margin: Double) {
-        #if true
+        #if false
         
         var copy_margin = margin
         
@@ -482,7 +482,7 @@ open class NavigationServer3D: Object {
     /// Returns the edge connection margin of the map. This distance is the minimum vertex distance needed to connect two edges from different regions.
     public static func mapGetEdgeConnectionMargin (map: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_map_get_edge_connection_margin, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &map.content)
@@ -513,7 +513,7 @@ open class NavigationServer3D: Object {
     
     /// Set the map's link connection radius used to connect links to navigation polygons.
     public static func mapSetLinkConnectionRadius (map: RID, radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -549,7 +549,7 @@ open class NavigationServer3D: Object {
     /// Returns the link connection radius of the map. This distance is the maximum range any link will search for navigation mesh polygons to connect to.
     public static func mapGetLinkConnectionRadius (map: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_map_get_link_connection_radius, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &map.content)
@@ -581,7 +581,7 @@ open class NavigationServer3D: Object {
     /// Returns the navigation path to reach the destination from the origin. `navigationLayers` is a bitmask of all region navigation layers that are allowed to be in the path.
     public static func mapGetPath (map: RID, origin: Vector3, destination: Vector3, optimize: Bool, navigationLayers: UInt32 = 1)-> PackedVector3Array {
         let _result: PackedVector3Array = PackedVector3Array ()
-        #if true
+        #if false
         
         var copy_origin = origin
         var copy_destination = destination
@@ -633,7 +633,7 @@ open class NavigationServer3D: Object {
     /// Returns the closest point between the navigation surface and the segment.
     public static func mapGetClosestPointToSegment (map: RID, start: Vector3, end: Vector3, useCollision: Bool = false)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_start = start
         var copy_end = end
@@ -680,7 +680,7 @@ open class NavigationServer3D: Object {
     /// Returns the point closest to the provided `toPoint` on the navigation mesh surface.
     public static func mapGetClosestPoint (map: RID, toPoint: Vector3)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_to_point = toPoint
         
@@ -717,7 +717,7 @@ open class NavigationServer3D: Object {
     /// Returns the normal for the point returned by ``mapGetClosestPoint(map:toPoint:)``.
     public static func mapGetClosestPointNormal (map: RID, toPoint: Vector3)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_to_point = toPoint
         
@@ -754,7 +754,7 @@ open class NavigationServer3D: Object {
     /// Returns the owner region RID for the point returned by ``mapGetClosestPoint(map:toPoint:)``.
     public static func mapGetClosestPointOwner (map: RID, toPoint: Vector3)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_to_point = toPoint
         
@@ -791,7 +791,7 @@ open class NavigationServer3D: Object {
     /// Returns all navigation link ``RID``s that are currently assigned to the requested navigation `map`.
     public static func mapGetLinks (map: RID)-> VariantCollection<RID> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_map_get_links, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &map.content)
@@ -823,7 +823,7 @@ open class NavigationServer3D: Object {
     /// Returns all navigation regions ``RID``s that are currently assigned to the requested navigation `map`.
     public static func mapGetRegions (map: RID)-> VariantCollection<RID> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_map_get_regions, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &map.content)
@@ -855,7 +855,7 @@ open class NavigationServer3D: Object {
     /// Returns all navigation agents ``RID``s that are currently assigned to the requested navigation `map`.
     public static func mapGetAgents (map: RID)-> VariantCollection<RID> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_map_get_agents, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &map.content)
@@ -887,7 +887,7 @@ open class NavigationServer3D: Object {
     /// Returns all navigation obstacle ``RID``s that are currently assigned to the requested navigation `map`.
     public static func mapGetObstacles (map: RID)-> VariantCollection<RID> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_map_get_obstacles, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &map.content)
@@ -925,7 +925,7 @@ open class NavigationServer3D: Object {
     /// > Note: With great power comes great responsibility. This function should only be used by users that really know what they are doing and have a good reason for it. Forcing an immediate update of a navigation map requires locking the NavigationServer and flushing the entire NavigationServer command queue. Not only can this severely impact the performance of a game but it can also introduce bugs if used inappropriately without much foresight.
     /// 
     public static func mapForceUpdate (map: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_map_force_update, UnsafeMutableRawPointer (mutating: shared.handle), nil, &map.content)
@@ -955,7 +955,7 @@ open class NavigationServer3D: Object {
     
     /// Queries a path in a given navigation map. Start and target position and other parameters are defined through ``NavigationPathQueryParameters3D``. Updates the provided ``NavigationPathQueryResult3D`` result object with the path among other results requested by the query.
     public static func queryPath (parameters: NavigationPathQueryParameters3D?, result: NavigationPathQueryResult3D?) {
-        #if true
+        #if false
         
         var copy_parameters_handle = parameters?.handle
         var copy_result_handle = result?.handle
@@ -1008,7 +1008,7 @@ open class NavigationServer3D: Object {
     
     /// If `enabled` is `true`, the specified `region` will contribute to its current navigation map.
     public static func regionSetEnabled (region: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1044,7 +1044,7 @@ open class NavigationServer3D: Object {
     /// Returns `true` if the specified `region` is enabled.
     public static func regionGetEnabled (region: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_region_get_enabled, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &region.content)
@@ -1075,7 +1075,7 @@ open class NavigationServer3D: Object {
     
     /// If `enabled` is `true`, the navigation `region` will use edge connections to connect with other navigation regions within proximity of the navigation map edge connection margin.
     public static func regionSetUseEdgeConnections (region: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1111,7 +1111,7 @@ open class NavigationServer3D: Object {
     /// Returns true if the navigation `region` is set to use edge connections to connect with other navigation regions within proximity of the navigation map edge connection margin.
     public static func regionGetUseEdgeConnections (region: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_region_get_use_edge_connections, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &region.content)
@@ -1142,7 +1142,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the `enterCost` for this `region`.
     public static func regionSetEnterCost (region: RID, enterCost: Double) {
-        #if true
+        #if false
         
         var copy_enter_cost = enterCost
         
@@ -1178,7 +1178,7 @@ open class NavigationServer3D: Object {
     /// Returns the enter cost of this `region`.
     public static func regionGetEnterCost (region: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_region_get_enter_cost, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &region.content)
@@ -1209,7 +1209,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the `travelCost` for this `region`.
     public static func regionSetTravelCost (region: RID, travelCost: Double) {
-        #if true
+        #if false
         
         var copy_travel_cost = travelCost
         
@@ -1245,7 +1245,7 @@ open class NavigationServer3D: Object {
     /// Returns the travel cost of this `region`.
     public static func regionGetTravelCost (region: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_region_get_travel_cost, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &region.content)
@@ -1276,7 +1276,7 @@ open class NavigationServer3D: Object {
     
     /// Set the `ObjectID` of the object which manages this region.
     public static func regionSetOwnerId (region: RID, ownerId: UInt) {
-        #if true
+        #if false
         
         var copy_owner_id = ownerId
         
@@ -1312,7 +1312,7 @@ open class NavigationServer3D: Object {
     /// Returns the `ObjectID` of the object which manages this region.
     public static func regionGetOwnerId (region: RID)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_region_get_owner_id, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &region.content)
@@ -1349,7 +1349,7 @@ open class NavigationServer3D: Object {
     /// 
     public static func regionOwnsPoint (region: RID, point: Vector3)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_point = point
         
@@ -1385,7 +1385,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the map for the region.
     public static func regionSetMap (region: RID, map: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_region_set_map, UnsafeMutableRawPointer (mutating: shared.handle), nil, &region.content, &map.content)
@@ -1419,7 +1419,7 @@ open class NavigationServer3D: Object {
     /// Returns the navigation map ``RID`` the requested `region` is currently assigned to.
     public static func regionGetMap (region: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_region_get_map, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &region.content)
@@ -1450,7 +1450,7 @@ open class NavigationServer3D: Object {
     
     /// Set the region's navigation layers. This allows selecting regions from a path request (when using ``NavigationServer3D/mapGetPath(map:origin:destination:optimize:navigationLayers:)``).
     public static func regionSetNavigationLayers (region: RID, navigationLayers: UInt32) {
-        #if true
+        #if false
         
         var copy_navigation_layers: Int = Int (navigationLayers)
         
@@ -1486,7 +1486,7 @@ open class NavigationServer3D: Object {
     /// Returns the region's navigation layers.
     public static func regionGetNavigationLayers (region: RID)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_region_get_navigation_layers, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &region.content)
@@ -1517,7 +1517,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the global transformation for the region.
     public static func regionSetTransform (region: RID, transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -1552,7 +1552,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the navigation mesh for the region.
     public static func regionSetNavigationMesh (region: RID, navigationMesh: NavigationMesh?) {
-        #if true
+        #if false
         
         var copy_navigation_mesh_handle = navigationMesh?.handle
         
@@ -1589,7 +1589,7 @@ open class NavigationServer3D: Object {
     /// _Deprecated._ This function is deprecated due to core threading changes. To upgrade existing code, first create a ``NavigationMeshSourceGeometryData3D`` resource. Use this resource with ``parseSourceGeometryData(navigationMesh:sourceGeometryData:rootNode:callback:)`` to parse the SceneTree for nodes that should contribute to the navigation mesh baking. The SceneTree parsing needs to happen on the main thread. After the parsing is finished use the resource with ``bakeFromSourceGeometryData(navigationMesh:sourceGeometryData:callback:)`` to bake a navigation mesh.
     /// 
     public static func regionBakeNavigationMesh (_ navigationMesh: NavigationMesh?, rootNode: Node?) {
-        #if true
+        #if false
         
         var copy_navigation_mesh_handle = navigationMesh?.handle
         var copy_root_node_handle = rootNode?.handle
@@ -1625,7 +1625,7 @@ open class NavigationServer3D: Object {
     /// Returns how many connections this `region` has with other regions in the map.
     public static func regionGetConnectionsCount (region: RID)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_region_get_connections_count, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &region.content)
@@ -1657,7 +1657,7 @@ open class NavigationServer3D: Object {
     /// Returns the starting point of a connection door. `connection` is an index between 0 and the return value of ``regionGetConnectionsCount(region:)``.
     public static func regionGetConnectionPathwayStart (region: RID, connection: Int32)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_connection: Int = Int (connection)
         
@@ -1694,7 +1694,7 @@ open class NavigationServer3D: Object {
     /// Returns the ending point of a connection door. `connection` is an index between 0 and the return value of ``regionGetConnectionsCount(region:)``.
     public static func regionGetConnectionPathwayEnd (region: RID, connection: Int32)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_connection: Int = Int (connection)
         
@@ -1748,7 +1748,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the navigation map ``RID`` for the link.
     public static func linkSetMap (link: RID, map: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_link_set_map, UnsafeMutableRawPointer (mutating: shared.handle), nil, &link.content, &map.content)
@@ -1782,7 +1782,7 @@ open class NavigationServer3D: Object {
     /// Returns the navigation map ``RID`` the requested `link` is currently assigned to.
     public static func linkGetMap (link: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_link_get_map, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &link.content)
@@ -1813,7 +1813,7 @@ open class NavigationServer3D: Object {
     
     /// If `enabled` is `true`, the specified `link` will contribute to its current navigation map.
     public static func linkSetEnabled (link: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1849,7 +1849,7 @@ open class NavigationServer3D: Object {
     /// Returns `true` if the specified `link` is enabled.
     public static func linkGetEnabled (link: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_link_get_enabled, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &link.content)
@@ -1880,7 +1880,7 @@ open class NavigationServer3D: Object {
     
     /// Sets whether this `link` can be travelled in both directions.
     public static func linkSetBidirectional (link: RID, bidirectional: Bool) {
-        #if true
+        #if false
         
         var copy_bidirectional = bidirectional
         
@@ -1916,7 +1916,7 @@ open class NavigationServer3D: Object {
     /// Returns whether this `link` can be travelled in both directions.
     public static func linkIsBidirectional (link: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_link_is_bidirectional, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &link.content)
@@ -1947,7 +1947,7 @@ open class NavigationServer3D: Object {
     
     /// Set the links's navigation layers. This allows selecting links from a path request (when using ``NavigationServer3D/mapGetPath(map:origin:destination:optimize:navigationLayers:)``).
     public static func linkSetNavigationLayers (link: RID, navigationLayers: UInt32) {
-        #if true
+        #if false
         
         var copy_navigation_layers: Int = Int (navigationLayers)
         
@@ -1983,7 +1983,7 @@ open class NavigationServer3D: Object {
     /// Returns the navigation layers for this `link`.
     public static func linkGetNavigationLayers (link: RID)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_link_get_navigation_layers, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &link.content)
@@ -2014,7 +2014,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the entry position for this `link`.
     public static func linkSetStartPosition (link: RID, position: Vector3) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -2050,7 +2050,7 @@ open class NavigationServer3D: Object {
     /// Returns the starting position of this `link`.
     public static func linkGetStartPosition (link: RID)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_link_get_start_position, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &link.content)
@@ -2081,7 +2081,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the exit position for the `link`.
     public static func linkSetEndPosition (link: RID, position: Vector3) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -2117,7 +2117,7 @@ open class NavigationServer3D: Object {
     /// Returns the ending position of this `link`.
     public static func linkGetEndPosition (link: RID)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_link_get_end_position, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &link.content)
@@ -2148,7 +2148,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the `enterCost` for this `link`.
     public static func linkSetEnterCost (link: RID, enterCost: Double) {
-        #if true
+        #if false
         
         var copy_enter_cost = enterCost
         
@@ -2184,7 +2184,7 @@ open class NavigationServer3D: Object {
     /// Returns the enter cost of this `link`.
     public static func linkGetEnterCost (link: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_link_get_enter_cost, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &link.content)
@@ -2215,7 +2215,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the `travelCost` for this `link`.
     public static func linkSetTravelCost (link: RID, travelCost: Double) {
-        #if true
+        #if false
         
         var copy_travel_cost = travelCost
         
@@ -2251,7 +2251,7 @@ open class NavigationServer3D: Object {
     /// Returns the travel cost of this `link`.
     public static func linkGetTravelCost (link: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_link_get_travel_cost, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &link.content)
@@ -2282,7 +2282,7 @@ open class NavigationServer3D: Object {
     
     /// Set the `ObjectID` of the object which manages this link.
     public static func linkSetOwnerId (link: RID, ownerId: UInt) {
-        #if true
+        #if false
         
         var copy_owner_id = ownerId
         
@@ -2318,7 +2318,7 @@ open class NavigationServer3D: Object {
     /// Returns the `ObjectID` of the object which manages this link.
     public static func linkGetOwnerId (link: RID)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_link_get_owner_id, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &link.content)
@@ -2367,7 +2367,7 @@ open class NavigationServer3D: Object {
     
     /// If `enabled` is `true`, the provided `agent` calculates avoidance.
     public static func agentSetAvoidanceEnabled (agent: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2403,7 +2403,7 @@ open class NavigationServer3D: Object {
     /// Returns `true` if the provided `agent` has avoidance enabled.
     public static func agentGetAvoidanceEnabled (agent: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_agent_get_avoidance_enabled, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &agent.content)
@@ -2439,7 +2439,7 @@ open class NavigationServer3D: Object {
     /// If `false` the agent calculates avoidance velocities in 2D along the xz-axis ignoring the y-axis. The 2D using agent only avoids other 2D avoidance using agent's. The 2D using agent reacts to radius avoidance obstacles. The 2D using agent reacts to vertices based avoidance obstacles. The 2D using agent only avoids other 2D using agent's. 2D using agents will ignore other 2D using agents or obstacles that are below their current position or above their current position including the agents height in 2D avoidance.
     /// 
     public static func agentSetUse3dAvoidance (agent: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2475,7 +2475,7 @@ open class NavigationServer3D: Object {
     /// Returns `true` if the provided `agent` uses avoidance in 3D space Vector3(x,y,z) instead of horizontal 2D Vector2(x,y) / Vector3(x,0.0,z).
     public static func agentGetUse3dAvoidance (agent: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_agent_get_use_3d_avoidance, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &agent.content)
@@ -2506,7 +2506,7 @@ open class NavigationServer3D: Object {
     
     /// Puts the agent in the map.
     public static func agentSetMap (agent: RID, map: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_agent_set_map, UnsafeMutableRawPointer (mutating: shared.handle), nil, &agent.content, &map.content)
@@ -2540,7 +2540,7 @@ open class NavigationServer3D: Object {
     /// Returns the navigation map ``RID`` the requested `agent` is currently assigned to.
     public static func agentGetMap (agent: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_agent_get_map, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &agent.content)
@@ -2571,7 +2571,7 @@ open class NavigationServer3D: Object {
     
     /// If `paused` is true the specified `agent` will not be processed, e.g. calculate avoidance velocities or receive avoidance callbacks.
     public static func agentSetPaused (agent: RID, paused: Bool) {
-        #if true
+        #if false
         
         var copy_paused = paused
         
@@ -2607,7 +2607,7 @@ open class NavigationServer3D: Object {
     /// Returns `true` if the specified `agent` is paused.
     public static func agentGetPaused (agent: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_agent_get_paused, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &agent.content)
@@ -2638,7 +2638,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the maximum distance to other agents this agent takes into account in the navigation. The larger this number, the longer the running time of the simulation. If the number is too low, the simulation will not be safe.
     public static func agentSetNeighborDistance (agent: RID, distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -2673,7 +2673,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the maximum number of other agents the agent takes into account in the navigation. The larger this number, the longer the running time of the simulation. If the number is too low, the simulation will not be safe.
     public static func agentSetMaxNeighbors (agent: RID, count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -2708,7 +2708,7 @@ open class NavigationServer3D: Object {
     
     /// The minimal amount of time for which the agent's velocities that are computed by the simulation are safe with respect to other agents. The larger this number, the sooner this agent will respond to the presence of other agents, but the less freedom this agent has in choosing its velocities. A too high value will slow down agents movement considerably. Must be positive.
     public static func agentSetTimeHorizonAgents (agent: RID, timeHorizon: Double) {
-        #if true
+        #if false
         
         var copy_time_horizon = timeHorizon
         
@@ -2743,7 +2743,7 @@ open class NavigationServer3D: Object {
     
     /// The minimal amount of time for which the agent's velocities that are computed by the simulation are safe with respect to static avoidance obstacles. The larger this number, the sooner this agent will respond to the presence of static avoidance obstacles, but the less freedom this agent has in choosing its velocities. A too high value will slow down agents movement considerably. Must be positive.
     public static func agentSetTimeHorizonObstacles (agent: RID, timeHorizon: Double) {
-        #if true
+        #if false
         
         var copy_time_horizon = timeHorizon
         
@@ -2778,7 +2778,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the radius of the agent.
     public static func agentSetRadius (agent: RID, radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -2813,7 +2813,7 @@ open class NavigationServer3D: Object {
     
     /// Updates the provided `agent` `height`.
     public static func agentSetHeight (agent: RID, height: Double) {
-        #if true
+        #if false
         
         var copy_height = height
         
@@ -2848,7 +2848,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the maximum speed of the agent. Must be positive.
     public static func agentSetMaxSpeed (agent: RID, maxSpeed: Double) {
-        #if true
+        #if false
         
         var copy_max_speed = maxSpeed
         
@@ -2883,7 +2883,7 @@ open class NavigationServer3D: Object {
     
     /// Replaces the internal velocity in the collision avoidance simulation with `velocity` for the specified `agent`. When an agent is teleported to a new position this function should be used in the same frame. If called frequently this function can get agents stuck.
     public static func agentSetVelocityForced (agent: RID, velocity: Vector3) {
-        #if true
+        #if false
         
         var copy_velocity = velocity
         
@@ -2918,7 +2918,7 @@ open class NavigationServer3D: Object {
     
     /// Sets `velocity` as the new wanted velocity for the specified `agent`. The avoidance simulation will try to fulfill this velocity if possible but will modify it to avoid collision with other agent's and obstacles. When an agent is teleported to a new position use ``agentSetVelocityForced(agent:velocity:)`` as well to reset the internal simulation velocity.
     public static func agentSetVelocity (agent: RID, velocity: Vector3) {
-        #if true
+        #if false
         
         var copy_velocity = velocity
         
@@ -2953,7 +2953,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the position of the agent in world space.
     public static func agentSetPosition (agent: RID, position: Vector3) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -2989,7 +2989,7 @@ open class NavigationServer3D: Object {
     /// Returns true if the map got changed the previous frame.
     public static func agentIsMapChanged (agent: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_agent_is_map_changed, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &agent.content)
@@ -3023,7 +3023,7 @@ open class NavigationServer3D: Object {
     /// > Note: Created callbacks are always processed independently of the SceneTree state as long as the agent is on a navigation map and not freed. To disable the dispatch of a callback from an agent use ``agentSetAvoidanceCallback(agent:callback:)`` again with an empty ``Callable``.
     /// 
     public static func agentSetAvoidanceCallback (agent: RID, callback: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_agent_set_avoidance_callback, UnsafeMutableRawPointer (mutating: shared.handle), nil, &agent.content, &callback.content)
@@ -3056,7 +3056,7 @@ open class NavigationServer3D: Object {
     
     /// Set the agent's `avoidance_layers` bitmask.
     public static func agentSetAvoidanceLayers (agent: RID, layers: UInt32) {
-        #if true
+        #if false
         
         var copy_layers: Int = Int (layers)
         
@@ -3091,7 +3091,7 @@ open class NavigationServer3D: Object {
     
     /// Set the agent's `avoidance_mask` bitmask.
     public static func agentSetAvoidanceMask (agent: RID, mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -3129,7 +3129,7 @@ open class NavigationServer3D: Object {
     /// The specified `agent` does not adjust the velocity for other agents that would match the `avoidance_mask` but have a lower ` avoidance_priority`. This in turn makes the other agents with lower priority adjust their velocities even more to avoid collision with this agent.
     /// 
     public static func agentSetAvoidancePriority (agent: RID, priority: Double) {
-        #if true
+        #if false
         
         var copy_priority = priority
         
@@ -3182,7 +3182,7 @@ open class NavigationServer3D: Object {
     
     /// If `enabled` is `true`, the provided `obstacle` affects avoidance using agents.
     public static func obstacleSetAvoidanceEnabled (obstacle: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -3218,7 +3218,7 @@ open class NavigationServer3D: Object {
     /// Returns `true` if the provided `obstacle` has avoidance enabled.
     public static func obstacleGetAvoidanceEnabled (obstacle: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_obstacle_get_avoidance_enabled, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &obstacle.content)
@@ -3249,7 +3249,7 @@ open class NavigationServer3D: Object {
     
     /// Sets if the `obstacle` uses the 2D avoidance or the 3D avoidance while avoidance is enabled.
     public static func obstacleSetUse3dAvoidance (obstacle: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -3285,7 +3285,7 @@ open class NavigationServer3D: Object {
     /// Returns `true` if the provided `obstacle` uses avoidance in 3D space Vector3(x,y,z) instead of horizontal 2D Vector2(x,y) / Vector3(x,0.0,z).
     public static func obstacleGetUse3dAvoidance (obstacle: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_obstacle_get_use_3d_avoidance, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &obstacle.content)
@@ -3316,7 +3316,7 @@ open class NavigationServer3D: Object {
     
     /// Assigns the `obstacle` to a navigation map.
     public static func obstacleSetMap (obstacle: RID, map: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_obstacle_set_map, UnsafeMutableRawPointer (mutating: shared.handle), nil, &obstacle.content, &map.content)
@@ -3350,7 +3350,7 @@ open class NavigationServer3D: Object {
     /// Returns the navigation map ``RID`` the requested `obstacle` is currently assigned to.
     public static func obstacleGetMap (obstacle: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_obstacle_get_map, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &obstacle.content)
@@ -3381,7 +3381,7 @@ open class NavigationServer3D: Object {
     
     /// If `paused` is true the specified `obstacle` will not be processed, e.g. affect avoidance velocities.
     public static func obstacleSetPaused (obstacle: RID, paused: Bool) {
-        #if true
+        #if false
         
         var copy_paused = paused
         
@@ -3417,7 +3417,7 @@ open class NavigationServer3D: Object {
     /// Returns `true` if the specified `obstacle` is paused.
     public static func obstacleGetPaused (obstacle: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_obstacle_get_paused, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &obstacle.content)
@@ -3448,7 +3448,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the radius of the dynamic obstacle.
     public static func obstacleSetRadius (obstacle: RID, radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -3483,7 +3483,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the `height` for the `obstacle`. In 3D agents will ignore obstacles that are above or below them while using 2D avoidance.
     public static func obstacleSetHeight (obstacle: RID, height: Double) {
-        #if true
+        #if false
         
         var copy_height = height
         
@@ -3518,7 +3518,7 @@ open class NavigationServer3D: Object {
     
     /// Sets `velocity` of the dynamic `obstacle`. Allows other agents to better predict the movement of the dynamic obstacle. Only works in combination with the radius of the obstacle.
     public static func obstacleSetVelocity (obstacle: RID, velocity: Vector3) {
-        #if true
+        #if false
         
         var copy_velocity = velocity
         
@@ -3553,7 +3553,7 @@ open class NavigationServer3D: Object {
     
     /// Updates the `position` in world space for the `obstacle`.
     public static func obstacleSetPosition (obstacle: RID, position: Vector3) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -3588,7 +3588,7 @@ open class NavigationServer3D: Object {
     
     /// Sets the outline vertices for the obstacle. If the vertices are winded in clockwise order agents will be pushed in by the obstacle, else they will be pushed out.
     public static func obstacleSetVertices (obstacle: RID, vertices: PackedVector3Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_obstacle_set_vertices, UnsafeMutableRawPointer (mutating: shared.handle), nil, &obstacle.content, &vertices.content)
@@ -3621,7 +3621,7 @@ open class NavigationServer3D: Object {
     
     /// Set the obstacles's `avoidance_layers` bitmask.
     public static func obstacleSetAvoidanceLayers (obstacle: RID, layers: UInt32) {
-        #if true
+        #if false
         
         var copy_layers: Int = Int (layers)
         
@@ -3661,7 +3661,7 @@ open class NavigationServer3D: Object {
     /// **Performance:** While convenient, reading data arrays from ``Mesh`` resources can affect the frame rate negatively. The data needs to be received from the GPU, stalling the ``RenderingServer`` in the process. For performance prefer the use of e.g. collision shapes or creating the data arrays entirely in code.
     /// 
     public static func parseSourceGeometryData (navigationMesh: NavigationMesh?, sourceGeometryData: NavigationMeshSourceGeometryData3D?, rootNode: Node?, callback: Callable = Callable()) {
-        #if true
+        #if false
         
         var copy_navigation_mesh_handle = navigationMesh?.handle
         var copy_source_geometry_data_handle = sourceGeometryData?.handle
@@ -3703,7 +3703,7 @@ open class NavigationServer3D: Object {
     
     /// Bakes the provided `navigationMesh` with the data from the provided `sourceGeometryData`. After the process is finished the optional `callback` will be called.
     public static func bakeFromSourceGeometryData (navigationMesh: NavigationMesh?, sourceGeometryData: NavigationMeshSourceGeometryData3D?, callback: Callable = Callable()) {
-        #if true
+        #if false
         
         var copy_navigation_mesh_handle = navigationMesh?.handle
         var copy_source_geometry_data_handle = sourceGeometryData?.handle
@@ -3741,7 +3741,7 @@ open class NavigationServer3D: Object {
     
     /// Bakes the provided `navigationMesh` with the data from the provided `sourceGeometryData` as an async task running on a background thread. After the process is finished the optional `callback` will be called.
     public static func bakeFromSourceGeometryDataAsync (navigationMesh: NavigationMesh?, sourceGeometryData: NavigationMeshSourceGeometryData3D?, callback: Callable = Callable()) {
-        #if true
+        #if false
         
         var copy_navigation_mesh_handle = navigationMesh?.handle
         var copy_source_geometry_data_handle = sourceGeometryData?.handle
@@ -3779,7 +3779,7 @@ open class NavigationServer3D: Object {
     
     /// Destroys the given RID.
     public static func freeRid (_ rid: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationServer3D.method_free_rid, UnsafeMutableRawPointer (mutating: shared.handle), nil, &rid.content)
@@ -3809,7 +3809,7 @@ open class NavigationServer3D: Object {
     
     /// Control activation of this server.
     public static func setActive (_ active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         
@@ -3841,7 +3841,7 @@ open class NavigationServer3D: Object {
     
     /// If `true` enables debug mode on the NavigationServer.
     public static func setDebugEnabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -3892,7 +3892,7 @@ open class NavigationServer3D: Object {
     /// Returns information about the current state of the NavigationServer. See ``NavigationServer3D/ProcessInfo`` for a list of available states.
     public static func getProcessInfo (_ processInfo: NavigationServer3D.ProcessInfo)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_process_info = Int64 (processInfo.rawValue)
         

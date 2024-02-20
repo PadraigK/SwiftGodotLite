@@ -82,7 +82,7 @@ open class OpenXRAPIExtension: RefCounted {
     /// Returns `true` if the provided [url=https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html]XrResult[/url] (cast to an integer) is successful. Otherwise returns `false` and prints the [url=https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html]XrResult[/url] converted to a string, with the specified additional information.
     public final func xrResult (_ result: UInt, format: String, args: GArray)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_result = result
         let gstr_format = GString (format)
@@ -124,7 +124,7 @@ open class OpenXRAPIExtension: RefCounted {
     /// Returns `true` if OpenXR is enabled.
     public static func openxrIsEnabled (checkRunInEditor: Bool)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_check_run_in_editor = checkRunInEditor
         
@@ -161,7 +161,7 @@ open class OpenXRAPIExtension: RefCounted {
     /// 
     public final func getInstanceProcAddr (name: String)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -195,7 +195,7 @@ open class OpenXRAPIExtension: RefCounted {
     /// Returns an error string for the given [url=https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html]XrResult[/url].
     public final func getErrorString (result: UInt)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_result = result
         
@@ -229,7 +229,7 @@ open class OpenXRAPIExtension: RefCounted {
     /// Returns the name of the specified swapchain format.
     public final func getSwapchainFormatName (swapchainFormat: Int)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_swapchain_format = swapchainFormat
         

@@ -142,7 +142,7 @@ open class AudioStreamWAV: AudioStream {
     
     @inline(__always)
     fileprivate final func set_data (_ data: PackedByteArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AudioStreamWAV.method_set_data, UnsafeMutableRawPointer (mutating: handle), nil, &data.content)
@@ -190,7 +190,7 @@ open class AudioStreamWAV: AudioStream {
     
     @inline(__always)
     fileprivate final func set_format (_ format: AudioStreamWAV.Format) {
-        #if true
+        #if false
         
         var copy_format = Int64 (format.rawValue)
         
@@ -240,7 +240,7 @@ open class AudioStreamWAV: AudioStream {
     
     @inline(__always)
     fileprivate final func set_loop_mode (_ loopMode: AudioStreamWAV.LoopMode) {
-        #if true
+        #if false
         
         var copy_loop_mode = Int64 (loopMode.rawValue)
         
@@ -290,7 +290,7 @@ open class AudioStreamWAV: AudioStream {
     
     @inline(__always)
     fileprivate final func set_loop_begin (_ loopBegin: Int32) {
-        #if true
+        #if false
         
         var copy_loop_begin: Int = Int (loopBegin)
         
@@ -340,7 +340,7 @@ open class AudioStreamWAV: AudioStream {
     
     @inline(__always)
     fileprivate final func set_loop_end (_ loopEnd: Int32) {
-        #if true
+        #if false
         
         var copy_loop_end: Int = Int (loopEnd)
         
@@ -390,7 +390,7 @@ open class AudioStreamWAV: AudioStream {
     
     @inline(__always)
     fileprivate final func set_mix_rate (_ mixRate: Int32) {
-        #if true
+        #if false
         
         var copy_mix_rate: Int = Int (mixRate)
         
@@ -440,7 +440,7 @@ open class AudioStreamWAV: AudioStream {
     
     @inline(__always)
     fileprivate final func set_stereo (_ stereo: Bool) {
-        #if true
+        #if false
         
         var copy_stereo = stereo
         
@@ -494,7 +494,7 @@ open class AudioStreamWAV: AudioStream {
     /// 
     public final func saveToWav (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         

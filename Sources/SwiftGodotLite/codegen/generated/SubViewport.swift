@@ -118,7 +118,7 @@ open class SubViewport: Viewport {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -168,7 +168,7 @@ open class SubViewport: Viewport {
     
     @inline(__always)
     fileprivate final func set_size_2d_override (_ size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -218,7 +218,7 @@ open class SubViewport: Viewport {
     
     @inline(__always)
     fileprivate final func set_size_2d_override_stretch (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -268,7 +268,7 @@ open class SubViewport: Viewport {
     
     @inline(__always)
     fileprivate final func set_update_mode (_ mode: SubViewport.UpdateMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -318,7 +318,7 @@ open class SubViewport: Viewport {
     
     @inline(__always)
     fileprivate final func set_clear_mode (_ mode: SubViewport.ClearMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

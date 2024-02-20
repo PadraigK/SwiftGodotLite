@@ -50,7 +50,7 @@ open class VisualShaderNodeParticleAccelerator: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_mode (_ mode: VisualShaderNodeParticleAccelerator.Mode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

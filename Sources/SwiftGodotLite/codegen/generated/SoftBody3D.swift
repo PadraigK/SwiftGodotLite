@@ -193,7 +193,7 @@ open class SoftBody3D: MeshInstance3D {
     
     @inline(__always)
     fileprivate final func set_collision_mask (_ collisionMask: UInt32) {
-        #if true
+        #if false
         
         var copy_collision_mask: Int = Int (collisionMask)
         
@@ -243,7 +243,7 @@ open class SoftBody3D: MeshInstance3D {
     
     @inline(__always)
     fileprivate final func set_collision_layer (_ collisionLayer: UInt32) {
-        #if true
+        #if false
         
         var copy_collision_layer: Int = Int (collisionLayer)
         
@@ -293,7 +293,7 @@ open class SoftBody3D: MeshInstance3D {
     
     /// Based on `value`, enables or disables the specified layer in the ``collisionMask``, given a `layerNumber` between 1 and 32.
     public final func setCollisionMaskValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -331,7 +331,7 @@ open class SoftBody3D: MeshInstance3D {
     /// Returns whether or not the specified layer of the ``collisionMask`` is enabled, given a `layerNumber` between 1 and 32.
     public final func getCollisionMaskValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -364,7 +364,7 @@ open class SoftBody3D: MeshInstance3D {
     
     /// Based on `value`, enables or disables the specified layer in the ``collisionLayer``, given a `layerNumber` between 1 and 32.
     public final func setCollisionLayerValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -402,7 +402,7 @@ open class SoftBody3D: MeshInstance3D {
     /// Returns whether or not the specified layer of the ``collisionLayer`` is enabled, given a `layerNumber` between 1 and 32.
     public final func getCollisionLayerValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -435,7 +435,7 @@ open class SoftBody3D: MeshInstance3D {
     
     @inline(__always)
     fileprivate final func set_parent_collision_ignore (_ parentCollisionIgnore: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SoftBody3D.method_set_parent_collision_ignore, UnsafeMutableRawPointer (mutating: handle), nil, &parentCollisionIgnore.content)
@@ -483,7 +483,7 @@ open class SoftBody3D: MeshInstance3D {
     
     @inline(__always)
     fileprivate final func set_disable_mode (_ mode: SoftBody3D.DisableMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -551,7 +551,7 @@ open class SoftBody3D: MeshInstance3D {
     
     /// Adds a body to the list of bodies that this body can't collide with.
     public final func addCollisionExceptionWith (body: Node?) {
-        #if true
+        #if false
         
         var copy_body_handle = body?.handle
         
@@ -582,7 +582,7 @@ open class SoftBody3D: MeshInstance3D {
     
     /// Removes a body from the list of bodies that this body can't collide with.
     public final func removeCollisionExceptionWith (body: Node?) {
-        #if true
+        #if false
         
         var copy_body_handle = body?.handle
         
@@ -613,7 +613,7 @@ open class SoftBody3D: MeshInstance3D {
     
     @inline(__always)
     fileprivate final func set_simulation_precision (_ simulationPrecision: Int32) {
-        #if true
+        #if false
         
         var copy_simulation_precision: Int = Int (simulationPrecision)
         
@@ -663,7 +663,7 @@ open class SoftBody3D: MeshInstance3D {
     
     @inline(__always)
     fileprivate final func set_total_mass (_ mass: Double) {
-        #if true
+        #if false
         
         var copy_mass = mass
         
@@ -713,7 +713,7 @@ open class SoftBody3D: MeshInstance3D {
     
     @inline(__always)
     fileprivate final func set_linear_stiffness (_ linearStiffness: Double) {
-        #if true
+        #if false
         
         var copy_linear_stiffness = linearStiffness
         
@@ -763,7 +763,7 @@ open class SoftBody3D: MeshInstance3D {
     
     @inline(__always)
     fileprivate final func set_pressure_coefficient (_ pressureCoefficient: Double) {
-        #if true
+        #if false
         
         var copy_pressure_coefficient = pressureCoefficient
         
@@ -813,7 +813,7 @@ open class SoftBody3D: MeshInstance3D {
     
     @inline(__always)
     fileprivate final func set_damping_coefficient (_ dampingCoefficient: Double) {
-        #if true
+        #if false
         
         var copy_damping_coefficient = dampingCoefficient
         
@@ -863,7 +863,7 @@ open class SoftBody3D: MeshInstance3D {
     
     @inline(__always)
     fileprivate final func set_drag_coefficient (_ dragCoefficient: Double) {
-        #if true
+        #if false
         
         var copy_drag_coefficient = dragCoefficient
         
@@ -914,7 +914,7 @@ open class SoftBody3D: MeshInstance3D {
     /// Returns local translation of a vertex in the surface array.
     public final func getPointTransform (pointIndex: Int32)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_point_index: Int = Int (pointIndex)
         
@@ -947,7 +947,7 @@ open class SoftBody3D: MeshInstance3D {
     
     /// Sets the pinned state of a surface vertex. When set to `true`, the optional `attachmentPath` can define a ``Node3D`` the pinned vertex will be attached to.
     public final func setPointPinned (pointIndex: Int32, pinned: Bool, attachmentPath: NodePath = NodePath("")) {
-        #if true
+        #if false
         
         var copy_point_index: Int = Int (pointIndex)
         var copy_pinned = pinned
@@ -988,7 +988,7 @@ open class SoftBody3D: MeshInstance3D {
     /// Returns `true` if vertex is set to pinned.
     public final func isPointPinned (pointIndex: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_point_index: Int = Int (pointIndex)
         
@@ -1021,7 +1021,7 @@ open class SoftBody3D: MeshInstance3D {
     
     @inline(__always)
     fileprivate final func set_ray_pickable (_ rayPickable: Bool) {
-        #if true
+        #if false
         
         var copy_ray_pickable = rayPickable
         

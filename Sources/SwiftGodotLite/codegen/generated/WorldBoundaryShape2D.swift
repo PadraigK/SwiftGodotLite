@@ -54,7 +54,7 @@ open class WorldBoundaryShape2D: Shape2D {
     
     @inline(__always)
     fileprivate final func set_normal (_ normal: Vector2) {
-        #if true
+        #if false
         
         var copy_normal = normal
         
@@ -104,7 +104,7 @@ open class WorldBoundaryShape2D: Shape2D {
     
     @inline(__always)
     fileprivate final func set_distance (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         

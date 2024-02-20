@@ -217,7 +217,7 @@ open class EditorExportPlugin: RefCounted {
     /// In case of a directory code-sign will error if you place non code object in directory.
     /// 
     public final func addSharedObject (path: String, tags: PackedStringArray, target: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         let gstr_target = GString (target)
@@ -257,7 +257,7 @@ open class EditorExportPlugin: RefCounted {
     
     /// Adds a static lib from the given `path` to the iOS project.
     public final func addIosProjectStaticLib (path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -292,7 +292,7 @@ open class EditorExportPlugin: RefCounted {
     /// When called inside ``_exportFile(path:type:features:)`` and `remap` is `true`, the current file will not be exported, but instead remapped to this custom file. `remap` is ignored when called in other places.
     /// 
     public final func addFile (path: String, file: PackedByteArray, remap: Bool) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_remap = remap
@@ -332,7 +332,7 @@ open class EditorExportPlugin: RefCounted {
     
     /// Adds a static library (*.a) or dynamic library (*.dylib, *.framework) to Linking Phase in iOS's Xcode project.
     public final func addIosFramework (path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -369,7 +369,7 @@ open class EditorExportPlugin: RefCounted {
     /// > Note: This method should not be used for System libraries as they are already present on the device.
     /// 
     public final func addIosEmbeddedFramework (path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -401,7 +401,7 @@ open class EditorExportPlugin: RefCounted {
     
     /// Adds content for iOS Property List files.
     public final func addIosPlistContent (_ plistContent: String) {
-        #if true
+        #if false
         
         let gstr_plist_content = GString (plistContent)
         
@@ -433,7 +433,7 @@ open class EditorExportPlugin: RefCounted {
     
     /// Adds linker flags for the iOS export.
     public final func addIosLinkerFlags (_ flags: String) {
-        #if true
+        #if false
         
         let gstr_flags = GString (flags)
         
@@ -465,7 +465,7 @@ open class EditorExportPlugin: RefCounted {
     
     /// Adds an iOS bundle file from the given `path` to the exported project.
     public final func addIosBundleFile (path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -497,7 +497,7 @@ open class EditorExportPlugin: RefCounted {
     
     /// Adds a C++ code to the iOS export. The final code is created from the code appended by each active export plugin.
     public final func addIosCppCode (_ code: String) {
-        #if true
+        #if false
         
         let gstr_code = GString (code)
         
@@ -532,7 +532,7 @@ open class EditorExportPlugin: RefCounted {
     /// > Note: This is useful only for macOS exports.
     /// 
     public final func addMacosPluginFile (path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -581,7 +581,7 @@ open class EditorExportPlugin: RefCounted {
     /// Returns the current value of an export option supplied by ``_getExportOptions(platform:)``.
     public final func getOption (name: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorExportPlugin.method_get_option, UnsafeMutableRawPointer (mutating: handle), &_result.content, &name.content)

@@ -142,7 +142,7 @@ open class InputEventMIDI: InputEvent {
     
     @inline(__always)
     fileprivate final func set_channel (_ channel: Int32) {
-        #if true
+        #if false
         
         var copy_channel: Int = Int (channel)
         
@@ -192,7 +192,7 @@ open class InputEventMIDI: InputEvent {
     
     @inline(__always)
     fileprivate final func set_message (_ message: MIDIMessage) {
-        #if true
+        #if false
         
         var copy_message = Int64 (message.rawValue)
         
@@ -242,7 +242,7 @@ open class InputEventMIDI: InputEvent {
     
     @inline(__always)
     fileprivate final func set_pitch (_ pitch: Int32) {
-        #if true
+        #if false
         
         var copy_pitch: Int = Int (pitch)
         
@@ -292,7 +292,7 @@ open class InputEventMIDI: InputEvent {
     
     @inline(__always)
     fileprivate final func set_velocity (_ velocity: Int32) {
-        #if true
+        #if false
         
         var copy_velocity: Int = Int (velocity)
         
@@ -342,7 +342,7 @@ open class InputEventMIDI: InputEvent {
     
     @inline(__always)
     fileprivate final func set_instrument (_ instrument: Int32) {
-        #if true
+        #if false
         
         var copy_instrument: Int = Int (instrument)
         
@@ -392,7 +392,7 @@ open class InputEventMIDI: InputEvent {
     
     @inline(__always)
     fileprivate final func set_pressure (_ pressure: Int32) {
-        #if true
+        #if false
         
         var copy_pressure: Int = Int (pressure)
         
@@ -442,7 +442,7 @@ open class InputEventMIDI: InputEvent {
     
     @inline(__always)
     fileprivate final func set_controller_number (_ controllerNumber: Int32) {
-        #if true
+        #if false
         
         var copy_controller_number: Int = Int (controllerNumber)
         
@@ -492,7 +492,7 @@ open class InputEventMIDI: InputEvent {
     
     @inline(__always)
     fileprivate final func set_controller_value (_ controllerValue: Int32) {
-        #if true
+        #if false
         
         var copy_controller_value: Int = Int (controllerValue)
         

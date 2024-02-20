@@ -94,7 +94,7 @@ open class CameraAttributes: Resource {
     
     @inline(__always)
     fileprivate final func set_exposure_multiplier (_ multiplier: Double) {
-        #if true
+        #if false
         
         var copy_multiplier = multiplier
         
@@ -144,7 +144,7 @@ open class CameraAttributes: Resource {
     
     @inline(__always)
     fileprivate final func set_exposure_sensitivity (_ sensitivity: Double) {
-        #if true
+        #if false
         
         var copy_sensitivity = sensitivity
         
@@ -194,7 +194,7 @@ open class CameraAttributes: Resource {
     
     @inline(__always)
     fileprivate final func set_auto_exposure_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -244,7 +244,7 @@ open class CameraAttributes: Resource {
     
     @inline(__always)
     fileprivate final func set_auto_exposure_speed (_ exposureSpeed: Double) {
-        #if true
+        #if false
         
         var copy_exposure_speed = exposureSpeed
         
@@ -294,7 +294,7 @@ open class CameraAttributes: Resource {
     
     @inline(__always)
     fileprivate final func set_auto_exposure_scale (_ exposureGrey: Double) {
-        #if true
+        #if false
         
         var copy_exposure_grey = exposureGrey
         

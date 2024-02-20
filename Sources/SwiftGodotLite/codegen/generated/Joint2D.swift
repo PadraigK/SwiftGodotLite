@@ -78,7 +78,7 @@ open class Joint2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_node_a (_ node: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Joint2D.method_set_node_a, UnsafeMutableRawPointer (mutating: handle), nil, &node.content)
@@ -126,7 +126,7 @@ open class Joint2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_node_b (_ node: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Joint2D.method_set_node_b, UnsafeMutableRawPointer (mutating: handle), nil, &node.content)
@@ -174,7 +174,7 @@ open class Joint2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_bias (_ bias: Double) {
-        #if true
+        #if false
         
         var copy_bias = bias
         
@@ -224,7 +224,7 @@ open class Joint2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_exclude_nodes_from_collision (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

@@ -75,7 +75,7 @@ open class RDPipelineColorBlendState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_enable_logic_op (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -125,7 +125,7 @@ open class RDPipelineColorBlendState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_logic_op (_ pMember: RenderingDevice.LogicOperation) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -175,7 +175,7 @@ open class RDPipelineColorBlendState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_blend_constant (_ pMember: Color) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -225,7 +225,7 @@ open class RDPipelineColorBlendState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_attachments (_ attachments: ObjectCollection<RDPipelineColorBlendStateAttachment>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RDPipelineColorBlendState.method_set_attachments, UnsafeMutableRawPointer (mutating: handle), nil, &attachments.array.content)

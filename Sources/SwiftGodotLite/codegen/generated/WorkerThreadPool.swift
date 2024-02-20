@@ -45,7 +45,7 @@ open class WorkerThreadPool: Object {
     /// 
     public static func addTask (action: Callable, highPriority: Bool = false, description: String = "")-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_high_priority = highPriority
         let gstr_description = GString (description)
@@ -87,7 +87,7 @@ open class WorkerThreadPool: Object {
     /// Returns `true` if the task with the given ID is completed.
     public static func isTaskCompleted (taskId: Int)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_task_id = taskId
         
@@ -128,7 +128,7 @@ open class WorkerThreadPool: Object {
     /// 
     public static func waitForTaskCompletion (taskId: Int)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_task_id = taskId
         
@@ -167,7 +167,7 @@ open class WorkerThreadPool: Object {
     /// 
     public static func addGroupTask (action: Callable, elements: Int32, tasksNeeded: Int32 = -1, highPriority: Bool = false, description: String = "")-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_elements: Int = Int (elements)
         var copy_tasks_needed: Int = Int (tasksNeeded)
@@ -219,7 +219,7 @@ open class WorkerThreadPool: Object {
     /// Returns `true` if the group task with the given ID is completed.
     public static func isGroupTaskCompleted (groupId: Int)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_group_id = groupId
         
@@ -256,7 +256,7 @@ open class WorkerThreadPool: Object {
     /// 
     public static func getGroupProcessedElementCount (groupId: Int)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         var copy_group_id = groupId
         
@@ -289,7 +289,7 @@ open class WorkerThreadPool: Object {
     
     /// Pauses the thread that calls this method until the group task with the given ID is completed.
     public static func waitForGroupTaskCompletion (groupId: Int) {
-        #if true
+        #if false
         
         var copy_group_id = groupId
         

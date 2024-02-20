@@ -81,7 +81,7 @@ open class ReferenceRect: Control {
     
     @inline(__always)
     fileprivate final func set_border_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -131,7 +131,7 @@ open class ReferenceRect: Control {
     
     @inline(__always)
     fileprivate final func set_border_width (_ width: Double) {
-        #if true
+        #if false
         
         var copy_width = width
         
@@ -181,7 +181,7 @@ open class ReferenceRect: Control {
     
     @inline(__always)
     fileprivate final func set_editor_only (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

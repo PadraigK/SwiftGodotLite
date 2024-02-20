@@ -77,7 +77,7 @@ open class AudioEffectLimiter: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_ceiling_db (_ ceiling: Double) {
-        #if true
+        #if false
         
         var copy_ceiling = ceiling
         
@@ -127,7 +127,7 @@ open class AudioEffectLimiter: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_threshold_db (_ threshold: Double) {
-        #if true
+        #if false
         
         var copy_threshold = threshold
         
@@ -177,7 +177,7 @@ open class AudioEffectLimiter: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_soft_clip_db (_ softClip: Double) {
-        #if true
+        #if false
         
         var copy_soft_clip = softClip
         
@@ -227,7 +227,7 @@ open class AudioEffectLimiter: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_soft_clip_ratio (_ softClip: Double) {
-        #if true
+        #if false
         
         var copy_soft_clip = softClip
         

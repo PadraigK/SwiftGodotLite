@@ -42,7 +42,7 @@ open class ResourceUID: Object {
     /// Converts the given UID to a `uid://` string value.
     public static func idToText (id: Int)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -76,7 +76,7 @@ open class ResourceUID: Object {
     /// Extracts the UID value from the given `uid://` string.
     public static func textToId (textId: String)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         let gstr_text_id = GString (textId)
         
@@ -131,7 +131,7 @@ open class ResourceUID: Object {
     /// Returns whether the given UID value is known to the cache.
     public static func hasId (_ id: Int)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -167,7 +167,7 @@ open class ResourceUID: Object {
     /// Fails with an error if the UID already exists, so be sure to check ``hasId(_:)`` beforehand, or use ``setId(_:path:)`` instead.
     /// 
     public static func addId (_ id: Int, path: String) {
-        #if true
+        #if false
         
         var copy_id = id
         let gstr_path = GString (path)
@@ -207,7 +207,7 @@ open class ResourceUID: Object {
     /// Fails with an error if the UID does not exist, so be sure to check ``hasId(_:)`` beforehand, or use ``addId(_:path:)`` instead.
     /// 
     public static func setId (_ id: Int, path: String) {
-        #if true
+        #if false
         
         var copy_id = id
         let gstr_path = GString (path)
@@ -248,7 +248,7 @@ open class ResourceUID: Object {
     /// 
     public static func getIdPath (id: Int)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -284,7 +284,7 @@ open class ResourceUID: Object {
     /// Fails with an error if the UID does not exist, so be sure to check ``hasId(_:)`` beforehand.
     /// 
     public static func removeId (_ id: Int) {
-        #if true
+        #if false
         
         var copy_id = id
         

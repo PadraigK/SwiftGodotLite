@@ -56,7 +56,7 @@ open class GraphNode: GraphElement {
     
     @inline(__always)
     fileprivate final func set_title (_ title: String) {
-        #if true
+        #if false
         
         let gstr_title = GString (title)
         
@@ -137,7 +137,7 @@ open class GraphNode: GraphElement {
     /// > Note: This method only sets properties of the slot. To create the slot itself, add a ``Control``-derived child to the GraphNode.
     /// 
     public final func setSlot (slotIndex: Int32, enableLeftPort: Bool, typeLeft: Int32, colorLeft: Color, enableRightPort: Bool, typeRight: Int32, colorRight: Color, customIconLeft: Texture2D? = nil, customIconRight: Texture2D? = nil, drawStylebox: Bool = true) {
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         var copy_enable_left_port = enableLeftPort
@@ -212,7 +212,7 @@ open class GraphNode: GraphElement {
     
     /// Disables the slot with the given `slotIndex`. This will remove the corresponding input and output port from the GraphNode.
     public final func clearSlot (slotIndex: Int32) {
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         
@@ -261,7 +261,7 @@ open class GraphNode: GraphElement {
     /// Returns `true` if left (input) side of the slot with the given `slotIndex` is enabled.
     public final func isSlotEnabledLeft (slotIndex: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         
@@ -294,7 +294,7 @@ open class GraphNode: GraphElement {
     
     /// Toggles the left (input) side of the slot with the given `slotIndex`. If `enable` is `true`, a port will appear on the left side and the slot will be able to be connected from this side.
     public final func setSlotEnabledLeft (slotIndex: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         var copy_enable = enable
@@ -331,7 +331,7 @@ open class GraphNode: GraphElement {
     
     /// Sets the left (input) type of the slot with the given `slotIndex` to `type`. If the value is negative, all connections will be disallowed to be created via user inputs.
     public final func setSlotTypeLeft (slotIndex: Int32, type: Int32) {
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         var copy_type: Int = Int (type)
@@ -369,7 +369,7 @@ open class GraphNode: GraphElement {
     /// Returns the left (input) type of the slot with the given `slotIndex`.
     public final func getSlotTypeLeft (slotIndex: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         
@@ -402,7 +402,7 @@ open class GraphNode: GraphElement {
     
     /// Sets the ``Color`` of the left (input) side of the slot with the given `slotIndex` to `color`.
     public final func setSlotColorLeft (slotIndex: Int32, color: Color) {
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         var copy_color = color
@@ -440,7 +440,7 @@ open class GraphNode: GraphElement {
     /// Returns the left (input) ``Color`` of the slot with the given `slotIndex`.
     public final func getSlotColorLeft (slotIndex: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         
@@ -474,7 +474,7 @@ open class GraphNode: GraphElement {
     /// Returns `true` if right (output) side of the slot with the given `slotIndex` is enabled.
     public final func isSlotEnabledRight (slotIndex: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         
@@ -507,7 +507,7 @@ open class GraphNode: GraphElement {
     
     /// Toggles the right (output) side of the slot with the given `slotIndex`. If `enable` is `true`, a port will appear on the right side and the slot will be able to be connected from this side.
     public final func setSlotEnabledRight (slotIndex: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         var copy_enable = enable
@@ -544,7 +544,7 @@ open class GraphNode: GraphElement {
     
     /// Sets the right (output) type of the slot with the given `slotIndex` to `type`. If the value is negative, all connections will be disallowed to be created via user inputs.
     public final func setSlotTypeRight (slotIndex: Int32, type: Int32) {
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         var copy_type: Int = Int (type)
@@ -582,7 +582,7 @@ open class GraphNode: GraphElement {
     /// Returns the right (output) type of the slot with the given `slotIndex`.
     public final func getSlotTypeRight (slotIndex: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         
@@ -615,7 +615,7 @@ open class GraphNode: GraphElement {
     
     /// Sets the ``Color`` of the right (output) side of the slot with the given `slotIndex` to `color`.
     public final func setSlotColorRight (slotIndex: Int32, color: Color) {
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         var copy_color = color
@@ -653,7 +653,7 @@ open class GraphNode: GraphElement {
     /// Returns the right (output) ``Color`` of the slot with the given `slotIndex`.
     public final func getSlotColorRight (slotIndex: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         
@@ -687,7 +687,7 @@ open class GraphNode: GraphElement {
     /// Returns true if the background ``StyleBox`` of the slot with the given `slotIndex` is drawn.
     public final func isSlotDrawStylebox (slotIndex: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         
@@ -720,7 +720,7 @@ open class GraphNode: GraphElement {
     
     /// Toggles the background ``StyleBox`` of the slot with the given `slotIndex`.
     public final func setSlotDrawStylebox (slotIndex: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_slot_index: Int = Int (slotIndex)
         var copy_enable = enable
@@ -776,7 +776,7 @@ open class GraphNode: GraphElement {
     /// Returns the position of the input port with the given `portIdx`.
     public final func getInputPortPosition (portIdx: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_port_idx: Int = Int (portIdx)
         
@@ -810,7 +810,7 @@ open class GraphNode: GraphElement {
     /// Returns the type of the input port with the given `portIdx`.
     public final func getInputPortType (portIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_port_idx: Int = Int (portIdx)
         
@@ -844,7 +844,7 @@ open class GraphNode: GraphElement {
     /// Returns the ``Color`` of the input port with the given `portIdx`.
     public final func getInputPortColor (portIdx: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_port_idx: Int = Int (portIdx)
         
@@ -878,7 +878,7 @@ open class GraphNode: GraphElement {
     /// Returns the corresponding slot index of the input port with the given `portIdx`.
     public final func getInputPortSlot (portIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_port_idx: Int = Int (portIdx)
         
@@ -930,7 +930,7 @@ open class GraphNode: GraphElement {
     /// Returns the position of the output port with the given `portIdx`.
     public final func getOutputPortPosition (portIdx: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_port_idx: Int = Int (portIdx)
         
@@ -964,7 +964,7 @@ open class GraphNode: GraphElement {
     /// Returns the type of the output port with the given `portIdx`.
     public final func getOutputPortType (portIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_port_idx: Int = Int (portIdx)
         
@@ -998,7 +998,7 @@ open class GraphNode: GraphElement {
     /// Returns the ``Color`` of the output port with the given `portIdx`.
     public final func getOutputPortColor (portIdx: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_port_idx: Int = Int (portIdx)
         
@@ -1032,7 +1032,7 @@ open class GraphNode: GraphElement {
     /// Returns the corresponding slot index of the output port with the given `portIdx`.
     public final func getOutputPortSlot (portIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_port_idx: Int = Int (portIdx)
         

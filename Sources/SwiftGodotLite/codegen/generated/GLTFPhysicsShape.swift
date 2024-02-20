@@ -115,7 +115,7 @@ open class GLTFPhysicsShape: Resource {
     /// Create a new GLTFPhysicsShape instance from the given Godot ``CollisionShape3D`` node.
     public static func fromNode (shapeNode: CollisionShape3D?)-> GLTFPhysicsShape? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_shape_node_handle = shapeNode?.handle
         
@@ -148,7 +148,7 @@ open class GLTFPhysicsShape: Resource {
     /// Converts this GLTFPhysicsShape instance into a Godot ``CollisionShape3D`` node.
     public final func toNode (cacheShapes: Bool = false)-> CollisionShape3D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_cache_shapes = cacheShapes
         
@@ -182,7 +182,7 @@ open class GLTFPhysicsShape: Resource {
     /// Creates a new GLTFPhysicsShape instance by parsing the given ``GDictionary``.
     public static func fromDictionary (_ dictionary: GDictionary)-> GLTFPhysicsShape? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFPhysicsShape.method_from_dictionary, nil, &_result, &dictionary.content)
@@ -249,7 +249,7 @@ open class GLTFPhysicsShape: Resource {
     
     @inline(__always)
     fileprivate final func set_shape_type (_ shapeType: String) {
-        #if true
+        #if false
         
         let gstr_shape_type = GString (shapeType)
         
@@ -299,7 +299,7 @@ open class GLTFPhysicsShape: Resource {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -349,7 +349,7 @@ open class GLTFPhysicsShape: Resource {
     
     @inline(__always)
     fileprivate final func set_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -399,7 +399,7 @@ open class GLTFPhysicsShape: Resource {
     
     @inline(__always)
     fileprivate final func set_height (_ height: Double) {
-        #if true
+        #if false
         
         var copy_height = height
         
@@ -449,7 +449,7 @@ open class GLTFPhysicsShape: Resource {
     
     @inline(__always)
     fileprivate final func set_is_trigger (_ isTrigger: Bool) {
-        #if true
+        #if false
         
         var copy_is_trigger = isTrigger
         
@@ -499,7 +499,7 @@ open class GLTFPhysicsShape: Resource {
     
     @inline(__always)
     fileprivate final func set_mesh_index (_ meshIndex: Int32) {
-        #if true
+        #if false
         
         var copy_mesh_index: Int = Int (meshIndex)
         
@@ -549,7 +549,7 @@ open class GLTFPhysicsShape: Resource {
     
     @inline(__always)
     fileprivate final func set_importer_mesh (_ importerMesh: ImporterMesh?) {
-        #if true
+        #if false
         
         var copy_importer_mesh_handle = importerMesh?.handle
         

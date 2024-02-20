@@ -30,7 +30,7 @@ open class JavaClassWrapper: Object {
     /// 
     public static func wrap (name: String)-> JavaClass? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         

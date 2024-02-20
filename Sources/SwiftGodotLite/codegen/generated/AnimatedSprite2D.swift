@@ -159,7 +159,7 @@ open class AnimatedSprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_sprite_frames (_ spriteFrames: SpriteFrames?) {
-        #if true
+        #if false
         
         var copy_sprite_frames_handle = spriteFrames?.handle
         
@@ -208,7 +208,7 @@ open class AnimatedSprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_animation (_ name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimatedSprite2D.method_set_animation, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -256,7 +256,7 @@ open class AnimatedSprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_autoplay (_ name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -327,7 +327,7 @@ open class AnimatedSprite2D: Node2D {
     /// If this method is called with that same animation `name`, or with no `name` parameter, the assigned animation will resume playing if it was paused.
     /// 
     public final func play (name: StringName = StringName (""), customSpeed: Double = 1.0, fromEnd: Bool = false) {
-        #if true
+        #if false
         
         var copy_custom_speed = customSpeed
         var copy_from_end = fromEnd
@@ -370,7 +370,7 @@ open class AnimatedSprite2D: Node2D {
     /// This method is a shorthand for ``play(name:customSpeed:fromEnd:)`` with `custom_speed = -1.0` and `from_end = true`, so see its description for more information.
     /// 
     public final func playBackwards (name: StringName = StringName ("")) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimatedSprite2D.method_play_backwards, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -435,7 +435,7 @@ open class AnimatedSprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_centered (_ centered: Bool) {
-        #if true
+        #if false
         
         var copy_centered = centered
         
@@ -485,7 +485,7 @@ open class AnimatedSprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -535,7 +535,7 @@ open class AnimatedSprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_flip_h (_ flipH: Bool) {
-        #if true
+        #if false
         
         var copy_flip_h = flipH
         
@@ -585,7 +585,7 @@ open class AnimatedSprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_flip_v (_ flipV: Bool) {
-        #if true
+        #if false
         
         var copy_flip_v = flipV
         
@@ -635,7 +635,7 @@ open class AnimatedSprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_frame (_ frame: Int32) {
-        #if true
+        #if false
         
         var copy_frame: Int = Int (frame)
         
@@ -685,7 +685,7 @@ open class AnimatedSprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_frame_progress (_ progress: Double) {
-        #if true
+        #if false
         
         var copy_progress = progress
         
@@ -740,7 +740,7 @@ open class AnimatedSprite2D: Node2D {
     /// **Example:**
     /// 
     public final func setFrameAndProgress (frame: Int32, progress: Double) {
-        #if true
+        #if false
         
         var copy_frame: Int = Int (frame)
         var copy_progress = progress
@@ -777,7 +777,7 @@ open class AnimatedSprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_speed_scale (_ speedScale: Double) {
-        #if true
+        #if false
         
         var copy_speed_scale = speedScale
         

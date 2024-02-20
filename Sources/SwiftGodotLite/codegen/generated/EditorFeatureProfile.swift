@@ -48,7 +48,7 @@ open class EditorFeatureProfile: RefCounted {
     
     /// If `disable` is `true`, disables the class specified by `className`. When disabled, the class won't appear in the Create New Node dialog.
     public final func setDisableClass (className: StringName, disable: Bool) {
-        #if true
+        #if false
         
         var copy_disable = disable
         
@@ -84,7 +84,7 @@ open class EditorFeatureProfile: RefCounted {
     /// Returns `true` if the class specified by `className` is disabled. When disabled, the class won't appear in the Create New Node dialog.
     public final func isClassDisabled (className: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorFeatureProfile.method_is_class_disabled, UnsafeMutableRawPointer (mutating: handle), &_result, &className.content)
@@ -115,7 +115,7 @@ open class EditorFeatureProfile: RefCounted {
     
     /// If `disable` is `true`, disables editing for the class specified by `className`. When disabled, the class will still appear in the Create New Node dialog but the Inspector will be read-only when selecting a node that extends the class.
     public final func setDisableClassEditor (className: StringName, disable: Bool) {
-        #if true
+        #if false
         
         var copy_disable = disable
         
@@ -151,7 +151,7 @@ open class EditorFeatureProfile: RefCounted {
     /// Returns `true` if editing for the class specified by `className` is disabled. When disabled, the class will still appear in the Create New Node dialog but the Inspector will be read-only when selecting a node that extends the class.
     public final func isClassEditorDisabled (className: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorFeatureProfile.method_is_class_editor_disabled, UnsafeMutableRawPointer (mutating: handle), &_result, &className.content)
@@ -182,7 +182,7 @@ open class EditorFeatureProfile: RefCounted {
     
     /// If `disable` is `true`, disables editing for `property` in the class specified by `className`. When a property is disabled, it won't appear in the Inspector when selecting a node that extends the class specified by `className`.
     public final func setDisableClassProperty (className: StringName, property: StringName, disable: Bool) {
-        #if true
+        #if false
         
         var copy_disable = disable
         
@@ -221,7 +221,7 @@ open class EditorFeatureProfile: RefCounted {
     /// Returns `true` if `property` is disabled in the class specified by `className`. When a property is disabled, it won't appear in the Inspector when selecting a node that extends the class specified by `className`.
     public final func isClassPropertyDisabled (className: StringName, property: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorFeatureProfile.method_is_class_property_disabled, UnsafeMutableRawPointer (mutating: handle), &_result, &className.content, &property.content)
@@ -255,7 +255,7 @@ open class EditorFeatureProfile: RefCounted {
     
     /// If `disable` is `true`, disables the editor feature specified in `feature`. When a feature is disabled, it will disappear from the editor entirely.
     public final func setDisableFeature (_ feature: EditorFeatureProfile.Feature, disable: Bool) {
-        #if true
+        #if false
         
         var copy_feature = Int64 (feature.rawValue)
         var copy_disable = disable
@@ -293,7 +293,7 @@ open class EditorFeatureProfile: RefCounted {
     /// Returns `true` if the `feature` is disabled. When a feature is disabled, it will disappear from the editor entirely.
     public final func isFeatureDisabled (feature: EditorFeatureProfile.Feature)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_feature = Int64 (feature.rawValue)
         
@@ -327,7 +327,7 @@ open class EditorFeatureProfile: RefCounted {
     /// Returns the specified `feature`'s human-readable name.
     public final func getFeatureName (feature: EditorFeatureProfile.Feature)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_feature = Int64 (feature.rawValue)
         
@@ -364,7 +364,7 @@ open class EditorFeatureProfile: RefCounted {
     /// 
     public final func saveToFile (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -401,7 +401,7 @@ open class EditorFeatureProfile: RefCounted {
     /// 
     public final func loadFromFile (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         

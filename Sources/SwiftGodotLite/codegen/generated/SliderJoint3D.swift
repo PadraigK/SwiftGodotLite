@@ -73,7 +73,7 @@ open class SliderJoint3D: Joint3D {
     
     /// 
     public final func setParam (_ param: SliderJoint3D.Param, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -111,7 +111,7 @@ open class SliderJoint3D: Joint3D {
     /// 
     public final func getParam (_ param: SliderJoint3D.Param)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         

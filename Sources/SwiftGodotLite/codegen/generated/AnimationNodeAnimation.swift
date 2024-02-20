@@ -58,7 +58,7 @@ open class AnimationNodeAnimation: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_animation (_ name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNodeAnimation.method_set_animation, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -106,7 +106,7 @@ open class AnimationNodeAnimation: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_play_mode (_ mode: AnimationNodeAnimation.PlayMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

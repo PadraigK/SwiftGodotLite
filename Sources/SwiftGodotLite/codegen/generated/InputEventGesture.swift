@@ -39,7 +39,7 @@ open class InputEventGesture: InputEventWithModifiers {
     
     @inline(__always)
     fileprivate final func set_position (_ position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         

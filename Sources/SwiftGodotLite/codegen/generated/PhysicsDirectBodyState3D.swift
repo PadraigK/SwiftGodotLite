@@ -316,7 +316,7 @@ open class PhysicsDirectBodyState3D: Object {
     
     @inline(__always)
     fileprivate final func set_linear_velocity (_ velocity: Vector3) {
-        #if true
+        #if false
         
         var copy_velocity = velocity
         
@@ -366,7 +366,7 @@ open class PhysicsDirectBodyState3D: Object {
     
     @inline(__always)
     fileprivate final func set_angular_velocity (_ velocity: Vector3) {
-        #if true
+        #if false
         
         var copy_velocity = velocity
         
@@ -416,7 +416,7 @@ open class PhysicsDirectBodyState3D: Object {
     
     @inline(__always)
     fileprivate final func set_transform (_ transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -467,7 +467,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// Returns the body's velocity at the given relative position, including both translation and rotation.
     public final func getVelocityAtLocalPosition (_ localPosition: Vector3)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_local_position = localPosition
         
@@ -505,7 +505,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// This is equivalent to using ``applyImpulse(_:position:)`` at the body's center of mass.
     /// 
     public final func applyCentralImpulse (_ impulse: Vector3 = Vector3 (x: 0, y: 0, z: 0)) {
-        #if true
+        #if false
         
         var copy_impulse = impulse
         
@@ -542,7 +542,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// `position` is the offset from the body origin in global coordinates.
     /// 
     public final func applyImpulse (_ impulse: Vector3, position: Vector3 = Vector3 (x: 0, y: 0, z: 0)) {
-        #if true
+        #if false
         
         var copy_impulse = impulse
         var copy_position = position
@@ -584,7 +584,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// > Note: ``inverseInertia`` is required for this to work. To have ``inverseInertia``, an active ``CollisionShape3D`` must be a child of the node, or you can manually set ``inverseInertia``.
     /// 
     public final func applyTorqueImpulse (_ impulse: Vector3) {
-        #if true
+        #if false
         
         var copy_impulse = impulse
         
@@ -619,7 +619,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// This is equivalent to using ``applyForce(_:position:)`` at the body's center of mass.
     /// 
     public final func applyCentralForce (_ force: Vector3 = Vector3 (x: 0, y: 0, z: 0)) {
-        #if true
+        #if false
         
         var copy_force = force
         
@@ -654,7 +654,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// `position` is the offset from the body origin in global coordinates.
     /// 
     public final func applyForce (_ force: Vector3, position: Vector3 = Vector3 (x: 0, y: 0, z: 0)) {
-        #if true
+        #if false
         
         var copy_force = force
         var copy_position = position
@@ -694,7 +694,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// > Note: ``inverseInertia`` is required for this to work. To have ``inverseInertia``, an active ``CollisionShape3D`` must be a child of the node, or you can manually set ``inverseInertia``.
     /// 
     public final func applyTorque (_ torque: Vector3) {
-        #if true
+        #if false
         
         var copy_torque = torque
         
@@ -729,7 +729,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// This is equivalent to using ``addConstantForce(_:position:)`` at the body's center of mass.
     /// 
     public final func addConstantCentralForce (_ force: Vector3 = Vector3 (x: 0, y: 0, z: 0)) {
-        #if true
+        #if false
         
         var copy_force = force
         
@@ -764,7 +764,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// `position` is the offset from the body origin in global coordinates.
     /// 
     public final func addConstantForce (_ force: Vector3, position: Vector3 = Vector3 (x: 0, y: 0, z: 0)) {
-        #if true
+        #if false
         
         var copy_force = force
         var copy_position = position
@@ -801,7 +801,7 @@ open class PhysicsDirectBodyState3D: Object {
     
     /// Adds a constant rotational force without affecting position that keeps being applied over time until cleared with `constant_torque = Vector3(0, 0, 0)`.
     public final func addConstantTorque (_ torque: Vector3) {
-        #if true
+        #if false
         
         var copy_torque = torque
         
@@ -836,7 +836,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// See ``addConstantForce(_:position:)`` and ``addConstantCentralForce(_:)``.
     /// 
     public final func setConstantForce (_ force: Vector3) {
-        #if true
+        #if false
         
         var copy_force = force
         
@@ -892,7 +892,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// See ``addConstantTorque(_:)``.
     /// 
     public final func setConstantTorque (_ torque: Vector3) {
-        #if true
+        #if false
         
         var copy_torque = torque
         
@@ -945,7 +945,7 @@ open class PhysicsDirectBodyState3D: Object {
     
     @inline(__always)
     fileprivate final func set_sleep_state (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1017,7 +1017,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// Returns the position of the contact point on the body in the global coordinate system.
     public final func getContactLocalPosition (contactIdx: Int32)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_contact_idx: Int = Int (contactIdx)
         
@@ -1051,7 +1051,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// Returns the local normal at the contact point.
     public final func getContactLocalNormal (contactIdx: Int32)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_contact_idx: Int = Int (contactIdx)
         
@@ -1085,7 +1085,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// Impulse created by the contact.
     public final func getContactImpulse (contactIdx: Int32)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_contact_idx: Int = Int (contactIdx)
         
@@ -1119,7 +1119,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// Returns the local shape index of the collision.
     public final func getContactLocalShape (contactIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_contact_idx: Int = Int (contactIdx)
         
@@ -1153,7 +1153,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// Returns the linear velocity vector at the body's contact point.
     public final func getContactLocalVelocityAtPosition (contactIdx: Int32)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_contact_idx: Int = Int (contactIdx)
         
@@ -1187,7 +1187,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// Returns the collider's ``RID``.
     public final func getContactCollider (contactIdx: Int32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_contact_idx: Int = Int (contactIdx)
         
@@ -1221,7 +1221,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// Returns the position of the contact point on the collider in the global coordinate system.
     public final func getContactColliderPosition (contactIdx: Int32)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_contact_idx: Int = Int (contactIdx)
         
@@ -1255,7 +1255,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// Returns the collider's object id.
     public final func getContactColliderId (contactIdx: Int32)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         var copy_contact_idx: Int = Int (contactIdx)
         
@@ -1289,7 +1289,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// Returns the collider object.
     public final func getContactColliderObject (contactIdx: Int32)-> Object? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_contact_idx: Int = Int (contactIdx)
         
@@ -1323,7 +1323,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// Returns the collider's shape index.
     public final func getContactColliderShape (contactIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_contact_idx: Int = Int (contactIdx)
         
@@ -1357,7 +1357,7 @@ open class PhysicsDirectBodyState3D: Object {
     /// Returns the linear velocity vector at the collider's contact point.
     public final func getContactColliderVelocityAtPosition (contactIdx: Int32)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_contact_idx: Int = Int (contactIdx)
         

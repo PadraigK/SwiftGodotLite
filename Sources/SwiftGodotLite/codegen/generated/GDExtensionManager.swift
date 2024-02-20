@@ -48,7 +48,7 @@ open class GDExtensionManager: Object {
     /// 
     public static func loadExtension (path: String)-> GDExtensionManager.LoadStatus {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -82,7 +82,7 @@ open class GDExtensionManager: Object {
     /// 
     public static func reloadExtension (path: String)-> GDExtensionManager.LoadStatus {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -116,7 +116,7 @@ open class GDExtensionManager: Object {
     /// 
     public static func unloadExtension (path: String)-> GDExtensionManager.LoadStatus {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -150,7 +150,7 @@ open class GDExtensionManager: Object {
     /// 
     public static func isExtensionLoaded (path: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -202,7 +202,7 @@ open class GDExtensionManager: Object {
     /// 
     public static func getExtension (path: String)-> GDExtension? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         

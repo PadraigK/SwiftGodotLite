@@ -44,7 +44,7 @@ open class AudioEffectRecord: AudioEffect {
     
     /// If `true`, the sound will be recorded. Note that restarting the recording will remove the previously recorded sample.
     public final func setRecordingActive (record: Bool) {
-        #if true
+        #if false
         
         var copy_record = record
         
@@ -94,7 +94,7 @@ open class AudioEffectRecord: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_format (_ format: AudioStreamWAV.Format) {
-        #if true
+        #if false
         
         var copy_format = Int64 (format.rawValue)
         

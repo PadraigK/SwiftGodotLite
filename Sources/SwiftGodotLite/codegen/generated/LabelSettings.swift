@@ -135,7 +135,7 @@ open class LabelSettings: Resource {
     
     @inline(__always)
     fileprivate final func set_line_spacing (_ spacing: Double) {
-        #if true
+        #if false
         
         var copy_spacing = spacing
         
@@ -185,7 +185,7 @@ open class LabelSettings: Resource {
     
     @inline(__always)
     fileprivate final func set_font (_ font: Font?) {
-        #if true
+        #if false
         
         var copy_font_handle = font?.handle
         
@@ -234,7 +234,7 @@ open class LabelSettings: Resource {
     
     @inline(__always)
     fileprivate final func set_font_size (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -284,7 +284,7 @@ open class LabelSettings: Resource {
     
     @inline(__always)
     fileprivate final func set_font_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -334,7 +334,7 @@ open class LabelSettings: Resource {
     
     @inline(__always)
     fileprivate final func set_outline_size (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -384,7 +384,7 @@ open class LabelSettings: Resource {
     
     @inline(__always)
     fileprivate final func set_outline_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -434,7 +434,7 @@ open class LabelSettings: Resource {
     
     @inline(__always)
     fileprivate final func set_shadow_size (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -484,7 +484,7 @@ open class LabelSettings: Resource {
     
     @inline(__always)
     fileprivate final func set_shadow_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -534,7 +534,7 @@ open class LabelSettings: Resource {
     
     @inline(__always)
     fileprivate final func set_shadow_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         

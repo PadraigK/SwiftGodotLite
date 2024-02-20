@@ -396,7 +396,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_mass (_ mass: Double) {
-        #if true
+        #if false
         
         var copy_mass = mass
         
@@ -464,7 +464,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_inertia (_ inertia: Double) {
-        #if true
+        #if false
         
         var copy_inertia = inertia
         
@@ -496,7 +496,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_center_of_mass_mode (_ mode: RigidBody2D.CenterOfMassMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -546,7 +546,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_center_of_mass (_ centerOfMass: Vector2) {
-        #if true
+        #if false
         
         var copy_center_of_mass = centerOfMass
         
@@ -596,7 +596,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_physics_material_override (_ physicsMaterialOverride: PhysicsMaterial?) {
-        #if true
+        #if false
         
         var copy_physics_material_override_handle = physicsMaterialOverride?.handle
         
@@ -645,7 +645,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_gravity_scale (_ gravityScale: Double) {
-        #if true
+        #if false
         
         var copy_gravity_scale = gravityScale
         
@@ -695,7 +695,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_linear_damp_mode (_ linearDampMode: RigidBody2D.DampMode) {
-        #if true
+        #if false
         
         var copy_linear_damp_mode = Int64 (linearDampMode.rawValue)
         
@@ -745,7 +745,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_angular_damp_mode (_ angularDampMode: RigidBody2D.DampMode) {
-        #if true
+        #if false
         
         var copy_angular_damp_mode = Int64 (angularDampMode.rawValue)
         
@@ -795,7 +795,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_linear_damp (_ linearDamp: Double) {
-        #if true
+        #if false
         
         var copy_linear_damp = linearDamp
         
@@ -845,7 +845,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_angular_damp (_ angularDamp: Double) {
-        #if true
+        #if false
         
         var copy_angular_damp = angularDamp
         
@@ -895,7 +895,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_linear_velocity (_ linearVelocity: Vector2) {
-        #if true
+        #if false
         
         var copy_linear_velocity = linearVelocity
         
@@ -945,7 +945,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_angular_velocity (_ angularVelocity: Double) {
-        #if true
+        #if false
         
         var copy_angular_velocity = angularVelocity
         
@@ -995,7 +995,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_max_contacts_reported (_ amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -1066,7 +1066,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_use_custom_integrator (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1116,7 +1116,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_contact_monitor (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1166,7 +1166,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_continuous_collision_detection_mode (_ mode: RigidBody2D.CCDMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1216,7 +1216,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     /// Sets the body's velocity on the given axis. The velocity in the given vector axis will be set as the given vector length. This is useful for jumping behavior.
     public final func setAxisVelocity (_ axisVelocity: Vector2) {
-        #if true
+        #if false
         
         var copy_axis_velocity = axisVelocity
         
@@ -1253,7 +1253,7 @@ open class RigidBody2D: PhysicsBody2D {
     /// This is equivalent to using ``applyImpulse(_:position:)`` at the body's center of mass.
     /// 
     public final func applyCentralImpulse (_ impulse: Vector2 = Vector2 (x: 0, y: 0)) {
-        #if true
+        #if false
         
         var copy_impulse = impulse
         
@@ -1290,7 +1290,7 @@ open class RigidBody2D: PhysicsBody2D {
     /// `position` is the offset from the body origin in global coordinates.
     /// 
     public final func applyImpulse (_ impulse: Vector2, position: Vector2 = Vector2 (x: 0, y: 0)) {
-        #if true
+        #if false
         
         var copy_impulse = impulse
         var copy_position = position
@@ -1332,7 +1332,7 @@ open class RigidBody2D: PhysicsBody2D {
     /// > Note: ``inertia`` is required for this to work. To have ``inertia``, an active ``CollisionShape2D`` must be a child of the node, or you can manually set ``inertia``.
     /// 
     public final func applyTorqueImpulse (torque: Double) {
-        #if true
+        #if false
         
         var copy_torque = torque
         
@@ -1367,7 +1367,7 @@ open class RigidBody2D: PhysicsBody2D {
     /// This is equivalent to using ``applyForce(_:position:)`` at the body's center of mass.
     /// 
     public final func applyCentralForce (_ force: Vector2) {
-        #if true
+        #if false
         
         var copy_force = force
         
@@ -1402,7 +1402,7 @@ open class RigidBody2D: PhysicsBody2D {
     /// `position` is the offset from the body origin in global coordinates.
     /// 
     public final func applyForce (_ force: Vector2, position: Vector2 = Vector2 (x: 0, y: 0)) {
-        #if true
+        #if false
         
         var copy_force = force
         var copy_position = position
@@ -1442,7 +1442,7 @@ open class RigidBody2D: PhysicsBody2D {
     /// > Note: ``inertia`` is required for this to work. To have ``inertia``, an active ``CollisionShape2D`` must be a child of the node, or you can manually set ``inertia``.
     /// 
     public final func applyTorque (_ torque: Double) {
-        #if true
+        #if false
         
         var copy_torque = torque
         
@@ -1477,7 +1477,7 @@ open class RigidBody2D: PhysicsBody2D {
     /// This is equivalent to using ``addConstantForce(_:position:)`` at the body's center of mass.
     /// 
     public final func addConstantCentralForce (_ force: Vector2) {
-        #if true
+        #if false
         
         var copy_force = force
         
@@ -1512,7 +1512,7 @@ open class RigidBody2D: PhysicsBody2D {
     /// `position` is the offset from the body origin in global coordinates.
     /// 
     public final func addConstantForce (_ force: Vector2, position: Vector2 = Vector2 (x: 0, y: 0)) {
-        #if true
+        #if false
         
         var copy_force = force
         var copy_position = position
@@ -1549,7 +1549,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     /// Adds a constant rotational force without affecting position that keeps being applied over time until cleared with `constant_torque = 0`.
     public final func addConstantTorque (_ torque: Double) {
-        #if true
+        #if false
         
         var copy_torque = torque
         
@@ -1581,7 +1581,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_constant_force (_ force: Vector2) {
-        #if true
+        #if false
         
         var copy_force = force
         
@@ -1631,7 +1631,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_constant_torque (_ torque: Double) {
-        #if true
+        #if false
         
         var copy_torque = torque
         
@@ -1681,7 +1681,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_sleeping (_ sleeping: Bool) {
-        #if true
+        #if false
         
         var copy_sleeping = sleeping
         
@@ -1731,7 +1731,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_can_sleep (_ ableToSleep: Bool) {
-        #if true
+        #if false
         
         var copy_able_to_sleep = ableToSleep
         
@@ -1781,7 +1781,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_lock_rotation_enabled (_ lockRotation: Bool) {
-        #if true
+        #if false
         
         var copy_lock_rotation = lockRotation
         
@@ -1831,7 +1831,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_freeze_enabled (_ freezeMode: Bool) {
-        #if true
+        #if false
         
         var copy_freeze_mode = freezeMode
         
@@ -1881,7 +1881,7 @@ open class RigidBody2D: PhysicsBody2D {
     
     @inline(__always)
     fileprivate final func set_freeze_mode (_ freezeMode: RigidBody2D.FreezeMode) {
-        #if true
+        #if false
         
         var copy_freeze_mode = Int64 (freezeMode.rawValue)
         

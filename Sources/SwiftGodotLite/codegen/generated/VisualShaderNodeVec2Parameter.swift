@@ -51,7 +51,7 @@ open class VisualShaderNodeVec2Parameter: VisualShaderNodeParameter {
     
     @inline(__always)
     fileprivate final func set_default_value_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -101,7 +101,7 @@ open class VisualShaderNodeVec2Parameter: VisualShaderNodeParameter {
     
     @inline(__always)
     fileprivate final func set_default_value (_ value: Vector2) {
-        #if true
+        #if false
         
         var copy_value = value
         

@@ -45,7 +45,7 @@ open class Shortcut: Resource {
     
     @inline(__always)
     fileprivate final func set_events (_ events: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Shortcut.method_set_events, UnsafeMutableRawPointer (mutating: handle), nil, &events.content)
@@ -112,7 +112,7 @@ open class Shortcut: Resource {
     /// Returns whether any ``InputEvent`` in ``events`` equals `event`.
     public final func matchesEvent (_ event: InputEvent?)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_event_handle = event?.handle
         

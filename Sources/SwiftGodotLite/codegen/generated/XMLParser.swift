@@ -158,7 +158,7 @@ open class XMLParser: RefCounted {
     /// Returns the name of an attribute of the currently parsed element, specified by the `idx` index.
     public final func getAttributeName (idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -192,7 +192,7 @@ open class XMLParser: RefCounted {
     /// Returns the value of an attribute of the currently parsed element, specified by the `idx` index.
     public final func getAttributeValue (idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -226,7 +226,7 @@ open class XMLParser: RefCounted {
     /// Returns `true` if the currently parsed element has an attribute with the `name`.
     public final func hasAttribute (name: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -260,7 +260,7 @@ open class XMLParser: RefCounted {
     /// Returns the value of an attribute of the currently parsed element, specified by its `name`. This method will raise an error if the element has no such attribute.
     public final func getNamedAttributeValue (name: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -294,7 +294,7 @@ open class XMLParser: RefCounted {
     /// Returns the value of an attribute of the currently parsed element, specified by its `name`. This method will return an empty string if the element has no such attribute.
     public final func getNamedAttributeValueSafe (name: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -380,7 +380,7 @@ open class XMLParser: RefCounted {
     /// Moves the buffer cursor to a certain offset (since the beginning) and reads the next node there. This method returns an error code.
     public final func seek (position: UInt)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -414,7 +414,7 @@ open class XMLParser: RefCounted {
     /// Opens an XML `file` for parsing. This method returns an error code.
     public final func open (file: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_file = GString (file)
         
@@ -448,7 +448,7 @@ open class XMLParser: RefCounted {
     /// Opens an XML raw `buffer` for parsing. This method returns an error code.
     public final func openBuffer (_ buffer: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XMLParser.method_open_buffer, UnsafeMutableRawPointer (mutating: handle), &_result, &buffer.content)

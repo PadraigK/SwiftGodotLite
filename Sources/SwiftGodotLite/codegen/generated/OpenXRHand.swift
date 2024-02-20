@@ -81,7 +81,7 @@ open class OpenXRHand: Node3D {
     
     @inline(__always)
     fileprivate final func set_hand (_ hand: OpenXRHand.Hands) {
-        #if true
+        #if false
         
         var copy_hand = Int64 (hand.rawValue)
         
@@ -131,7 +131,7 @@ open class OpenXRHand: Node3D {
     
     @inline(__always)
     fileprivate final func set_hand_skeleton (_ handSkeleton: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (OpenXRHand.method_set_hand_skeleton, UnsafeMutableRawPointer (mutating: handle), nil, &handSkeleton.content)
@@ -179,7 +179,7 @@ open class OpenXRHand: Node3D {
     
     @inline(__always)
     fileprivate final func set_motion_range (_ motionRange: OpenXRHand.MotionRange) {
-        #if true
+        #if false
         
         var copy_motion_range = Int64 (motionRange.rawValue)
         

@@ -115,7 +115,7 @@ open class PhysicsTestMotionResult3D: RefCounted {
     /// Returns the point of collision in global coordinates given a collision index (the deepest collision by default), if a collision occurred.
     public final func getCollisionPoint (collisionIndex: Int32 = 0)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_collision_index: Int = Int (collisionIndex)
         
@@ -149,7 +149,7 @@ open class PhysicsTestMotionResult3D: RefCounted {
     /// Returns the colliding body's shape's normal at the point of collision given a collision index (the deepest collision by default), if a collision occurred.
     public final func getCollisionNormal (collisionIndex: Int32 = 0)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_collision_index: Int = Int (collisionIndex)
         
@@ -183,7 +183,7 @@ open class PhysicsTestMotionResult3D: RefCounted {
     /// Returns the colliding body's velocity given a collision index (the deepest collision by default), if a collision occurred.
     public final func getColliderVelocity (collisionIndex: Int32 = 0)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_collision_index: Int = Int (collisionIndex)
         
@@ -217,7 +217,7 @@ open class PhysicsTestMotionResult3D: RefCounted {
     /// Returns the unique instance ID of the colliding body's attached ``Object`` given a collision index (the deepest collision by default), if a collision occurred. See ``Object/getInstanceId()``.
     public final func getColliderId (collisionIndex: Int32 = 0)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         var copy_collision_index: Int = Int (collisionIndex)
         
@@ -251,7 +251,7 @@ open class PhysicsTestMotionResult3D: RefCounted {
     /// Returns the colliding body's ``RID`` used by the ``PhysicsServer3D`` given a collision index (the deepest collision by default), if a collision occurred.
     public final func getColliderRid (collisionIndex: Int32 = 0)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_collision_index: Int = Int (collisionIndex)
         
@@ -285,7 +285,7 @@ open class PhysicsTestMotionResult3D: RefCounted {
     /// Returns the colliding body's attached ``Object`` given a collision index (the deepest collision by default), if a collision occurred.
     public final func getCollider (collisionIndex: Int32 = 0)-> Object? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_collision_index: Int = Int (collisionIndex)
         
@@ -319,7 +319,7 @@ open class PhysicsTestMotionResult3D: RefCounted {
     /// Returns the colliding body's shape index given a collision index (the deepest collision by default), if a collision occurred. See ``CollisionObject3D``.
     public final func getColliderShape (collisionIndex: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_collision_index: Int = Int (collisionIndex)
         
@@ -353,7 +353,7 @@ open class PhysicsTestMotionResult3D: RefCounted {
     /// Returns the moving object's colliding shape given a collision index (the deepest collision by default), if a collision occurred.
     public final func getCollisionLocalShape (collisionIndex: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_collision_index: Int = Int (collisionIndex)
         
@@ -387,7 +387,7 @@ open class PhysicsTestMotionResult3D: RefCounted {
     /// Returns the length of overlap along the collision normal given a collision index (the deepest collision by default), if a collision occurred.
     public final func getCollisionDepth (collisionIndex: Int32 = 0)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_collision_index: Int = Int (collisionIndex)
         

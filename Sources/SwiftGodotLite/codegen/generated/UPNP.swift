@@ -166,7 +166,7 @@ open class UPNP: RefCounted {
     /// Returns the ``UPNPDevice`` at the given `index`.
     public final func getDevice (index: Int32)-> UPNPDevice? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -199,7 +199,7 @@ open class UPNP: RefCounted {
     
     /// Adds the given ``UPNPDevice`` to the list of discovered devices.
     public final func addDevice (_ device: UPNPDevice?) {
-        #if true
+        #if false
         
         var copy_device_handle = device?.handle
         
@@ -230,7 +230,7 @@ open class UPNP: RefCounted {
     
     /// Sets the device at `index` from the list of discovered devices to `device`.
     public final func setDevice (index: Int32, device: UPNPDevice?) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_device_handle = device?.handle
@@ -266,7 +266,7 @@ open class UPNP: RefCounted {
     
     /// Removes the device at `index` from the list of discovered devices.
     public final func removeDevice (index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -338,7 +338,7 @@ open class UPNP: RefCounted {
     /// 
     public final func discover (timeout: Int32 = 2000, ttl: Int32 = 2, deviceFilter: String = "InternetGatewayDevice")-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_timeout: Int = Int (timeout)
         var copy_ttl: Int = Int (ttl)
@@ -411,7 +411,7 @@ open class UPNP: RefCounted {
     /// 
     public final func addPortMapping (port: Int32, portInternal: Int32 = 0, desc: String = "", proto: String = "UDP", duration: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_port: Int = Int (port)
         var copy_port_internal: Int = Int (portInternal)
@@ -465,7 +465,7 @@ open class UPNP: RefCounted {
     /// Deletes the port mapping for the given port and protocol combination on the default gateway (see ``getGateway()``) if one exists. `port` must be a valid port between 1 and 65535, `proto` can be either `"TCP"` or `"UDP"`. May be refused for mappings pointing to addresses other than this one, for well-known ports (below 1024), or for mappings not added via UPnP. See ``UPNP/UPNPResult`` for possible return values.
     public final func deletePortMapping (port: Int32, proto: String = "UDP")-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_port: Int = Int (port)
         let gstr_proto = GString (proto)
@@ -503,7 +503,7 @@ open class UPNP: RefCounted {
     
     @inline(__always)
     fileprivate final func set_discover_multicast_if (_ mIf: String) {
-        #if true
+        #if false
         
         let gstr_m_if = GString (mIf)
         
@@ -553,7 +553,7 @@ open class UPNP: RefCounted {
     
     @inline(__always)
     fileprivate final func set_discover_local_port (_ port: Int32) {
-        #if true
+        #if false
         
         var copy_port: Int = Int (port)
         
@@ -603,7 +603,7 @@ open class UPNP: RefCounted {
     
     @inline(__always)
     fileprivate final func set_discover_ipv6 (_ ipv6: Bool) {
-        #if true
+        #if false
         
         var copy_ipv6 = ipv6
         

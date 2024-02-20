@@ -253,7 +253,7 @@ open class Decal: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -309,7 +309,7 @@ open class Decal: VisualInstance3D {
     /// One case where this is better than accessing the texture directly is when you want to copy one Decal's textures to another. For example:
     /// 
     fileprivate final func set_texture (_ type: Decal.DecalTexture, _ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_texture_handle = texture?.handle
@@ -352,7 +352,7 @@ open class Decal: VisualInstance3D {
     /// 
     fileprivate final func get_texture (_ type: Decal.DecalTexture)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -385,7 +385,7 @@ open class Decal: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_emission_energy (_ energy: Double) {
-        #if true
+        #if false
         
         var copy_energy = energy
         
@@ -435,7 +435,7 @@ open class Decal: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_albedo_mix (_ energy: Double) {
-        #if true
+        #if false
         
         var copy_energy = energy
         
@@ -485,7 +485,7 @@ open class Decal: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_modulate (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -535,7 +535,7 @@ open class Decal: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_upper_fade (_ fade: Double) {
-        #if true
+        #if false
         
         var copy_fade = fade
         
@@ -585,7 +585,7 @@ open class Decal: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_lower_fade (_ fade: Double) {
-        #if true
+        #if false
         
         var copy_fade = fade
         
@@ -635,7 +635,7 @@ open class Decal: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_normal_fade (_ fade: Double) {
-        #if true
+        #if false
         
         var copy_fade = fade
         
@@ -685,7 +685,7 @@ open class Decal: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_enable_distance_fade (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -735,7 +735,7 @@ open class Decal: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_distance_fade_begin (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -785,7 +785,7 @@ open class Decal: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_distance_fade_length (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -835,7 +835,7 @@ open class Decal: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_cull_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         

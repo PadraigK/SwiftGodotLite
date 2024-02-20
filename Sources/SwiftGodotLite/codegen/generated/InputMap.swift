@@ -33,7 +33,7 @@ open class InputMap: Object {
     /// Returns `true` if the ``InputMap`` has a registered action with the given name.
     public static func hasAction (_ action: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (InputMap.method_has_action, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &action.content)
@@ -85,7 +85,7 @@ open class InputMap: Object {
     /// An ``InputEvent`` can then be added to this action with ``actionAddEvent(action:event:)``.
     /// 
     public static func addAction (_ action: StringName, deadzone: Double = 0.5) {
-        #if true
+        #if false
         
         var copy_deadzone = deadzone
         
@@ -120,7 +120,7 @@ open class InputMap: Object {
     
     /// Removes an action from the ``InputMap``.
     public static func eraseAction (_ action: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (InputMap.method_erase_action, UnsafeMutableRawPointer (mutating: shared.handle), nil, &action.content)
@@ -150,7 +150,7 @@ open class InputMap: Object {
     
     /// Sets a deadzone value for the action.
     public static func actionSetDeadzone (action: StringName, deadzone: Double) {
-        #if true
+        #if false
         
         var copy_deadzone = deadzone
         
@@ -186,7 +186,7 @@ open class InputMap: Object {
     /// Returns a deadzone value for the action.
     public static func actionGetDeadzone (action: StringName)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (InputMap.method_action_get_deadzone, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &action.content)
@@ -217,7 +217,7 @@ open class InputMap: Object {
     
     /// Adds an ``InputEvent`` to an action. This ``InputEvent`` will trigger the action.
     public static func actionAddEvent (action: StringName, event: InputEvent?) {
-        #if true
+        #if false
         
         var copy_event_handle = event?.handle
         
@@ -252,7 +252,7 @@ open class InputMap: Object {
     /// Returns `true` if the action has the given ``InputEvent`` associated with it.
     public static func actionHasEvent (action: StringName, event: InputEvent?)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_event_handle = event?.handle
         
@@ -287,7 +287,7 @@ open class InputMap: Object {
     
     /// Removes an ``InputEvent`` from an action.
     public static func actionEraseEvent (action: StringName, event: InputEvent?) {
-        #if true
+        #if false
         
         var copy_event_handle = event?.handle
         
@@ -321,7 +321,7 @@ open class InputMap: Object {
     
     /// Removes all events from an action.
     public static func actionEraseEvents (action: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (InputMap.method_action_erase_events, UnsafeMutableRawPointer (mutating: shared.handle), nil, &action.content)
@@ -355,7 +355,7 @@ open class InputMap: Object {
     /// 
     public static func actionGetEvents (action: StringName)-> ObjectCollection<InputEvent> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (InputMap.method_action_get_events, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &action.content)
@@ -390,7 +390,7 @@ open class InputMap: Object {
     /// 
     public static func eventIsAction (event: InputEvent?, action: StringName, exactMatch: Bool = false)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_exact_match = exactMatch
         var copy_event_handle = event?.handle

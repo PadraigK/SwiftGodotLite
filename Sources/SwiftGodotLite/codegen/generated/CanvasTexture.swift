@@ -117,7 +117,7 @@ open class CanvasTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_diffuse_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -166,7 +166,7 @@ open class CanvasTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_normal_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -215,7 +215,7 @@ open class CanvasTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_specular_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -264,7 +264,7 @@ open class CanvasTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_specular_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -314,7 +314,7 @@ open class CanvasTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_specular_shininess (_ shininess: Double) {
-        #if true
+        #if false
         
         var copy_shininess = shininess
         
@@ -364,7 +364,7 @@ open class CanvasTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_texture_filter (_ filter: CanvasItem.TextureFilter) {
-        #if true
+        #if false
         
         var copy_filter = Int64 (filter.rawValue)
         
@@ -414,7 +414,7 @@ open class CanvasTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_texture_repeat (_ `repeat`: CanvasItem.TextureRepeat) {
-        #if true
+        #if false
         
         var copy_repeat = Int64 (`repeat`.rawValue)
         

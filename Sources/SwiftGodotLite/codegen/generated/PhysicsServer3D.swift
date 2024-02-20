@@ -582,7 +582,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets the shape data that defines its shape and size. The data to be passed depends on the kind of shape created ``shapeGetType(shape:)``.
     public static func shapeSetData (shape: RID, data: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_shape_set_data, UnsafeMutableRawPointer (mutating: shared.handle), nil, &shape.content, &data.content)
@@ -616,7 +616,7 @@ open class PhysicsServer3D: Object {
     /// Returns the type of shape (see ``PhysicsServer3D/ShapeType`` constants).
     public static func shapeGetType (shape: RID)-> PhysicsServer3D.ShapeType {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_shape_get_type, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &shape.content)
@@ -648,7 +648,7 @@ open class PhysicsServer3D: Object {
     /// Returns the shape data.
     public static func shapeGetData (shape: RID)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_shape_get_data, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &shape.content)
@@ -697,7 +697,7 @@ open class PhysicsServer3D: Object {
     
     /// Marks a space as active. It will not have an effect, unless it is assigned to an area or body.
     public static func spaceSetActive (space: RID, active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         
@@ -733,7 +733,7 @@ open class PhysicsServer3D: Object {
     /// Returns whether the space is active.
     public static func spaceIsActive (space: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_space_is_active, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &space.content)
@@ -764,7 +764,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets the value for a space parameter. A list of available parameters is on the ``PhysicsServer3D/SpaceParameter`` constants.
     public static func spaceSetParam (space: RID, param: PhysicsServer3D.SpaceParameter, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -805,7 +805,7 @@ open class PhysicsServer3D: Object {
     /// Returns the value of a space parameter.
     public static func spaceGetParam (space: RID, param: PhysicsServer3D.SpaceParameter)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -842,7 +842,7 @@ open class PhysicsServer3D: Object {
     /// Returns the state of a space, a ``PhysicsDirectSpaceState3D``. This object can be used to make collision/intersection queries.
     public static func spaceGetDirectState (space: RID)-> PhysicsDirectSpaceState3D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_space_get_direct_state, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &space.content)
@@ -891,7 +891,7 @@ open class PhysicsServer3D: Object {
     
     /// Assigns a space to the area.
     public static func areaSetSpace (area: RID, space: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_area_set_space, UnsafeMutableRawPointer (mutating: shared.handle), nil, &area.content, &space.content)
@@ -925,7 +925,7 @@ open class PhysicsServer3D: Object {
     /// Returns the space assigned to the area.
     public static func areaGetSpace (area: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_area_get_space, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &area.content)
@@ -956,7 +956,7 @@ open class PhysicsServer3D: Object {
     
     /// Adds a shape to the area, along with a transform matrix. Shapes are usually referenced by their index, so you should track which shape has a given index.
     public static func areaAddShape (area: RID, shape: RID, transform: Transform3D = Transform3D (xAxis: Vector3 (x: 1, y: 0, z: 0), yAxis: Vector3 (x: 0, y: 1, z: 0), zAxis: Vector3(x: 0, y: 0, z: 1), origin: Vector3 (x: 0, y: 0, z: 0)), disabled: Bool = false) {
-        #if true
+        #if false
         
         var copy_transform = transform
         var copy_disabled = disabled
@@ -999,7 +999,7 @@ open class PhysicsServer3D: Object {
     
     /// Substitutes a given area shape by another. The old shape is selected by its index, the new one by its ``RID``.
     public static func areaSetShape (area: RID, shapeIdx: Int32, shape: RID) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -1037,7 +1037,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets the transform matrix for an area shape.
     public static func areaSetShapeTransform (area: RID, shapeIdx: Int32, transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         var copy_transform = transform
@@ -1077,7 +1077,7 @@ open class PhysicsServer3D: Object {
     
     /// 
     public static func areaSetShapeDisabled (area: RID, shapeIdx: Int32, disabled: Bool) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         var copy_disabled = disabled
@@ -1118,7 +1118,7 @@ open class PhysicsServer3D: Object {
     /// Returns the number of shapes assigned to an area.
     public static func areaGetShapeCount (area: RID)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_area_get_shape_count, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &area.content)
@@ -1150,7 +1150,7 @@ open class PhysicsServer3D: Object {
     /// Returns the ``RID`` of the nth shape of an area.
     public static func areaGetShape (area: RID, shapeIdx: Int32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -1187,7 +1187,7 @@ open class PhysicsServer3D: Object {
     /// Returns the transform matrix of a shape within an area.
     public static func areaGetShapeTransform (area: RID, shapeIdx: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -1223,7 +1223,7 @@ open class PhysicsServer3D: Object {
     
     /// Removes a shape from an area. It does not delete the shape, so it can be reassigned later.
     public static func areaRemoveShape (area: RID, shapeIdx: Int32) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -1258,7 +1258,7 @@ open class PhysicsServer3D: Object {
     
     /// Removes all shapes from an area. It does not delete the shapes, so they can be reassigned later.
     public static func areaClearShapes (area: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_area_clear_shapes, UnsafeMutableRawPointer (mutating: shared.handle), nil, &area.content)
@@ -1288,7 +1288,7 @@ open class PhysicsServer3D: Object {
     
     /// Assigns the area to one or many physics layers.
     public static func areaSetCollisionLayer (area: RID, layer: UInt32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -1324,7 +1324,7 @@ open class PhysicsServer3D: Object {
     /// Returns the physics layer or layers an area belongs to.
     public static func areaGetCollisionLayer (area: RID)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_area_get_collision_layer, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &area.content)
@@ -1355,7 +1355,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets which physics layers the area will monitor.
     public static func areaSetCollisionMask (area: RID, mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -1391,7 +1391,7 @@ open class PhysicsServer3D: Object {
     /// Returns the physics layer or layers an area can contact with.
     public static func areaGetCollisionMask (area: RID)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_area_get_collision_mask, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &area.content)
@@ -1422,7 +1422,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets the value for an area parameter. A list of available parameters is on the ``PhysicsServer3D/AreaParameter`` constants.
     public static func areaSetParam (area: RID, param: PhysicsServer3D.AreaParameter, value: Variant) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -1460,7 +1460,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets the transform matrix for an area.
     public static func areaSetTransform (area: RID, transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -1496,7 +1496,7 @@ open class PhysicsServer3D: Object {
     /// Returns an area parameter value. A list of available parameters is on the ``PhysicsServer3D/AreaParameter`` constants.
     public static func areaGetParam (area: RID, param: PhysicsServer3D.AreaParameter)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -1533,7 +1533,7 @@ open class PhysicsServer3D: Object {
     /// Returns the transform matrix for an area.
     public static func areaGetTransform (area: RID)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_area_get_transform, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &area.content)
@@ -1564,7 +1564,7 @@ open class PhysicsServer3D: Object {
     
     /// Assigns the area to a descendant of ``Object``, so it can exist in the node tree.
     public static func areaAttachObjectInstanceId (area: RID, id: UInt) {
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -1600,7 +1600,7 @@ open class PhysicsServer3D: Object {
     /// Gets the instance ID of the object the area is assigned to.
     public static func areaGetObjectInstanceId (area: RID)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_area_get_object_instance_id, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &area.content)
@@ -1644,7 +1644,7 @@ open class PhysicsServer3D: Object {
     /// By counting (or keeping track of) the shapes that enter and exit, it can be determined if a body (with all its shapes) is entering for the first time or exiting for the last time.
     /// 
     public static func areaSetMonitorCallback (area: RID, callback: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_area_set_monitor_callback, UnsafeMutableRawPointer (mutating: shared.handle), nil, &area.content, &callback.content)
@@ -1690,7 +1690,7 @@ open class PhysicsServer3D: Object {
     /// By counting (or keeping track of) the shapes that enter and exit, it can be determined if an area (with all its shapes) is entering for the first time or exiting for the last time.
     /// 
     public static func areaSetAreaMonitorCallback (area: RID, callback: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_area_set_area_monitor_callback, UnsafeMutableRawPointer (mutating: shared.handle), nil, &area.content, &callback.content)
@@ -1723,7 +1723,7 @@ open class PhysicsServer3D: Object {
     
     /// 
     public static func areaSetMonitorable (area: RID, monitorable: Bool) {
-        #if true
+        #if false
         
         var copy_monitorable = monitorable
         
@@ -1758,7 +1758,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets object pickable with rays.
     public static func areaSetRayPickable (area: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1811,7 +1811,7 @@ open class PhysicsServer3D: Object {
     
     /// Assigns a space to the body (see ``spaceCreate()``).
     public static func bodySetSpace (body: RID, space: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_set_space, UnsafeMutableRawPointer (mutating: shared.handle), nil, &body.content, &space.content)
@@ -1845,7 +1845,7 @@ open class PhysicsServer3D: Object {
     /// Returns the ``RID`` of the space assigned to a body.
     public static func bodyGetSpace (body: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_get_space, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &body.content)
@@ -1876,7 +1876,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets the body mode, from one of the ``PhysicsServer3D/BodyMode`` constants.
     public static func bodySetMode (body: RID, mode: PhysicsServer3D.BodyMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1912,7 +1912,7 @@ open class PhysicsServer3D: Object {
     /// Returns the body mode.
     public static func bodyGetMode (body: RID)-> PhysicsServer3D.BodyMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_get_mode, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -1943,7 +1943,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets the physics layer or layers a body belongs to.
     public static func bodySetCollisionLayer (body: RID, layer: UInt32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -1979,7 +1979,7 @@ open class PhysicsServer3D: Object {
     /// Returns the physics layer or layers a body belongs to.
     public static func bodyGetCollisionLayer (body: RID)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_get_collision_layer, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -2010,7 +2010,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets the physics layer or layers a body can collide with.
     public static func bodySetCollisionMask (body: RID, mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -2046,7 +2046,7 @@ open class PhysicsServer3D: Object {
     /// Returns the physics layer or layers a body can collide with.
     public static func bodyGetCollisionMask (body: RID)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_get_collision_mask, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -2077,7 +2077,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets the body's collision priority.
     public static func bodySetCollisionPriority (body: RID, priority: Double) {
-        #if true
+        #if false
         
         var copy_priority = priority
         
@@ -2113,7 +2113,7 @@ open class PhysicsServer3D: Object {
     /// Returns the body's collision priority.
     public static func bodyGetCollisionPriority (body: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_get_collision_priority, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -2144,7 +2144,7 @@ open class PhysicsServer3D: Object {
     
     /// Adds a shape to the body, along with a transform matrix. Shapes are usually referenced by their index, so you should track which shape has a given index.
     public static func bodyAddShape (body: RID, shape: RID, transform: Transform3D = Transform3D (xAxis: Vector3 (x: 1, y: 0, z: 0), yAxis: Vector3 (x: 0, y: 1, z: 0), zAxis: Vector3(x: 0, y: 0, z: 1), origin: Vector3 (x: 0, y: 0, z: 0)), disabled: Bool = false) {
-        #if true
+        #if false
         
         var copy_transform = transform
         var copy_disabled = disabled
@@ -2187,7 +2187,7 @@ open class PhysicsServer3D: Object {
     
     /// Substitutes a given body shape by another. The old shape is selected by its index, the new one by its ``RID``.
     public static func bodySetShape (body: RID, shapeIdx: Int32, shape: RID) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -2225,7 +2225,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets the transform matrix for a body shape.
     public static func bodySetShapeTransform (body: RID, shapeIdx: Int32, transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         var copy_transform = transform
@@ -2265,7 +2265,7 @@ open class PhysicsServer3D: Object {
     
     /// 
     public static func bodySetShapeDisabled (body: RID, shapeIdx: Int32, disabled: Bool) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         var copy_disabled = disabled
@@ -2306,7 +2306,7 @@ open class PhysicsServer3D: Object {
     /// Returns the number of shapes assigned to a body.
     public static func bodyGetShapeCount (body: RID)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_get_shape_count, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -2338,7 +2338,7 @@ open class PhysicsServer3D: Object {
     /// Returns the ``RID`` of the nth shape of a body.
     public static func bodyGetShape (body: RID, shapeIdx: Int32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -2375,7 +2375,7 @@ open class PhysicsServer3D: Object {
     /// Returns the transform matrix of a body shape.
     public static func bodyGetShapeTransform (body: RID, shapeIdx: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -2411,7 +2411,7 @@ open class PhysicsServer3D: Object {
     
     /// Removes a shape from a body. The shape is not deleted, so it can be reused afterwards.
     public static func bodyRemoveShape (body: RID, shapeIdx: Int32) {
-        #if true
+        #if false
         
         var copy_shape_idx: Int = Int (shapeIdx)
         
@@ -2446,7 +2446,7 @@ open class PhysicsServer3D: Object {
     
     /// Removes all shapes from a body.
     public static func bodyClearShapes (body: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_clear_shapes, UnsafeMutableRawPointer (mutating: shared.handle), nil, &body.content)
@@ -2476,7 +2476,7 @@ open class PhysicsServer3D: Object {
     
     /// Assigns the area to a descendant of ``Object``, so it can exist in the node tree.
     public static func bodyAttachObjectInstanceId (body: RID, id: UInt) {
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -2512,7 +2512,7 @@ open class PhysicsServer3D: Object {
     /// Gets the instance ID of the object the area is assigned to.
     public static func bodyGetObjectInstanceId (body: RID)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_get_object_instance_id, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -2546,7 +2546,7 @@ open class PhysicsServer3D: Object {
     /// Continuous collision detection tries to predict where a moving body will collide, instead of moving it and correcting its movement if it collided.
     /// 
     public static func bodySetEnableContinuousCollisionDetection (body: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2582,7 +2582,7 @@ open class PhysicsServer3D: Object {
     /// If `true`, the continuous collision detection mode is enabled.
     public static func bodyIsContinuousCollisionDetectionEnabled (body: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_is_continuous_collision_detection_enabled, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -2613,7 +2613,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets a body parameter. A list of available parameters is on the ``PhysicsServer3D/BodyParameter`` constants.
     public static func bodySetParam (body: RID, param: PhysicsServer3D.BodyParameter, value: Variant) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -2652,7 +2652,7 @@ open class PhysicsServer3D: Object {
     /// Returns the value of a body parameter. A list of available parameters is on the ``PhysicsServer3D/BodyParameter`` constants.
     public static func bodyGetParam (body: RID, param: PhysicsServer3D.BodyParameter)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -2688,7 +2688,7 @@ open class PhysicsServer3D: Object {
     
     /// Restores the default inertia and center of mass based on shapes to cancel any custom values previously set using ``bodySetParam(body:param:value:)``.
     public static func bodyResetMassProperties (body: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_reset_mass_properties, UnsafeMutableRawPointer (mutating: shared.handle), nil, &body.content)
@@ -2718,7 +2718,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets a body state (see ``PhysicsServer3D/BodyState`` constants).
     public static func bodySetState (body: RID, state: PhysicsServer3D.BodyState, value: Variant) {
-        #if true
+        #if false
         
         var copy_state = Int64 (state.rawValue)
         
@@ -2757,7 +2757,7 @@ open class PhysicsServer3D: Object {
     /// Returns a body state.
     public static func bodyGetState (body: RID, state: PhysicsServer3D.BodyState)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_state = Int64 (state.rawValue)
         
@@ -2798,7 +2798,7 @@ open class PhysicsServer3D: Object {
     /// This is equivalent to using ``bodyApplyImpulse(body:impulse:position:)`` at the body's center of mass.
     /// 
     public static func bodyApplyCentralImpulse (body: RID, impulse: Vector3) {
-        #if true
+        #if false
         
         var copy_impulse = impulse
         
@@ -2838,7 +2838,7 @@ open class PhysicsServer3D: Object {
     /// `position` is the offset from the body origin in global coordinates.
     /// 
     public static func bodyApplyImpulse (body: RID, impulse: Vector3, position: Vector3 = Vector3 (x: 0, y: 0, z: 0)) {
-        #if true
+        #if false
         
         var copy_impulse = impulse
         var copy_position = position
@@ -2881,7 +2881,7 @@ open class PhysicsServer3D: Object {
     /// An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
     /// 
     public static func bodyApplyTorqueImpulse (body: RID, impulse: Vector3) {
-        #if true
+        #if false
         
         var copy_impulse = impulse
         
@@ -2919,7 +2919,7 @@ open class PhysicsServer3D: Object {
     /// This is equivalent to using ``bodyApplyForce(body:force:position:)`` at the body's center of mass.
     /// 
     public static func bodyApplyCentralForce (body: RID, force: Vector3) {
-        #if true
+        #if false
         
         var copy_force = force
         
@@ -2957,7 +2957,7 @@ open class PhysicsServer3D: Object {
     /// `position` is the offset from the body origin in global coordinates.
     /// 
     public static func bodyApplyForce (body: RID, force: Vector3, position: Vector3 = Vector3 (x: 0, y: 0, z: 0)) {
-        #if true
+        #if false
         
         var copy_force = force
         var copy_position = position
@@ -2997,7 +2997,7 @@ open class PhysicsServer3D: Object {
     
     /// Applies a rotational force without affecting position. A force is time dependent and meant to be applied every physics update.
     public static func bodyApplyTorque (body: RID, torque: Vector3) {
-        #if true
+        #if false
         
         var copy_torque = torque
         
@@ -3035,7 +3035,7 @@ open class PhysicsServer3D: Object {
     /// This is equivalent to using ``bodyAddConstantForce(body:force:position:)`` at the body's center of mass.
     /// 
     public static func bodyAddConstantCentralForce (body: RID, force: Vector3) {
-        #if true
+        #if false
         
         var copy_force = force
         
@@ -3073,7 +3073,7 @@ open class PhysicsServer3D: Object {
     /// `position` is the offset from the body origin in global coordinates.
     /// 
     public static func bodyAddConstantForce (body: RID, force: Vector3, position: Vector3 = Vector3 (x: 0, y: 0, z: 0)) {
-        #if true
+        #if false
         
         var copy_force = force
         var copy_position = position
@@ -3113,7 +3113,7 @@ open class PhysicsServer3D: Object {
     
     /// Adds a constant rotational force without affecting position that keeps being applied over time until cleared with `body_set_constant_torque(body, Vector3(0, 0, 0))`.
     public static func bodyAddConstantTorque (body: RID, torque: Vector3) {
-        #if true
+        #if false
         
         var copy_torque = torque
         
@@ -3151,7 +3151,7 @@ open class PhysicsServer3D: Object {
     /// See ``bodyAddConstantForce(body:force:position:)`` and ``bodyAddConstantCentralForce(body:force:)``.
     /// 
     public static func bodySetConstantForce (body: RID, force: Vector3) {
-        #if true
+        #if false
         
         var copy_force = force
         
@@ -3190,7 +3190,7 @@ open class PhysicsServer3D: Object {
     /// 
     public static func bodyGetConstantForce (body: RID)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_get_constant_force, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -3224,7 +3224,7 @@ open class PhysicsServer3D: Object {
     /// See ``bodyAddConstantTorque(body:torque:)``.
     /// 
     public static func bodySetConstantTorque (body: RID, torque: Vector3) {
-        #if true
+        #if false
         
         var copy_torque = torque
         
@@ -3263,7 +3263,7 @@ open class PhysicsServer3D: Object {
     /// 
     public static func bodyGetConstantTorque (body: RID)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_get_constant_torque, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -3294,7 +3294,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets an axis velocity. The velocity in the given vector axis will be set as the given vector length. This is useful for jumping behavior.
     public static func bodySetAxisVelocity (body: RID, axisVelocity: Vector3) {
-        #if true
+        #if false
         
         var copy_axis_velocity = axisVelocity
         
@@ -3329,7 +3329,7 @@ open class PhysicsServer3D: Object {
     
     /// 
     public static func bodySetAxisLock (body: RID, axis: PhysicsServer3D.BodyAxis, lock: Bool) {
-        #if true
+        #if false
         
         var copy_axis = Int64 (axis.rawValue)
         var copy_lock = lock
@@ -3370,7 +3370,7 @@ open class PhysicsServer3D: Object {
     /// 
     public static func bodyIsAxisLocked (body: RID, axis: PhysicsServer3D.BodyAxis)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_axis = Int64 (axis.rawValue)
         
@@ -3406,7 +3406,7 @@ open class PhysicsServer3D: Object {
     
     /// Adds a body to the list of bodies exempt from collisions.
     public static func bodyAddCollisionException (body: RID, exceptedBody: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_add_collision_exception, UnsafeMutableRawPointer (mutating: shared.handle), nil, &body.content, &exceptedBody.content)
@@ -3442,7 +3442,7 @@ open class PhysicsServer3D: Object {
     /// Continuous collision detection tries to predict where a moving body will collide, instead of moving it and correcting its movement if it collided.
     /// 
     public static func bodyRemoveCollisionException (body: RID, exceptedBody: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_remove_collision_exception, UnsafeMutableRawPointer (mutating: shared.handle), nil, &body.content, &exceptedBody.content)
@@ -3475,7 +3475,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets the maximum contacts to report. Bodies can keep a log of the contacts with other bodies. This is enabled by setting the maximum number of contacts reported to a number greater than 0.
     public static func bodySetMaxContactsReported (body: RID, amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -3511,7 +3511,7 @@ open class PhysicsServer3D: Object {
     /// Returns the maximum contacts that can be reported. See ``bodySetMaxContactsReported(body:amount:)``.
     public static func bodyGetMaxContactsReported (body: RID)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_get_max_contacts_reported, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -3542,7 +3542,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets whether a body uses a callback function to calculate its own physics (see ``bodySetForceIntegrationCallback(body:callable:userdata:)``).
     public static func bodySetOmitForceIntegration (body: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3578,7 +3578,7 @@ open class PhysicsServer3D: Object {
     /// Returns whether a body uses a callback function to calculate its own physics (see ``bodySetForceIntegrationCallback(body:callable:userdata:)``).
     public static func bodyIsOmittingForceIntegration (body: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_is_omitting_force_integration, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -3614,7 +3614,7 @@ open class PhysicsServer3D: Object {
     /// - [code skip-lint]userdata` — optional user data passed to ``bodySetForceIntegrationCallback(body:callable:userdata:)``.
     /// 
     public static func bodySetForceIntegrationCallback (body: RID, callable: Callable, userdata: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_set_force_integration_callback, UnsafeMutableRawPointer (mutating: shared.handle), nil, &body.content, &callable.content, &userdata.content)
@@ -3650,7 +3650,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets the body pickable with rays if `enable` is set.
     public static func bodySetRayPickable (body: RID, enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3686,7 +3686,7 @@ open class PhysicsServer3D: Object {
     /// Returns `true` if a collision would result from moving along a motion vector from a given point in space. ``PhysicsTestMotionParameters3D`` is passed to set motion parameters. ``PhysicsTestMotionResult3D`` can be passed to return additional information.
     public static func bodyTestMotion (body: RID, parameters: PhysicsTestMotionParameters3D?, result: PhysicsTestMotionResult3D? = nil)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_parameters_handle = parameters?.handle
         var copy_result_handle = result?.handle
@@ -3726,7 +3726,7 @@ open class PhysicsServer3D: Object {
     /// Returns the ``PhysicsDirectBodyState3D`` of the body. Returns `null` if the body is destroyed or removed from the physics space.
     public static func bodyGetDirectState (body: RID)-> PhysicsDirectBodyState3D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_body_get_direct_state, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -3758,7 +3758,7 @@ open class PhysicsServer3D: Object {
     /// 
     public static func softBodyGetBounds (body: RID)-> AABB {
         var _result: AABB = AABB ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_soft_body_get_bounds, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &body.content)
@@ -3807,7 +3807,7 @@ open class PhysicsServer3D: Object {
     
     /// 
     public static func jointClear (joint: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_joint_clear, UnsafeMutableRawPointer (mutating: shared.handle), nil, &joint.content)
@@ -3837,7 +3837,7 @@ open class PhysicsServer3D: Object {
     
     /// 
     public static func jointMakePin (joint: RID, bodyA: RID, localA: Vector3, bodyB: RID, localB: Vector3) {
-        #if true
+        #if false
         
         var copy_local_A = localA
         var copy_local_B = localB
@@ -3883,7 +3883,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets a pin_joint parameter (see ``PhysicsServer3D/PinJointParam`` constants).
     public static func pinJointSetParam (joint: RID, param: PhysicsServer3D.PinJointParam, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -3924,7 +3924,7 @@ open class PhysicsServer3D: Object {
     /// Gets a pin_joint parameter (see ``PhysicsServer3D/PinJointParam`` constants).
     public static func pinJointGetParam (joint: RID, param: PhysicsServer3D.PinJointParam)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -3960,7 +3960,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets position of the joint in the local space of body a of the joint.
     public static func pinJointSetLocalA (joint: RID, localA: Vector3) {
-        #if true
+        #if false
         
         var copy_local_A = localA
         
@@ -3996,7 +3996,7 @@ open class PhysicsServer3D: Object {
     /// Returns position of the joint in the local space of body a of the joint.
     public static func pinJointGetLocalA (joint: RID)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_pin_joint_get_local_a, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &joint.content)
@@ -4027,7 +4027,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets position of the joint in the local space of body b of the joint.
     public static func pinJointSetLocalB (joint: RID, localB: Vector3) {
-        #if true
+        #if false
         
         var copy_local_B = localB
         
@@ -4063,7 +4063,7 @@ open class PhysicsServer3D: Object {
     /// Returns position of the joint in the local space of body b of the joint.
     public static func pinJointGetLocalB (joint: RID)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_pin_joint_get_local_b, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &joint.content)
@@ -4094,7 +4094,7 @@ open class PhysicsServer3D: Object {
     
     /// 
     public static func jointMakeHinge (joint: RID, bodyA: RID, hingeA: Transform3D, bodyB: RID, hingeB: Transform3D) {
-        #if true
+        #if false
         
         var copy_hinge_A = hingeA
         var copy_hinge_B = hingeB
@@ -4140,7 +4140,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets a hinge_joint parameter (see ``PhysicsServer3D/HingeJointParam`` constants).
     public static func hingeJointSetParam (joint: RID, param: PhysicsServer3D.HingeJointParam, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -4181,7 +4181,7 @@ open class PhysicsServer3D: Object {
     /// Gets a hinge_joint parameter (see ``PhysicsServer3D/HingeJointParam``).
     public static func hingeJointGetParam (joint: RID, param: PhysicsServer3D.HingeJointParam)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -4217,7 +4217,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets a hinge_joint flag (see ``PhysicsServer3D/HingeJointFlag`` constants).
     public static func hingeJointSetFlag (joint: RID, flag: PhysicsServer3D.HingeJointFlag, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         var copy_enabled = enabled
@@ -4258,7 +4258,7 @@ open class PhysicsServer3D: Object {
     /// Gets a hinge_joint flag (see ``PhysicsServer3D/HingeJointFlag`` constants).
     public static func hingeJointGetFlag (joint: RID, flag: PhysicsServer3D.HingeJointFlag)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         
@@ -4294,7 +4294,7 @@ open class PhysicsServer3D: Object {
     
     /// 
     public static func jointMakeSlider (joint: RID, bodyA: RID, localRefA: Transform3D, bodyB: RID, localRefB: Transform3D) {
-        #if true
+        #if false
         
         var copy_local_ref_A = localRefA
         var copy_local_ref_B = localRefB
@@ -4340,7 +4340,7 @@ open class PhysicsServer3D: Object {
     
     /// Gets a slider_joint parameter (see ``PhysicsServer3D/SliderJointParam`` constants).
     public static func sliderJointSetParam (joint: RID, param: PhysicsServer3D.SliderJointParam, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -4381,7 +4381,7 @@ open class PhysicsServer3D: Object {
     /// Gets a slider_joint parameter (see ``PhysicsServer3D/SliderJointParam`` constants).
     public static func sliderJointGetParam (joint: RID, param: PhysicsServer3D.SliderJointParam)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -4417,7 +4417,7 @@ open class PhysicsServer3D: Object {
     
     /// 
     public static func jointMakeConeTwist (joint: RID, bodyA: RID, localRefA: Transform3D, bodyB: RID, localRefB: Transform3D) {
-        #if true
+        #if false
         
         var copy_local_ref_A = localRefA
         var copy_local_ref_B = localRefB
@@ -4463,7 +4463,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets a cone_twist_joint parameter (see ``PhysicsServer3D/ConeTwistJointParam`` constants).
     public static func coneTwistJointSetParam (joint: RID, param: PhysicsServer3D.ConeTwistJointParam, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -4504,7 +4504,7 @@ open class PhysicsServer3D: Object {
     /// Gets a cone_twist_joint parameter (see ``PhysicsServer3D/ConeTwistJointParam`` constants).
     public static func coneTwistJointGetParam (joint: RID, param: PhysicsServer3D.ConeTwistJointParam)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -4541,7 +4541,7 @@ open class PhysicsServer3D: Object {
     /// Returns the type of the Joint3D.
     public static func jointGetType (joint: RID)-> PhysicsServer3D.JointType {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_joint_get_type, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &joint.content)
@@ -4572,7 +4572,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets the priority value of the Joint3D.
     public static func jointSetSolverPriority (joint: RID, priority: Int32) {
-        #if true
+        #if false
         
         var copy_priority: Int = Int (priority)
         
@@ -4608,7 +4608,7 @@ open class PhysicsServer3D: Object {
     /// Gets the priority value of the Joint3D.
     public static func jointGetSolverPriority (joint: RID)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_joint_get_solver_priority, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &joint.content)
@@ -4639,7 +4639,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets whether the bodies attached to the ``Joint3D`` will collide with each other.
     public static func jointDisableCollisionsBetweenBodies (joint: RID, disable: Bool) {
-        #if true
+        #if false
         
         var copy_disable = disable
         
@@ -4675,7 +4675,7 @@ open class PhysicsServer3D: Object {
     /// Returns whether the bodies attached to the ``Joint3D`` will collide with each other.
     public static func jointIsDisabledCollisionsBetweenBodies (joint: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_joint_is_disabled_collisions_between_bodies, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &joint.content)
@@ -4706,7 +4706,7 @@ open class PhysicsServer3D: Object {
     
     /// 
     public static func jointMakeGeneric6dof (joint: RID, bodyA: RID, localRefA: Transform3D, bodyB: RID, localRefB: Transform3D) {
-        #if true
+        #if false
         
         var copy_local_ref_A = localRefA
         var copy_local_ref_B = localRefB
@@ -4752,7 +4752,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets a generic_6_DOF_joint parameter (see ``PhysicsServer3D/G6DOFJointAxisParam`` constants).
     public static func generic6dofJointSetParam (joint: RID, axis: Vector3.Axis, param: PhysicsServer3D.G6DOFJointAxisParam, value: Double) {
-        #if true
+        #if false
         
         var copy_axis = Int64 (axis.rawValue)
         var copy_param = Int64 (param.rawValue)
@@ -4798,7 +4798,7 @@ open class PhysicsServer3D: Object {
     /// Gets a generic_6_DOF_joint parameter (see ``PhysicsServer3D/G6DOFJointAxisParam`` constants).
     public static func generic6dofJointGetParam (joint: RID, axis: Vector3.Axis, param: PhysicsServer3D.G6DOFJointAxisParam)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_axis = Int64 (axis.rawValue)
         var copy_param = Int64 (param.rawValue)
@@ -4839,7 +4839,7 @@ open class PhysicsServer3D: Object {
     
     /// Sets a generic_6_DOF_joint flag (see ``PhysicsServer3D/G6DOFJointAxisFlag`` constants).
     public static func generic6dofJointSetFlag (joint: RID, axis: Vector3.Axis, flag: PhysicsServer3D.G6DOFJointAxisFlag, enable: Bool) {
-        #if true
+        #if false
         
         var copy_axis = Int64 (axis.rawValue)
         var copy_flag = Int64 (flag.rawValue)
@@ -4885,7 +4885,7 @@ open class PhysicsServer3D: Object {
     /// Gets a generic_6_DOF_joint flag (see ``PhysicsServer3D/G6DOFJointAxisFlag`` constants).
     public static func generic6dofJointGetFlag (joint: RID, axis: Vector3.Axis, flag: PhysicsServer3D.G6DOFJointAxisFlag)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_axis = Int64 (axis.rawValue)
         var copy_flag = Int64 (flag.rawValue)
@@ -4926,7 +4926,7 @@ open class PhysicsServer3D: Object {
     
     /// Destroys any of the objects created by PhysicsServer3D. If the ``RID`` passed is not one of the objects that can be created by PhysicsServer3D, an error will be sent to the console.
     public static func freeRid (_ rid: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer3D.method_free_rid, UnsafeMutableRawPointer (mutating: shared.handle), nil, &rid.content)
@@ -4956,7 +4956,7 @@ open class PhysicsServer3D: Object {
     
     /// Activates or deactivates the 3D physics engine.
     public static func setActive (_ active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         
@@ -4989,7 +4989,7 @@ open class PhysicsServer3D: Object {
     /// Returns information about the current state of the 3D physics engine. See ``PhysicsServer3D/ProcessInfo`` for a list of available states.
     public static func getProcessInfo (_ processInfo: PhysicsServer3D.ProcessInfo)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_process_info = Int64 (processInfo.rawValue)
         

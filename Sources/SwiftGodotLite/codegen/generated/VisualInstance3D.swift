@@ -81,7 +81,7 @@ open class VisualInstance3D: Node3D {
     
     /// Sets the resource that is instantiated by this ``VisualInstance3D``, which changes how the engine handles the ``VisualInstance3D`` under the hood. Equivalent to ``RenderingServer/instanceSetBase(instance:base:)``.
     public final func setBase (_ base: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (VisualInstance3D.method_set_base, UnsafeMutableRawPointer (mutating: handle), nil, &base.content)
@@ -147,7 +147,7 @@ open class VisualInstance3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_layer_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -197,7 +197,7 @@ open class VisualInstance3D: Node3D {
     
     /// Based on `value`, enables or disables the specified layer in the ``layers``, given a `layerNumber` between 1 and 20.
     public final func setLayerMaskValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -235,7 +235,7 @@ open class VisualInstance3D: Node3D {
     /// Returns whether or not the specified layer of the ``layers`` is enabled, given a `layerNumber` between 1 and 20.
     public final func getLayerMaskValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -268,7 +268,7 @@ open class VisualInstance3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_sorting_offset (_ offset: Double) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -318,7 +318,7 @@ open class VisualInstance3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_sorting_use_aabb_center (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

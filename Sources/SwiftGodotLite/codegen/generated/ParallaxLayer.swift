@@ -73,7 +73,7 @@ open class ParallaxLayer: Node2D {
     
     @inline(__always)
     fileprivate final func set_motion_scale (_ scale: Vector2) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -123,7 +123,7 @@ open class ParallaxLayer: Node2D {
     
     @inline(__always)
     fileprivate final func set_motion_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -173,7 +173,7 @@ open class ParallaxLayer: Node2D {
     
     @inline(__always)
     fileprivate final func set_mirroring (_ mirror: Vector2) {
-        #if true
+        #if false
         
         var copy_mirror = mirror
         

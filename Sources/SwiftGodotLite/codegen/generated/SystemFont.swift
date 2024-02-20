@@ -204,7 +204,7 @@ open class SystemFont: Font {
     
     @inline(__always)
     fileprivate final func set_antialiasing (_ antialiasing: TextServer.FontAntialiasing) {
-        #if true
+        #if false
         
         var copy_antialiasing = Int64 (antialiasing.rawValue)
         
@@ -254,7 +254,7 @@ open class SystemFont: Font {
     
     @inline(__always)
     fileprivate final func set_generate_mipmaps (_ generateMipmaps: Bool) {
-        #if true
+        #if false
         
         var copy_generate_mipmaps = generateMipmaps
         
@@ -304,7 +304,7 @@ open class SystemFont: Font {
     
     @inline(__always)
     fileprivate final func set_allow_system_fallback (_ allowSystemFallback: Bool) {
-        #if true
+        #if false
         
         var copy_allow_system_fallback = allowSystemFallback
         
@@ -354,7 +354,7 @@ open class SystemFont: Font {
     
     @inline(__always)
     fileprivate final func set_force_autohinter (_ forceAutohinter: Bool) {
-        #if true
+        #if false
         
         var copy_force_autohinter = forceAutohinter
         
@@ -404,7 +404,7 @@ open class SystemFont: Font {
     
     @inline(__always)
     fileprivate final func set_hinting (_ hinting: TextServer.Hinting) {
-        #if true
+        #if false
         
         var copy_hinting = Int64 (hinting.rawValue)
         
@@ -454,7 +454,7 @@ open class SystemFont: Font {
     
     @inline(__always)
     fileprivate final func set_subpixel_positioning (_ subpixelPositioning: TextServer.SubpixelPositioning) {
-        #if true
+        #if false
         
         var copy_subpixel_positioning = Int64 (subpixelPositioning.rawValue)
         
@@ -504,7 +504,7 @@ open class SystemFont: Font {
     
     @inline(__always)
     fileprivate final func set_multichannel_signed_distance_field (_ msdf: Bool) {
-        #if true
+        #if false
         
         var copy_msdf = msdf
         
@@ -554,7 +554,7 @@ open class SystemFont: Font {
     
     @inline(__always)
     fileprivate final func set_msdf_pixel_range (_ msdfPixelRange: Int32) {
-        #if true
+        #if false
         
         var copy_msdf_pixel_range: Int = Int (msdfPixelRange)
         
@@ -604,7 +604,7 @@ open class SystemFont: Font {
     
     @inline(__always)
     fileprivate final func set_msdf_size (_ msdfSize: Int32) {
-        #if true
+        #if false
         
         var copy_msdf_size: Int = Int (msdfSize)
         
@@ -654,7 +654,7 @@ open class SystemFont: Font {
     
     @inline(__always)
     fileprivate final func set_oversampling (_ oversampling: Double) {
-        #if true
+        #if false
         
         var copy_oversampling = oversampling
         
@@ -722,7 +722,7 @@ open class SystemFont: Font {
     
     @inline(__always)
     fileprivate final func set_font_names (_ names: PackedStringArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SystemFont.method_set_font_names, UnsafeMutableRawPointer (mutating: handle), nil, &names.content)
@@ -770,7 +770,7 @@ open class SystemFont: Font {
     
     @inline(__always)
     fileprivate final func set_font_italic (_ italic: Bool) {
-        #if true
+        #if false
         
         var copy_italic = italic
         
@@ -802,7 +802,7 @@ open class SystemFont: Font {
     
     @inline(__always)
     fileprivate final func set_font_weight (_ weight: Int32) {
-        #if true
+        #if false
         
         var copy_weight: Int = Int (weight)
         
@@ -834,7 +834,7 @@ open class SystemFont: Font {
     
     @inline(__always)
     fileprivate final func set_font_stretch (_ stretch: Int32) {
-        #if true
+        #if false
         
         var copy_stretch: Int = Int (stretch)
         

@@ -34,7 +34,7 @@ open class PhysicsBody2D: CollisionObject2D {
     /// 
     public final func moveAndCollide (motion: Vector2, testOnly: Bool = false, safeMargin: Double = 0.08, recoveryAsCollision: Bool = false)-> KinematicCollision2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_motion = motion
         var copy_test_only = testOnly
@@ -92,7 +92,7 @@ open class PhysicsBody2D: CollisionObject2D {
     /// 
     public final func testMove (from: Transform2D, motion: Vector2, collision: KinematicCollision2D? = nil, safeMargin: Double = 0.08, recoveryAsCollision: Bool = false)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_from = from
         var copy_motion = motion
@@ -162,7 +162,7 @@ open class PhysicsBody2D: CollisionObject2D {
     
     /// Adds a body to the list of bodies that this body can't collide with.
     public final func addCollisionExceptionWith (body: Node?) {
-        #if true
+        #if false
         
         var copy_body_handle = body?.handle
         
@@ -193,7 +193,7 @@ open class PhysicsBody2D: CollisionObject2D {
     
     /// Removes a body from the list of bodies that this body can't collide with.
     public final func removeCollisionExceptionWith (body: Node?) {
-        #if true
+        #if false
         
         var copy_body_handle = body?.handle
         

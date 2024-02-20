@@ -63,7 +63,7 @@ open class InputEventJoypadButton: InputEvent {
     
     @inline(__always)
     fileprivate final func set_button_index (_ buttonIndex: JoyButton) {
-        #if true
+        #if false
         
         var copy_button_index = Int64 (buttonIndex.rawValue)
         
@@ -113,7 +113,7 @@ open class InputEventJoypadButton: InputEvent {
     
     @inline(__always)
     fileprivate final func set_pressure (_ pressure: Double) {
-        #if true
+        #if false
         
         var copy_pressure = pressure
         
@@ -163,7 +163,7 @@ open class InputEventJoypadButton: InputEvent {
     
     @inline(__always)
     fileprivate final func set_pressed (_ pressed: Bool) {
-        #if true
+        #if false
         
         var copy_pressed = pressed
         

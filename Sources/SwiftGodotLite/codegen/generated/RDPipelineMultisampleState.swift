@@ -99,7 +99,7 @@ open class RDPipelineMultisampleState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_sample_count (_ pMember: RenderingDevice.TextureSamples) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -149,7 +149,7 @@ open class RDPipelineMultisampleState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_enable_sample_shading (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -199,7 +199,7 @@ open class RDPipelineMultisampleState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_min_sample_shading (_ pMember: Double) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -249,7 +249,7 @@ open class RDPipelineMultisampleState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_enable_alpha_to_coverage (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -299,7 +299,7 @@ open class RDPipelineMultisampleState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_enable_alpha_to_one (_ pMember: Bool) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -349,7 +349,7 @@ open class RDPipelineMultisampleState: RefCounted {
     
     @inline(__always)
     fileprivate final func set_sample_masks (_ masks: VariantCollection<Int64>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RDPipelineMultisampleState.method_set_sample_masks, UnsafeMutableRawPointer (mutating: handle), nil, &masks.array.content)

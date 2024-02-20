@@ -42,7 +42,7 @@ open class StreamPeerBuffer: StreamPeer {
     
     /// Moves the cursor to the specified position. `position` must be a valid index of ``dataArray``.
     public final func seek (position: Int32) {
-        #if true
+        #if false
         
         var copy_position: Int = Int (position)
         
@@ -110,7 +110,7 @@ open class StreamPeerBuffer: StreamPeer {
     
     /// Resizes the ``dataArray``. This _doesn't_ update the cursor.
     public final func resize (size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -142,7 +142,7 @@ open class StreamPeerBuffer: StreamPeer {
     
     @inline(__always)
     fileprivate final func set_data_array (_ data: PackedByteArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (StreamPeerBuffer.method_set_data_array, UnsafeMutableRawPointer (mutating: handle), nil, &data.content)

@@ -50,7 +50,7 @@ open class VisibleOnScreenNotifier3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_aabb (_ rect: AABB) {
-        #if true
+        #if false
         
         var copy_rect = rect
         

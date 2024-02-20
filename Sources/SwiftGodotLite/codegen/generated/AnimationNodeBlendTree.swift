@@ -60,7 +60,7 @@ open class AnimationNodeBlendTree: AnimationRootNode {
     
     /// Adds an ``AnimationNode`` at the given `position`. The `name` is used to identify the created sub animation node later.
     public final func addNode (name: StringName, node: AnimationNode?, position: Vector2 = Vector2 (x: 0, y: 0)) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_node_handle = node?.handle
@@ -100,7 +100,7 @@ open class AnimationNodeBlendTree: AnimationRootNode {
     /// Returns the sub animation node with the specified `name`.
     public final func getNode (name: StringName)-> AnimationNode? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNodeBlendTree.method_get_node, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -131,7 +131,7 @@ open class AnimationNodeBlendTree: AnimationRootNode {
     
     /// Removes a sub animation node.
     public final func removeNode (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNodeBlendTree.method_remove_node, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -161,7 +161,7 @@ open class AnimationNodeBlendTree: AnimationRootNode {
     
     /// Changes the name of a sub animation node.
     public final func renameNode (name: StringName, newName: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNodeBlendTree.method_rename_node, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &newName.content)
@@ -195,7 +195,7 @@ open class AnimationNodeBlendTree: AnimationRootNode {
     /// Returns `true` if a sub animation node with specified `name` exists.
     public final func hasNode (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNodeBlendTree.method_has_node, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -226,7 +226,7 @@ open class AnimationNodeBlendTree: AnimationRootNode {
     
     /// Connects the output of an ``AnimationNode`` as input for another ``AnimationNode``, at the input port specified by `inputIndex`.
     public final func connectNode (inputNode: StringName, inputIndex: Int32, outputNode: StringName) {
-        #if true
+        #if false
         
         var copy_input_index: Int = Int (inputIndex)
         
@@ -264,7 +264,7 @@ open class AnimationNodeBlendTree: AnimationRootNode {
     
     /// Disconnects the animation node connected to the specified input.
     public final func disconnectNode (inputNode: StringName, inputIndex: Int32) {
-        #if true
+        #if false
         
         var copy_input_index: Int = Int (inputIndex)
         
@@ -299,7 +299,7 @@ open class AnimationNodeBlendTree: AnimationRootNode {
     
     /// Modifies the position of a sub animation node.
     public final func setNodePosition (name: StringName, position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -335,7 +335,7 @@ open class AnimationNodeBlendTree: AnimationRootNode {
     /// Returns the position of the sub animation node with the specified `name`.
     public final func getNodePosition (name: StringName)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNodeBlendTree.method_get_node_position, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -366,7 +366,7 @@ open class AnimationNodeBlendTree: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_graph_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         

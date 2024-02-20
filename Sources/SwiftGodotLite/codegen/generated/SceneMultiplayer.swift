@@ -150,7 +150,7 @@ open class SceneMultiplayer: MultiplayerAPI {
     
     @inline(__always)
     fileprivate final func set_root_path (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SceneMultiplayer.method_set_root_path, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -214,7 +214,7 @@ open class SceneMultiplayer: MultiplayerAPI {
     
     /// Disconnects the peer identified by `id`, removing it from the list of connected peers, and closing the underlying connection with it.
     public final func disconnectPeer (id: Int32) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -265,7 +265,7 @@ open class SceneMultiplayer: MultiplayerAPI {
     /// Sends the specified `data` to the remote peer identified by `id` as part of an authentication message. This can be used to authenticate peers, and control when [signal MultiplayerAPI.peer_connected] is emitted (and the remote peer accepted as one of the connected peers).
     public final func sendAuth (id: Int32, data: PackedByteArray)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -305,7 +305,7 @@ open class SceneMultiplayer: MultiplayerAPI {
     /// 
     public final func completeAuth (id: Int32)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -338,7 +338,7 @@ open class SceneMultiplayer: MultiplayerAPI {
     
     @inline(__always)
     fileprivate final func set_auth_callback (_ callback: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SceneMultiplayer.method_set_auth_callback, UnsafeMutableRawPointer (mutating: handle), nil, &callback.content)
@@ -386,7 +386,7 @@ open class SceneMultiplayer: MultiplayerAPI {
     
     @inline(__always)
     fileprivate final func set_auth_timeout (_ timeout: Double) {
-        #if true
+        #if false
         
         var copy_timeout = timeout
         
@@ -436,7 +436,7 @@ open class SceneMultiplayer: MultiplayerAPI {
     
     @inline(__always)
     fileprivate final func set_refuse_new_connections (_ refuse: Bool) {
-        #if true
+        #if false
         
         var copy_refuse = refuse
         
@@ -486,7 +486,7 @@ open class SceneMultiplayer: MultiplayerAPI {
     
     @inline(__always)
     fileprivate final func set_allow_object_decoding (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -536,7 +536,7 @@ open class SceneMultiplayer: MultiplayerAPI {
     
     @inline(__always)
     fileprivate final func set_server_relay_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -587,7 +587,7 @@ open class SceneMultiplayer: MultiplayerAPI {
     /// Sends the given raw `bytes` to a specific peer identified by `id` (see ``MultiplayerPeer/setTargetPeer(id:)``). Default ID is `0`, i.e. broadcast to all peers.
     public final func sendBytes (_ bytes: PackedByteArray, id: Int32 = 0, mode: MultiplayerPeer.TransferMode = .reliable, channel: Int32 = 0)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_mode = Int64 (mode.rawValue)
@@ -651,7 +651,7 @@ open class SceneMultiplayer: MultiplayerAPI {
     
     @inline(__always)
     fileprivate final func set_max_sync_packet_size (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -701,7 +701,7 @@ open class SceneMultiplayer: MultiplayerAPI {
     
     @inline(__always)
     fileprivate final func set_max_delta_packet_size (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         

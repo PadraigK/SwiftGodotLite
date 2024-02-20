@@ -73,7 +73,7 @@ open class FogVolume: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -123,7 +123,7 @@ open class FogVolume: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_shape (_ shape: RenderingServer.FogVolumeShape) {
-        #if true
+        #if false
         
         var copy_shape = Int64 (shape.rawValue)
         
@@ -173,7 +173,7 @@ open class FogVolume: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_material (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         

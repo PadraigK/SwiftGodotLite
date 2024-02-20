@@ -117,7 +117,7 @@ open class Sprite3D: SpriteBase3D {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -166,7 +166,7 @@ open class Sprite3D: SpriteBase3D {
     
     @inline(__always)
     fileprivate final func set_region_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -216,7 +216,7 @@ open class Sprite3D: SpriteBase3D {
     
     @inline(__always)
     fileprivate final func set_region_rect (_ rect: Rect2) {
-        #if true
+        #if false
         
         var copy_rect = rect
         
@@ -266,7 +266,7 @@ open class Sprite3D: SpriteBase3D {
     
     @inline(__always)
     fileprivate final func set_frame (_ frame: Int32) {
-        #if true
+        #if false
         
         var copy_frame: Int = Int (frame)
         
@@ -316,7 +316,7 @@ open class Sprite3D: SpriteBase3D {
     
     @inline(__always)
     fileprivate final func set_frame_coords (_ coords: Vector2i) {
-        #if true
+        #if false
         
         var copy_coords = coords
         
@@ -366,7 +366,7 @@ open class Sprite3D: SpriteBase3D {
     
     @inline(__always)
     fileprivate final func set_vframes (_ vframes: Int32) {
-        #if true
+        #if false
         
         var copy_vframes: Int = Int (vframes)
         
@@ -416,7 +416,7 @@ open class Sprite3D: SpriteBase3D {
     
     @inline(__always)
     fileprivate final func set_hframes (_ hframes: Int32) {
-        #if true
+        #if false
         
         var copy_hframes: Int = Int (hframes)
         

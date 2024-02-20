@@ -39,7 +39,7 @@ open class VisualShaderNodeTexture2DArray: VisualShaderNodeSample3D {
     
     @inline(__always)
     fileprivate final func set_texture_array (_ value: Texture2DArray?) {
-        #if true
+        #if false
         
         var copy_value_handle = value?.handle
         

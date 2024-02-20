@@ -99,7 +99,7 @@ open class PrimitiveMesh: Mesh {
     
     @inline(__always)
     fileprivate final func set_material (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         
@@ -167,7 +167,7 @@ open class PrimitiveMesh: Mesh {
     
     @inline(__always)
     fileprivate final func set_custom_aabb (_ aabb: AABB) {
-        #if true
+        #if false
         
         var copy_aabb = aabb
         
@@ -217,7 +217,7 @@ open class PrimitiveMesh: Mesh {
     
     @inline(__always)
     fileprivate final func set_flip_faces (_ flipFaces: Bool) {
-        #if true
+        #if false
         
         var copy_flip_faces = flipFaces
         
@@ -267,7 +267,7 @@ open class PrimitiveMesh: Mesh {
     
     @inline(__always)
     fileprivate final func set_add_uv2 (_ addUv2: Bool) {
-        #if true
+        #if false
         
         var copy_add_uv2 = addUv2
         
@@ -317,7 +317,7 @@ open class PrimitiveMesh: Mesh {
     
     @inline(__always)
     fileprivate final func set_uv2_padding (_ uv2Padding: Double) {
-        #if true
+        #if false
         
         var copy_uv2_padding = uv2Padding
         

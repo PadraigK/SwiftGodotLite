@@ -66,7 +66,7 @@ open class Geometry2D: Object {
     /// Returns `true` if `point` is inside the circle or if it's located exactly _on_ the circle's boundary, otherwise returns `false`.
     public static func isPointInCircle (point: Vector2, circlePosition: Vector2, circleRadius: Double)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_point = point
         var copy_circle_position = circlePosition
@@ -110,7 +110,7 @@ open class Geometry2D: Object {
     /// Given the 2D segment (`segmentFrom`, `segmentTo`), returns the position on the segment (as a number between 0 and 1) at which the segment hits the circle that is located at position `circlePosition` and has radius `circleRadius`. If the segment does not intersect the circle, -1 is returned (this is also the case if the line extending the segment would intersect the circle, but the segment does not).
     public static func segmentIntersectsCircle (segmentFrom: Vector2, segmentTo: Vector2, circlePosition: Vector2, circleRadius: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_segment_from = segmentFrom
         var copy_segment_to = segmentTo
@@ -159,7 +159,7 @@ open class Geometry2D: Object {
     /// Checks if the two segments (`fromA`, `toA`) and (`fromB`, `toB`) intersect. If yes, return the point of intersection as ``Vector2``. If no intersection takes place, returns `null`.
     public static func segmentIntersectsSegment (fromA: Vector2, toA: Vector2, fromB: Vector2, toB: Vector2)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_from_a = fromA
         var copy_to_a = toA
@@ -211,7 +211,7 @@ open class Geometry2D: Object {
     /// 
     public static func lineIntersectsLine (fromA: Vector2, dirA: Vector2, fromB: Vector2, dirB: Vector2)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_from_a = fromA
         var copy_dir_a = dirA
@@ -260,7 +260,7 @@ open class Geometry2D: Object {
     /// Given the two 2D segments (`p1`, `q1`) and (`p2`, `q2`), finds those two points on the two segments that are closest to each other. Returns a ``PackedVector2Array`` that contains this point on (`p1`, `q1`) as well the accompanying point on (`p2`, `q2`).
     public static func getClosestPointsBetweenSegments (p1: Vector2, q1: Vector2, p2: Vector2, q2: Vector2)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_p1 = p1
         var copy_q1 = q1
@@ -309,7 +309,7 @@ open class Geometry2D: Object {
     /// Returns the 2D point on the 2D segment (`s1`, `s2`) that is closest to `point`. The returned point will always be inside the specified segment.
     public static func getClosestPointToSegment (point: Vector2, s1: Vector2, s2: Vector2)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_point = point
         var copy_s1 = s1
@@ -353,7 +353,7 @@ open class Geometry2D: Object {
     /// Returns the 2D point on the 2D line defined by (`s1`, `s2`) that is closest to `point`. The returned point can be inside the segment (`s1`, `s2`) or outside of it, i.e. somewhere on the line extending from the segment.
     public static func getClosestPointToSegmentUncapped (point: Vector2, s1: Vector2, s2: Vector2)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_point = point
         var copy_s1 = s1
@@ -397,7 +397,7 @@ open class Geometry2D: Object {
     /// Returns if `point` is inside the triangle specified by `a`, `b` and `c`.
     public static func pointIsInsideTriangle (point: Vector2, a: Vector2, b: Vector2, c: Vector2)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_point = point
         var copy_a = a
@@ -446,7 +446,7 @@ open class Geometry2D: Object {
     /// Returns `true` if `polygon`'s vertices are ordered in clockwise order, otherwise returns `false`.
     public static func isPolygonClockwise (polygon: PackedVector2Array)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Geometry2D.method_is_polygon_clockwise, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &polygon.content)
@@ -478,7 +478,7 @@ open class Geometry2D: Object {
     /// Returns `true` if `point` is inside `polygon` or if it's located exactly _on_ polygon's boundary, otherwise returns `false`.
     public static func isPointInPolygon (point: Vector2, polygon: PackedVector2Array)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_point = point
         
@@ -515,7 +515,7 @@ open class Geometry2D: Object {
     /// Triangulates the polygon specified by the points in `polygon`. Returns a ``PackedInt32Array`` where each triangle consists of three consecutive point indices into `polygon` (i.e. the returned array will have `n * 3` elements, with `n` being the number of found triangles). Output triangles will always be counter clockwise, and the contour will be flipped if it's clockwise. If the triangulation did not succeed, an empty ``PackedInt32Array`` is returned.
     public static func triangulatePolygon (_ polygon: PackedVector2Array)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Geometry2D.method_triangulate_polygon, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &polygon.content)
@@ -547,7 +547,7 @@ open class Geometry2D: Object {
     /// Triangulates the area specified by discrete set of `points` such that no point is inside the circumcircle of any resulting triangle. Returns a ``PackedInt32Array`` where each triangle consists of three consecutive point indices into `points` (i.e. the returned array will have `n * 3` elements, with `n` being the number of found triangles). If the triangulation did not succeed, an empty ``PackedInt32Array`` is returned.
     public static func triangulateDelaunay (points: PackedVector2Array)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Geometry2D.method_triangulate_delaunay, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &points.content)
@@ -579,7 +579,7 @@ open class Geometry2D: Object {
     /// Given an array of ``Vector2``s, returns the convex hull as a list of points in counterclockwise order. The last point is the same as the first one.
     public static func convexHull (points: PackedVector2Array)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Geometry2D.method_convex_hull, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &points.content)
@@ -611,7 +611,7 @@ open class Geometry2D: Object {
     /// Decomposes the `polygon` into multiple convex hulls and returns an array of ``PackedVector2Array``.
     public static func decomposePolygonInConvex (polygon: PackedVector2Array)-> VariantCollection<PackedVector2Array> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Geometry2D.method_decompose_polygon_in_convex, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &polygon.content)
@@ -646,7 +646,7 @@ open class Geometry2D: Object {
     /// 
     public static func mergePolygons (polygonA: PackedVector2Array, polygonB: PackedVector2Array)-> VariantCollection<PackedVector2Array> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Geometry2D.method_merge_polygons, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &polygonA.content, &polygonB.content)
@@ -684,7 +684,7 @@ open class Geometry2D: Object {
     /// 
     public static func clipPolygons (polygonA: PackedVector2Array, polygonB: PackedVector2Array)-> VariantCollection<PackedVector2Array> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Geometry2D.method_clip_polygons, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &polygonA.content, &polygonB.content)
@@ -722,7 +722,7 @@ open class Geometry2D: Object {
     /// 
     public static func intersectPolygons (polygonA: PackedVector2Array, polygonB: PackedVector2Array)-> VariantCollection<PackedVector2Array> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Geometry2D.method_intersect_polygons, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &polygonA.content, &polygonB.content)
@@ -760,7 +760,7 @@ open class Geometry2D: Object {
     /// 
     public static func excludePolygons (polygonA: PackedVector2Array, polygonB: PackedVector2Array)-> VariantCollection<PackedVector2Array> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Geometry2D.method_exclude_polygons, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &polygonA.content, &polygonB.content)
@@ -795,7 +795,7 @@ open class Geometry2D: Object {
     /// Clips `polyline` against `polygon` and returns an array of clipped polylines. This performs .operationDifference between the polyline and the polygon. This operation can be thought of as cutting a line with a closed shape.
     public static func clipPolylineWithPolygon (polyline: PackedVector2Array, polygon: PackedVector2Array)-> VariantCollection<PackedVector2Array> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Geometry2D.method_clip_polyline_with_polygon, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &polyline.content, &polygon.content)
@@ -830,7 +830,7 @@ open class Geometry2D: Object {
     /// Intersects `polyline` with `polygon` and returns an array of intersected polylines. This performs .operationIntersection between the polyline and the polygon. This operation can be thought of as chopping a line with a closed shape.
     public static func intersectPolylineWithPolygon (polyline: PackedVector2Array, polygon: PackedVector2Array)-> VariantCollection<PackedVector2Array> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Geometry2D.method_intersect_polyline_with_polygon, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &polyline.content, &polygon.content)
@@ -872,7 +872,7 @@ open class Geometry2D: Object {
     /// 
     public static func offsetPolygon (_ polygon: PackedVector2Array, delta: Double, joinType: Geometry2D.PolyJoinType = .square)-> VariantCollection<PackedVector2Array> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_delta = delta
         var copy_join_type = Int64 (joinType.rawValue)
@@ -921,7 +921,7 @@ open class Geometry2D: Object {
     /// 
     public static func offsetPolyline (_ polyline: PackedVector2Array, delta: Double, joinType: Geometry2D.PolyJoinType = .square, endType: Geometry2D.PolyEndType = .square)-> VariantCollection<PackedVector2Array> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_delta = delta
         var copy_join_type = Int64 (joinType.rawValue)
@@ -968,7 +968,7 @@ open class Geometry2D: Object {
     /// Given an array of ``Vector2``s representing tiles, builds an atlas. The returned dictionary has two keys: `points` is a ``PackedVector2Array`` that specifies the positions of each tile, `size` contains the overall size of the whole atlas as ``Vector2i``.
     public static func makeAtlas (sizes: PackedVector2Array)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Geometry2D.method_make_atlas, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &sizes.content)

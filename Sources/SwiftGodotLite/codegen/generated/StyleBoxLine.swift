@@ -87,7 +87,7 @@ open class StyleBoxLine: StyleBox {
     
     @inline(__always)
     fileprivate final func set_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -137,7 +137,7 @@ open class StyleBoxLine: StyleBox {
     
     @inline(__always)
     fileprivate final func set_thickness (_ thickness: Int32) {
-        #if true
+        #if false
         
         var copy_thickness: Int = Int (thickness)
         
@@ -187,7 +187,7 @@ open class StyleBoxLine: StyleBox {
     
     @inline(__always)
     fileprivate final func set_grow_begin (_ offset: Double) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -237,7 +237,7 @@ open class StyleBoxLine: StyleBox {
     
     @inline(__always)
     fileprivate final func set_grow_end (_ offset: Double) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -287,7 +287,7 @@ open class StyleBoxLine: StyleBox {
     
     @inline(__always)
     fileprivate final func set_vertical (_ vertical: Bool) {
-        #if true
+        #if false
         
         var copy_vertical = vertical
         

@@ -177,7 +177,7 @@ open class Sprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -226,7 +226,7 @@ open class Sprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_centered (_ centered: Bool) {
-        #if true
+        #if false
         
         var copy_centered = centered
         
@@ -276,7 +276,7 @@ open class Sprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -326,7 +326,7 @@ open class Sprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_flip_h (_ flipH: Bool) {
-        #if true
+        #if false
         
         var copy_flip_h = flipH
         
@@ -376,7 +376,7 @@ open class Sprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_flip_v (_ flipV: Bool) {
-        #if true
+        #if false
         
         var copy_flip_v = flipV
         
@@ -426,7 +426,7 @@ open class Sprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_region_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -480,7 +480,7 @@ open class Sprite2D: Node2D {
     /// 
     public final func isPixelOpaque (pos: Vector2)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_pos = pos
         
@@ -513,7 +513,7 @@ open class Sprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_region_rect (_ rect: Rect2) {
-        #if true
+        #if false
         
         var copy_rect = rect
         
@@ -563,7 +563,7 @@ open class Sprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_region_filter_clip_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -613,7 +613,7 @@ open class Sprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_frame (_ frame: Int32) {
-        #if true
+        #if false
         
         var copy_frame: Int = Int (frame)
         
@@ -663,7 +663,7 @@ open class Sprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_frame_coords (_ coords: Vector2i) {
-        #if true
+        #if false
         
         var copy_coords = coords
         
@@ -713,7 +713,7 @@ open class Sprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_vframes (_ vframes: Int32) {
-        #if true
+        #if false
         
         var copy_vframes: Int = Int (vframes)
         
@@ -763,7 +763,7 @@ open class Sprite2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_hframes (_ hframes: Int32) {
-        #if true
+        #if false
         
         var copy_hframes: Int = Int (hframes)
         

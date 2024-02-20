@@ -51,7 +51,7 @@ open class InputEventJoypadMotion: InputEvent {
     
     @inline(__always)
     fileprivate final func set_axis (_ axis: JoyAxis) {
-        #if true
+        #if false
         
         var copy_axis = Int64 (axis.rawValue)
         
@@ -101,7 +101,7 @@ open class InputEventJoypadMotion: InputEvent {
     
     @inline(__always)
     fileprivate final func set_axis_value (_ axisValue: Double) {
-        #if true
+        #if false
         
         var copy_axis_value = axisValue
         

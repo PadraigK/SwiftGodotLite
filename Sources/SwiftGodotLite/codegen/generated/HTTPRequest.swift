@@ -178,7 +178,7 @@ open class HTTPRequest: Node {
     /// 
     public final func request (url: String, customHeaders: PackedStringArray = PackedStringArray(), method: HTTPClient.Method = .get, requestData: String = "")-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_url = GString (url)
         var copy_method = Int64 (method.rawValue)
@@ -228,7 +228,7 @@ open class HTTPRequest: Node {
     /// 
     public final func requestRaw (url: String, customHeaders: PackedStringArray = PackedStringArray(), method: HTTPClient.Method = .get, requestDataRaw: PackedByteArray = PackedByteArray())-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_url = GString (url)
         var copy_method = Int64 (method.rawValue)
@@ -288,7 +288,7 @@ open class HTTPRequest: Node {
     
     /// Sets the ``TLSOptions`` to be used when connecting to an HTTPS server. See ``TLSOptions/client(trustedChain:commonNameOverride:)``.
     public final func setTlsOptions (clientOptions: TLSOptions?) {
-        #if true
+        #if false
         
         var copy_client_options_handle = clientOptions?.handle
         
@@ -337,7 +337,7 @@ open class HTTPRequest: Node {
     
     @inline(__always)
     fileprivate final func set_use_threads (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -387,7 +387,7 @@ open class HTTPRequest: Node {
     
     @inline(__always)
     fileprivate final func set_accept_gzip (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -437,7 +437,7 @@ open class HTTPRequest: Node {
     
     @inline(__always)
     fileprivate final func set_body_size_limit (_ bytes: Int32) {
-        #if true
+        #if false
         
         var copy_bytes: Int = Int (bytes)
         
@@ -487,7 +487,7 @@ open class HTTPRequest: Node {
     
     @inline(__always)
     fileprivate final func set_max_redirects (_ amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -537,7 +537,7 @@ open class HTTPRequest: Node {
     
     @inline(__always)
     fileprivate final func set_download_file (_ path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -626,7 +626,7 @@ open class HTTPRequest: Node {
     
     @inline(__always)
     fileprivate final func set_timeout (_ timeout: Double) {
-        #if true
+        #if false
         
         var copy_timeout = timeout
         
@@ -676,7 +676,7 @@ open class HTTPRequest: Node {
     
     @inline(__always)
     fileprivate final func set_download_chunk_size (_ chunkSize: Int32) {
-        #if true
+        #if false
         
         var copy_chunk_size: Int = Int (chunkSize)
         
@@ -729,7 +729,7 @@ open class HTTPRequest: Node {
     /// The proxy server is unset if `host` is empty or `port` is -1.
     /// 
     public final func setHttpProxy (host: String, port: Int32) {
-        #if true
+        #if false
         
         let gstr_host = GString (host)
         var copy_port: Int = Int (port)
@@ -769,7 +769,7 @@ open class HTTPRequest: Node {
     /// The proxy server is unset if `host` is empty or `port` is -1.
     /// 
     public final func setHttpsProxy (host: String, port: Int32) {
-        #if true
+        #if false
         
         let gstr_host = GString (host)
         var copy_port: Int = Int (port)

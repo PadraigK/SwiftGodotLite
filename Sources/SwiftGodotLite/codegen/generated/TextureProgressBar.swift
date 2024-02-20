@@ -246,7 +246,7 @@ open class TextureProgressBar: Range {
     
     @inline(__always)
     fileprivate final func set_under_texture (_ tex: Texture2D?) {
-        #if true
+        #if false
         
         var copy_tex_handle = tex?.handle
         
@@ -295,7 +295,7 @@ open class TextureProgressBar: Range {
     
     @inline(__always)
     fileprivate final func set_progress_texture (_ tex: Texture2D?) {
-        #if true
+        #if false
         
         var copy_tex_handle = tex?.handle
         
@@ -344,7 +344,7 @@ open class TextureProgressBar: Range {
     
     @inline(__always)
     fileprivate final func set_over_texture (_ tex: Texture2D?) {
-        #if true
+        #if false
         
         var copy_tex_handle = tex?.handle
         
@@ -393,7 +393,7 @@ open class TextureProgressBar: Range {
     
     @inline(__always)
     fileprivate final func set_fill_mode (_ mode: Int32) {
-        #if true
+        #if false
         
         var copy_mode: Int = Int (mode)
         
@@ -443,7 +443,7 @@ open class TextureProgressBar: Range {
     
     @inline(__always)
     fileprivate final func set_tint_under (_ tint: Color) {
-        #if true
+        #if false
         
         var copy_tint = tint
         
@@ -493,7 +493,7 @@ open class TextureProgressBar: Range {
     
     @inline(__always)
     fileprivate final func set_tint_progress (_ tint: Color) {
-        #if true
+        #if false
         
         var copy_tint = tint
         
@@ -543,7 +543,7 @@ open class TextureProgressBar: Range {
     
     @inline(__always)
     fileprivate final func set_tint_over (_ tint: Color) {
-        #if true
+        #if false
         
         var copy_tint = tint
         
@@ -593,7 +593,7 @@ open class TextureProgressBar: Range {
     
     @inline(__always)
     fileprivate final func set_texture_progress_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -643,7 +643,7 @@ open class TextureProgressBar: Range {
     
     @inline(__always)
     fileprivate final func set_radial_initial_angle (_ mode: Double) {
-        #if true
+        #if false
         
         var copy_mode = mode
         
@@ -693,7 +693,7 @@ open class TextureProgressBar: Range {
     
     @inline(__always)
     fileprivate final func set_radial_center_offset (_ mode: Vector2) {
-        #if true
+        #if false
         
         var copy_mode = mode
         
@@ -743,7 +743,7 @@ open class TextureProgressBar: Range {
     
     @inline(__always)
     fileprivate final func set_fill_degrees (_ mode: Double) {
-        #if true
+        #if false
         
         var copy_mode = mode
         
@@ -794,7 +794,7 @@ open class TextureProgressBar: Range {
     @inline(__always)
     /// Sets the stretch margin with the specified index. See ``stretchMarginBottom`` and related properties.
     fileprivate final func set_stretch_margin (_ margin: Side, _ value: Int32) {
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         var copy_value: Int = Int (value)
@@ -833,7 +833,7 @@ open class TextureProgressBar: Range {
     /// Returns the stretch margin with the specified index. See ``stretchMarginBottom`` and related properties.
     fileprivate final func get_stretch_margin (_ margin: Side)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_margin = Int64 (margin.rawValue)
         
@@ -866,7 +866,7 @@ open class TextureProgressBar: Range {
     
     @inline(__always)
     fileprivate final func set_nine_patch_stretch (_ stretch: Bool) {
-        #if true
+        #if false
         
         var copy_stretch = stretch
         

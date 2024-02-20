@@ -371,7 +371,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_emitting (_ emitting: Bool) {
-        #if true
+        #if false
         
         var copy_emitting = emitting
         
@@ -403,7 +403,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_amount (_ amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -435,7 +435,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_lifetime (_ secs: Double) {
-        #if true
+        #if false
         
         var copy_secs = secs
         
@@ -467,7 +467,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_one_shot (_ secs: Bool) {
-        #if true
+        #if false
         
         var copy_secs = secs
         
@@ -499,7 +499,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_pre_process_time (_ secs: Double) {
-        #if true
+        #if false
         
         var copy_secs = secs
         
@@ -531,7 +531,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_explosiveness_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -563,7 +563,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_randomness_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -595,7 +595,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_visibility_rect (_ visibilityRect: Rect2) {
-        #if true
+        #if false
         
         var copy_visibility_rect = visibilityRect
         
@@ -627,7 +627,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_use_local_coordinates (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -659,7 +659,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_fixed_fps (_ fps: Int32) {
-        #if true
+        #if false
         
         var copy_fps: Int = Int (fps)
         
@@ -691,7 +691,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_fractional_delta (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -723,7 +723,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_interpolate (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -755,7 +755,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_process_material (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         
@@ -786,7 +786,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_speed_scale (_ scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -818,7 +818,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_collision_base_size (_ size: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -850,7 +850,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_interp_to_end (_ interp: Double) {
-        #if true
+        #if false
         
         var copy_interp = interp
         
@@ -1170,7 +1170,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_draw_order (_ order: GPUParticles2D.DrawOrder) {
-        #if true
+        #if false
         
         var copy_order = Int64 (order.rawValue)
         
@@ -1220,7 +1220,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -1306,7 +1306,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_sub_emitter (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GPUParticles2D.method_set_sub_emitter, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -1354,7 +1354,7 @@ open class GPUParticles2D: Node2D {
     
     /// Emits a single particle. Whether `xform`, `velocity`, `color` and `custom` are applied depends on the value of `flags`. See ``GPUParticles2D/EmitFlags``.
     public final func emitParticle (xform: Transform2D, velocity: Vector2, color: Color, custom: Color, flags: UInt32) {
-        #if true
+        #if false
         
         var copy_xform = xform
         var copy_velocity = velocity
@@ -1406,7 +1406,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_trail_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1438,7 +1438,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_trail_lifetime (_ secs: Double) {
-        #if true
+        #if false
         
         var copy_secs = secs
         
@@ -1506,7 +1506,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_trail_sections (_ sections: Int32) {
-        #if true
+        #if false
         
         var copy_sections: Int = Int (sections)
         
@@ -1556,7 +1556,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_trail_section_subdivisions (_ subdivisions: Int32) {
-        #if true
+        #if false
         
         var copy_subdivisions: Int = Int (subdivisions)
         
@@ -1606,7 +1606,7 @@ open class GPUParticles2D: Node2D {
     
     /// Sets this node's properties to match a given ``CPUParticles2D`` node.
     public final func convertFromParticles (_ particles: Node?) {
-        #if true
+        #if false
         
         var copy_particles_handle = particles?.handle
         
@@ -1637,7 +1637,7 @@ open class GPUParticles2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_amount_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         

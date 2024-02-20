@@ -33,7 +33,7 @@ open class Expression: RefCounted {
     /// 
     public final func parse (expression: String, inputNames: PackedStringArray = PackedStringArray())-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_expression = GString (expression)
         
@@ -73,7 +73,7 @@ open class Expression: RefCounted {
     /// 
     public final func execute (inputs: GArray = GArray (), baseInstance: Object? = nil, showError: Bool = true, constCallsOnly: Bool = false)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_show_error = showError
         var copy_const_calls_only = constCallsOnly

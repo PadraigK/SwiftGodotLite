@@ -41,7 +41,7 @@ open class TextServerManager: Object {
     
     /// Registers a ``TextServer`` interface.
     public static func addInterface (_ interface: TextServer?) {
-        #if true
+        #if false
         
         var copy_interface_handle = interface?.handle
         
@@ -90,7 +90,7 @@ open class TextServerManager: Object {
     
     /// Removes an interface. All fonts and shaped text caches should be freed before removing an interface.
     public static func removeInterface (_ interface: TextServer?) {
-        #if true
+        #if false
         
         var copy_interface_handle = interface?.handle
         
@@ -122,7 +122,7 @@ open class TextServerManager: Object {
     /// Returns the interface registered at a given index.
     public static func getInterface (idx: Int32)-> TextServer? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -174,7 +174,7 @@ open class TextServerManager: Object {
     /// Finds an interface by its `name`.
     public static func findInterface (name: String)-> TextServer? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -207,7 +207,7 @@ open class TextServerManager: Object {
     
     /// Sets the primary ``TextServer`` interface.
     public static func setPrimaryInterface (index: TextServer?) {
-        #if true
+        #if false
         
         var copy_index_handle = index?.handle
         

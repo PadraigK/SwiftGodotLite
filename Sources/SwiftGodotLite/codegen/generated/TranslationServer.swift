@@ -50,7 +50,7 @@ open class TranslationServer: Object {
     /// If translations have been loaded beforehand for the new locale, they will be applied.
     /// 
     public static func setLocale (_ locale: String) {
-        #if true
+        #if false
         
         let gstr_locale = GString (locale)
         
@@ -125,7 +125,7 @@ open class TranslationServer: Object {
     /// Compares two locales and returns a similarity score between `0` (no match) and `10` (full match).
     public static func compareLocales (localeA: String, localeB: String)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_locale_a = GString (localeA)
         let gstr_locale_b = GString (localeB)
@@ -164,7 +164,7 @@ open class TranslationServer: Object {
     /// Returns a `locale` string standardized to match known locales (e.g. `en-US` would be matched to `en_US`).
     public static func standardizeLocale (_ locale: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_locale = GString (locale)
         
@@ -216,7 +216,7 @@ open class TranslationServer: Object {
     /// Returns a readable language name for the `language` code.
     public static func getLanguageName (language: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -268,7 +268,7 @@ open class TranslationServer: Object {
     /// Returns a readable script name for the `script` code.
     public static func getScriptName (script: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_script = GString (script)
         
@@ -320,7 +320,7 @@ open class TranslationServer: Object {
     /// Returns a readable country name for the `country` code.
     public static func getCountryName (country: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_country = GString (country)
         
@@ -354,7 +354,7 @@ open class TranslationServer: Object {
     /// Returns a locale's language and its variant (e.g. `"en_US"` would return `"English (United States)"`).
     public static func getLocaleName (locale: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_locale = GString (locale)
         
@@ -388,7 +388,7 @@ open class TranslationServer: Object {
     /// Returns the current locale's translation for the given message (key) and context.
     public static func translate (message: StringName, context: StringName = StringName (""))-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TranslationServer.method_translate, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &message.content, &context.content)
@@ -426,7 +426,7 @@ open class TranslationServer: Object {
     /// 
     public static func translatePlural (message: StringName, pluralMessage: StringName, n: Int32, context: StringName = StringName (""))-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_n: Int = Int (n)
         
@@ -468,7 +468,7 @@ open class TranslationServer: Object {
     
     /// Adds a ``Translation`` resource.
     public static func addTranslation (_ translation: Translation?) {
-        #if true
+        #if false
         
         var copy_translation_handle = translation?.handle
         
@@ -499,7 +499,7 @@ open class TranslationServer: Object {
     
     /// Removes the given translation from the server.
     public static func removeTranslation (_ translation: Translation?) {
-        #if true
+        #if false
         
         var copy_translation_handle = translation?.handle
         
@@ -534,7 +534,7 @@ open class TranslationServer: Object {
     /// 
     public static func getTranslationObject (locale: String)-> Translation? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_locale = GString (locale)
         
@@ -619,7 +619,7 @@ open class TranslationServer: Object {
     
     @inline(__always)
     fileprivate static func set_pseudolocalization_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -668,7 +668,7 @@ open class TranslationServer: Object {
     /// Returns the pseudolocalized string based on the `message` passed in.
     public static func pseudolocalize (message: StringName)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TranslationServer.method_pseudolocalize, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &message.content)

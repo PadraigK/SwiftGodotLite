@@ -21,7 +21,7 @@ open class Skin: Resource {
     
     /// 
     public final func setBindCount (_ bindCount: Int32) {
-        #if true
+        #if false
         
         var copy_bind_count: Int = Int (bindCount)
         
@@ -71,7 +71,7 @@ open class Skin: Resource {
     
     /// 
     public final func addBind (bone: Int32, pose: Transform3D) {
-        #if true
+        #if false
         
         var copy_bone: Int = Int (bone)
         var copy_pose = pose
@@ -108,7 +108,7 @@ open class Skin: Resource {
     
     /// 
     public final func addNamedBind (name: String, pose: Transform3D) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_pose = pose
@@ -145,7 +145,7 @@ open class Skin: Resource {
     
     /// 
     public final func setBindPose (bindIndex: Int32, pose: Transform3D) {
-        #if true
+        #if false
         
         var copy_bind_index: Int = Int (bindIndex)
         var copy_pose = pose
@@ -183,7 +183,7 @@ open class Skin: Resource {
     /// 
     public final func getBindPose (bindIndex: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_bind_index: Int = Int (bindIndex)
         
@@ -216,7 +216,7 @@ open class Skin: Resource {
     
     /// 
     public final func setBindName (bindIndex: Int32, name: StringName) {
-        #if true
+        #if false
         
         var copy_bind_index: Int = Int (bindIndex)
         
@@ -252,7 +252,7 @@ open class Skin: Resource {
     /// 
     public final func getBindName (bindIndex: Int32)-> StringName {
         let _result: StringName = StringName ()
-        #if true
+        #if false
         
         var copy_bind_index: Int = Int (bindIndex)
         
@@ -285,7 +285,7 @@ open class Skin: Resource {
     
     /// 
     public final func setBindBone (bindIndex: Int32, bone: Int32) {
-        #if true
+        #if false
         
         var copy_bind_index: Int = Int (bindIndex)
         var copy_bone: Int = Int (bone)
@@ -323,7 +323,7 @@ open class Skin: Resource {
     /// 
     public final func getBindBone (bindIndex: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_bind_index: Int = Int (bindIndex)
         

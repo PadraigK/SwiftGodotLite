@@ -105,7 +105,7 @@ open class EditorNode3DGizmo: Node3DGizmo {
     
     /// Adds lines to the gizmo (as sets of 2 points), with a given material. The lines are used for visualizing the gizmo. Call this method during ``_redraw()``.
     public final func addLines (_ lines: PackedVector3Array, material: Material?, billboard: Bool = false, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_billboard = billboard
         var copy_modulate = modulate
@@ -149,7 +149,7 @@ open class EditorNode3DGizmo: Node3DGizmo {
     
     /// Adds a mesh to the gizmo with the specified `material`, local `transform` and `skeleton`. Call this method during ``_redraw()``.
     public final func addMesh (_ mesh: Mesh?, material: Material? = nil, transform: Transform3D = Transform3D (xAxis: Vector3 (x: 1, y: 0, z: 0), yAxis: Vector3 (x: 0, y: 1, z: 0), zAxis: Vector3(x: 0, y: 0, z: 1), origin: Vector3 (x: 0, y: 0, z: 0)), skeleton: SkinReference? = nil) {
-        #if true
+        #if false
         
         var copy_transform = transform
         var copy_mesh_handle = mesh?.handle
@@ -193,7 +193,7 @@ open class EditorNode3DGizmo: Node3DGizmo {
     
     /// Adds the specified `segments` to the gizmo's collision shape for picking. Call this method during ``_redraw()``.
     public final func addCollisionSegments (_ segments: PackedVector3Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorNode3DGizmo.method_add_collision_segments, UnsafeMutableRawPointer (mutating: handle), nil, &segments.content)
@@ -223,7 +223,7 @@ open class EditorNode3DGizmo: Node3DGizmo {
     
     /// Adds collision triangles to the gizmo for picking. A ``TriangleMesh`` can be generated from a regular ``Mesh`` too. Call this method during ``_redraw()``.
     public final func addCollisionTriangles (_ triangles: TriangleMesh?) {
-        #if true
+        #if false
         
         var copy_triangles_handle = triangles?.handle
         
@@ -254,7 +254,7 @@ open class EditorNode3DGizmo: Node3DGizmo {
     
     /// Adds an unscaled billboard for visualization and selection. Call this method during ``_redraw()``.
     public final func addUnscaledBillboard (material: Material?, defaultScale: Double = 1, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_default_scale = defaultScale
         var copy_modulate = modulate
@@ -300,7 +300,7 @@ open class EditorNode3DGizmo: Node3DGizmo {
     /// There are virtual methods which will be called upon editing of these handles. Call this method during ``_redraw()``.
     /// 
     public final func addHandles (_ handles: PackedVector3Array, material: Material?, ids: PackedInt32Array, billboard: Bool = false, secondary: Bool = false) {
-        #if true
+        #if false
         
         var copy_billboard = billboard
         var copy_secondary = secondary
@@ -347,7 +347,7 @@ open class EditorNode3DGizmo: Node3DGizmo {
     
     /// Sets the reference ``Node3D`` node for the gizmo. `node` must inherit from ``Node3D``.
     public final func setNode3d (node: Node?) {
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -430,7 +430,7 @@ open class EditorNode3DGizmo: Node3DGizmo {
     
     /// Sets the gizmo's hidden state. If `true`, the gizmo will be hidden. If `false`, it will be shown.
     public final func setHidden (_ hidden: Bool) {
-        #if true
+        #if false
         
         var copy_hidden = hidden
         
@@ -463,7 +463,7 @@ open class EditorNode3DGizmo: Node3DGizmo {
     /// Returns `true` if the given subgizmo is currently selected. Can be used to highlight selected elements during ``_redraw()``.
     public final func isSubgizmoSelected (id: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         

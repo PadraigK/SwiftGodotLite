@@ -541,7 +541,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_horizontal_alignment (_ alignment: HorizontalAlignment) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -608,7 +608,7 @@ open class LineEdit: Control {
     /// Selects characters inside ``LineEdit`` between `from` and `to`. By default, `from` is at the beginning and `to` at the end.
     /// 
     public final func select (from: Int32 = 0, to: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_from: Int = Int (from)
         var copy_to: Int = Int (to)
@@ -749,7 +749,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_text (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -817,7 +817,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_draw_control_chars (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -849,7 +849,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_text_direction (_ direction: Control.TextDirection) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -899,7 +899,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_language (_ language: String) {
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -949,7 +949,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_structured_text_bidi_override (_ parser: TextServer.StructuredTextParser) {
-        #if true
+        #if false
         
         var copy_parser = Int64 (parser.rawValue)
         
@@ -999,7 +999,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_structured_text_bidi_override_options (_ args: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (LineEdit.method_set_structured_text_bidi_override_options, UnsafeMutableRawPointer (mutating: handle), nil, &args.content)
@@ -1047,7 +1047,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_placeholder (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -1097,7 +1097,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_caret_column (_ position: Int32) {
-        #if true
+        #if false
         
         var copy_position: Int = Int (position)
         
@@ -1165,7 +1165,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_expand_to_text_length_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1215,7 +1215,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_caret_blink_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1265,7 +1265,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_caret_mid_grapheme_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1315,7 +1315,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_caret_force_displayed (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1365,7 +1365,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_caret_blink_interval (_ interval: Double) {
-        #if true
+        #if false
         
         var copy_interval = interval
         
@@ -1415,7 +1415,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_max_length (_ chars: Int32) {
-        #if true
+        #if false
         
         var copy_chars: Int = Int (chars)
         
@@ -1465,7 +1465,7 @@ open class LineEdit: Control {
     
     /// Inserts `text` at the caret. If the resulting value is longer than ``maxLength``, nothing happens.
     public final func insertTextAtCaret (text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -1513,7 +1513,7 @@ open class LineEdit: Control {
     
     /// Deletes a section of the ``text`` going from position `fromColumn` to `toColumn`. Both parameters should be within the text's length.
     public final func deleteText (fromColumn: Int32, toColumn: Int32) {
-        #if true
+        #if false
         
         var copy_from_column: Int = Int (fromColumn)
         var copy_to_column: Int = Int (toColumn)
@@ -1550,7 +1550,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_editable (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1600,7 +1600,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_secret (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1650,7 +1650,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_secret_character (_ character: String) {
-        #if true
+        #if false
         
         let gstr_character = GString (character)
         
@@ -1700,7 +1700,7 @@ open class LineEdit: Control {
     
     /// Executes a given action as defined in the ``LineEdit/MenuItems`` enum.
     public final func menuOption (_ option: Int32) {
-        #if true
+        #if false
         
         var copy_option: Int = Int (option)
         
@@ -1773,7 +1773,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_context_menu_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1823,7 +1823,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_virtual_keyboard_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1873,7 +1873,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_virtual_keyboard_type (_ type: LineEdit.VirtualKeyboardType) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -1923,7 +1923,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_clear_button_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1973,7 +1973,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_shortcut_keys_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2023,7 +2023,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_middle_mouse_paste_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2073,7 +2073,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_selecting_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2123,7 +2123,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_deselect_on_focus_loss_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2173,7 +2173,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_drag_and_drop_selection_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2223,7 +2223,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_right_icon (_ icon: Texture2D?) {
-        #if true
+        #if false
         
         var copy_icon_handle = icon?.handle
         
@@ -2272,7 +2272,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_flat (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2322,7 +2322,7 @@ open class LineEdit: Control {
     
     @inline(__always)
     fileprivate final func set_select_all_on_focus (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

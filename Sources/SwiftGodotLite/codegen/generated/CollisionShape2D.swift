@@ -93,7 +93,7 @@ open class CollisionShape2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_shape (_ shape: Shape2D?) {
-        #if true
+        #if false
         
         var copy_shape_handle = shape?.handle
         
@@ -142,7 +142,7 @@ open class CollisionShape2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_disabled (_ disabled: Bool) {
-        #if true
+        #if false
         
         var copy_disabled = disabled
         
@@ -192,7 +192,7 @@ open class CollisionShape2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_one_way_collision (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -242,7 +242,7 @@ open class CollisionShape2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_one_way_collision_margin (_ margin: Double) {
-        #if true
+        #if false
         
         var copy_margin = margin
         
@@ -292,7 +292,7 @@ open class CollisionShape2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_debug_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         

@@ -102,7 +102,7 @@ open class CSGCylinder3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -152,7 +152,7 @@ open class CSGCylinder3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_height (_ height: Double) {
-        #if true
+        #if false
         
         var copy_height = height
         
@@ -202,7 +202,7 @@ open class CSGCylinder3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_sides (_ sides: Int32) {
-        #if true
+        #if false
         
         var copy_sides: Int = Int (sides)
         
@@ -252,7 +252,7 @@ open class CSGCylinder3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_cone (_ cone: Bool) {
-        #if true
+        #if false
         
         var copy_cone = cone
         
@@ -302,7 +302,7 @@ open class CSGCylinder3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_material (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         
@@ -351,7 +351,7 @@ open class CSGCylinder3D: CSGPrimitive3D {
     
     @inline(__always)
     fileprivate final func set_smooth_faces (_ smoothFaces: Bool) {
-        #if true
+        #if false
         
         var copy_smooth_faces = smoothFaces
         

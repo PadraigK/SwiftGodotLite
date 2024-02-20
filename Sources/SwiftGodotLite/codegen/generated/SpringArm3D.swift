@@ -104,7 +104,7 @@ open class SpringArm3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_length (_ length: Double) {
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -154,7 +154,7 @@ open class SpringArm3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_shape (_ shape: Shape3D?) {
-        #if true
+        #if false
         
         var copy_shape_handle = shape?.handle
         
@@ -203,7 +203,7 @@ open class SpringArm3D: Node3D {
     
     /// Adds the ``PhysicsBody3D`` object with the given ``RID`` to the list of ``PhysicsBody3D`` objects excluded from the collision check.
     public final func addExcludedObject (rid: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SpringArm3D.method_add_excluded_object, UnsafeMutableRawPointer (mutating: handle), nil, &rid.content)
@@ -234,7 +234,7 @@ open class SpringArm3D: Node3D {
     /// Removes the given ``RID`` from the list of ``PhysicsBody3D`` objects excluded from the collision check.
     public final func removeExcludedObject (rid: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SpringArm3D.method_remove_excluded_object, UnsafeMutableRawPointer (mutating: handle), &_result, &rid.content)
@@ -281,7 +281,7 @@ open class SpringArm3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_collision_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -331,7 +331,7 @@ open class SpringArm3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_margin (_ margin: Double) {
-        #if true
+        #if false
         
         var copy_margin = margin
         

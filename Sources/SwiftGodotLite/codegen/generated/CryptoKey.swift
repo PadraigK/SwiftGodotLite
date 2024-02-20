@@ -31,7 +31,7 @@ open class CryptoKey: Resource {
     /// 
     public final func save (path: String, publicOnly: Bool = false)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_public_only = publicOnly
@@ -73,7 +73,7 @@ open class CryptoKey: Resource {
     /// 
     public final func load (path: String, publicOnly: Bool = false)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_public_only = publicOnly
@@ -130,7 +130,7 @@ open class CryptoKey: Resource {
     /// Returns a string containing the key in PEM format. If `publicOnly` is `true`, only the public key will be included.
     public final func saveToString (publicOnly: Bool = false)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_public_only = publicOnly
         
@@ -164,7 +164,7 @@ open class CryptoKey: Resource {
     /// Loads a key from the given `stringKey`. If `publicOnly` is `true`, only the public key will be loaded.
     public final func loadFromString (stringKey: String, publicOnly: Bool = false)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_string_key = GString (stringKey)
         var copy_public_only = publicOnly

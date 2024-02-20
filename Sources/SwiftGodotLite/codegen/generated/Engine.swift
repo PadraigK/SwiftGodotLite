@@ -129,7 +129,7 @@ open class Engine: Object {
     
     @inline(__always)
     fileprivate static func set_physics_ticks_per_second (_ physicsTicksPerSecond: Int32) {
-        #if true
+        #if false
         
         var copy_physics_ticks_per_second: Int = Int (physicsTicksPerSecond)
         
@@ -179,7 +179,7 @@ open class Engine: Object {
     
     @inline(__always)
     fileprivate static func set_max_physics_steps_per_frame (_ maxPhysicsSteps: Int32) {
-        #if true
+        #if false
         
         var copy_max_physics_steps: Int = Int (maxPhysicsSteps)
         
@@ -229,7 +229,7 @@ open class Engine: Object {
     
     @inline(__always)
     fileprivate static func set_physics_jitter_fix (_ physicsJitterFix: Double) {
-        #if true
+        #if false
         
         var copy_physics_jitter_fix = physicsJitterFix
         
@@ -297,7 +297,7 @@ open class Engine: Object {
     
     @inline(__always)
     fileprivate static func set_max_fps (_ maxFps: Int32) {
-        #if true
+        #if false
         
         var copy_max_fps: Int = Int (maxFps)
         
@@ -347,7 +347,7 @@ open class Engine: Object {
     
     @inline(__always)
     fileprivate static func set_time_scale (_ timeScale: Double) {
-        #if true
+        #if false
         
         var copy_time_scale = timeScale
         
@@ -681,7 +681,7 @@ open class Engine: Object {
     /// Returns `true` if a singleton with given `name` exists in global scope.
     public static func hasSingleton (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Engine.method_has_singleton, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &name.content)
@@ -713,7 +713,7 @@ open class Engine: Object {
     /// Returns a global singleton with given `name`. Often used for plugins, e.g. GodotPayments.
     public static func getSingleton (name: StringName)-> Object? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Engine.method_get_singleton, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &name.content)
@@ -744,7 +744,7 @@ open class Engine: Object {
     
     /// Registers the given object as a singleton, globally available under `name`.
     public static func registerSingleton (name: StringName, instance: Object?) {
-        #if true
+        #if false
         
         var copy_instance_handle = instance?.handle
         
@@ -778,7 +778,7 @@ open class Engine: Object {
     
     /// Unregisters the singleton registered under `name`. The singleton object is not freed. Only works with user-defined singletons created with ``registerSingleton(name:instance:)``.
     public static func unregisterSingleton (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Engine.method_unregister_singleton, UnsafeMutableRawPointer (mutating: shared.handle), nil, &name.content)
@@ -836,7 +836,7 @@ open class Engine: Object {
     /// 
     public static func registerScriptLanguage (_ language: ScriptLanguage?)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_language_handle = language?.handle
         
@@ -876,7 +876,7 @@ open class Engine: Object {
     /// 
     public static func unregisterScriptLanguage (_ language: ScriptLanguage?)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_language_handle = language?.handle
         
@@ -927,7 +927,7 @@ open class Engine: Object {
     /// Returns an instance of a ``ScriptLanguage`` with the given index.
     public static func getScriptLanguage (index: Int32)-> ScriptLanguage? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1001,7 +1001,7 @@ open class Engine: Object {
     
     @inline(__always)
     fileprivate static func set_print_error_messages (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

@@ -69,7 +69,7 @@ open class EditorInspectorPlugin: RefCounted {
     
     /// Adds a custom control, which is not necessarily a property editor.
     public final func addCustomControl (_ control: Control?) {
-        #if true
+        #if false
         
         var copy_control_handle = control?.handle
         
@@ -100,7 +100,7 @@ open class EditorInspectorPlugin: RefCounted {
     
     /// Adds a property editor for an individual property. The `editor` control must extend ``EditorProperty``.
     public final func addPropertyEditor (property: String, editor: Control?, addToEnd: Bool = false) {
-        #if true
+        #if false
         
         let gstr_property = GString (property)
         var copy_add_to_end = addToEnd
@@ -141,7 +141,7 @@ open class EditorInspectorPlugin: RefCounted {
     
     /// Adds an editor that allows modifying multiple properties. The `editor` control must extend ``EditorProperty``.
     public final func addPropertyEditorForMultipleProperties (label: String, properties: PackedStringArray, editor: Control?) {
-        #if true
+        #if false
         
         let gstr_label = GString (label)
         var copy_editor_handle = editor?.handle

@@ -30,7 +30,7 @@ open class ResourcePreloader: Node {
     
     /// Adds a resource to the preloader with the given `name`. If a resource with the given `name` already exists, the new resource will be renamed to "`name` N" where N is an incrementing number starting from 2.
     public final func addResource (name: StringName, resource: Resource?) {
-        #if true
+        #if false
         
         var copy_resource_handle = resource?.handle
         
@@ -64,7 +64,7 @@ open class ResourcePreloader: Node {
     
     /// Removes the resource associated to `name` from the preloader.
     public final func removeResource (name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ResourcePreloader.method_remove_resource, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -94,7 +94,7 @@ open class ResourcePreloader: Node {
     
     /// Renames a resource inside the preloader from `name` to `newname`.
     public final func renameResource (name: StringName, newname: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ResourcePreloader.method_rename_resource, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &newname.content)
@@ -128,7 +128,7 @@ open class ResourcePreloader: Node {
     /// Returns `true` if the preloader contains a resource associated to `name`.
     public final func hasResource (name: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ResourcePreloader.method_has_resource, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)
@@ -160,7 +160,7 @@ open class ResourcePreloader: Node {
     /// Returns the resource associated to `name`.
     public final func getResource (name: StringName)-> Resource? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ResourcePreloader.method_get_resource, UnsafeMutableRawPointer (mutating: handle), &_result, &name.content)

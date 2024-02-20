@@ -35,7 +35,7 @@ open class TCPServer: RefCounted {
     /// 
     public final func listen (port: UInt16, bindAddress: String = "*")-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_port: Int = Int (port)
         let gstr_bind_address = GString (bindAddress)

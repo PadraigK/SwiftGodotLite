@@ -80,7 +80,7 @@ open class MultiplayerSpawner: Node {
     
     /// Adds a scene path to spawnable scenes, making it automatically replicated from the multiplayer authority to other peers when added as children of the node pointed by ``spawnPath``.
     public final func addSpawnableScene (path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -131,7 +131,7 @@ open class MultiplayerSpawner: Node {
     /// Returns the spawnable scene path by index.
     public final func getSpawnableScene (index: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -184,7 +184,7 @@ open class MultiplayerSpawner: Node {
     /// 
     public final func spawn (data: Variant)-> Node? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (MultiplayerSpawner.method_spawn, UnsafeMutableRawPointer (mutating: handle), &_result, &data.content)
@@ -233,7 +233,7 @@ open class MultiplayerSpawner: Node {
     
     @inline(__always)
     fileprivate final func set_spawn_path (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (MultiplayerSpawner.method_set_spawn_path, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -281,7 +281,7 @@ open class MultiplayerSpawner: Node {
     
     @inline(__always)
     fileprivate final func set_spawn_limit (_ limit: UInt32) {
-        #if true
+        #if false
         
         var copy_limit: Int = Int (limit)
         
@@ -331,7 +331,7 @@ open class MultiplayerSpawner: Node {
     
     @inline(__always)
     fileprivate final func set_spawn_function (_ spawnFunction: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (MultiplayerSpawner.method_set_spawn_function, UnsafeMutableRawPointer (mutating: handle), nil, &spawnFunction.content)

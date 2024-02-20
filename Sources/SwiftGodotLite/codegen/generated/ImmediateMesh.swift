@@ -29,7 +29,7 @@ open class ImmediateMesh: Mesh {
     
     /// Begin a new surface.
     public final func surfaceBegin (primitive: Mesh.PrimitiveType, material: Material? = nil) {
-        #if true
+        #if false
         
         var copy_primitive = Int64 (primitive.rawValue)
         var copy_material_handle = material?.handle
@@ -65,7 +65,7 @@ open class ImmediateMesh: Mesh {
     
     /// Set the color attribute that will be pushed with the next vertex.
     public final func surfaceSetColor (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -97,7 +97,7 @@ open class ImmediateMesh: Mesh {
     
     /// Set the normal attribute that will be pushed with the next vertex.
     public final func surfaceSetNormal (_ normal: Vector3) {
-        #if true
+        #if false
         
         var copy_normal = normal
         
@@ -129,7 +129,7 @@ open class ImmediateMesh: Mesh {
     
     /// Set the tangent attribute that will be pushed with the next vertex.
     public final func surfaceSetTangent (_ tangent: Plane) {
-        #if true
+        #if false
         
         var copy_tangent = tangent
         
@@ -161,7 +161,7 @@ open class ImmediateMesh: Mesh {
     
     /// Set the UV attribute that will be pushed with the next vertex.
     public final func surfaceSetUv (_ uv: Vector2) {
-        #if true
+        #if false
         
         var copy_uv = uv
         
@@ -193,7 +193,7 @@ open class ImmediateMesh: Mesh {
     
     /// Set the UV2 attribute that will be pushed with the next vertex.
     public final func surfaceSetUv2 (_ uv2: Vector2) {
-        #if true
+        #if false
         
         var copy_uv2 = uv2
         
@@ -225,7 +225,7 @@ open class ImmediateMesh: Mesh {
     
     /// Add a 3D vertex using the current attributes previously set.
     public final func surfaceAddVertex (_ vertex: Vector3) {
-        #if true
+        #if false
         
         var copy_vertex = vertex
         
@@ -257,7 +257,7 @@ open class ImmediateMesh: Mesh {
     
     /// Add a 2D vertex using the current attributes previously set.
     public final func surfaceAddVertex2d (vertex: Vector2) {
-        #if true
+        #if false
         
         var copy_vertex = vertex
         

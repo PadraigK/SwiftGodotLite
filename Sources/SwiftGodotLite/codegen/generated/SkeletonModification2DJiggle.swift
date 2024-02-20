@@ -116,7 +116,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_target_node (_ targetNodepath: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SkeletonModification2DJiggle.method_set_target_node, UnsafeMutableRawPointer (mutating: handle), nil, &targetNodepath.content)
@@ -164,7 +164,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_jiggle_data_chain_length (_ length: Int32) {
-        #if true
+        #if false
         
         var copy_length: Int = Int (length)
         
@@ -214,7 +214,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_stiffness (_ stiffness: Double) {
-        #if true
+        #if false
         
         var copy_stiffness = stiffness
         
@@ -264,7 +264,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_mass (_ mass: Double) {
-        #if true
+        #if false
         
         var copy_mass = mass
         
@@ -314,7 +314,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_damping (_ damping: Double) {
-        #if true
+        #if false
         
         var copy_damping = damping
         
@@ -364,7 +364,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_use_gravity (_ useGravity: Bool) {
-        #if true
+        #if false
         
         var copy_use_gravity = useGravity
         
@@ -414,7 +414,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_gravity (_ gravity: Vector2) {
-        #if true
+        #if false
         
         var copy_gravity = gravity
         
@@ -464,7 +464,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     /// If `true`, the Jiggle modifier will take colliders into account, keeping them from entering into these collision objects.
     public final func setUseColliders (_ useColliders: Bool) {
-        #if true
+        #if false
         
         var copy_use_colliders = useColliders
         
@@ -514,7 +514,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     /// Sets the collision mask that the Jiggle modifier will use when reacting to colliders, if the Jiggle modifier is set to take colliders into account.
     public final func setCollisionMask (_ collisionMask: Int32) {
-        #if true
+        #if false
         
         var copy_collision_mask: Int = Int (collisionMask)
         
@@ -564,7 +564,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     /// Sets the ``Bone2D`` node assigned to the Jiggle joint at `jointIdx`.
     public final func setJiggleJointBone2dNode (jointIdx: Int32, bone2dNode: NodePath) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -600,7 +600,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     /// Returns the ``Bone2D`` node assigned to the Jiggle joint at `jointIdx`.
     public final func getJiggleJointBone2dNode (jointIdx: Int32)-> NodePath {
         let _result: NodePath = NodePath ()
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -633,7 +633,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     /// Sets the bone index, `boneIdx`, of the Jiggle joint at `jointIdx`. When possible, this will also update the `bone2d_node` of the Jiggle joint based on data provided by the linked skeleton.
     public final func setJiggleJointBoneIndex (jointIdx: Int32, boneIdx: Int32) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         var copy_bone_idx: Int = Int (boneIdx)
@@ -671,7 +671,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     /// Returns the index of the ``Bone2D`` node assigned to the Jiggle joint at `jointIdx`.
     public final func getJiggleJointBoneIndex (jointIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -704,7 +704,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     /// Sets whether the Jiggle joint at `jointIdx` should override the default Jiggle joint settings. Setting this to `true` will make the joint use its own settings rather than the default ones attached to the modification.
     public final func setJiggleJointOverride (jointIdx: Int32, override: Bool) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         var copy_override = override
@@ -742,7 +742,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     /// Returns a boolean that indicates whether the joint at `jointIdx` is overriding the default Jiggle joint data defined in the modification.
     public final func getJiggleJointOverride (jointIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -775,7 +775,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     /// Sets the of stiffness of the Jiggle joint at `jointIdx`.
     public final func setJiggleJointStiffness (jointIdx: Int32, stiffness: Double) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         var copy_stiffness = stiffness
@@ -813,7 +813,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     /// Returns the stiffness of the Jiggle joint at `jointIdx`.
     public final func getJiggleJointStiffness (jointIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -846,7 +846,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     /// Sets the of mass of the Jiggle joint at `jointIdx`.
     public final func setJiggleJointMass (jointIdx: Int32, mass: Double) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         var copy_mass = mass
@@ -884,7 +884,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     /// Returns the amount of mass of the jiggle joint at `jointIdx`.
     public final func getJiggleJointMass (jointIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -917,7 +917,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     /// Sets the amount of damping of the Jiggle joint at `jointIdx`.
     public final func setJiggleJointDamping (jointIdx: Int32, damping: Double) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         var copy_damping = damping
@@ -955,7 +955,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     /// Returns the amount of damping of the Jiggle joint at `jointIdx`.
     public final func getJiggleJointDamping (jointIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -988,7 +988,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     /// Sets whether the Jiggle joint at `jointIdx` should use gravity.
     public final func setJiggleJointUseGravity (jointIdx: Int32, useGravity: Bool) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         var copy_use_gravity = useGravity
@@ -1026,7 +1026,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     /// Returns a boolean that indicates whether the joint at `jointIdx` is using gravity or not.
     public final func getJiggleJointUseGravity (jointIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -1059,7 +1059,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     
     /// Sets the gravity vector of the Jiggle joint at `jointIdx`.
     public final func setJiggleJointGravity (jointIdx: Int32, gravity: Vector2) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         var copy_gravity = gravity
@@ -1097,7 +1097,7 @@ open class SkeletonModification2DJiggle: SkeletonModification2D {
     /// Returns a ``Vector2`` representing the amount of gravity the Jiggle joint at `jointIdx` is influenced by.
     public final func getJiggleJointGravity (jointIdx: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         

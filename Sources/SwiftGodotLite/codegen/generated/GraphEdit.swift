@@ -361,7 +361,7 @@ open class GraphEdit: Control {
     /// Create a connection between the `fromPort` of the `fromNode` ``GraphNode`` and the `toPort` of the `toNode` ``GraphNode``. If the connection already exists, no connection is created.
     public final func connectNode (fromNode: StringName, fromPort: Int32, toNode: StringName, toPort: Int32)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_from_port: Int = Int (fromPort)
         var copy_to_port: Int = Int (toPort)
@@ -406,7 +406,7 @@ open class GraphEdit: Control {
     /// Returns `true` if the `fromPort` of the `fromNode` ``GraphNode`` is connected to the `toPort` of the `toNode` ``GraphNode``.
     public final func isNodeConnected (fromNode: StringName, fromPort: Int32, toNode: StringName, toPort: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_from_port: Int = Int (fromPort)
         var copy_to_port: Int = Int (toPort)
@@ -450,7 +450,7 @@ open class GraphEdit: Control {
     
     /// Removes the connection between the `fromPort` of the `fromNode` ``GraphNode`` and the `toPort` of the `toNode` ``GraphNode``. If the connection does not exist, no connection is removed.
     public final func disconnectNode (fromNode: StringName, fromPort: Int32, toNode: StringName, toPort: Int32) {
-        #if true
+        #if false
         
         var copy_from_port: Int = Int (fromPort)
         var copy_to_port: Int = Int (toPort)
@@ -493,7 +493,7 @@ open class GraphEdit: Control {
     
     /// Sets the coloration of the connection between `fromNode`'s `fromPort` and `toNode`'s `toPort` with the color provided in the [theme_item activity] theme property. The color is linearly interpolated between the connection color and the activity color using `amount` as weight.
     public final func setConnectionActivity (fromNode: StringName, fromPort: Int32, toNode: StringName, toPort: Int32, amount: Double) {
-        #if true
+        #if false
         
         var copy_from_port: Int = Int (fromPort)
         var copy_to_port: Int = Int (toPort)
@@ -614,7 +614,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_scroll_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -646,7 +646,7 @@ open class GraphEdit: Control {
     
     /// Allows to disconnect nodes when dragging from the right port of the ``GraphNode``'s slot if it has the specified type. See also ``removeValidRightDisconnectType(_:)``.
     public final func addValidRightDisconnectType (_ type: Int32) {
-        #if true
+        #if false
         
         var copy_type: Int = Int (type)
         
@@ -678,7 +678,7 @@ open class GraphEdit: Control {
     
     /// Disallows to disconnect nodes when dragging from the right port of the ``GraphNode``'s slot if it has the specified type. Use this to disable disconnection previously allowed with ``addValidRightDisconnectType(_:)``.
     public final func removeValidRightDisconnectType (_ type: Int32) {
-        #if true
+        #if false
         
         var copy_type: Int = Int (type)
         
@@ -710,7 +710,7 @@ open class GraphEdit: Control {
     
     /// Allows to disconnect nodes when dragging from the left port of the ``GraphNode``'s slot if it has the specified type. See also ``removeValidLeftDisconnectType(_:)``.
     public final func addValidLeftDisconnectType (_ type: Int32) {
-        #if true
+        #if false
         
         var copy_type: Int = Int (type)
         
@@ -742,7 +742,7 @@ open class GraphEdit: Control {
     
     /// Disallows to disconnect nodes when dragging from the left port of the ``GraphNode``'s slot if it has the specified type. Use this to disable disconnection previously allowed with ``addValidLeftDisconnectType(_:)``.
     public final func removeValidLeftDisconnectType (_ type: Int32) {
-        #if true
+        #if false
         
         var copy_type: Int = Int (type)
         
@@ -777,7 +777,7 @@ open class GraphEdit: Control {
     /// See also ``isValidConnectionType(fromType:toType:)`` and ``removeValidConnectionType(fromType:toType:)``.
     /// 
     public final func addValidConnectionType (fromType: Int32, toType: Int32) {
-        #if true
+        #if false
         
         var copy_from_type: Int = Int (fromType)
         var copy_to_type: Int = Int (toType)
@@ -817,7 +817,7 @@ open class GraphEdit: Control {
     /// See also ``isValidConnectionType(fromType:toType:)``.
     /// 
     public final func removeValidConnectionType (fromType: Int32, toType: Int32) {
-        #if true
+        #if false
         
         var copy_from_type: Int = Int (fromType)
         var copy_to_type: Int = Int (toType)
@@ -858,7 +858,7 @@ open class GraphEdit: Control {
     /// 
     public final func isValidConnectionType (fromType: Int32, toType: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_from_type: Int = Int (fromType)
         var copy_to_type: Int = Int (toType)
@@ -897,7 +897,7 @@ open class GraphEdit: Control {
     /// Returns the points which would make up a connection between `fromNode` and `toNode`.
     public final func getConnectionLine (fromNode: Vector2, toNode: Vector2)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_from_node = fromNode
         var copy_to_node = toNode
@@ -935,7 +935,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_panning_scheme (_ scheme: GraphEdit.PanningScheme) {
-        #if true
+        #if false
         
         var copy_scheme = Int64 (scheme.rawValue)
         
@@ -985,7 +985,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_zoom (_ zoom: Double) {
-        #if true
+        #if false
         
         var copy_zoom = zoom
         
@@ -1035,7 +1035,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_zoom_min (_ zoomMin: Double) {
-        #if true
+        #if false
         
         var copy_zoom_min = zoomMin
         
@@ -1085,7 +1085,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_zoom_max (_ zoomMax: Double) {
-        #if true
+        #if false
         
         var copy_zoom_max = zoomMax
         
@@ -1135,7 +1135,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_zoom_step (_ zoomStep: Double) {
-        #if true
+        #if false
         
         var copy_zoom_step = zoomStep
         
@@ -1185,7 +1185,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_show_grid (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1235,7 +1235,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_snapping_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1285,7 +1285,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_snapping_distance (_ pixels: Int32) {
-        #if true
+        #if false
         
         var copy_pixels: Int = Int (pixels)
         
@@ -1335,7 +1335,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_connection_lines_curvature (_ curvature: Double) {
-        #if true
+        #if false
         
         var copy_curvature = curvature
         
@@ -1385,7 +1385,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_connection_lines_thickness (_ pixels: Double) {
-        #if true
+        #if false
         
         var copy_pixels = pixels
         
@@ -1435,7 +1435,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_connection_lines_antialiased (_ pixels: Bool) {
-        #if true
+        #if false
         
         var copy_pixels = pixels
         
@@ -1485,7 +1485,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_minimap_size (_ size: Vector2) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -1535,7 +1535,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_minimap_opacity (_ opacity: Double) {
-        #if true
+        #if false
         
         var copy_opacity = opacity
         
@@ -1585,7 +1585,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_minimap_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1635,7 +1635,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_show_menu (_ hidden: Bool) {
-        #if true
+        #if false
         
         var copy_hidden = hidden
         
@@ -1685,7 +1685,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_show_zoom_label (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1735,7 +1735,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_show_grid_buttons (_ hidden: Bool) {
-        #if true
+        #if false
         
         var copy_hidden = hidden
         
@@ -1785,7 +1785,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_show_zoom_buttons (_ hidden: Bool) {
-        #if true
+        #if false
         
         var copy_hidden = hidden
         
@@ -1835,7 +1835,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_show_minimap_button (_ hidden: Bool) {
-        #if true
+        #if false
         
         var copy_hidden = hidden
         
@@ -1885,7 +1885,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_show_arrange_button (_ hidden: Bool) {
-        #if true
+        #if false
         
         var copy_hidden = hidden
         
@@ -1935,7 +1935,7 @@ open class GraphEdit: Control {
     
     @inline(__always)
     fileprivate final func set_right_disconnects (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2022,7 +2022,7 @@ open class GraphEdit: Control {
     
     /// Sets the specified `node` as the one selected.
     public final func setSelected (node: Node?) {
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         

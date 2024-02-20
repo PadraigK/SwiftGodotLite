@@ -147,7 +147,7 @@ open class NavigationPolygon: Resource {
     @inline(__always)
     /// Sets the vertices that can be then indexed to create polygons with the ``addPolygon(_:)`` method.
     fileprivate final func set_vertices (_ vertices: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationPolygon.method_set_vertices, UnsafeMutableRawPointer (mutating: handle), nil, &vertices.content)
@@ -196,7 +196,7 @@ open class NavigationPolygon: Resource {
     
     /// Adds a polygon using the indices of the vertices you get when calling ``getVertices()``.
     public final func addPolygon (_ polygon: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationPolygon.method_add_polygon, UnsafeMutableRawPointer (mutating: handle), nil, &polygon.content)
@@ -245,7 +245,7 @@ open class NavigationPolygon: Resource {
     /// Returns a ``PackedInt32Array`` containing the indices of the vertices of a created polygon.
     public final func getPolygon (idx: Int32)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -312,7 +312,7 @@ open class NavigationPolygon: Resource {
     
     /// Appends a ``PackedVector2Array`` that contains the vertices of an outline to the internal array that contains all the outlines.
     public final func addOutline (_ outline: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationPolygon.method_add_outline, UnsafeMutableRawPointer (mutating: handle), nil, &outline.content)
@@ -342,7 +342,7 @@ open class NavigationPolygon: Resource {
     
     /// Adds a ``PackedVector2Array`` that contains the vertices of an outline to the internal array that contains all the outlines at a fixed position.
     public final func addOutlineAtIndex (outline: PackedVector2Array, index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -395,7 +395,7 @@ open class NavigationPolygon: Resource {
     
     /// Changes an outline created in the editor or by script. You have to call ``makePolygonsFromOutlines()`` for the polygons to update.
     public final func setOutline (idx: Int32, outline: PackedVector2Array) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -431,7 +431,7 @@ open class NavigationPolygon: Resource {
     /// Returns a ``PackedVector2Array`` containing the vertices of an outline that was created in the editor or by script.
     public final func getOutline (idx: Int32)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -464,7 +464,7 @@ open class NavigationPolygon: Resource {
     
     /// Removes an outline created in the editor or by script. You have to call ``makePolygonsFromOutlines()`` for the polygons to update.
     public final func removeOutline (idx: Int32) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -531,7 +531,7 @@ open class NavigationPolygon: Resource {
     
     @inline(__always)
     fileprivate final func set_cell_size (_ cellSize: Double) {
-        #if true
+        #if false
         
         var copy_cell_size = cellSize
         
@@ -581,7 +581,7 @@ open class NavigationPolygon: Resource {
     
     @inline(__always)
     fileprivate final func set_parsed_geometry_type (_ geometryType: NavigationPolygon.ParsedGeometryType) {
-        #if true
+        #if false
         
         var copy_geometry_type = Int64 (geometryType.rawValue)
         
@@ -631,7 +631,7 @@ open class NavigationPolygon: Resource {
     
     @inline(__always)
     fileprivate final func set_parsed_collision_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -681,7 +681,7 @@ open class NavigationPolygon: Resource {
     
     /// Based on `value`, enables or disables the specified layer in the ``parsedCollisionMask``, given a `layerNumber` between 1 and 32.
     public final func setParsedCollisionMaskValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -719,7 +719,7 @@ open class NavigationPolygon: Resource {
     /// Returns whether or not the specified layer of the ``parsedCollisionMask`` is enabled, given a `layerNumber` between 1 and 32.
     public final func getParsedCollisionMaskValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -752,7 +752,7 @@ open class NavigationPolygon: Resource {
     
     @inline(__always)
     fileprivate final func set_source_geometry_mode (_ geometryMode: NavigationPolygon.SourceGeometryMode) {
-        #if true
+        #if false
         
         var copy_geometry_mode = Int64 (geometryMode.rawValue)
         
@@ -802,7 +802,7 @@ open class NavigationPolygon: Resource {
     
     @inline(__always)
     fileprivate final func set_source_geometry_group_name (_ groupName: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationPolygon.method_set_source_geometry_group_name, UnsafeMutableRawPointer (mutating: handle), nil, &groupName.content)
@@ -850,7 +850,7 @@ open class NavigationPolygon: Resource {
     
     @inline(__always)
     fileprivate final func set_agent_radius (_ agentRadius: Double) {
-        #if true
+        #if false
         
         var copy_agent_radius = agentRadius
         

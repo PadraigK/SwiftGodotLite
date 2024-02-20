@@ -116,7 +116,7 @@ open class Performance: Object {
     /// 
     public static func getMonitor (_ monitor: Performance.Monitor)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_monitor = Int64 (monitor.rawValue)
         
@@ -154,7 +154,7 @@ open class Performance: Object {
     /// Callables are called with arguments supplied in argument array.
     /// 
     public static func addCustomMonitor (id: StringName, callable: Callable, arguments: GArray = GArray ()) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Performance.method_add_custom_monitor, UnsafeMutableRawPointer (mutating: shared.handle), nil, &id.content, &callable.content, &arguments.content)
@@ -190,7 +190,7 @@ open class Performance: Object {
     
     /// Removes the custom monitor with given `id`. Prints an error if the given `id` is already absent.
     public static func removeCustomMonitor (id: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Performance.method_remove_custom_monitor, UnsafeMutableRawPointer (mutating: shared.handle), nil, &id.content)
@@ -221,7 +221,7 @@ open class Performance: Object {
     /// Returns `true` if custom monitor with the given `id` is present, `false` otherwise.
     public static func hasCustomMonitor (id: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Performance.method_has_custom_monitor, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &id.content)
@@ -253,7 +253,7 @@ open class Performance: Object {
     /// Returns the value of custom monitor with given `id`. The callable is called to get the value of custom monitor. See also ``hasCustomMonitor(id:)``. Prints an error if the given `id` is absent.
     public static func getCustomMonitor (id: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Performance.method_get_custom_monitor, UnsafeMutableRawPointer (mutating: shared.handle), &_result.content, &id.content)

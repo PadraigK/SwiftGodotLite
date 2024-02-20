@@ -27,7 +27,7 @@ open class MeshLibrary: Resource {
     /// You can get an unused ID from ``getLastUnusedItemId()``.
     /// 
     public final func createItem (id: Int32) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -62,7 +62,7 @@ open class MeshLibrary: Resource {
     /// This name is shown in the editor. It can also be used to look up the item later using ``findItemByName(_:)``.
     /// 
     public final func setItemName (id: Int32, name: String) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         let gstr_name = GString (name)
@@ -99,7 +99,7 @@ open class MeshLibrary: Resource {
     
     /// Sets the item's mesh.
     public final func setItemMesh (id: Int32, mesh: Mesh?) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_mesh_handle = mesh?.handle
@@ -135,7 +135,7 @@ open class MeshLibrary: Resource {
     
     /// Sets the transform to apply to the item's mesh.
     public final func setItemMeshTransform (id: Int32, meshTransform: Transform3D) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_mesh_transform = meshTransform
@@ -172,7 +172,7 @@ open class MeshLibrary: Resource {
     
     /// Sets the item's navigation mesh.
     public final func setItemNavigationMesh (id: Int32, navigationMesh: NavigationMesh?) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_navigation_mesh_handle = navigationMesh?.handle
@@ -208,7 +208,7 @@ open class MeshLibrary: Resource {
     
     /// Sets the transform to apply to the item's navigation mesh.
     public final func setItemNavigationMeshTransform (id: Int32, navigationMesh: Transform3D) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_navigation_mesh = navigationMesh
@@ -245,7 +245,7 @@ open class MeshLibrary: Resource {
     
     /// Sets the item's navigation layers bitmask.
     public final func setItemNavigationLayers (id: Int32, navigationLayers: UInt32) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_navigation_layers: Int = Int (navigationLayers)
@@ -285,7 +285,7 @@ open class MeshLibrary: Resource {
     /// The array should consist of ``Shape3D`` objects, each followed by a ``Transform3D`` that will be applied to it. For shapes that should not have a transform, use ``Transform3D.IDENTITY``.
     /// 
     public final func setItemShapes (id: Int32, shapes: GArray) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -320,7 +320,7 @@ open class MeshLibrary: Resource {
     
     /// Sets a texture to use as the item's preview icon in the editor.
     public final func setItemPreview (id: Int32, texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_texture_handle = texture?.handle
@@ -357,7 +357,7 @@ open class MeshLibrary: Resource {
     /// Returns the item's name.
     public final func getItemName (id: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -391,7 +391,7 @@ open class MeshLibrary: Resource {
     /// Returns the item's mesh.
     public final func getItemMesh (id: Int32)-> Mesh? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -425,7 +425,7 @@ open class MeshLibrary: Resource {
     /// Returns the transform applied to the item's mesh.
     public final func getItemMeshTransform (id: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -459,7 +459,7 @@ open class MeshLibrary: Resource {
     /// Returns the item's navigation mesh.
     public final func getItemNavigationMesh (id: Int32)-> NavigationMesh? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -493,7 +493,7 @@ open class MeshLibrary: Resource {
     /// Returns the transform applied to the item's navigation mesh.
     public final func getItemNavigationMeshTransform (id: Int32)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -527,7 +527,7 @@ open class MeshLibrary: Resource {
     /// Returns the item's navigation layers bitmask.
     public final func getItemNavigationLayers (id: Int32)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -564,7 +564,7 @@ open class MeshLibrary: Resource {
     /// 
     public final func getItemShapes (id: Int32)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -598,7 +598,7 @@ open class MeshLibrary: Resource {
     /// When running in the editor, returns a generated item preview (a 3D rendering in isometric perspective). When used in a running project, returns the manually-defined item preview which can be set using ``setItemPreview(id:texture:)``. Returns an empty ``Texture2D`` if no preview was manually set in a running project.
     public final func getItemPreview (id: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -631,7 +631,7 @@ open class MeshLibrary: Resource {
     
     /// Removes the item.
     public final func removeItem (id: Int32) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -664,7 +664,7 @@ open class MeshLibrary: Resource {
     /// Returns the first item with the given name.
     public final func findItemByName (_ name: String)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         

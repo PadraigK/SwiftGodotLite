@@ -93,7 +93,7 @@ open class GLTFTextureSampler: Resource {
     
     @inline(__always)
     fileprivate final func set_mag_filter (_ filterMode: Int32) {
-        #if true
+        #if false
         
         var copy_filter_mode: Int = Int (filterMode)
         
@@ -143,7 +143,7 @@ open class GLTFTextureSampler: Resource {
     
     @inline(__always)
     fileprivate final func set_min_filter (_ filterMode: Int32) {
-        #if true
+        #if false
         
         var copy_filter_mode: Int = Int (filterMode)
         
@@ -193,7 +193,7 @@ open class GLTFTextureSampler: Resource {
     
     @inline(__always)
     fileprivate final func set_wrap_s (_ wrapMode: Int32) {
-        #if true
+        #if false
         
         var copy_wrap_mode: Int = Int (wrapMode)
         
@@ -243,7 +243,7 @@ open class GLTFTextureSampler: Resource {
     
     @inline(__always)
     fileprivate final func set_wrap_t (_ wrapMode: Int32) {
-        #if true
+        #if false
         
         var copy_wrap_mode: Int = Int (wrapMode)
         

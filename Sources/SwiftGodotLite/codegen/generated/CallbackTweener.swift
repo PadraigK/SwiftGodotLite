@@ -33,7 +33,7 @@ open class CallbackTweener: Tweener {
     /// 
     public final func setDelay (_ delay: Double)-> CallbackTweener? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_delay = delay
         

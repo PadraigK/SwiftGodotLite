@@ -51,7 +51,7 @@ open class SegmentShape2D: Shape2D {
     
     @inline(__always)
     fileprivate final func set_a (_ a: Vector2) {
-        #if true
+        #if false
         
         var copy_a = a
         
@@ -101,7 +101,7 @@ open class SegmentShape2D: Shape2D {
     
     @inline(__always)
     fileprivate final func set_b (_ b: Vector2) {
-        #if true
+        #if false
         
         var copy_b = b
         

@@ -70,7 +70,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_target_node (_ targetNodepath: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SkeletonModification2DCCDIK.method_set_target_node, UnsafeMutableRawPointer (mutating: handle), nil, &targetNodepath.content)
@@ -118,7 +118,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_tip_node (_ tipNodepath: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SkeletonModification2DCCDIK.method_set_tip_node, UnsafeMutableRawPointer (mutating: handle), nil, &tipNodepath.content)
@@ -166,7 +166,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     
     @inline(__always)
     fileprivate final func set_ccdik_data_chain_length (_ length: Int32) {
-        #if true
+        #if false
         
         var copy_length: Int = Int (length)
         
@@ -216,7 +216,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     
     /// Sets the ``Bone2D`` node assigned to the CCDIK joint at `jointIdx`.
     public final func setCcdikJointBone2dNode (jointIdx: Int32, bone2dNodepath: NodePath) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -252,7 +252,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     /// Returns the ``Bone2D`` node assigned to the CCDIK joint at `jointIdx`.
     public final func getCcdikJointBone2dNode (jointIdx: Int32)-> NodePath {
         let _result: NodePath = NodePath ()
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -285,7 +285,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     
     /// Sets the bone index, `boneIdx`, of the CCDIK joint at `jointIdx`. When possible, this will also update the `bone2d_node` of the CCDIK joint based on data provided by the linked skeleton.
     public final func setCcdikJointBoneIndex (jointIdx: Int32, boneIdx: Int32) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         var copy_bone_idx: Int = Int (boneIdx)
@@ -323,7 +323,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     /// Returns the index of the ``Bone2D`` node assigned to the CCDIK joint at `jointIdx`.
     public final func getCcdikJointBoneIndex (jointIdx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -356,7 +356,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     
     /// Sets whether the joint at `jointIdx` is set to rotate from the joint, `true`, or to rotate from the tip, `false`.
     public final func setCcdikJointRotateFromJoint (jointIdx: Int32, rotateFromJoint: Bool) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         var copy_rotate_from_joint = rotateFromJoint
@@ -394,7 +394,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     /// Returns whether the joint at `jointIdx` is set to rotate from the joint, `true`, or to rotate from the tip, `false`. The default is to rotate from the tip.
     public final func getCcdikJointRotateFromJoint (jointIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -427,7 +427,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     
     /// Determines whether angle constraints on the CCDIK joint at `jointIdx` are enabled. When `true`, constraints will be enabled and taken into account when solving.
     public final func setCcdikJointEnableConstraint (jointIdx: Int32, enableConstraint: Bool) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         var copy_enable_constraint = enableConstraint
@@ -465,7 +465,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     /// Returns whether angle constraints on the CCDIK joint at `jointIdx` are enabled.
     public final func getCcdikJointEnableConstraint (jointIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -498,7 +498,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     
     /// Sets the minimum angle constraint for the joint at `jointIdx`.
     public final func setCcdikJointConstraintAngleMin (jointIdx: Int32, angleMin: Double) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         var copy_angle_min = angleMin
@@ -536,7 +536,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     /// Returns the minimum angle constraint for the joint at `jointIdx`.
     public final func getCcdikJointConstraintAngleMin (jointIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -569,7 +569,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     
     /// Sets the maximum angle constraint for the joint at `jointIdx`.
     public final func setCcdikJointConstraintAngleMax (jointIdx: Int32, angleMax: Double) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         var copy_angle_max = angleMax
@@ -607,7 +607,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     /// Returns the maximum angle constraint for the joint at `jointIdx`.
     public final func getCcdikJointConstraintAngleMax (jointIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         
@@ -643,7 +643,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     /// An inverted joint constraint only constraints the CCDIK joint to the angles _outside of_ the inputted minimum and maximum angles. For this reason, it is referred to as an inverted joint constraint, as it constraints the joint to the outside of the inputted values.
     /// 
     public final func setCcdikJointConstraintAngleInvert (jointIdx: Int32, invert: Bool) {
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         var copy_invert = invert
@@ -681,7 +681,7 @@ open class SkeletonModification2DCCDIK: SkeletonModification2D {
     /// Returns whether the CCDIK joint at `jointIdx` uses an inverted joint constraint. See ``setCcdikJointConstraintAngleInvert(jointIdx:invert:)`` for details.
     public final func getCcdikJointConstraintAngleInvert (jointIdx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_joint_idx: Int = Int (jointIdx)
         

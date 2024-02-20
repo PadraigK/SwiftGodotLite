@@ -51,7 +51,7 @@ open class VisualShaderNodeComment: VisualShaderNodeResizableBase {
     
     @inline(__always)
     fileprivate final func set_title (_ title: String) {
-        #if true
+        #if false
         
         let gstr_title = GString (title)
         
@@ -101,7 +101,7 @@ open class VisualShaderNodeComment: VisualShaderNodeResizableBase {
     
     @inline(__always)
     fileprivate final func set_description (_ description: String) {
-        #if true
+        #if false
         
         let gstr_description = GString (description)
         

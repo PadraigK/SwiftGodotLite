@@ -166,7 +166,7 @@ open class CollisionObject2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_collision_layer (_ layer: UInt32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -216,7 +216,7 @@ open class CollisionObject2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_collision_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -266,7 +266,7 @@ open class CollisionObject2D: Node2D {
     
     /// Based on `value`, enables or disables the specified layer in the ``collisionLayer``, given a `layerNumber` between 1 and 32.
     public final func setCollisionLayerValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -304,7 +304,7 @@ open class CollisionObject2D: Node2D {
     /// Returns whether or not the specified layer of the ``collisionLayer`` is enabled, given a `layerNumber` between 1 and 32.
     public final func getCollisionLayerValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -337,7 +337,7 @@ open class CollisionObject2D: Node2D {
     
     /// Based on `value`, enables or disables the specified layer in the ``collisionMask``, given a `layerNumber` between 1 and 32.
     public final func setCollisionMaskValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -375,7 +375,7 @@ open class CollisionObject2D: Node2D {
     /// Returns whether or not the specified layer of the ``collisionMask`` is enabled, given a `layerNumber` between 1 and 32.
     public final func getCollisionMaskValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -408,7 +408,7 @@ open class CollisionObject2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_collision_priority (_ priority: Double) {
-        #if true
+        #if false
         
         var copy_priority = priority
         
@@ -458,7 +458,7 @@ open class CollisionObject2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_disable_mode (_ mode: CollisionObject2D.DisableMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -508,7 +508,7 @@ open class CollisionObject2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_pickable (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -559,7 +559,7 @@ open class CollisionObject2D: Node2D {
     /// Creates a new shape owner for the given object. Returns `owner_id` of the new owner for future reference.
     public final func createShapeOwner (_ owner: Object?)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         var copy_owner_handle = owner?.handle
         
@@ -591,7 +591,7 @@ open class CollisionObject2D: Node2D {
     
     /// Removes the given shape owner.
     public final func removeShapeOwner (ownerId: UInt32) {
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         
@@ -641,7 +641,7 @@ open class CollisionObject2D: Node2D {
     
     /// Sets the ``Transform2D`` of the given shape owner.
     public final func shapeOwnerSetTransform (ownerId: UInt32, transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         var copy_transform = transform
@@ -679,7 +679,7 @@ open class CollisionObject2D: Node2D {
     /// Returns the shape owner's ``Transform2D``.
     public final func shapeOwnerGetTransform (ownerId: UInt32)-> Transform2D {
         var _result: Transform2D = Transform2D ()
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         
@@ -713,7 +713,7 @@ open class CollisionObject2D: Node2D {
     /// Returns the parent object of the given shape owner.
     public final func shapeOwnerGetOwner (ownerId: UInt32)-> Object? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         
@@ -746,7 +746,7 @@ open class CollisionObject2D: Node2D {
     
     /// If `true`, disables the given shape owner.
     public final func shapeOwnerSetDisabled (ownerId: UInt32, disabled: Bool) {
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         var copy_disabled = disabled
@@ -784,7 +784,7 @@ open class CollisionObject2D: Node2D {
     /// If `true`, the shape owner and its shapes are disabled.
     public final func isShapeOwnerDisabled (ownerId: UInt32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         
@@ -817,7 +817,7 @@ open class CollisionObject2D: Node2D {
     
     /// If `enable` is `true`, collisions for the shape owner originating from this ``CollisionObject2D`` will not be reported to collided with ``CollisionObject2D``s.
     public final func shapeOwnerSetOneWayCollision (ownerId: UInt32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         var copy_enable = enable
@@ -855,7 +855,7 @@ open class CollisionObject2D: Node2D {
     /// Returns `true` if collisions for the shape owner originating from this ``CollisionObject2D`` will not be reported to collided with ``CollisionObject2D``s.
     public final func isShapeOwnerOneWayCollisionEnabled (ownerId: UInt32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         
@@ -888,7 +888,7 @@ open class CollisionObject2D: Node2D {
     
     /// Sets the `one_way_collision_margin` of the shape owner identified by given `ownerId` to `margin` pixels.
     public final func shapeOwnerSetOneWayCollisionMargin (ownerId: UInt32, margin: Double) {
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         var copy_margin = margin
@@ -926,7 +926,7 @@ open class CollisionObject2D: Node2D {
     /// Returns the `one_way_collision_margin` of the shape owner identified by given `ownerId`.
     public final func getShapeOwnerOneWayCollisionMargin (ownerId: UInt32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         
@@ -959,7 +959,7 @@ open class CollisionObject2D: Node2D {
     
     /// Adds a ``Shape2D`` to the shape owner.
     public final func shapeOwnerAddShape (ownerId: UInt32, shape: Shape2D?) {
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         var copy_shape_handle = shape?.handle
@@ -996,7 +996,7 @@ open class CollisionObject2D: Node2D {
     /// Returns the number of shapes the given shape owner contains.
     public final func shapeOwnerGetShapeCount (ownerId: UInt32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         
@@ -1030,7 +1030,7 @@ open class CollisionObject2D: Node2D {
     /// Returns the ``Shape2D`` with the given ID from the given shape owner.
     public final func shapeOwnerGetShape (ownerId: UInt32, shapeId: Int32)-> Shape2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         var copy_shape_id: Int = Int (shapeId)
@@ -1069,7 +1069,7 @@ open class CollisionObject2D: Node2D {
     /// Returns the child index of the ``Shape2D`` with the given ID from the given shape owner.
     public final func shapeOwnerGetShapeIndex (ownerId: UInt32, shapeId: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         var copy_shape_id: Int = Int (shapeId)
@@ -1107,7 +1107,7 @@ open class CollisionObject2D: Node2D {
     
     /// Removes a shape from the given shape owner.
     public final func shapeOwnerRemoveShape (ownerId: UInt32, shapeId: Int32) {
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         var copy_shape_id: Int = Int (shapeId)
@@ -1144,7 +1144,7 @@ open class CollisionObject2D: Node2D {
     
     /// Removes all shapes from the shape owner.
     public final func shapeOwnerClearShapes (ownerId: UInt32) {
-        #if true
+        #if false
         
         var copy_owner_id: Int = Int (ownerId)
         
@@ -1177,7 +1177,7 @@ open class CollisionObject2D: Node2D {
     /// Returns the `owner_id` of the given shape.
     public final func shapeFindOwner (shapeIndex: Int32)-> UInt32 {
         var _result: UInt32 = 0
-        #if true
+        #if false
         
         var copy_shape_index: Int = Int (shapeIndex)
         

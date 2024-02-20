@@ -114,7 +114,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     /// The keyword cannot contain any symbols except '_'.
     /// 
     public final func addKeywordColor (keyword: String, color: Color) {
-        #if true
+        #if false
         
         let gstr_keyword = GString (keyword)
         var copy_color = color
@@ -151,7 +151,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     
     /// Removes the keyword.
     public final func removeKeywordColor (keyword: String) {
-        #if true
+        #if false
         
         let gstr_keyword = GString (keyword)
         
@@ -184,7 +184,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     /// Returns `true` if the keyword exists, else `false`.
     public final func hasKeywordColor (keyword: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_keyword = GString (keyword)
         
@@ -218,7 +218,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     /// Returns the color for a keyword.
     public final func getKeywordColor (keyword: String)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         let gstr_keyword = GString (keyword)
         
@@ -251,7 +251,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     
     @inline(__always)
     fileprivate final func set_keyword_colors (_ keywords: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CodeHighlighter.method_set_keyword_colors, UnsafeMutableRawPointer (mutating: handle), nil, &keywords.content)
@@ -320,7 +320,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     /// It will not be highlighted if preceded by a '.'.
     /// 
     public final func addMemberKeywordColor (memberKeyword: String, color: Color) {
-        #if true
+        #if false
         
         let gstr_member_keyword = GString (memberKeyword)
         var copy_color = color
@@ -357,7 +357,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     
     /// Removes the member keyword.
     public final func removeMemberKeywordColor (memberKeyword: String) {
-        #if true
+        #if false
         
         let gstr_member_keyword = GString (memberKeyword)
         
@@ -390,7 +390,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     /// Returns `true` if the member keyword exists, else `false`.
     public final func hasMemberKeywordColor (memberKeyword: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_member_keyword = GString (memberKeyword)
         
@@ -424,7 +424,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     /// Returns the color for a member keyword.
     public final func getMemberKeywordColor (memberKeyword: String)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         let gstr_member_keyword = GString (memberKeyword)
         
@@ -457,7 +457,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     
     @inline(__always)
     fileprivate final func set_member_keyword_colors (_ memberKeyword: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CodeHighlighter.method_set_member_keyword_colors, UnsafeMutableRawPointer (mutating: handle), nil, &memberKeyword.content)
@@ -526,7 +526,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     /// `lineOnly` denotes if the region should continue until the end of the line or carry over on to the next line. If the end key is blank this is automatically set to `true`.
     /// 
     public final func addColorRegion (startKey: String, endKey: String, color: Color, lineOnly: Bool = false) {
-        #if true
+        #if false
         
         let gstr_start_key = GString (startKey)
         let gstr_end_key = GString (endKey)
@@ -573,7 +573,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     
     /// Removes the color region that uses that start key.
     public final func removeColorRegion (startKey: String) {
-        #if true
+        #if false
         
         let gstr_start_key = GString (startKey)
         
@@ -606,7 +606,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     /// Returns `true` if the start key exists, else `false`.
     public final func hasColorRegion (startKey: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_start_key = GString (startKey)
         
@@ -639,7 +639,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     
     @inline(__always)
     fileprivate final func set_color_regions (_ colorRegions: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CodeHighlighter.method_set_color_regions, UnsafeMutableRawPointer (mutating: handle), nil, &colorRegions.content)
@@ -703,7 +703,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     
     @inline(__always)
     fileprivate final func set_function_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -753,7 +753,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     
     @inline(__always)
     fileprivate final func set_number_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -803,7 +803,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     
     @inline(__always)
     fileprivate final func set_symbol_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -853,7 +853,7 @@ open class CodeHighlighter: SyntaxHighlighter {
     
     @inline(__always)
     fileprivate final func set_member_variable_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         

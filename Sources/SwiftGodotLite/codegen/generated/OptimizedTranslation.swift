@@ -24,7 +24,7 @@ open class OptimizedTranslation: Translation {
     
     /// Generates and sets an optimized translation from the given ``Translation`` resource.
     public final func generate (from: Translation?) {
-        #if true
+        #if false
         
         var copy_from_handle = from?.handle
         

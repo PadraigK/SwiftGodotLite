@@ -24,7 +24,7 @@ open class OpenXRInteractionProfileMetadata: Object {
     
     /// Allows for renaming old interaction profile paths to new paths to maintain backwards compatibility with older action maps.
     public final func registerProfileRename (oldName: String, newName: String) {
-        #if true
+        #if false
         
         let gstr_old_name = GString (oldName)
         let gstr_new_name = GString (newName)
@@ -66,7 +66,7 @@ open class OpenXRInteractionProfileMetadata: Object {
     /// When a top level path ends up being bound by OpenXR, a ``XRPositionalTracker`` is instantiated to manage the state of the device.
     /// 
     public final func registerTopLevelPath (displayName: String, openxrPath: String, openxrExtensionName: String) {
-        #if true
+        #if false
         
         let gstr_display_name = GString (displayName)
         let gstr_openxr_path = GString (openxrPath)
@@ -111,7 +111,7 @@ open class OpenXRInteractionProfileMetadata: Object {
     /// `displayName` is the description shown to the user. `openxrPath` is the interaction profile path being registered. `openxrExtensionName` optionally restricts this profile to the given extension being enabled/available. If the extension is not available, the profile and all related entries used in an action map are filtered out.
     /// 
     public final func registerInteractionProfile (displayName: String, openxrPath: String, openxrExtensionName: String) {
-        #if true
+        #if false
         
         let gstr_display_name = GString (displayName)
         let gstr_openxr_path = GString (openxrPath)
@@ -153,7 +153,7 @@ open class OpenXRInteractionProfileMetadata: Object {
     
     /// Registers an input/output path for the given `interactionProfile`. The profile should previously have been registered using ``registerInteractionProfile(displayName:openxrPath:openxrExtensionName:)``. `displayName` is the description shown to the user. `toplevelPath` specifies the bind path this input/output can be bound to (e.g. `/user/hand/left` or `/user/hand/right`). `openxrPath` is the action input/output being registered (e.g. `/user/hand/left/input/aim/pose`). `openxrExtensionName` restricts this input/output to an enabled/available extension, this doesn't need to repeat the extension on the profile but relates to overlapping extension (e.g. `XR_EXT_palm_pose` that introduces `…/input/palm_ext/pose` input paths). `actionType` defines the type of input or output provided by OpenXR.
     public final func registerIoPath (interactionProfile: String, displayName: String, toplevelPath: String, openxrPath: String, openxrExtensionName: String, actionType: OpenXRAction.ActionType) {
-        #if true
+        #if false
         
         let gstr_interaction_profile = GString (interactionProfile)
         let gstr_display_name = GString (displayName)

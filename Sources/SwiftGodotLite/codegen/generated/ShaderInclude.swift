@@ -39,7 +39,7 @@ open class ShaderInclude: Resource {
     
     @inline(__always)
     fileprivate final func set_code (_ code: String) {
-        #if true
+        #if false
         
         let gstr_code = GString (code)
         

@@ -207,7 +207,7 @@ open class CharFXTransform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_transform (_ transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -257,7 +257,7 @@ open class CharFXTransform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_range (_ range: Vector2i) {
-        #if true
+        #if false
         
         var copy_range = range
         
@@ -307,7 +307,7 @@ open class CharFXTransform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_elapsed_time (_ time: Double) {
-        #if true
+        #if false
         
         var copy_time = time
         
@@ -357,7 +357,7 @@ open class CharFXTransform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_visibility (_ visibility: Bool) {
-        #if true
+        #if false
         
         var copy_visibility = visibility
         
@@ -407,7 +407,7 @@ open class CharFXTransform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_outline (_ outline: Bool) {
-        #if true
+        #if false
         
         var copy_outline = outline
         
@@ -457,7 +457,7 @@ open class CharFXTransform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -507,7 +507,7 @@ open class CharFXTransform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -557,7 +557,7 @@ open class CharFXTransform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_environment (_ environment: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CharFXTransform.method_set_environment, UnsafeMutableRawPointer (mutating: handle), nil, &environment.content)
@@ -605,7 +605,7 @@ open class CharFXTransform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_glyph_index (_ glyphIndex: UInt32) {
-        #if true
+        #if false
         
         var copy_glyph_index: Int = Int (glyphIndex)
         
@@ -655,7 +655,7 @@ open class CharFXTransform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_relative_index (_ relativeIndex: Int32) {
-        #if true
+        #if false
         
         var copy_relative_index: Int = Int (relativeIndex)
         
@@ -705,7 +705,7 @@ open class CharFXTransform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_glyph_count (_ glyphCount: UInt8) {
-        #if true
+        #if false
         
         var copy_glyph_count: Int = Int (glyphCount)
         
@@ -755,7 +755,7 @@ open class CharFXTransform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_glyph_flags (_ glyphFlags: UInt16) {
-        #if true
+        #if false
         
         var copy_glyph_flags: Int = Int (glyphFlags)
         
@@ -805,7 +805,7 @@ open class CharFXTransform: RefCounted {
     
     @inline(__always)
     fileprivate final func set_font (_ font: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CharFXTransform.method_set_font, UnsafeMutableRawPointer (mutating: handle), nil, &font.content)

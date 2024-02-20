@@ -35,7 +35,7 @@ open class EditorDebuggerSession: RefCounted {
     
     /// Sends the given `message` to the attached remote instance, optionally passing additionally `data`. See ``EngineDebugger`` for how to retrieve those messages.
     public final func sendMessage (_ message: String, data: GArray = GArray ()) {
-        #if true
+        #if false
         
         let gstr_message = GString (message)
         
@@ -70,7 +70,7 @@ open class EditorDebuggerSession: RefCounted {
     
     /// Toggle the given `profiler` on the attached remote instance, optionally passing additionally `data`. See ``EngineProfiler`` for more details.
     public final func toggleProfiler (_ profiler: String, enable: Bool, data: GArray = GArray ()) {
-        #if true
+        #if false
         
         let gstr_profiler = GString (profiler)
         var copy_enable = enable
@@ -164,7 +164,7 @@ open class EditorDebuggerSession: RefCounted {
     
     /// Adds the given `control` to the debug session UI in the debugger bottom panel.
     public final func addSessionTab (control: Control?) {
-        #if true
+        #if false
         
         var copy_control_handle = control?.handle
         
@@ -195,7 +195,7 @@ open class EditorDebuggerSession: RefCounted {
     
     /// Removes the given `control` from the debug session UI in the debugger bottom panel.
     public final func removeSessionTab (control: Control?) {
-        #if true
+        #if false
         
         var copy_control_handle = control?.handle
         

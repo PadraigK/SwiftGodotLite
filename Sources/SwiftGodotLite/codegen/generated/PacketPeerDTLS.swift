@@ -59,7 +59,7 @@ open class PacketPeerDTLS: PacketPeer {
     /// Connects a `packetPeer` beginning the DTLS handshake using the underlying ``PacketPeerUDP`` which must be connected (see ``PacketPeerUDP/connectToHost(_:port:)``). You can optionally specify the `clientOptions` to be used while verifying the TLS connections. See ``TLSOptions/client(trustedChain:commonNameOverride:)`` and ``TLSOptions/clientUnsafe(trustedChain:)``.
     public final func connectToPeer (packetPeer: PacketPeerUDP?, hostname: String, clientOptions: TLSOptions? = nil)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_hostname = GString (hostname)
         var copy_packet_peer_handle = packetPeer?.handle

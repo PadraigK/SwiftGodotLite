@@ -62,7 +62,7 @@ open class XRNode3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_tracker (_ trackerName: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRNode3D.method_set_tracker, UnsafeMutableRawPointer (mutating: handle), nil, &trackerName.content)
@@ -110,7 +110,7 @@ open class XRNode3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_pose_name (_ pose: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRNode3D.method_set_pose_name, UnsafeMutableRawPointer (mutating: handle), nil, &pose.content)
@@ -215,7 +215,7 @@ open class XRNode3D: Node3D {
     /// `actionName` is the name of the action for this pulse.
     /// 
     public final func triggerHapticPulse (actionName: String, frequency: Double, amplitude: Double, durationSec: Double, delaySec: Double) {
-        #if true
+        #if false
         
         let gstr_action_name = GString (actionName)
         var copy_frequency = frequency

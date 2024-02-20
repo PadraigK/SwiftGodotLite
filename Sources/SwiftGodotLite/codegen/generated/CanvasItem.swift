@@ -324,7 +324,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_visible (_ visible: Bool) {
-        #if true
+        #if false
         
         var copy_visible = visible
         
@@ -459,7 +459,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_as_top_level (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -509,7 +509,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_light_mask (_ lightMask: Int32) {
-        #if true
+        #if false
         
         var copy_light_mask: Int = Int (lightMask)
         
@@ -559,7 +559,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_modulate (_ modulate: Color) {
-        #if true
+        #if false
         
         var copy_modulate = modulate
         
@@ -609,7 +609,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_self_modulate (_ selfModulate: Color) {
-        #if true
+        #if false
         
         var copy_self_modulate = selfModulate
         
@@ -659,7 +659,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_z_index (_ zIndex: Int32) {
-        #if true
+        #if false
         
         var copy_z_index: Int = Int (zIndex)
         
@@ -709,7 +709,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_z_as_relative (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -759,7 +759,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_y_sort_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -809,7 +809,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_draw_behind_parent (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -862,7 +862,7 @@ open class CanvasItem: Node {
     /// If `width` is negative, then a two-point primitive will be drawn instead of a four-point one. This means that when the CanvasItem is scaled, the line will remain thin. If this behavior is not desired, then pass a positive `width` like `1.0`.
     /// 
     public final func drawLine (from: Vector2, to: Vector2, color: Color, width: Double = -1.0, antialiased: Bool = false) {
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -917,7 +917,7 @@ open class CanvasItem: Node {
     /// If `width` is negative, then a two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the line parts will remain thin. If this behavior is not desired, then pass a positive `width` like `1.0`.
     /// 
     public final func drawDashedLine (from: Vector2, to: Vector2, color: Color, width: Double = -1.0, dash: Double = 2.0, aligned: Bool = true) {
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -977,7 +977,7 @@ open class CanvasItem: Node {
     /// If `width` is negative, it will be ignored and the polyline will be drawn using ``RenderingServer/PrimitiveType/primitiveLineStrip``. This means that when the CanvasItem is scaled, the polyline will remain thin. If this behavior is not desired, then pass a positive `width` like `1.0`.
     /// 
     public final func drawPolyline (points: PackedVector2Array, color: Color, width: Double = -1.0, antialiased: Bool = false) {
-        #if true
+        #if false
         
         var copy_color = color
         var copy_width = width
@@ -1025,7 +1025,7 @@ open class CanvasItem: Node {
     /// If `width` is negative, it will be ignored and the polyline will be drawn using ``RenderingServer/PrimitiveType/primitiveLineStrip``. This means that when the CanvasItem is scaled, the polyline will remain thin. If this behavior is not desired, then pass a positive `width` like `1.0`.
     /// 
     public final func drawPolylineColors (points: PackedVector2Array, colors: PackedColorArray, width: Double = -1.0, antialiased: Bool = false) {
-        #if true
+        #if false
         
         var copy_width = width
         var copy_antialiased = antialiased
@@ -1073,7 +1073,7 @@ open class CanvasItem: Node {
     /// The arc is drawn from `startAngle` towards the value of `endAngle` so in clockwise direction if `start_angle < end_angle` and counter-clockwise otherwise. Passing the same angles but in reversed order will produce the same arc. If absolute difference of `startAngle` and `endAngle` is greater than ``@GDScript.TAU`` radians, then a full circle arc is drawn (i.e. arc will not overlap itself).
     /// 
     public final func drawArc (center: Vector2, radius: Double, startAngle: Double, endAngle: Double, pointCount: Int32, color: Color, width: Double = -1.0, antialiased: Bool = false) {
-        #if true
+        #if false
         
         var copy_center = center
         var copy_radius = radius
@@ -1143,7 +1143,7 @@ open class CanvasItem: Node {
     /// If `width` is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive `width` like `1.0`.
     /// 
     public final func drawMultiline (points: PackedVector2Array, color: Color, width: Double = -1.0) {
-        #if true
+        #if false
         
         var copy_color = color
         var copy_width = width
@@ -1186,7 +1186,7 @@ open class CanvasItem: Node {
     /// If `width` is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive `width` like `1.0`.
     /// 
     public final func drawMultilineColors (points: PackedVector2Array, colors: PackedColorArray, width: Double = -1.0) {
-        #if true
+        #if false
         
         var copy_width = width
         
@@ -1231,7 +1231,7 @@ open class CanvasItem: Node {
     /// > Note: Unfilled rectangles drawn with a negative `width` may not display perfectly. For example, corners may be missing or brighter due to overlapping lines (for a translucent `color`).
     /// 
     public final func drawRect (_ rect: Rect2, color: Color, filled: Bool = true, width: Double = -1.0) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_color = color
@@ -1278,7 +1278,7 @@ open class CanvasItem: Node {
     
     /// Draws a colored, filled circle. See also ``drawArc(center:radius:startAngle:endAngle:pointCount:color:width:antialiased:)``, ``drawPolyline(points:color:width:antialiased:)`` and ``drawPolygon(points:colors:uvs:texture:)``.
     public final func drawCircle (position: Vector2, radius: Double, color: Color) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_radius = radius
@@ -1320,7 +1320,7 @@ open class CanvasItem: Node {
     
     /// Draws a texture at a given position.
     public final func drawTexture (_ texture: Texture2D?, position: Vector2, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_modulate = modulate
@@ -1361,7 +1361,7 @@ open class CanvasItem: Node {
     
     /// Draws a textured rectangle at a given position, optionally modulated by a color. If `transpose` is `true`, the texture will have its X and Y coordinates swapped. See also ``drawRect(_:color:filled:width:)`` and ``drawTextureRectRegion(texture:rect:srcRect:modulate:transpose:clipUv:)``.
     public final func drawTextureRect (texture: Texture2D?, rect: Rect2, tile: Bool, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), transpose: Bool = false) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_tile = tile
@@ -1412,7 +1412,7 @@ open class CanvasItem: Node {
     
     /// Draws a textured rectangle from a texture's region (specified by `srcRect`) at a given position, optionally modulated by a color. If `transpose` is `true`, the texture will have its X and Y coordinates swapped. See also ``drawTextureRect(texture:rect:tile:modulate:transpose:)``.
     public final func drawTextureRectRegion (texture: Texture2D?, rect: Rect2, srcRect: Rect2, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), transpose: Bool = false, clipUv: Bool = true) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_src_rect = srcRect
@@ -1473,7 +1473,7 @@ open class CanvasItem: Node {
     /// Value of the `pixelRange` should the same that was used during distance field texture generation.
     /// 
     public final func drawMsdfTextureRectRegion (texture: Texture2D?, rect: Rect2, srcRect: Rect2, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), outline: Double = 0.0, pixelRange: Double = 4.0, scale: Double = 1.0) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_src_rect = srcRect
@@ -1537,7 +1537,7 @@ open class CanvasItem: Node {
     /// Texture is drawn using the following blend operation, blend mode of the ``CanvasItemMaterial`` is ignored:
     /// 
     public final func drawLcdTextureRectRegion (texture: Texture2D?, rect: Rect2, srcRect: Rect2, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_src_rect = srcRect
@@ -1583,7 +1583,7 @@ open class CanvasItem: Node {
     
     /// Draws a styled rectangle.
     public final func drawStyleBox (_ styleBox: StyleBox?, rect: Rect2) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_style_box_handle = styleBox?.handle
@@ -1619,7 +1619,7 @@ open class CanvasItem: Node {
     
     /// Draws a custom primitive. 1 point for a point, 2 points for a line, 3 points for a triangle, and 4 points for a quad. If 0 points or more than 4 points are specified, nothing will be drawn and an error message will be printed. See also ``drawLine(from:to:color:width:antialiased:)``, ``drawPolyline(points:color:width:antialiased:)``, ``drawPolygon(points:colors:uvs:texture:)``, and ``drawRect(_:color:filled:width:)``.
     public final func drawPrimitive (points: PackedVector2Array, colors: PackedColorArray, uvs: PackedVector2Array, texture: Texture2D? = nil) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -1659,7 +1659,7 @@ open class CanvasItem: Node {
     
     /// Draws a solid polygon of any number of points, convex or concave. Unlike ``drawColoredPolygon(points:color:uvs:texture:)``, each point's color can be changed individually. See also ``drawPolyline(points:color:width:antialiased:)`` and ``drawPolylineColors(points:colors:width:antialiased:)``. If you need more flexibility (such as being able to use bones), use ``RenderingServer/canvasItemAddTriangleArray(item:indices:points:colors:uvs:bones:weights:texture:count:)`` instead.
     public final func drawPolygon (points: PackedVector2Array, colors: PackedColorArray, uvs: PackedVector2Array = PackedVector2Array(), texture: Texture2D? = nil) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -1699,7 +1699,7 @@ open class CanvasItem: Node {
     
     /// Draws a colored polygon of any number of points, convex or concave. Unlike ``drawPolygon(points:colors:uvs:texture:)``, a single color must be specified for the whole polygon.
     public final func drawColoredPolygon (points: PackedVector2Array, color: Color, uvs: PackedVector2Array = PackedVector2Array(), texture: Texture2D? = nil) {
-        #if true
+        #if false
         
         var copy_color = color
         var copy_texture_handle = texture?.handle
@@ -1746,7 +1746,7 @@ open class CanvasItem: Node {
     /// See also ``Font/drawString(canvasItem:pos:text:alignment:width:fontSize:modulate:justificationFlags:direction:orientation:)``.
     /// 
     public final func drawString (font: Font?, pos: Vector2, text: String, alignment: HorizontalAlignment = .left, width: Double = -1, fontSize: Int32 = 16, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), justificationFlags: TextServer.JustificationFlag = [.kashida, .wordBound], direction: TextServer.Direction = .auto, orientation: TextServer.Orientation = .horizontal) {
-        #if true
+        #if false
         
         var copy_pos = pos
         let gstr_text = GString (text)
@@ -1822,7 +1822,7 @@ open class CanvasItem: Node {
     
     /// Breaks `text` into lines and draws it using the specified `font` at the `pos` (top-left corner). The text will have its color multiplied by `modulate`. If `width` is greater than or equal to 0, the text will be clipped if it exceeds the specified width.
     public final func drawMultilineString (font: Font?, pos: Vector2, text: String, alignment: HorizontalAlignment = .left, width: Double = -1, fontSize: Int32 = 16, maxLines: Int32 = -1, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), brkFlags: TextServer.LineBreakFlag = [.mandatory, .wordBound], justificationFlags: TextServer.JustificationFlag = [.kashida, .wordBound], direction: TextServer.Direction = .auto, orientation: TextServer.Orientation = .horizontal) {
-        #if true
+        #if false
         
         var copy_pos = pos
         let gstr_text = GString (text)
@@ -1908,7 +1908,7 @@ open class CanvasItem: Node {
     
     /// Draws `text` outline using the specified `font` at the `pos` (bottom-left corner using the baseline of the font). The text will have its color multiplied by `modulate`. If `width` is greater than or equal to 0, the text will be clipped if it exceeds the specified width.
     public final func drawStringOutline (font: Font?, pos: Vector2, text: String, alignment: HorizontalAlignment = .left, width: Double = -1, fontSize: Int32 = 16, size: Int32 = 1, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), justificationFlags: TextServer.JustificationFlag = [.kashida, .wordBound], direction: TextServer.Direction = .auto, orientation: TextServer.Orientation = .horizontal) {
-        #if true
+        #if false
         
         var copy_pos = pos
         let gstr_text = GString (text)
@@ -1989,7 +1989,7 @@ open class CanvasItem: Node {
     
     /// Breaks `text` to the lines and draws text outline using the specified `font` at the `pos` (top-left corner). The text will have its color multiplied by `modulate`. If `width` is greater than or equal to 0, the text will be clipped if it exceeds the specified width.
     public final func drawMultilineStringOutline (font: Font?, pos: Vector2, text: String, alignment: HorizontalAlignment = .left, width: Double = -1, fontSize: Int32 = 16, maxLines: Int32 = -1, size: Int32 = 1, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), brkFlags: TextServer.LineBreakFlag = [.mandatory, .wordBound], justificationFlags: TextServer.JustificationFlag = [.kashida, .wordBound], direction: TextServer.Direction = .auto, orientation: TextServer.Orientation = .horizontal) {
-        #if true
+        #if false
         
         var copy_pos = pos
         let gstr_text = GString (text)
@@ -2080,7 +2080,7 @@ open class CanvasItem: Node {
     
     /// Draws a string first character using a custom font.
     public final func drawChar (font: Font?, pos: Vector2, char: String, fontSize: Int32 = 16, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_pos = pos
         let gstr_char = GString (char)
@@ -2131,7 +2131,7 @@ open class CanvasItem: Node {
     
     /// Draws a string first character outline using a custom font.
     public final func drawCharOutline (font: Font?, pos: Vector2, char: String, fontSize: Int32 = 16, size: Int32 = -1, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_pos = pos
         let gstr_char = GString (char)
@@ -2187,7 +2187,7 @@ open class CanvasItem: Node {
     
     /// Draws a ``Mesh`` in 2D, using the provided texture. See ``MeshInstance2D`` for related documentation.
     public final func drawMesh (_ mesh: Mesh?, texture: Texture2D?, transform: Transform2D = Transform2D (xAxis: Vector2 (x: 1, y: 0), yAxis: Vector2 (x: 0, y: 1), origin: Vector2 (x: 0, y: 0)), modulate: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_transform = transform
         var copy_modulate = modulate
@@ -2232,7 +2232,7 @@ open class CanvasItem: Node {
     
     /// Draws a ``MultiMesh`` in 2D with the provided texture. See ``MultiMeshInstance2D`` for related documentation.
     public final func drawMultimesh (_ multimesh: MultiMesh?, texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_multimesh_handle = multimesh?.handle
         var copy_texture_handle = texture?.handle
@@ -2270,7 +2270,7 @@ open class CanvasItem: Node {
     /// > Note: ``FontFile/oversampling`` does _not_ take `scale` into account. This means that scaling up/down will cause bitmap fonts and rasterized (non-MSDF) dynamic fonts to appear blurry or pixelated. To ensure text remains crisp regardless of scale, you can enable MSDF font rendering by enabling ``ProjectSettings/gui/theme/defaultFontMultichannelSignedDistanceField`` (applies to the default project font only), or enabling **Multichannel Signed Distance Field** in the import options of a DynamicFont for custom fonts. On system fonts, ``SystemFont/multichannelSignedDistanceField`` can be enabled in the inspector.
     /// 
     public final func drawSetTransform (position: Vector2, rotation: Double = 0.0, scale: Vector2 = Vector2 (x: 1, y: 1)) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_rotation = rotation
@@ -2312,7 +2312,7 @@ open class CanvasItem: Node {
     
     /// Sets a custom transform for drawing via matrix. Anything drawn afterwards will be transformed by this.
     public final func drawSetTransformMatrix (xform: Transform2D) {
-        #if true
+        #if false
         
         var copy_xform = xform
         
@@ -2344,7 +2344,7 @@ open class CanvasItem: Node {
     
     /// Subsequent drawing commands will be ignored unless they fall within the specified animation slice. This is a faster way to implement animations that loop on background rather than redrawing constantly.
     public final func drawAnimationSlice (animationLength: Double, sliceBegin: Double, sliceEnd: Double, offset: Double = 0.0) {
-        #if true
+        #if false
         
         var copy_animation_length = animationLength
         var copy_slice_begin = sliceBegin
@@ -2611,7 +2611,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_material (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         
@@ -2660,7 +2660,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_use_parent_material (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2710,7 +2710,7 @@ open class CanvasItem: Node {
     
     /// If `enable` is `true`, this node will receive ``notificationLocalTransformChanged`` when its local transform changes.
     public final func setNotifyLocalTransform (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2760,7 +2760,7 @@ open class CanvasItem: Node {
     
     /// If `enable` is `true`, this node will receive ``notificationTransformChanged`` when its global transform changes.
     public final func setNotifyTransform (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2827,7 +2827,7 @@ open class CanvasItem: Node {
     /// Assigns `screenPoint` as this node's new local transform.
     public final func makeCanvasPositionLocal (screenPoint: Vector2)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_screen_point = screenPoint
         
@@ -2861,7 +2861,7 @@ open class CanvasItem: Node {
     /// Transformations issued by `event`'s inputs are applied in local space instead of global space.
     public final func makeInputLocal (event: InputEvent?)-> InputEvent? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_event_handle = event?.handle
         
@@ -2893,7 +2893,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_visibility_layer (_ layer: UInt32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -2943,7 +2943,7 @@ open class CanvasItem: Node {
     
     /// Set/clear individual bits on the rendering visibility layer. This simplifies editing this ``CanvasItem``'s visibility layer.
     public final func setVisibilityLayerBit (layer: UInt32, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_enabled = enabled
@@ -2981,7 +2981,7 @@ open class CanvasItem: Node {
     /// Returns an individual bit on the rendering visibility layer.
     public final func getVisibilityLayerBit (layer: UInt32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -3014,7 +3014,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_texture_filter (_ mode: CanvasItem.TextureFilter) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -3064,7 +3064,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_texture_repeat (_ mode: CanvasItem.TextureRepeat) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -3114,7 +3114,7 @@ open class CanvasItem: Node {
     
     @inline(__always)
     fileprivate final func set_clip_children_mode (_ mode: CanvasItem.ClipChildrenMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

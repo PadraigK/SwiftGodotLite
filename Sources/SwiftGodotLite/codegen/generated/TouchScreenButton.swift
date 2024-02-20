@@ -156,7 +156,7 @@ open class TouchScreenButton: Node2D {
     
     @inline(__always)
     fileprivate final func set_texture_normal (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -205,7 +205,7 @@ open class TouchScreenButton: Node2D {
     
     @inline(__always)
     fileprivate final func set_texture_pressed (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -254,7 +254,7 @@ open class TouchScreenButton: Node2D {
     
     @inline(__always)
     fileprivate final func set_bitmask (_ bitmask: BitMap?) {
-        #if true
+        #if false
         
         var copy_bitmask_handle = bitmask?.handle
         
@@ -303,7 +303,7 @@ open class TouchScreenButton: Node2D {
     
     @inline(__always)
     fileprivate final func set_shape (_ shape: Shape2D?) {
-        #if true
+        #if false
         
         var copy_shape_handle = shape?.handle
         
@@ -352,7 +352,7 @@ open class TouchScreenButton: Node2D {
     
     @inline(__always)
     fileprivate final func set_shape_centered (_ bool: Bool) {
-        #if true
+        #if false
         
         var copy_bool = bool
         
@@ -402,7 +402,7 @@ open class TouchScreenButton: Node2D {
     
     @inline(__always)
     fileprivate final func set_shape_visible (_ bool: Bool) {
-        #if true
+        #if false
         
         var copy_bool = bool
         
@@ -452,7 +452,7 @@ open class TouchScreenButton: Node2D {
     
     @inline(__always)
     fileprivate final func set_action (_ action: String) {
-        #if true
+        #if false
         
         let gstr_action = GString (action)
         
@@ -502,7 +502,7 @@ open class TouchScreenButton: Node2D {
     
     @inline(__always)
     fileprivate final func set_visibility_mode (_ mode: TouchScreenButton.VisibilityMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -552,7 +552,7 @@ open class TouchScreenButton: Node2D {
     
     @inline(__always)
     fileprivate final func set_passby_press (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

@@ -189,7 +189,7 @@ open class XRInterface: RefCounted {
     
     @inline(__always)
     fileprivate final func set_primary (_ primary: Bool) {
-        #if true
+        #if false
         
         var copy_primary = primary
         
@@ -362,7 +362,7 @@ open class XRInterface: RefCounted {
     /// `trackerName` is optional and can be used to direct the pulse to a specific device provided that device is bound to this haptic.
     /// 
     public final func triggerHapticPulse (actionName: String, trackerName: StringName, frequency: Double, amplitude: Double, durationSec: Double, delaySec: Double) {
-        #if true
+        #if false
         
         let gstr_action_name = GString (actionName)
         var copy_frequency = frequency
@@ -418,7 +418,7 @@ open class XRInterface: RefCounted {
     /// Call this to find out if a given play area mode is supported by this interface.
     public final func supportsPlayAreaMode (_ mode: XRInterface.PlayAreaMode)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -471,7 +471,7 @@ open class XRInterface: RefCounted {
     /// Sets the active play area mode, will return `false` if the mode can't be used with this interface.
     fileprivate final func set_play_area_mode (_ mode: XRInterface.PlayAreaMode)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -540,7 +540,7 @@ open class XRInterface: RefCounted {
     
     @inline(__always)
     fileprivate final func set_anchor_detection_is_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -669,7 +669,7 @@ open class XRInterface: RefCounted {
     /// 
     public final func getTransformForView (_ view: UInt32, camTransform: Transform3D)-> Transform3D {
         var _result: Transform3D = Transform3D ()
-        #if true
+        #if false
         
         var copy_view: Int = Int (view)
         var copy_cam_transform = camTransform
@@ -708,7 +708,7 @@ open class XRInterface: RefCounted {
     /// Returns the projection matrix for a view/eye.
     public final func getProjectionForView (_ view: UInt32, aspect: Double, near: Double, far: Double)-> Projection {
         var _result: Projection = Projection ()
-        #if true
+        #if false
         
         var copy_view: Int = Int (view)
         var copy_aspect = aspect
@@ -781,7 +781,7 @@ open class XRInterface: RefCounted {
     /// 
     fileprivate final func set_environment_blend_mode (_ mode: XRInterface.EnvironmentBlendMode)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

@@ -68,7 +68,7 @@ open class VisualShaderNodeIntOp: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_operator (_ op: VisualShaderNodeIntOp.Operator) {
-        #if true
+        #if false
         
         var copy_op = Int64 (op.rawValue)
         

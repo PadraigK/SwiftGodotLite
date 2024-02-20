@@ -46,7 +46,7 @@ open class ConvexPolygonShape3D: Shape3D {
     
     @inline(__always)
     fileprivate final func set_points (_ points: PackedVector3Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ConvexPolygonShape3D.method_set_points, UnsafeMutableRawPointer (mutating: handle), nil, &points.content)

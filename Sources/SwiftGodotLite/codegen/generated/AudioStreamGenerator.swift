@@ -65,7 +65,7 @@ open class AudioStreamGenerator: AudioStream {
     
     @inline(__always)
     fileprivate final func set_mix_rate (_ hz: Double) {
-        #if true
+        #if false
         
         var copy_hz = hz
         
@@ -115,7 +115,7 @@ open class AudioStreamGenerator: AudioStream {
     
     @inline(__always)
     fileprivate final func set_buffer_length (_ seconds: Double) {
-        #if true
+        #if false
         
         var copy_seconds = seconds
         

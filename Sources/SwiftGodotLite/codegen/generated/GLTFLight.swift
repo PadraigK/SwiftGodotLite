@@ -106,7 +106,7 @@ open class GLTFLight: Resource {
     /// Create a new GLTFLight instance from the given Godot ``Light3D`` node.
     public static func fromNode (lightNode: Light3D?)-> GLTFLight? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_light_node_handle = lightNode?.handle
         
@@ -157,7 +157,7 @@ open class GLTFLight: Resource {
     /// Creates a new GLTFLight instance by parsing the given ``GDictionary``.
     public static func fromDictionary (_ dictionary: GDictionary)-> GLTFLight? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFLight.method_from_dictionary, nil, &_result, &dictionary.content)
@@ -224,7 +224,7 @@ open class GLTFLight: Resource {
     
     @inline(__always)
     fileprivate final func set_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -274,7 +274,7 @@ open class GLTFLight: Resource {
     
     @inline(__always)
     fileprivate final func set_intensity (_ intensity: Double) {
-        #if true
+        #if false
         
         var copy_intensity = intensity
         
@@ -324,7 +324,7 @@ open class GLTFLight: Resource {
     
     @inline(__always)
     fileprivate final func set_light_type (_ lightType: String) {
-        #if true
+        #if false
         
         let gstr_light_type = GString (lightType)
         
@@ -374,7 +374,7 @@ open class GLTFLight: Resource {
     
     @inline(__always)
     fileprivate final func set_range (_ range: Double) {
-        #if true
+        #if false
         
         var copy_range = range
         
@@ -424,7 +424,7 @@ open class GLTFLight: Resource {
     
     @inline(__always)
     fileprivate final func set_inner_cone_angle (_ innerConeAngle: Double) {
-        #if true
+        #if false
         
         var copy_inner_cone_angle = innerConeAngle
         
@@ -474,7 +474,7 @@ open class GLTFLight: Resource {
     
     @inline(__always)
     fileprivate final func set_outer_cone_angle (_ outerConeAngle: Double) {
-        #if true
+        #if false
         
         var copy_outer_cone_angle = outerConeAngle
         

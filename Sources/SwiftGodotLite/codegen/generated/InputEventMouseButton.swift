@@ -87,7 +87,7 @@ open class InputEventMouseButton: InputEventMouse {
     
     @inline(__always)
     fileprivate final func set_factor (_ factor: Double) {
-        #if true
+        #if false
         
         var copy_factor = factor
         
@@ -137,7 +137,7 @@ open class InputEventMouseButton: InputEventMouse {
     
     @inline(__always)
     fileprivate final func set_button_index (_ buttonIndex: MouseButton) {
-        #if true
+        #if false
         
         var copy_button_index = Int64 (buttonIndex.rawValue)
         
@@ -187,7 +187,7 @@ open class InputEventMouseButton: InputEventMouse {
     
     @inline(__always)
     fileprivate final func set_pressed (_ pressed: Bool) {
-        #if true
+        #if false
         
         var copy_pressed = pressed
         
@@ -219,7 +219,7 @@ open class InputEventMouseButton: InputEventMouse {
     
     @inline(__always)
     fileprivate final func set_canceled (_ canceled: Bool) {
-        #if true
+        #if false
         
         var copy_canceled = canceled
         
@@ -251,7 +251,7 @@ open class InputEventMouseButton: InputEventMouse {
     
     @inline(__always)
     fileprivate final func set_double_click (_ doubleClick: Bool) {
-        #if true
+        #if false
         
         var copy_double_click = doubleClick
         

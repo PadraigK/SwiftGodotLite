@@ -90,7 +90,7 @@ open class GPUParticlesAttractor3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_cull_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -140,7 +140,7 @@ open class GPUParticlesAttractor3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_strength (_ strength: Double) {
-        #if true
+        #if false
         
         var copy_strength = strength
         
@@ -190,7 +190,7 @@ open class GPUParticlesAttractor3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_attenuation (_ attenuation: Double) {
-        #if true
+        #if false
         
         var copy_attenuation = attenuation
         
@@ -240,7 +240,7 @@ open class GPUParticlesAttractor3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_directionality (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         

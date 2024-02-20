@@ -62,7 +62,7 @@ open class EditorInterface: Object {
     
     /// Restarts the editor. This closes the editor and then opens the same project. If `save` is `true`, the project will be saved before restarting.
     public final func restartEditor (save: Bool = true) {
-        #if true
+        #if false
         
         var copy_save = save
         
@@ -206,7 +206,7 @@ open class EditorInterface: Object {
     /// Returns mesh previews rendered at the given size as an ``GArray`` of ``Texture2D``s.
     public final func makeMeshPreviews (meshes: ObjectCollection<Mesh>, previewSize: Int32)-> ObjectCollection<Texture2D> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_preview_size: Int = Int (previewSize)
         
@@ -242,7 +242,7 @@ open class EditorInterface: Object {
     
     /// Sets the enabled status of a plugin. The plugin name is the same as its directory name.
     public final func setPluginEnabled (plugin: String, enabled: Bool) {
-        #if true
+        #if false
         
         let gstr_plugin = GString (plugin)
         var copy_enabled = enabled
@@ -280,7 +280,7 @@ open class EditorInterface: Object {
     /// Returns `true` if the specified `plugin` is enabled. The plugin name is the same as its directory name.
     public final func isPluginEnabled (plugin: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_plugin = GString (plugin)
         
@@ -416,7 +416,7 @@ open class EditorInterface: Object {
     /// Returns the specified 3D editor ``SubViewport``, from `0` to `3`. The viewport can be used to access the active editor cameras with ``Viewport/getCamera3d()``.
     public final func getEditorViewport3d (idx: Int32 = 0)-> SubViewport? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -449,7 +449,7 @@ open class EditorInterface: Object {
     
     /// Sets the editor's current main screen to the one specified in `name`. `name` must match the title of the tab in question exactly (e.g. `2D`, `3D`, [code skip-lint]Script`, or `AssetLib` for default tabs).
     public final func setMainScreenEditor (name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -481,7 +481,7 @@ open class EditorInterface: Object {
     
     @inline(__always)
     fileprivate final func set_distraction_free_mode (_ enter: Bool) {
-        #if true
+        #if false
         
         var copy_enter = enter
         
@@ -555,7 +555,7 @@ open class EditorInterface: Object {
     /// See also ``Window/setUnparentWhenInvisible(unparent:)``.
     /// 
     public final func popupDialog (_ dialog: Window?, rect: Rect2i = Rect2i (x: 0, y: 0, width: 0, height: 0)) {
-        #if true
+        #if false
         
         var copy_rect = rect
         var copy_dialog_handle = dialog?.handle
@@ -594,7 +594,7 @@ open class EditorInterface: Object {
     /// See also ``Window/setUnparentWhenInvisible(unparent:)``.
     /// 
     public final func popupDialogCentered (dialog: Window?, minsize: Vector2i = Vector2i (x: 0, y: 0)) {
-        #if true
+        #if false
         
         var copy_minsize = minsize
         var copy_dialog_handle = dialog?.handle
@@ -633,7 +633,7 @@ open class EditorInterface: Object {
     /// See also ``Window/setUnparentWhenInvisible(unparent:)``.
     /// 
     public final func popupDialogCenteredRatio (dialog: Window?, ratio: Double = 0.8) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         var copy_dialog_handle = dialog?.handle
@@ -672,7 +672,7 @@ open class EditorInterface: Object {
     /// See also ``Window/setUnparentWhenInvisible(unparent:)``.
     /// 
     public final func popupDialogCenteredClamped (dialog: Window?, minsize: Vector2i = Vector2i (x: 0, y: 0), fallbackRatio: Double = 0.75) {
-        #if true
+        #if false
         
         var copy_minsize = minsize
         var copy_fallback_ratio = fallbackRatio
@@ -741,7 +741,7 @@ open class EditorInterface: Object {
     /// > Note: The feature profile that gets activated must be located in the `feature_profiles` directory, as a file with the `.profile` extension. If a profile could not be found, an error occurs. The editor configuration folder can be found by using ``EditorPaths/getConfigDir()``.
     /// 
     public final func setCurrentFeatureProfile (profileName: String) {
-        #if true
+        #if false
         
         let gstr_profile_name = GString (profileName)
         
@@ -794,7 +794,7 @@ open class EditorInterface: Object {
     
     /// Selects the file, with the path provided by `file`, in the FileSystem dock.
     public final func selectFile (_ file: String) {
-        #if true
+        #if false
         
         let gstr_file = GString (file)
         
@@ -901,7 +901,7 @@ open class EditorInterface: Object {
     
     /// Shows the given property on the given `object` in the editor's Inspector dock. If `inspectorOnly` is `true`, plugins will not attempt to edit `object`.
     public final func inspectObject (_ object: Object?, forProperty: String = "", inspectorOnly: Bool = false) {
-        #if true
+        #if false
         
         let gstr_for_property = GString (forProperty)
         var copy_inspector_only = inspectorOnly
@@ -942,7 +942,7 @@ open class EditorInterface: Object {
     
     /// Edits the given ``Resource``. If the resource is a ``Script`` you can also edit it with ``editScript(_:line:column:grabFocus:)`` to specify the line and column position.
     public final func editResource (_ resource: Resource?) {
-        #if true
+        #if false
         
         var copy_resource_handle = resource?.handle
         
@@ -973,7 +973,7 @@ open class EditorInterface: Object {
     
     /// Edits the given ``Node``. The node will be also selected if it's inside the scene tree.
     public final func editNode (_ node: Node?) {
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -1004,7 +1004,7 @@ open class EditorInterface: Object {
     
     /// Edits the given ``Script``. The line and column on which to open the script can also be specified. The script will be open with the user-configured editor for the script's language which may be an external editor.
     public final func editScript (_ script: Script?, line: Int32 = -1, column: Int32 = 0, grabFocus: Bool = true) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_column: Int = Int (column)
@@ -1050,7 +1050,7 @@ open class EditorInterface: Object {
     
     /// Opens the scene at the given path.
     public final func openSceneFromPath (sceneFilepath: String) {
-        #if true
+        #if false
         
         let gstr_scene_filepath = GString (sceneFilepath)
         
@@ -1082,7 +1082,7 @@ open class EditorInterface: Object {
     
     /// Reloads the scene at the given path.
     public final func reloadSceneFromPath (sceneFilepath: String) {
-        #if true
+        #if false
         
         let gstr_scene_filepath = GString (sceneFilepath)
         
@@ -1168,7 +1168,7 @@ open class EditorInterface: Object {
     
     /// Saves the currently active scene as a file at `path`.
     public final func saveSceneAs (path: String, withPreview: Bool = true) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_with_preview = withPreview
@@ -1269,7 +1269,7 @@ open class EditorInterface: Object {
     
     /// Plays the scene specified by its filepath.
     public final func playCustomScene (sceneFilepath: String) {
-        #if true
+        #if false
         
         let gstr_scene_filepath = GString (sceneFilepath)
         
@@ -1353,7 +1353,7 @@ open class EditorInterface: Object {
     
     @inline(__always)
     fileprivate final func set_movie_maker_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

@@ -44,7 +44,7 @@ open class GPUParticlesAttractorBox3D: GPUParticlesAttractor3D {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         

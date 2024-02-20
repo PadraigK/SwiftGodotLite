@@ -266,7 +266,7 @@ open class Range: Control {
     
     @inline(__always)
     fileprivate final func set_value (_ value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -298,7 +298,7 @@ open class Range: Control {
     
     /// Sets the ``Range``'s current value to the specified `value`, without emitting the [signal value_changed] signal.
     public final func setValueNoSignal (value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -330,7 +330,7 @@ open class Range: Control {
     
     @inline(__always)
     fileprivate final func set_min (_ minimum: Double) {
-        #if true
+        #if false
         
         var copy_minimum = minimum
         
@@ -362,7 +362,7 @@ open class Range: Control {
     
     @inline(__always)
     fileprivate final func set_max (_ maximum: Double) {
-        #if true
+        #if false
         
         var copy_maximum = maximum
         
@@ -394,7 +394,7 @@ open class Range: Control {
     
     @inline(__always)
     fileprivate final func set_step (_ step: Double) {
-        #if true
+        #if false
         
         var copy_step = step
         
@@ -426,7 +426,7 @@ open class Range: Control {
     
     @inline(__always)
     fileprivate final func set_page (_ pagesize: Double) {
-        #if true
+        #if false
         
         var copy_pagesize = pagesize
         
@@ -458,7 +458,7 @@ open class Range: Control {
     
     @inline(__always)
     fileprivate final func set_as_ratio (_ value: Double) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -490,7 +490,7 @@ open class Range: Control {
     
     @inline(__always)
     fileprivate final func set_use_rounded_values (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -540,7 +540,7 @@ open class Range: Control {
     
     @inline(__always)
     fileprivate final func set_exp_ratio (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -590,7 +590,7 @@ open class Range: Control {
     
     @inline(__always)
     fileprivate final func set_allow_greater (_ allow: Bool) {
-        #if true
+        #if false
         
         var copy_allow = allow
         
@@ -640,7 +640,7 @@ open class Range: Control {
     
     @inline(__always)
     fileprivate final func set_allow_lesser (_ allow: Bool) {
-        #if true
+        #if false
         
         var copy_allow = allow
         
@@ -690,7 +690,7 @@ open class Range: Control {
     
     /// Binds two ``Range``s together along with any ranges previously grouped with either of them. When any of range's member variables change, it will share the new value with all other ranges in its group.
     public final func share (with: Node?) {
-        #if true
+        #if false
         
         var copy_with_handle = with?.handle
         

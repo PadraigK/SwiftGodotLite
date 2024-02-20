@@ -100,7 +100,7 @@ open class MultiplayerAPI: RefCounted {
     
     @inline(__always)
     fileprivate final func set_multiplayer_peer (_ peer: MultiplayerPeer?) {
-        #if true
+        #if false
         
         var copy_peer_handle = peer?.handle
         
@@ -213,7 +213,7 @@ open class MultiplayerAPI: RefCounted {
     /// 
     public final func rpc (peer: Int32, object: Object?, method: StringName, arguments: GArray = GArray ())-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_peer: Int = Int (peer)
         var copy_object_handle = object?.handle
@@ -260,7 +260,7 @@ open class MultiplayerAPI: RefCounted {
     /// 
     public final func objectConfigurationAdd (object: Object?, configuration: Variant)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_object_handle = object?.handle
         
@@ -299,7 +299,7 @@ open class MultiplayerAPI: RefCounted {
     /// 
     public final func objectConfigurationRemove (object: Object?, configuration: Variant)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_object_handle = object?.handle
         
@@ -352,7 +352,7 @@ open class MultiplayerAPI: RefCounted {
     
     /// Sets the default MultiplayerAPI implementation class. This method can be used by modules and extensions to configure which implementation will be used by ``SceneTree`` when the engine starts.
     public static func setDefaultInterface (interfaceName: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (MultiplayerAPI.method_set_default_interface, nil, nil, &interfaceName.content)

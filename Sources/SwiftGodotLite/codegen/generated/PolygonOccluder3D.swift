@@ -45,7 +45,7 @@ open class PolygonOccluder3D: Occluder3D {
     
     @inline(__always)
     fileprivate final func set_polygon (_ polygon: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PolygonOccluder3D.method_set_polygon, UnsafeMutableRawPointer (mutating: handle), nil, &polygon.content)

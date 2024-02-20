@@ -1217,7 +1217,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_background (_ mode: Environment.BGMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1267,7 +1267,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sky (_ sky: Sky?) {
-        #if true
+        #if false
         
         var copy_sky_handle = sky?.handle
         
@@ -1316,7 +1316,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sky_custom_fov (_ scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -1366,7 +1366,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sky_rotation (_ eulerRadians: Vector3) {
-        #if true
+        #if false
         
         var copy_euler_radians = eulerRadians
         
@@ -1416,7 +1416,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_bg_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -1466,7 +1466,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_bg_energy_multiplier (_ energy: Double) {
-        #if true
+        #if false
         
         var copy_energy = energy
         
@@ -1516,7 +1516,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_bg_intensity (_ energy: Double) {
-        #if true
+        #if false
         
         var copy_energy = energy
         
@@ -1566,7 +1566,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_canvas_max_layer (_ layer: Int32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -1616,7 +1616,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_camera_feed_id (_ id: Int32) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -1666,7 +1666,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ambient_light_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -1716,7 +1716,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ambient_source (_ source: Environment.AmbientSource) {
-        #if true
+        #if false
         
         var copy_source = Int64 (source.rawValue)
         
@@ -1766,7 +1766,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ambient_light_energy (_ energy: Double) {
-        #if true
+        #if false
         
         var copy_energy = energy
         
@@ -1816,7 +1816,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ambient_light_sky_contribution (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -1866,7 +1866,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_reflection_source (_ source: Environment.ReflectionSource) {
-        #if true
+        #if false
         
         var copy_source = Int64 (source.rawValue)
         
@@ -1916,7 +1916,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_tonemapper (_ mode: Environment.ToneMapper) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1966,7 +1966,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_tonemap_exposure (_ exposure: Double) {
-        #if true
+        #if false
         
         var copy_exposure = exposure
         
@@ -2016,7 +2016,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_tonemap_white (_ white: Double) {
-        #if true
+        #if false
         
         var copy_white = white
         
@@ -2066,7 +2066,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssr_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2116,7 +2116,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssr_max_steps (_ maxSteps: Int32) {
-        #if true
+        #if false
         
         var copy_max_steps: Int = Int (maxSteps)
         
@@ -2166,7 +2166,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssr_fade_in (_ fadeIn: Double) {
-        #if true
+        #if false
         
         var copy_fade_in = fadeIn
         
@@ -2216,7 +2216,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssr_fade_out (_ fadeOut: Double) {
-        #if true
+        #if false
         
         var copy_fade_out = fadeOut
         
@@ -2266,7 +2266,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssr_depth_tolerance (_ depthTolerance: Double) {
-        #if true
+        #if false
         
         var copy_depth_tolerance = depthTolerance
         
@@ -2316,7 +2316,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssao_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2366,7 +2366,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssao_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -2416,7 +2416,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssao_intensity (_ intensity: Double) {
-        #if true
+        #if false
         
         var copy_intensity = intensity
         
@@ -2466,7 +2466,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssao_power (_ power: Double) {
-        #if true
+        #if false
         
         var copy_power = power
         
@@ -2516,7 +2516,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssao_detail (_ detail: Double) {
-        #if true
+        #if false
         
         var copy_detail = detail
         
@@ -2566,7 +2566,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssao_horizon (_ horizon: Double) {
-        #if true
+        #if false
         
         var copy_horizon = horizon
         
@@ -2616,7 +2616,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssao_sharpness (_ sharpness: Double) {
-        #if true
+        #if false
         
         var copy_sharpness = sharpness
         
@@ -2666,7 +2666,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssao_direct_light_affect (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -2716,7 +2716,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssao_ao_channel_affect (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -2766,7 +2766,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssil_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2816,7 +2816,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssil_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -2866,7 +2866,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssil_intensity (_ intensity: Double) {
-        #if true
+        #if false
         
         var copy_intensity = intensity
         
@@ -2916,7 +2916,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssil_sharpness (_ sharpness: Double) {
-        #if true
+        #if false
         
         var copy_sharpness = sharpness
         
@@ -2966,7 +2966,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_ssil_normal_rejection (_ normalRejection: Double) {
-        #if true
+        #if false
         
         var copy_normal_rejection = normalRejection
         
@@ -3016,7 +3016,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sdfgi_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -3066,7 +3066,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sdfgi_cascades (_ amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -3116,7 +3116,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sdfgi_min_cell_size (_ size: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -3166,7 +3166,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sdfgi_max_distance (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -3216,7 +3216,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sdfgi_cascade0_distance (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -3266,7 +3266,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sdfgi_y_scale (_ scale: Environment.SDFGIYScale) {
-        #if true
+        #if false
         
         var copy_scale = Int64 (scale.rawValue)
         
@@ -3316,7 +3316,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sdfgi_use_occlusion (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3366,7 +3366,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sdfgi_bounce_feedback (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -3416,7 +3416,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sdfgi_read_sky_light (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3466,7 +3466,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sdfgi_energy (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -3516,7 +3516,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sdfgi_normal_bias (_ bias: Double) {
-        #if true
+        #if false
         
         var copy_bias = bias
         
@@ -3566,7 +3566,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_sdfgi_probe_bias (_ bias: Double) {
-        #if true
+        #if false
         
         var copy_bias = bias
         
@@ -3616,7 +3616,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_glow_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -3666,7 +3666,7 @@ open class Environment: Resource {
     
     /// Sets the intensity of the glow level `idx`. A value above `0.0` enables the level. Each level relies on the previous level. This means that enabling higher glow levels will slow down the glow effect rendering, even if previous levels aren't enabled.
     public final func setGlowLevel (idx: Int32, intensity: Double) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_intensity = intensity
@@ -3704,7 +3704,7 @@ open class Environment: Resource {
     /// Returns the intensity of the glow level `idx`.
     public final func getGlowLevel (idx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -3737,7 +3737,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_glow_normalized (_ normalize: Bool) {
-        #if true
+        #if false
         
         var copy_normalize = normalize
         
@@ -3787,7 +3787,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_glow_intensity (_ intensity: Double) {
-        #if true
+        #if false
         
         var copy_intensity = intensity
         
@@ -3837,7 +3837,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_glow_strength (_ strength: Double) {
-        #if true
+        #if false
         
         var copy_strength = strength
         
@@ -3887,7 +3887,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_glow_mix (_ mix: Double) {
-        #if true
+        #if false
         
         var copy_mix = mix
         
@@ -3937,7 +3937,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_glow_bloom (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -3987,7 +3987,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_glow_blend_mode (_ mode: Environment.GlowBlendMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -4037,7 +4037,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_glow_hdr_bleed_threshold (_ threshold: Double) {
-        #if true
+        #if false
         
         var copy_threshold = threshold
         
@@ -4087,7 +4087,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_glow_hdr_bleed_scale (_ scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -4137,7 +4137,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_glow_hdr_luminance_cap (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -4187,7 +4187,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_glow_map_strength (_ strength: Double) {
-        #if true
+        #if false
         
         var copy_strength = strength
         
@@ -4237,7 +4237,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_glow_map (_ mode: Texture?) {
-        #if true
+        #if false
         
         var copy_mode_handle = mode?.handle
         
@@ -4286,7 +4286,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_fog_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -4336,7 +4336,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_fog_light_color (_ lightColor: Color) {
-        #if true
+        #if false
         
         var copy_light_color = lightColor
         
@@ -4386,7 +4386,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_fog_light_energy (_ lightEnergy: Double) {
-        #if true
+        #if false
         
         var copy_light_energy = lightEnergy
         
@@ -4436,7 +4436,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_fog_sun_scatter (_ sunScatter: Double) {
-        #if true
+        #if false
         
         var copy_sun_scatter = sunScatter
         
@@ -4486,7 +4486,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_fog_density (_ density: Double) {
-        #if true
+        #if false
         
         var copy_density = density
         
@@ -4536,7 +4536,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_fog_height (_ height: Double) {
-        #if true
+        #if false
         
         var copy_height = height
         
@@ -4586,7 +4586,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_fog_height_density (_ heightDensity: Double) {
-        #if true
+        #if false
         
         var copy_height_density = heightDensity
         
@@ -4636,7 +4636,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_fog_aerial_perspective (_ aerialPerspective: Double) {
-        #if true
+        #if false
         
         var copy_aerial_perspective = aerialPerspective
         
@@ -4686,7 +4686,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_fog_sky_affect (_ skyAffect: Double) {
-        #if true
+        #if false
         
         var copy_sky_affect = skyAffect
         
@@ -4736,7 +4736,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_volumetric_fog_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -4786,7 +4786,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_volumetric_fog_emission (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -4836,7 +4836,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_volumetric_fog_albedo (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -4886,7 +4886,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_volumetric_fog_density (_ density: Double) {
-        #if true
+        #if false
         
         var copy_density = density
         
@@ -4936,7 +4936,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_volumetric_fog_emission_energy (_ begin: Double) {
-        #if true
+        #if false
         
         var copy_begin = begin
         
@@ -4986,7 +4986,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_volumetric_fog_anisotropy (_ anisotropy: Double) {
-        #if true
+        #if false
         
         var copy_anisotropy = anisotropy
         
@@ -5036,7 +5036,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_volumetric_fog_length (_ length: Double) {
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -5086,7 +5086,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_volumetric_fog_detail_spread (_ detailSpread: Double) {
-        #if true
+        #if false
         
         var copy_detail_spread = detailSpread
         
@@ -5136,7 +5136,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_volumetric_fog_gi_inject (_ giInject: Double) {
-        #if true
+        #if false
         
         var copy_gi_inject = giInject
         
@@ -5186,7 +5186,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_volumetric_fog_ambient_inject (_ enabled: Double) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -5236,7 +5236,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_volumetric_fog_sky_affect (_ skyAffect: Double) {
-        #if true
+        #if false
         
         var copy_sky_affect = skyAffect
         
@@ -5286,7 +5286,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_volumetric_fog_temporal_reprojection_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -5336,7 +5336,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_volumetric_fog_temporal_reprojection_amount (_ temporalReprojectionAmount: Double) {
-        #if true
+        #if false
         
         var copy_temporal_reprojection_amount = temporalReprojectionAmount
         
@@ -5386,7 +5386,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_adjustment_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -5436,7 +5436,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_adjustment_brightness (_ brightness: Double) {
-        #if true
+        #if false
         
         var copy_brightness = brightness
         
@@ -5486,7 +5486,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_adjustment_contrast (_ contrast: Double) {
-        #if true
+        #if false
         
         var copy_contrast = contrast
         
@@ -5536,7 +5536,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_adjustment_saturation (_ saturation: Double) {
-        #if true
+        #if false
         
         var copy_saturation = saturation
         
@@ -5586,7 +5586,7 @@ open class Environment: Resource {
     
     @inline(__always)
     fileprivate final func set_adjustment_color_correction (_ colorCorrection: Texture?) {
-        #if true
+        #if false
         
         var copy_color_correction_handle = colorCorrection?.handle
         

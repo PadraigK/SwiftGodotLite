@@ -320,7 +320,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_light_data (_ data: LightmapGIData?) {
-        #if true
+        #if false
         
         var copy_data_handle = data?.handle
         
@@ -369,7 +369,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_bake_quality (_ bakeQuality: LightmapGI.BakeQuality) {
-        #if true
+        #if false
         
         var copy_bake_quality = Int64 (bakeQuality.rawValue)
         
@@ -419,7 +419,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_bounces (_ bounces: Int32) {
-        #if true
+        #if false
         
         var copy_bounces: Int = Int (bounces)
         
@@ -469,7 +469,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_bounce_indirect_energy (_ bounceIndirectEnergy: Double) {
-        #if true
+        #if false
         
         var copy_bounce_indirect_energy = bounceIndirectEnergy
         
@@ -519,7 +519,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_generate_probes (_ subdivision: LightmapGI.GenerateProbes) {
-        #if true
+        #if false
         
         var copy_subdivision = Int64 (subdivision.rawValue)
         
@@ -569,7 +569,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_bias (_ bias: Double) {
-        #if true
+        #if false
         
         var copy_bias = bias
         
@@ -619,7 +619,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_environment_mode (_ mode: LightmapGI.EnvironmentMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -669,7 +669,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_environment_custom_sky (_ sky: Sky?) {
-        #if true
+        #if false
         
         var copy_sky_handle = sky?.handle
         
@@ -718,7 +718,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_environment_custom_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -768,7 +768,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_environment_custom_energy (_ energy: Double) {
-        #if true
+        #if false
         
         var copy_energy = energy
         
@@ -818,7 +818,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_max_texture_size (_ maxTextureSize: Int32) {
-        #if true
+        #if false
         
         var copy_max_texture_size: Int = Int (maxTextureSize)
         
@@ -868,7 +868,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_use_denoiser (_ useDenoiser: Bool) {
-        #if true
+        #if false
         
         var copy_use_denoiser = useDenoiser
         
@@ -918,7 +918,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_denoiser_strength (_ denoiserStrength: Double) {
-        #if true
+        #if false
         
         var copy_denoiser_strength = denoiserStrength
         
@@ -968,7 +968,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_interior (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1018,7 +1018,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_directional (_ directional: Bool) {
-        #if true
+        #if false
         
         var copy_directional = directional
         
@@ -1068,7 +1068,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_use_texture_for_bounces (_ useTextureForBounces: Bool) {
-        #if true
+        #if false
         
         var copy_use_texture_for_bounces = useTextureForBounces
         
@@ -1118,7 +1118,7 @@ open class LightmapGI: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_camera_attributes (_ cameraAttributes: CameraAttributes?) {
-        #if true
+        #if false
         
         var copy_camera_attributes_handle = cameraAttributes?.handle
         

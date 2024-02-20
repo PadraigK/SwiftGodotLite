@@ -175,7 +175,7 @@ open class TextParagraph: RefCounted {
     
     @inline(__always)
     fileprivate final func set_direction (_ direction: TextServer.Direction) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -225,7 +225,7 @@ open class TextParagraph: RefCounted {
     
     @inline(__always)
     fileprivate final func set_custom_punctuation (_ customPunctuation: String) {
-        #if true
+        #if false
         
         let gstr_custom_punctuation = GString (customPunctuation)
         
@@ -275,7 +275,7 @@ open class TextParagraph: RefCounted {
     
     @inline(__always)
     fileprivate final func set_orientation (_ orientation: TextServer.Orientation) {
-        #if true
+        #if false
         
         var copy_orientation = Int64 (orientation.rawValue)
         
@@ -325,7 +325,7 @@ open class TextParagraph: RefCounted {
     
     @inline(__always)
     fileprivate final func set_preserve_invalid (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -375,7 +375,7 @@ open class TextParagraph: RefCounted {
     
     @inline(__always)
     fileprivate final func set_preserve_control (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -428,7 +428,7 @@ open class TextParagraph: RefCounted {
     /// Override ranges should cover full source text without overlaps. BiDi algorithm will be used on each range separately.
     /// 
     public final func setBidiOverride (_ override: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextParagraph.method_set_bidi_override, UnsafeMutableRawPointer (mutating: handle), nil, &override.content)
@@ -459,7 +459,7 @@ open class TextParagraph: RefCounted {
     /// Sets drop cap, overrides previously set drop cap. Drop cap (dropped capital) is a decorative element at the beginning of a paragraph that is larger than the rest of the text.
     public final func setDropcap (text: String, font: Font?, fontSize: Int32, dropcapMargins: Rect2 = Rect2 (x: 0, y: 0, width: 0, height: 0), language: String = "")-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         var copy_font_size: Int = Int (fontSize)
@@ -528,7 +528,7 @@ open class TextParagraph: RefCounted {
     /// Adds text span and font to draw it.
     public final func addString (text: String, font: Font?, fontSize: Int32, language: String = "", meta: Variant)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         var copy_font_size: Int = Int (fontSize)
@@ -579,7 +579,7 @@ open class TextParagraph: RefCounted {
     /// Adds inline object to the text buffer, `key` must be unique. In the text, object is represented as `length` object replacement characters.
     public final func addObject (key: Variant, size: Vector2, inlineAlign: InlineAlignment = .center, length: Int32 = 1, baseline: Double = 0.0)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_size = size
         var copy_inline_align = Int64 (inlineAlign.rawValue)
@@ -631,7 +631,7 @@ open class TextParagraph: RefCounted {
     /// Sets new size and alignment of embedded object.
     public final func resizeObject (key: Variant, size: Vector2, inlineAlign: InlineAlignment = .center, baseline: Double = 0.0)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_size = size
         var copy_inline_align = Int64 (inlineAlign.rawValue)
@@ -677,7 +677,7 @@ open class TextParagraph: RefCounted {
     
     @inline(__always)
     fileprivate final func set_alignment (_ alignment: HorizontalAlignment) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -727,7 +727,7 @@ open class TextParagraph: RefCounted {
     
     /// Aligns paragraph to the given tab-stops.
     public final func tabAlign (tabStops: PackedFloat32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextParagraph.method_tab_align, UnsafeMutableRawPointer (mutating: handle), nil, &tabStops.content)
@@ -757,7 +757,7 @@ open class TextParagraph: RefCounted {
     
     @inline(__always)
     fileprivate final func set_break_flags (_ flags: TextServer.LineBreakFlag) {
-        #if true
+        #if false
         
         var copy_flags = flags
         
@@ -807,7 +807,7 @@ open class TextParagraph: RefCounted {
     
     @inline(__always)
     fileprivate final func set_justification_flags (_ flags: TextServer.JustificationFlag) {
-        #if true
+        #if false
         
         var copy_flags = flags
         
@@ -857,7 +857,7 @@ open class TextParagraph: RefCounted {
     
     @inline(__always)
     fileprivate final func set_text_overrun_behavior (_ overrunBehavior: TextServer.OverrunBehavior) {
-        #if true
+        #if false
         
         var copy_overrun_behavior = Int64 (overrunBehavior.rawValue)
         
@@ -907,7 +907,7 @@ open class TextParagraph: RefCounted {
     
     @inline(__always)
     fileprivate final func set_width (_ width: Double) {
-        #if true
+        #if false
         
         var copy_width = width
         
@@ -1012,7 +1012,7 @@ open class TextParagraph: RefCounted {
     /// Returns TextServer line buffer RID.
     public final func getLineRid (line: Int32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1081,7 +1081,7 @@ open class TextParagraph: RefCounted {
     
     @inline(__always)
     fileprivate final func set_max_lines_visible (_ maxLinesVisible: Int32) {
-        #if true
+        #if false
         
         var copy_max_lines_visible: Int = Int (maxLinesVisible)
         
@@ -1132,7 +1132,7 @@ open class TextParagraph: RefCounted {
     /// Returns array of inline objects in the line.
     public final func getLineObjects (line: Int32)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1166,7 +1166,7 @@ open class TextParagraph: RefCounted {
     /// Returns bounding rectangle of the inline object.
     public final func getLineObjectRect (line: Int32, key: Variant)-> Rect2 {
         var _result: Rect2 = Rect2 ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1203,7 +1203,7 @@ open class TextParagraph: RefCounted {
     /// Returns size of the bounding box of the line of text.
     public final func getLineSize (line: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1237,7 +1237,7 @@ open class TextParagraph: RefCounted {
     /// Returns character range of the line.
     public final func getLineRange (line: Int32)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1271,7 +1271,7 @@ open class TextParagraph: RefCounted {
     /// Returns the text line ascent (number of pixels above the baseline for horizontal layout or to the left of baseline for vertical).
     public final func getLineAscent (line: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1305,7 +1305,7 @@ open class TextParagraph: RefCounted {
     /// Returns the text line descent (number of pixels below the baseline for horizontal layout or to the right of baseline for vertical).
     public final func getLineDescent (line: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1339,7 +1339,7 @@ open class TextParagraph: RefCounted {
     /// Returns width (for horizontal layout) or height (for vertical) of the line of text.
     public final func getLineWidth (line: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1373,7 +1373,7 @@ open class TextParagraph: RefCounted {
     /// Returns pixel offset of the underline below the baseline.
     public final func getLineUnderlinePosition (line: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1407,7 +1407,7 @@ open class TextParagraph: RefCounted {
     /// Returns thickness of the underline.
     public final func getLineUnderlineThickness (line: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1476,7 +1476,7 @@ open class TextParagraph: RefCounted {
     
     /// Draw all lines of the text and drop cap into a canvas item at a given position, with `color`. `pos` specifies the top left corner of the bounding box.
     public final func draw (canvas: RID, pos: Vector2, color: Color = Color (r: 1, g: 1, b: 1, a: 1), dcColor: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_color = color
@@ -1521,7 +1521,7 @@ open class TextParagraph: RefCounted {
     
     /// Draw outlines of all lines of the text and drop cap into a canvas item at a given position, with `color`. `pos` specifies the top left corner of the bounding box.
     public final func drawOutline (canvas: RID, pos: Vector2, outlineSize: Int32 = 1, color: Color = Color (r: 1, g: 1, b: 1, a: 1), dcColor: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_outline_size: Int = Int (outlineSize)
@@ -1571,7 +1571,7 @@ open class TextParagraph: RefCounted {
     
     /// Draw single line of text into a canvas item at a given position, with `color`. `pos` specifies the top left corner of the bounding box.
     public final func drawLine (canvas: RID, pos: Vector2, line: Int32, color: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_line: Int = Int (line)
@@ -1616,7 +1616,7 @@ open class TextParagraph: RefCounted {
     
     /// Draw outline of the single line of text into a canvas item at a given position, with `color`. `pos` specifies the top left corner of the bounding box.
     public final func drawLineOutline (canvas: RID, pos: Vector2, line: Int32, outlineSize: Int32 = 1, color: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_line: Int = Int (line)
@@ -1666,7 +1666,7 @@ open class TextParagraph: RefCounted {
     
     /// Draw drop cap into a canvas item at a given position, with `color`. `pos` specifies the top left corner of the bounding box.
     public final func drawDropcap (canvas: RID, pos: Vector2, color: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_color = color
@@ -1706,7 +1706,7 @@ open class TextParagraph: RefCounted {
     
     /// Draw drop cap outline into a canvas item at a given position, with `color`. `pos` specifies the top left corner of the bounding box.
     public final func drawDropcapOutline (canvas: RID, pos: Vector2, outlineSize: Int32 = 1, color: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_outline_size: Int = Int (outlineSize)
@@ -1752,7 +1752,7 @@ open class TextParagraph: RefCounted {
     /// Returns caret character offset at the specified coordinates. This function always returns a valid position.
     public final func hitTest (coords: Vector2)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_coords = coords
         

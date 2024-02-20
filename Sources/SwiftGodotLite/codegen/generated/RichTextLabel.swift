@@ -424,7 +424,7 @@ open class RichTextLabel: Control {
     
     /// Adds raw non-BBCode-parsed text to the tag stack.
     public final func addText (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -456,7 +456,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_text (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -499,7 +499,7 @@ open class RichTextLabel: Control {
     /// If `sizeInPercent` is set, `width` and `height` values are percentages of the control width instead of pixels.
     /// 
     public final func addImage (_ image: Texture2D?, width: Int32 = 0, height: Int32 = 0, color: Color = Color (r: 1, g: 1, b: 1, a: 1), inlineAlign: InlineAlignment = .center, region: Rect2 = Rect2 (x: 0, y: 0, width: 0, height: 0), key: Variant, pad: Bool = false, tooltip: String = "", sizeInPercent: Bool = false) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         var copy_height: Int = Int (height)
@@ -573,7 +573,7 @@ open class RichTextLabel: Control {
     
     /// Updates the existing images with the key `key`. Only properties specified by `mask` bits are updated. See ``addImage(_:width:height:color:inlineAlign:region:key:pad:tooltip:sizeInPercent:)``.
     public final func updateImage (key: Variant, mask: RichTextLabel.ImageUpdateMask, image: Texture2D?, width: Int32 = 0, height: Int32 = 0, color: Color = Color (r: 1, g: 1, b: 1, a: 1), inlineAlign: InlineAlignment = .center, region: Rect2 = Rect2 (x: 0, y: 0, width: 0, height: 0), pad: Bool = false, tooltip: String = "", sizeInPercent: Bool = false) {
-        #if true
+        #if false
         
         var copy_mask = mask
         var copy_width: Int = Int (width)
@@ -672,7 +672,7 @@ open class RichTextLabel: Control {
     /// 
     public final func removeParagraph (_ paragraph: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_paragraph: Int = Int (paragraph)
         
@@ -708,7 +708,7 @@ open class RichTextLabel: Control {
     /// Passing `0` to `fontSize` will use the existing default font size.
     /// 
     public final func pushFont (_ font: Font?, fontSize: Int32 = 0) {
-        #if true
+        #if false
         
         var copy_font_size: Int = Int (fontSize)
         var copy_font_handle = font?.handle
@@ -744,7 +744,7 @@ open class RichTextLabel: Control {
     
     /// Adds a [code skip-lint][font_size]` tag to the tag stack. Overrides default font size for its duration.
     public final func pushFontSize (_ fontSize: Int32) {
-        #if true
+        #if false
         
         var copy_font_size: Int = Int (fontSize)
         
@@ -856,7 +856,7 @@ open class RichTextLabel: Control {
     
     /// Adds a [code skip-lint][color]` tag to the tag stack.
     public final func pushColor (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -888,7 +888,7 @@ open class RichTextLabel: Control {
     
     /// Adds a [code skip-lint][outline_size]` tag to the tag stack. Overrides default text outline size for its duration.
     public final func pushOutlineSize (_ outlineSize: Int32) {
-        #if true
+        #if false
         
         var copy_outline_size: Int = Int (outlineSize)
         
@@ -920,7 +920,7 @@ open class RichTextLabel: Control {
     
     /// Adds a [code skip-lint][outline_color]` tag to the tag stack. Adds text outline for its duration.
     public final func pushOutlineColor (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -952,7 +952,7 @@ open class RichTextLabel: Control {
     
     /// Adds a [code skip-lint][p]` tag to the tag stack.
     public final func pushParagraph (alignment: HorizontalAlignment, baseDirection: Control.TextDirection = .auto, language: String = "", stParser: TextServer.StructuredTextParser = .`default`, justificationFlags: TextServer.JustificationFlag = [.kashida, .wordBound, .skipLastLine, .doNotSkipSingleLine], tabStops: PackedFloat32Array = PackedFloat32Array()) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         var copy_base_direction = Int64 (baseDirection.rawValue)
@@ -1007,7 +1007,7 @@ open class RichTextLabel: Control {
     
     /// Adds an [code skip-lint][indent]` tag to the tag stack. Multiplies `level` by current ``tabSize`` to determine new margin length.
     public final func pushIndent (level: Int32) {
-        #if true
+        #if false
         
         var copy_level: Int = Int (level)
         
@@ -1039,7 +1039,7 @@ open class RichTextLabel: Control {
     
     /// Adds [code skip-lint][ol]` or [code skip-lint][ul]` tag to the tag stack. Multiplies `level` by current ``tabSize`` to determine new margin length.
     public final func pushList (level: Int32, type: RichTextLabel.ListType, capitalize: Bool, bullet: String = "•") {
-        #if true
+        #if false
         
         var copy_level: Int = Int (level)
         var copy_type = Int64 (type.rawValue)
@@ -1086,7 +1086,7 @@ open class RichTextLabel: Control {
     
     /// Adds a meta tag to the tag stack. Similar to the BBCode [code skip-lint][url=something]{text}[/url]`, but supports non-``String`` metadata types.
     public final func pushMeta (data: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RichTextLabel.method_push_meta, UnsafeMutableRawPointer (mutating: handle), nil, &data.content)
@@ -1116,7 +1116,7 @@ open class RichTextLabel: Control {
     
     /// Adds a [code skip-lint][hint]` tag to the tag stack. Same as BBCode [code skip-lint][hint=something]{text}[/hint]`.
     public final func pushHint (description: String) {
-        #if true
+        #if false
         
         let gstr_description = GString (description)
         
@@ -1148,7 +1148,7 @@ open class RichTextLabel: Control {
     
     /// Adds language code used for text shaping algorithm and Open-Type font features.
     public final func pushLanguage (_ language: String) {
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -1212,7 +1212,7 @@ open class RichTextLabel: Control {
     
     /// Adds a [code skip-lint][table=columns,inline_align]` tag to the tag stack.
     public final func pushTable (columns: Int32, inlineAlign: InlineAlignment = .top, alignToRow: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_columns: Int = Int (columns)
         var copy_inline_align = Int64 (inlineAlign.rawValue)
@@ -1254,7 +1254,7 @@ open class RichTextLabel: Control {
     
     /// Adds a [code skip-lint][dropcap]` tag to the tag stack. Drop cap (dropped capital) is a decorative element at the beginning of a paragraph that is larger than the rest of the text.
     public final func pushDropcap (string: String, font: Font?, size: Int32, dropcapMargins: Rect2 = Rect2 (x: 0, y: 0, width: 0, height: 0), color: Color = Color (r: 1, g: 1, b: 1, a: 1), outlineSize: Int32 = 0, outlineColor: Color = Color (r: 0, g: 0, b: 0, a: 0)) {
-        #if true
+        #if false
         
         let gstr_string = GString (string)
         var copy_size: Int = Int (size)
@@ -1320,7 +1320,7 @@ open class RichTextLabel: Control {
     /// If `expand` is `false`, the column will not contribute to the total ratio.
     /// 
     public final func setTableColumnExpand (column: Int32, expand: Bool, ratio: Int32 = 1) {
-        #if true
+        #if false
         
         var copy_column: Int = Int (column)
         var copy_expand = expand
@@ -1362,7 +1362,7 @@ open class RichTextLabel: Control {
     
     /// Sets color of a table cell. Separate colors for alternating rows can be specified.
     public final func setCellRowBackgroundColor (oddRowBg: Color, evenRowBg: Color) {
-        #if true
+        #if false
         
         var copy_odd_row_bg = oddRowBg
         var copy_even_row_bg = evenRowBg
@@ -1399,7 +1399,7 @@ open class RichTextLabel: Control {
     
     /// Sets color of a table cell border.
     public final func setCellBorderColor (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -1431,7 +1431,7 @@ open class RichTextLabel: Control {
     
     /// Sets minimum and maximum size overrides for a table cell.
     public final func setCellSizeOverride (minSize: Vector2, maxSize: Vector2) {
-        #if true
+        #if false
         
         var copy_min_size = minSize
         var copy_max_size = maxSize
@@ -1468,7 +1468,7 @@ open class RichTextLabel: Control {
     
     /// Sets inner padding of a table cell.
     public final func setCellPadding (_ padding: Rect2) {
-        #if true
+        #if false
         
         var copy_padding = padding
         
@@ -1516,7 +1516,7 @@ open class RichTextLabel: Control {
     
     /// Adds a [code skip-lint][fgcolor]` tag to the tag stack.
     public final func pushFgcolor (_ fgcolor: Color) {
-        #if true
+        #if false
         
         var copy_fgcolor = fgcolor
         
@@ -1548,7 +1548,7 @@ open class RichTextLabel: Control {
     
     /// Adds a [code skip-lint][bgcolor]` tag to the tag stack.
     public final func pushBgcolor (_ bgcolor: Color) {
-        #if true
+        #if false
         
         var copy_bgcolor = bgcolor
         
@@ -1580,7 +1580,7 @@ open class RichTextLabel: Control {
     
     /// Adds a custom effect tag to the tag stack. The effect does not need to be in ``customEffects``. The environment is directly passed to the effect.
     public final func pushCustomfx (effect: RichTextEffect?, env: GDictionary) {
-        #if true
+        #if false
         
         var copy_effect_handle = effect?.handle
         
@@ -1697,7 +1697,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_structured_text_bidi_override (_ parser: TextServer.StructuredTextParser) {
-        #if true
+        #if false
         
         var copy_parser = Int64 (parser.rawValue)
         
@@ -1747,7 +1747,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_structured_text_bidi_override_options (_ args: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RichTextLabel.method_set_structured_text_bidi_override_options, UnsafeMutableRawPointer (mutating: handle), nil, &args.content)
@@ -1795,7 +1795,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_text_direction (_ direction: Control.TextDirection) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -1845,7 +1845,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_language (_ language: String) {
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -1895,7 +1895,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_autowrap_mode (_ autowrapMode: TextServer.AutowrapMode) {
-        #if true
+        #if false
         
         var copy_autowrap_mode = Int64 (autowrapMode.rawValue)
         
@@ -1945,7 +1945,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_meta_underline (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1995,7 +1995,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_hint_underline (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2045,7 +2045,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_scroll_active (_ active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         
@@ -2095,7 +2095,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_scroll_follow (_ follow: Bool) {
-        #if true
+        #if false
         
         var copy_follow = follow
         
@@ -2166,7 +2166,7 @@ open class RichTextLabel: Control {
     
     /// Scrolls the window's top line to match `line`.
     public final func scrollToLine (_ line: Int32) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -2198,7 +2198,7 @@ open class RichTextLabel: Control {
     
     /// Scrolls the window's top line to match first line of the `paragraph`.
     public final func scrollToParagraph (_ paragraph: Int32) {
-        #if true
+        #if false
         
         var copy_paragraph: Int = Int (paragraph)
         
@@ -2246,7 +2246,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_tab_size (_ spaces: Int32) {
-        #if true
+        #if false
         
         var copy_spaces: Int = Int (spaces)
         
@@ -2296,7 +2296,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_fit_content (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2346,7 +2346,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_selection_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2396,7 +2396,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_context_menu_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2446,7 +2446,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_shortcut_keys_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -2496,7 +2496,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_deselect_on_focus_loss_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2546,7 +2546,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_drag_and_drop_selection_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2685,7 +2685,7 @@ open class RichTextLabel: Control {
     
     /// The assignment version of ``appendText(bbcode:)``. Clears the tag stack and inserts the new content.
     public final func parseBbcode (_ bbcode: String) {
-        #if true
+        #if false
         
         let gstr_bbcode = GString (bbcode)
         
@@ -2720,7 +2720,7 @@ open class RichTextLabel: Control {
     /// > Note: Using this method, you can't close a tag that was opened in a previous ``appendText(bbcode:)`` call. This is done to improve performance, especially when updating large RichTextLabels since rebuilding the whole BBCode every time would be slower. If you absolutely need to close a tag in a future method call, append the ``text`` instead of using ``appendText(bbcode:)``.
     /// 
     public final func appendText (bbcode: String) {
-        #if true
+        #if false
         
         let gstr_bbcode = GString (bbcode)
         
@@ -2788,7 +2788,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_threaded (_ threaded: Bool) {
-        #if true
+        #if false
         
         var copy_threaded = threaded
         
@@ -2838,7 +2838,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_progress_bar_delay (_ delayMs: Int32) {
-        #if true
+        #if false
         
         var copy_delay_ms: Int = Int (delayMs)
         
@@ -2888,7 +2888,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_visible_characters (_ amount: Int32) {
-        #if true
+        #if false
         
         var copy_amount: Int = Int (amount)
         
@@ -2956,7 +2956,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_visible_characters_behavior (_ behavior: TextServer.VisibleCharactersBehavior) {
-        #if true
+        #if false
         
         var copy_behavior = Int64 (behavior.rawValue)
         
@@ -2988,7 +2988,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_visible_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -3042,7 +3042,7 @@ open class RichTextLabel: Control {
     /// 
     public final func getCharacterLine (character: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_character: Int = Int (character)
         
@@ -3079,7 +3079,7 @@ open class RichTextLabel: Control {
     /// 
     public final func getCharacterParagraph (character: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_character: Int = Int (character)
         
@@ -3130,7 +3130,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_use_bbcode (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3307,7 +3307,7 @@ open class RichTextLabel: Control {
     /// 
     public final func getLineOffset (line: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -3344,7 +3344,7 @@ open class RichTextLabel: Control {
     /// 
     public final func getParagraphOffset (paragraph: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_paragraph: Int = Int (paragraph)
         
@@ -3378,7 +3378,7 @@ open class RichTextLabel: Control {
     /// Parses BBCode parameter `expressions` into a dictionary.
     public final func parseExpressionsForValues (expressions: PackedStringArray)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RichTextLabel.method_parse_expressions_for_values, UnsafeMutableRawPointer (mutating: handle), &_result.content, &expressions.content)
@@ -3409,7 +3409,7 @@ open class RichTextLabel: Control {
     
     @inline(__always)
     fileprivate final func set_effects (_ effects: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RichTextLabel.method_set_effects, UnsafeMutableRawPointer (mutating: handle), nil, &effects.content)
@@ -3457,7 +3457,7 @@ open class RichTextLabel: Control {
     
     /// Installs a custom effect. `effect` should be a valid ``RichTextEffect``.
     public final func installEffect (_ effect: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RichTextLabel.method_install_effect, UnsafeMutableRawPointer (mutating: handle), nil, &effect.content)
@@ -3528,7 +3528,7 @@ open class RichTextLabel: Control {
     
     /// Executes a given action as defined in the ``RichTextLabel/MenuItems`` enum.
     public final func menuOption (_ option: Int32) {
-        #if true
+        #if false
         
         var copy_option: Int = Int (option)
         

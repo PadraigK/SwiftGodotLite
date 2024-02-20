@@ -28,7 +28,7 @@ open class ImageTexture3D: Texture3D {
     /// Creates the ``ImageTexture3D`` with specified `width`, `height`, and `depth`. See ``Image.Format`` for `format` options. If `useMipmaps` is `true`, then generate mipmaps for the ``ImageTexture3D``.
     public final func create (format: Image.Format, width: Int32, height: Int32, depth: Int32, useMipmaps: Bool, data: ObjectCollection<Image>)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_format = Int64 (format.rawValue)
         var copy_width: Int = Int (width)
@@ -84,7 +84,7 @@ open class ImageTexture3D: Texture3D {
     
     /// Replaces the texture's existing data with the layers specified in `data`. The size of `data` must match the parameters that were used for ``create(format:width:height:depth:useMipmaps:data:)``. In other words, the texture cannot be resized or have its format changed by calling ``update(data:)``.
     public final func update (data: ObjectCollection<Image>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ImageTexture3D.method_update, UnsafeMutableRawPointer (mutating: handle), nil, &data.array.content)

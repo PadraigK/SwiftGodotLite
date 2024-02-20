@@ -125,7 +125,7 @@ open class PhysicsRayQueryParameters3D: RefCounted {
     /// 
     public static func create (from: Vector3, to: Vector3, collisionMask: UInt32 = 4294967295, exclude: VariantCollection<RID> = VariantCollection<RID> ())-> PhysicsRayQueryParameters3D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -171,7 +171,7 @@ open class PhysicsRayQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_from (_ from: Vector3) {
-        #if true
+        #if false
         
         var copy_from = from
         
@@ -221,7 +221,7 @@ open class PhysicsRayQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_to (_ to: Vector3) {
-        #if true
+        #if false
         
         var copy_to = to
         
@@ -271,7 +271,7 @@ open class PhysicsRayQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_collision_mask (_ collisionMask: UInt32) {
-        #if true
+        #if false
         
         var copy_collision_mask: Int = Int (collisionMask)
         
@@ -321,7 +321,7 @@ open class PhysicsRayQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_exclude (_ exclude: VariantCollection<RID>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsRayQueryParameters3D.method_set_exclude, UnsafeMutableRawPointer (mutating: handle), nil, &exclude.array.content)
@@ -369,7 +369,7 @@ open class PhysicsRayQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_collide_with_bodies (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -419,7 +419,7 @@ open class PhysicsRayQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_collide_with_areas (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -469,7 +469,7 @@ open class PhysicsRayQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_hit_from_inside (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -519,7 +519,7 @@ open class PhysicsRayQueryParameters3D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_hit_back_faces (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

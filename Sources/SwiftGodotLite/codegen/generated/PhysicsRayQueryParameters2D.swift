@@ -113,7 +113,7 @@ open class PhysicsRayQueryParameters2D: RefCounted {
     /// 
     public static func create (from: Vector2, to: Vector2, collisionMask: UInt32 = 4294967295, exclude: VariantCollection<RID> = VariantCollection<RID> ())-> PhysicsRayQueryParameters2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -159,7 +159,7 @@ open class PhysicsRayQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_from (_ from: Vector2) {
-        #if true
+        #if false
         
         var copy_from = from
         
@@ -209,7 +209,7 @@ open class PhysicsRayQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_to (_ to: Vector2) {
-        #if true
+        #if false
         
         var copy_to = to
         
@@ -259,7 +259,7 @@ open class PhysicsRayQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_collision_mask (_ collisionMask: UInt32) {
-        #if true
+        #if false
         
         var copy_collision_mask: Int = Int (collisionMask)
         
@@ -309,7 +309,7 @@ open class PhysicsRayQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_exclude (_ exclude: VariantCollection<RID>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsRayQueryParameters2D.method_set_exclude, UnsafeMutableRawPointer (mutating: handle), nil, &exclude.array.content)
@@ -357,7 +357,7 @@ open class PhysicsRayQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_collide_with_bodies (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -407,7 +407,7 @@ open class PhysicsRayQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_collide_with_areas (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -457,7 +457,7 @@ open class PhysicsRayQueryParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_hit_from_inside (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

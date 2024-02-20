@@ -55,7 +55,7 @@ open class GPUParticlesCollision3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_cull_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         

@@ -84,7 +84,7 @@ open class AudioStreamRandomizer: AudioStream {
     
     /// Insert a stream at the specified index. If the index is less than zero, the insertion occurs at the end of the underlying pool.
     public final func addStream (index: Int32, stream: AudioStream?, weight: Double = 1.0) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_weight = weight
@@ -125,7 +125,7 @@ open class AudioStreamRandomizer: AudioStream {
     
     /// Move a stream from one index to another.
     public final func moveStream (indexFrom: Int32, indexTo: Int32) {
-        #if true
+        #if false
         
         var copy_index_from: Int = Int (indexFrom)
         var copy_index_to: Int = Int (indexTo)
@@ -162,7 +162,7 @@ open class AudioStreamRandomizer: AudioStream {
     
     /// Remove the stream at the specified index.
     public final func removeStream (index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -194,7 +194,7 @@ open class AudioStreamRandomizer: AudioStream {
     
     /// Set the AudioStream at the specified index.
     public final func setStream (index: Int32, stream: AudioStream?) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_stream_handle = stream?.handle
@@ -231,7 +231,7 @@ open class AudioStreamRandomizer: AudioStream {
     /// Returns the stream at the specified index.
     public final func getStream (index: Int32)-> AudioStream? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -264,7 +264,7 @@ open class AudioStreamRandomizer: AudioStream {
     
     /// Set the probability weight of the stream at the specified index. The higher this value, the more likely that the randomizer will choose this stream during random playback modes.
     public final func setStreamProbabilityWeight (index: Int32, weight: Double) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_weight = weight
@@ -302,7 +302,7 @@ open class AudioStreamRandomizer: AudioStream {
     /// Returns the probability weight associated with the stream at the given index.
     public final func getStreamProbabilityWeight (index: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -335,7 +335,7 @@ open class AudioStreamRandomizer: AudioStream {
     
     @inline(__always)
     fileprivate final func set_streams_count (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -385,7 +385,7 @@ open class AudioStreamRandomizer: AudioStream {
     
     @inline(__always)
     fileprivate final func set_random_pitch (_ scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -435,7 +435,7 @@ open class AudioStreamRandomizer: AudioStream {
     
     @inline(__always)
     fileprivate final func set_random_volume_offset_db (_ dbOffset: Double) {
-        #if true
+        #if false
         
         var copy_db_offset = dbOffset
         
@@ -485,7 +485,7 @@ open class AudioStreamRandomizer: AudioStream {
     
     @inline(__always)
     fileprivate final func set_playback_mode (_ mode: AudioStreamRandomizer.PlaybackMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

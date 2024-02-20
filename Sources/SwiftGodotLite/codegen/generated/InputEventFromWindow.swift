@@ -39,7 +39,7 @@ open class InputEventFromWindow: InputEvent {
     
     @inline(__always)
     fileprivate final func set_window_id (_ id: Int) {
-        #if true
+        #if false
         
         var copy_id = id
         

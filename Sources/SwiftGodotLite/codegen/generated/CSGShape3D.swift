@@ -146,7 +146,7 @@ open class CSGShape3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_operation (_ operation: CSGShape3D.Operation) {
-        #if true
+        #if false
         
         var copy_operation = Int64 (operation.rawValue)
         
@@ -196,7 +196,7 @@ open class CSGShape3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_snap (_ snap: Double) {
-        #if true
+        #if false
         
         var copy_snap = snap
         
@@ -246,7 +246,7 @@ open class CSGShape3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_use_collision (_ operation: Bool) {
-        #if true
+        #if false
         
         var copy_operation = operation
         
@@ -296,7 +296,7 @@ open class CSGShape3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_collision_layer (_ layer: UInt32) {
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -346,7 +346,7 @@ open class CSGShape3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_collision_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -396,7 +396,7 @@ open class CSGShape3D: GeometryInstance3D {
     
     /// Based on `value`, enables or disables the specified layer in the ``collisionMask``, given a `layerNumber` between 1 and 32.
     public final func setCollisionMaskValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -434,7 +434,7 @@ open class CSGShape3D: GeometryInstance3D {
     /// Returns whether or not the specified layer of the ``collisionMask`` is enabled, given a `layerNumber` between 1 and 32.
     public final func getCollisionMaskValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -467,7 +467,7 @@ open class CSGShape3D: GeometryInstance3D {
     
     /// Based on `value`, enables or disables the specified layer in the ``collisionLayer``, given a `layerNumber` between 1 and 32.
     public final func setCollisionLayerValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -505,7 +505,7 @@ open class CSGShape3D: GeometryInstance3D {
     /// Returns whether or not the specified layer of the ``collisionLayer`` is enabled, given a `layerNumber` between 1 and 32.
     public final func getCollisionLayerValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -538,7 +538,7 @@ open class CSGShape3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_collision_priority (_ priority: Double) {
-        #if true
+        #if false
         
         var copy_priority = priority
         
@@ -588,7 +588,7 @@ open class CSGShape3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_calculate_tangents (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

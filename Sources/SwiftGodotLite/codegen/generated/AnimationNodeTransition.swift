@@ -80,7 +80,7 @@ open class AnimationNodeTransition: AnimationNodeSync {
     
     @inline(__always)
     fileprivate final func set_input_count (_ inputCount: Int32) {
-        #if true
+        #if false
         
         var copy_input_count: Int = Int (inputCount)
         
@@ -112,7 +112,7 @@ open class AnimationNodeTransition: AnimationNodeSync {
     
     /// Enables or disables auto-advance for the given `input` index. If enabled, state changes to the next input after playing the animation once. If enabled for the last input state, it loops to the first.
     public final func setInputAsAutoAdvance (input: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_input: Int = Int (input)
         var copy_enable = enable
@@ -150,7 +150,7 @@ open class AnimationNodeTransition: AnimationNodeSync {
     /// Returns `true` if auto-advance is enabled for the given `input` index.
     public final func isInputSetAsAutoAdvance (input: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_input: Int = Int (input)
         
@@ -183,7 +183,7 @@ open class AnimationNodeTransition: AnimationNodeSync {
     
     /// If `true`, the destination animation is restarted when the animation transitions.
     public final func setInputReset (input: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_input: Int = Int (input)
         var copy_enable = enable
@@ -221,7 +221,7 @@ open class AnimationNodeTransition: AnimationNodeSync {
     /// Returns whether the animation restarts when the animation transitions from the other animation.
     public final func isInputReset (input: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_input: Int = Int (input)
         
@@ -254,7 +254,7 @@ open class AnimationNodeTransition: AnimationNodeSync {
     
     @inline(__always)
     fileprivate final func set_xfade_time (_ time: Double) {
-        #if true
+        #if false
         
         var copy_time = time
         
@@ -304,7 +304,7 @@ open class AnimationNodeTransition: AnimationNodeSync {
     
     @inline(__always)
     fileprivate final func set_xfade_curve (_ curve: Curve?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         
@@ -353,7 +353,7 @@ open class AnimationNodeTransition: AnimationNodeSync {
     
     @inline(__always)
     fileprivate final func set_allow_transition_to_self (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

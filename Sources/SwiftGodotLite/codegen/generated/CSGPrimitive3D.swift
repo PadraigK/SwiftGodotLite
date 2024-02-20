@@ -42,7 +42,7 @@ open class CSGPrimitive3D: CSGShape3D {
     
     @inline(__always)
     fileprivate final func set_flip_faces (_ flipFaces: Bool) {
-        #if true
+        #if false
         
         var copy_flip_faces = flipFaces
         

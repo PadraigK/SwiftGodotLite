@@ -39,7 +39,7 @@ open class WorldBoundaryShape3D: Shape3D {
     
     @inline(__always)
     fileprivate final func set_plane (_ plane: Plane) {
-        #if true
+        #if false
         
         var copy_plane = plane
         

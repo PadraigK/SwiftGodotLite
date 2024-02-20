@@ -404,7 +404,7 @@ open class TextServer: RefCounted {
     /// Returns `true` if the server supports a feature.
     public final func hasFeature (_ feature: TextServer.Feature)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_feature = Int64 (feature.rawValue)
         
@@ -477,7 +477,7 @@ open class TextServer: RefCounted {
     /// 
     public final func loadSupportData (filename: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_filename = GString (filename)
         
@@ -550,7 +550,7 @@ open class TextServer: RefCounted {
     /// 
     public final func saveSupportData (filename: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_filename = GString (filename)
         
@@ -584,7 +584,7 @@ open class TextServer: RefCounted {
     /// Returns `true` if locale is right-to-left.
     public final func isLocaleRightToLeft (locale: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_locale = GString (locale)
         
@@ -618,7 +618,7 @@ open class TextServer: RefCounted {
     /// Converts readable feature, variation, script or language name to OpenType tag.
     public final func nameToTag (name: String)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -652,7 +652,7 @@ open class TextServer: RefCounted {
     /// Converts OpenType tag to readable feature, variation, script or language name.
     public final func tagToName (tag: Int)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_tag = tag
         
@@ -686,7 +686,7 @@ open class TextServer: RefCounted {
     /// Returns `true` if `rid` is valid resource owned by this text server.
     public final func has (rid: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_has, UnsafeMutableRawPointer (mutating: handle), &_result, &rid.content)
@@ -717,7 +717,7 @@ open class TextServer: RefCounted {
     
     /// Frees an object created by this ``TextServer``.
     public final func freeRid (_ rid: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_free_rid, UnsafeMutableRawPointer (mutating: handle), nil, &rid.content)
@@ -766,7 +766,7 @@ open class TextServer: RefCounted {
     /// Creates a new variation existing font which is reusing the same glyph cache and font data. To free the resulting resource, use the ``freeRid(_:)`` method.
     public final func createFontLinkedVariation (fontRid: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_create_font_linked_variation, UnsafeMutableRawPointer (mutating: handle), &_result.content, &fontRid.content)
@@ -797,7 +797,7 @@ open class TextServer: RefCounted {
     
     /// Sets font source data, e.g contents of the dynamic font source file.
     public final func fontSetData (fontRid: RID, data: PackedByteArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_set_data, UnsafeMutableRawPointer (mutating: handle), nil, &fontRid.content, &data.content)
@@ -830,7 +830,7 @@ open class TextServer: RefCounted {
     
     /// Sets an active face index in the TrueType / OpenType collection.
     public final func fontSetFaceIndex (fontRid: RID, faceIndex: Int) {
-        #if true
+        #if false
         
         var copy_face_index = faceIndex
         
@@ -866,7 +866,7 @@ open class TextServer: RefCounted {
     /// Returns an active face index in the TrueType / OpenType collection.
     public final func fontGetFaceIndex (fontRid: RID)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_face_index, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -898,7 +898,7 @@ open class TextServer: RefCounted {
     /// Returns number of faces in the TrueType / OpenType collection.
     public final func fontGetFaceCount (fontRid: RID)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_face_count, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -932,7 +932,7 @@ open class TextServer: RefCounted {
     /// > Note: This value is used for font matching only and will not affect font rendering. Use ``fontSetFaceIndex(fontRid:faceIndex:)``, ``fontSetVariationCoordinates(fontRid:variationCoordinates:)``, ``fontSetEmbolden(fontRid:strength:)``, or ``fontSetTransform(fontRid:transform:)`` instead.
     /// 
     public final func fontSetStyle (fontRid: RID, style: TextServer.FontStyle) {
-        #if true
+        #if false
         
         var copy_style = style
         
@@ -968,7 +968,7 @@ open class TextServer: RefCounted {
     /// Returns font style flags, see ``TextServer/FontStyle``.
     public final func fontGetStyle (fontRid: RID)-> TextServer.FontStyle {
         var _result: TextServer.FontStyle = TextServer.FontStyle ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_style, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -999,7 +999,7 @@ open class TextServer: RefCounted {
     
     /// Sets the font family name.
     public final func fontSetName (fontRid: RID, name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -1035,7 +1035,7 @@ open class TextServer: RefCounted {
     /// Returns font family name.
     public final func fontGetName (fontRid: RID)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_name, UnsafeMutableRawPointer (mutating: handle), &_result.content, &fontRid.content)
@@ -1067,7 +1067,7 @@ open class TextServer: RefCounted {
     /// Returns ``GDictionary`` with OpenType font name strings (localized font names, version, description, license information, sample text, etc.).
     public final func fontGetOtNameStrings (fontRid: RID)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_ot_name_strings, UnsafeMutableRawPointer (mutating: handle), &_result.content, &fontRid.content)
@@ -1098,7 +1098,7 @@ open class TextServer: RefCounted {
     
     /// Sets the font style name.
     public final func fontSetStyleName (fontRid: RID, name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -1134,7 +1134,7 @@ open class TextServer: RefCounted {
     /// Returns font style name.
     public final func fontGetStyleName (fontRid: RID)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_style_name, UnsafeMutableRawPointer (mutating: handle), &_result.content, &fontRid.content)
@@ -1168,7 +1168,7 @@ open class TextServer: RefCounted {
     /// > Note: This value is used for font matching only and will not affect font rendering. Use ``fontSetFaceIndex(fontRid:faceIndex:)``, ``fontSetVariationCoordinates(fontRid:variationCoordinates:)``, or ``fontSetEmbolden(fontRid:strength:)`` instead.
     /// 
     public final func fontSetWeight (fontRid: RID, weight: Int) {
-        #if true
+        #if false
         
         var copy_weight = weight
         
@@ -1204,7 +1204,7 @@ open class TextServer: RefCounted {
     /// Returns weight (boldness) of the font. A value in the `100...999` range, normal font weight is `400`, bold font weight is `700`.
     public final func fontGetWeight (fontRid: RID)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_weight, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -1238,7 +1238,7 @@ open class TextServer: RefCounted {
     /// > Note: This value is used for font matching only and will not affect font rendering. Use ``fontSetFaceIndex(fontRid:faceIndex:)``, ``fontSetVariationCoordinates(fontRid:variationCoordinates:)``, or ``fontSetTransform(fontRid:transform:)`` instead.
     /// 
     public final func fontSetStretch (fontRid: RID, weight: Int) {
-        #if true
+        #if false
         
         var copy_weight = weight
         
@@ -1274,7 +1274,7 @@ open class TextServer: RefCounted {
     /// Returns font stretch amount, compared to a normal width. A percentage value between `50%` and `200%`.
     public final func fontGetStretch (fontRid: RID)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_stretch, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -1305,7 +1305,7 @@ open class TextServer: RefCounted {
     
     /// Sets font anti-aliasing mode.
     public final func fontSetAntialiasing (fontRid: RID, antialiasing: TextServer.FontAntialiasing) {
-        #if true
+        #if false
         
         var copy_antialiasing = Int64 (antialiasing.rawValue)
         
@@ -1341,7 +1341,7 @@ open class TextServer: RefCounted {
     /// Returns font anti-aliasing mode.
     public final func fontGetAntialiasing (fontRid: RID)-> TextServer.FontAntialiasing {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_antialiasing, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -1372,7 +1372,7 @@ open class TextServer: RefCounted {
     
     /// If set to `true` font texture mipmap generation is enabled.
     public final func fontSetGenerateMipmaps (fontRid: RID, generateMipmaps: Bool) {
-        #if true
+        #if false
         
         var copy_generate_mipmaps = generateMipmaps
         
@@ -1408,7 +1408,7 @@ open class TextServer: RefCounted {
     /// Returns `true` if font texture mipmap generation is enabled.
     public final func fontGetGenerateMipmaps (fontRid: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_generate_mipmaps, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -1442,7 +1442,7 @@ open class TextServer: RefCounted {
     /// > Note: MSDF font rendering does not render glyphs with overlapping shapes correctly. Overlapping shapes are not valid per the OpenType standard, but are still commonly found in many font files, especially those converted by Google Fonts. To avoid issues with overlapping glyphs, consider downloading the font file directly from the type foundry instead of relying on Google Fonts.
     /// 
     public final func fontSetMultichannelSignedDistanceField (fontRid: RID, msdf: Bool) {
-        #if true
+        #if false
         
         var copy_msdf = msdf
         
@@ -1478,7 +1478,7 @@ open class TextServer: RefCounted {
     /// Returns `true` if glyphs of all sizes are rendered using single multichannel signed distance field generated from the dynamic font vector data.
     public final func fontIsMultichannelSignedDistanceField (fontRid: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_is_multichannel_signed_distance_field, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -1509,7 +1509,7 @@ open class TextServer: RefCounted {
     
     /// Sets the width of the range around the shape between the minimum and maximum representable signed distance.
     public final func fontSetMsdfPixelRange (fontRid: RID, msdfPixelRange: Int) {
-        #if true
+        #if false
         
         var copy_msdf_pixel_range = msdfPixelRange
         
@@ -1545,7 +1545,7 @@ open class TextServer: RefCounted {
     /// Returns the width of the range around the shape between the minimum and maximum representable signed distance.
     public final func fontGetMsdfPixelRange (fontRid: RID)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_msdf_pixel_range, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -1576,7 +1576,7 @@ open class TextServer: RefCounted {
     
     /// Sets source font size used to generate MSDF textures.
     public final func fontSetMsdfSize (fontRid: RID, msdfSize: Int) {
-        #if true
+        #if false
         
         var copy_msdf_size = msdfSize
         
@@ -1612,7 +1612,7 @@ open class TextServer: RefCounted {
     /// Returns source font size used to generate MSDF textures.
     public final func fontGetMsdfSize (fontRid: RID)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_msdf_size, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -1643,7 +1643,7 @@ open class TextServer: RefCounted {
     
     /// Sets bitmap font fixed size. If set to value greater than zero, same cache entry will be used for all font sizes.
     public final func fontSetFixedSize (fontRid: RID, fixedSize: Int) {
-        #if true
+        #if false
         
         var copy_fixed_size = fixedSize
         
@@ -1679,7 +1679,7 @@ open class TextServer: RefCounted {
     /// Returns bitmap font fixed size.
     public final func fontGetFixedSize (fontRid: RID)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_fixed_size, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -1710,7 +1710,7 @@ open class TextServer: RefCounted {
     
     /// Sets bitmap font scaling mode. This property is used only if `fixed_size` is greater than zero.
     public final func fontSetFixedSizeScaleMode (fontRid: RID, fixedSizeScaleMode: TextServer.FixedSizeScaleMode) {
-        #if true
+        #if false
         
         var copy_fixed_size_scale_mode = Int64 (fixedSizeScaleMode.rawValue)
         
@@ -1746,7 +1746,7 @@ open class TextServer: RefCounted {
     /// Returns bitmap font scaling mode.
     public final func fontGetFixedSizeScaleMode (fontRid: RID)-> TextServer.FixedSizeScaleMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_fixed_size_scale_mode, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -1777,7 +1777,7 @@ open class TextServer: RefCounted {
     
     /// If set to `true`, system fonts can be automatically used as fallbacks.
     public final func fontSetAllowSystemFallback (fontRid: RID, allowSystemFallback: Bool) {
-        #if true
+        #if false
         
         var copy_allow_system_fallback = allowSystemFallback
         
@@ -1813,7 +1813,7 @@ open class TextServer: RefCounted {
     /// Returns `true` if system fonts can be automatically used as fallbacks.
     public final func fontIsAllowSystemFallback (fontRid: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_is_allow_system_fallback, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -1844,7 +1844,7 @@ open class TextServer: RefCounted {
     
     /// If set to `true` auto-hinting is preferred over font built-in hinting.
     public final func fontSetForceAutohinter (fontRid: RID, forceAutohinter: Bool) {
-        #if true
+        #if false
         
         var copy_force_autohinter = forceAutohinter
         
@@ -1880,7 +1880,7 @@ open class TextServer: RefCounted {
     /// Returns `true` if auto-hinting is supported and preferred over font built-in hinting. Used by dynamic fonts only.
     public final func fontIsForceAutohinter (fontRid: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_is_force_autohinter, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -1911,7 +1911,7 @@ open class TextServer: RefCounted {
     
     /// Sets font hinting mode. Used by dynamic fonts only.
     public final func fontSetHinting (fontRid: RID, hinting: TextServer.Hinting) {
-        #if true
+        #if false
         
         var copy_hinting = Int64 (hinting.rawValue)
         
@@ -1947,7 +1947,7 @@ open class TextServer: RefCounted {
     /// Returns the font hinting mode. Used by dynamic fonts only.
     public final func fontGetHinting (fontRid: RID)-> TextServer.Hinting {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_hinting, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -1978,7 +1978,7 @@ open class TextServer: RefCounted {
     
     /// Sets font subpixel glyph positioning mode.
     public final func fontSetSubpixelPositioning (fontRid: RID, subpixelPositioning: TextServer.SubpixelPositioning) {
-        #if true
+        #if false
         
         var copy_subpixel_positioning = Int64 (subpixelPositioning.rawValue)
         
@@ -2014,7 +2014,7 @@ open class TextServer: RefCounted {
     /// Returns font subpixel glyph positioning mode.
     public final func fontGetSubpixelPositioning (fontRid: RID)-> TextServer.SubpixelPositioning {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_subpixel_positioning, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -2045,7 +2045,7 @@ open class TextServer: RefCounted {
     
     /// Sets font embolden strength. If `strength` is not equal to zero, emboldens the font outlines. Negative values reduce the outline thickness.
     public final func fontSetEmbolden (fontRid: RID, strength: Double) {
-        #if true
+        #if false
         
         var copy_strength = strength
         
@@ -2081,7 +2081,7 @@ open class TextServer: RefCounted {
     /// Returns font embolden strength.
     public final func fontGetEmbolden (fontRid: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_embolden, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -2112,7 +2112,7 @@ open class TextServer: RefCounted {
     
     /// Sets the spacing for `spacing` (see ``TextServer.SpacingType``) to `value` in pixels (not relative to the font size).
     public final func fontSetSpacing (fontRid: RID, spacing: TextServer.SpacingType, value: Int) {
-        #if true
+        #if false
         
         var copy_spacing = Int64 (spacing.rawValue)
         var copy_value = value
@@ -2153,7 +2153,7 @@ open class TextServer: RefCounted {
     /// Returns the spacing for `spacing` (see ``TextServer.SpacingType``) in pixels (not relative to the font size).
     public final func fontGetSpacing (fontRid: RID, spacing: TextServer.SpacingType)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_spacing = Int64 (spacing.rawValue)
         
@@ -2192,7 +2192,7 @@ open class TextServer: RefCounted {
     /// For example, to simulate italic typeface by slanting, apply the following transform `Transform2D(1.0, slant, 0.0, 1.0, 0.0, 0.0)`.
     /// 
     public final func fontSetTransform (fontRid: RID, transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -2228,7 +2228,7 @@ open class TextServer: RefCounted {
     /// Returns 2D transform applied to the font outlines.
     public final func fontGetTransform (fontRid: RID)-> Transform2D {
         var _result: Transform2D = Transform2D ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_transform, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -2259,7 +2259,7 @@ open class TextServer: RefCounted {
     
     /// Sets variation coordinates for the specified font cache entry. See ``fontSupportedVariationList(fontRid:)`` for more info.
     public final func fontSetVariationCoordinates (fontRid: RID, variationCoordinates: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_set_variation_coordinates, UnsafeMutableRawPointer (mutating: handle), nil, &fontRid.content, &variationCoordinates.content)
@@ -2293,7 +2293,7 @@ open class TextServer: RefCounted {
     /// Returns variation coordinates for the specified font cache entry. See ``fontSupportedVariationList(fontRid:)`` for more info.
     public final func fontGetVariationCoordinates (fontRid: RID)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_variation_coordinates, UnsafeMutableRawPointer (mutating: handle), &_result.content, &fontRid.content)
@@ -2324,7 +2324,7 @@ open class TextServer: RefCounted {
     
     /// Sets font oversampling factor, if set to `0.0` global oversampling factor is used instead. Used by dynamic fonts only.
     public final func fontSetOversampling (fontRid: RID, oversampling: Double) {
-        #if true
+        #if false
         
         var copy_oversampling = oversampling
         
@@ -2360,7 +2360,7 @@ open class TextServer: RefCounted {
     /// Returns font oversampling factor, if set to `0.0` global oversampling factor is used instead. Used by dynamic fonts only.
     public final func fontGetOversampling (fontRid: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_oversampling, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -2392,7 +2392,7 @@ open class TextServer: RefCounted {
     /// Returns list of the font sizes in the cache. Each size is ``Vector2i`` with font size and outline size.
     public final func fontGetSizeCacheList (fontRid: RID)-> VariantCollection<Vector2i> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_size_cache_list, UnsafeMutableRawPointer (mutating: handle), &_result, &fontRid.content)
@@ -2423,7 +2423,7 @@ open class TextServer: RefCounted {
     
     /// Removes all font sizes from the cache entry.
     public final func fontClearSizeCache (fontRid: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_clear_size_cache, UnsafeMutableRawPointer (mutating: handle), nil, &fontRid.content)
@@ -2453,7 +2453,7 @@ open class TextServer: RefCounted {
     
     /// Removes specified font size from the cache entry.
     public final func fontRemoveSizeCache (fontRid: RID, size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -2488,7 +2488,7 @@ open class TextServer: RefCounted {
     
     /// Sets the font ascent (number of pixels above the baseline).
     public final func fontSetAscent (fontRid: RID, size: Int, ascent: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_ascent = ascent
@@ -2529,7 +2529,7 @@ open class TextServer: RefCounted {
     /// Returns the font ascent (number of pixels above the baseline).
     public final func fontGetAscent (fontRid: RID, size: Int)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -2565,7 +2565,7 @@ open class TextServer: RefCounted {
     
     /// Sets the font descent (number of pixels below the baseline).
     public final func fontSetDescent (fontRid: RID, size: Int, descent: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_descent = descent
@@ -2606,7 +2606,7 @@ open class TextServer: RefCounted {
     /// Returns the font descent (number of pixels below the baseline).
     public final func fontGetDescent (fontRid: RID, size: Int)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -2642,7 +2642,7 @@ open class TextServer: RefCounted {
     
     /// Sets pixel offset of the underline below the baseline.
     public final func fontSetUnderlinePosition (fontRid: RID, size: Int, underlinePosition: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_underline_position = underlinePosition
@@ -2683,7 +2683,7 @@ open class TextServer: RefCounted {
     /// Returns pixel offset of the underline below the baseline.
     public final func fontGetUnderlinePosition (fontRid: RID, size: Int)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -2719,7 +2719,7 @@ open class TextServer: RefCounted {
     
     /// Sets thickness of the underline in pixels.
     public final func fontSetUnderlineThickness (fontRid: RID, size: Int, underlineThickness: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_underline_thickness = underlineThickness
@@ -2760,7 +2760,7 @@ open class TextServer: RefCounted {
     /// Returns thickness of the underline in pixels.
     public final func fontGetUnderlineThickness (fontRid: RID, size: Int)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -2796,7 +2796,7 @@ open class TextServer: RefCounted {
     
     /// Sets scaling factor of the color bitmap font.
     public final func fontSetScale (fontRid: RID, size: Int, scale: Double) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_scale = scale
@@ -2837,7 +2837,7 @@ open class TextServer: RefCounted {
     /// Returns scaling factor of the color bitmap font.
     public final func fontGetScale (fontRid: RID, size: Int)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -2874,7 +2874,7 @@ open class TextServer: RefCounted {
     /// Returns number of textures used by font cache entry.
     public final func fontGetTextureCount (fontRid: RID, size: Vector2i)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -2913,7 +2913,7 @@ open class TextServer: RefCounted {
     /// > Note: This function will not remove glyphs associated with the texture, use ``fontRemoveGlyph(fontRid:size:glyph:)`` to remove them manually.
     /// 
     public final func fontClearTextures (fontRid: RID, size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -2951,7 +2951,7 @@ open class TextServer: RefCounted {
     /// > Note: This function will not remove glyphs associated with the texture, remove them manually, using ``fontRemoveGlyph(fontRid:size:glyph:)``.
     /// 
     public final func fontRemoveTexture (fontRid: RID, size: Vector2i, textureIndex: Int) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_texture_index = textureIndex
@@ -2991,7 +2991,7 @@ open class TextServer: RefCounted {
     
     /// Sets font cache texture image data.
     public final func fontSetTextureImage (fontRid: RID, size: Vector2i, textureIndex: Int, image: Image?) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_texture_index = textureIndex
@@ -3036,7 +3036,7 @@ open class TextServer: RefCounted {
     /// Returns font cache texture image data.
     public final func fontGetTextureImage (fontRid: RID, size: Vector2i, textureIndex: Int)-> Image? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_size = size
         var copy_texture_index = textureIndex
@@ -3077,7 +3077,7 @@ open class TextServer: RefCounted {
     
     /// Sets array containing glyph packing data.
     public final func fontSetTextureOffsets (fontRid: RID, size: Vector2i, textureIndex: Int, offset: PackedInt32Array) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_texture_index = textureIndex
@@ -3121,7 +3121,7 @@ open class TextServer: RefCounted {
     /// Returns array containing glyph packing data.
     public final func fontGetTextureOffsets (fontRid: RID, size: Vector2i, textureIndex: Int)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_size = size
         var copy_texture_index = textureIndex
@@ -3163,7 +3163,7 @@ open class TextServer: RefCounted {
     /// Returns list of rendered glyphs in the cache entry.
     public final func fontGetGlyphList (fontRid: RID, size: Vector2i)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -3202,7 +3202,7 @@ open class TextServer: RefCounted {
     /// > Note: This function will not remove textures associated with the glyphs, use ``fontRemoveTexture(fontRid:size:textureIndex:)`` to remove them manually.
     /// 
     public final func fontClearGlyphs (fontRid: RID, size: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -3240,7 +3240,7 @@ open class TextServer: RefCounted {
     /// > Note: This function will not remove textures associated with the glyphs, use ``fontRemoveTexture(fontRid:size:textureIndex:)`` to remove them manually.
     /// 
     public final func fontRemoveGlyph (fontRid: RID, size: Vector2i, glyph: Int) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph = glyph
@@ -3284,7 +3284,7 @@ open class TextServer: RefCounted {
     /// 
     public final func fontGetGlyphAdvance (fontRid: RID, size: Int, glyph: Int)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph = glyph
@@ -3328,7 +3328,7 @@ open class TextServer: RefCounted {
     /// > Note: Advance for glyphs outlines is the same as the base glyph advance and is not saved.
     /// 
     public final func fontSetGlyphAdvance (fontRid: RID, size: Int, glyph: Int, advance: Vector2) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph = glyph
@@ -3374,7 +3374,7 @@ open class TextServer: RefCounted {
     /// Returns glyph offset from the baseline.
     public final func fontGetGlyphOffset (fontRid: RID, size: Vector2i, glyph: Int)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph = glyph
@@ -3415,7 +3415,7 @@ open class TextServer: RefCounted {
     
     /// Sets glyph offset from the baseline.
     public final func fontSetGlyphOffset (fontRid: RID, size: Vector2i, glyph: Int, offset: Vector2) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph = glyph
@@ -3461,7 +3461,7 @@ open class TextServer: RefCounted {
     /// Returns size of the glyph.
     public final func fontGetGlyphSize (fontRid: RID, size: Vector2i, glyph: Int)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph = glyph
@@ -3502,7 +3502,7 @@ open class TextServer: RefCounted {
     
     /// Sets size of the glyph.
     public final func fontSetGlyphSize (fontRid: RID, size: Vector2i, glyph: Int, glSize: Vector2) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph = glyph
@@ -3548,7 +3548,7 @@ open class TextServer: RefCounted {
     /// Returns rectangle in the cache texture containing the glyph.
     public final func fontGetGlyphUvRect (fontRid: RID, size: Vector2i, glyph: Int)-> Rect2 {
         var _result: Rect2 = Rect2 ()
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph = glyph
@@ -3589,7 +3589,7 @@ open class TextServer: RefCounted {
     
     /// Sets rectangle in the cache texture containing the glyph.
     public final func fontSetGlyphUvRect (fontRid: RID, size: Vector2i, glyph: Int, uvRect: Rect2) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph = glyph
@@ -3635,7 +3635,7 @@ open class TextServer: RefCounted {
     /// Returns index of the cache texture containing the glyph.
     public final func fontGetGlyphTextureIdx (fontRid: RID, size: Vector2i, glyph: Int)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph = glyph
@@ -3676,7 +3676,7 @@ open class TextServer: RefCounted {
     
     /// Sets index of the cache texture containing the glyph.
     public final func fontSetGlyphTextureIdx (fontRid: RID, size: Vector2i, glyph: Int, textureIdx: Int) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph = glyph
@@ -3725,7 +3725,7 @@ open class TextServer: RefCounted {
     /// 
     public final func fontGetGlyphTextureRid (fontRid: RID, size: Vector2i, glyph: Int)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph = glyph
@@ -3770,7 +3770,7 @@ open class TextServer: RefCounted {
     /// 
     public final func fontGetGlyphTextureSize (fontRid: RID, size: Vector2i, glyph: Int)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph = glyph
@@ -3819,7 +3819,7 @@ open class TextServer: RefCounted {
     /// 
     public final func fontGetGlyphContours (font: RID, size: Int, index: Int)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_size = size
         var copy_index = index
@@ -3861,7 +3861,7 @@ open class TextServer: RefCounted {
     /// Returns list of the kerning overrides.
     public final func fontGetKerningList (fontRid: RID, size: Int)-> VariantCollection<Vector2i> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -3897,7 +3897,7 @@ open class TextServer: RefCounted {
     
     /// Removes all kerning overrides.
     public final func fontClearKerningMap (fontRid: RID, size: Int) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -3932,7 +3932,7 @@ open class TextServer: RefCounted {
     
     /// Removes kerning override for the pair of glyphs.
     public final func fontRemoveKerning (fontRid: RID, size: Int, glyphPair: Vector2i) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph_pair = glyphPair
@@ -3972,7 +3972,7 @@ open class TextServer: RefCounted {
     
     /// Sets kerning for the pair of glyphs.
     public final func fontSetKerning (fontRid: RID, size: Int, glyphPair: Vector2i, kerning: Vector2) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph_pair = glyphPair
@@ -4018,7 +4018,7 @@ open class TextServer: RefCounted {
     /// Returns kerning for the pair of glyphs.
     public final func fontGetKerning (fontRid: RID, size: Int, glyphPair: Vector2i)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph_pair = glyphPair
@@ -4060,7 +4060,7 @@ open class TextServer: RefCounted {
     /// Returns the glyph index of a `char`, optionally modified by the `variationSelector`. See ``fontGetCharFromGlyphIndex(fontRid:size:glyphIndex:)``.
     public final func fontGetGlyphIndex (fontRid: RID, size: Int, char: Int, variationSelector: Int)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_size = size
         var copy_char = char
@@ -4107,7 +4107,7 @@ open class TextServer: RefCounted {
     /// Returns character code associated with `glyphIndex`, or `0` if `glyphIndex` is invalid. See ``fontGetGlyphIndex(fontRid:size:char:variationSelector:)``.
     public final func fontGetCharFromGlyphIndex (fontRid: RID, size: Int, glyphIndex: Int)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_size = size
         var copy_glyph_index = glyphIndex
@@ -4149,7 +4149,7 @@ open class TextServer: RefCounted {
     /// Returns `true` if a Unicode `char` is available in the font.
     public final func fontHasChar (fontRid: RID, char: Int)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_char = char
         
@@ -4186,7 +4186,7 @@ open class TextServer: RefCounted {
     /// Returns a string containing all the characters available in the font.
     public final func fontGetSupportedChars (fontRid: RID)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_supported_chars, UnsafeMutableRawPointer (mutating: handle), &_result.content, &fontRid.content)
@@ -4217,7 +4217,7 @@ open class TextServer: RefCounted {
     
     /// Renders the range of characters to the font cache texture.
     public final func fontRenderRange (fontRid: RID, size: Vector2i, start: Int, end: Int) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_start = start
@@ -4262,7 +4262,7 @@ open class TextServer: RefCounted {
     
     /// Renders specified glyph to the font cache texture.
     public final func fontRenderGlyph (fontRid: RID, size: Vector2i, index: Int) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_index = index
@@ -4307,7 +4307,7 @@ open class TextServer: RefCounted {
     /// > Note: If there are pending glyphs to render, calling this function might trigger the texture cache update.
     /// 
     public final func fontDrawGlyph (fontRid: RID, canvas: RID, size: Int, pos: Vector2, index: Int, color: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_pos = pos
@@ -4365,7 +4365,7 @@ open class TextServer: RefCounted {
     /// > Note: If there are pending glyphs to render, calling this function might trigger the texture cache update.
     /// 
     public final func fontDrawGlyphOutline (fontRid: RID, canvas: RID, size: Int, outlineSize: Int, pos: Vector2, index: Int, color: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_outline_size = outlineSize
@@ -4424,7 +4424,7 @@ open class TextServer: RefCounted {
     /// Returns `true`, if font supports given language ([url=https://en.wikipedia.org/wiki/ISO_639-1]ISO 639[/url] code).
     public final func fontIsLanguageSupported (fontRid: RID, language: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -4460,7 +4460,7 @@ open class TextServer: RefCounted {
     
     /// Adds override for ``fontIsLanguageSupported(fontRid:language:)``.
     public final func fontSetLanguageSupportOverride (fontRid: RID, language: String, supported: Bool) {
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         var copy_supported = supported
@@ -4501,7 +4501,7 @@ open class TextServer: RefCounted {
     /// Returns `true` if support override is enabled for the `language`.
     public final func fontGetLanguageSupportOverride (fontRid: RID, language: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -4537,7 +4537,7 @@ open class TextServer: RefCounted {
     
     /// Remove language support override.
     public final func fontRemoveLanguageSupportOverride (fontRid: RID, language: String) {
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -4573,7 +4573,7 @@ open class TextServer: RefCounted {
     /// Returns list of language support overrides.
     public final func fontGetLanguageSupportOverrides (fontRid: RID)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_language_support_overrides, UnsafeMutableRawPointer (mutating: handle), &_result.content, &fontRid.content)
@@ -4605,7 +4605,7 @@ open class TextServer: RefCounted {
     /// Returns `true`, if font supports given script (ISO 15924 code).
     public final func fontIsScriptSupported (fontRid: RID, script: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_script = GString (script)
         
@@ -4641,7 +4641,7 @@ open class TextServer: RefCounted {
     
     /// Adds override for ``fontIsScriptSupported(fontRid:script:)``.
     public final func fontSetScriptSupportOverride (fontRid: RID, script: String, supported: Bool) {
-        #if true
+        #if false
         
         let gstr_script = GString (script)
         var copy_supported = supported
@@ -4682,7 +4682,7 @@ open class TextServer: RefCounted {
     /// Returns `true` if support override is enabled for the `script`.
     public final func fontGetScriptSupportOverride (fontRid: RID, script: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_script = GString (script)
         
@@ -4718,7 +4718,7 @@ open class TextServer: RefCounted {
     
     /// Removes script support override.
     public final func fontRemoveScriptSupportOverride (fontRid: RID, script: String) {
-        #if true
+        #if false
         
         let gstr_script = GString (script)
         
@@ -4754,7 +4754,7 @@ open class TextServer: RefCounted {
     /// Returns list of script support overrides.
     public final func fontGetScriptSupportOverrides (fontRid: RID)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_script_support_overrides, UnsafeMutableRawPointer (mutating: handle), &_result.content, &fontRid.content)
@@ -4785,7 +4785,7 @@ open class TextServer: RefCounted {
     
     /// Sets font OpenType feature set override.
     public final func fontSetOpentypeFeatureOverrides (fontRid: RID, overrides: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_set_opentype_feature_overrides, UnsafeMutableRawPointer (mutating: handle), nil, &fontRid.content, &overrides.content)
@@ -4819,7 +4819,7 @@ open class TextServer: RefCounted {
     /// Returns font OpenType feature set override.
     public final func fontGetOpentypeFeatureOverrides (fontRid: RID)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_get_opentype_feature_overrides, UnsafeMutableRawPointer (mutating: handle), &_result.content, &fontRid.content)
@@ -4851,7 +4851,7 @@ open class TextServer: RefCounted {
     /// Returns the dictionary of the supported OpenType features.
     public final func fontSupportedFeatureList (fontRid: RID)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_supported_feature_list, UnsafeMutableRawPointer (mutating: handle), &_result.content, &fontRid.content)
@@ -4883,7 +4883,7 @@ open class TextServer: RefCounted {
     /// Returns the dictionary of the supported OpenType variation coordinates.
     public final func fontSupportedVariationList (fontRid: RID)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_font_supported_variation_list, UnsafeMutableRawPointer (mutating: handle), &_result.content, &fontRid.content)
@@ -4935,7 +4935,7 @@ open class TextServer: RefCounted {
     /// > Note: This value can be automatically changed by display server.
     /// 
     public final func fontSetGlobalOversampling (_ oversampling: Double) {
-        #if true
+        #if false
         
         var copy_oversampling = oversampling
         
@@ -4968,7 +4968,7 @@ open class TextServer: RefCounted {
     /// Returns size of the replacement character (box with character hexadecimal code that is drawn in place of invalid characters).
     public final func getHexCodeBoxSize (_ size: Int, index: Int)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_size = size
         var copy_index = index
@@ -5006,7 +5006,7 @@ open class TextServer: RefCounted {
     
     /// Draws box displaying character hexadecimal code. Used for replacing missing characters.
     public final func drawHexCodeBox (canvas: RID, size: Int, pos: Vector2, index: Int, color: Color) {
-        #if true
+        #if false
         
         var copy_size = size
         var copy_pos = pos
@@ -5062,7 +5062,7 @@ open class TextServer: RefCounted {
     /// 
     public final func createShapedText (direction: TextServer.Direction = .auto, orientation: TextServer.Orientation = .horizontal)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         var copy_orientation = Int64 (orientation.rawValue)
@@ -5100,7 +5100,7 @@ open class TextServer: RefCounted {
     
     /// Clears text buffer (removes text and inline objects).
     public final func shapedTextClear (rid: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_clear, UnsafeMutableRawPointer (mutating: handle), nil, &rid.content)
@@ -5133,7 +5133,7 @@ open class TextServer: RefCounted {
     /// > Note: Direction is ignored if server does not support .bidiLayout feature (supported by ``TextServerAdvanced``).
     /// 
     public final func shapedTextSetDirection (shaped: RID, direction: TextServer.Direction = .auto) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -5169,7 +5169,7 @@ open class TextServer: RefCounted {
     /// Returns direction of the text.
     public final func shapedTextGetDirection (shaped: RID)-> TextServer.Direction {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_direction, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -5201,7 +5201,7 @@ open class TextServer: RefCounted {
     /// Returns direction of the text, inferred by the BiDi algorithm.
     public final func shapedTextGetInferredDirection (shaped: RID)-> TextServer.Direction {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_inferred_direction, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -5235,7 +5235,7 @@ open class TextServer: RefCounted {
     /// Override ranges should cover full source text without overlaps. BiDi algorithm will be used on each range separately.
     /// 
     public final func shapedTextSetBidiOverride (shaped: RID, override: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_set_bidi_override, UnsafeMutableRawPointer (mutating: handle), nil, &shaped.content, &override.content)
@@ -5268,7 +5268,7 @@ open class TextServer: RefCounted {
     
     /// Sets custom punctuation character list, used for word breaking. If set to empty string, server defaults are used.
     public final func shapedTextSetCustomPunctuation (shaped: RID, punct: String) {
-        #if true
+        #if false
         
         let gstr_punct = GString (punct)
         
@@ -5304,7 +5304,7 @@ open class TextServer: RefCounted {
     /// Returns custom punctuation character list, used for word breaking. If set to empty string, server defaults are used.
     public final func shapedTextGetCustomPunctuation (shaped: RID)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_custom_punctuation, UnsafeMutableRawPointer (mutating: handle), &_result.content, &shaped.content)
@@ -5338,7 +5338,7 @@ open class TextServer: RefCounted {
     /// > Note: Orientation is ignored if server does not support .verticalLayout feature (supported by ``TextServerAdvanced``).
     /// 
     public final func shapedTextSetOrientation (shaped: RID, orientation: TextServer.Orientation = .horizontal) {
-        #if true
+        #if false
         
         var copy_orientation = Int64 (orientation.rawValue)
         
@@ -5374,7 +5374,7 @@ open class TextServer: RefCounted {
     /// Returns text orientation.
     public final func shapedTextGetOrientation (shaped: RID)-> TextServer.Orientation {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_orientation, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -5405,7 +5405,7 @@ open class TextServer: RefCounted {
     
     /// If set to `true` text buffer will display invalid characters as hexadecimal codes, otherwise nothing is displayed.
     public final func shapedTextSetPreserveInvalid (shaped: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -5444,7 +5444,7 @@ open class TextServer: RefCounted {
     /// 
     public final func shapedTextGetPreserveInvalid (shaped: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_preserve_invalid, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -5475,7 +5475,7 @@ open class TextServer: RefCounted {
     
     /// If set to `true` text buffer will display control characters.
     public final func shapedTextSetPreserveControl (shaped: RID, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -5511,7 +5511,7 @@ open class TextServer: RefCounted {
     /// Returns `true` if text buffer is configured to display control characters.
     public final func shapedTextGetPreserveControl (shaped: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_preserve_control, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -5542,7 +5542,7 @@ open class TextServer: RefCounted {
     
     /// Sets extra spacing added between glyphs or lines in pixels.
     public final func shapedTextSetSpacing (shaped: RID, spacing: TextServer.SpacingType, value: Int) {
-        #if true
+        #if false
         
         var copy_spacing = Int64 (spacing.rawValue)
         var copy_value = value
@@ -5583,7 +5583,7 @@ open class TextServer: RefCounted {
     /// Returns extra spacing added between glyphs or lines in pixels.
     public final func shapedTextGetSpacing (shaped: RID, spacing: TextServer.SpacingType)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_spacing = Int64 (spacing.rawValue)
         
@@ -5620,7 +5620,7 @@ open class TextServer: RefCounted {
     /// Adds text span and font to draw it to the text buffer.
     public final func shapedTextAddString (shaped: RID, text: String, fonts: VariantCollection<RID>, size: Int, opentypeFeatures: GDictionary = GDictionary (), language: String = "", meta: Variant)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         var copy_size = size
@@ -5676,7 +5676,7 @@ open class TextServer: RefCounted {
     /// Adds inline object to the text buffer, `key` must be unique. In the text, object is represented as `length` object replacement characters.
     public final func shapedTextAddObject (shaped: RID, key: Variant, size: Vector2, inlineAlign: InlineAlignment = .center, length: Int = 1, baseline: Double = 0.0)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_size = size
         var copy_inline_align = Int64 (inlineAlign.rawValue)
@@ -5731,7 +5731,7 @@ open class TextServer: RefCounted {
     /// Sets new size and alignment of embedded object.
     public final func shapedTextResizeObject (shaped: RID, key: Variant, size: Vector2, inlineAlign: InlineAlignment = .center, baseline: Double = 0.0)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_size = size
         var copy_inline_align = Int64 (inlineAlign.rawValue)
@@ -5781,7 +5781,7 @@ open class TextServer: RefCounted {
     /// Returns number of text spans added using ``shapedTextAddString(shaped:text:fonts:size:opentypeFeatures:language:meta:)`` or ``shapedTextAddObject(shaped:key:size:inlineAlign:length:baseline:)``.
     public final func shapedGetSpanCount (shaped: RID)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_get_span_count, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -5813,7 +5813,7 @@ open class TextServer: RefCounted {
     /// Returns text span metadata.
     public final func shapedGetSpanMeta (shaped: RID, index: Int)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_index = index
         
@@ -5849,7 +5849,7 @@ open class TextServer: RefCounted {
     
     /// Changes text span font, font size and OpenType features, without changing the text.
     public final func shapedSetSpanUpdateFont (shaped: RID, index: Int, fonts: VariantCollection<RID>, size: Int, opentypeFeatures: GDictionary = GDictionary ()) {
-        #if true
+        #if false
         
         var copy_index = index
         var copy_size = size
@@ -5896,7 +5896,7 @@ open class TextServer: RefCounted {
     /// Returns text buffer for the substring of the text in the `shaped` text buffer (including inline objects).
     public final func shapedTextSubstr (shaped: RID, start: Int, length: Int)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_start = start
         var copy_length = length
@@ -5938,7 +5938,7 @@ open class TextServer: RefCounted {
     /// Returns the parent buffer from which the substring originates.
     public final func shapedTextGetParent (shaped: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_parent, UnsafeMutableRawPointer (mutating: handle), &_result.content, &shaped.content)
@@ -5970,7 +5970,7 @@ open class TextServer: RefCounted {
     /// Adjusts text width to fit to specified width, returns new text width.
     public final func shapedTextFitToWidth (shaped: RID, width: Double, justificationFlags: TextServer.JustificationFlag = [.kashida, .wordBound])-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_width = width
         var copy_justification_flags = justificationFlags
@@ -6012,7 +6012,7 @@ open class TextServer: RefCounted {
     /// Aligns shaped text to the given tab-stops.
     public final func shapedTextTabAlign (shaped: RID, tabStops: PackedFloat32Array)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_tab_align, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content, &tabStops.content)
@@ -6050,7 +6050,7 @@ open class TextServer: RefCounted {
     /// 
     public final func shapedTextShape (shaped: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_shape, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6082,7 +6082,7 @@ open class TextServer: RefCounted {
     /// Returns `true` if buffer is successfully shaped.
     public final func shapedTextIsReady (shaped: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_is_ready, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6114,7 +6114,7 @@ open class TextServer: RefCounted {
     /// Returns `true` if text buffer contains any visible characters.
     public final func shapedTextHasVisibleChars (shaped: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_has_visible_chars, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6146,7 +6146,7 @@ open class TextServer: RefCounted {
     /// Returns an array of glyphs in the visual order.
     public final func shapedTextGetGlyphs (shaped: RID)-> VariantCollection<GDictionary> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_glyphs, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6178,7 +6178,7 @@ open class TextServer: RefCounted {
     /// Returns text glyphs in the logical order.
     public final func shapedTextSortLogical (shaped: RID)-> VariantCollection<GDictionary> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_sort_logical, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6210,7 +6210,7 @@ open class TextServer: RefCounted {
     /// Returns number of glyphs in the buffer.
     public final func shapedTextGetGlyphCount (shaped: RID)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_glyph_count, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6242,7 +6242,7 @@ open class TextServer: RefCounted {
     /// Returns substring buffer character range in the parent buffer.
     public final func shapedTextGetRange (shaped: RID)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_range, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6274,7 +6274,7 @@ open class TextServer: RefCounted {
     /// Breaks text to the lines and columns. Returns character ranges for each segment.
     public final func shapedTextGetLineBreaksAdv (shaped: RID, width: PackedFloat32Array, start: Int = 0, once: Bool = true, breakFlags: TextServer.LineBreakFlag = [.mandatory, .wordBound])-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_start = start
         var copy_once = once
@@ -6324,7 +6324,7 @@ open class TextServer: RefCounted {
     /// Breaks text to the lines and returns character ranges for each line.
     public final func shapedTextGetLineBreaks (shaped: RID, width: Double, start: Int = 0, breakFlags: TextServer.LineBreakFlag = [.mandatory, .wordBound])-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_width = width
         var copy_start = start
@@ -6371,7 +6371,7 @@ open class TextServer: RefCounted {
     /// Breaks text into words and returns array of character ranges. Use `graphemeFlags` to set what characters are used for breaking (see ``TextServer/GraphemeFlag``).
     public final func shapedTextGetWordBreaks (shaped: RID, graphemeFlags: TextServer.GraphemeFlag = [.space, .punctuation])-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_grapheme_flags = graphemeFlags
         
@@ -6408,7 +6408,7 @@ open class TextServer: RefCounted {
     /// Returns the position of the overrun trim.
     public final func shapedTextGetTrimPos (shaped: RID)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_trim_pos, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6440,7 +6440,7 @@ open class TextServer: RefCounted {
     /// Returns position of the ellipsis.
     public final func shapedTextGetEllipsisPos (shaped: RID)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_ellipsis_pos, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6472,7 +6472,7 @@ open class TextServer: RefCounted {
     /// Returns array of the glyphs in the ellipsis.
     public final func shapedTextGetEllipsisGlyphs (shaped: RID)-> VariantCollection<GDictionary> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_ellipsis_glyphs, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6504,7 +6504,7 @@ open class TextServer: RefCounted {
     /// Returns number of glyphs in the ellipsis.
     public final func shapedTextGetEllipsisGlyphCount (shaped: RID)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_ellipsis_glyph_count, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6535,7 +6535,7 @@ open class TextServer: RefCounted {
     
     /// Trims text if it exceeds the given width.
     public final func shapedTextOverrunTrimToWidth (shaped: RID, width: Double = 0, overrunTrimFlags: TextServer.TextOverrunFlag = []) {
-        #if true
+        #if false
         
         var copy_width = width
         var copy_overrun_trim_flags = overrunTrimFlags
@@ -6576,7 +6576,7 @@ open class TextServer: RefCounted {
     /// Returns array of inline objects.
     public final func shapedTextGetObjects (shaped: RID)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_objects, UnsafeMutableRawPointer (mutating: handle), &_result.content, &shaped.content)
@@ -6608,7 +6608,7 @@ open class TextServer: RefCounted {
     /// Returns bounding rectangle of the inline object.
     public final func shapedTextGetObjectRect (shaped: RID, key: Variant)-> Rect2 {
         var _result: Rect2 = Rect2 ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_object_rect, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content, &key.content)
@@ -6643,7 +6643,7 @@ open class TextServer: RefCounted {
     /// Returns size of the text.
     public final func shapedTextGetSize (shaped: RID)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_size, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6678,7 +6678,7 @@ open class TextServer: RefCounted {
     /// 
     public final func shapedTextGetAscent (shaped: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_ascent, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6713,7 +6713,7 @@ open class TextServer: RefCounted {
     /// 
     public final func shapedTextGetDescent (shaped: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_descent, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6745,7 +6745,7 @@ open class TextServer: RefCounted {
     /// Returns width (for horizontal layout) or height (for vertical) of the text.
     public final func shapedTextGetWidth (shaped: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_width, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6777,7 +6777,7 @@ open class TextServer: RefCounted {
     /// Returns pixel offset of the underline below the baseline.
     public final func shapedTextGetUnderlinePosition (shaped: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_underline_position, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6809,7 +6809,7 @@ open class TextServer: RefCounted {
     /// Returns thickness of the underline.
     public final func shapedTextGetUnderlineThickness (shaped: RID)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_underline_thickness, UnsafeMutableRawPointer (mutating: handle), &_result, &shaped.content)
@@ -6841,7 +6841,7 @@ open class TextServer: RefCounted {
     /// Returns shapes of the carets corresponding to the character offset `position` in the text. Returned caret shape is 1 pixel wide rectangle.
     public final func shapedTextGetCarets (shaped: RID, position: Int)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -6878,7 +6878,7 @@ open class TextServer: RefCounted {
     /// Returns selection rectangles for the specified character range.
     public final func shapedTextGetSelection (shaped: RID, start: Int, end: Int)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_start = start
         var copy_end = end
@@ -6920,7 +6920,7 @@ open class TextServer: RefCounted {
     /// Returns grapheme index at the specified pixel offset at the baseline, or `-1` if none is found.
     public final func shapedTextHitTestGrapheme (shaped: RID, coords: Double)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_coords = coords
         
@@ -6957,7 +6957,7 @@ open class TextServer: RefCounted {
     /// Returns caret character offset at the specified pixel offset at the baseline. This function always returns a valid position.
     public final func shapedTextHitTestPosition (shaped: RID, coords: Double)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_coords = coords
         
@@ -6994,7 +6994,7 @@ open class TextServer: RefCounted {
     /// Returns composite character's bounds as offsets from the start of the line.
     public final func shapedTextGetGraphemeBounds (shaped: RID, pos: Int)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_pos = pos
         
@@ -7031,7 +7031,7 @@ open class TextServer: RefCounted {
     /// Returns grapheme end position closest to the `pos`.
     public final func shapedTextNextGraphemePos (shaped: RID, pos: Int)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_pos = pos
         
@@ -7068,7 +7068,7 @@ open class TextServer: RefCounted {
     /// Returns grapheme start position closest to the `pos`.
     public final func shapedTextPrevGraphemePos (shaped: RID, pos: Int)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_pos = pos
         
@@ -7105,7 +7105,7 @@ open class TextServer: RefCounted {
     /// Returns array of the composite character boundaries.
     public final func shapedTextGetCharacterBreaks (shaped: RID)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (TextServer.method_shaped_text_get_character_breaks, UnsafeMutableRawPointer (mutating: handle), &_result.content, &shaped.content)
@@ -7137,7 +7137,7 @@ open class TextServer: RefCounted {
     /// Returns composite character end position closest to the `pos`.
     public final func shapedTextNextCharacterPos (shaped: RID, pos: Int)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_pos = pos
         
@@ -7174,7 +7174,7 @@ open class TextServer: RefCounted {
     /// Returns composite character start position closest to the `pos`.
     public final func shapedTextPrevCharacterPos (shaped: RID, pos: Int)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_pos = pos
         
@@ -7211,7 +7211,7 @@ open class TextServer: RefCounted {
     /// Returns composite character position closest to the `pos`.
     public final func shapedTextClosestCharacterPos (shaped: RID, pos: Int)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_pos = pos
         
@@ -7247,7 +7247,7 @@ open class TextServer: RefCounted {
     
     /// Draw shaped text into a canvas item at a given position, with `color`. `pos` specifies the leftmost point of the baseline (for horizontal layout) or topmost point of the baseline (for vertical layout).
     public final func shapedTextDraw (shaped: RID, canvas: RID, pos: Vector2, clipL: Double = -1, clipR: Double = -1, color: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_clip_l = clipL
@@ -7300,7 +7300,7 @@ open class TextServer: RefCounted {
     
     /// Draw the outline of the shaped text into a canvas item at a given position, with `color`. `pos` specifies the leftmost point of the baseline (for horizontal layout) or topmost point of the baseline (for vertical layout).
     public final func shapedTextDrawOutline (shaped: RID, canvas: RID, pos: Vector2, clipL: Double = -1, clipR: Double = -1, outlineSize: Int = 1, color: Color = Color (r: 1, g: 1, b: 1, a: 1)) {
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_clip_l = clipL
@@ -7359,7 +7359,7 @@ open class TextServer: RefCounted {
     /// Returns dominant direction of in the range of text.
     public final func shapedTextGetDominantDirectionInRange (shaped: RID, start: Int, end: Int)-> TextServer.Direction {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_start = start
         var copy_end = end
@@ -7404,7 +7404,7 @@ open class TextServer: RefCounted {
     /// 
     public final func formatNumber (_ number: String, language: String = "")-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_number = GString (number)
         let gstr_language = GString (language)
@@ -7443,7 +7443,7 @@ open class TextServer: RefCounted {
     /// Converts `number` from the numeral systems used in `language` to Western Arabic (0..9).
     public final func parseNumber (_ number: String, language: String = "")-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_number = GString (number)
         let gstr_language = GString (language)
@@ -7482,7 +7482,7 @@ open class TextServer: RefCounted {
     /// Returns percent sign used in the `language`.
     public final func percentSign (language: String = "")-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -7519,7 +7519,7 @@ open class TextServer: RefCounted {
     /// 
     public final func stringGetWordBreaks (string: String, language: String = "", charsPerLine: Int = 0)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         let gstr_string = GString (string)
         let gstr_language = GString (language)
@@ -7564,7 +7564,7 @@ open class TextServer: RefCounted {
     /// 
     public final func stringGetCharacterBreaks (string: String, language: String = "")-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         let gstr_string = GString (string)
         let gstr_language = GString (language)
@@ -7608,7 +7608,7 @@ open class TextServer: RefCounted {
     /// 
     public final func isConfusable (string: String, dict: PackedStringArray)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         let gstr_string = GString (string)
         
@@ -7648,7 +7648,7 @@ open class TextServer: RefCounted {
     /// 
     public final func spoofCheck (string: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_string = GString (string)
         
@@ -7685,7 +7685,7 @@ open class TextServer: RefCounted {
     /// 
     public final func stripDiacritics (string: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_string = GString (string)
         
@@ -7736,7 +7736,7 @@ open class TextServer: RefCounted {
     /// 
     public final func isValidIdentifier (string: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_string = GString (string)
         
@@ -7775,7 +7775,7 @@ open class TextServer: RefCounted {
     /// 
     public final func stringToUpper (string: String, language: String = "")-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_string = GString (string)
         let gstr_language = GString (language)
@@ -7819,7 +7819,7 @@ open class TextServer: RefCounted {
     /// 
     public final func stringToLower (string: String, language: String = "")-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_string = GString (string)
         let gstr_language = GString (language)
@@ -7858,7 +7858,7 @@ open class TextServer: RefCounted {
     /// Default implementation of the BiDi algorithm override function. See ``TextServer/StructuredTextParser`` for more info.
     public final func parseStructuredText (parserType: TextServer.StructuredTextParser, args: GArray, text: String)-> VariantCollection<Vector3i> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_parser_type = Int64 (parserType.rawValue)
         let gstr_text = GString (text)

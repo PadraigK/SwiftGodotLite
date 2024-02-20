@@ -456,7 +456,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_horizontal_alignment (_ alignment: HorizontalAlignment) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -506,7 +506,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_vertical_alignment (_ alignment: VerticalAlignment) {
-        #if true
+        #if false
         
         var copy_alignment = Int64 (alignment.rawValue)
         
@@ -556,7 +556,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_modulate (_ modulate: Color) {
-        #if true
+        #if false
         
         var copy_modulate = modulate
         
@@ -606,7 +606,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_outline_modulate (_ modulate: Color) {
-        #if true
+        #if false
         
         var copy_modulate = modulate
         
@@ -656,7 +656,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_text (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -706,7 +706,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_text_direction (_ direction: TextServer.Direction) {
-        #if true
+        #if false
         
         var copy_direction = Int64 (direction.rawValue)
         
@@ -756,7 +756,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_language (_ language: String) {
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -806,7 +806,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_structured_text_bidi_override (_ parser: TextServer.StructuredTextParser) {
-        #if true
+        #if false
         
         var copy_parser = Int64 (parser.rawValue)
         
@@ -856,7 +856,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_structured_text_bidi_override_options (_ args: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Label3D.method_set_structured_text_bidi_override_options, UnsafeMutableRawPointer (mutating: handle), nil, &args.content)
@@ -904,7 +904,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_uppercase (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -954,7 +954,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_render_priority (_ priority: Int32) {
-        #if true
+        #if false
         
         var copy_priority: Int = Int (priority)
         
@@ -1004,7 +1004,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_outline_render_priority (_ priority: Int32) {
-        #if true
+        #if false
         
         var copy_priority: Int = Int (priority)
         
@@ -1054,7 +1054,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_font (_ font: Font?) {
-        #if true
+        #if false
         
         var copy_font_handle = font?.handle
         
@@ -1103,7 +1103,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_font_size (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -1153,7 +1153,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_outline_size (_ outlineSize: Int32) {
-        #if true
+        #if false
         
         var copy_outline_size: Int = Int (outlineSize)
         
@@ -1203,7 +1203,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_line_spacing (_ lineSpacing: Double) {
-        #if true
+        #if false
         
         var copy_line_spacing = lineSpacing
         
@@ -1253,7 +1253,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_autowrap_mode (_ autowrapMode: TextServer.AutowrapMode) {
-        #if true
+        #if false
         
         var copy_autowrap_mode = Int64 (autowrapMode.rawValue)
         
@@ -1303,7 +1303,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_justification_flags (_ justificationFlags: TextServer.JustificationFlag) {
-        #if true
+        #if false
         
         var copy_justification_flags = justificationFlags
         
@@ -1353,7 +1353,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_width (_ width: Double) {
-        #if true
+        #if false
         
         var copy_width = width
         
@@ -1403,7 +1403,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_pixel_size (_ pixelSize: Double) {
-        #if true
+        #if false
         
         var copy_pixel_size = pixelSize
         
@@ -1453,7 +1453,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_offset (_ offset: Vector2) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -1504,7 +1504,7 @@ open class Label3D: GeometryInstance3D {
     @inline(__always)
     /// If `true`, the specified flag will be enabled. See ``Label3D.DrawFlags`` for a list of flags.
     fileprivate final func set_draw_flag (_ flag: Label3D.DrawFlags, _ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         var copy_enabled = enabled
@@ -1543,7 +1543,7 @@ open class Label3D: GeometryInstance3D {
     /// Returns the value of the specified flag.
     fileprivate final func get_draw_flag (_ flag: Label3D.DrawFlags)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         
@@ -1576,7 +1576,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_billboard_mode (_ mode: BaseMaterial3D.BillboardMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1626,7 +1626,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_alpha_cut_mode (_ mode: Label3D.AlphaCutMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1676,7 +1676,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_alpha_scissor_threshold (_ threshold: Double) {
-        #if true
+        #if false
         
         var copy_threshold = threshold
         
@@ -1726,7 +1726,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_alpha_hash_scale (_ threshold: Double) {
-        #if true
+        #if false
         
         var copy_threshold = threshold
         
@@ -1776,7 +1776,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_alpha_antialiasing (_ alphaAa: BaseMaterial3D.AlphaAntiAliasing) {
-        #if true
+        #if false
         
         var copy_alpha_aa = Int64 (alphaAa.rawValue)
         
@@ -1826,7 +1826,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_alpha_antialiasing_edge (_ edge: Double) {
-        #if true
+        #if false
         
         var copy_edge = edge
         
@@ -1876,7 +1876,7 @@ open class Label3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_texture_filter (_ mode: BaseMaterial3D.TextureFilter) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

@@ -33,7 +33,7 @@ open class TLSOptions: RefCounted {
     /// 
     public static func client (trustedChain: X509Certificate? = nil, commonNameOverride: String = "")-> TLSOptions? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_common_name_override = GString (commonNameOverride)
         var copy_trusted_chain_handle = trustedChain?.handle
@@ -74,7 +74,7 @@ open class TLSOptions: RefCounted {
     /// 
     public static func clientUnsafe (trustedChain: X509Certificate? = nil)-> TLSOptions? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_trusted_chain_handle = trustedChain?.handle
         
@@ -110,7 +110,7 @@ open class TLSOptions: RefCounted {
     /// 
     public static func server (key: CryptoKey?, certificate: X509Certificate?)-> TLSOptions? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_key_handle = key?.handle
         var copy_certificate_handle = certificate?.handle

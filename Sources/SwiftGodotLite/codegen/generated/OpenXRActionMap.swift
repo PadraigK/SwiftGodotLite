@@ -56,7 +56,7 @@ open class OpenXRActionMap: Resource {
     
     @inline(__always)
     fileprivate final func set_action_sets (_ actionSets: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (OpenXRActionMap.method_set_action_sets, UnsafeMutableRawPointer (mutating: handle), nil, &actionSets.content)
@@ -123,7 +123,7 @@ open class OpenXRActionMap: Resource {
     /// Retrieve an action set by name.
     public final func findActionSet (name: String)-> OpenXRActionSet? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -157,7 +157,7 @@ open class OpenXRActionMap: Resource {
     /// Retrieve the action set at this index.
     public final func getActionSet (idx: Int32)-> OpenXRActionSet? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -190,7 +190,7 @@ open class OpenXRActionMap: Resource {
     
     /// Add an action set.
     public final func addActionSet (_ actionSet: OpenXRActionSet?) {
-        #if true
+        #if false
         
         var copy_action_set_handle = actionSet?.handle
         
@@ -221,7 +221,7 @@ open class OpenXRActionMap: Resource {
     
     /// Remove an action set.
     public final func removeActionSet (_ actionSet: OpenXRActionSet?) {
-        #if true
+        #if false
         
         var copy_action_set_handle = actionSet?.handle
         
@@ -252,7 +252,7 @@ open class OpenXRActionMap: Resource {
     
     @inline(__always)
     fileprivate final func set_interaction_profiles (_ interactionProfiles: GArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (OpenXRActionMap.method_set_interaction_profiles, UnsafeMutableRawPointer (mutating: handle), nil, &interactionProfiles.content)
@@ -319,7 +319,7 @@ open class OpenXRActionMap: Resource {
     /// Find an interaction profile by its name (path).
     public final func findInteractionProfile (name: String)-> OpenXRInteractionProfile? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -353,7 +353,7 @@ open class OpenXRActionMap: Resource {
     /// Get the interaction profile at this index.
     public final func getInteractionProfile (idx: Int32)-> OpenXRInteractionProfile? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -386,7 +386,7 @@ open class OpenXRActionMap: Resource {
     
     /// Add an interaction profile.
     public final func addInteractionProfile (_ interactionProfile: OpenXRInteractionProfile?) {
-        #if true
+        #if false
         
         var copy_interaction_profile_handle = interactionProfile?.handle
         
@@ -417,7 +417,7 @@ open class OpenXRActionMap: Resource {
     
     /// Remove an interaction profile.
     public final func removeInteractionProfile (_ interactionProfile: OpenXRInteractionProfile?) {
-        #if true
+        #if false
         
         var copy_interaction_profile_handle = interactionProfile?.handle
         

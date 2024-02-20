@@ -122,7 +122,7 @@ open class PopupMenu: Popup {
     /// 
     public final func activateItemByEvent (_ event: InputEvent?, forGlobalOnly: Bool = false)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_for_global_only = forGlobalOnly
         var copy_event_handle = event?.handle
@@ -164,7 +164,7 @@ open class PopupMenu: Popup {
     /// > Note: The provided `id` is used only in [signal id_pressed] and [signal id_focused] signals. It's not related to the `index` arguments in e.g. ``setItemChecked(index:checked:)``.
     /// 
     public final func addItem (label: String, id: Int32 = -1, accel: Key = .none) {
-        #if true
+        #if false
         
         let gstr_label = GString (label)
         var copy_id: Int = Int (id)
@@ -209,7 +209,7 @@ open class PopupMenu: Popup {
     /// An `id` can optionally be provided, as well as an accelerator (`accel`). If no `id` is provided, one will be created from the index. If no `accel` is provided, then the default value of 0 (corresponding to ``@GlobalScope.KEY_NONE``) will be assigned to the item (which means it won't have any accelerator). See ``getItemAccelerator(index:)`` for more info on accelerators.
     /// 
     public final func addIconItem (texture: Texture2D?, label: String, id: Int32 = -1, accel: Key = .none) {
-        #if true
+        #if false
         
         let gstr_label = GString (label)
         var copy_id: Int = Int (id)
@@ -260,7 +260,7 @@ open class PopupMenu: Popup {
     /// > Note: Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See ``setItemChecked(index:checked:)`` for more info on how to control it.
     /// 
     public final func addCheckItem (label: String, id: Int32 = -1, accel: Key = .none) {
-        #if true
+        #if false
         
         let gstr_label = GString (label)
         var copy_id: Int = Int (id)
@@ -307,7 +307,7 @@ open class PopupMenu: Popup {
     /// > Note: Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See ``setItemChecked(index:checked:)`` for more info on how to control it.
     /// 
     public final func addIconCheckItem (texture: Texture2D?, label: String, id: Int32 = -1, accel: Key = .none) {
-        #if true
+        #if false
         
         let gstr_label = GString (label)
         var copy_id: Int = Int (id)
@@ -358,7 +358,7 @@ open class PopupMenu: Popup {
     /// > Note: Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See ``setItemChecked(index:checked:)`` for more info on how to control it.
     /// 
     public final func addRadioCheckItem (label: String, id: Int32 = -1, accel: Key = .none) {
-        #if true
+        #if false
         
         let gstr_label = GString (label)
         var copy_id: Int = Int (id)
@@ -400,7 +400,7 @@ open class PopupMenu: Popup {
     
     /// Same as ``addIconCheckItem(texture:label:id:accel:)``, but uses a radio check button.
     public final func addIconRadioCheckItem (texture: Texture2D?, label: String, id: Int32 = -1, accel: Key = .none) {
-        #if true
+        #if false
         
         let gstr_label = GString (label)
         var copy_id: Int = Int (id)
@@ -451,7 +451,7 @@ open class PopupMenu: Popup {
     /// An `id` can optionally be provided, as well as an accelerator (`accel`). If no `id` is provided, one will be created from the index. If no `accel` is provided, then the default value of 0 (corresponding to ``@GlobalScope.KEY_NONE``) will be assigned to the item (which means it won't have any accelerator). See ``getItemAccelerator(index:)`` for more info on accelerators.
     /// 
     public final func addMultistateItem (label: String, maxStates: Int32, defaultState: Int32 = 0, id: Int32 = -1, accel: Key = .none) {
-        #if true
+        #if false
         
         let gstr_label = GString (label)
         var copy_max_states: Int = Int (maxStates)
@@ -508,7 +508,7 @@ open class PopupMenu: Popup {
     /// If `allowEcho` is `true`, the shortcut can be activated with echo events.
     /// 
     public final func addShortcut (_ shortcut: Shortcut?, id: Int32 = -1, global: Bool = false, allowEcho: Bool = false) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_global = global
@@ -559,7 +559,7 @@ open class PopupMenu: Popup {
     /// If `allowEcho` is `true`, the shortcut can be activated with echo events.
     /// 
     public final func addIconShortcut (texture: Texture2D?, shortcut: Shortcut?, id: Int32 = -1, global: Bool = false, allowEcho: Bool = false) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_global = global
@@ -614,7 +614,7 @@ open class PopupMenu: Popup {
     /// > Note: Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See ``setItemChecked(index:checked:)`` for more info on how to control it.
     /// 
     public final func addCheckShortcut (_ shortcut: Shortcut?, id: Int32 = -1, global: Bool = false) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_global = global
@@ -660,7 +660,7 @@ open class PopupMenu: Popup {
     /// > Note: Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See ``setItemChecked(index:checked:)`` for more info on how to control it.
     /// 
     public final func addIconCheckShortcut (texture: Texture2D?, shortcut: Shortcut?, id: Int32 = -1, global: Bool = false) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_global = global
@@ -710,7 +710,7 @@ open class PopupMenu: Popup {
     /// > Note: Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See ``setItemChecked(index:checked:)`` for more info on how to control it.
     /// 
     public final func addRadioCheckShortcut (_ shortcut: Shortcut?, id: Int32 = -1, global: Bool = false) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_global = global
@@ -751,7 +751,7 @@ open class PopupMenu: Popup {
     
     /// Same as ``addIconCheckShortcut(texture:shortcut:id:global:)``, but uses a radio check button.
     public final func addIconRadioCheckShortcut (texture: Texture2D?, shortcut: Shortcut?, id: Int32 = -1, global: Bool = false) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_global = global
@@ -799,7 +799,7 @@ open class PopupMenu: Popup {
     /// An `id` can optionally be provided. If no `id` is provided, one will be created from the index.
     /// 
     public final func addSubmenuItem (label: String, submenu: String, id: Int32 = -1) {
-        #if true
+        #if false
         
         let gstr_label = GString (label)
         let gstr_submenu = GString (submenu)
@@ -841,7 +841,7 @@ open class PopupMenu: Popup {
     
     /// Sets the text of the item at the given `index`.
     public final func setItemText (index: Int32, text: String) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         let gstr_text = GString (text)
@@ -878,7 +878,7 @@ open class PopupMenu: Popup {
     
     /// Sets item's text base writing direction.
     public final func setItemTextDirection (index: Int32, direction: Control.TextDirection) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_direction = Int64 (direction.rawValue)
@@ -915,7 +915,7 @@ open class PopupMenu: Popup {
     
     /// Sets language code of item's text used for line-breaking and text shaping algorithms, if left empty current locale is used instead.
     public final func setItemLanguage (index: Int32, language: String) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         let gstr_language = GString (language)
@@ -952,7 +952,7 @@ open class PopupMenu: Popup {
     
     /// Replaces the ``Texture2D`` icon of the item at the given `index`.
     public final func setItemIcon (index: Int32, icon: Texture2D?) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_icon_handle = icon?.handle
@@ -988,7 +988,7 @@ open class PopupMenu: Popup {
     
     /// Sets the maximum allowed width of the icon for the item at the given `index`. This limit is applied on top of the default size of the icon and on top of [theme_item icon_max_width]. The height is adjusted according to the icon's ratio.
     public final func setItemIconMaxWidth (index: Int32, width: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_width: Int = Int (width)
@@ -1025,7 +1025,7 @@ open class PopupMenu: Popup {
     
     /// Sets a modulating ``Color`` of the item's icon at the given `index`.
     public final func setItemIconModulate (index: Int32, modulate: Color) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_modulate = modulate
@@ -1062,7 +1062,7 @@ open class PopupMenu: Popup {
     
     /// Sets the checkstate status of the item at the given `index`.
     public final func setItemChecked (index: Int32, checked: Bool) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_checked = checked
@@ -1102,7 +1102,7 @@ open class PopupMenu: Popup {
     /// The `id` is used in [signal id_pressed] and [signal id_focused] signals.
     /// 
     public final func setItemId (index: Int32, id: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_id: Int = Int (id)
@@ -1139,7 +1139,7 @@ open class PopupMenu: Popup {
     
     /// Sets the accelerator of the item at the given `index`. An accelerator is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. `accel` is generally a combination of ``KeyModifierMask``s and ``Key``s using bitwise OR such as `KEY_MASK_CTRL | KEY_A` ([kbd]Ctrl + A[/kbd]).
     public final func setItemAccelerator (index: Int32, accel: Key) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_accel = Int64 (accel.rawValue)
@@ -1176,7 +1176,7 @@ open class PopupMenu: Popup {
     
     /// Sets the metadata of an item, which may be of any type. You can later get it with ``getItemMetadata(index:)``, which provides a simple way of assigning context data to items.
     public final func setItemMetadata (index: Int32, metadata: Variant) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1211,7 +1211,7 @@ open class PopupMenu: Popup {
     
     /// Enables/disables the item at the given `index`. When it is disabled, it can't be selected and its action can't be invoked.
     public final func setItemDisabled (index: Int32, disabled: Bool) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_disabled = disabled
@@ -1248,7 +1248,7 @@ open class PopupMenu: Popup {
     
     /// Sets the submenu of the item at the given `index`. The submenu is the name of a child ``PopupMenu`` node that would be shown when the item is clicked.
     public final func setItemSubmenu (index: Int32, submenu: String) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         let gstr_submenu = GString (submenu)
@@ -1285,7 +1285,7 @@ open class PopupMenu: Popup {
     
     /// Mark the item at the given `index` as a separator, which means that it would be displayed as a line. If `false`, sets the type of the item to plain text.
     public final func setItemAsSeparator (index: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_enable = enable
@@ -1325,7 +1325,7 @@ open class PopupMenu: Popup {
     /// > Note: Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually.
     /// 
     public final func setItemAsCheckable (index: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_enable = enable
@@ -1362,7 +1362,7 @@ open class PopupMenu: Popup {
     
     /// Sets the type of the item at the given `index` to radio button. If `false`, sets the type of the item to plain text.
     public final func setItemAsRadioCheckable (index: Int32, enable: Bool) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_enable = enable
@@ -1399,7 +1399,7 @@ open class PopupMenu: Popup {
     
     /// Sets the ``String`` tooltip of the item at the given `index`.
     public final func setItemTooltip (index: Int32, tooltip: String) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         let gstr_tooltip = GString (tooltip)
@@ -1436,7 +1436,7 @@ open class PopupMenu: Popup {
     
     /// Sets a ``Shortcut`` for the item at the given `index`.
     public final func setItemShortcut (index: Int32, shortcut: Shortcut?, global: Bool = false) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_global = global
@@ -1477,7 +1477,7 @@ open class PopupMenu: Popup {
     
     /// Sets the horizontal offset of the item at the given `index`.
     public final func setItemIndent (index: Int32, indent: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_indent: Int = Int (indent)
@@ -1514,7 +1514,7 @@ open class PopupMenu: Popup {
     
     /// Sets the state of a multistate item. See ``addMultistateItem(label:maxStates:defaultState:id:accel:)`` for details.
     public final func setItemMultistate (index: Int32, state: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_state: Int = Int (state)
@@ -1551,7 +1551,7 @@ open class PopupMenu: Popup {
     
     /// Disables the ``Shortcut`` of the item at the given `index`.
     public final func setItemShortcutDisabled (index: Int32, disabled: Bool) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         var copy_disabled = disabled
@@ -1588,7 +1588,7 @@ open class PopupMenu: Popup {
     
     /// Toggles the check state of the item at the given `index`.
     public final func toggleItemChecked (index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1620,7 +1620,7 @@ open class PopupMenu: Popup {
     
     /// Cycle to the next state of a multistate item. See ``addMultistateItem(label:maxStates:defaultState:id:accel:)`` for details.
     public final func toggleItemMultistate (index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1653,7 +1653,7 @@ open class PopupMenu: Popup {
     /// Returns the text of the item at the given `index`.
     public final func getItemText (index: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1687,7 +1687,7 @@ open class PopupMenu: Popup {
     /// Returns item's text base writing direction.
     public final func getItemTextDirection (index: Int32)-> Control.TextDirection {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1721,7 +1721,7 @@ open class PopupMenu: Popup {
     /// Returns item's text language code.
     public final func getItemLanguage (index: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1755,7 +1755,7 @@ open class PopupMenu: Popup {
     /// Returns the icon of the item at the given `index`.
     public final func getItemIcon (index: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1789,7 +1789,7 @@ open class PopupMenu: Popup {
     /// Returns the maximum allowed width of the icon for the item at the given `index`.
     public final func getItemIconMaxWidth (index: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1823,7 +1823,7 @@ open class PopupMenu: Popup {
     /// Returns a ``Color`` modulating the item's icon at the given `index`.
     public final func getItemIconModulate (index: Int32)-> Color {
         var _result: Color = Color ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1857,7 +1857,7 @@ open class PopupMenu: Popup {
     /// Returns `true` if the item at the given `index` is checked.
     public final func isItemChecked (index: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1891,7 +1891,7 @@ open class PopupMenu: Popup {
     /// Returns the ID of the item at the given `index`. `id` can be manually assigned, while index can not.
     public final func getItemId (index: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1925,7 +1925,7 @@ open class PopupMenu: Popup {
     /// Returns the index of the item containing the specified `id`. Index is automatically assigned to each item by the engine and can not be set manually.
     public final func getItemIndex (id: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -1959,7 +1959,7 @@ open class PopupMenu: Popup {
     /// Returns the accelerator of the item at the given `index`. An accelerator is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The return value is an integer which is generally a combination of ``KeyModifierMask``s and ``Key``s using bitwise OR such as `KEY_MASK_CTRL | KEY_A` ([kbd]Ctrl + A[/kbd]). If no accelerator is defined for the specified `index`, ``getItemAccelerator(index:)`` returns `0` (corresponding to ``@GlobalScope.KEY_NONE``).
     public final func getItemAccelerator (index: Int32)-> Key {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -1993,7 +1993,7 @@ open class PopupMenu: Popup {
     /// Returns the metadata of the specified item, which might be of any type. You can set it with ``setItemMetadata(index:metadata:)``, which provides a simple way of assigning context data to items.
     public final func getItemMetadata (index: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2030,7 +2030,7 @@ open class PopupMenu: Popup {
     /// 
     public final func isItemDisabled (index: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2064,7 +2064,7 @@ open class PopupMenu: Popup {
     /// Returns the submenu name of the item at the given `index`. See ``addSubmenuItem(label:submenu:id:)`` for more info on how to add a submenu.
     public final func getItemSubmenu (index: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2098,7 +2098,7 @@ open class PopupMenu: Popup {
     /// Returns `true` if the item is a separator. If it is, it will be displayed as a line. See ``addSeparator(label:id:)`` for more info on how to add a separator.
     public final func isItemSeparator (index: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2135,7 +2135,7 @@ open class PopupMenu: Popup {
     /// 
     public final func isItemCheckable (index: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2172,7 +2172,7 @@ open class PopupMenu: Popup {
     /// 
     public final func isItemRadioCheckable (index: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2206,7 +2206,7 @@ open class PopupMenu: Popup {
     /// Returns `true` if the specified item's shortcut is disabled.
     public final func isItemShortcutDisabled (index: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2240,7 +2240,7 @@ open class PopupMenu: Popup {
     /// Returns the tooltip associated with the item at the given `index`.
     public final func getItemTooltip (index: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2274,7 +2274,7 @@ open class PopupMenu: Popup {
     /// Returns the ``Shortcut`` associated with the item at the given `index`.
     public final func getItemShortcut (index: Int32)-> Shortcut? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2308,7 +2308,7 @@ open class PopupMenu: Popup {
     /// Returns the horizontal offset of the item at the given `index`.
     public final func getItemIndent (index: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2344,7 +2344,7 @@ open class PopupMenu: Popup {
     /// Passing `-1` as the index makes so that no item is focused.
     /// 
     public final func setFocusedItem (index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2394,7 +2394,7 @@ open class PopupMenu: Popup {
     
     @inline(__always)
     fileprivate final func set_item_count (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -2444,7 +2444,7 @@ open class PopupMenu: Popup {
     
     /// Moves the scroll view to make the item at the given `index` visible.
     public final func scrollToItem (index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2479,7 +2479,7 @@ open class PopupMenu: Popup {
     /// > Note: The indices of items after the removed item will be shifted by one.
     /// 
     public final func removeItem (index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2514,7 +2514,7 @@ open class PopupMenu: Popup {
     /// A `label` can optionally be provided, which will appear at the center of the separator.
     /// 
     public final func addSeparator (label: String = "", id: Int32 = -1) {
-        #if true
+        #if false
         
         let gstr_label = GString (label)
         var copy_id: Int = Int (id)
@@ -2551,7 +2551,7 @@ open class PopupMenu: Popup {
     
     /// Removes all items from the ``PopupMenu``. If `freeSubmenus` is `true`, the submenu nodes are automatically freed.
     public final func clear (freeSubmenus: Bool = false) {
-        #if true
+        #if false
         
         var copy_free_submenus = freeSubmenus
         
@@ -2583,7 +2583,7 @@ open class PopupMenu: Popup {
     
     @inline(__always)
     fileprivate final func set_hide_on_item_selection (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2633,7 +2633,7 @@ open class PopupMenu: Popup {
     
     @inline(__always)
     fileprivate final func set_hide_on_checkable_item_selection (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2683,7 +2683,7 @@ open class PopupMenu: Popup {
     
     @inline(__always)
     fileprivate final func set_hide_on_state_item_selection (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2733,7 +2733,7 @@ open class PopupMenu: Popup {
     
     @inline(__always)
     fileprivate final func set_submenu_popup_delay (_ seconds: Double) {
-        #if true
+        #if false
         
         var copy_seconds = seconds
         
@@ -2783,7 +2783,7 @@ open class PopupMenu: Popup {
     
     @inline(__always)
     fileprivate final func set_allow_search (_ allow: Bool) {
-        #if true
+        #if false
         
         var copy_allow = allow
         

@@ -1161,7 +1161,7 @@ open class RenderingDevice: Object {
     /// 
     public final func textureCreate (format: RDTextureFormat?, view: RDTextureView?, data: VariantCollection<PackedByteArray> = VariantCollection<PackedByteArray> ())-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_format_handle = format?.handle
         var copy_view_handle = view?.handle
@@ -1201,7 +1201,7 @@ open class RenderingDevice: Object {
     /// Creates a shared texture using the specified `view` and the texture information from `withTexture`.
     public final func textureCreateShared (view: RDTextureView?, withTexture: RID)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_view_handle = view?.handle
         
@@ -1242,7 +1242,7 @@ open class RenderingDevice: Object {
     /// 
     public final func textureCreateSharedFromSlice (view: RDTextureView?, withTexture: RID, layer: UInt32, mipmap: UInt32, mipmaps: UInt32 = 1, sliceType: RenderingDevice.TextureSliceType = .textureSlice2d)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_mipmap: Int = Int (mipmap)
@@ -1298,7 +1298,7 @@ open class RenderingDevice: Object {
     /// Returns an RID for an existing `image` (`VkImage`) with the given `type`, `format`, `samples`, `usageFlags`, `width`, `height`, `depth`, and `layers`. This can be used to allow Godot to render onto foreign images.
     public final func textureCreateFromExtension (type: RenderingDevice.TextureType, format: RenderingDevice.DataFormat, samples: RenderingDevice.TextureSamples, usageFlags: RenderingDevice.TextureUsageBits, image: UInt, width: UInt, height: UInt, depth: UInt, layers: UInt)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         var copy_format = Int64 (format.rawValue)
@@ -1379,7 +1379,7 @@ open class RenderingDevice: Object {
     /// 
     public final func textureUpdate (texture: RID, layer: UInt32, data: PackedByteArray, postBarrier: RenderingDevice.BarrierMask = [.vertex, .fragment, .compute, .transfer, .raster, .allBarriers])-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         var copy_post_barrier = postBarrier
@@ -1429,7 +1429,7 @@ open class RenderingDevice: Object {
     /// 
     public final func textureGetData (texture: RID, layer: UInt32)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         var copy_layer: Int = Int (layer)
         
@@ -1466,7 +1466,7 @@ open class RenderingDevice: Object {
     /// Returns `true` if the specified `format` is supported for the given `usageFlags`, `false` otherwise.
     public final func textureIsFormatSupportedForUsage (format: RenderingDevice.DataFormat, usageFlags: RenderingDevice.TextureUsageBits)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_format = Int64 (format.rawValue)
         var copy_usage_flags = usageFlags
@@ -1505,7 +1505,7 @@ open class RenderingDevice: Object {
     /// Returns `true` if the `texture` is shared, `false` otherwise. See ``RDTextureView``.
     public final func textureIsShared (texture: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingDevice.method_texture_is_shared, UnsafeMutableRawPointer (mutating: handle), &_result, &texture.content)
@@ -1537,7 +1537,7 @@ open class RenderingDevice: Object {
     /// Returns `true` if the `texture` is valid, `false` otherwise.
     public final func textureIsValid (texture: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingDevice.method_texture_is_valid, UnsafeMutableRawPointer (mutating: handle), &_result, &texture.content)
@@ -1580,7 +1580,7 @@ open class RenderingDevice: Object {
     /// 
     public final func textureCopy (fromTexture: RID, toTexture: RID, fromPos: Vector3, toPos: Vector3, size: Vector3, srcMipmap: UInt32, dstMipmap: UInt32, srcLayer: UInt32, dstLayer: UInt32, postBarrier: RenderingDevice.BarrierMask = [.vertex, .fragment, .compute, .transfer, .raster, .allBarriers])-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_from_pos = fromPos
         var copy_to_pos = toPos
@@ -1658,7 +1658,7 @@ open class RenderingDevice: Object {
     /// 
     public final func textureClear (texture: RID, color: Color, baseMipmap: UInt32, mipmapCount: UInt32, baseLayer: UInt32, layerCount: UInt32, postBarrier: RenderingDevice.BarrierMask = [.vertex, .fragment, .compute, .transfer, .raster, .allBarriers])-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_color = color
         var copy_base_mipmap: Int = Int (baseMipmap)
@@ -1735,7 +1735,7 @@ open class RenderingDevice: Object {
     /// 
     public final func textureResolveMultisample (fromTexture: RID, toTexture: RID, postBarrier: RenderingDevice.BarrierMask = [.vertex, .fragment, .compute, .transfer, .raster, .allBarriers])-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_post_barrier = postBarrier
         
@@ -1775,7 +1775,7 @@ open class RenderingDevice: Object {
     /// Returns the data format used to create this texture.
     public final func textureGetFormat (texture: RID)-> RDTextureFormat? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingDevice.method_texture_get_format, UnsafeMutableRawPointer (mutating: handle), &_result, &texture.content)
@@ -1810,7 +1810,7 @@ open class RenderingDevice: Object {
     /// 
     public final func textureGetNativeHandle (texture: RID)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingDevice.method_texture_get_native_handle, UnsafeMutableRawPointer (mutating: handle), &_result, &texture.content)
@@ -1845,7 +1845,7 @@ open class RenderingDevice: Object {
     /// 
     public final func framebufferFormatCreate (attachments: ObjectCollection<RDAttachmentFormat>, viewCount: UInt32 = 1)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_view_count: Int = Int (viewCount)
         
@@ -1882,7 +1882,7 @@ open class RenderingDevice: Object {
     /// Creates a multipass framebuffer format with the specified `attachments`, `passes` and `viewCount` and returns its ID. If `viewCount` is greater than or equal to `2`, enables multiview which is used for VR rendering. This requires support for the Vulkan multiview extension.
     public final func framebufferFormatCreateMultipass (attachments: ObjectCollection<RDAttachmentFormat>, passes: ObjectCollection<RDFramebufferPass>, viewCount: UInt32 = 1)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_view_count: Int = Int (viewCount)
         
@@ -1922,7 +1922,7 @@ open class RenderingDevice: Object {
     /// Creates a new empty framebuffer format with the specified number of `samples` and returns its ID.
     public final func framebufferFormatCreateEmpty (samples: RenderingDevice.TextureSamples = .textureSamples1)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_samples = Int64 (samples.rawValue)
         
@@ -1956,7 +1956,7 @@ open class RenderingDevice: Object {
     /// Returns the number of texture samples used for the given framebuffer `format` ID (returned by ``framebufferGetFormat(framebuffer:)``).
     public final func framebufferFormatGetTextureSamples (format: Int, renderPass: UInt32 = 0)-> RenderingDevice.TextureSamples {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_format = format
         var copy_render_pass: Int = Int (renderPass)
@@ -1998,7 +1998,7 @@ open class RenderingDevice: Object {
     /// 
     public final func framebufferCreate (textures: VariantCollection<RID>, validateWithFormat: Int = -1, viewCount: UInt32 = 1)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_validate_with_format = validateWithFormat
         var copy_view_count: Int = Int (viewCount)
@@ -2043,7 +2043,7 @@ open class RenderingDevice: Object {
     /// 
     public final func framebufferCreateMultipass (textures: VariantCollection<RID>, passes: ObjectCollection<RDFramebufferPass>, validateWithFormat: Int = -1, viewCount: UInt32 = 1)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_validate_with_format = validateWithFormat
         var copy_view_count: Int = Int (viewCount)
@@ -2091,7 +2091,7 @@ open class RenderingDevice: Object {
     /// 
     public final func framebufferCreateEmpty (size: Vector2i, samples: RenderingDevice.TextureSamples = .textureSamples1, validateWithFormat: Int = -1)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_size = size
         var copy_samples = Int64 (samples.rawValue)
@@ -2135,7 +2135,7 @@ open class RenderingDevice: Object {
     /// Returns the format ID of the framebuffer specified by the `framebuffer` RID. This ID is guaranteed to be unique for the same formats and does not need to be freed.
     public final func framebufferGetFormat (framebuffer: RID)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingDevice.method_framebuffer_get_format, UnsafeMutableRawPointer (mutating: handle), &_result, &framebuffer.content)
@@ -2167,7 +2167,7 @@ open class RenderingDevice: Object {
     /// Returns `true` if the framebuffer specified by the `framebuffer` RID is valid, `false` otherwise.
     public final func framebufferIsValid (framebuffer: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingDevice.method_framebuffer_is_valid, UnsafeMutableRawPointer (mutating: handle), &_result, &framebuffer.content)
@@ -2202,7 +2202,7 @@ open class RenderingDevice: Object {
     /// 
     public final func samplerCreate (state: RDSamplerState?)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_state_handle = state?.handle
         
@@ -2235,7 +2235,7 @@ open class RenderingDevice: Object {
     /// Returns `true` if implementation supports using a texture of `format` with the given `samplerFilter`.
     public final func samplerIsFormatSupportedForFilter (format: RenderingDevice.DataFormat, samplerFilter: RenderingDevice.SamplerFilter)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_format = Int64 (format.rawValue)
         var copy_sampler_filter = Int64 (samplerFilter.rawValue)
@@ -2277,7 +2277,7 @@ open class RenderingDevice: Object {
     /// 
     public final func vertexBufferCreate (sizeBytes: UInt32, data: PackedByteArray = PackedByteArray(), useAsStorage: Bool = false)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_size_bytes: Int = Int (sizeBytes)
         var copy_use_as_storage = useAsStorage
@@ -2319,7 +2319,7 @@ open class RenderingDevice: Object {
     /// Creates a new vertex format with the specified `vertexDescriptions`. Returns a unique vertex format ID corresponding to the newly created vertex format.
     public final func vertexFormatCreate (vertexDescriptions: ObjectCollection<RDVertexAttribute>)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingDevice.method_vertex_format_create, UnsafeMutableRawPointer (mutating: handle), &_result, &vertexDescriptions.array.content)
@@ -2351,7 +2351,7 @@ open class RenderingDevice: Object {
     /// Creates a vertex array based on the specified buffers. Optionally, `offsets` (in bytes) may be defined for each buffer.
     public final func vertexArrayCreate (vertexCount: UInt32, vertexFormat: Int, srcBuffers: VariantCollection<RID>, offsets: PackedInt64Array = PackedInt64Array())-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_vertex_count: Int = Int (vertexCount)
         var copy_vertex_format = vertexFormat
@@ -2399,7 +2399,7 @@ open class RenderingDevice: Object {
     /// 
     public final func indexBufferCreate (sizeIndices: UInt32, format: RenderingDevice.IndexBufferFormat, data: PackedByteArray = PackedByteArray(), useRestartIndices: Bool = false)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_size_indices: Int = Int (sizeIndices)
         var copy_format = Int64 (format.rawValue)
@@ -2449,7 +2449,7 @@ open class RenderingDevice: Object {
     /// 
     public final func indexArrayCreate (indexBuffer: RID, indexOffset: UInt32, indexCount: UInt32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_index_offset: Int = Int (indexOffset)
         var copy_index_count: Int = Int (indexCount)
@@ -2494,7 +2494,7 @@ open class RenderingDevice: Object {
     /// 
     public final func shaderCompileSpirvFromSource (shaderSource: RDShaderSource?, allowCache: Bool = true)-> RDShaderSPIRV? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_allow_cache = allowCache
         var copy_shader_source_handle = shaderSource?.handle
@@ -2535,7 +2535,7 @@ open class RenderingDevice: Object {
     /// 
     public final func shaderCompileBinaryFromSpirv (spirvData: RDShaderSPIRV?, name: String = "")-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_spirv_data_handle = spirvData?.handle
@@ -2576,7 +2576,7 @@ open class RenderingDevice: Object {
     /// 
     public final func shaderCreateFromSpirv (spirvData: RDShaderSPIRV?, name: String = "")-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_spirv_data_handle = spirvData?.handle
@@ -2617,7 +2617,7 @@ open class RenderingDevice: Object {
     /// 
     public final func shaderCreateFromBytecode (binaryData: PackedByteArray, placeholderRid: RID = RID())-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingDevice.method_shader_create_from_bytecode, UnsafeMutableRawPointer (mutating: handle), &_result.content, &binaryData.content, &placeholderRid.content)
@@ -2670,7 +2670,7 @@ open class RenderingDevice: Object {
     /// Returns the internal vertex input mask. Internally, the vertex input mask is an unsigned integer consisting of the locations (specified in GLSL via. `layout(location = ...)`) of the input variables (specified in GLSL by the `in` keyword).
     public final func shaderGetVertexInputAttributeMask (shader: RID)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingDevice.method_shader_get_vertex_input_attribute_mask, UnsafeMutableRawPointer (mutating: handle), &_result, &shader.content)
@@ -2705,7 +2705,7 @@ open class RenderingDevice: Object {
     /// 
     public final func uniformBufferCreate (sizeBytes: UInt32, data: PackedByteArray = PackedByteArray())-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_size_bytes: Int = Int (sizeBytes)
         
@@ -2745,7 +2745,7 @@ open class RenderingDevice: Object {
     /// 
     public final func storageBufferCreate (sizeBytes: UInt32, data: PackedByteArray = PackedByteArray(), usage: RenderingDevice.StorageBufferUsage = [])-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_size_bytes: Int = Int (sizeBytes)
         var copy_usage = usage
@@ -2790,7 +2790,7 @@ open class RenderingDevice: Object {
     /// 
     public final func textureBufferCreate (sizeBytes: UInt32, format: RenderingDevice.DataFormat, data: PackedByteArray = PackedByteArray())-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_size_bytes: Int = Int (sizeBytes)
         var copy_format = Int64 (format.rawValue)
@@ -2835,7 +2835,7 @@ open class RenderingDevice: Object {
     /// 
     public final func uniformSetCreate (uniforms: ObjectCollection<RDUniform>, shader: RID, shaderSet: UInt32)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_shader_set: Int = Int (shaderSet)
         
@@ -2875,7 +2875,7 @@ open class RenderingDevice: Object {
     /// Checks if the `uniformSet` is valid, i.e. is owned.
     public final func uniformSetIsValid (uniformSet: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingDevice.method_uniform_set_is_valid, UnsafeMutableRawPointer (mutating: handle), &_result, &uniformSet.content)
@@ -2916,7 +2916,7 @@ open class RenderingDevice: Object {
     /// 
     public final func bufferUpdate (buffer: RID, offset: UInt32, sizeBytes: UInt32, data: PackedByteArray, postBarrier: RenderingDevice.BarrierMask = [.vertex, .fragment, .compute, .transfer, .raster, .allBarriers])-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_offset: Int = Int (offset)
         var copy_size_bytes: Int = Int (sizeBytes)
@@ -2977,7 +2977,7 @@ open class RenderingDevice: Object {
     /// 
     public final func bufferClear (buffer: RID, offset: UInt32, sizeBytes: UInt32, postBarrier: RenderingDevice.BarrierMask = [.vertex, .fragment, .compute, .transfer, .raster, .allBarriers])-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_offset: Int = Int (offset)
         var copy_size_bytes: Int = Int (sizeBytes)
@@ -3024,7 +3024,7 @@ open class RenderingDevice: Object {
     /// Returns a copy of the data of the specified `buffer`, optionally `offsetBytes` and `sizeBytes` can be set to copy only a portion of the buffer.
     public final func bufferGetData (buffer: RID, offsetBytes: UInt32 = 0, sizeBytes: UInt32 = 0)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         var copy_offset_bytes: Int = Int (offsetBytes)
         var copy_size_bytes: Int = Int (sizeBytes)
@@ -3069,7 +3069,7 @@ open class RenderingDevice: Object {
     /// 
     public final func renderPipelineCreate (shader: RID, framebufferFormat: Int, vertexFormat: Int, primitive: RenderingDevice.RenderPrimitive, rasterizationState: RDPipelineRasterizationState?, multisampleState: RDPipelineMultisampleState?, stencilState: RDPipelineDepthStencilState?, colorBlendState: RDPipelineColorBlendState?, dynamicStateFlags: RenderingDevice.PipelineDynamicStateFlags = [], forRenderPass: UInt32 = 0, specializationConstants: ObjectCollection<RDPipelineSpecializationConstant>)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_framebuffer_format = framebufferFormat
         var copy_vertex_format = vertexFormat
@@ -3145,7 +3145,7 @@ open class RenderingDevice: Object {
     /// Returns `true` if the render pipeline specified by the `renderPipeline` RID is valid, `false` otherwise.
     public final func renderPipelineIsValid (renderPipeline: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingDevice.method_render_pipeline_is_valid, UnsafeMutableRawPointer (mutating: handle), &_result, &renderPipeline.content)
@@ -3180,7 +3180,7 @@ open class RenderingDevice: Object {
     /// 
     public final func computePipelineCreate (shader: RID, specializationConstants: ObjectCollection<RDPipelineSpecializationConstant>)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingDevice.method_compute_pipeline_create, UnsafeMutableRawPointer (mutating: handle), &_result.content, &shader.content, &specializationConstants.array.content)
@@ -3215,7 +3215,7 @@ open class RenderingDevice: Object {
     /// Returns `true` if the compute pipeline specified by the `computePipeline` RID is valid, `false` otherwise.
     public final func computePipelineIsValid (computePipeline: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingDevice.method_compute_pipeline_is_valid, UnsafeMutableRawPointer (mutating: handle), &_result, &computePipeline.content)
@@ -3250,7 +3250,7 @@ open class RenderingDevice: Object {
     /// 
     public final func screenGetWidth (screen: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_screen: Int = Int (screen)
         
@@ -3287,7 +3287,7 @@ open class RenderingDevice: Object {
     /// 
     public final func screenGetHeight (screen: Int32 = 0)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_screen: Int = Int (screen)
         
@@ -3345,7 +3345,7 @@ open class RenderingDevice: Object {
     /// 
     public final func drawListBeginForScreen (_ screen: Int32 = 0, clearColor: Color = Color (r: 0, g: 0, b: 0, a: 1))-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_screen: Int = Int (screen)
         var copy_clear_color = clearColor
@@ -3389,7 +3389,7 @@ open class RenderingDevice: Object {
     /// 
     public final func drawListBegin (framebuffer: RID, initialColorAction: RenderingDevice.InitialAction, finalColorAction: RenderingDevice.FinalAction, initialDepthAction: RenderingDevice.InitialAction, finalDepthAction: RenderingDevice.FinalAction, clearColorValues: PackedColorArray = PackedColorArray(), clearDepth: Double = 1.0, clearStencil: UInt32 = 0, region: Rect2 = Rect2 (x: 0, y: 0, width: 0, height: 0), storageTextures: VariantCollection<RID> = VariantCollection<RID> ())-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_initial_color_action = Int64 (initialColorAction.rawValue)
         var copy_final_color_action = Int64 (finalColorAction.rawValue)
@@ -3462,7 +3462,7 @@ open class RenderingDevice: Object {
     /// Variant of ``drawListBegin(framebuffer:initialColorAction:finalColorAction:initialDepthAction:finalDepthAction:clearColorValues:clearDepth:clearStencil:region:storageTextures:)`` with support for multiple splits. The `splits` parameter determines how many splits are created.
     public final func drawListBeginSplit (framebuffer: RID, splits: UInt32, initialColorAction: RenderingDevice.InitialAction, finalColorAction: RenderingDevice.FinalAction, initialDepthAction: RenderingDevice.InitialAction, finalDepthAction: RenderingDevice.FinalAction, clearColorValues: PackedColorArray = PackedColorArray(), clearDepth: Double = 1.0, clearStencil: UInt32 = 0, region: Rect2 = Rect2 (x: 0, y: 0, width: 0, height: 0), storageTextures: VariantCollection<RID> = VariantCollection<RID> ())-> PackedInt64Array {
         let _result: PackedInt64Array = PackedInt64Array ()
-        #if true
+        #if false
         
         var copy_splits: Int = Int (splits)
         var copy_initial_color_action = Int64 (initialColorAction.rawValue)
@@ -3539,7 +3539,7 @@ open class RenderingDevice: Object {
     
     /// Sets blend constants for the specified `drawList` to `color`. Blend constants are used only if the graphics pipeline is created with .dynamicStateBlendConstants flag set.
     public final func drawListSetBlendConstants (drawList: Int, color: Color) {
-        #if true
+        #if false
         
         var copy_draw_list = drawList
         var copy_color = color
@@ -3576,7 +3576,7 @@ open class RenderingDevice: Object {
     
     /// Binds `renderPipeline` to the specified `drawList`.
     public final func drawListBindRenderPipeline (drawList: Int, renderPipeline: RID) {
-        #if true
+        #if false
         
         var copy_draw_list = drawList
         
@@ -3611,7 +3611,7 @@ open class RenderingDevice: Object {
     
     /// Binds `uniformSet` to the specified `drawList`. A `setIndex` must also be specified, which is an identifier starting from `0` that must match the one expected by the draw list.
     public final func drawListBindUniformSet (drawList: Int, uniformSet: RID, setIndex: UInt32) {
-        #if true
+        #if false
         
         var copy_draw_list = drawList
         var copy_set_index: Int = Int (setIndex)
@@ -3651,7 +3651,7 @@ open class RenderingDevice: Object {
     
     /// Binds `vertexArray` to the specified `drawList`.
     public final func drawListBindVertexArray (drawList: Int, vertexArray: RID) {
-        #if true
+        #if false
         
         var copy_draw_list = drawList
         
@@ -3686,7 +3686,7 @@ open class RenderingDevice: Object {
     
     /// Binds `indexArray` to the specified `drawList`.
     public final func drawListBindIndexArray (drawList: Int, indexArray: RID) {
-        #if true
+        #if false
         
         var copy_draw_list = drawList
         
@@ -3721,7 +3721,7 @@ open class RenderingDevice: Object {
     
     /// Sets the push constant data to `buffer` for the specified `drawList`. The shader determines how this binary data is used. The buffer's size in bytes must also be specified in `sizeBytes` (this can be obtained by calling the ``PackedByteArray/size()`` method on the passed `buffer`).
     public final func drawListSetPushConstant (drawList: Int, buffer: PackedByteArray, sizeBytes: UInt32) {
-        #if true
+        #if false
         
         var copy_draw_list = drawList
         var copy_size_bytes: Int = Int (sizeBytes)
@@ -3761,7 +3761,7 @@ open class RenderingDevice: Object {
     
     /// Submits `drawList` for rendering on the GPU. This is the raster equivalent to ``computeListDispatch(computeList:xGroups:yGroups:zGroups:)``.
     public final func drawListDraw (drawList: Int, useIndices: Bool, instances: UInt32, proceduralVertexCount: UInt32 = 0) {
-        #if true
+        #if false
         
         var copy_draw_list = drawList
         var copy_use_indices = useIndices
@@ -3811,7 +3811,7 @@ open class RenderingDevice: Object {
     /// > Note: The specified `rect` is automatically intersected with the screen's dimensions, which means it cannot exceed the screen's dimensions.
     /// 
     public final func drawListEnableScissor (drawList: Int, rect: Rect2 = Rect2 (x: 0, y: 0, width: 0, height: 0)) {
-        #if true
+        #if false
         
         var copy_draw_list = drawList
         var copy_rect = rect
@@ -3848,7 +3848,7 @@ open class RenderingDevice: Object {
     
     /// Removes and disables the scissor rectangle for the specified `drawList`. See also ``drawListEnableScissor(drawList:rect:)``.
     public final func drawListDisableScissor (drawList: Int) {
-        #if true
+        #if false
         
         var copy_draw_list = drawList
         
@@ -3899,7 +3899,7 @@ open class RenderingDevice: Object {
     /// Switches to the next draw pass, with the number of splits allocated specified in `splits`. The return value is an array containing the ID of each split. For single-split usage, see ``drawListSwitchToNextPass()``.
     public final func drawListSwitchToNextPassSplit (splits: UInt32)-> PackedInt64Array {
         let _result: PackedInt64Array = PackedInt64Array ()
-        #if true
+        #if false
         
         var copy_splits: Int = Int (splits)
         
@@ -3932,7 +3932,7 @@ open class RenderingDevice: Object {
     
     /// Finishes a list of raster drawing commands created with the `draw_*` methods.
     public final func drawListEnd (postBarrier: RenderingDevice.BarrierMask = [.vertex, .fragment, .compute, .transfer, .raster, .allBarriers]) {
-        #if true
+        #if false
         
         var copy_post_barrier = postBarrier
         
@@ -3970,7 +3970,7 @@ open class RenderingDevice: Object {
     /// 
     public final func computeListBegin (allowDrawOverlap: Bool = false)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_allow_draw_overlap = allowDrawOverlap
         
@@ -4003,7 +4003,7 @@ open class RenderingDevice: Object {
     
     /// Tells the GPU what compute pipeline to use when processing the compute list. If the shader has changed since the last time this function was called, Godot will unbind all descriptor sets and will re-bind them inside ``computeListDispatch(computeList:xGroups:yGroups:zGroups:)``.
     public final func computeListBindComputePipeline (computeList: Int, computePipeline: RID) {
-        #if true
+        #if false
         
         var copy_compute_list = computeList
         
@@ -4038,7 +4038,7 @@ open class RenderingDevice: Object {
     
     /// Sets the push constant data to `buffer` for the specified `computeList`. The shader determines how this binary data is used. The buffer's size in bytes must also be specified in `sizeBytes` (this can be obtained by calling the ``PackedByteArray/size()`` method on the passed `buffer`).
     public final func computeListSetPushConstant (computeList: Int, buffer: PackedByteArray, sizeBytes: UInt32) {
-        #if true
+        #if false
         
         var copy_compute_list = computeList
         var copy_size_bytes: Int = Int (sizeBytes)
@@ -4078,7 +4078,7 @@ open class RenderingDevice: Object {
     
     /// Binds the `uniformSet` to this `computeList`. Godot ensures that all textures in the uniform set have the correct Vulkan access masks. If Godot had to change access masks of textures, it will raise a Vulkan image memory barrier.
     public final func computeListBindUniformSet (computeList: Int, uniformSet: RID, setIndex: UInt32) {
-        #if true
+        #if false
         
         var copy_compute_list = computeList
         var copy_set_index: Int = Int (setIndex)
@@ -4118,7 +4118,7 @@ open class RenderingDevice: Object {
     
     /// Submits the compute list for processing on the GPU. This is the compute equivalent to ``drawListDraw(drawList:useIndices:instances:proceduralVertexCount:)``.
     public final func computeListDispatch (computeList: Int, xGroups: UInt32, yGroups: UInt32, zGroups: UInt32) {
-        #if true
+        #if false
         
         var copy_compute_list = computeList
         var copy_x_groups: Int = Int (xGroups)
@@ -4165,7 +4165,7 @@ open class RenderingDevice: Object {
     
     /// Raises a Vulkan compute barrier in the specified `computeList`.
     public final func computeListAddBarrier (computeList: Int) {
-        #if true
+        #if false
         
         var copy_compute_list = computeList
         
@@ -4197,7 +4197,7 @@ open class RenderingDevice: Object {
     
     /// Finishes a list of compute commands created with the `compute_*` methods.
     public final func computeListEnd (postBarrier: RenderingDevice.BarrierMask = [.vertex, .fragment, .compute, .transfer, .raster, .allBarriers]) {
-        #if true
+        #if false
         
         var copy_post_barrier = postBarrier
         
@@ -4229,7 +4229,7 @@ open class RenderingDevice: Object {
     
     /// Tries to free an object in the RenderingDevice. To avoid memory leaks, this should be called after using an object as memory management does not occur automatically when using RenderingDevice directly.
     public final func freeRid (_ rid: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RenderingDevice.method_free_rid, UnsafeMutableRawPointer (mutating: handle), nil, &rid.content)
@@ -4259,7 +4259,7 @@ open class RenderingDevice: Object {
     
     /// Creates a timestamp marker with the specified `name`. This is used for performance reporting with the ``getCapturedTimestampCpuTime(index:)``, ``getCapturedTimestampGpuTime(index:)`` and ``getCapturedTimestampName(index:)`` methods.
     public final func captureTimestamp (name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -4328,7 +4328,7 @@ open class RenderingDevice: Object {
     /// Returns the timestamp in GPU time for the rendering step specified by `index` (in microseconds since the engine started). See also ``getCapturedTimestampCpuTime(index:)`` and ``captureTimestamp(name:)``.
     public final func getCapturedTimestampGpuTime (index: UInt32)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -4362,7 +4362,7 @@ open class RenderingDevice: Object {
     /// Returns the timestamp in CPU time for the rendering step specified by `index` (in microseconds since the engine started). See also ``getCapturedTimestampGpuTime(index:)`` and ``captureTimestamp(name:)``.
     public final func getCapturedTimestampCpuTime (index: UInt32)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -4396,7 +4396,7 @@ open class RenderingDevice: Object {
     /// Returns the timestamp's name for the rendering step specified by `index`. See also ``captureTimestamp(name:)``.
     public final func getCapturedTimestampName (index: UInt32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -4433,7 +4433,7 @@ open class RenderingDevice: Object {
     /// 
     public final func limitGet (limit: RenderingDevice.Limit)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         var copy_limit = Int64 (limit.rawValue)
         
@@ -4524,7 +4524,7 @@ open class RenderingDevice: Object {
     
     /// Puts a memory barrier in place. This is used for synchronization to avoid data races. See also ``fullBarrier()``, which may be useful for debugging.
     public final func barrier (from: RenderingDevice.BarrierMask = [.vertex, .fragment, .compute, .transfer, .raster, .allBarriers], to: RenderingDevice.BarrierMask = [.vertex, .fragment, .compute, .transfer, .raster, .allBarriers]) {
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -4600,7 +4600,7 @@ open class RenderingDevice: Object {
     /// > Note: Resource names are only set when the engine runs in verbose mode (``OS/isStdoutVerbose()`` = `true`), or when using an engine build compiled with the `dev_mode=yes` SCons option. The graphics driver must also support the `VK_EXT_DEBUG_UTILS_EXTENSION_NAME` Vulkan extension for named resources to work.
     /// 
     public final func setResourceName (id: RID, name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -4638,7 +4638,7 @@ open class RenderingDevice: Object {
     /// The `VK_EXT_DEBUG_UTILS_EXTENSION_NAME` Vulkan extension must be available and enabled for command buffer debug label region to work. See also ``drawCommandInsertLabel(name:color:)`` and ``drawCommandEndLabel()``.
     /// 
     public final func drawCommandBeginLabel (name: String, color: Color) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_color = color
@@ -4675,7 +4675,7 @@ open class RenderingDevice: Object {
     
     /// Inserts a command buffer debug label region in the current command buffer. Unlike ``drawCommandBeginLabel(name:color:)``, this region should not be ended with a ``drawCommandEndLabel()`` call.
     public final func drawCommandInsertLabel (name: String, color: Color) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_color = color
@@ -4783,7 +4783,7 @@ open class RenderingDevice: Object {
     /// Returns the memory usage in bytes corresponding to the given `type`. When using Vulkan, these statistics are calculated by [url=https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator]Vulkan Memory Allocator[/url].
     public final func getMemoryUsage (type: RenderingDevice.MemoryType)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         
@@ -4817,7 +4817,7 @@ open class RenderingDevice: Object {
     /// Returns the unique identifier of the driver `resource` for the specified `rid`. Some driver resource types ignore the specified `rid` (see ``RenderingDevice/DriverResource`` descriptions). `index` is always ignored but must be specified anyway.
     public final func getDriverResource (_ resource: RenderingDevice.DriverResource, rid: RID, index: UInt)-> UInt {
         var _result: UInt = 0
-        #if true
+        #if false
         
         var copy_resource = Int64 (resource.rawValue)
         var copy_index = index

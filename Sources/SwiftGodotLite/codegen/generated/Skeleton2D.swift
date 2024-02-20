@@ -51,7 +51,7 @@ open class Skeleton2D: Node2D {
     /// Returns a ``Bone2D`` from the node hierarchy parented by Skeleton2D. The object to return is identified by the parameter `idx`. Bones are indexed by descending the node hierarchy from top to bottom, adding the children of each branch before moving to the next sibling.
     public final func getBone (idx: Int32)-> Bone2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -102,7 +102,7 @@ open class Skeleton2D: Node2D {
     
     /// Sets the ``SkeletonModificationStack2D`` attached to this skeleton.
     public final func setModificationStack (_ modificationStack: SkeletonModificationStack2D?) {
-        #if true
+        #if false
         
         var copy_modification_stack_handle = modificationStack?.handle
         
@@ -151,7 +151,7 @@ open class Skeleton2D: Node2D {
     
     /// Executes all the modifications on the ``SkeletonModificationStack2D``, if the Skeleton2D has one assigned.
     public final func executeModifications (delta: Double, executionMode: Int32) {
-        #if true
+        #if false
         
         var copy_delta = delta
         var copy_execution_mode: Int = Int (executionMode)
@@ -193,7 +193,7 @@ open class Skeleton2D: Node2D {
     /// > Note: The pose transform needs to be a local transform relative to the ``Bone2D`` node at `boneIdx`!
     /// 
     public final func setBoneLocalPoseOverride (boneIdx: Int32, overridePose: Transform2D, strength: Double, persistent: Bool) {
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         var copy_override_pose = overridePose
@@ -241,7 +241,7 @@ open class Skeleton2D: Node2D {
     /// Returns the local pose override transform for `boneIdx`.
     public final func getBoneLocalPoseOverride (boneIdx: Int32)-> Transform2D {
         var _result: Transform2D = Transform2D ()
-        #if true
+        #if false
         
         var copy_bone_idx: Int = Int (boneIdx)
         

@@ -116,7 +116,7 @@ open class AnimationNodeBlendSpace1D: AnimationRootNode {
     
     /// Adds a new point that represents a `node` on the virtual axis at a given position set by `pos`. You can insert it at a specific index using the `atIndex` argument. If you use the default value for `atIndex`, the point is inserted at the end of the blend points array.
     public final func addBlendPoint (node: AnimationRootNode?, pos: Double, atIndex: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_at_index: Int = Int (atIndex)
@@ -157,7 +157,7 @@ open class AnimationNodeBlendSpace1D: AnimationRootNode {
     
     /// Updates the position of the point at index `point` on the blend axis.
     public final func setBlendPointPosition (point: Int32, pos: Double) {
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         var copy_pos = pos
@@ -195,7 +195,7 @@ open class AnimationNodeBlendSpace1D: AnimationRootNode {
     /// Returns the position of the point at index `point`.
     public final func getBlendPointPosition (point: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         
@@ -228,7 +228,7 @@ open class AnimationNodeBlendSpace1D: AnimationRootNode {
     
     /// Changes the ``AnimationNode`` referenced by the point at index `point`.
     public final func setBlendPointNode (point: Int32, node: AnimationRootNode?) {
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         var copy_node_handle = node?.handle
@@ -265,7 +265,7 @@ open class AnimationNodeBlendSpace1D: AnimationRootNode {
     /// Returns the ``AnimationNode`` referenced by the point at index `point`.
     public final func getBlendPointNode (point: Int32)-> AnimationRootNode? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         
@@ -298,7 +298,7 @@ open class AnimationNodeBlendSpace1D: AnimationRootNode {
     
     /// Removes the point at index `point` from the blend axis.
     public final func removeBlendPoint (_ point: Int32) {
-        #if true
+        #if false
         
         var copy_point: Int = Int (point)
         
@@ -348,7 +348,7 @@ open class AnimationNodeBlendSpace1D: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_min_space (_ minSpace: Double) {
-        #if true
+        #if false
         
         var copy_min_space = minSpace
         
@@ -398,7 +398,7 @@ open class AnimationNodeBlendSpace1D: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_max_space (_ maxSpace: Double) {
-        #if true
+        #if false
         
         var copy_max_space = maxSpace
         
@@ -448,7 +448,7 @@ open class AnimationNodeBlendSpace1D: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_snap (_ snap: Double) {
-        #if true
+        #if false
         
         var copy_snap = snap
         
@@ -498,7 +498,7 @@ open class AnimationNodeBlendSpace1D: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_value_label (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -548,7 +548,7 @@ open class AnimationNodeBlendSpace1D: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_blend_mode (_ mode: AnimationNodeBlendSpace1D.BlendMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -598,7 +598,7 @@ open class AnimationNodeBlendSpace1D: AnimationRootNode {
     
     @inline(__always)
     fileprivate final func set_use_sync (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

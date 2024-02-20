@@ -110,7 +110,7 @@ open class CameraFeed: RefCounted {
     
     @inline(__always)
     fileprivate final func set_active (_ active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         
@@ -196,7 +196,7 @@ open class CameraFeed: RefCounted {
     
     @inline(__always)
     fileprivate final func set_transform (_ transform: Transform2D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         

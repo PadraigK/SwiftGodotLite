@@ -135,7 +135,7 @@ open class RDTextureFormat: RefCounted {
     
     @inline(__always)
     fileprivate final func set_format (_ pMember: RenderingDevice.DataFormat) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -185,7 +185,7 @@ open class RDTextureFormat: RefCounted {
     
     @inline(__always)
     fileprivate final func set_width (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         
@@ -235,7 +235,7 @@ open class RDTextureFormat: RefCounted {
     
     @inline(__always)
     fileprivate final func set_height (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         
@@ -285,7 +285,7 @@ open class RDTextureFormat: RefCounted {
     
     @inline(__always)
     fileprivate final func set_depth (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         
@@ -335,7 +335,7 @@ open class RDTextureFormat: RefCounted {
     
     @inline(__always)
     fileprivate final func set_array_layers (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         
@@ -385,7 +385,7 @@ open class RDTextureFormat: RefCounted {
     
     @inline(__always)
     fileprivate final func set_mipmaps (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         
@@ -435,7 +435,7 @@ open class RDTextureFormat: RefCounted {
     
     @inline(__always)
     fileprivate final func set_texture_type (_ pMember: RenderingDevice.TextureType) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -485,7 +485,7 @@ open class RDTextureFormat: RefCounted {
     
     @inline(__always)
     fileprivate final func set_samples (_ pMember: RenderingDevice.TextureSamples) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -535,7 +535,7 @@ open class RDTextureFormat: RefCounted {
     
     @inline(__always)
     fileprivate final func set_usage_bits (_ pMember: RenderingDevice.TextureUsageBits) {
-        #if true
+        #if false
         
         var copy_p_member = pMember
         
@@ -585,7 +585,7 @@ open class RDTextureFormat: RefCounted {
     
     /// 
     public final func addShareableFormat (_ format: RenderingDevice.DataFormat) {
-        #if true
+        #if false
         
         var copy_format = Int64 (format.rawValue)
         
@@ -617,7 +617,7 @@ open class RDTextureFormat: RefCounted {
     
     /// 
     public final func removeShareableFormat (_ format: RenderingDevice.DataFormat) {
-        #if true
+        #if false
         
         var copy_format = Int64 (format.rawValue)
         

@@ -60,7 +60,7 @@ open class VisualShaderNodeSwitch: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_op_type (_ type: VisualShaderNodeSwitch.OpType) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         

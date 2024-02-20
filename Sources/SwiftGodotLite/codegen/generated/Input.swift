@@ -152,7 +152,7 @@ open class Input: Object {
     /// 
     public static func isKeyPressed (keycode: Key)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_keycode = Int64 (keycode.rawValue)
         
@@ -191,7 +191,7 @@ open class Input: Object {
     /// 
     public static func isPhysicalKeyPressed (keycode: Key)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_keycode = Int64 (keycode.rawValue)
         
@@ -225,7 +225,7 @@ open class Input: Object {
     /// Returns `true` if you are pressing the key with the `keycode` printed on it. You can pass a ``Key`` constant or any Unicode character code.
     public static func isKeyLabelPressed (keycode: Key)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_keycode = Int64 (keycode.rawValue)
         
@@ -259,7 +259,7 @@ open class Input: Object {
     /// Returns `true` if you are pressing the mouse button specified with ``MouseButton``.
     public static func isMouseButtonPressed (button: MouseButton)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_button = Int64 (button.rawValue)
         
@@ -293,7 +293,7 @@ open class Input: Object {
     /// Returns `true` if you are pressing the joypad button (see ``JoyButton``).
     public static func isJoyButtonPressed (device: Int32, button: JoyButton)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_device: Int = Int (device)
         var copy_button = Int64 (button.rawValue)
@@ -337,7 +337,7 @@ open class Input: Object {
     /// 
     public static func isActionPressed (action: StringName, exactMatch: Bool = false)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_exact_match = exactMatch
         
@@ -385,7 +385,7 @@ open class Input: Object {
     /// 
     public static func isActionJustPressed (action: StringName, exactMatch: Bool = false)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_exact_match = exactMatch
         
@@ -429,7 +429,7 @@ open class Input: Object {
     /// 
     public static func isActionJustReleased (action: StringName, exactMatch: Bool = false)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_exact_match = exactMatch
         
@@ -469,7 +469,7 @@ open class Input: Object {
     /// 
     public static func getActionStrength (action: StringName, exactMatch: Bool = false)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_exact_match = exactMatch
         
@@ -509,7 +509,7 @@ open class Input: Object {
     /// 
     public static func getActionRawStrength (action: StringName, exactMatch: Bool = false)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_exact_match = exactMatch
         
@@ -549,7 +549,7 @@ open class Input: Object {
     /// 
     public static func getAxis (negativeAction: StringName, positiveAction: StringName)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Input.method_get_axis, UnsafeMutableRawPointer (mutating: shared.handle), &_result, &negativeAction.content, &positiveAction.content)
@@ -589,7 +589,7 @@ open class Input: Object {
     /// 
     public static func getVector (negativeX: StringName, positiveX: StringName, negativeY: StringName, positiveY: StringName, deadzone: Double = -1.0)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_deadzone = deadzone
         
@@ -634,7 +634,7 @@ open class Input: Object {
     
     /// Adds a new mapping entry (in SDL2 format) to the mapping database. Optionally update already connected devices.
     public static func addJoyMapping (_ mapping: String, updateExisting: Bool = false) {
-        #if true
+        #if false
         
         let gstr_mapping = GString (mapping)
         var copy_update_existing = updateExisting
@@ -671,7 +671,7 @@ open class Input: Object {
     
     /// Removes all mappings from the internal database that match the given GUID.
     public static func removeJoyMapping (guid: String) {
-        #if true
+        #if false
         
         let gstr_guid = GString (guid)
         
@@ -704,7 +704,7 @@ open class Input: Object {
     /// Returns `true` if the system knows the specified device. This means that it sets all button and axis indices. Unknown joypads are not expected to match these constants, but you can still retrieve events from them.
     public static func isJoyKnown (device: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_device: Int = Int (device)
         
@@ -738,7 +738,7 @@ open class Input: Object {
     /// Returns the current value of the joypad axis at given index (see ``JoyAxis``).
     public static func getJoyAxis (device: Int32, axis: JoyAxis)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_device: Int = Int (device)
         var copy_axis = Int64 (axis.rawValue)
@@ -777,7 +777,7 @@ open class Input: Object {
     /// Returns the name of the joypad at the specified device index, e.g. `PS4 Controller`. Godot uses the [url=https://github.com/gabomdq/SDL_GameControllerDB]SDL2 game controller database[/url] to determine gamepad names.
     public static func getJoyName (device: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_device: Int = Int (device)
         
@@ -811,7 +811,7 @@ open class Input: Object {
     /// Returns a SDL2-compatible device GUID on platforms that use gamepad remapping, e.g. `030000004c050000c405000000010000`. Returns `"Default Gamepad"` otherwise. Godot uses the [url=https://github.com/gabomdq/SDL_GameControllerDB]SDL2 game controller database[/url] to determine gamepad names and mappings based on this GUID.
     public static func getJoyGuid (device: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_device: Int = Int (device)
         
@@ -860,7 +860,7 @@ open class Input: Object {
     /// 
     public static func getJoyInfo (device: Int32)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_device: Int = Int (device)
         
@@ -897,7 +897,7 @@ open class Input: Object {
     /// 
     public static func shouldIgnoreDevice (vendorId: Int32, productId: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_vendor_id: Int = Int (vendorId)
         var copy_product_id: Int = Int (productId)
@@ -954,7 +954,7 @@ open class Input: Object {
     /// Returns the strength of the joypad vibration: x is the strength of the weak motor, and y is the strength of the strong motor.
     public static func getJoyVibrationStrength (device: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_device: Int = Int (device)
         
@@ -988,7 +988,7 @@ open class Input: Object {
     /// Returns the duration of the current vibration effect in seconds.
     public static func getJoyVibrationDuration (device: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_device: Int = Int (device)
         
@@ -1024,7 +1024,7 @@ open class Input: Object {
     /// > Note: Not every hardware is compatible with long effect durations; it is recommended to restart an effect if it has to be played for more than a few seconds.
     /// 
     public static func startJoyVibration (device: Int32, weakMagnitude: Double, strongMagnitude: Double, duration: Double = 0) {
-        #if true
+        #if false
         
         var copy_device: Int = Int (device)
         var copy_weak_magnitude = weakMagnitude
@@ -1071,7 +1071,7 @@ open class Input: Object {
     
     /// Stops the vibration of the joypad started with ``startJoyVibration(device:weakMagnitude:strongMagnitude:duration:)``.
     public static func stopJoyVibration (device: Int32) {
-        #if true
+        #if false
         
         var copy_device: Int = Int (device)
         
@@ -1112,7 +1112,7 @@ open class Input: Object {
     /// > Note: Some web browsers such as Safari and Firefox for Android do not support ``vibrateHandheld(durationMs:)``.
     /// 
     public static func vibrateHandheld (durationMs: Int32 = 500) {
-        #if true
+        #if false
         
         var copy_duration_ms: Int = Int (durationMs)
         
@@ -1233,7 +1233,7 @@ open class Input: Object {
     /// > Note: This value can be immediately overwritten by the hardware sensor value on Android and iOS.
     /// 
     public static func setGravity (value: Vector3) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -1268,7 +1268,7 @@ open class Input: Object {
     /// > Note: This value can be immediately overwritten by the hardware sensor value on Android and iOS.
     /// 
     public static func setAccelerometer (value: Vector3) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -1303,7 +1303,7 @@ open class Input: Object {
     /// > Note: This value can be immediately overwritten by the hardware sensor value on Android and iOS.
     /// 
     public static func setMagnetometer (value: Vector3) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -1338,7 +1338,7 @@ open class Input: Object {
     /// > Note: This value can be immediately overwritten by the hardware sensor value on Android and iOS.
     /// 
     public static func setGyroscope (value: Vector3) {
-        #if true
+        #if false
         
         var copy_value = value
         
@@ -1406,7 +1406,7 @@ open class Input: Object {
     
     @inline(__always)
     fileprivate static func set_mouse_mode (_ mode: Input.MouseMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1461,7 +1461,7 @@ open class Input: Object {
     /// > Note: ``warpMouse(position:)`` is only supported on Windows, macOS and Linux. It has no effect on Android, iOS and Web.
     /// 
     public static func warpMouse (position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -1498,7 +1498,7 @@ open class Input: Object {
     /// > Note: This method will not cause any ``Node/_input(event:)`` calls. It is intended to be used with ``isActionPressed(action:exactMatch:)`` and ``isActionJustPressed(action:exactMatch:)``. If you want to simulate `_input`, use ``parseInputEvent(_:)`` instead.
     /// 
     public static func actionPress (action: StringName, strength: Double = 1.0) {
-        #if true
+        #if false
         
         var copy_strength = strength
         
@@ -1533,7 +1533,7 @@ open class Input: Object {
     
     /// If the specified action is already pressed, this will release it.
     public static func actionRelease (action: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Input.method_action_release, UnsafeMutableRawPointer (mutating: shared.handle), nil, &action.content)
@@ -1568,7 +1568,7 @@ open class Input: Object {
     /// > Note: This method generates an ``InputEventMouseMotion`` to update cursor immediately.
     /// 
     public static func setDefaultCursorShape (_ shape: Input.CursorShape = .arrow) {
-        #if true
+        #if false
         
         var copy_shape = Int64 (shape.rawValue)
         
@@ -1629,7 +1629,7 @@ open class Input: Object {
     /// > Note: On the web platform, the maximum allowed cursor image size is 128×128. Cursor images larger than 32×32 will also only be displayed if the mouse cursor image is entirely located within the page for [url=https://chromestatus.com/feature/5825971391299584]security reasons[/url].
     /// 
     public static func setCustomMouseCursor (image: Resource?, shape: Input.CursorShape = .arrow, hotspot: Vector2 = Vector2 (x: 0, y: 0)) {
-        #if true
+        #if false
         
         var copy_shape = Int64 (shape.rawValue)
         var copy_hotspot = hotspot
@@ -1673,7 +1673,7 @@ open class Input: Object {
     /// **Example:**
     /// 
     public static func parseInputEvent (_ event: InputEvent?) {
-        #if true
+        #if false
         
         var copy_event_handle = event?.handle
         
@@ -1704,7 +1704,7 @@ open class Input: Object {
     
     @inline(__always)
     fileprivate static func set_use_accumulated_input (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

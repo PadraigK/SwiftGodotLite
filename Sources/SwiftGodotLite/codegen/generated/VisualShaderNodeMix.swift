@@ -58,7 +58,7 @@ open class VisualShaderNodeMix: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_op_type (_ opType: VisualShaderNodeMix.OpType) {
-        #if true
+        #if false
         
         var copy_op_type = Int64 (opType.rawValue)
         

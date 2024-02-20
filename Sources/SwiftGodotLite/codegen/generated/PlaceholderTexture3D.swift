@@ -46,7 +46,7 @@ open class PlaceholderTexture3D: Texture3D {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector3i) {
-        #if true
+        #if false
         
         var copy_size = size
         

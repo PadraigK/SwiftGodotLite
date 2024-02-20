@@ -761,7 +761,7 @@ open class PhysicsServer2DExtension: PhysicsServer2D {
     /// 
     public final func bodyTestMotionIsExcludingBody (_ body: RID)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsServer2DExtension.method_body_test_motion_is_excluding_body, UnsafeMutableRawPointer (mutating: handle), &_result, &body.content)
@@ -793,7 +793,7 @@ open class PhysicsServer2DExtension: PhysicsServer2D {
     /// 
     public final func bodyTestMotionIsExcludingObject (_ object: UInt)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_object = object
         

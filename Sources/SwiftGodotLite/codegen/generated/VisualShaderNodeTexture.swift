@@ -95,7 +95,7 @@ open class VisualShaderNodeTexture: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_source (_ value: VisualShaderNodeTexture.Source) {
-        #if true
+        #if false
         
         var copy_value = Int64 (value.rawValue)
         
@@ -145,7 +145,7 @@ open class VisualShaderNodeTexture: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_texture (_ value: Texture2D?) {
-        #if true
+        #if false
         
         var copy_value_handle = value?.handle
         
@@ -194,7 +194,7 @@ open class VisualShaderNodeTexture: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_texture_type (_ value: VisualShaderNodeTexture.TextureType) {
-        #if true
+        #if false
         
         var copy_value = Int64 (value.rawValue)
         

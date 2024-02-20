@@ -79,7 +79,7 @@ open class OptionButton: Button {
     
     /// Adds an item, with text `label` and (optionally) `id`. If no `id` is passed, the item index will be used as the item's ID. New items are appended at the end.
     public final func addItem (label: String, id: Int32 = -1) {
-        #if true
+        #if false
         
         let gstr_label = GString (label)
         var copy_id: Int = Int (id)
@@ -116,7 +116,7 @@ open class OptionButton: Button {
     
     /// Adds an item, with a `texture` icon, text `label` and (optionally) `id`. If no `id` is passed, the item index will be used as the item's ID. New items are appended at the end.
     public final func addIconItem (texture: Texture2D?, label: String, id: Int32 = -1) {
-        #if true
+        #if false
         
         let gstr_label = GString (label)
         var copy_id: Int = Int (id)
@@ -157,7 +157,7 @@ open class OptionButton: Button {
     
     /// Sets the text of the item at index `idx`.
     public final func setItemText (idx: Int32, text: String) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         let gstr_text = GString (text)
@@ -194,7 +194,7 @@ open class OptionButton: Button {
     
     /// Sets the icon of the item at index `idx`.
     public final func setItemIcon (idx: Int32, texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_texture_handle = texture?.handle
@@ -233,7 +233,7 @@ open class OptionButton: Button {
     /// Disabled items are drawn differently in the dropdown and are not selectable by the user. If the current selected item is set as disabled, it will remain selected.
     /// 
     public final func setItemDisabled (idx: Int32, disabled: Bool) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_disabled = disabled
@@ -270,7 +270,7 @@ open class OptionButton: Button {
     
     /// Sets the ID of the item at index `idx`.
     public final func setItemId (idx: Int32, id: Int32) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_id: Int = Int (id)
@@ -307,7 +307,7 @@ open class OptionButton: Button {
     
     /// Sets the metadata of an item. Metadata may be of any type and can be used to store extra information about an item, such as an external string ID.
     public final func setItemMetadata (idx: Int32, metadata: Variant) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -342,7 +342,7 @@ open class OptionButton: Button {
     
     /// Sets the tooltip of the item at index `idx`.
     public final func setItemTooltip (idx: Int32, tooltip: String) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         let gstr_tooltip = GString (tooltip)
@@ -380,7 +380,7 @@ open class OptionButton: Button {
     /// Returns the text of the item at index `idx`.
     public final func getItemText (idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -414,7 +414,7 @@ open class OptionButton: Button {
     /// Returns the icon of the item at index `idx`.
     public final func getItemIcon (idx: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -448,7 +448,7 @@ open class OptionButton: Button {
     /// Returns the ID of the item at index `idx`.
     public final func getItemId (idx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -482,7 +482,7 @@ open class OptionButton: Button {
     /// Returns the index of the item with the given `id`.
     public final func getItemIndex (id: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -516,7 +516,7 @@ open class OptionButton: Button {
     /// Retrieves the metadata of an item. Metadata may be any type and can be used to store extra information about an item, such as an external string ID.
     public final func getItemMetadata (idx: Int32)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -550,7 +550,7 @@ open class OptionButton: Button {
     /// Returns the tooltip of the item at index `idx`.
     public final func getItemTooltip (idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -584,7 +584,7 @@ open class OptionButton: Button {
     /// Returns `true` if the item at index `idx` is disabled.
     public final func isItemDisabled (idx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -618,7 +618,7 @@ open class OptionButton: Button {
     /// Returns `true` if the item at index `idx` is marked as a separator.
     public final func isItemSeparator (idx: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -651,7 +651,7 @@ open class OptionButton: Button {
     
     /// Adds a separator to the list of items. Separators help to group items, and can optionally be given a `text` header. A separator also gets an index assigned, and is appended at the end of the item list.
     public final func addSeparator (text: String = "") {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -702,7 +702,7 @@ open class OptionButton: Button {
     /// Passing `-1` as the index deselects any currently selected item.
     /// 
     public final func select (idx: Int32) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -787,7 +787,7 @@ open class OptionButton: Button {
     
     /// Removes the item at index `idx`.
     public final func removeItem (idx: Int32) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -856,7 +856,7 @@ open class OptionButton: Button {
     
     @inline(__always)
     fileprivate final func set_item_count (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -928,7 +928,7 @@ open class OptionButton: Button {
     /// 
     public final func getSelectableItem (fromLast: Bool = false)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_from_last = fromLast
         
@@ -961,7 +961,7 @@ open class OptionButton: Button {
     
     @inline(__always)
     fileprivate final func set_fit_to_longest_item (_ fit: Bool) {
-        #if true
+        #if false
         
         var copy_fit = fit
         
@@ -1011,7 +1011,7 @@ open class OptionButton: Button {
     
     @inline(__always)
     fileprivate final func set_allow_reselect (_ allow: Bool) {
-        #if true
+        #if false
         
         var copy_allow = allow
         
@@ -1061,7 +1061,7 @@ open class OptionButton: Button {
     
     /// If `true`, shortcuts are disabled and cannot be used to trigger the button.
     public final func setDisableShortcuts (disabled: Bool) {
-        #if true
+        #if false
         
         var copy_disabled = disabled
         

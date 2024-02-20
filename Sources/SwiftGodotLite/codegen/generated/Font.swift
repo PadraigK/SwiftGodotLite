@@ -42,7 +42,7 @@ open class Font: Resource {
     
     @inline(__always)
     fileprivate final func set_fallbacks (_ fallbacks: ObjectCollection<Font>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Font.method_set_fallbacks, UnsafeMutableRawPointer (mutating: handle), nil, &fallbacks.array.content)
@@ -91,7 +91,7 @@ open class Font: Resource {
     /// Returns ``TextServer`` RID of the font cache for specific variation.
     public final func findVariation (variationCoordinates: GDictionary, faceIndex: Int32 = 0, strength: Double = 0.0, transform: Transform2D = Transform2D (xAxis: Vector2 (x: 1, y: 0), yAxis: Vector2 (x: 0, y: 1), origin: Vector2 (x: 0, y: 0)), spacingTop: Int32 = 0, spacingBottom: Int32 = 0, spacingSpace: Int32 = 0, spacingGlyph: Int32 = 0)-> RID {
         let _result: RID = RID ()
-        #if true
+        #if false
         
         var copy_face_index: Int = Int (faceIndex)
         var copy_strength = strength
@@ -179,7 +179,7 @@ open class Font: Resource {
     /// 
     public final func getHeight (fontSize: Int32 = 16)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_font_size: Int = Int (fontSize)
         
@@ -216,7 +216,7 @@ open class Font: Resource {
     /// 
     public final func getAscent (fontSize: Int32 = 16)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_font_size: Int = Int (fontSize)
         
@@ -253,7 +253,7 @@ open class Font: Resource {
     /// 
     public final func getDescent (fontSize: Int32 = 16)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_font_size: Int = Int (fontSize)
         
@@ -290,7 +290,7 @@ open class Font: Resource {
     /// 
     public final func getUnderlinePosition (fontSize: Int32 = 16)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_font_size: Int = Int (fontSize)
         
@@ -327,7 +327,7 @@ open class Font: Resource {
     /// 
     public final func getUnderlineThickness (fontSize: Int32 = 16)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_font_size: Int = Int (fontSize)
         
@@ -469,7 +469,7 @@ open class Font: Resource {
     /// Returns the spacing for the given `type` (see ``TextServer.SpacingType``).
     public final func getSpacing (_ spacing: TextServer.SpacingType)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_spacing = Int64 (spacing.rawValue)
         
@@ -520,7 +520,7 @@ open class Font: Resource {
     
     /// Sets LRU cache capacity for `draw_*` methods.
     public final func setCacheCapacity (singleLine: Int32, multiLine: Int32) {
-        #if true
+        #if false
         
         var copy_single_line: Int = Int (singleLine)
         var copy_multi_line: Int = Int (multiLine)
@@ -565,7 +565,7 @@ open class Font: Resource {
     /// 
     public final func getStringSize (text: String, alignment: HorizontalAlignment = .left, width: Double = -1, fontSize: Int32 = 16, justificationFlags: TextServer.JustificationFlag = [.kashida, .wordBound], direction: TextServer.Direction = .auto, orientation: TextServer.Orientation = .horizontal)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         var copy_alignment = Int64 (alignment.rawValue)
@@ -632,7 +632,7 @@ open class Font: Resource {
     /// 
     public final func getMultilineStringSize (text: String, alignment: HorizontalAlignment = .left, width: Double = -1, fontSize: Int32 = 16, maxLines: Int32 = -1, brkFlags: TextServer.LineBreakFlag = [.mandatory, .wordBound], justificationFlags: TextServer.JustificationFlag = [.kashida, .wordBound], direction: TextServer.Direction = .auto, orientation: TextServer.Orientation = .horizontal)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         var copy_alignment = Int64 (alignment.rawValue)
@@ -708,7 +708,7 @@ open class Font: Resource {
     /// See also ``CanvasItem/drawString(font:pos:text:alignment:width:fontSize:modulate:justificationFlags:direction:orientation:)``.
     /// 
     public final func drawString (canvasItem: RID, pos: Vector2, text: String, alignment: HorizontalAlignment = .left, width: Double = -1, fontSize: Int32 = 16, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), justificationFlags: TextServer.JustificationFlag = [.kashida, .wordBound], direction: TextServer.Direction = .auto, orientation: TextServer.Orientation = .horizontal) {
-        #if true
+        #if false
         
         var copy_pos = pos
         let gstr_text = GString (text)
@@ -786,7 +786,7 @@ open class Font: Resource {
     /// See also ``CanvasItem/drawMultilineString(font:pos:text:alignment:width:fontSize:maxLines:modulate:brkFlags:justificationFlags:direction:orientation:)``.
     /// 
     public final func drawMultilineString (canvasItem: RID, pos: Vector2, text: String, alignment: HorizontalAlignment = .left, width: Double = -1, fontSize: Int32 = 16, maxLines: Int32 = -1, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), brkFlags: TextServer.LineBreakFlag = [.mandatory, .wordBound], justificationFlags: TextServer.JustificationFlag = [.kashida, .wordBound], direction: TextServer.Direction = .auto, orientation: TextServer.Orientation = .horizontal) {
-        #if true
+        #if false
         
         var copy_pos = pos
         let gstr_text = GString (text)
@@ -874,7 +874,7 @@ open class Font: Resource {
     /// See also ``CanvasItem/drawStringOutline(font:pos:text:alignment:width:fontSize:size:modulate:justificationFlags:direction:orientation:)``.
     /// 
     public final func drawStringOutline (canvasItem: RID, pos: Vector2, text: String, alignment: HorizontalAlignment = .left, width: Double = -1, fontSize: Int32 = 16, size: Int32 = 1, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), justificationFlags: TextServer.JustificationFlag = [.kashida, .wordBound], direction: TextServer.Direction = .auto, orientation: TextServer.Orientation = .horizontal) {
-        #if true
+        #if false
         
         var copy_pos = pos
         let gstr_text = GString (text)
@@ -957,7 +957,7 @@ open class Font: Resource {
     /// See also ``CanvasItem/drawMultilineStringOutline(font:pos:text:alignment:width:fontSize:maxLines:size:modulate:brkFlags:justificationFlags:direction:orientation:)``.
     /// 
     public final func drawMultilineStringOutline (canvasItem: RID, pos: Vector2, text: String, alignment: HorizontalAlignment = .left, width: Double = -1, fontSize: Int32 = 16, maxLines: Int32 = -1, size: Int32 = 1, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1), brkFlags: TextServer.LineBreakFlag = [.mandatory, .wordBound], justificationFlags: TextServer.JustificationFlag = [.kashida, .wordBound], direction: TextServer.Direction = .auto, orientation: TextServer.Orientation = .horizontal) {
-        #if true
+        #if false
         
         var copy_pos = pos
         let gstr_text = GString (text)
@@ -1051,7 +1051,7 @@ open class Font: Resource {
     /// 
     public final func getCharSize (char: Int64, fontSize: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_char = char
         var copy_font_size: Int = Int (fontSize)
@@ -1093,7 +1093,7 @@ open class Font: Resource {
     /// 
     public final func drawChar (canvasItem: RID, pos: Vector2, char: Int64, fontSize: Int32, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1))-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_char = char
@@ -1148,7 +1148,7 @@ open class Font: Resource {
     /// 
     public final func drawCharOutline (canvasItem: RID, pos: Vector2, char: Int64, fontSize: Int32, size: Int32 = -1, modulate: Color = Color (r: 1, g: 1, b: 1, a: 1))-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_pos = pos
         var copy_char = char
@@ -1205,7 +1205,7 @@ open class Font: Resource {
     /// Returns `true` if a Unicode `char` is available in the font.
     public final func hasChar (_ char: Int64)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_char = char
         
@@ -1260,7 +1260,7 @@ open class Font: Resource {
     /// Returns `true`, if font supports given language ([url=https://en.wikipedia.org/wiki/ISO_639-1]ISO 639[/url] code).
     public final func isLanguageSupported (language: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_language = GString (language)
         
@@ -1294,7 +1294,7 @@ open class Font: Resource {
     /// Returns `true`, if font supports given script ([url=https://en.wikipedia.org/wiki/ISO_15924]ISO 15924[/url] code).
     public final func isScriptSupported (script: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_script = GString (script)
         

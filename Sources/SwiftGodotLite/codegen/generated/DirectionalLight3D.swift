@@ -153,7 +153,7 @@ open class DirectionalLight3D: Light3D {
     
     @inline(__always)
     fileprivate final func set_shadow_mode (_ mode: DirectionalLight3D.ShadowMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -203,7 +203,7 @@ open class DirectionalLight3D: Light3D {
     
     @inline(__always)
     fileprivate final func set_blend_splits (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -253,7 +253,7 @@ open class DirectionalLight3D: Light3D {
     
     @inline(__always)
     fileprivate final func set_sky_mode (_ mode: DirectionalLight3D.SkyMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

@@ -61,7 +61,7 @@ open class AudioEffectStereoEnhance: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_pan_pullout (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -111,7 +111,7 @@ open class AudioEffectStereoEnhance: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_time_pullout (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         
@@ -161,7 +161,7 @@ open class AudioEffectStereoEnhance: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_surround (_ amount: Double) {
-        #if true
+        #if false
         
         var copy_amount = amount
         

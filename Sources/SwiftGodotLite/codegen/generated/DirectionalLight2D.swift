@@ -54,7 +54,7 @@ open class DirectionalLight2D: Light2D {
     
     @inline(__always)
     fileprivate final func set_max_distance (_ pixels: Double) {
-        #if true
+        #if false
         
         var copy_pixels = pixels
         

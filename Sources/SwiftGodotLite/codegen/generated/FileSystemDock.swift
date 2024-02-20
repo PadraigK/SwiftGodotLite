@@ -39,7 +39,7 @@ open class FileSystemDock: VBoxContainer {
     
     /// Sets the given `path` as currently selected, ensuring that the selected file/directory is visible.
     public final func navigateToPath (_ path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -71,7 +71,7 @@ open class FileSystemDock: VBoxContainer {
     
     /// Registers a new ``EditorResourceTooltipPlugin``.
     public final func addResourceTooltipPlugin (_ plugin: EditorResourceTooltipPlugin?) {
-        #if true
+        #if false
         
         var copy_plugin_handle = plugin?.handle
         
@@ -102,7 +102,7 @@ open class FileSystemDock: VBoxContainer {
     
     /// Removes an ``EditorResourceTooltipPlugin``. Fails if the plugin wasn't previously added.
     public final func removeResourceTooltipPlugin (_ plugin: EditorResourceTooltipPlugin?) {
-        #if true
+        #if false
         
         var copy_plugin_handle = plugin?.handle
         

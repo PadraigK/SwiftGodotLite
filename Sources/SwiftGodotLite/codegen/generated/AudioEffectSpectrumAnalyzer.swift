@@ -80,7 +80,7 @@ open class AudioEffectSpectrumAnalyzer: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_buffer_length (_ seconds: Double) {
-        #if true
+        #if false
         
         var copy_seconds = seconds
         
@@ -130,7 +130,7 @@ open class AudioEffectSpectrumAnalyzer: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_tap_back_pos (_ seconds: Double) {
-        #if true
+        #if false
         
         var copy_seconds = seconds
         
@@ -180,7 +180,7 @@ open class AudioEffectSpectrumAnalyzer: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_fft_size (_ size: AudioEffectSpectrumAnalyzer.FFTSize) {
-        #if true
+        #if false
         
         var copy_size = Int64 (size.rawValue)
         

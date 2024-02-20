@@ -42,7 +42,7 @@ open class VisualShaderNodeExpression: VisualShaderNodeGroupBase {
     
     @inline(__always)
     fileprivate final func set_expression (_ expression: String) {
-        #if true
+        #if false
         
         let gstr_expression = GString (expression)
         

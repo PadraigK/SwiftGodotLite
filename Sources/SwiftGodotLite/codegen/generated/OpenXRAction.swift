@@ -81,7 +81,7 @@ open class OpenXRAction: Resource {
     
     @inline(__always)
     fileprivate final func set_localized_name (_ localizedName: String) {
-        #if true
+        #if false
         
         let gstr_localized_name = GString (localizedName)
         
@@ -131,7 +131,7 @@ open class OpenXRAction: Resource {
     
     @inline(__always)
     fileprivate final func set_action_type (_ actionType: OpenXRAction.ActionType) {
-        #if true
+        #if false
         
         var copy_action_type = Int64 (actionType.rawValue)
         
@@ -181,7 +181,7 @@ open class OpenXRAction: Resource {
     
     @inline(__always)
     fileprivate final func set_toplevel_paths (_ toplevelPaths: PackedStringArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (OpenXRAction.method_set_toplevel_paths, UnsafeMutableRawPointer (mutating: handle), nil, &toplevelPaths.content)

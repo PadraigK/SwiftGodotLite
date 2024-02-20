@@ -35,7 +35,7 @@ open class PhysicsServer3DManager: Object {
     
     /// Register a ``PhysicsServer3D`` implementation by passing a `name` and a ``Callable`` that returns a ``PhysicsServer3D`` object.
     public static func registerServer (name: String, createCallback: Callable) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -70,7 +70,7 @@ open class PhysicsServer3DManager: Object {
     
     /// Set the default ``PhysicsServer3D`` implementation to the one identified by `name`, if `priority` is greater than the priority of the current default implementation.
     public static func setDefaultServer (name: String, priority: Int32) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_priority: Int = Int (priority)

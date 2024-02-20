@@ -90,7 +90,7 @@ open class AudioEffectPhaser: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_range_min_hz (_ hz: Double) {
-        #if true
+        #if false
         
         var copy_hz = hz
         
@@ -140,7 +140,7 @@ open class AudioEffectPhaser: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_range_max_hz (_ hz: Double) {
-        #if true
+        #if false
         
         var copy_hz = hz
         
@@ -190,7 +190,7 @@ open class AudioEffectPhaser: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_rate_hz (_ hz: Double) {
-        #if true
+        #if false
         
         var copy_hz = hz
         
@@ -240,7 +240,7 @@ open class AudioEffectPhaser: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_feedback (_ fbk: Double) {
-        #if true
+        #if false
         
         var copy_fbk = fbk
         
@@ -290,7 +290,7 @@ open class AudioEffectPhaser: AudioEffect {
     
     @inline(__always)
     fileprivate final func set_depth (_ depth: Double) {
-        #if true
+        #if false
         
         var copy_depth = depth
         

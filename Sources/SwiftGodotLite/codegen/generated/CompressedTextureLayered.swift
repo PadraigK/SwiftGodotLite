@@ -41,7 +41,7 @@ open class CompressedTextureLayered: TextureLayered {
     /// Loads the texture at `path`.
     fileprivate final func load (_ path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         

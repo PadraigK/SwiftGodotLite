@@ -103,7 +103,7 @@ open class CollisionPolygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_polygon (_ polygon: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CollisionPolygon2D.method_set_polygon, UnsafeMutableRawPointer (mutating: handle), nil, &polygon.content)
@@ -151,7 +151,7 @@ open class CollisionPolygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_build_mode (_ buildMode: CollisionPolygon2D.BuildMode) {
-        #if true
+        #if false
         
         var copy_build_mode = Int64 (buildMode.rawValue)
         
@@ -201,7 +201,7 @@ open class CollisionPolygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_disabled (_ disabled: Bool) {
-        #if true
+        #if false
         
         var copy_disabled = disabled
         
@@ -251,7 +251,7 @@ open class CollisionPolygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_one_way_collision (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -301,7 +301,7 @@ open class CollisionPolygon2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_one_way_collision_margin (_ margin: Double) {
-        #if true
+        #if false
         
         var copy_margin = margin
         

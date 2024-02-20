@@ -244,7 +244,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_gravity_space_override_mode (_ spaceOverrideMode: Area2D.SpaceOverride) {
-        #if true
+        #if false
         
         var copy_space_override_mode = Int64 (spaceOverrideMode.rawValue)
         
@@ -294,7 +294,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_gravity_is_point (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -344,7 +344,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_gravity_point_unit_distance (_ distanceScale: Double) {
-        #if true
+        #if false
         
         var copy_distance_scale = distanceScale
         
@@ -394,7 +394,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_gravity_point_center (_ center: Vector2) {
-        #if true
+        #if false
         
         var copy_center = center
         
@@ -444,7 +444,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_gravity_direction (_ direction: Vector2) {
-        #if true
+        #if false
         
         var copy_direction = direction
         
@@ -494,7 +494,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_gravity (_ gravity: Double) {
-        #if true
+        #if false
         
         var copy_gravity = gravity
         
@@ -544,7 +544,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_linear_damp_space_override_mode (_ spaceOverrideMode: Area2D.SpaceOverride) {
-        #if true
+        #if false
         
         var copy_space_override_mode = Int64 (spaceOverrideMode.rawValue)
         
@@ -594,7 +594,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_angular_damp_space_override_mode (_ spaceOverrideMode: Area2D.SpaceOverride) {
-        #if true
+        #if false
         
         var copy_space_override_mode = Int64 (spaceOverrideMode.rawValue)
         
@@ -644,7 +644,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_linear_damp (_ linearDamp: Double) {
-        #if true
+        #if false
         
         var copy_linear_damp = linearDamp
         
@@ -694,7 +694,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_angular_damp (_ angularDamp: Double) {
-        #if true
+        #if false
         
         var copy_angular_damp = angularDamp
         
@@ -744,7 +744,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_priority (_ priority: Int32) {
-        #if true
+        #if false
         
         var copy_priority: Int = Int (priority)
         
@@ -794,7 +794,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_monitoring (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -844,7 +844,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_monitorable (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -984,7 +984,7 @@ open class Area2D: CollisionObject2D {
     /// 
     public final func overlapsBody (_ body: Node?)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_body_handle = body?.handle
         
@@ -1020,7 +1020,7 @@ open class Area2D: CollisionObject2D {
     /// 
     public final func overlapsArea (_ area: Node?)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_area_handle = area?.handle
         
@@ -1052,7 +1052,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_audio_bus_name (_ name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Area2D.method_set_audio_bus_name, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -1100,7 +1100,7 @@ open class Area2D: CollisionObject2D {
     
     @inline(__always)
     fileprivate final func set_audio_bus_override (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

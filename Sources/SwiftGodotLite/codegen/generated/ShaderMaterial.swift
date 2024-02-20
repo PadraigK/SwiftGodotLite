@@ -44,7 +44,7 @@ open class ShaderMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_shader (_ shader: Shader?) {
-        #if true
+        #if false
         
         var copy_shader_handle = shader?.handle
         
@@ -98,7 +98,7 @@ open class ShaderMaterial: Material {
     /// > Note: Changes to the shader uniform will be effective on all instances using this ``ShaderMaterial``. To prevent this, use per-instance uniforms with ``GeometryInstance3D/setInstanceShaderParameter(name:value:)`` or duplicate the ``ShaderMaterial`` resource using ``Resource/duplicate(subresources:)``. Per-instance uniforms allow for better shader reuse and are therefore faster, so they should be preferred over duplicating the ``ShaderMaterial`` when possible.
     /// 
     public final func setShaderParameter (param: StringName, value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ShaderMaterial.method_set_shader_parameter, UnsafeMutableRawPointer (mutating: handle), nil, &param.content, &value.content)
@@ -132,7 +132,7 @@ open class ShaderMaterial: Material {
     /// Returns the current value set for this material of a uniform in the shader.
     public final func getShaderParameter (param: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ShaderMaterial.method_get_shader_parameter, UnsafeMutableRawPointer (mutating: handle), &_result.content, &param.content)

@@ -87,7 +87,7 @@ open class PrismMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_left_to_right (_ leftToRight: Double) {
-        #if true
+        #if false
         
         var copy_left_to_right = leftToRight
         
@@ -137,7 +137,7 @@ open class PrismMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -187,7 +187,7 @@ open class PrismMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_subdivide_width (_ segments: Int32) {
-        #if true
+        #if false
         
         var copy_segments: Int = Int (segments)
         
@@ -237,7 +237,7 @@ open class PrismMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_subdivide_height (_ segments: Int32) {
-        #if true
+        #if false
         
         var copy_segments: Int = Int (segments)
         
@@ -287,7 +287,7 @@ open class PrismMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_subdivide_depth (_ segments: Int32) {
-        #if true
+        #if false
         
         var copy_segments: Int = Int (segments)
         

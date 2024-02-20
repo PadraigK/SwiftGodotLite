@@ -213,7 +213,7 @@ open class OpenXRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_display_refresh_rate (_ refreshRate: Double) {
-        #if true
+        #if false
         
         var copy_refresh_rate = refreshRate
         
@@ -263,7 +263,7 @@ open class OpenXRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_render_target_size_multiplier (_ multiplier: Double) {
-        #if true
+        #if false
         
         var copy_multiplier = multiplier
         
@@ -334,7 +334,7 @@ open class OpenXRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_foveation_level (_ foveationLevel: Int32) {
-        #if true
+        #if false
         
         var copy_foveation_level: Int = Int (foveationLevel)
         
@@ -384,7 +384,7 @@ open class OpenXRInterface: XRInterface {
     
     @inline(__always)
     fileprivate final func set_foveation_dynamic (_ foveationDynamic: Bool) {
-        #if true
+        #if false
         
         var copy_foveation_dynamic = foveationDynamic
         
@@ -417,7 +417,7 @@ open class OpenXRInterface: XRInterface {
     /// Returns `true` if the given action set is active.
     public final func isActionSetActive (name: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -450,7 +450,7 @@ open class OpenXRInterface: XRInterface {
     
     /// Sets the given action set as active or inactive.
     public final func setActionSetActive (name: String, active: Bool) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_active = active
@@ -523,7 +523,7 @@ open class OpenXRInterface: XRInterface {
     
     /// If handtracking is enabled and motion range is supported, sets the currently configured motion range for `hand` to `motionRange`.
     public final func setMotionRange (hand: OpenXRInterface.Hand, motionRange: OpenXRInterface.HandMotionRange) {
-        #if true
+        #if false
         
         var copy_hand = Int64 (hand.rawValue)
         var copy_motion_range = Int64 (motionRange.rawValue)
@@ -561,7 +561,7 @@ open class OpenXRInterface: XRInterface {
     /// If handtracking is enabled and motion range is supported, gets the currently configured motion range for `hand`.
     public final func getMotionRange (hand: OpenXRInterface.Hand)-> OpenXRInterface.HandMotionRange {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_hand = Int64 (hand.rawValue)
         
@@ -595,7 +595,7 @@ open class OpenXRInterface: XRInterface {
     /// If handtracking is enabled, returns flags that inform us of the validity of the tracking data.
     public final func getHandJointFlags (hand: OpenXRInterface.Hand, joint: OpenXRInterface.HandJoints)-> OpenXRInterface.HandJointFlags {
         var _result: OpenXRInterface.HandJointFlags = OpenXRInterface.HandJointFlags ()
-        #if true
+        #if false
         
         var copy_hand = Int64 (hand.rawValue)
         var copy_joint = Int64 (joint.rawValue)
@@ -634,7 +634,7 @@ open class OpenXRInterface: XRInterface {
     /// If handtracking is enabled, returns the rotation of a joint (`joint`) of a hand (`hand`) as provided by OpenXR.
     public final func getHandJointRotation (hand: OpenXRInterface.Hand, joint: OpenXRInterface.HandJoints)-> Quaternion {
         var _result: Quaternion = Quaternion ()
-        #if true
+        #if false
         
         var copy_hand = Int64 (hand.rawValue)
         var copy_joint = Int64 (joint.rawValue)
@@ -673,7 +673,7 @@ open class OpenXRInterface: XRInterface {
     /// If handtracking is enabled, returns the position of a joint (`joint`) of a hand (`hand`) as provided by OpenXR. This is relative to ``XROrigin3D`` without worldscale applied!
     public final func getHandJointPosition (hand: OpenXRInterface.Hand, joint: OpenXRInterface.HandJoints)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_hand = Int64 (hand.rawValue)
         var copy_joint = Int64 (joint.rawValue)
@@ -712,7 +712,7 @@ open class OpenXRInterface: XRInterface {
     /// If handtracking is enabled, returns the radius of a joint (`joint`) of a hand (`hand`) as provided by OpenXR. This is without worldscale applied!
     public final func getHandJointRadius (hand: OpenXRInterface.Hand, joint: OpenXRInterface.HandJoints)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_hand = Int64 (hand.rawValue)
         var copy_joint = Int64 (joint.rawValue)
@@ -751,7 +751,7 @@ open class OpenXRInterface: XRInterface {
     /// If handtracking is enabled, returns the linear velocity of a joint (`joint`) of a hand (`hand`) as provided by OpenXR. This is relative to ``XROrigin3D`` without worldscale applied!
     public final func getHandJointLinearVelocity (hand: OpenXRInterface.Hand, joint: OpenXRInterface.HandJoints)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_hand = Int64 (hand.rawValue)
         var copy_joint = Int64 (joint.rawValue)
@@ -790,7 +790,7 @@ open class OpenXRInterface: XRInterface {
     /// If handtracking is enabled, returns the angular velocity of a joint (`joint`) of a hand (`hand`) as provided by OpenXR. This is relative to ``XROrigin3D``!
     public final func getHandJointAngularVelocity (hand: OpenXRInterface.Hand, joint: OpenXRInterface.HandJoints)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_hand = Int64 (hand.rawValue)
         var copy_joint = Int64 (joint.rawValue)

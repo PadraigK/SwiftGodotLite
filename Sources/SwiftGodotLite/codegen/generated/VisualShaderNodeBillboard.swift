@@ -64,7 +64,7 @@ open class VisualShaderNodeBillboard: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_billboard_type (_ billboardType: VisualShaderNodeBillboard.BillboardType) {
-        #if true
+        #if false
         
         var copy_billboard_type = Int64 (billboardType.rawValue)
         
@@ -114,7 +114,7 @@ open class VisualShaderNodeBillboard: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_keep_scale_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

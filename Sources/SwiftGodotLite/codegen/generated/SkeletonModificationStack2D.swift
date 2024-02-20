@@ -87,7 +87,7 @@ open class SkeletonModificationStack2D: Resource {
     /// > Note: The order of the modifications can matter depending on the modifications. For example, modifications on a spine should operate before modifications on the arms in order to get proper results.
     /// 
     public final func execute (delta: Double, executionMode: Int32) {
-        #if true
+        #if false
         
         var copy_delta = delta
         var copy_execution_mode: Int = Int (executionMode)
@@ -124,7 +124,7 @@ open class SkeletonModificationStack2D: Resource {
     
     /// Enables all ``SkeletonModification2D``s in the stack.
     public final func enableAllModifications (enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -157,7 +157,7 @@ open class SkeletonModificationStack2D: Resource {
     /// Returns the ``SkeletonModification2D`` at the passed-in index, `modIdx`.
     public final func getModification (modIdx: Int32)-> SkeletonModification2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_mod_idx: Int = Int (modIdx)
         
@@ -190,7 +190,7 @@ open class SkeletonModificationStack2D: Resource {
     
     /// Adds the passed-in ``SkeletonModification2D`` to the stack.
     public final func addModification (_ modification: SkeletonModification2D?) {
-        #if true
+        #if false
         
         var copy_modification_handle = modification?.handle
         
@@ -221,7 +221,7 @@ open class SkeletonModificationStack2D: Resource {
     
     /// Deletes the ``SkeletonModification2D`` at the index position `modIdx`, if it exists.
     public final func deleteModification (modIdx: Int32) {
-        #if true
+        #if false
         
         var copy_mod_idx: Int = Int (modIdx)
         
@@ -253,7 +253,7 @@ open class SkeletonModificationStack2D: Resource {
     
     /// Sets the modification at `modIdx` to the passed-in modification, `modification`.
     public final func setModification (modIdx: Int32, modification: SkeletonModification2D?) {
-        #if true
+        #if false
         
         var copy_mod_idx: Int = Int (modIdx)
         var copy_modification_handle = modification?.handle
@@ -289,7 +289,7 @@ open class SkeletonModificationStack2D: Resource {
     
     @inline(__always)
     fileprivate final func set_modification_count (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -357,7 +357,7 @@ open class SkeletonModificationStack2D: Resource {
     
     @inline(__always)
     fileprivate final func set_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -407,7 +407,7 @@ open class SkeletonModificationStack2D: Resource {
     
     @inline(__always)
     fileprivate final func set_strength (_ strength: Double) {
-        #if true
+        #if false
         
         var copy_strength = strength
         

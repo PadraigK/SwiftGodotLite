@@ -122,7 +122,7 @@ open class TextureRect: Control {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -171,7 +171,7 @@ open class TextureRect: Control {
     
     @inline(__always)
     fileprivate final func set_expand_mode (_ expandMode: TextureRect.ExpandMode) {
-        #if true
+        #if false
         
         var copy_expand_mode = Int64 (expandMode.rawValue)
         
@@ -221,7 +221,7 @@ open class TextureRect: Control {
     
     @inline(__always)
     fileprivate final func set_flip_h (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -271,7 +271,7 @@ open class TextureRect: Control {
     
     @inline(__always)
     fileprivate final func set_flip_v (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -321,7 +321,7 @@ open class TextureRect: Control {
     
     @inline(__always)
     fileprivate final func set_stretch_mode (_ stretchMode: TextureRect.StretchMode) {
-        #if true
+        #if false
         
         var copy_stretch_mode = Int64 (stretchMode.rawValue)
         

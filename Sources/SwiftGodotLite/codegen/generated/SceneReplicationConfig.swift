@@ -52,7 +52,7 @@ open class SceneReplicationConfig: Resource {
     /// > Note: For details on restrictions and limitations on property synchronization, see ``MultiplayerSynchronizer``.
     /// 
     public final func addProperty (path: NodePath, index: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -88,7 +88,7 @@ open class SceneReplicationConfig: Resource {
     /// Returns whether the given `path` is configured for synchronization.
     public final func hasProperty (path: NodePath)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SceneReplicationConfig.method_has_property, UnsafeMutableRawPointer (mutating: handle), &_result, &path.content)
@@ -119,7 +119,7 @@ open class SceneReplicationConfig: Resource {
     
     /// Removes the property identified by the given `path` from the configuration.
     public final func removeProperty (path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SceneReplicationConfig.method_remove_property, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -150,7 +150,7 @@ open class SceneReplicationConfig: Resource {
     /// Finds the index of the given `path`.
     public final func propertyGetIndex (path: NodePath)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SceneReplicationConfig.method_property_get_index, UnsafeMutableRawPointer (mutating: handle), &_result, &path.content)
@@ -182,7 +182,7 @@ open class SceneReplicationConfig: Resource {
     /// Returns whether the property identified by the given `path` is configured to be synchronized on spawn.
     public final func propertyGetSpawn (path: NodePath)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SceneReplicationConfig.method_property_get_spawn, UnsafeMutableRawPointer (mutating: handle), &_result, &path.content)
@@ -213,7 +213,7 @@ open class SceneReplicationConfig: Resource {
     
     /// Sets whether the property identified by the given `path` is configured to be synchronized on spawn.
     public final func propertySetSpawn (path: NodePath, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -249,7 +249,7 @@ open class SceneReplicationConfig: Resource {
     /// Returns the replication mode for the property identified by the given `path`. See ``SceneReplicationConfig/ReplicationMode``.
     public final func propertyGetReplicationMode (path: NodePath)-> SceneReplicationConfig.ReplicationMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SceneReplicationConfig.method_property_get_replication_mode, UnsafeMutableRawPointer (mutating: handle), &_result, &path.content)
@@ -280,7 +280,7 @@ open class SceneReplicationConfig: Resource {
     
     /// Sets the synchronization mode for the property identified by the given `path`. See ``SceneReplicationConfig/ReplicationMode``.
     public final func propertySetReplicationMode (path: NodePath, mode: SceneReplicationConfig.ReplicationMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -319,7 +319,7 @@ open class SceneReplicationConfig: Resource {
     /// 
     public final func propertyGetSync (path: NodePath)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SceneReplicationConfig.method_property_get_sync, UnsafeMutableRawPointer (mutating: handle), &_result, &path.content)
@@ -353,7 +353,7 @@ open class SceneReplicationConfig: Resource {
     /// _Deprecated._ Use ``propertySetReplicationMode(path:mode:)`` with .always instead.
     /// 
     public final func propertySetSync (path: NodePath, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -392,7 +392,7 @@ open class SceneReplicationConfig: Resource {
     /// 
     public final func propertyGetWatch (path: NodePath)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SceneReplicationConfig.method_property_get_watch, UnsafeMutableRawPointer (mutating: handle), &_result, &path.content)
@@ -426,7 +426,7 @@ open class SceneReplicationConfig: Resource {
     /// _Deprecated._ Use ``propertySetReplicationMode(path:mode:)`` with .onChange instead.
     /// 
     public final func propertySetWatch (path: NodePath, enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

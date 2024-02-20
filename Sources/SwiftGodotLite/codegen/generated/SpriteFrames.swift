@@ -27,7 +27,7 @@ open class SpriteFrames: Resource {
     
     /// Adds a new `anim` animation to the library.
     public final func addAnimation (anim: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SpriteFrames.method_add_animation, UnsafeMutableRawPointer (mutating: handle), nil, &anim.content)
@@ -58,7 +58,7 @@ open class SpriteFrames: Resource {
     /// Returns `true` if the `anim` animation exists.
     public final func hasAnimation (anim: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SpriteFrames.method_has_animation, UnsafeMutableRawPointer (mutating: handle), &_result, &anim.content)
@@ -89,7 +89,7 @@ open class SpriteFrames: Resource {
     
     /// Removes the `anim` animation.
     public final func removeAnimation (anim: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SpriteFrames.method_remove_animation, UnsafeMutableRawPointer (mutating: handle), nil, &anim.content)
@@ -119,7 +119,7 @@ open class SpriteFrames: Resource {
     
     /// Changes the `anim` animation's name to `newname`.
     public final func renameAnimation (anim: StringName, newname: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SpriteFrames.method_rename_animation, UnsafeMutableRawPointer (mutating: handle), nil, &anim.content, &newname.content)
@@ -170,7 +170,7 @@ open class SpriteFrames: Resource {
     
     /// Sets the speed for the `anim` animation in frames per second.
     public final func setAnimationSpeed (anim: StringName, fps: Double) {
-        #if true
+        #if false
         
         var copy_fps = fps
         
@@ -206,7 +206,7 @@ open class SpriteFrames: Resource {
     /// Returns the speed in frames per second for the `anim` animation.
     public final func getAnimationSpeed (anim: StringName)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SpriteFrames.method_get_animation_speed, UnsafeMutableRawPointer (mutating: handle), &_result, &anim.content)
@@ -237,7 +237,7 @@ open class SpriteFrames: Resource {
     
     /// If `loop` is `true`, the `anim` animation will loop when it reaches the end, or the start if it is played in reverse.
     public final func setAnimationLoop (anim: StringName, loop: Bool) {
-        #if true
+        #if false
         
         var copy_loop = loop
         
@@ -273,7 +273,7 @@ open class SpriteFrames: Resource {
     /// Returns `true` if the given animation is configured to loop when it finishes playing. Otherwise, returns `false`.
     public final func getAnimationLoop (anim: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SpriteFrames.method_get_animation_loop, UnsafeMutableRawPointer (mutating: handle), &_result, &anim.content)
@@ -304,7 +304,7 @@ open class SpriteFrames: Resource {
     
     /// Adds a frame to the `anim` animation. If `atPosition` is `-1`, the frame will be added to the end of the animation.
     public final func addFrame (anim: StringName, texture: Texture2D?, duration: Double = 1.0, atPosition: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_duration = duration
         var copy_at_position: Int = Int (atPosition)
@@ -348,7 +348,7 @@ open class SpriteFrames: Resource {
     
     /// Sets the `texture` and the `duration` of the frame `idx` in the `anim` animation.
     public final func setFrame (anim: StringName, idx: Int32, texture: Texture2D?, duration: Double = 1.0) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         var copy_duration = duration
@@ -392,7 +392,7 @@ open class SpriteFrames: Resource {
     
     /// Removes the `anim` animation's frame `idx`.
     public final func removeFrame (anim: StringName, idx: Int32) {
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -428,7 +428,7 @@ open class SpriteFrames: Resource {
     /// Returns the number of frames for the `anim` animation.
     public final func getFrameCount (anim: StringName)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SpriteFrames.method_get_frame_count, UnsafeMutableRawPointer (mutating: handle), &_result, &anim.content)
@@ -460,7 +460,7 @@ open class SpriteFrames: Resource {
     /// Returns the texture of the frame `idx` in the `anim` animation.
     public final func getFrameTexture (anim: StringName, idx: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -500,7 +500,7 @@ open class SpriteFrames: Resource {
     /// 
     public final func getFrameDuration (anim: StringName, idx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -536,7 +536,7 @@ open class SpriteFrames: Resource {
     
     /// Removes all frames from the `anim` animation.
     public final func clear (anim: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SpriteFrames.method_clear, UnsafeMutableRawPointer (mutating: handle), nil, &anim.content)

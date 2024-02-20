@@ -80,7 +80,7 @@ open class AtlasTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_atlas (_ atlas: Texture2D?) {
-        #if true
+        #if false
         
         var copy_atlas_handle = atlas?.handle
         
@@ -129,7 +129,7 @@ open class AtlasTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_region (_ region: Rect2) {
-        #if true
+        #if false
         
         var copy_region = region
         
@@ -179,7 +179,7 @@ open class AtlasTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_margin (_ margin: Rect2) {
-        #if true
+        #if false
         
         var copy_margin = margin
         
@@ -229,7 +229,7 @@ open class AtlasTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_filter_clip (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

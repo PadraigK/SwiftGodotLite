@@ -157,7 +157,7 @@ open class RayCast3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -207,7 +207,7 @@ open class RayCast3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_target_position (_ localPoint: Vector3) {
-        #if true
+        #if false
         
         var copy_local_point = localPoint
         
@@ -405,7 +405,7 @@ open class RayCast3D: Node3D {
     
     /// Adds a collision exception so the ray does not report collisions with the specified ``RID``.
     public final func addExceptionRid (_ rid: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RayCast3D.method_add_exception_rid, UnsafeMutableRawPointer (mutating: handle), nil, &rid.content)
@@ -435,7 +435,7 @@ open class RayCast3D: Node3D {
     
     /// Adds a collision exception so the ray does not report collisions with the specified ``CollisionObject3D`` node.
     public final func addException (node: CollisionObject3D?) {
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -466,7 +466,7 @@ open class RayCast3D: Node3D {
     
     /// Removes a collision exception so the ray does report collisions with the specified ``RID``.
     public final func removeExceptionRid (_ rid: RID) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RayCast3D.method_remove_exception_rid, UnsafeMutableRawPointer (mutating: handle), nil, &rid.content)
@@ -496,7 +496,7 @@ open class RayCast3D: Node3D {
     
     /// Removes a collision exception so the ray does report collisions with the specified ``CollisionObject3D`` node.
     public final func removeException (node: CollisionObject3D?) {
-        #if true
+        #if false
         
         var copy_node_handle = node?.handle
         
@@ -543,7 +543,7 @@ open class RayCast3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_collision_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -593,7 +593,7 @@ open class RayCast3D: Node3D {
     
     /// Based on `value`, enables or disables the specified layer in the ``collisionMask``, given a `layerNumber` between 1 and 32.
     public final func setCollisionMaskValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -631,7 +631,7 @@ open class RayCast3D: Node3D {
     /// Returns whether or not the specified layer of the ``collisionMask`` is enabled, given a `layerNumber` between 1 and 32.
     public final func getCollisionMaskValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -664,7 +664,7 @@ open class RayCast3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_exclude_parent_body (_ mask: Bool) {
-        #if true
+        #if false
         
         var copy_mask = mask
         
@@ -714,7 +714,7 @@ open class RayCast3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_collide_with_areas (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -764,7 +764,7 @@ open class RayCast3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_collide_with_bodies (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -814,7 +814,7 @@ open class RayCast3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_hit_from_inside (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -864,7 +864,7 @@ open class RayCast3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_hit_back_faces (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -914,7 +914,7 @@ open class RayCast3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_debug_shape_custom_color (_ debugShapeCustomColor: Color) {
-        #if true
+        #if false
         
         var copy_debug_shape_custom_color = debugShapeCustomColor
         
@@ -964,7 +964,7 @@ open class RayCast3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_debug_shape_thickness (_ debugShapeThickness: Int32) {
-        #if true
+        #if false
         
         var copy_debug_shape_thickness: Int = Int (debugShapeThickness)
         

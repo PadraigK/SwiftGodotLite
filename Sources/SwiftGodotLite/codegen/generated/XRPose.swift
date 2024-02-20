@@ -120,7 +120,7 @@ open class XRPose: RefCounted {
     
     @inline(__always)
     fileprivate final func set_has_tracking_data (_ hasTrackingData: Bool) {
-        #if true
+        #if false
         
         var copy_has_tracking_data = hasTrackingData
         
@@ -170,7 +170,7 @@ open class XRPose: RefCounted {
     
     @inline(__always)
     fileprivate final func set_name (_ name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (XRPose.method_set_name, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -218,7 +218,7 @@ open class XRPose: RefCounted {
     
     @inline(__always)
     fileprivate final func set_transform (_ transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_transform = transform
         
@@ -286,7 +286,7 @@ open class XRPose: RefCounted {
     
     @inline(__always)
     fileprivate final func set_linear_velocity (_ velocity: Vector3) {
-        #if true
+        #if false
         
         var copy_velocity = velocity
         
@@ -336,7 +336,7 @@ open class XRPose: RefCounted {
     
     @inline(__always)
     fileprivate final func set_angular_velocity (_ velocity: Vector3) {
-        #if true
+        #if false
         
         var copy_velocity = velocity
         
@@ -386,7 +386,7 @@ open class XRPose: RefCounted {
     
     @inline(__always)
     fileprivate final func set_tracking_confidence (_ trackingConfidence: XRPose.TrackingConfidence) {
-        #if true
+        #if false
         
         var copy_tracking_confidence = Int64 (trackingConfidence.rawValue)
         

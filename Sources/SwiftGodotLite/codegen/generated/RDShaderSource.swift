@@ -103,7 +103,7 @@ open class RDShaderSource: RefCounted {
     @inline(__always)
     /// Sets `source` code for the specified shader `stage`. Equivalent to setting one of ``sourceCompute``, ``sourceFragment``, ``sourceTesselationControl``, ``sourceTesselationEvaluation`` or ``sourceVertex``.
     fileprivate final func set_stage_source (_ stage: RenderingDevice.ShaderStage, _ source: String) {
-        #if true
+        #if false
         
         var copy_stage = Int64 (stage.rawValue)
         let gstr_source = GString (source)
@@ -142,7 +142,7 @@ open class RDShaderSource: RefCounted {
     /// Returns source code for the specified shader `stage`. Equivalent to getting one of ``sourceCompute``, ``sourceFragment``, ``sourceTesselationControl``, ``sourceTesselationEvaluation`` or ``sourceVertex``.
     fileprivate final func get_stage_source (_ stage: RenderingDevice.ShaderStage)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_stage = Int64 (stage.rawValue)
         
@@ -175,7 +175,7 @@ open class RDShaderSource: RefCounted {
     
     @inline(__always)
     fileprivate final func set_language (_ language: RenderingDevice.ShaderLanguage) {
-        #if true
+        #if false
         
         var copy_language = Int64 (language.rawValue)
         

@@ -66,7 +66,7 @@ open class HeightMapShape3D: Shape3D {
     
     @inline(__always)
     fileprivate final func set_map_width (_ width: Int32) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         
@@ -116,7 +116,7 @@ open class HeightMapShape3D: Shape3D {
     
     @inline(__always)
     fileprivate final func set_map_depth (_ height: Int32) {
-        #if true
+        #if false
         
         var copy_height: Int = Int (height)
         
@@ -166,7 +166,7 @@ open class HeightMapShape3D: Shape3D {
     
     @inline(__always)
     fileprivate final func set_map_data (_ data: PackedFloat32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (HeightMapShape3D.method_set_map_data, UnsafeMutableRawPointer (mutating: handle), nil, &data.content)

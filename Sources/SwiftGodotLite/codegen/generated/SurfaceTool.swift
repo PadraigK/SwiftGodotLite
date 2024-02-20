@@ -68,7 +68,7 @@ open class SurfaceTool: RefCounted {
     /// > Note: This function takes an enum, not the exact number of weights.
     /// 
     public final func setSkinWeightCount (_ count: SurfaceTool.SkinWeightCount) {
-        #if true
+        #if false
         
         var copy_count = Int64 (count.rawValue)
         
@@ -126,7 +126,7 @@ open class SurfaceTool: RefCounted {
     /// Must be invoked after ``begin(primitive:)`` and should be set before ``commit(existing:flags:)`` or ``commitToArrays()``.
     /// 
     public final func setCustomFormat (channelIndex: Int32, format: SurfaceTool.CustomFormat) {
-        #if true
+        #if false
         
         var copy_channel_index: Int = Int (channelIndex)
         var copy_format = Int64 (format.rawValue)
@@ -164,7 +164,7 @@ open class SurfaceTool: RefCounted {
     /// Returns the format for custom `channelIndex` (currently up to 4). Returns .customMax if this custom channel is unused.
     public final func getCustomFormat (channelIndex: Int32)-> SurfaceTool.CustomFormat {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_channel_index: Int = Int (channelIndex)
         
@@ -197,7 +197,7 @@ open class SurfaceTool: RefCounted {
     
     /// Called before adding any vertices. Takes the primitive type as an argument (e.g. ``Mesh/PrimitiveType/primitiveTriangles``).
     public final func begin (primitive: Mesh.PrimitiveType) {
-        #if true
+        #if false
         
         var copy_primitive = Int64 (primitive.rawValue)
         
@@ -229,7 +229,7 @@ open class SurfaceTool: RefCounted {
     
     /// Specifies the position of current vertex. Should be called after specifying other vertex properties (e.g. Color, UV).
     public final func addVertex (_ vertex: Vector3) {
-        #if true
+        #if false
         
         var copy_vertex = vertex
         
@@ -264,7 +264,7 @@ open class SurfaceTool: RefCounted {
     /// > Note: The material must have ``BaseMaterial3D/vertexColorUseAsAlbedo`` enabled for the vertex color to be visible.
     /// 
     public final func setColor (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -296,7 +296,7 @@ open class SurfaceTool: RefCounted {
     
     /// Specifies a normal to use for the _next_ vertex. If every vertex needs to have this information set and you fail to submit it for the first vertex, this information may not be used at all.
     public final func setNormal (_ normal: Vector3) {
-        #if true
+        #if false
         
         var copy_normal = normal
         
@@ -328,7 +328,7 @@ open class SurfaceTool: RefCounted {
     
     /// Specifies a tangent to use for the _next_ vertex. If every vertex needs to have this information set and you fail to submit it for the first vertex, this information may not be used at all.
     public final func setTangent (_ tangent: Plane) {
-        #if true
+        #if false
         
         var copy_tangent = tangent
         
@@ -360,7 +360,7 @@ open class SurfaceTool: RefCounted {
     
     /// Specifies a set of UV coordinates to use for the _next_ vertex. If every vertex needs to have this information set and you fail to submit it for the first vertex, this information may not be used at all.
     public final func setUv (_ uv: Vector2) {
-        #if true
+        #if false
         
         var copy_uv = uv
         
@@ -392,7 +392,7 @@ open class SurfaceTool: RefCounted {
     
     /// Specifies an optional second set of UV coordinates to use for the _next_ vertex. If every vertex needs to have this information set and you fail to submit it for the first vertex, this information may not be used at all.
     public final func setUv2 (_ uv2: Vector2) {
-        #if true
+        #if false
         
         var copy_uv2 = uv2
         
@@ -424,7 +424,7 @@ open class SurfaceTool: RefCounted {
     
     /// Specifies an array of bones to use for the _next_ vertex. `bones` must contain 4 integers.
     public final func setBones (_ bones: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SurfaceTool.method_set_bones, UnsafeMutableRawPointer (mutating: handle), nil, &bones.content)
@@ -454,7 +454,7 @@ open class SurfaceTool: RefCounted {
     
     /// Specifies weight values to use for the _next_ vertex. `weights` must contain 4 values. If every vertex needs to have this information set and you fail to submit it for the first vertex, this information may not be used at all.
     public final func setWeights (_ weights: PackedFloat32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SurfaceTool.method_set_weights, UnsafeMutableRawPointer (mutating: handle), nil, &weights.content)
@@ -487,7 +487,7 @@ open class SurfaceTool: RefCounted {
     /// ``setCustomFormat(channelIndex:format:)`` must be called first for this `channelIndex`. Formats which are not RGBA will ignore other color channels.
     /// 
     public final func setCustom (channelIndex: Int32, customColor: Color) {
-        #if true
+        #if false
         
         var copy_channel_index: Int = Int (channelIndex)
         var copy_custom_color = customColor
@@ -527,7 +527,7 @@ open class SurfaceTool: RefCounted {
     /// > Note: This function actually takes a `uint32_t`, so C# users should use `uint32.MaxValue` instead of `-1` to produce a mesh with flat normals.
     /// 
     public final func setSmoothGroup (index: UInt32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -562,7 +562,7 @@ open class SurfaceTool: RefCounted {
     /// Requires the primitive type be set to ``Mesh/PrimitiveType/primitiveTriangles``.
     /// 
     public final func addTriangleFan (vertices: PackedVector3Array, uvs: PackedVector2Array = PackedVector2Array(), colors: PackedColorArray = PackedColorArray(), uv2s: PackedVector2Array = PackedVector2Array(), normals: PackedVector3Array = PackedVector3Array(), tangents: VariantCollection<Plane> = VariantCollection<Plane> ()) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (SurfaceTool.method_add_triangle_fan, UnsafeMutableRawPointer (mutating: handle), nil, &vertices.content, &uvs.content, &colors.content, &uv2s.content, &normals.content, &tangents.array.content)
@@ -607,7 +607,7 @@ open class SurfaceTool: RefCounted {
     
     /// Adds a vertex to index array if you are using indexed vertices. Does not need to be called before adding vertices.
     public final func addIndex (_ index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -676,7 +676,7 @@ open class SurfaceTool: RefCounted {
     /// > Note: ``generateNormals(flip:)`` takes smooth groups into account. To generate smooth normals, set the smooth group to a value greater than or equal to `0` using ``setSmoothGroup(index:)`` or leave the smooth group at the default of `0`. To generate flat normals, set the smooth group to `-1` using ``setSmoothGroup(index:)`` prior to adding vertices.
     /// 
     public final func generateNormals (flip: Bool = false) {
-        #if true
+        #if false
         
         var copy_flip = flip
         
@@ -762,7 +762,7 @@ open class SurfaceTool: RefCounted {
     /// 
     public final func generateLod (ndThreshold: Double, targetIndexCount: Int32 = 3)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_nd_threshold = ndThreshold
         var copy_target_index_count: Int = Int (targetIndexCount)
@@ -800,7 +800,7 @@ open class SurfaceTool: RefCounted {
     
     /// Sets ``Material`` to be used by the ``Mesh`` you are constructing.
     public final func setMaterial (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         
@@ -865,7 +865,7 @@ open class SurfaceTool: RefCounted {
     
     /// Creates a vertex array from an existing ``Mesh``.
     public final func createFrom (existing: Mesh?, surface: Int32) {
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         var copy_existing_handle = existing?.handle
@@ -901,7 +901,7 @@ open class SurfaceTool: RefCounted {
     
     /// Creates a vertex array from the specified blend shape of an existing ``Mesh``. This can be used to extract a specific pose from a blend shape.
     public final func createFromBlendShape (existing: Mesh?, surface: Int32, blendShape: String) {
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         let gstr_blend_shape = GString (blendShape)
@@ -942,7 +942,7 @@ open class SurfaceTool: RefCounted {
     
     /// Append vertices from a given ``Mesh`` surface onto the current vertex array with specified ``Transform3D``.
     public final func appendFrom (existing: Mesh?, surface: Int32, transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_surface: Int = Int (surface)
         var copy_transform = transform
@@ -987,7 +987,7 @@ open class SurfaceTool: RefCounted {
     /// 
     public final func commit (existing: ArrayMesh? = nil, flags: UInt = 0)-> ArrayMesh? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_flags = flags
         var copy_existing_handle = existing?.handle

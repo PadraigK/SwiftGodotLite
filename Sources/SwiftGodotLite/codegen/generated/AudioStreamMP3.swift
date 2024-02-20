@@ -99,7 +99,7 @@ open class AudioStreamMP3: AudioStream {
     
     @inline(__always)
     fileprivate final func set_data (_ data: PackedByteArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AudioStreamMP3.method_set_data, UnsafeMutableRawPointer (mutating: handle), nil, &data.content)
@@ -147,7 +147,7 @@ open class AudioStreamMP3: AudioStream {
     
     @inline(__always)
     fileprivate final func set_loop (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -197,7 +197,7 @@ open class AudioStreamMP3: AudioStream {
     
     @inline(__always)
     fileprivate final func set_loop_offset (_ seconds: Double) {
-        #if true
+        #if false
         
         var copy_seconds = seconds
         
@@ -247,7 +247,7 @@ open class AudioStreamMP3: AudioStream {
     
     @inline(__always)
     fileprivate final func set_bpm (_ bpm: Double) {
-        #if true
+        #if false
         
         var copy_bpm = bpm
         
@@ -297,7 +297,7 @@ open class AudioStreamMP3: AudioStream {
     
     @inline(__always)
     fileprivate final func set_beat_count (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -347,7 +347,7 @@ open class AudioStreamMP3: AudioStream {
     
     @inline(__always)
     fileprivate final func set_bar_beats (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         

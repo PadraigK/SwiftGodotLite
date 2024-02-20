@@ -26,7 +26,7 @@ open class ZIPReader: RefCounted {
     /// Opens the zip archive at the given `path` and reads its file index.
     public final func open (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -102,7 +102,7 @@ open class ZIPReader: RefCounted {
     /// 
     public final func readFile (path: String, caseSensitive: Bool = true)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_case_sensitive = caseSensitive
@@ -144,7 +144,7 @@ open class ZIPReader: RefCounted {
     /// 
     public final func fileExists (path: String, caseSensitive: Bool = true)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         var copy_case_sensitive = caseSensitive

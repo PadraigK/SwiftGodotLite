@@ -70,7 +70,7 @@ open class DirAccess: RefCounted {
     /// 
     public static func open (path: String)-> DirAccess? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -226,7 +226,7 @@ open class DirAccess: RefCounted {
     /// 
     public static func getFilesAt (path: String)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -284,7 +284,7 @@ open class DirAccess: RefCounted {
     /// 
     public static func getDirectoriesAt (path: String)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -350,7 +350,7 @@ open class DirAccess: RefCounted {
     /// 
     public static func getDriveName (idx: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -407,7 +407,7 @@ open class DirAccess: RefCounted {
     /// 
     public final func changeDir (toDir: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_to_dir = GString (toDir)
         
@@ -441,7 +441,7 @@ open class DirAccess: RefCounted {
     /// Returns the absolute path to the currently opened directory (e.g. `res://folder` or `C:\tmp\folder`).
     public final func getCurrentDir (includeDrive: Bool = true)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_include_drive = includeDrive
         
@@ -478,7 +478,7 @@ open class DirAccess: RefCounted {
     /// 
     public final func makeDir (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -512,7 +512,7 @@ open class DirAccess: RefCounted {
     /// Static version of ``makeDir(path:)``. Supports only absolute paths.
     public static func makeDirAbsolute (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -549,7 +549,7 @@ open class DirAccess: RefCounted {
     /// 
     public final func makeDirRecursive (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -583,7 +583,7 @@ open class DirAccess: RefCounted {
     /// Static version of ``makeDirRecursive(path:)``. Supports only absolute paths.
     public static func makeDirRecursiveAbsolute (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -620,7 +620,7 @@ open class DirAccess: RefCounted {
     /// 
     public final func fileExists (path: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -654,7 +654,7 @@ open class DirAccess: RefCounted {
     /// Returns whether the target directory exists. The argument can be relative to the current directory, or an absolute path.
     public final func dirExists (path: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -688,7 +688,7 @@ open class DirAccess: RefCounted {
     /// Static version of ``dirExists(path:)``. Supports only absolute paths.
     public static func dirExistsAbsolute (path: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -745,7 +745,7 @@ open class DirAccess: RefCounted {
     /// 
     public final func copy (from: String, to: String, chmodFlags: Int32 = -1)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_from = GString (from)
         let gstr_to = GString (to)
@@ -789,7 +789,7 @@ open class DirAccess: RefCounted {
     /// Static version of ``copy(from:to:chmodFlags:)``. Supports only absolute paths.
     public static func copyAbsolute (from: String, to: String, chmodFlags: Int32 = -1)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_from = GString (from)
         let gstr_to = GString (to)
@@ -836,7 +836,7 @@ open class DirAccess: RefCounted {
     /// 
     public final func rename (from: String, to: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_from = GString (from)
         let gstr_to = GString (to)
@@ -875,7 +875,7 @@ open class DirAccess: RefCounted {
     /// Static version of ``rename(from:to:)``. Supports only absolute paths.
     public static func renameAbsolute (from: String, to: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_from = GString (from)
         let gstr_to = GString (to)
@@ -919,7 +919,7 @@ open class DirAccess: RefCounted {
     /// 
     public final func remove (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -953,7 +953,7 @@ open class DirAccess: RefCounted {
     /// Static version of ``remove(path:)``. Supports only absolute paths.
     public static func removeAbsolute (path: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -986,7 +986,7 @@ open class DirAccess: RefCounted {
     
     @inline(__always)
     fileprivate final func set_include_navigational (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1036,7 +1036,7 @@ open class DirAccess: RefCounted {
     
     @inline(__always)
     fileprivate final func set_include_hidden (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1090,7 +1090,7 @@ open class DirAccess: RefCounted {
     /// 
     public final func isCaseSensitive (path: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         

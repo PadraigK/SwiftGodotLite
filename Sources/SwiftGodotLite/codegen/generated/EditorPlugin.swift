@@ -299,7 +299,7 @@ open class EditorPlugin: Node {
     /// When your plugin is deactivated, make sure to remove your custom control with ``removeControlFromContainer(_:control:)`` and free it with ``Node/queueFree()``.
     /// 
     public final func addControlToContainer (_ container: EditorPlugin.CustomControlContainer, control: Control?) {
-        #if true
+        #if false
         
         var copy_container = Int64 (container.rawValue)
         var copy_control_handle = control?.handle
@@ -336,7 +336,7 @@ open class EditorPlugin: Node {
     /// Adds a control to the bottom panel (together with Output, Debug, Animation, etc). Returns a reference to the button added. It's up to you to hide/show the button when needed. When your plugin is deactivated, make sure to remove your custom control with ``removeControlFromBottomPanel(control:)`` and free it with ``Node/queueFree()``.
     public final func addControlToBottomPanel (control: Control?, title: String)-> Button? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_title = GString (title)
         var copy_control_handle = control?.handle
@@ -378,7 +378,7 @@ open class EditorPlugin: Node {
     /// When your plugin is deactivated, make sure to remove your custom control with ``removeControlFromDocks(control:)`` and free it with ``Node/queueFree()``.
     /// 
     public final func addControlToDock (slot: EditorPlugin.DockSlot, control: Control?) {
-        #if true
+        #if false
         
         var copy_slot = Int64 (slot.rawValue)
         var copy_control_handle = control?.handle
@@ -414,7 +414,7 @@ open class EditorPlugin: Node {
     
     /// Removes the control from the dock. You have to manually ``Node/queueFree()`` the control.
     public final func removeControlFromDocks (control: Control?) {
-        #if true
+        #if false
         
         var copy_control_handle = control?.handle
         
@@ -445,7 +445,7 @@ open class EditorPlugin: Node {
     
     /// Removes the control from the bottom panel. You have to manually ``Node/queueFree()`` the control.
     public final func removeControlFromBottomPanel (control: Control?) {
-        #if true
+        #if false
         
         var copy_control_handle = control?.handle
         
@@ -476,7 +476,7 @@ open class EditorPlugin: Node {
     
     /// Removes the control from the specified container. You have to manually ``Node/queueFree()`` the control.
     public final func removeControlFromContainer (_ container: EditorPlugin.CustomControlContainer, control: Control?) {
-        #if true
+        #if false
         
         var copy_container = Int64 (container.rawValue)
         var copy_control_handle = control?.handle
@@ -512,7 +512,7 @@ open class EditorPlugin: Node {
     
     /// Adds a custom menu item to **Project > Tools** named `name`. When clicked, the provided `callable` will be called.
     public final func addToolMenuItem (name: String, callable: Callable) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -547,7 +547,7 @@ open class EditorPlugin: Node {
     
     /// Adds a custom ``PopupMenu`` submenu under **Project > Tools >** `name`. Use ``removeToolMenuItem(name:)`` on plugin clean up to remove the menu.
     public final func addToolSubmenuItem (name: String, submenu: PopupMenu?) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         var copy_submenu_handle = submenu?.handle
@@ -583,7 +583,7 @@ open class EditorPlugin: Node {
     
     /// Removes a menu `name` from **Project > Tools**.
     public final func removeToolMenuItem (name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -644,7 +644,7 @@ open class EditorPlugin: Node {
     /// > Note: Custom types added this way are not true classes. They are just a helper to create a node with specific script.
     /// 
     public final func addCustomType (_ type: String, base: String, script: Script?, icon: Texture2D?) {
-        #if true
+        #if false
         
         let gstr_type = GString (type)
         let gstr_base = GString (base)
@@ -689,7 +689,7 @@ open class EditorPlugin: Node {
     
     /// Removes a custom type added by ``addCustomType(_:base:script:icon:)``.
     public final func removeCustomType (_ type: String) {
-        #if true
+        #if false
         
         let gstr_type = GString (type)
         
@@ -721,7 +721,7 @@ open class EditorPlugin: Node {
     
     /// Adds a script at `path` to the Autoload list as `name`.
     public final func addAutoloadSingleton (name: String, path: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         let gstr_path = GString (path)
@@ -758,7 +758,7 @@ open class EditorPlugin: Node {
     
     /// Removes an Autoload `name` from the list.
     public final func removeAutoloadSingleton (name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -808,7 +808,7 @@ open class EditorPlugin: Node {
     
     /// Makes a specific item in the bottom panel visible.
     public final func makeBottomPanelItemVisible (item: Control?) {
-        #if true
+        #if false
         
         var copy_item_handle = item?.handle
         
@@ -876,7 +876,7 @@ open class EditorPlugin: Node {
     /// The callback should have 4 arguments: ``Object`` `undo_redo`, ``Object`` `modified_object`, ``String`` `property` and ``Variant`` `new_value`. They are, respectively, the ``UndoRedo`` object used by the inspector, the currently modified object, the name of the modified property and the new value the property is about to take.
     /// 
     public final func addUndoRedoInspectorHookCallback (callable: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorPlugin.method_add_undo_redo_inspector_hook_callback, UnsafeMutableRawPointer (mutating: handle), nil, &callable.content)
@@ -906,7 +906,7 @@ open class EditorPlugin: Node {
     
     /// Removes a callback previously added by ``addUndoRedoInspectorHookCallback(callable:)``.
     public final func removeUndoRedoInspectorHookCallback (callable: Callable) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorPlugin.method_remove_undo_redo_inspector_hook_callback, UnsafeMutableRawPointer (mutating: handle), nil, &callable.content)
@@ -952,7 +952,7 @@ open class EditorPlugin: Node {
     
     /// Registers a custom translation parser plugin for extracting translatable strings from custom files.
     public final func addTranslationParserPlugin (parser: EditorTranslationParserPlugin?) {
-        #if true
+        #if false
         
         var copy_parser_handle = parser?.handle
         
@@ -983,7 +983,7 @@ open class EditorPlugin: Node {
     
     /// Removes a custom translation parser plugin registered by ``addTranslationParserPlugin(parser:)``.
     public final func removeTranslationParserPlugin (parser: EditorTranslationParserPlugin?) {
-        #if true
+        #if false
         
         var copy_parser_handle = parser?.handle
         
@@ -1021,7 +1021,7 @@ open class EditorPlugin: Node {
     /// See ``addInspectorPlugin(_:)`` for an example of how to register a plugin.
     /// 
     public final func addImportPlugin (importer: EditorImportPlugin?, firstPriority: Bool = false) {
-        #if true
+        #if false
         
         var copy_first_priority = firstPriority
         var copy_importer_handle = importer?.handle
@@ -1057,7 +1057,7 @@ open class EditorPlugin: Node {
     
     /// Removes an import plugin registered by ``addImportPlugin(importer:firstPriority:)``.
     public final func removeImportPlugin (importer: EditorImportPlugin?) {
-        #if true
+        #if false
         
         var copy_importer_handle = importer?.handle
         
@@ -1091,7 +1091,7 @@ open class EditorPlugin: Node {
     /// If `firstPriority` is `true`, the new import plugin is inserted first in the list and takes precedence over pre-existing plugins.
     /// 
     public final func addSceneFormatImporterPlugin (sceneFormatImporter: EditorSceneFormatImporter?, firstPriority: Bool = false) {
-        #if true
+        #if false
         
         var copy_first_priority = firstPriority
         var copy_scene_format_importer_handle = sceneFormatImporter?.handle
@@ -1127,7 +1127,7 @@ open class EditorPlugin: Node {
     
     /// Removes a scene format importer registered by ``addSceneFormatImporterPlugin(sceneFormatImporter:firstPriority:)``.
     public final func removeSceneFormatImporterPlugin (sceneFormatImporter: EditorSceneFormatImporter?) {
-        #if true
+        #if false
         
         var copy_scene_format_importer_handle = sceneFormatImporter?.handle
         
@@ -1161,7 +1161,7 @@ open class EditorPlugin: Node {
     /// If `firstPriority` is `true`, the new import plugin is inserted first in the list and takes precedence over pre-existing plugins.
     /// 
     public final func addScenePostImportPlugin (sceneImportPlugin: EditorScenePostImportPlugin?, firstPriority: Bool = false) {
-        #if true
+        #if false
         
         var copy_first_priority = firstPriority
         var copy_scene_import_plugin_handle = sceneImportPlugin?.handle
@@ -1197,7 +1197,7 @@ open class EditorPlugin: Node {
     
     /// Remove the ``EditorScenePostImportPlugin``, added with ``addScenePostImportPlugin(sceneImportPlugin:firstPriority:)``.
     public final func removeScenePostImportPlugin (sceneImportPlugin: EditorScenePostImportPlugin?) {
-        #if true
+        #if false
         
         var copy_scene_import_plugin_handle = sceneImportPlugin?.handle
         
@@ -1231,7 +1231,7 @@ open class EditorPlugin: Node {
     /// See ``addInspectorPlugin(_:)`` for an example of how to register a plugin.
     /// 
     public final func addExportPlugin (_ plugin: EditorExportPlugin?) {
-        #if true
+        #if false
         
         var copy_plugin_handle = plugin?.handle
         
@@ -1262,7 +1262,7 @@ open class EditorPlugin: Node {
     
     /// Removes an export plugin registered by ``addExportPlugin(_:)``.
     public final func removeExportPlugin (_ plugin: EditorExportPlugin?) {
-        #if true
+        #if false
         
         var copy_plugin_handle = plugin?.handle
         
@@ -1296,7 +1296,7 @@ open class EditorPlugin: Node {
     /// See ``addInspectorPlugin(_:)`` for an example of how to register a plugin.
     /// 
     public final func addNode3dGizmoPlugin (_ plugin: EditorNode3DGizmoPlugin?) {
-        #if true
+        #if false
         
         var copy_plugin_handle = plugin?.handle
         
@@ -1327,7 +1327,7 @@ open class EditorPlugin: Node {
     
     /// Removes a gizmo plugin registered by ``addNode3dGizmoPlugin(_:)``.
     public final func removeNode3dGizmoPlugin (_ plugin: EditorNode3DGizmoPlugin?) {
-        #if true
+        #if false
         
         var copy_plugin_handle = plugin?.handle
         
@@ -1361,7 +1361,7 @@ open class EditorPlugin: Node {
     /// > Note: Always use ``removeInspectorPlugin(_:)`` to remove the registered ``EditorInspectorPlugin`` when your ``EditorPlugin`` is disabled to prevent leaks and an unexpected behavior.
     /// 
     public final func addInspectorPlugin (_ plugin: EditorInspectorPlugin?) {
-        #if true
+        #if false
         
         var copy_plugin_handle = plugin?.handle
         
@@ -1392,7 +1392,7 @@ open class EditorPlugin: Node {
     
     /// Removes an inspector plugin registered by ``addImportPlugin(importer:firstPriority:)``
     public final func removeInspectorPlugin (_ plugin: EditorInspectorPlugin?) {
-        #if true
+        #if false
         
         var copy_plugin_handle = plugin?.handle
         
@@ -1426,7 +1426,7 @@ open class EditorPlugin: Node {
     /// See ``EditorResourceConversionPlugin`` for an example of how to create a resource conversion plugin.
     /// 
     public final func addResourceConversionPlugin (_ plugin: EditorResourceConversionPlugin?) {
-        #if true
+        #if false
         
         var copy_plugin_handle = plugin?.handle
         
@@ -1457,7 +1457,7 @@ open class EditorPlugin: Node {
     
     /// Removes a resource conversion plugin registered by ``addResourceConversionPlugin(_:)``.
     public final func removeResourceConversionPlugin (_ plugin: EditorResourceConversionPlugin?) {
-        #if true
+        #if false
         
         var copy_plugin_handle = plugin?.handle
         
@@ -1564,7 +1564,7 @@ open class EditorPlugin: Node {
     
     /// Adds a ``Script`` as debugger plugin to the Debugger. The script must extend ``EditorDebuggerPlugin``.
     public final func addDebuggerPlugin (script: EditorDebuggerPlugin?) {
-        #if true
+        #if false
         
         var copy_script_handle = script?.handle
         
@@ -1595,7 +1595,7 @@ open class EditorPlugin: Node {
     
     /// Removes the debugger plugin with given script from the Debugger.
     public final func removeDebuggerPlugin (script: EditorDebuggerPlugin?) {
-        #if true
+        #if false
         
         var copy_script_handle = script?.handle
         

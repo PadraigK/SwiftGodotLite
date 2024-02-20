@@ -69,7 +69,7 @@ open class InputEventMouse: InputEventWithModifiers {
     
     @inline(__always)
     fileprivate final func set_button_mask (_ buttonMask: MouseButtonMask) {
-        #if true
+        #if false
         
         var copy_button_mask = buttonMask
         
@@ -119,7 +119,7 @@ open class InputEventMouse: InputEventWithModifiers {
     
     @inline(__always)
     fileprivate final func set_position (_ position: Vector2) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -169,7 +169,7 @@ open class InputEventMouse: InputEventWithModifiers {
     
     @inline(__always)
     fileprivate final func set_global_position (_ globalPosition: Vector2) {
-        #if true
+        #if false
         
         var copy_global_position = globalPosition
         

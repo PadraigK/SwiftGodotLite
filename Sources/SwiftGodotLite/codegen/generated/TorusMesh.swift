@@ -75,7 +75,7 @@ open class TorusMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_inner_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -125,7 +125,7 @@ open class TorusMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_outer_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -175,7 +175,7 @@ open class TorusMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_rings (_ rings: Int32) {
-        #if true
+        #if false
         
         var copy_rings: Int = Int (rings)
         
@@ -225,7 +225,7 @@ open class TorusMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_ring_segments (_ rings: Int32) {
-        #if true
+        #if false
         
         var copy_rings: Int = Int (rings)
         

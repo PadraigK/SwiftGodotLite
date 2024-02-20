@@ -151,7 +151,7 @@ open class RDShaderSPIRV: Resource {
     @inline(__always)
     /// Sets the SPIR-V `bytecode` for the given shader `stage`. Equivalent to setting one of ``bytecodeCompute``, ``bytecodeFragment``, ``bytecodeTesselationControl``, ``bytecodeTesselationEvaluation``, ``bytecodeVertex``.
     fileprivate final func set_stage_bytecode (_ stage: RenderingDevice.ShaderStage, _ bytecode: PackedByteArray) {
-        #if true
+        #if false
         
         var copy_stage = Int64 (stage.rawValue)
         
@@ -188,7 +188,7 @@ open class RDShaderSPIRV: Resource {
     /// Equivalent to getting one of ``bytecodeCompute``, ``bytecodeFragment``, ``bytecodeTesselationControl``, ``bytecodeTesselationEvaluation``, ``bytecodeVertex``.
     fileprivate final func get_stage_bytecode (_ stage: RenderingDevice.ShaderStage)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         var copy_stage = Int64 (stage.rawValue)
         
@@ -222,7 +222,7 @@ open class RDShaderSPIRV: Resource {
     @inline(__always)
     /// Sets the compilation error message for the given shader `stage` to `compileError`. Equivalent to setting one of ``compileErrorCompute``, ``compileErrorFragment``, ``compileErrorTesselationControl``, ``compileErrorTesselationEvaluation``, ``compileErrorVertex``.
     fileprivate final func set_stage_compile_error (_ stage: RenderingDevice.ShaderStage, _ compileError: String) {
-        #if true
+        #if false
         
         var copy_stage = Int64 (stage.rawValue)
         let gstr_compile_error = GString (compileError)
@@ -261,7 +261,7 @@ open class RDShaderSPIRV: Resource {
     /// Returns the compilation error message for the given shader `stage`. Equivalent to getting one of ``compileErrorCompute``, ``compileErrorFragment``, ``compileErrorTesselationControl``, ``compileErrorTesselationEvaluation``, ``compileErrorVertex``.
     fileprivate final func get_stage_compile_error (_ stage: RenderingDevice.ShaderStage)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_stage = Int64 (stage.rawValue)
         

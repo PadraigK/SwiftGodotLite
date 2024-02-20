@@ -39,7 +39,7 @@ open class AESContext: RefCounted {
     /// Start the AES context in the given `mode`. A `key` of either 16 or 32 bytes must always be provided, while an `iv` (initialization vector) of exactly 16 bytes, is only needed when `mode` is either .cbcEncrypt or .cbcDecrypt.
     public final func start (mode: AESContext.Mode, key: PackedByteArray, iv: PackedByteArray = PackedByteArray())-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -82,7 +82,7 @@ open class AESContext: RefCounted {
     /// 
     public final func update (src: PackedByteArray)-> PackedByteArray {
         let _result: PackedByteArray = PackedByteArray ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AESContext.method_update, UnsafeMutableRawPointer (mutating: handle), &_result.content, &src.content)

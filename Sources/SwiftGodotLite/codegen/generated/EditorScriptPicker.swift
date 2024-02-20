@@ -42,7 +42,7 @@ open class EditorScriptPicker: EditorResourcePicker {
     
     @inline(__always)
     fileprivate final func set_script_owner (_ ownerNode: Node?) {
-        #if true
+        #if false
         
         var copy_owner_node_handle = ownerNode?.handle
         

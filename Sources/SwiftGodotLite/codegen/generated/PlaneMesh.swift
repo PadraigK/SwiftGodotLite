@@ -99,7 +99,7 @@ open class PlaneMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector2) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -149,7 +149,7 @@ open class PlaneMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_subdivide_width (_ subdivide: Int32) {
-        #if true
+        #if false
         
         var copy_subdivide: Int = Int (subdivide)
         
@@ -199,7 +199,7 @@ open class PlaneMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_subdivide_depth (_ subdivide: Int32) {
-        #if true
+        #if false
         
         var copy_subdivide: Int = Int (subdivide)
         
@@ -249,7 +249,7 @@ open class PlaneMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_center_offset (_ offset: Vector3) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -299,7 +299,7 @@ open class PlaneMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_orientation (_ orientation: PlaneMesh.Orientation) {
-        #if true
+        #if false
         
         var copy_orientation = Int64 (orientation.rawValue)
         

@@ -61,7 +61,7 @@ open class ResourceLoader: Object {
     /// 
     public static func loadThreadedRequest (path: String, typeHint: String = "", useSubThreads: Bool = false, cacheMode: ResourceLoader.CacheMode = .reuse)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         let gstr_type_hint = GString (typeHint)
@@ -113,7 +113,7 @@ open class ResourceLoader: Object {
     /// 
     public static func loadThreadedGetStatus (path: String, progress: GArray = GArray ())-> ResourceLoader.ThreadLoadStatus {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -153,7 +153,7 @@ open class ResourceLoader: Object {
     /// 
     public static func loadThreadedGet (path: String)-> Resource? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -200,7 +200,7 @@ open class ResourceLoader: Object {
     /// 
     public static func load (path: String, typeHint: String = "", cacheMode: ResourceLoader.CacheMode = .reuse)-> Resource? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         let gstr_type_hint = GString (typeHint)
@@ -244,7 +244,7 @@ open class ResourceLoader: Object {
     /// Returns the list of recognized extensions for a resource type.
     public static func getRecognizedExtensionsForType (_ type: String)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_type = GString (type)
         
@@ -280,7 +280,7 @@ open class ResourceLoader: Object {
     /// This method is performed implicitly for ResourceFormatLoaders written in GDScript (see ``ResourceFormatLoader`` for more information).
     /// 
     public static func addResourceFormatLoader (_ formatLoader: ResourceFormatLoader?, atFront: Bool = false) {
-        #if true
+        #if false
         
         var copy_at_front = atFront
         var copy_format_loader_handle = formatLoader?.handle
@@ -316,7 +316,7 @@ open class ResourceLoader: Object {
     
     /// Unregisters the given ``ResourceFormatLoader``.
     public static func removeResourceFormatLoader (_ formatLoader: ResourceFormatLoader?) {
-        #if true
+        #if false
         
         var copy_format_loader_handle = formatLoader?.handle
         
@@ -347,7 +347,7 @@ open class ResourceLoader: Object {
     
     /// Changes the behavior on missing sub-resources. The default behavior is to abort loading.
     public static func setAbortOnMissingResources (abort: Bool) {
-        #if true
+        #if false
         
         var copy_abort = abort
         
@@ -383,7 +383,7 @@ open class ResourceLoader: Object {
     /// 
     public static func getDependencies (path: String)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -420,7 +420,7 @@ open class ResourceLoader: Object {
     /// 
     public static func hasCached (path: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -457,7 +457,7 @@ open class ResourceLoader: Object {
     /// 
     public static func exists (path: String, typeHint: String = "")-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         let gstr_type_hint = GString (typeHint)
@@ -496,7 +496,7 @@ open class ResourceLoader: Object {
     /// Returns the ID associated with a given resource path, or `-1` when no such ID exists.
     public static func getResourceUid (path: String)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         

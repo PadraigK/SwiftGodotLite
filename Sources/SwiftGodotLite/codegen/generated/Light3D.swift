@@ -447,7 +447,7 @@ open class Light3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_editor_only (_ editorOnly: Bool) {
-        #if true
+        #if false
         
         var copy_editor_only = editorOnly
         
@@ -498,7 +498,7 @@ open class Light3D: VisualInstance3D {
     @inline(__always)
     /// Sets the value of the specified ``Light3D.Param`` parameter.
     internal final func set_param (_ param: Light3D.Param, _ value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -537,7 +537,7 @@ open class Light3D: VisualInstance3D {
     /// Returns the value of the specified ``Light3D.Param`` parameter.
     internal final func get_param (_ param: Light3D.Param)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -570,7 +570,7 @@ open class Light3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_shadow (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -620,7 +620,7 @@ open class Light3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_negative (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -670,7 +670,7 @@ open class Light3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_cull_mask (_ cullMask: UInt32) {
-        #if true
+        #if false
         
         var copy_cull_mask: Int = Int (cullMask)
         
@@ -720,7 +720,7 @@ open class Light3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_enable_distance_fade (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -770,7 +770,7 @@ open class Light3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_distance_fade_begin (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -820,7 +820,7 @@ open class Light3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_distance_fade_shadow (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -870,7 +870,7 @@ open class Light3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_distance_fade_length (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -920,7 +920,7 @@ open class Light3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -970,7 +970,7 @@ open class Light3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_shadow_reverse_cull_face (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1020,7 +1020,7 @@ open class Light3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_bake_mode (_ bakeMode: Light3D.BakeMode) {
-        #if true
+        #if false
         
         var copy_bake_mode = Int64 (bakeMode.rawValue)
         
@@ -1070,7 +1070,7 @@ open class Light3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_projector (_ projector: Texture2D?) {
-        #if true
+        #if false
         
         var copy_projector_handle = projector?.handle
         
@@ -1119,7 +1119,7 @@ open class Light3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_temperature (_ temperature: Double) {
-        #if true
+        #if false
         
         var copy_temperature = temperature
         

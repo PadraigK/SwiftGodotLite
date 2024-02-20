@@ -59,7 +59,7 @@ open class MultiMeshInstance2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_multimesh (_ multimesh: MultiMesh?) {
-        #if true
+        #if false
         
         var copy_multimesh_handle = multimesh?.handle
         
@@ -108,7 +108,7 @@ open class MultiMeshInstance2D: Node2D {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         

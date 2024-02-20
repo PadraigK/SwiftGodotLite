@@ -63,7 +63,7 @@ open class RDAttachmentFormat: RefCounted {
     
     @inline(__always)
     fileprivate final func set_format (_ pMember: RenderingDevice.DataFormat) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -113,7 +113,7 @@ open class RDAttachmentFormat: RefCounted {
     
     @inline(__always)
     fileprivate final func set_samples (_ pMember: RenderingDevice.TextureSamples) {
-        #if true
+        #if false
         
         var copy_p_member = Int64 (pMember.rawValue)
         
@@ -163,7 +163,7 @@ open class RDAttachmentFormat: RefCounted {
     
     @inline(__always)
     fileprivate final func set_usage_flags (_ pMember: UInt32) {
-        #if true
+        #if false
         
         var copy_p_member: Int = Int (pMember)
         

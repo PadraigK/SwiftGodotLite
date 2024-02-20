@@ -68,7 +68,7 @@ open class RandomNumberGenerator: RefCounted {
     
     @inline(__always)
     fileprivate final func set_seed (_ seed: UInt) {
-        #if true
+        #if false
         
         var copy_seed = seed
         
@@ -118,7 +118,7 @@ open class RandomNumberGenerator: RefCounted {
     
     @inline(__always)
     fileprivate final func set_state (_ state: UInt) {
-        #if true
+        #if false
         
         var copy_state = state
         
@@ -205,7 +205,7 @@ open class RandomNumberGenerator: RefCounted {
     /// Returns a [url=https://en.wikipedia.org/wiki/Normal_distribution]normally-distributed[/url] pseudo-random number, using Box-Muller transform with the specified `mean` and a standard `deviation`. This is also called Gaussian distribution.
     public final func randfn (mean: Double = 0.0, deviation: Double = 1.0)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_mean = mean
         var copy_deviation = deviation
@@ -244,7 +244,7 @@ open class RandomNumberGenerator: RefCounted {
     /// Returns a pseudo-random float between `from` and `to` (inclusive).
     public final func randfRange (from: Double, to: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_from = from
         var copy_to = to
@@ -283,7 +283,7 @@ open class RandomNumberGenerator: RefCounted {
     /// Returns a pseudo-random 32-bit signed integer between `from` and `to` (inclusive).
     public final func randiRange (from: Int32, to: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_from: Int = Int (from)
         var copy_to: Int = Int (to)

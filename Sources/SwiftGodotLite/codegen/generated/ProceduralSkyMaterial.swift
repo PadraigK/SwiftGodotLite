@@ -188,7 +188,7 @@ open class ProceduralSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_sky_top_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -238,7 +238,7 @@ open class ProceduralSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_sky_horizon_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -288,7 +288,7 @@ open class ProceduralSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_sky_curve (_ curve: Double) {
-        #if true
+        #if false
         
         var copy_curve = curve
         
@@ -338,7 +338,7 @@ open class ProceduralSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_sky_energy_multiplier (_ multiplier: Double) {
-        #if true
+        #if false
         
         var copy_multiplier = multiplier
         
@@ -388,7 +388,7 @@ open class ProceduralSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_sky_cover (_ skyCover: Texture2D?) {
-        #if true
+        #if false
         
         var copy_sky_cover_handle = skyCover?.handle
         
@@ -437,7 +437,7 @@ open class ProceduralSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_sky_cover_modulate (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -487,7 +487,7 @@ open class ProceduralSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_ground_bottom_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -537,7 +537,7 @@ open class ProceduralSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_ground_horizon_color (_ color: Color) {
-        #if true
+        #if false
         
         var copy_color = color
         
@@ -587,7 +587,7 @@ open class ProceduralSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_ground_curve (_ curve: Double) {
-        #if true
+        #if false
         
         var copy_curve = curve
         
@@ -637,7 +637,7 @@ open class ProceduralSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_ground_energy_multiplier (_ energy: Double) {
-        #if true
+        #if false
         
         var copy_energy = energy
         
@@ -687,7 +687,7 @@ open class ProceduralSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_sun_angle_max (_ degrees: Double) {
-        #if true
+        #if false
         
         var copy_degrees = degrees
         
@@ -737,7 +737,7 @@ open class ProceduralSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_sun_curve (_ curve: Double) {
-        #if true
+        #if false
         
         var copy_curve = curve
         
@@ -787,7 +787,7 @@ open class ProceduralSkyMaterial: Material {
     
     @inline(__always)
     fileprivate final func set_use_debanding (_ useDebanding: Bool) {
-        #if true
+        #if false
         
         var copy_use_debanding = useDebanding
         

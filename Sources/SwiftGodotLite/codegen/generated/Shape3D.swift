@@ -60,7 +60,7 @@ open class Shape3D: Resource {
     
     @inline(__always)
     fileprivate final func set_custom_solver_bias (_ bias: Double) {
-        #if true
+        #if false
         
         var copy_bias = bias
         
@@ -110,7 +110,7 @@ open class Shape3D: Resource {
     
     @inline(__always)
     fileprivate final func set_margin (_ margin: Double) {
-        #if true
+        #if false
         
         var copy_margin = margin
         

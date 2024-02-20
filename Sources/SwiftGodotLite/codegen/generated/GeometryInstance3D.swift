@@ -284,7 +284,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_material_override (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         
@@ -333,7 +333,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_material_overlay (_ material: Material?) {
-        #if true
+        #if false
         
         var copy_material_handle = material?.handle
         
@@ -382,7 +382,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_cast_shadows_setting (_ shadowCastingSetting: GeometryInstance3D.ShadowCastingSetting) {
-        #if true
+        #if false
         
         var copy_shadow_casting_setting = Int64 (shadowCastingSetting.rawValue)
         
@@ -432,7 +432,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_lod_bias (_ bias: Double) {
-        #if true
+        #if false
         
         var copy_bias = bias
         
@@ -482,7 +482,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_transparency (_ transparency: Double) {
-        #if true
+        #if false
         
         var copy_transparency = transparency
         
@@ -532,7 +532,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_visibility_range_end_margin (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -582,7 +582,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_visibility_range_end (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -632,7 +632,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_visibility_range_begin_margin (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -682,7 +682,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_visibility_range_begin (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -732,7 +732,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_visibility_range_fade_mode (_ mode: GeometryInstance3D.VisibilityRangeFadeMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -789,7 +789,7 @@ open class GeometryInstance3D: VisualInstance3D {
     /// > Note: Per-instance shader uniforms are currently only available in 3D, so there is no 2D equivalent of this method.
     /// 
     public final func setInstanceShaderParameter (name: StringName, value: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GeometryInstance3D.method_set_instance_shader_parameter, UnsafeMutableRawPointer (mutating: handle), nil, &name.content, &value.content)
@@ -823,7 +823,7 @@ open class GeometryInstance3D: VisualInstance3D {
     /// Get the value of a shader parameter as set on this instance.
     public final func getInstanceShaderParameter (name: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GeometryInstance3D.method_get_instance_shader_parameter, UnsafeMutableRawPointer (mutating: handle), &_result.content, &name.content)
@@ -854,7 +854,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_extra_cull_margin (_ margin: Double) {
-        #if true
+        #if false
         
         var copy_margin = margin
         
@@ -904,7 +904,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_lightmap_scale (_ scale: GeometryInstance3D.LightmapScale) {
-        #if true
+        #if false
         
         var copy_scale = Int64 (scale.rawValue)
         
@@ -954,7 +954,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_gi_mode (_ mode: GeometryInstance3D.GIMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -1004,7 +1004,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_ignore_occlusion_culling (_ ignoreCulling: Bool) {
-        #if true
+        #if false
         
         var copy_ignore_culling = ignoreCulling
         
@@ -1054,7 +1054,7 @@ open class GeometryInstance3D: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_custom_aabb (_ aabb: AABB) {
-        #if true
+        #if false
         
         var copy_aabb = aabb
         

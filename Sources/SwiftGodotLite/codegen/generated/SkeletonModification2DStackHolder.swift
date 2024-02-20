@@ -27,7 +27,7 @@ open class SkeletonModification2DStackHolder: SkeletonModification2D {
     
     /// Sets the ``SkeletonModificationStack2D`` that this modification is holding. This modification stack will then be executed when this modification is executed.
     public final func setHeldModificationStack (_ heldModificationStack: SkeletonModificationStack2D?) {
-        #if true
+        #if false
         
         var copy_held_modification_stack_handle = heldModificationStack?.handle
         

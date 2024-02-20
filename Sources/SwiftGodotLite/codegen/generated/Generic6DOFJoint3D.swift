@@ -93,7 +93,7 @@ open class Generic6DOFJoint3D: Joint3D {
     
     /// 
     public final func setParamX (param: Generic6DOFJoint3D.Param, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -131,7 +131,7 @@ open class Generic6DOFJoint3D: Joint3D {
     /// 
     public final func getParamX (param: Generic6DOFJoint3D.Param)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -164,7 +164,7 @@ open class Generic6DOFJoint3D: Joint3D {
     
     /// 
     public final func setParamY (param: Generic6DOFJoint3D.Param, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -202,7 +202,7 @@ open class Generic6DOFJoint3D: Joint3D {
     /// 
     public final func getParamY (param: Generic6DOFJoint3D.Param)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -235,7 +235,7 @@ open class Generic6DOFJoint3D: Joint3D {
     
     /// 
     public final func setParamZ (param: Generic6DOFJoint3D.Param, value: Double) {
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         var copy_value = value
@@ -273,7 +273,7 @@ open class Generic6DOFJoint3D: Joint3D {
     /// 
     public final func getParamZ (param: Generic6DOFJoint3D.Param)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_param = Int64 (param.rawValue)
         
@@ -306,7 +306,7 @@ open class Generic6DOFJoint3D: Joint3D {
     
     /// 
     public final func setFlagX (flag: Generic6DOFJoint3D.Flag, value: Bool) {
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         var copy_value = value
@@ -344,7 +344,7 @@ open class Generic6DOFJoint3D: Joint3D {
     /// 
     public final func getFlagX (flag: Generic6DOFJoint3D.Flag)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         
@@ -377,7 +377,7 @@ open class Generic6DOFJoint3D: Joint3D {
     
     /// 
     public final func setFlagY (flag: Generic6DOFJoint3D.Flag, value: Bool) {
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         var copy_value = value
@@ -415,7 +415,7 @@ open class Generic6DOFJoint3D: Joint3D {
     /// 
     public final func getFlagY (flag: Generic6DOFJoint3D.Flag)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         
@@ -448,7 +448,7 @@ open class Generic6DOFJoint3D: Joint3D {
     
     /// 
     public final func setFlagZ (flag: Generic6DOFJoint3D.Flag, value: Bool) {
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         var copy_value = value
@@ -486,7 +486,7 @@ open class Generic6DOFJoint3D: Joint3D {
     /// 
     public final func getFlagZ (flag: Generic6DOFJoint3D.Flag)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_flag = Int64 (flag.rawValue)
         

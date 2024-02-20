@@ -29,7 +29,7 @@ open class AudioEffectSpectrumAnalyzerInstance: AudioEffectInstance {
     /// 
     public final func getMagnitudeForFrequencyRange (fromHz: Double, toHz: Double, mode: AudioEffectSpectrumAnalyzerInstance.MagnitudeMode = .max)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_from_hz = fromHz
         var copy_to_hz = toHz

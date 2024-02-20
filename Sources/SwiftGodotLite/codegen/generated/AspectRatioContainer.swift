@@ -98,7 +98,7 @@ open class AspectRatioContainer: Container {
     
     @inline(__always)
     fileprivate final func set_ratio (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -148,7 +148,7 @@ open class AspectRatioContainer: Container {
     
     @inline(__always)
     fileprivate final func set_stretch_mode (_ stretchMode: AspectRatioContainer.StretchMode) {
-        #if true
+        #if false
         
         var copy_stretch_mode = Int64 (stretchMode.rawValue)
         
@@ -198,7 +198,7 @@ open class AspectRatioContainer: Container {
     
     @inline(__always)
     fileprivate final func set_alignment_horizontal (_ alignmentHorizontal: AspectRatioContainer.AlignmentMode) {
-        #if true
+        #if false
         
         var copy_alignment_horizontal = Int64 (alignmentHorizontal.rawValue)
         
@@ -248,7 +248,7 @@ open class AspectRatioContainer: Container {
     
     @inline(__always)
     fileprivate final func set_alignment_vertical (_ alignmentVertical: AspectRatioContainer.AlignmentMode) {
-        #if true
+        #if false
         
         var copy_alignment_vertical = Int64 (alignmentVertical.rawValue)
         

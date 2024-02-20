@@ -139,7 +139,7 @@ open class AcceptDialog: Window {
     
     @inline(__always)
     fileprivate final func set_hide_on_ok (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -189,7 +189,7 @@ open class AcceptDialog: Window {
     
     @inline(__always)
     fileprivate final func set_close_on_escape (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -245,7 +245,7 @@ open class AcceptDialog: Window {
     /// 
     public final func addButton (text: String, right: Bool = false, action: String = "")-> Button? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         var copy_right = right
@@ -292,7 +292,7 @@ open class AcceptDialog: Window {
     /// 
     public final func addCancelButton (name: String)-> Button? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -325,7 +325,7 @@ open class AcceptDialog: Window {
     
     /// Removes the `button` from the dialog. Does NOT free the `button`. The `button` must be a ``Button`` added with ``addButton(text:right:action:)`` or ``addCancelButton(name:)`` method. After removal, pressing the `button` will no longer emit this dialog's [signal custom_action] or [signal canceled] signals.
     public final func removeButton (_ button: Control?) {
-        #if true
+        #if false
         
         var copy_button_handle = button?.handle
         
@@ -356,7 +356,7 @@ open class AcceptDialog: Window {
     
     /// Registers a ``LineEdit`` in the dialog. When the enter key is pressed, the dialog will be accepted.
     public final func registerTextEnter (lineEdit: Control?) {
-        #if true
+        #if false
         
         var copy_line_edit_handle = lineEdit?.handle
         
@@ -387,7 +387,7 @@ open class AcceptDialog: Window {
     
     @inline(__always)
     fileprivate final func set_text (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         
@@ -437,7 +437,7 @@ open class AcceptDialog: Window {
     
     @inline(__always)
     fileprivate final func set_autowrap (_ autowrap: Bool) {
-        #if true
+        #if false
         
         var copy_autowrap = autowrap
         
@@ -487,7 +487,7 @@ open class AcceptDialog: Window {
     
     @inline(__always)
     fileprivate final func set_ok_button_text (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         

@@ -75,7 +75,7 @@ open class OccluderPolygon2D: Resource {
     
     @inline(__always)
     fileprivate final func set_closed (_ closed: Bool) {
-        #if true
+        #if false
         
         var copy_closed = closed
         
@@ -125,7 +125,7 @@ open class OccluderPolygon2D: Resource {
     
     @inline(__always)
     fileprivate final func set_cull_mode (_ cullMode: OccluderPolygon2D.CullMode) {
-        #if true
+        #if false
         
         var copy_cull_mode = Int64 (cullMode.rawValue)
         
@@ -175,7 +175,7 @@ open class OccluderPolygon2D: Resource {
     
     @inline(__always)
     fileprivate final func set_polygon (_ polygon: PackedVector2Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (OccluderPolygon2D.method_set_polygon, UnsafeMutableRawPointer (mutating: handle), nil, &polygon.content)

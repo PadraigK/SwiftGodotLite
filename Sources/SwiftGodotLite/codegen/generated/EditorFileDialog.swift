@@ -192,7 +192,7 @@ open class EditorFileDialog: ConfirmationDialog {
     /// For example, a `filter` of `"*.tscn, *.scn"` and a `description` of `"Scenes"` results in filter text "Scenes (*.tscn, *.scn)".
     /// 
     public final func addFilter (_ filter: String, description: String = "") {
-        #if true
+        #if false
         
         let gstr_filter = GString (filter)
         let gstr_description = GString (description)
@@ -229,7 +229,7 @@ open class EditorFileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_filters (_ filters: PackedStringArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (EditorFileDialog.method_set_filters, UnsafeMutableRawPointer (mutating: handle), nil, &filters.content)
@@ -331,7 +331,7 @@ open class EditorFileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_current_dir (_ dir: String) {
-        #if true
+        #if false
         
         let gstr_dir = GString (dir)
         
@@ -363,7 +363,7 @@ open class EditorFileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_current_file (_ file: String) {
-        #if true
+        #if false
         
         let gstr_file = GString (file)
         
@@ -395,7 +395,7 @@ open class EditorFileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_current_path (_ path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -427,7 +427,7 @@ open class EditorFileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_file_mode (_ mode: EditorFileDialog.FileMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -519,7 +519,7 @@ open class EditorFileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_access (_ access: EditorFileDialog.Access) {
-        #if true
+        #if false
         
         var copy_access = Int64 (access.rawValue)
         
@@ -569,7 +569,7 @@ open class EditorFileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_show_hidden_files (_ show: Bool) {
-        #if true
+        #if false
         
         var copy_show = show
         
@@ -619,7 +619,7 @@ open class EditorFileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_display_mode (_ mode: EditorFileDialog.DisplayMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -669,7 +669,7 @@ open class EditorFileDialog: ConfirmationDialog {
     
     @inline(__always)
     fileprivate final func set_disable_overwrite_warning (_ disable: Bool) {
-        #if true
+        #if false
         
         var copy_disable = disable
         
@@ -719,7 +719,7 @@ open class EditorFileDialog: ConfirmationDialog {
     
     /// Adds the given `menu` to the side of the file dialog with the given `title` text on top. Only one side menu is allowed.
     public final func addSideMenu (_ menu: Control?, title: String = "") {
-        #if true
+        #if false
         
         let gstr_title = GString (title)
         var copy_menu_handle = menu?.handle

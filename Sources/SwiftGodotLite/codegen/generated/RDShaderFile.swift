@@ -42,7 +42,7 @@ open class RDShaderFile: Resource {
     
     /// Sets the SPIR-V `bytecode` that will be compiled for the specified `version`.
     public final func setBytecode (_ bytecode: RDShaderSPIRV?, version: StringName = StringName ("")) {
-        #if true
+        #if false
         
         var copy_bytecode_handle = bytecode?.handle
         
@@ -77,7 +77,7 @@ open class RDShaderFile: Resource {
     /// Returns the SPIR-V intermediate representation for the specified shader `version`.
     public final func getSpirv (version: StringName = StringName (""))-> RDShaderSPIRV? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (RDShaderFile.method_get_spirv, UnsafeMutableRawPointer (mutating: handle), &_result, &version.content)
@@ -126,7 +126,7 @@ open class RDShaderFile: Resource {
     
     @inline(__always)
     fileprivate final func set_base_error (_ error: String) {
-        #if true
+        #if false
         
         let gstr_error = GString (error)
         

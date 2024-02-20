@@ -282,7 +282,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_transform (_ local: Transform3D) {
-        #if true
+        #if false
         
         var copy_local = local
         
@@ -332,7 +332,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_position (_ position: Vector3) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -382,7 +382,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_rotation (_ eulerRadians: Vector3) {
-        #if true
+        #if false
         
         var copy_euler_radians = eulerRadians
         
@@ -432,7 +432,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_rotation_degrees (_ eulerDegrees: Vector3) {
-        #if true
+        #if false
         
         var copy_euler_degrees = eulerDegrees
         
@@ -482,7 +482,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_rotation_order (_ order: EulerOrder) {
-        #if true
+        #if false
         
         var copy_order = Int64 (order.rawValue)
         
@@ -532,7 +532,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_rotation_edit_mode (_ editMode: Node3D.RotationEditMode) {
-        #if true
+        #if false
         
         var copy_edit_mode = Int64 (editMode.rawValue)
         
@@ -582,7 +582,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_scale (_ scale: Vector3) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -632,7 +632,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_quaternion (_ quaternion: Quaternion) {
-        #if true
+        #if false
         
         var copy_quaternion = quaternion
         
@@ -682,7 +682,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_basis (_ basis: Basis) {
-        #if true
+        #if false
         
         var copy_basis = basis
         
@@ -732,7 +732,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_global_transform (_ global: Transform3D) {
-        #if true
+        #if false
         
         var copy_global = global
         
@@ -782,7 +782,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_global_position (_ position: Vector3) {
-        #if true
+        #if false
         
         var copy_position = position
         
@@ -832,7 +832,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_global_basis (_ basis: Basis) {
-        #if true
+        #if false
         
         var copy_basis = basis
         
@@ -882,7 +882,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_global_rotation (_ eulerRadians: Vector3) {
-        #if true
+        #if false
         
         var copy_euler_radians = eulerRadians
         
@@ -932,7 +932,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_global_rotation_degrees (_ eulerDegrees: Vector3) {
-        #if true
+        #if false
         
         var copy_euler_degrees = eulerDegrees
         
@@ -1000,7 +1000,7 @@ open class Node3D: Node {
     
     /// Sets whether the node ignores notification that its transformation (global or local) changed.
     public final func setIgnoreTransformNotification (enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1032,7 +1032,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_as_top_level (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1082,7 +1082,7 @@ open class Node3D: Node {
     
     /// Sets whether the node uses a scale of `(1, 1, 1)` or its local transformation scale. Changes to the local transformation scale are preserved.
     public final func setDisableScale (disable: Bool) {
-        #if true
+        #if false
         
         var copy_disable = disable
         
@@ -1166,7 +1166,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_visibility_parent (_ path: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Node3D.method_set_visibility_parent, UnsafeMutableRawPointer (mutating: handle), nil, &path.content)
@@ -1233,7 +1233,7 @@ open class Node3D: Node {
     /// > Note: The gizmo object would typically be an instance of ``EditorNode3DGizmo``, but the argument type is kept generic to avoid creating a dependency on editor classes in ``Node3D``.
     /// 
     public final func addGizmo (_ gizmo: Node3DGizmo?) {
-        #if true
+        #if false
         
         var copy_gizmo_handle = gizmo?.handle
         
@@ -1301,7 +1301,7 @@ open class Node3D: Node {
     /// > Note: The gizmo object would typically be an instance of ``EditorNode3DGizmo``, but the argument type is kept generic to avoid creating a dependency on editor classes in ``Node3D``.
     /// 
     public final func setSubgizmoSelection (gizmo: Node3DGizmo?, id: Int32, transform: Transform3D) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         var copy_transform = transform
@@ -1358,7 +1358,7 @@ open class Node3D: Node {
     
     @inline(__always)
     fileprivate final func set_visible (_ visible: Bool) {
-        #if true
+        #if false
         
         var copy_visible = visible
         
@@ -1458,7 +1458,7 @@ open class Node3D: Node {
     
     /// Sets whether the node notifies about its local transformation changes. ``Node3D`` will not propagate this by default.
     public final func setNotifyLocalTransform (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1508,7 +1508,7 @@ open class Node3D: Node {
     
     /// Sets whether the node notifies about its global and local transformation changes. ``Node3D`` will not propagate this by default, unless it is in the editor context and it has a valid gizmo.
     public final func setNotifyTransform (enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1558,7 +1558,7 @@ open class Node3D: Node {
     
     /// Rotates the local transformation around axis, a unit ``Vector3``, by specified angle in radians.
     public final func rotate (axis: Vector3, angle: Double) {
-        #if true
+        #if false
         
         var copy_axis = axis
         var copy_angle = angle
@@ -1595,7 +1595,7 @@ open class Node3D: Node {
     
     /// Rotates the global (world) transformation around axis, a unit ``Vector3``, by specified angle in radians. The rotation axis is in global coordinate system.
     public final func globalRotate (axis: Vector3, angle: Double) {
-        #if true
+        #if false
         
         var copy_axis = axis
         var copy_angle = angle
@@ -1632,7 +1632,7 @@ open class Node3D: Node {
     
     /// Scales the global (world) transformation by the given ``Vector3`` scale factors.
     public final func globalScale (_ scale: Vector3) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -1664,7 +1664,7 @@ open class Node3D: Node {
     
     /// Moves the global (world) transformation by ``Vector3`` offset. The offset is in global coordinate system.
     public final func globalTranslate (offset: Vector3) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -1696,7 +1696,7 @@ open class Node3D: Node {
     
     /// Rotates the local transformation around axis, a unit ``Vector3``, by specified angle in radians. The rotation axis is in object-local coordinate system.
     public final func rotateObjectLocal (axis: Vector3, angle: Double) {
-        #if true
+        #if false
         
         var copy_axis = axis
         var copy_angle = angle
@@ -1733,7 +1733,7 @@ open class Node3D: Node {
     
     /// Scales the local transformation by given 3D scale factors in object-local coordinate system.
     public final func scaleObjectLocal (scale: Vector3) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -1765,7 +1765,7 @@ open class Node3D: Node {
     
     /// Changes the node's position by the given offset ``Vector3`` in local space.
     public final func translateObjectLocal (offset: Vector3) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -1797,7 +1797,7 @@ open class Node3D: Node {
     
     /// Rotates the local transformation around the X axis by angle in radians.
     public final func rotateX (angle: Double) {
-        #if true
+        #if false
         
         var copy_angle = angle
         
@@ -1829,7 +1829,7 @@ open class Node3D: Node {
     
     /// Rotates the local transformation around the Y axis by angle in radians.
     public final func rotateY (angle: Double) {
-        #if true
+        #if false
         
         var copy_angle = angle
         
@@ -1861,7 +1861,7 @@ open class Node3D: Node {
     
     /// Rotates the local transformation around the Z axis by angle in radians.
     public final func rotateZ (angle: Double) {
-        #if true
+        #if false
         
         var copy_angle = angle
         
@@ -1896,7 +1896,7 @@ open class Node3D: Node {
     /// Note that the translation `offset` is affected by the node's scale, so if scaled by e.g. `(10, 1, 1)`, a translation by an offset of `(2, 0, 0)` would actually add 20 (`2 * 10`) to the X coordinate.
     /// 
     public final func translate (offset: Vector3) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -1969,7 +1969,7 @@ open class Node3D: Node {
     /// If `useModelFront` is `true`, the +Z axis (asset front) is treated as forward (implies +X is left) and points toward the `target` position. By default, the -Z axis (camera forward) is treated as forward (implies +X is right).
     /// 
     public final func lookAt (target: Vector3, up: Vector3 = Vector3 (x: 0, y: 1, z: 0), useModelFront: Bool = false) {
-        #if true
+        #if false
         
         var copy_target = target
         var copy_up = up
@@ -2011,7 +2011,7 @@ open class Node3D: Node {
     
     /// Moves the node to the specified `position`, and then rotates the node to point toward the `target` as per ``lookAt(target:up:useModelFront:)``. Operations take place in global space.
     public final func lookAtFromPosition (_ position: Vector3, target: Vector3, up: Vector3 = Vector3 (x: 0, y: 1, z: 0), useModelFront: Bool = false) {
-        #if true
+        #if false
         
         var copy_position = position
         var copy_target = target
@@ -2059,7 +2059,7 @@ open class Node3D: Node {
     /// Transforms `globalPoint` from world space to this node's local space.
     public final func toLocal (globalPoint: Vector3)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_global_point = globalPoint
         
@@ -2093,7 +2093,7 @@ open class Node3D: Node {
     /// Transforms `localPoint` from this node's local space to world space.
     public final func toGlobal (localPoint: Vector3)-> Vector3 {
         var _result: Vector3 = Vector3 ()
-        #if true
+        #if false
         
         var copy_local_point = localPoint
         

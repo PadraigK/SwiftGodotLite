@@ -39,7 +39,7 @@ open class VisualShaderNodeParticleEmitter: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_mode_2d (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

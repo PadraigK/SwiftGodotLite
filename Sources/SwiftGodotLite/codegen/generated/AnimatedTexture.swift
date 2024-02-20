@@ -101,7 +101,7 @@ open class AnimatedTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_frames (_ frames: Int32) {
-        #if true
+        #if false
         
         var copy_frames: Int = Int (frames)
         
@@ -151,7 +151,7 @@ open class AnimatedTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_current_frame (_ frame: Int32) {
-        #if true
+        #if false
         
         var copy_frame: Int = Int (frame)
         
@@ -201,7 +201,7 @@ open class AnimatedTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_pause (_ pause: Bool) {
-        #if true
+        #if false
         
         var copy_pause = pause
         
@@ -251,7 +251,7 @@ open class AnimatedTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_one_shot (_ oneShot: Bool) {
-        #if true
+        #if false
         
         var copy_one_shot = oneShot
         
@@ -301,7 +301,7 @@ open class AnimatedTexture: Texture2D {
     
     @inline(__always)
     fileprivate final func set_speed_scale (_ scale: Double) {
-        #if true
+        #if false
         
         var copy_scale = scale
         
@@ -354,7 +354,7 @@ open class AnimatedTexture: Texture2D {
     /// You can define any number of textures up to ``maxFrames``, but keep in mind that only frames from 0 to ``frames`` - 1 will be part of the animation.
     /// 
     public final func setFrameTexture (frame: Int32, texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_frame: Int = Int (frame)
         var copy_texture_handle = texture?.handle
@@ -391,7 +391,7 @@ open class AnimatedTexture: Texture2D {
     /// Returns the given frame's ``Texture2D``.
     public final func getFrameTexture (frame: Int32)-> Texture2D? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_frame: Int = Int (frame)
         
@@ -424,7 +424,7 @@ open class AnimatedTexture: Texture2D {
     
     /// Sets the duration of any given `frame`. The final duration is affected by the ``speedScale``. If set to `0`, the frame is skipped during playback.
     public final func setFrameDuration (frame: Int32, duration: Double) {
-        #if true
+        #if false
         
         var copy_frame: Int = Int (frame)
         var copy_duration = duration
@@ -462,7 +462,7 @@ open class AnimatedTexture: Texture2D {
     /// Returns the given `frame`'s duration, in seconds.
     public final func getFrameDuration (frame: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_frame: Int = Int (frame)
         

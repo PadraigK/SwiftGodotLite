@@ -54,7 +54,7 @@ open class SeparationRayShape2D: Shape2D {
     
     @inline(__always)
     fileprivate final func set_length (_ length: Double) {
-        #if true
+        #if false
         
         var copy_length = length
         
@@ -104,7 +104,7 @@ open class SeparationRayShape2D: Shape2D {
     
     @inline(__always)
     fileprivate final func set_slide_on_slope (_ active: Bool) {
-        #if true
+        #if false
         
         var copy_active = active
         

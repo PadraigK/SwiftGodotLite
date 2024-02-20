@@ -252,7 +252,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     /// 
     public final func applyCentralImpulse (_ impulse: Vector3) {
-        #if true
+        #if false
         
         var copy_impulse = impulse
         
@@ -284,7 +284,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     /// 
     public final func applyImpulse (_ impulse: Vector3, position: Vector3 = Vector3 (x: 0, y: 0, z: 0)) {
-        #if true
+        #if false
         
         var copy_impulse = impulse
         var copy_position = position
@@ -321,7 +321,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_joint_type (_ jointType: PhysicalBone3D.JointType) {
-        #if true
+        #if false
         
         var copy_joint_type = Int64 (jointType.rawValue)
         
@@ -371,7 +371,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_joint_offset (_ offset: Transform3D) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -421,7 +421,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_joint_rotation (_ euler: Vector3) {
-        #if true
+        #if false
         
         var copy_euler = euler
         
@@ -471,7 +471,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_body_offset (_ offset: Transform3D) {
-        #if true
+        #if false
         
         var copy_offset = offset
         
@@ -575,7 +575,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_mass (_ mass: Double) {
-        #if true
+        #if false
         
         var copy_mass = mass
         
@@ -625,7 +625,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_friction (_ friction: Double) {
-        #if true
+        #if false
         
         var copy_friction = friction
         
@@ -675,7 +675,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_bounce (_ bounce: Double) {
-        #if true
+        #if false
         
         var copy_bounce = bounce
         
@@ -725,7 +725,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_gravity_scale (_ gravityScale: Double) {
-        #if true
+        #if false
         
         var copy_gravity_scale = gravityScale
         
@@ -775,7 +775,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_linear_damp_mode (_ linearDampMode: PhysicalBone3D.DampMode) {
-        #if true
+        #if false
         
         var copy_linear_damp_mode = Int64 (linearDampMode.rawValue)
         
@@ -825,7 +825,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_angular_damp_mode (_ angularDampMode: PhysicalBone3D.DampMode) {
-        #if true
+        #if false
         
         var copy_angular_damp_mode = Int64 (angularDampMode.rawValue)
         
@@ -875,7 +875,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_linear_damp (_ linearDamp: Double) {
-        #if true
+        #if false
         
         var copy_linear_damp = linearDamp
         
@@ -925,7 +925,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_angular_damp (_ angularDamp: Double) {
-        #if true
+        #if false
         
         var copy_angular_damp = angularDamp
         
@@ -975,7 +975,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_linear_velocity (_ linearVelocity: Vector3) {
-        #if true
+        #if false
         
         var copy_linear_velocity = linearVelocity
         
@@ -1025,7 +1025,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_angular_velocity (_ angularVelocity: Vector3) {
-        #if true
+        #if false
         
         var copy_angular_velocity = angularVelocity
         
@@ -1075,7 +1075,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_use_custom_integrator (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1125,7 +1125,7 @@ open class PhysicalBone3D: PhysicsBody3D {
     
     @inline(__always)
     fileprivate final func set_can_sleep (_ ableToSleep: Bool) {
-        #if true
+        #if false
         
         var copy_able_to_sleep = ableToSleep
         

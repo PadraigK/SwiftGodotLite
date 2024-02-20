@@ -42,7 +42,7 @@ open class SphereOccluder3D: Occluder3D {
     
     @inline(__always)
     fileprivate final func set_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         

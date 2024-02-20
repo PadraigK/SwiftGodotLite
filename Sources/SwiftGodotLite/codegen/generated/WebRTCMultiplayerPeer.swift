@@ -35,7 +35,7 @@ open class WebRTCMultiplayerPeer: MultiplayerPeer {
     /// 
     public final func createServer (channelsConfig: GArray = GArray ())-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (WebRTCMultiplayerPeer.method_create_server, UnsafeMutableRawPointer (mutating: handle), &_result, &channelsConfig.content)
@@ -70,7 +70,7 @@ open class WebRTCMultiplayerPeer: MultiplayerPeer {
     /// 
     public final func createClient (peerId: Int32, channelsConfig: GArray = GArray ())-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_peer_id: Int = Int (peerId)
         
@@ -107,7 +107,7 @@ open class WebRTCMultiplayerPeer: MultiplayerPeer {
     /// Initialize the multiplayer peer as a mesh (i.e. all peers connect to each other) with the given `peerId` (must be between 1 and 2147483647).
     public final func createMesh (peerId: Int32, channelsConfig: GArray = GArray ())-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_peer_id: Int = Int (peerId)
         
@@ -147,7 +147,7 @@ open class WebRTCMultiplayerPeer: MultiplayerPeer {
     /// 
     public final func addPeer (_ peer: WebRTCPeerConnection?, peerId: Int32, unreliableLifetime: Int32 = 1)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_peer_id: Int = Int (peerId)
         var copy_unreliable_lifetime: Int = Int (unreliableLifetime)
@@ -189,7 +189,7 @@ open class WebRTCMultiplayerPeer: MultiplayerPeer {
     
     /// Remove the peer with given `peerId` from the mesh. If the peer was connected, and [signal MultiplayerPeer.peer_connected] was emitted for it, then [signal MultiplayerPeer.peer_disconnected] will be emitted.
     public final func removePeer (peerId: Int32) {
-        #if true
+        #if false
         
         var copy_peer_id: Int = Int (peerId)
         
@@ -222,7 +222,7 @@ open class WebRTCMultiplayerPeer: MultiplayerPeer {
     /// Returns `true` if the given `peerId` is in the peers map (it might not be connected though).
     public final func hasPeer (peerId: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_peer_id: Int = Int (peerId)
         
@@ -256,7 +256,7 @@ open class WebRTCMultiplayerPeer: MultiplayerPeer {
     /// Returns a dictionary representation of the peer with given `peerId` with three keys. `"connection"` containing the ``WebRTCPeerConnection`` to this peer, `"channels"` an array of three ``WebRTCDataChannel``, and `"connected"` a boolean representing if the peer connection is currently connected (all three channels are open).
     public final func getPeer (peerId: Int32)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_peer_id: Int = Int (peerId)
         

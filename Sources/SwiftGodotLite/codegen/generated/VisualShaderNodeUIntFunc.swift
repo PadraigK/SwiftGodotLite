@@ -48,7 +48,7 @@ open class VisualShaderNodeUIntFunc: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_function (_ `func`: VisualShaderNodeUIntFunc.Function) {
-        #if true
+        #if false
         
         var copy_func = Int64 (`func`.rawValue)
         

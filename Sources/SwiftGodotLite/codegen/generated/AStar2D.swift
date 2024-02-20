@@ -68,7 +68,7 @@ open class AStar2D: RefCounted {
     /// If there already exists a point for the given `id`, its position and weight scale are updated to the given values.
     /// 
     public final func addPoint (id: Int, position: Vector2, weightScale: Double = 1.0) {
-        #if true
+        #if false
         
         var copy_id = id
         var copy_position = position
@@ -111,7 +111,7 @@ open class AStar2D: RefCounted {
     /// Returns the position of the point associated with the given `id`.
     public final func getPointPosition (id: Int)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -144,7 +144,7 @@ open class AStar2D: RefCounted {
     
     /// Sets the `position` for the point with the given `id`.
     public final func setPointPosition (id: Int, position: Vector2) {
-        #if true
+        #if false
         
         var copy_id = id
         var copy_position = position
@@ -182,7 +182,7 @@ open class AStar2D: RefCounted {
     /// Returns the weight scale of the point associated with the given `id`.
     public final func getPointWeightScale (id: Int)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -215,7 +215,7 @@ open class AStar2D: RefCounted {
     
     /// Sets the `weightScale` for the point with the given `id`. The `weightScale` is multiplied by the result of ``_computeCost(fromId:toId:)`` when determining the overall cost of traveling across a segment from a neighboring point to this point.
     public final func setPointWeightScale (id: Int, weightScale: Double) {
-        #if true
+        #if false
         
         var copy_id = id
         var copy_weight_scale = weightScale
@@ -252,7 +252,7 @@ open class AStar2D: RefCounted {
     
     /// Removes the point associated with the given `id` from the points pool.
     public final func removePoint (id: Int) {
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -285,7 +285,7 @@ open class AStar2D: RefCounted {
     /// Returns whether a point associated with the given `id` exists.
     public final func hasPoint (id: Int)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -320,7 +320,7 @@ open class AStar2D: RefCounted {
     /// 
     public final func getPointConnections (id: Int)-> PackedInt64Array {
         let _result: PackedInt64Array = PackedInt64Array ()
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -371,7 +371,7 @@ open class AStar2D: RefCounted {
     
     /// Disables or enables the specified point for pathfinding. Useful for making a temporary obstacle.
     public final func setPointDisabled (id: Int, disabled: Bool = true) {
-        #if true
+        #if false
         
         var copy_id = id
         var copy_disabled = disabled
@@ -409,7 +409,7 @@ open class AStar2D: RefCounted {
     /// Returns whether a point is disabled or not for pathfinding. By default, all points are enabled.
     public final func isPointDisabled (id: Int)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_id = id
         
@@ -443,7 +443,7 @@ open class AStar2D: RefCounted {
     /// Creates a segment between the given points. If `bidirectional` is `false`, only movement from `id` to `toId` is allowed, not the reverse direction.
     /// 
     public final func connectPoints (id: Int, toId: Int, bidirectional: Bool = true) {
-        #if true
+        #if false
         
         var copy_id = id
         var copy_to_id = toId
@@ -485,7 +485,7 @@ open class AStar2D: RefCounted {
     
     /// Deletes the segment between the given points. If `bidirectional` is `false`, only movement from `id` to `toId` is prevented, and a unidirectional segment possibly remains.
     public final func disconnectPoints (id: Int, toId: Int, bidirectional: Bool = true) {
-        #if true
+        #if false
         
         var copy_id = id
         var copy_to_id = toId
@@ -528,7 +528,7 @@ open class AStar2D: RefCounted {
     /// Returns whether there is a connection/segment between the given points. If `bidirectional` is `false`, returns whether movement from `id` to `toId` is possible through this segment.
     public final func arePointsConnected (id: Int, toId: Int, bidirectional: Bool = true)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_id = id
         var copy_to_id = toId
@@ -607,7 +607,7 @@ open class AStar2D: RefCounted {
     
     /// Reserves space internally for `numNodes` points, useful if you're adding a known large number of points at once, such as points on a grid. New capacity must be greater or equals to old capacity.
     public final func reserveSpace (numNodes: Int) {
-        #if true
+        #if false
         
         var copy_num_nodes = numNodes
         
@@ -659,7 +659,7 @@ open class AStar2D: RefCounted {
     /// 
     public final func getClosestPoint (toPosition: Vector2, includeDisabled: Bool = false)-> Int {
         var _result: Int = 0
-        #if true
+        #if false
         
         var copy_to_position = toPosition
         var copy_include_disabled = includeDisabled
@@ -701,7 +701,7 @@ open class AStar2D: RefCounted {
     /// 
     public final func getClosestPositionInSegment (toPosition: Vector2)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_to_position = toPosition
         
@@ -738,7 +738,7 @@ open class AStar2D: RefCounted {
     /// 
     public final func getPointPath (fromId: Int, toId: Int)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_from_id = fromId
         var copy_to_id = toId
@@ -780,7 +780,7 @@ open class AStar2D: RefCounted {
     /// 
     public final func getIdPath (fromId: Int, toId: Int)-> PackedInt64Array {
         let _result: PackedInt64Array = PackedInt64Array ()
-        #if true
+        #if false
         
         var copy_from_id = fromId
         var copy_to_id = toId

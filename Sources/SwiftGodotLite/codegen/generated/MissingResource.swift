@@ -50,7 +50,7 @@ open class MissingResource: Resource {
     
     @inline(__always)
     fileprivate final func set_original_class (_ name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -100,7 +100,7 @@ open class MissingResource: Resource {
     
     @inline(__always)
     fileprivate final func set_recording_properties (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         

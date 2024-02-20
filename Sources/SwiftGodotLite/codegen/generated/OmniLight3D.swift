@@ -81,7 +81,7 @@ open class OmniLight3D: Light3D {
     
     @inline(__always)
     fileprivate final func set_shadow_mode (_ mode: OmniLight3D.ShadowMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

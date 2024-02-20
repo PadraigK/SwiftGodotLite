@@ -220,7 +220,7 @@ open class ReflectionProbe: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_intensity (_ intensity: Double) {
-        #if true
+        #if false
         
         var copy_intensity = intensity
         
@@ -270,7 +270,7 @@ open class ReflectionProbe: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_ambient_mode (_ ambient: ReflectionProbe.AmbientMode) {
-        #if true
+        #if false
         
         var copy_ambient = Int64 (ambient.rawValue)
         
@@ -320,7 +320,7 @@ open class ReflectionProbe: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_ambient_color (_ ambient: Color) {
-        #if true
+        #if false
         
         var copy_ambient = ambient
         
@@ -370,7 +370,7 @@ open class ReflectionProbe: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_ambient_color_energy (_ ambientEnergy: Double) {
-        #if true
+        #if false
         
         var copy_ambient_energy = ambientEnergy
         
@@ -420,7 +420,7 @@ open class ReflectionProbe: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_max_distance (_ maxDistance: Double) {
-        #if true
+        #if false
         
         var copy_max_distance = maxDistance
         
@@ -470,7 +470,7 @@ open class ReflectionProbe: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_mesh_lod_threshold (_ ratio: Double) {
-        #if true
+        #if false
         
         var copy_ratio = ratio
         
@@ -520,7 +520,7 @@ open class ReflectionProbe: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_size (_ size: Vector3) {
-        #if true
+        #if false
         
         var copy_size = size
         
@@ -570,7 +570,7 @@ open class ReflectionProbe: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_origin_offset (_ originOffset: Vector3) {
-        #if true
+        #if false
         
         var copy_origin_offset = originOffset
         
@@ -620,7 +620,7 @@ open class ReflectionProbe: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_as_interior (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -670,7 +670,7 @@ open class ReflectionProbe: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_enable_box_projection (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -720,7 +720,7 @@ open class ReflectionProbe: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_enable_shadows (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -770,7 +770,7 @@ open class ReflectionProbe: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_cull_mask (_ layers: UInt32) {
-        #if true
+        #if false
         
         var copy_layers: Int = Int (layers)
         
@@ -820,7 +820,7 @@ open class ReflectionProbe: VisualInstance3D {
     
     @inline(__always)
     fileprivate final func set_update_mode (_ mode: ReflectionProbe.UpdateMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

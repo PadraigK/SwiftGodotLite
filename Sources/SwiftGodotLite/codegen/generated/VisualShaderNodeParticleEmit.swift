@@ -52,7 +52,7 @@ open class VisualShaderNodeParticleEmit: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_flags (_ flags: VisualShaderNodeParticleEmit.EmitFlags) {
-        #if true
+        #if false
         
         var copy_flags = Int64 (flags.rawValue)
         

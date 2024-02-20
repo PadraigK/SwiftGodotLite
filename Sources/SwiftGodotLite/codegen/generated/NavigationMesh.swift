@@ -371,7 +371,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_sample_partition_type (_ samplePartitionType: NavigationMesh.SamplePartitionType) {
-        #if true
+        #if false
         
         var copy_sample_partition_type = Int64 (samplePartitionType.rawValue)
         
@@ -421,7 +421,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_parsed_geometry_type (_ geometryType: NavigationMesh.ParsedGeometryType) {
-        #if true
+        #if false
         
         var copy_geometry_type = Int64 (geometryType.rawValue)
         
@@ -471,7 +471,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_collision_mask (_ mask: UInt32) {
-        #if true
+        #if false
         
         var copy_mask: Int = Int (mask)
         
@@ -521,7 +521,7 @@ open class NavigationMesh: Resource {
     
     /// Based on `value`, enables or disables the specified layer in the ``geometryCollisionMask``, given a `layerNumber` between 1 and 32.
     public final func setCollisionMaskValue (layerNumber: Int32, value: Bool) {
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         var copy_value = value
@@ -559,7 +559,7 @@ open class NavigationMesh: Resource {
     /// Returns whether or not the specified layer of the ``geometryCollisionMask`` is enabled, given a `layerNumber` between 1 and 32.
     public final func getCollisionMaskValue (layerNumber: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_layer_number: Int = Int (layerNumber)
         
@@ -592,7 +592,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_source_geometry_mode (_ mask: NavigationMesh.SourceGeometryMode) {
-        #if true
+        #if false
         
         var copy_mask = Int64 (mask.rawValue)
         
@@ -642,7 +642,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_source_group_name (_ mask: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationMesh.method_set_source_group_name, UnsafeMutableRawPointer (mutating: handle), nil, &mask.content)
@@ -690,7 +690,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_cell_size (_ cellSize: Double) {
-        #if true
+        #if false
         
         var copy_cell_size = cellSize
         
@@ -740,7 +740,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_cell_height (_ cellHeight: Double) {
-        #if true
+        #if false
         
         var copy_cell_height = cellHeight
         
@@ -790,7 +790,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_agent_height (_ agentHeight: Double) {
-        #if true
+        #if false
         
         var copy_agent_height = agentHeight
         
@@ -840,7 +840,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_agent_radius (_ agentRadius: Double) {
-        #if true
+        #if false
         
         var copy_agent_radius = agentRadius
         
@@ -890,7 +890,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_agent_max_climb (_ agentMaxClimb: Double) {
-        #if true
+        #if false
         
         var copy_agent_max_climb = agentMaxClimb
         
@@ -940,7 +940,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_agent_max_slope (_ agentMaxSlope: Double) {
-        #if true
+        #if false
         
         var copy_agent_max_slope = agentMaxSlope
         
@@ -990,7 +990,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_region_min_size (_ regionMinSize: Double) {
-        #if true
+        #if false
         
         var copy_region_min_size = regionMinSize
         
@@ -1040,7 +1040,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_region_merge_size (_ regionMergeSize: Double) {
-        #if true
+        #if false
         
         var copy_region_merge_size = regionMergeSize
         
@@ -1090,7 +1090,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_edge_max_length (_ edgeMaxLength: Double) {
-        #if true
+        #if false
         
         var copy_edge_max_length = edgeMaxLength
         
@@ -1140,7 +1140,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_edge_max_error (_ edgeMaxError: Double) {
-        #if true
+        #if false
         
         var copy_edge_max_error = edgeMaxError
         
@@ -1190,7 +1190,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_vertices_per_polygon (_ verticesPerPolygon: Double) {
-        #if true
+        #if false
         
         var copy_vertices_per_polygon = verticesPerPolygon
         
@@ -1240,7 +1240,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_detail_sample_distance (_ detailSampleDist: Double) {
-        #if true
+        #if false
         
         var copy_detail_sample_dist = detailSampleDist
         
@@ -1290,7 +1290,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_detail_sample_max_error (_ detailSampleMaxError: Double) {
-        #if true
+        #if false
         
         var copy_detail_sample_max_error = detailSampleMaxError
         
@@ -1340,7 +1340,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_filter_low_hanging_obstacles (_ filterLowHangingObstacles: Bool) {
-        #if true
+        #if false
         
         var copy_filter_low_hanging_obstacles = filterLowHangingObstacles
         
@@ -1390,7 +1390,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_filter_ledge_spans (_ filterLedgeSpans: Bool) {
-        #if true
+        #if false
         
         var copy_filter_ledge_spans = filterLedgeSpans
         
@@ -1440,7 +1440,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_filter_walkable_low_height_spans (_ filterWalkableLowHeightSpans: Bool) {
-        #if true
+        #if false
         
         var copy_filter_walkable_low_height_spans = filterWalkableLowHeightSpans
         
@@ -1490,7 +1490,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_filter_baking_aabb (_ bakingAabb: AABB) {
-        #if true
+        #if false
         
         var copy_baking_aabb = bakingAabb
         
@@ -1540,7 +1540,7 @@ open class NavigationMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_filter_baking_aabb_offset (_ bakingAabbOffset: Vector3) {
-        #if true
+        #if false
         
         var copy_baking_aabb_offset = bakingAabbOffset
         
@@ -1591,7 +1591,7 @@ open class NavigationMesh: Resource {
     @inline(__always)
     /// Sets the vertices that can be then indexed to create polygons with the ``addPolygon(_:)`` method.
     fileprivate final func set_vertices (_ vertices: PackedVector3Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationMesh.method_set_vertices, UnsafeMutableRawPointer (mutating: handle), nil, &vertices.content)
@@ -1640,7 +1640,7 @@ open class NavigationMesh: Resource {
     
     /// Adds a polygon using the indices of the vertices you get when calling ``getVertices()``.
     public final func addPolygon (_ polygon: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (NavigationMesh.method_add_polygon, UnsafeMutableRawPointer (mutating: handle), nil, &polygon.content)
@@ -1689,7 +1689,7 @@ open class NavigationMesh: Resource {
     /// Returns a ``PackedInt32Array`` containing the indices of the vertices of a created polygon.
     public final func getPolygon (idx: Int32)-> PackedInt32Array {
         let _result: PackedInt32Array = PackedInt32Array ()
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1741,7 +1741,7 @@ open class NavigationMesh: Resource {
     /// > Note: The given `mesh` must be of type ``Mesh/PrimitiveType/primitiveTriangles`` and have an index array.
     /// 
     public final func createFromMesh (_ mesh: Mesh?) {
-        #if true
+        #if false
         
         var copy_mesh_handle = mesh?.handle
         

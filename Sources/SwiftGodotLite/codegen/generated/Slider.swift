@@ -81,7 +81,7 @@ open class Slider: Range {
     
     @inline(__always)
     fileprivate final func set_ticks (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -149,7 +149,7 @@ open class Slider: Range {
     
     @inline(__always)
     fileprivate final func set_ticks_on_borders (_ ticksOnBorder: Bool) {
-        #if true
+        #if false
         
         var copy_ticks_on_border = ticksOnBorder
         
@@ -181,7 +181,7 @@ open class Slider: Range {
     
     @inline(__always)
     fileprivate final func set_editable (_ editable: Bool) {
-        #if true
+        #if false
         
         var copy_editable = editable
         
@@ -231,7 +231,7 @@ open class Slider: Range {
     
     @inline(__always)
     fileprivate final func set_scrollable (_ scrollable: Bool) {
-        #if true
+        #if false
         
         var copy_scrollable = scrollable
         

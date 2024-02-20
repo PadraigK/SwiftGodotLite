@@ -75,7 +75,7 @@ open class CapsuleMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_radius (_ radius: Double) {
-        #if true
+        #if false
         
         var copy_radius = radius
         
@@ -125,7 +125,7 @@ open class CapsuleMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_height (_ height: Double) {
-        #if true
+        #if false
         
         var copy_height = height
         
@@ -175,7 +175,7 @@ open class CapsuleMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_radial_segments (_ segments: Int32) {
-        #if true
+        #if false
         
         var copy_segments: Int = Int (segments)
         
@@ -225,7 +225,7 @@ open class CapsuleMesh: PrimitiveMesh {
     
     @inline(__always)
     fileprivate final func set_rings (_ rings: Int32) {
-        #if true
+        #if false
         
         var copy_rings: Int = Int (rings)
         

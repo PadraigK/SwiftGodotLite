@@ -60,7 +60,7 @@ open class IP: Object {
     /// Returns a given hostname's IPv4 or IPv6 address when resolved (blocking-type method). The address type returned depends on the ``IP/Type`` constant given as `ipType`.
     public static func resolveHostname (host: String, ipType: IP.GType = .any)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_host = GString (host)
         var copy_ip_type = Int64 (ipType.rawValue)
@@ -99,7 +99,7 @@ open class IP: Object {
     /// Resolves a given hostname in a blocking way. Addresses are returned as an ``GArray`` of IPv4 or IPv6 addresses depending on `ipType`.
     public static func resolveHostnameAddresses (host: String, ipType: IP.GType = .any)-> PackedStringArray {
         let _result: PackedStringArray = PackedStringArray ()
-        #if true
+        #if false
         
         let gstr_host = GString (host)
         var copy_ip_type = Int64 (ipType.rawValue)
@@ -138,7 +138,7 @@ open class IP: Object {
     /// Creates a queue item to resolve a hostname to an IPv4 or IPv6 address depending on the ``IP/Type`` constant given as `ipType`. Returns the queue ID if successful, or ``resolverInvalidId`` on error.
     public static func resolveHostnameQueueItem (host: String, ipType: IP.GType = .any)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         let gstr_host = GString (host)
         var copy_ip_type = Int64 (ipType.rawValue)
@@ -177,7 +177,7 @@ open class IP: Object {
     /// Returns a queued hostname's status as a ``IP/ResolverStatus`` constant, given its queue `id`.
     public static func getResolveItemStatus (id: Int32)-> IP.ResolverStatus {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -211,7 +211,7 @@ open class IP: Object {
     /// Returns a queued hostname's IP address, given its queue `id`. Returns an empty string on error or if resolution hasn't happened yet (see ``getResolveItemStatus(id:)``).
     public static func getResolveItemAddress (id: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -245,7 +245,7 @@ open class IP: Object {
     /// Returns resolved addresses, or an empty array if an error happened or resolution didn't happen yet (see ``getResolveItemStatus(id:)``).
     public static func getResolveItemAddresses (id: Int32)-> GArray {
         let _result: GArray = GArray ()
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -278,7 +278,7 @@ open class IP: Object {
     
     /// Removes a given item `id` from the queue. This should be used to free a queue after it has completed to enable more queries to happen.
     public static func eraseResolveItem (id: Int32) {
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         
@@ -349,7 +349,7 @@ open class IP: Object {
     
     /// Removes all of a `hostname`'s cached references. If no `hostname` is given, all cached IP addresses are removed.
     public static func clearCache (hostname: String = "") {
-        #if true
+        #if false
         
         let gstr_hostname = GString (hostname)
         

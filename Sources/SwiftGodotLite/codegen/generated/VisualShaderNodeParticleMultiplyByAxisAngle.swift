@@ -39,7 +39,7 @@ open class VisualShaderNodeParticleMultiplyByAxisAngle: VisualShaderNode {
     
     @inline(__always)
     fileprivate final func set_degrees_mode (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

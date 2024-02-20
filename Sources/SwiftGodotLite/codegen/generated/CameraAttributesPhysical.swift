@@ -136,7 +136,7 @@ open class CameraAttributesPhysical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_aperture (_ aperture: Double) {
-        #if true
+        #if false
         
         var copy_aperture = aperture
         
@@ -186,7 +186,7 @@ open class CameraAttributesPhysical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_shutter_speed (_ shutterSpeed: Double) {
-        #if true
+        #if false
         
         var copy_shutter_speed = shutterSpeed
         
@@ -236,7 +236,7 @@ open class CameraAttributesPhysical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_focal_length (_ focalLength: Double) {
-        #if true
+        #if false
         
         var copy_focal_length = focalLength
         
@@ -286,7 +286,7 @@ open class CameraAttributesPhysical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_focus_distance (_ focusDistance: Double) {
-        #if true
+        #if false
         
         var copy_focus_distance = focusDistance
         
@@ -336,7 +336,7 @@ open class CameraAttributesPhysical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_near (_ near: Double) {
-        #if true
+        #if false
         
         var copy_near = near
         
@@ -386,7 +386,7 @@ open class CameraAttributesPhysical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_far (_ far: Double) {
-        #if true
+        #if false
         
         var copy_far = far
         
@@ -454,7 +454,7 @@ open class CameraAttributesPhysical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_auto_exposure_max_exposure_value (_ exposureValueMax: Double) {
-        #if true
+        #if false
         
         var copy_exposure_value_max = exposureValueMax
         
@@ -504,7 +504,7 @@ open class CameraAttributesPhysical: CameraAttributes {
     
     @inline(__always)
     fileprivate final func set_auto_exposure_min_exposure_value (_ exposureValueMin: Double) {
-        #if true
+        #if false
         
         var copy_exposure_value_min = exposureValueMin
         

@@ -42,7 +42,7 @@ open class MultiMeshInstance3D: GeometryInstance3D {
     
     @inline(__always)
     fileprivate final func set_multimesh (_ multimesh: MultiMesh?) {
-        #if true
+        #if false
         
         var copy_multimesh_handle = multimesh?.handle
         

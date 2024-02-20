@@ -105,7 +105,7 @@ open class GLTFSpecGloss: Resource {
     
     @inline(__always)
     fileprivate final func set_diffuse_img (_ diffuseImg: Image?) {
-        #if true
+        #if false
         
         var copy_diffuse_img_handle = diffuseImg?.handle
         
@@ -154,7 +154,7 @@ open class GLTFSpecGloss: Resource {
     
     @inline(__always)
     fileprivate final func set_diffuse_factor (_ diffuseFactor: Color) {
-        #if true
+        #if false
         
         var copy_diffuse_factor = diffuseFactor
         
@@ -204,7 +204,7 @@ open class GLTFSpecGloss: Resource {
     
     @inline(__always)
     fileprivate final func set_gloss_factor (_ glossFactor: Double) {
-        #if true
+        #if false
         
         var copy_gloss_factor = glossFactor
         
@@ -254,7 +254,7 @@ open class GLTFSpecGloss: Resource {
     
     @inline(__always)
     fileprivate final func set_specular_factor (_ specularFactor: Color) {
-        #if true
+        #if false
         
         var copy_specular_factor = specularFactor
         
@@ -304,7 +304,7 @@ open class GLTFSpecGloss: Resource {
     
     @inline(__always)
     fileprivate final func set_spec_gloss_img (_ specGlossImg: Image?) {
-        #if true
+        #if false
         
         var copy_spec_gloss_img_handle = specGlossImg?.handle
         

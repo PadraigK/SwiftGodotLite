@@ -135,7 +135,7 @@ open class PhysicsTestMotionParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_from (_ from: Transform2D) {
-        #if true
+        #if false
         
         var copy_from = from
         
@@ -185,7 +185,7 @@ open class PhysicsTestMotionParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_motion (_ motion: Vector2) {
-        #if true
+        #if false
         
         var copy_motion = motion
         
@@ -235,7 +235,7 @@ open class PhysicsTestMotionParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_margin (_ margin: Double) {
-        #if true
+        #if false
         
         var copy_margin = margin
         
@@ -285,7 +285,7 @@ open class PhysicsTestMotionParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_collide_separation_ray_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -335,7 +335,7 @@ open class PhysicsTestMotionParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_exclude_bodies (_ excludeList: VariantCollection<RID>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsTestMotionParameters2D.method_set_exclude_bodies, UnsafeMutableRawPointer (mutating: handle), nil, &excludeList.array.content)
@@ -383,7 +383,7 @@ open class PhysicsTestMotionParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_exclude_objects (_ excludeList: VariantCollection<Int64>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PhysicsTestMotionParameters2D.method_set_exclude_objects, UnsafeMutableRawPointer (mutating: handle), nil, &excludeList.array.content)
@@ -431,7 +431,7 @@ open class PhysicsTestMotionParameters2D: RefCounted {
     
     @inline(__always)
     fileprivate final func set_recovery_as_collision_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

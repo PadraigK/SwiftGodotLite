@@ -62,7 +62,7 @@ open class ProgressBar: Range {
     
     @inline(__always)
     fileprivate final func set_fill_mode (_ mode: Int32) {
-        #if true
+        #if false
         
         var copy_mode: Int = Int (mode)
         
@@ -112,7 +112,7 @@ open class ProgressBar: Range {
     
     @inline(__always)
     fileprivate final func set_show_percentage (_ visible: Bool) {
-        #if true
+        #if false
         
         var copy_visible = visible
         

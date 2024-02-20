@@ -119,7 +119,7 @@ open class WebSocketPeer: PacketPeer {
     /// 
     public final func connectToUrl (_ url: String, tlsClientOptions: TLSOptions? = nil)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_url = GString (url)
         var copy_tls_client_options_handle = tlsClientOptions?.handle
@@ -160,7 +160,7 @@ open class WebSocketPeer: PacketPeer {
     /// 
     public final func acceptStream (_ stream: StreamPeer?)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_stream_handle = stream?.handle
         
@@ -193,7 +193,7 @@ open class WebSocketPeer: PacketPeer {
     /// Sends the given `message` using the desired `writeMode`. When sending a ``String``, prefer using ``sendText(message:)``.
     public final func send (message: PackedByteArray, writeMode: WebSocketPeer.WriteMode = .binary)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_write_mode = Int64 (writeMode.rawValue)
         
@@ -230,7 +230,7 @@ open class WebSocketPeer: PacketPeer {
     /// Sends the given `message` using WebSocket text mode. Prefer this method over ``PacketPeer/putPacket(buffer:)`` when interacting with third-party text-based API (e.g. when using ``JSON`` formatted messages).
     public final func sendText (message: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_message = GString (message)
         
@@ -302,7 +302,7 @@ open class WebSocketPeer: PacketPeer {
     /// > Note: The Web export might not support all status codes. Please refer to browser-specific documentation for more details.
     /// 
     public final func close (code: Int32 = 1000, reason: String = "") {
-        #if true
+        #if false
         
         var copy_code: Int = Int (code)
         let gstr_reason = GString (reason)
@@ -420,7 +420,7 @@ open class WebSocketPeer: PacketPeer {
     /// > Note: Not available in the Web export.
     /// 
     public final func setNoDelay (enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -542,7 +542,7 @@ open class WebSocketPeer: PacketPeer {
     
     @inline(__always)
     fileprivate final func set_supported_protocols (_ protocols: PackedStringArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (WebSocketPeer.method_set_supported_protocols, UnsafeMutableRawPointer (mutating: handle), nil, &protocols.content)
@@ -590,7 +590,7 @@ open class WebSocketPeer: PacketPeer {
     
     @inline(__always)
     fileprivate final func set_handshake_headers (_ protocols: PackedStringArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (WebSocketPeer.method_set_handshake_headers, UnsafeMutableRawPointer (mutating: handle), nil, &protocols.content)
@@ -638,7 +638,7 @@ open class WebSocketPeer: PacketPeer {
     
     @inline(__always)
     fileprivate final func set_inbound_buffer_size (_ bufferSize: Int32) {
-        #if true
+        #if false
         
         var copy_buffer_size: Int = Int (bufferSize)
         
@@ -688,7 +688,7 @@ open class WebSocketPeer: PacketPeer {
     
     @inline(__always)
     fileprivate final func set_outbound_buffer_size (_ bufferSize: Int32) {
-        #if true
+        #if false
         
         var copy_buffer_size: Int = Int (bufferSize)
         
@@ -720,7 +720,7 @@ open class WebSocketPeer: PacketPeer {
     
     @inline(__always)
     fileprivate final func set_max_queued_packets (_ bufferSize: Int32) {
-        #if true
+        #if false
         
         var copy_buffer_size: Int = Int (bufferSize)
         

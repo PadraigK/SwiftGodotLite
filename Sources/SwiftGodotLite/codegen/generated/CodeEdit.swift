@@ -331,7 +331,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_indent_size (_ size: Int32) {
-        #if true
+        #if false
         
         var copy_size: Int = Int (size)
         
@@ -381,7 +381,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_indent_using_spaces (_ useSpaces: Bool) {
-        #if true
+        #if false
         
         var copy_use_spaces = useSpaces
         
@@ -431,7 +431,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_auto_indent_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -481,7 +481,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_auto_indent_prefixes (_ prefixes: VariantCollection<String>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CodeEdit.method_set_auto_indent_prefixes, UnsafeMutableRawPointer (mutating: handle), nil, &prefixes.array.content)
@@ -580,7 +580,7 @@ open class CodeEdit: TextEdit {
     /// Values of `-1` convert the entire text.
     /// 
     public final func convertIndent (fromLine: Int32 = -1, toLine: Int32 = -1) {
-        #if true
+        #if false
         
         var copy_from_line: Int = Int (fromLine)
         var copy_to_line: Int = Int (toLine)
@@ -617,7 +617,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_auto_brace_completion_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -667,7 +667,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_highlight_matching_braces_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -720,7 +720,7 @@ open class CodeEdit: TextEdit {
     /// Both the start and end keys must be symbols. Only the start key has to be unique.
     /// 
     public final func addAutoBraceCompletionPair (startKey: String, endKey: String) {
-        #if true
+        #if false
         
         let gstr_start_key = GString (startKey)
         let gstr_end_key = GString (endKey)
@@ -757,7 +757,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_auto_brace_completion_pairs (_ pairs: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CodeEdit.method_set_auto_brace_completion_pairs, UnsafeMutableRawPointer (mutating: handle), nil, &pairs.content)
@@ -806,7 +806,7 @@ open class CodeEdit: TextEdit {
     /// Returns `true` if open key `openKey` exists.
     public final func hasAutoBraceCompletionOpenKey (_ openKey: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_open_key = GString (openKey)
         
@@ -840,7 +840,7 @@ open class CodeEdit: TextEdit {
     /// Returns `true` if close key `closeKey` exists.
     public final func hasAutoBraceCompletionCloseKey (_ closeKey: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_close_key = GString (closeKey)
         
@@ -874,7 +874,7 @@ open class CodeEdit: TextEdit {
     /// Gets the matching auto brace close key for `openKey`.
     public final func getAutoBraceCompletionCloseKey (openKey: String)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         let gstr_open_key = GString (openKey)
         
@@ -907,7 +907,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_draw_breakpoints_gutter (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -957,7 +957,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_draw_bookmarks_gutter (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1007,7 +1007,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_draw_executing_lines_gutter (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1057,7 +1057,7 @@ open class CodeEdit: TextEdit {
     
     /// Sets the line as breakpointed.
     public final func setLineAsBreakpoint (line: Int32, breakpointed: Bool) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_breakpointed = breakpointed
@@ -1095,7 +1095,7 @@ open class CodeEdit: TextEdit {
     /// Returns whether the line at the specified index is breakpointed or not.
     public final func isLineBreakpointed (line: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1162,7 +1162,7 @@ open class CodeEdit: TextEdit {
     
     /// Sets the line as bookmarked.
     public final func setLineAsBookmarked (line: Int32, bookmarked: Bool) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_bookmarked = bookmarked
@@ -1200,7 +1200,7 @@ open class CodeEdit: TextEdit {
     /// Returns whether the line at the specified index is bookmarked or not.
     public final func isLineBookmarked (line: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1267,7 +1267,7 @@ open class CodeEdit: TextEdit {
     
     /// Sets the line as executing.
     public final func setLineAsExecuting (line: Int32, executing: Bool) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_executing = executing
@@ -1305,7 +1305,7 @@ open class CodeEdit: TextEdit {
     /// Returns whether the line at the specified index is marked as executing or not.
     public final func isLineExecuting (line: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1372,7 +1372,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_draw_line_numbers (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1422,7 +1422,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_line_numbers_zero_padded (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1472,7 +1472,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_draw_fold_gutter (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -1522,7 +1522,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_line_folding_enabled (_ enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         
@@ -1573,7 +1573,7 @@ open class CodeEdit: TextEdit {
     /// Returns if the given line is foldable, that is, it has indented lines right below it or a comment / string block.
     public final func canFoldLine (_ line: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1606,7 +1606,7 @@ open class CodeEdit: TextEdit {
     
     /// Folds the given line, if possible (see ``canFoldLine(_:)``).
     public final func foldLine (_ line: Int32) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1638,7 +1638,7 @@ open class CodeEdit: TextEdit {
     
     /// Unfolds all lines that were previously folded.
     public final func unfoldLine (_ line: Int32) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1702,7 +1702,7 @@ open class CodeEdit: TextEdit {
     
     /// Toggle the folding of the code block at the given line.
     public final func toggleFoldableLine (_ line: Int32) {
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1735,7 +1735,7 @@ open class CodeEdit: TextEdit {
     /// Returns whether the line at the specified index is folded or not.
     public final func isLineFolded (line: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1845,7 +1845,7 @@ open class CodeEdit: TextEdit {
     
     /// Sets the code region start and end tags (without comment delimiter).
     public final func setCodeRegionTags (start: String = "region", end: String = "endregion") {
-        #if true
+        #if false
         
         let gstr_start = GString (start)
         let gstr_end = GString (end)
@@ -1883,7 +1883,7 @@ open class CodeEdit: TextEdit {
     /// Returns whether the line at the specified index is a code region start.
     public final func isLineCodeRegionStart (line: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1917,7 +1917,7 @@ open class CodeEdit: TextEdit {
     /// Returns whether the line at the specified index is a code region end.
     public final func isLineCodeRegionEnd (line: Int32)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         
@@ -1955,7 +1955,7 @@ open class CodeEdit: TextEdit {
     /// `lineOnly` denotes if the region should continue until the end of the line or carry over on to the next line. If the end key is blank this is automatically set to `true`.
     /// 
     public final func addStringDelimiter (startKey: String, endKey: String, lineOnly: Bool = false) {
-        #if true
+        #if false
         
         let gstr_start_key = GString (startKey)
         let gstr_end_key = GString (endKey)
@@ -1997,7 +1997,7 @@ open class CodeEdit: TextEdit {
     
     /// Removes the string delimiter with `startKey`.
     public final func removeStringDelimiter (startKey: String) {
-        #if true
+        #if false
         
         let gstr_start_key = GString (startKey)
         
@@ -2030,7 +2030,7 @@ open class CodeEdit: TextEdit {
     /// Returns `true` if string `startKey` exists.
     public final func hasStringDelimiter (startKey: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_start_key = GString (startKey)
         
@@ -2063,7 +2063,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_string_delimiters (_ stringDelimiters: VariantCollection<String>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CodeEdit.method_set_string_delimiters, UnsafeMutableRawPointer (mutating: handle), nil, &stringDelimiters.array.content)
@@ -2128,7 +2128,7 @@ open class CodeEdit: TextEdit {
     /// Returns the delimiter index if `line` `column` is in a string. If `column` is not provided, will return the delimiter index if the entire `line` is a string. Otherwise `-1`.
     public final func isInString (line: Int32, column: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_column: Int = Int (column)
@@ -2171,7 +2171,7 @@ open class CodeEdit: TextEdit {
     /// `lineOnly` denotes if the region should continue until the end of the line or carry over on to the next line. If the end key is blank this is automatically set to `true`.
     /// 
     public final func addCommentDelimiter (startKey: String, endKey: String, lineOnly: Bool = false) {
-        #if true
+        #if false
         
         let gstr_start_key = GString (startKey)
         let gstr_end_key = GString (endKey)
@@ -2213,7 +2213,7 @@ open class CodeEdit: TextEdit {
     
     /// Removes the comment delimiter with `startKey`.
     public final func removeCommentDelimiter (startKey: String) {
-        #if true
+        #if false
         
         let gstr_start_key = GString (startKey)
         
@@ -2246,7 +2246,7 @@ open class CodeEdit: TextEdit {
     /// Returns `true` if comment `startKey` exists.
     public final func hasCommentDelimiter (startKey: String)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         let gstr_start_key = GString (startKey)
         
@@ -2279,7 +2279,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_comment_delimiters (_ commentDelimiters: VariantCollection<String>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CodeEdit.method_set_comment_delimiters, UnsafeMutableRawPointer (mutating: handle), nil, &commentDelimiters.array.content)
@@ -2344,7 +2344,7 @@ open class CodeEdit: TextEdit {
     /// Returns delimiter index if `line` `column` is in a comment. If `column` is not provided, will return delimiter index if the entire `line` is a comment. Otherwise `-1`.
     public final func isInComment (line: Int32, column: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_column: Int = Int (column)
@@ -2383,7 +2383,7 @@ open class CodeEdit: TextEdit {
     /// Gets the start key for a string or comment region index.
     public final func getDelimiterStartKey (delimiterIndex: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_delimiter_index: Int = Int (delimiterIndex)
         
@@ -2417,7 +2417,7 @@ open class CodeEdit: TextEdit {
     /// Gets the end key for a string or comment region index.
     public final func getDelimiterEndKey (delimiterIndex: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_delimiter_index: Int = Int (delimiterIndex)
         
@@ -2451,7 +2451,7 @@ open class CodeEdit: TextEdit {
     /// If `line` `column` is in a string or comment, returns the start position of the region. If not or no start could be found, both ``Vector2`` values will be `-1`.
     public final func getDelimiterStartPosition (line: Int32, column: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_column: Int = Int (column)
@@ -2490,7 +2490,7 @@ open class CodeEdit: TextEdit {
     /// If `line` `column` is in a string or comment, returns the end position of the region. If not or no end could be found, both ``Vector2`` values will be `-1`.
     public final func getDelimiterEndPosition (line: Int32, column: Int32)-> Vector2 {
         var _result: Vector2 = Vector2 ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_column: Int = Int (column)
@@ -2528,7 +2528,7 @@ open class CodeEdit: TextEdit {
     
     /// Sets the code hint text. Pass an empty string to clear.
     public final func setCodeHint (_ codeHint: String) {
-        #if true
+        #if false
         
         let gstr_code_hint = GString (codeHint)
         
@@ -2560,7 +2560,7 @@ open class CodeEdit: TextEdit {
     
     /// Sets if the code hint should draw below the text.
     public final func setCodeHintDrawBelow (_ drawBelow: Bool) {
-        #if true
+        #if false
         
         var copy_draw_below = drawBelow
         
@@ -2610,7 +2610,7 @@ open class CodeEdit: TextEdit {
     
     /// Emits [signal code_completion_requested], if `force` is true will bypass all checks. Otherwise will check that the caret is in a word or in front of a prefix. Will ignore the request if all current options are of type file path, node path or signal.
     public final func requestCodeCompletion (force: Bool = false) {
-        #if true
+        #if false
         
         var copy_force = force
         
@@ -2647,7 +2647,7 @@ open class CodeEdit: TextEdit {
     /// > Note: This list will replace all current candidates.
     /// 
     public final func addCodeCompletionOption (type: CodeEdit.CodeCompletionKind, displayText: String, insertText: String, textColor: Color = Color (r: 1, g: 1, b: 1, a: 1), icon: Resource? = nil, value: Variant, location: Int32 = 1024) {
-        #if true
+        #if false
         
         var copy_type = Int64 (type.rawValue)
         let gstr_display_text = GString (displayText)
@@ -2709,7 +2709,7 @@ open class CodeEdit: TextEdit {
     /// > Note: This will replace all current candidates.
     /// 
     public final func updateCodeCompletionOptions (force: Bool) {
-        #if true
+        #if false
         
         var copy_force = force
         
@@ -2773,7 +2773,7 @@ open class CodeEdit: TextEdit {
     /// 
     public final func getCodeCompletionOption (index: Int32)-> GDictionary {
         let _result: GDictionary = GDictionary ()
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2824,7 +2824,7 @@ open class CodeEdit: TextEdit {
     
     /// Sets the current selected completion option.
     public final func setCodeCompletionSelectedIndex (_ index: Int32) {
-        #if true
+        #if false
         
         var copy_index: Int = Int (index)
         
@@ -2856,7 +2856,7 @@ open class CodeEdit: TextEdit {
     
     /// Inserts the selected entry into the text. If `replace` is true, any existing text is replaced rather than merged.
     public final func confirmCodeCompletion (replace: Bool = false) {
-        #if true
+        #if false
         
         var copy_replace = replace
         
@@ -2904,7 +2904,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_code_completion_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -2954,7 +2954,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_code_completion_prefixes (_ prefixes: VariantCollection<String>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CodeEdit.method_set_code_completion_prefixes, UnsafeMutableRawPointer (mutating: handle), nil, &prefixes.array.content)
@@ -3002,7 +3002,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_line_length_guidelines (_ guidelineColumns: VariantCollection<Int64>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (CodeEdit.method_set_line_length_guidelines, UnsafeMutableRawPointer (mutating: handle), nil, &guidelineColumns.array.content)
@@ -3050,7 +3050,7 @@ open class CodeEdit: TextEdit {
     
     @inline(__always)
     fileprivate final func set_symbol_lookup_on_click_enabled (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -3119,7 +3119,7 @@ open class CodeEdit: TextEdit {
     /// Returns the full text with char `0xFFFF` at the specified location.
     public final func getTextWithCursorChar (line: Int32, column: Int32)-> String {
         let _result = GString ()
-        #if true
+        #if false
         
         var copy_line: Int = Int (line)
         var copy_column: Int = Int (column)
@@ -3157,7 +3157,7 @@ open class CodeEdit: TextEdit {
     
     /// Sets the symbol emitted by [signal symbol_validate] as a valid lookup.
     public final func setSymbolLookupWordAsValid (_ valid: Bool) {
-        #if true
+        #if false
         
         var copy_valid = valid
         

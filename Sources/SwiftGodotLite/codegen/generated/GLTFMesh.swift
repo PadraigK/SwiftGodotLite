@@ -75,7 +75,7 @@ open class GLTFMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_mesh (_ mesh: ImporterMesh?) {
-        #if true
+        #if false
         
         var copy_mesh_handle = mesh?.handle
         
@@ -124,7 +124,7 @@ open class GLTFMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_blend_weights (_ blendWeights: PackedFloat32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFMesh.method_set_blend_weights, UnsafeMutableRawPointer (mutating: handle), nil, &blendWeights.content)
@@ -172,7 +172,7 @@ open class GLTFMesh: Resource {
     
     @inline(__always)
     fileprivate final func set_instance_materials (_ instanceMaterials: ObjectCollection<Material>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFMesh.method_set_instance_materials, UnsafeMutableRawPointer (mutating: handle), nil, &instanceMaterials.array.content)

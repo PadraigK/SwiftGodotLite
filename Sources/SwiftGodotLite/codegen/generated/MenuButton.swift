@@ -96,7 +96,7 @@ open class MenuButton: Button {
     
     @inline(__always)
     fileprivate final func set_switch_on_hover (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -146,7 +146,7 @@ open class MenuButton: Button {
     
     /// If `true`, shortcuts are disabled and cannot be used to trigger the button.
     public final func setDisableShortcuts (disabled: Bool) {
-        #if true
+        #if false
         
         var copy_disabled = disabled
         
@@ -178,7 +178,7 @@ open class MenuButton: Button {
     
     @inline(__always)
     fileprivate final func set_item_count (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         

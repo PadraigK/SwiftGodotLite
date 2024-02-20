@@ -91,7 +91,7 @@ open class Resource: RefCounted {
     
     @inline(__always)
     fileprivate final func set_path (_ path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -123,7 +123,7 @@ open class Resource: RefCounted {
     
     /// Sets the ``resourcePath`` to `path`, potentially overriding an existing cache entry for this path. Further attempts to load an overridden resource by path will instead return this resource.
     public final func takeOverPath (_ path: String) {
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -173,7 +173,7 @@ open class Resource: RefCounted {
     
     @inline(__always)
     fileprivate final func set_name (_ name: String) {
-        #if true
+        #if false
         
         let gstr_name = GString (name)
         
@@ -241,7 +241,7 @@ open class Resource: RefCounted {
     
     @inline(__always)
     fileprivate final func set_local_to_scene (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -355,7 +355,7 @@ open class Resource: RefCounted {
     /// 
     public final func duplicate (subresources: Bool = false)-> Resource? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_subresources = subresources
         

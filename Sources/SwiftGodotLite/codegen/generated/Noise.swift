@@ -30,7 +30,7 @@ open class Noise: Resource {
     /// Returns the 1D noise value at the given (x) coordinate.
     public final func getNoise1d (x: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_x = x
         
@@ -64,7 +64,7 @@ open class Noise: Resource {
     /// Returns the 2D noise value at the given position.
     public final func getNoise2d (x: Double, y: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_x = x
         var copy_y = y
@@ -103,7 +103,7 @@ open class Noise: Resource {
     /// Returns the 2D noise value at the given position.
     public final func getNoise2dv (v: Vector2)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_v = v
         
@@ -137,7 +137,7 @@ open class Noise: Resource {
     /// Returns the 3D noise value at the given position.
     public final func getNoise3d (x: Double, y: Double, z: Double)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_x = x
         var copy_y = y
@@ -181,7 +181,7 @@ open class Noise: Resource {
     /// Returns the 3D noise value at the given position.
     public final func getNoise3dv (v: Vector3)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_v = v
         
@@ -218,7 +218,7 @@ open class Noise: Resource {
     /// 
     public final func getImage (width: Int32, height: Int32, invert: Bool = false, in3dSpace: Bool = false, normalize: Bool = true)-> Image? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         var copy_height: Int = Int (height)
@@ -275,7 +275,7 @@ open class Noise: Resource {
     /// 
     public final func getSeamlessImage (width: Int32, height: Int32, invert: Bool = false, in3dSpace: Bool = false, skirt: Double = 0.1, normalize: Bool = true)-> Image? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         var copy_height: Int = Int (height)
@@ -337,7 +337,7 @@ open class Noise: Resource {
     /// 
     public final func getImage3d (width: Int32, height: Int32, depth: Int32, invert: Bool = false, normalize: Bool = true)-> ObjectCollection<Image> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         var copy_height: Int = Int (height)
@@ -394,7 +394,7 @@ open class Noise: Resource {
     /// 
     public final func getSeamlessImage3d (width: Int32, height: Int32, depth: Int32, invert: Bool = false, skirt: Double = 0.1, normalize: Bool = true)-> ObjectCollection<Image> {
         var _result: Int64 = 0
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         var copy_height: Int = Int (height)

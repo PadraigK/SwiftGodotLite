@@ -49,7 +49,7 @@ open class EditorDebuggerPlugin: RefCounted {
     /// Returns the ``EditorDebuggerSession`` with the given `id`.
     public final func getSession (id: Int32)-> EditorDebuggerSession? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_id: Int = Int (id)
         

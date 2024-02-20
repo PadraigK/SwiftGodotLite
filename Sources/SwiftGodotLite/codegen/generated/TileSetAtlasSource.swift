@@ -116,7 +116,7 @@ open class TileSetAtlasSource: TileSetSource {
     
     @inline(__always)
     fileprivate final func set_texture (_ texture: Texture2D?) {
-        #if true
+        #if false
         
         var copy_texture_handle = texture?.handle
         
@@ -165,7 +165,7 @@ open class TileSetAtlasSource: TileSetSource {
     
     @inline(__always)
     fileprivate final func set_margins (_ margins: Vector2i) {
-        #if true
+        #if false
         
         var copy_margins = margins
         
@@ -215,7 +215,7 @@ open class TileSetAtlasSource: TileSetSource {
     
     @inline(__always)
     fileprivate final func set_separation (_ separation: Vector2i) {
-        #if true
+        #if false
         
         var copy_separation = separation
         
@@ -265,7 +265,7 @@ open class TileSetAtlasSource: TileSetSource {
     
     @inline(__always)
     fileprivate final func set_texture_region_size (_ textureRegionSize: Vector2i) {
-        #if true
+        #if false
         
         var copy_texture_region_size = textureRegionSize
         
@@ -315,7 +315,7 @@ open class TileSetAtlasSource: TileSetSource {
     
     @inline(__always)
     fileprivate final func set_use_texture_padding (_ useTexturePadding: Bool) {
-        #if true
+        #if false
         
         var copy_use_texture_padding = useTexturePadding
         
@@ -365,7 +365,7 @@ open class TileSetAtlasSource: TileSetSource {
     
     /// Creates a new tile at coordinates `atlasCoords` with the given `size`.
     public final func createTile (atlasCoords: Vector2i, size: Vector2i = Vector2i (x: 1, y: 1)) {
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_size = size
@@ -402,7 +402,7 @@ open class TileSetAtlasSource: TileSetSource {
     
     /// Remove a tile and its alternative at coordinates `atlasCoords`.
     public final func removeTile (atlasCoords: Vector2i) {
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         
@@ -439,7 +439,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// To avoid an error, first check if a move is possible using ``hasRoomForTile(atlasCoords:size:animationColumns:animationSeparation:framesCount:ignoredTile:)``.
     /// 
     public final func moveTileInAtlas (atlasCoords: Vector2i, newAtlasCoords: Vector2i = Vector2i (x: -1, y: -1), newSize: Vector2i = Vector2i (x: -1, y: -1)) {
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_new_atlas_coords = newAtlasCoords
@@ -482,7 +482,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Returns the size of the tile (in the grid coordinates system) at coordinates `atlasCoords`.
     public final func getTileSizeInAtlas (atlasCoords: Vector2i)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         
@@ -516,7 +516,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Returns whether there is enough room in an atlas to create/modify a tile with the given properties. If `ignoredTile` is provided, act as is the given tile was not present in the atlas. This may be used when you want to modify a tile's properties.
     public final func hasRoomForTile (atlasCoords: Vector2i, size: Vector2i, animationColumns: Int32, animationSeparation: Vector2i, framesCount: Int32, ignoredTile: Vector2i = Vector2i (x: -1, y: -1))-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_size = size
@@ -575,7 +575,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Returns an array of tiles coordinates ID that will be automatically removed when modifying one or several of those properties: `texture`, `margins`, `separation` or `textureRegionSize`. This can be used to undo changes that would have caused tiles data loss.
     public final func getTilesToBeRemovedOnChange (texture: Texture2D?, margins: Vector2i, separation: Vector2i, textureRegionSize: Vector2i)-> PackedVector2Array {
         let _result: PackedVector2Array = PackedVector2Array ()
-        #if true
+        #if false
         
         var copy_margins = margins
         var copy_separation = separation
@@ -623,7 +623,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// If there is a tile covering the `atlasCoords` coordinates, returns the top-left coordinates of the tile (thus its coordinate ID). Returns `Vector2i(-1, -1)` otherwise.
     public final func getTileAtCoords (atlasCoords: Vector2i)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         
@@ -690,7 +690,7 @@ open class TileSetAtlasSource: TileSetSource {
     
     /// Sets the number of columns in the animation layout of the tile at coordinates `atlasCoords`. If set to 0, then the different frames of the animation are laid out as a single horizontal line in the atlas.
     public final func setTileAnimationColumns (atlasCoords: Vector2i, frameColumns: Int32) {
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_frame_columns: Int = Int (frameColumns)
@@ -728,7 +728,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Returns how many columns the tile at `atlasCoords` has in its animation layout.
     public final func getTileAnimationColumns (atlasCoords: Vector2i)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         
@@ -761,7 +761,7 @@ open class TileSetAtlasSource: TileSetSource {
     
     /// Sets the margin (in grid tiles) between each tile in the animation layout of the tile at coordinates `atlasCoords` has.
     public final func setTileAnimationSeparation (atlasCoords: Vector2i, separation: Vector2i) {
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_separation = separation
@@ -799,7 +799,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Returns the separation (as in the atlas grid) between each frame of an animated tile at coordinates `atlasCoords`.
     public final func getTileAnimationSeparation (atlasCoords: Vector2i)-> Vector2i {
         var _result: Vector2i = Vector2i ()
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         
@@ -832,7 +832,7 @@ open class TileSetAtlasSource: TileSetSource {
     
     /// Sets the animation speed of the tile at coordinates `atlasCoords` has.
     public final func setTileAnimationSpeed (atlasCoords: Vector2i, speed: Double) {
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_speed = speed
@@ -870,7 +870,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Returns the animation speed of the tile at coordinates `atlasCoords`.
     public final func getTileAnimationSpeed (atlasCoords: Vector2i)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         
@@ -903,7 +903,7 @@ open class TileSetAtlasSource: TileSetSource {
     
     /// Sets the ``TileSetAtlasSource/TileAnimationMode`` of the tile at `atlasCoords` to `mode`. See also ``getTileAnimationMode(atlasCoords:)``.
     public final func setTileAnimationMode (atlasCoords: Vector2i, mode: TileSetAtlasSource.TileAnimationMode) {
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_mode = Int64 (mode.rawValue)
@@ -941,7 +941,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Returns the ``TileSetAtlasSource/TileAnimationMode`` of the tile at `atlasCoords`. See also ``setTileAnimationMode(atlasCoords:mode:)``.
     public final func getTileAnimationMode (atlasCoords: Vector2i)-> TileSetAtlasSource.TileAnimationMode {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         
@@ -974,7 +974,7 @@ open class TileSetAtlasSource: TileSetSource {
     
     /// Sets how many animation frames the tile at coordinates `atlasCoords` has.
     public final func setTileAnimationFramesCount (atlasCoords: Vector2i, framesCount: Int32) {
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_frames_count: Int = Int (framesCount)
@@ -1012,7 +1012,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Returns how many animation frames has the tile at coordinates `atlasCoords`.
     public final func getTileAnimationFramesCount (atlasCoords: Vector2i)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         
@@ -1045,7 +1045,7 @@ open class TileSetAtlasSource: TileSetSource {
     
     /// Sets the animation frame `duration` of frame `frameIndex` for the tile at coordinates `atlasCoords`.
     public final func setTileAnimationFrameDuration (atlasCoords: Vector2i, frameIndex: Int32, duration: Double) {
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_frame_index: Int = Int (frameIndex)
@@ -1088,7 +1088,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Returns the animation frame duration of frame `frameIndex` for the tile at coordinates `atlasCoords`.
     public final func getTileAnimationFrameDuration (atlasCoords: Vector2i, frameIndex: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_frame_index: Int = Int (frameIndex)
@@ -1127,7 +1127,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Returns the sum of the sum of the frame durations of the tile at coordinates `atlasCoords`. This value needs to be divided by the animation speed to get the actual animation loop duration.
     public final func getTileAnimationTotalDuration (atlasCoords: Vector2i)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         
@@ -1164,7 +1164,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// 
     public final func createAlternativeTile (atlasCoords: Vector2i, alternativeIdOverride: Int32 = -1)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_alternative_id_override: Int = Int (alternativeIdOverride)
@@ -1205,7 +1205,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Calling this function with `alternativeTile` equals to 0 will fail, as the base tile alternative cannot be removed.
     /// 
     public final func removeAlternativeTile (atlasCoords: Vector2i, alternativeTile: Int32) {
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_alternative_tile: Int = Int (alternativeTile)
@@ -1245,7 +1245,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Calling this function with `newId` of 0 will fail, as the base tile alternative cannot be moved.
     /// 
     public final func setAlternativeTileId (atlasCoords: Vector2i, alternativeTile: Int32, newId: Int32) {
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_alternative_tile: Int = Int (alternativeTile)
@@ -1288,7 +1288,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Returns the alternative ID a following call to ``createAlternativeTile(atlasCoords:alternativeIdOverride:)`` would return.
     public final func getNextAlternativeTileId (atlasCoords: Vector2i)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         
@@ -1322,7 +1322,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Returns the ``TileData`` object for the given atlas coordinates and alternative ID.
     public final func getTileData (atlasCoords: Vector2i, alternativeTile: Int32)-> TileData? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_alternative_tile: Int = Int (alternativeTile)
@@ -1379,7 +1379,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// Returns a tile's texture region in the atlas texture. For animated tiles, a `frame` argument might be provided for the different frames of the animation.
     public final func getTileTextureRegion (atlasCoords: Vector2i, frame: Int32 = 0)-> Rect2i {
         var _result: Rect2i = Rect2i ()
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_frame: Int = Int (frame)
@@ -1439,7 +1439,7 @@ open class TileSetAtlasSource: TileSetSource {
     /// 
     public final func getRuntimeTileTextureRegion (atlasCoords: Vector2i, frame: Int32)-> Rect2i {
         var _result: Rect2i = Rect2i ()
-        #if true
+        #if false
         
         var copy_atlas_coords = atlasCoords
         var copy_frame: Int = Int (frame)

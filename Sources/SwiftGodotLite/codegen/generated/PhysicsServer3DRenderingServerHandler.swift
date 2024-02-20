@@ -43,7 +43,7 @@ open class PhysicsServer3DRenderingServerHandler: Object {
     
     /// Sets the position for the ``SoftBody3D`` vertex at the index specified by `vertexId`.
     public final func setVertex (vertexId: Int32, vertex: Vector3) {
-        #if true
+        #if false
         
         var copy_vertex_id: Int = Int (vertexId)
         var copy_vertex = vertex
@@ -80,7 +80,7 @@ open class PhysicsServer3DRenderingServerHandler: Object {
     
     /// Sets the normal for the ``SoftBody3D`` vertex at the index specified by `vertexId`.
     public final func setNormal (vertexId: Int32, normal: Vector3) {
-        #if true
+        #if false
         
         var copy_vertex_id: Int = Int (vertexId)
         var copy_normal = normal
@@ -117,7 +117,7 @@ open class PhysicsServer3DRenderingServerHandler: Object {
     
     /// Sets the bounding box for the ``SoftBody3D``.
     public final func setAabb (_ aabb: AABB) {
-        #if true
+        #if false
         
         var copy_aabb = aabb
         

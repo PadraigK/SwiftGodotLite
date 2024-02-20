@@ -97,7 +97,7 @@ open class AudioStreamOggVorbis: AudioStream {
     /// Creates a new AudioStreamOggVorbis instance from the given buffer. The buffer must contain Ogg Vorbis data.
     public static func loadFromBuffer (_ buffer: PackedByteArray)-> AudioStreamOggVorbis? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AudioStreamOggVorbis.method_load_from_buffer, nil, &_result, &buffer.content)
@@ -129,7 +129,7 @@ open class AudioStreamOggVorbis: AudioStream {
     /// Creates a new AudioStreamOggVorbis instance from the given file path. The file must be in Ogg Vorbis format.
     public static func loadFromFile (path: String)-> AudioStreamOggVorbis? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         
@@ -162,7 +162,7 @@ open class AudioStreamOggVorbis: AudioStream {
     
     @inline(__always)
     fileprivate final func set_packet_sequence (_ packetSequence: OggPacketSequence?) {
-        #if true
+        #if false
         
         var copy_packet_sequence_handle = packetSequence?.handle
         
@@ -211,7 +211,7 @@ open class AudioStreamOggVorbis: AudioStream {
     
     @inline(__always)
     fileprivate final func set_loop (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -261,7 +261,7 @@ open class AudioStreamOggVorbis: AudioStream {
     
     @inline(__always)
     fileprivate final func set_loop_offset (_ seconds: Double) {
-        #if true
+        #if false
         
         var copy_seconds = seconds
         
@@ -311,7 +311,7 @@ open class AudioStreamOggVorbis: AudioStream {
     
     @inline(__always)
     fileprivate final func set_bpm (_ bpm: Double) {
-        #if true
+        #if false
         
         var copy_bpm = bpm
         
@@ -361,7 +361,7 @@ open class AudioStreamOggVorbis: AudioStream {
     
     @inline(__always)
     fileprivate final func set_beat_count (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         
@@ -411,7 +411,7 @@ open class AudioStreamOggVorbis: AudioStream {
     
     @inline(__always)
     fileprivate final func set_bar_beats (_ count: Int32) {
-        #if true
+        #if false
         
         var copy_count: Int = Int (count)
         

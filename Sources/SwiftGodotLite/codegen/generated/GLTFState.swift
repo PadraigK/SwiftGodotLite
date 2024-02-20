@@ -352,7 +352,7 @@ open class GLTFState: Resource {
     
     /// Appends an extension to the list of extensions used by this GLTF file during serialization. If `required` is true, the extension will also be added to the list of required extensions. Do not run this in ``GLTFDocumentExtension/_exportPost(state:)``, as that stage is too late to add extensions. The final list is sorted alphabetically.
     public final func addUsedExtension (extensionName: String, required: Bool) {
-        #if true
+        #if false
         
         let gstr_extension_name = GString (extensionName)
         var copy_required = required
@@ -407,7 +407,7 @@ open class GLTFState: Resource {
     
     @inline(__always)
     fileprivate final func set_json (_ json: GDictionary) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_json, UnsafeMutableRawPointer (mutating: handle), nil, &json.content)
@@ -455,7 +455,7 @@ open class GLTFState: Resource {
     
     @inline(__always)
     fileprivate final func set_major_version (_ majorVersion: Int32) {
-        #if true
+        #if false
         
         var copy_major_version: Int = Int (majorVersion)
         
@@ -505,7 +505,7 @@ open class GLTFState: Resource {
     
     @inline(__always)
     fileprivate final func set_minor_version (_ minorVersion: Int32) {
-        #if true
+        #if false
         
         var copy_minor_version: Int = Int (minorVersion)
         
@@ -555,7 +555,7 @@ open class GLTFState: Resource {
     
     @inline(__always)
     fileprivate final func set_copyright (_ copyright: String) {
-        #if true
+        #if false
         
         let gstr_copyright = GString (copyright)
         
@@ -605,7 +605,7 @@ open class GLTFState: Resource {
     
     @inline(__always)
     fileprivate final func set_glb_data (_ glbData: PackedByteArray) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_glb_data, UnsafeMutableRawPointer (mutating: handle), nil, &glbData.content)
@@ -653,7 +653,7 @@ open class GLTFState: Resource {
     
     @inline(__always)
     fileprivate final func set_use_named_skin_binds (_ useNamedSkinBinds: Bool) {
-        #if true
+        #if false
         
         var copy_use_named_skin_binds = useNamedSkinBinds
         
@@ -705,7 +705,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// Sets the ``GLTFNode``s in the state. These are the nodes that ``GLTFNode/children`` and ``rootNodes`` refer to. Some of the nodes set here may not be generated in the Godot scene, or may generate multiple Godot scene nodes.
     fileprivate final func set_nodes (_ nodes: ObjectCollection<GLTFNode>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_nodes, UnsafeMutableRawPointer (mutating: handle), nil, &nodes.array.content)
@@ -753,7 +753,7 @@ open class GLTFState: Resource {
     
     @inline(__always)
     fileprivate final func set_buffers (_ buffers: VariantCollection<PackedByteArray>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_buffers, UnsafeMutableRawPointer (mutating: handle), nil, &buffers.array.content)
@@ -803,7 +803,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// 
     fileprivate final func set_buffer_views (_ bufferViews: ObjectCollection<GLTFBufferView>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_buffer_views, UnsafeMutableRawPointer (mutating: handle), nil, &bufferViews.array.content)
@@ -853,7 +853,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// 
     fileprivate final func set_accessors (_ accessors: ObjectCollection<GLTFAccessor>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_accessors, UnsafeMutableRawPointer (mutating: handle), nil, &accessors.array.content)
@@ -903,7 +903,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// Sets the ``GLTFMesh``es in the state. These are the meshes that the ``GLTFNode/mesh`` index refers to.
     fileprivate final func set_meshes (_ meshes: ObjectCollection<GLTFMesh>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_meshes, UnsafeMutableRawPointer (mutating: handle), nil, &meshes.array.content)
@@ -934,7 +934,7 @@ open class GLTFState: Resource {
     /// Returns the number of ``AnimationPlayer`` nodes in this ``GLTFState``. These nodes are only used during the export process when converting Godot ``AnimationPlayer`` nodes to GLTF animations.
     public final func getAnimationPlayersCount (idx: Int32)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -968,7 +968,7 @@ open class GLTFState: Resource {
     /// Returns the ``AnimationPlayer`` node with the given index. These nodes are only used during the export process when converting Godot ``AnimationPlayer`` nodes to GLTF animations.
     public final func getAnimationPlayer (idx: Int32)-> AnimationPlayer? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1021,7 +1021,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// 
     fileprivate final func set_materials (_ materials: ObjectCollection<Material>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_materials, UnsafeMutableRawPointer (mutating: handle), nil, &materials.array.content)
@@ -1069,7 +1069,7 @@ open class GLTFState: Resource {
     
     @inline(__always)
     fileprivate final func set_scene_name (_ sceneName: String) {
-        #if true
+        #if false
         
         let gstr_scene_name = GString (sceneName)
         
@@ -1119,7 +1119,7 @@ open class GLTFState: Resource {
     
     @inline(__always)
     fileprivate final func set_base_path (_ basePath: String) {
-        #if true
+        #if false
         
         let gstr_base_path = GString (basePath)
         
@@ -1169,7 +1169,7 @@ open class GLTFState: Resource {
     
     @inline(__always)
     fileprivate final func set_filename (_ filename: String) {
-        #if true
+        #if false
         
         let gstr_filename = GString (filename)
         
@@ -1219,7 +1219,7 @@ open class GLTFState: Resource {
     
     @inline(__always)
     fileprivate final func set_root_nodes (_ rootNodes: PackedInt32Array) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_root_nodes, UnsafeMutableRawPointer (mutating: handle), nil, &rootNodes.content)
@@ -1269,7 +1269,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// 
     fileprivate final func set_textures (_ textures: ObjectCollection<GLTFTexture>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_textures, UnsafeMutableRawPointer (mutating: handle), nil, &textures.array.content)
@@ -1319,7 +1319,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// Sets the array of texture samplers that are used by the textures contained in the GLTF.
     fileprivate final func set_texture_samplers (_ textureSamplers: ObjectCollection<GLTFTextureSampler>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_texture_samplers, UnsafeMutableRawPointer (mutating: handle), nil, &textureSamplers.array.content)
@@ -1369,7 +1369,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// Sets the images in the state stored as an array of ``Texture2D``s. This can be used during export. These are the images that the ``GLTFTexture/srcImage`` index refers to.
     fileprivate final func set_images (_ images: ObjectCollection<Texture2D>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_images, UnsafeMutableRawPointer (mutating: handle), nil, &images.array.content)
@@ -1419,7 +1419,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// Sets the ``GLTFSkin``s in the state. These are the skins that the ``GLTFNode/skin`` index refers to.
     fileprivate final func set_skins (_ skins: ObjectCollection<GLTFSkin>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_skins, UnsafeMutableRawPointer (mutating: handle), nil, &skins.array.content)
@@ -1469,7 +1469,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// Sets the ``GLTFCamera``s in the state. These are the cameras that the ``GLTFNode/camera`` index refers to.
     fileprivate final func set_cameras (_ cameras: ObjectCollection<GLTFCamera>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_cameras, UnsafeMutableRawPointer (mutating: handle), nil, &cameras.array.content)
@@ -1519,7 +1519,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// Sets the ``GLTFLight``s in the state. These are the lights that the ``GLTFNode/light`` index refers to.
     fileprivate final func set_lights (_ lights: ObjectCollection<GLTFLight>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_lights, UnsafeMutableRawPointer (mutating: handle), nil, &lights.array.content)
@@ -1569,7 +1569,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// Sets the unique node names in the state. This is used in both the import process and export process.
     fileprivate final func set_unique_names (_ uniqueNames: VariantCollection<String>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_unique_names, UnsafeMutableRawPointer (mutating: handle), nil, &uniqueNames.array.content)
@@ -1619,7 +1619,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// Sets the unique animation names in the state. This is only used during the import process.
     fileprivate final func set_unique_animation_names (_ uniqueAnimationNames: VariantCollection<String>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_unique_animation_names, UnsafeMutableRawPointer (mutating: handle), nil, &uniqueAnimationNames.array.content)
@@ -1669,7 +1669,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// Sets the ``GLTFSkeleton``s in the state. These are the skeletons that the ``GLTFNode/skeleton`` index refers to.
     fileprivate final func set_skeletons (_ skeletons: ObjectCollection<GLTFSkeleton>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_skeletons, UnsafeMutableRawPointer (mutating: handle), nil, &skeletons.array.content)
@@ -1717,7 +1717,7 @@ open class GLTFState: Resource {
     
     @inline(__always)
     fileprivate final func set_create_animations (_ createAnimations: Bool) {
-        #if true
+        #if false
         
         var copy_create_animations = createAnimations
         
@@ -1769,7 +1769,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// Sets the ``GLTFAnimation``s in the state. When importing, these will be generated as animations in an ``AnimationPlayer`` node. When exporting, these will be generated from Godot ``AnimationPlayer`` nodes.
     fileprivate final func set_animations (_ animations: ObjectCollection<GLTFAnimation>) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_animations, UnsafeMutableRawPointer (mutating: handle), nil, &animations.array.content)
@@ -1803,7 +1803,7 @@ open class GLTFState: Resource {
     /// 
     public final func getSceneNode (idx: Int32)-> Node? {
         var _result = UnsafeRawPointer (bitPattern: 0)
-        #if true
+        #if false
         
         var copy_idx: Int = Int (idx)
         
@@ -1840,7 +1840,7 @@ open class GLTFState: Resource {
     /// 
     public final func getNodeIndex (sceneNode: Node?)-> Int32 {
         var _result: Int32 = 0
-        #if true
+        #if false
         
         var copy_scene_node_handle = sceneNode?.handle
         
@@ -1876,7 +1876,7 @@ open class GLTFState: Resource {
     /// 
     public final func getAdditionalData (extensionName: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_get_additional_data, UnsafeMutableRawPointer (mutating: handle), &_result.content, &extensionName.content)
@@ -1910,7 +1910,7 @@ open class GLTFState: Resource {
     /// The first argument should be the ``GLTFDocumentExtension`` name (does not have to match the extension name in the GLTF file), and the second argument can be anything you want.
     /// 
     public final func setAdditionalData (extensionName: StringName, additionalData: Variant) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (GLTFState.method_set_additional_data, UnsafeMutableRawPointer (mutating: handle), nil, &extensionName.content, &additionalData.content)
@@ -1963,7 +1963,7 @@ open class GLTFState: Resource {
     @inline(__always)
     /// 
     fileprivate final func set_handle_binary_image (_ method: Int32) {
-        #if true
+        #if false
         
         var copy_method: Int = Int (method)
         

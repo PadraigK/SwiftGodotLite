@@ -188,7 +188,7 @@ open class NoiseTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_width (_ width: Int32) {
-        #if true
+        #if false
         
         var copy_width: Int = Int (width)
         
@@ -220,7 +220,7 @@ open class NoiseTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_height (_ height: Int32) {
-        #if true
+        #if false
         
         var copy_height: Int = Int (height)
         
@@ -252,7 +252,7 @@ open class NoiseTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_invert (_ invert: Bool) {
-        #if true
+        #if false
         
         var copy_invert = invert
         
@@ -302,7 +302,7 @@ open class NoiseTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_in_3d_space (_ enable: Bool) {
-        #if true
+        #if false
         
         var copy_enable = enable
         
@@ -352,7 +352,7 @@ open class NoiseTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_generate_mipmaps (_ invert: Bool) {
-        #if true
+        #if false
         
         var copy_invert = invert
         
@@ -402,7 +402,7 @@ open class NoiseTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_seamless (_ seamless: Bool) {
-        #if true
+        #if false
         
         var copy_seamless = seamless
         
@@ -452,7 +452,7 @@ open class NoiseTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_seamless_blend_skirt (_ seamlessBlendSkirt: Double) {
-        #if true
+        #if false
         
         var copy_seamless_blend_skirt = seamlessBlendSkirt
         
@@ -502,7 +502,7 @@ open class NoiseTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_as_normal_map (_ asNormalMap: Bool) {
-        #if true
+        #if false
         
         var copy_as_normal_map = asNormalMap
         
@@ -552,7 +552,7 @@ open class NoiseTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_bump_strength (_ bumpStrength: Double) {
-        #if true
+        #if false
         
         var copy_bump_strength = bumpStrength
         
@@ -602,7 +602,7 @@ open class NoiseTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_normalize (_ normalize: Bool) {
-        #if true
+        #if false
         
         var copy_normalize = normalize
         
@@ -652,7 +652,7 @@ open class NoiseTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_color_ramp (_ gradient: Gradient?) {
-        #if true
+        #if false
         
         var copy_gradient_handle = gradient?.handle
         
@@ -701,7 +701,7 @@ open class NoiseTexture2D: Texture2D {
     
     @inline(__always)
     fileprivate final func set_noise (_ noise: Noise?) {
-        #if true
+        #if false
         
         var copy_noise_handle = noise?.handle
         

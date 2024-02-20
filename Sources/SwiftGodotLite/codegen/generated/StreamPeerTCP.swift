@@ -42,7 +42,7 @@ open class StreamPeerTCP: StreamPeer {
     /// 
     public final func bind (port: Int32, host: String = "*")-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_port: Int = Int (port)
         let gstr_host = GString (host)
@@ -81,7 +81,7 @@ open class StreamPeerTCP: StreamPeer {
     /// Connects to the specified `host:port` pair. A hostname will be resolved if valid. Returns ``GodotError/ok`` on success.
     public final func connectToHost (_ host: String, port: Int32)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_host = GString (host)
         var copy_port: Int = Int (port)
@@ -228,7 +228,7 @@ open class StreamPeerTCP: StreamPeer {
     /// > Note: It's recommended to leave this disabled for applications that send large packets or need to transfer a lot of data, as enabling this can decrease the total available bandwidth.
     /// 
     public final func setNoDelay (enabled: Bool) {
-        #if true
+        #if false
         
         var copy_enabled = enabled
         

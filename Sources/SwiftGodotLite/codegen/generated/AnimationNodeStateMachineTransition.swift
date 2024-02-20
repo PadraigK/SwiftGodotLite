@@ -150,7 +150,7 @@ open class AnimationNodeStateMachineTransition: Resource {
     
     @inline(__always)
     fileprivate final func set_switch_mode (_ mode: AnimationNodeStateMachineTransition.SwitchMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -200,7 +200,7 @@ open class AnimationNodeStateMachineTransition: Resource {
     
     @inline(__always)
     fileprivate final func set_advance_mode (_ mode: AnimationNodeStateMachineTransition.AdvanceMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         
@@ -250,7 +250,7 @@ open class AnimationNodeStateMachineTransition: Resource {
     
     @inline(__always)
     fileprivate final func set_advance_condition (_ name: StringName) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (AnimationNodeStateMachineTransition.method_set_advance_condition, UnsafeMutableRawPointer (mutating: handle), nil, &name.content)
@@ -298,7 +298,7 @@ open class AnimationNodeStateMachineTransition: Resource {
     
     @inline(__always)
     fileprivate final func set_xfade_time (_ secs: Double) {
-        #if true
+        #if false
         
         var copy_secs = secs
         
@@ -348,7 +348,7 @@ open class AnimationNodeStateMachineTransition: Resource {
     
     @inline(__always)
     fileprivate final func set_xfade_curve (_ curve: Curve?) {
-        #if true
+        #if false
         
         var copy_curve_handle = curve?.handle
         
@@ -397,7 +397,7 @@ open class AnimationNodeStateMachineTransition: Resource {
     
     @inline(__always)
     fileprivate final func set_reset (_ reset: Bool) {
-        #if true
+        #if false
         
         var copy_reset = reset
         
@@ -447,7 +447,7 @@ open class AnimationNodeStateMachineTransition: Resource {
     
     @inline(__always)
     fileprivate final func set_priority (_ priority: Int32) {
-        #if true
+        #if false
         
         var copy_priority: Int = Int (priority)
         
@@ -497,7 +497,7 @@ open class AnimationNodeStateMachineTransition: Resource {
     
     @inline(__always)
     fileprivate final func set_advance_expression (_ text: String) {
-        #if true
+        #if false
         
         let gstr_text = GString (text)
         

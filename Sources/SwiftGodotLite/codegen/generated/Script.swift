@@ -63,7 +63,7 @@ open class Script: Resource {
     /// Returns `true` if `baseObject` is an instance of this script.
     public final func instanceHas (baseObject: Object?)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         var copy_base_object_handle = baseObject?.handle
         
@@ -131,7 +131,7 @@ open class Script: Resource {
     
     @inline(__always)
     fileprivate final func set_source_code (_ source: String) {
-        #if true
+        #if false
         
         let gstr_source = GString (source)
         
@@ -164,7 +164,7 @@ open class Script: Resource {
     /// Reloads the script's class implementation. Returns an error code.
     public final func reload (keepState: Bool = false)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         var copy_keep_state = keepState
         
@@ -234,7 +234,7 @@ open class Script: Resource {
     /// Returns `true` if the script, or a base class, defines a signal with the given name.
     public final func hasScriptSignal (signalName: StringName)-> Bool {
         var _result: Bool = false
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Script.method_has_script_signal, UnsafeMutableRawPointer (mutating: handle), &_result, &signalName.content)
@@ -338,7 +338,7 @@ open class Script: Resource {
     /// Returns the default value of the specified property.
     public final func getPropertyDefaultValue (property: StringName)-> Variant {
         let _result: Variant = Variant ()
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (Script.method_get_property_default_value, UnsafeMutableRawPointer (mutating: handle), &_result.content, &property.content)

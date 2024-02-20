@@ -134,7 +134,7 @@ open class ImporterMeshInstance3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_mesh (_ mesh: ImporterMesh?) {
-        #if true
+        #if false
         
         var copy_mesh_handle = mesh?.handle
         
@@ -183,7 +183,7 @@ open class ImporterMeshInstance3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_skin (_ skin: Skin?) {
-        #if true
+        #if false
         
         var copy_skin_handle = skin?.handle
         
@@ -232,7 +232,7 @@ open class ImporterMeshInstance3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_skeleton_path (_ skeletonPath: NodePath) {
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (ImporterMeshInstance3D.method_set_skeleton_path, UnsafeMutableRawPointer (mutating: handle), nil, &skeletonPath.content)
@@ -280,7 +280,7 @@ open class ImporterMeshInstance3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_layer_mask (_ layerMask: UInt32) {
-        #if true
+        #if false
         
         var copy_layer_mask: Int = Int (layerMask)
         
@@ -330,7 +330,7 @@ open class ImporterMeshInstance3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_cast_shadows_setting (_ shadowCastingSetting: GeometryInstance3D.ShadowCastingSetting) {
-        #if true
+        #if false
         
         var copy_shadow_casting_setting = Int64 (shadowCastingSetting.rawValue)
         
@@ -380,7 +380,7 @@ open class ImporterMeshInstance3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_visibility_range_end_margin (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -430,7 +430,7 @@ open class ImporterMeshInstance3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_visibility_range_end (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -480,7 +480,7 @@ open class ImporterMeshInstance3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_visibility_range_begin_margin (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -530,7 +530,7 @@ open class ImporterMeshInstance3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_visibility_range_begin (_ distance: Double) {
-        #if true
+        #if false
         
         var copy_distance = distance
         
@@ -580,7 +580,7 @@ open class ImporterMeshInstance3D: Node3D {
     
     @inline(__always)
     fileprivate final func set_visibility_range_fade_mode (_ mode: GeometryInstance3D.VisibilityRangeFadeMode) {
-        #if true
+        #if false
         
         var copy_mode = Int64 (mode.rawValue)
         

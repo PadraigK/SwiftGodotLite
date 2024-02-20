@@ -33,7 +33,7 @@ open class PackedDataContainer: Resource {
     /// 
     public final func pack (value: Variant)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         
         gi.object_method_bind_ptrcall_v (PackedDataContainer.method_pack, UnsafeMutableRawPointer (mutating: handle), &_result, &value.content)

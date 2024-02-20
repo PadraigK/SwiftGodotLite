@@ -33,7 +33,7 @@ open class GDExtension: Resource {
     /// 
     public final func openLibrary (path: String, entrySymbol: String)-> GodotError {
         var _result: Int64 = 0 // to avoid packed enums on the stack
-        #if true
+        #if false
         
         let gstr_path = GString (path)
         let gstr_entry_symbol = GString (entrySymbol)
@@ -123,7 +123,7 @@ open class GDExtension: Resource {
     
     /// 
     public final func initializeLibrary (level: GDExtension.InitializationLevel) {
-        #if true
+        #if false
         
         var copy_level = Int64 (level.rawValue)
         

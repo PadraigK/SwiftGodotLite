@@ -39,7 +39,7 @@ open class VisualShaderNodeTransformConstant: VisualShaderNodeConstant {
     
     @inline(__always)
     fileprivate final func set_constant (_ constant: Transform3D) {
-        #if true
+        #if false
         
         var copy_constant = constant
         

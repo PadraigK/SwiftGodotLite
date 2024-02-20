@@ -48,7 +48,7 @@ open class VideoStream: Resource {
     
     @inline(__always)
     fileprivate final func set_file (_ file: String) {
-        #if true
+        #if false
         
         let gstr_file = GString (file)
         

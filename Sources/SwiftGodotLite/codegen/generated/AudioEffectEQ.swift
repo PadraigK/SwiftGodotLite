@@ -27,7 +27,7 @@ open class AudioEffectEQ: AudioEffect {
     
     /// Sets band's gain at the specified index, in dB.
     public final func setBandGainDb (bandIdx: Int32, volumeDb: Double) {
-        #if true
+        #if false
         
         var copy_band_idx: Int = Int (bandIdx)
         var copy_volume_db = volumeDb
@@ -65,7 +65,7 @@ open class AudioEffectEQ: AudioEffect {
     /// Returns the band's gain at the specified index, in dB.
     public final func getBandGainDb (bandIdx: Int32)-> Double {
         var _result: Double = 0.0
-        #if true
+        #if false
         
         var copy_band_idx: Int = Int (bandIdx)
         
