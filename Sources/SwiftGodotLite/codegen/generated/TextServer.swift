@@ -61,8 +61,8 @@ open class TextServer: RefCounted {
     }
     
     public struct JustificationFlag: OptionSet, CustomDebugStringConvertible {
-        public let rawValue: Int
-        public init (rawValue: Int) {
+        public let rawValue: Int64
+        public init (rawValue: Int64) {
             self.rawValue = rawValue
         }
         
@@ -111,8 +111,8 @@ open class TextServer: RefCounted {
     }
     
     public struct LineBreakFlag: OptionSet, CustomDebugStringConvertible {
-        public let rawValue: Int
-        public init (rawValue: Int) {
+        public let rawValue: Int64
+        public init (rawValue: Int64) {
             self.rawValue = rawValue
         }
         
@@ -167,8 +167,8 @@ open class TextServer: RefCounted {
     }
     
     public struct TextOverrunFlag: OptionSet, CustomDebugStringConvertible {
-        public let rawValue: Int
-        public init (rawValue: Int) {
+        public let rawValue: Int64
+        public init (rawValue: Int64) {
             self.rawValue = rawValue
         }
         
@@ -197,8 +197,8 @@ open class TextServer: RefCounted {
     }
     
     public struct GraphemeFlag: OptionSet, CustomDebugStringConvertible {
-        public let rawValue: Int
-        public init (rawValue: Int) {
+        public let rawValue: Int64
+        public init (rawValue: Int64) {
             self.rawValue = rawValue
         }
         
@@ -340,8 +340,8 @@ open class TextServer: RefCounted {
     }
     
     public struct FontStyle: OptionSet, CustomDebugStringConvertible {
-        public let rawValue: Int
-        public init (rawValue: Int) {
+        public let rawValue: Int64
+        public init (rawValue: Int64) {
             self.rawValue = rawValue
         }
         

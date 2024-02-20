@@ -508,8 +508,8 @@ open class RenderingDevice: Object {
     }
     
     public struct BarrierMask: OptionSet, CustomDebugStringConvertible {
-        public let rawValue: Int
-        public init (rawValue: Int) {
+        public let rawValue: Int64
+        public init (rawValue: Int64) {
             self.rawValue = rawValue
         }
         
@@ -582,8 +582,8 @@ open class RenderingDevice: Object {
     }
     
     public struct TextureUsageBits: OptionSet, CustomDebugStringConvertible {
-        public let rawValue: Int
-        public init (rawValue: Int) {
+        public let rawValue: Int64
+        public init (rawValue: Int64) {
             self.rawValue = rawValue
         }
         
@@ -708,8 +708,8 @@ open class RenderingDevice: Object {
     }
     
     public struct StorageBufferUsage: OptionSet, CustomDebugStringConvertible {
-        public let rawValue: Int
-        public init (rawValue: Int) {
+        public let rawValue: Int64
+        public init (rawValue: Int64) {
             self.rawValue = rawValue
         }
         
@@ -946,8 +946,8 @@ open class RenderingDevice: Object {
     }
     
     public struct PipelineDynamicStateFlags: OptionSet, CustomDebugStringConvertible {
-        public let rawValue: Int
-        public init (rawValue: Int) {
+        public let rawValue: Int64
+        public init (rawValue: Int64) {
             self.rawValue = rawValue
         }
         

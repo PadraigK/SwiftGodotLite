@@ -486,8 +486,8 @@ public enum Key: Int64 {
 }
 
 public struct KeyModifierMask: OptionSet, CustomDebugStringConvertible {
-    public let rawValue: Int
-    public init (rawValue: Int) {
+    public let rawValue: Int64
+    public init (rawValue: Int64) {
         self.rawValue = rawValue
     }
     
@@ -551,8 +551,8 @@ public enum MouseButton: Int64 {
 }
 
 public struct MouseButtonMask: OptionSet, CustomDebugStringConvertible {
-    public let rawValue: Int
-    public init (rawValue: Int) {
+    public let rawValue: Int64
+    public init (rawValue: Int64) {
         self.rawValue = rawValue
     }
     
@@ -921,8 +921,8 @@ public enum PropertyHint: Int64 {
 }
 
 public struct PropertyUsageFlags: OptionSet, CustomDebugStringConvertible {
-    public let rawValue: Int
-    public init (rawValue: Int) {
+    public let rawValue: Int64
+    public init (rawValue: Int64) {
         self.rawValue = rawValue
     }
     
@@ -1035,8 +1035,8 @@ public struct PropertyUsageFlags: OptionSet, CustomDebugStringConvertible {
 }
 
 public struct MethodFlags: OptionSet, CustomDebugStringConvertible {
-    public let rawValue: Int
-    public init (rawValue: Int) {
+    public let rawValue: Int64
+    public init (rawValue: Int64) {
         self.rawValue = rawValue
     }
     

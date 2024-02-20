@@ -133,8 +133,8 @@ open class RenderingServer: Object {
     }
     
     public struct ArrayFormat: OptionSet, CustomDebugStringConvertible {
-        public let rawValue: Int
-        public init (rawValue: Int) {
+        public let rawValue: Int64
+        public init (rawValue: Int64) {
             self.rawValue = rawValue
         }
         

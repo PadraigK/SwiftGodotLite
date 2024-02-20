@@ -22,8 +22,8 @@ open class ResourceSaver: Object {
     
     override open class var godotClassName: StringName { "ResourceSaver" }
     public struct SaverFlags: OptionSet, CustomDebugStringConvertible {
-        public let rawValue: Int
-        public init (rawValue: Int) {
+        public let rawValue: Int64
+        public init (rawValue: Int64) {
             self.rawValue = rawValue
         }
         
